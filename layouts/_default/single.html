@@ -1,5 +1,8 @@
 {{ define "main" }}
-<h1>{{ partial "sectionName.html" . }} <br> {{ .Title }}</h1>
+<h1>
+  <span class="vaknaam">{{ partial "sectionName.html" . }}</span>
+  <span class="opdrachtnaam">{{ with .Params.thema }}{{ if ne (trim . " ") "" }}{{ . }}: {{ end }}{{ end }}{{ .Title }}</span>
+</h1>
 <!-- Content -->
 {{ .Content }}
 <!-- End -->

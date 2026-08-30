@@ -5,8 +5,8 @@ schooljaar: "2026-2027"
 klas: "5CRM" # of 6CRM
 vak: "" # motion, web, beeld, grafische
 leerkracht: ""
-periode: "" # bv. September, Oktober-December
-thema: "" # Kinetische kunst, Zwaartekracht, Kunstcollab, Event, Fashion, Naar klant
+periode: "" # 5CRM: September | Oktober | November-Januari | Januari-Mei --- 6CRM: September | Oktober-December | Januari-Maart | April-Mei
+thema: "" # 5CRM: Introductie | Kinetische kunst | Zwaartekracht (Poëzieweek) | Kunstcollab --- 6CRM: Herhaling | Event | Fashion | Naar klant --- Leeg laten voor vrije opdrachten zonder thema
 software: []
 leerplandoelen: []
 clusters:

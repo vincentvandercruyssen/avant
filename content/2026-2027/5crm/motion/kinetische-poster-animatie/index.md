@@ -1,5 +1,5 @@
 ---
-title: "Kinetische Poster Animatie"
+title: "Poster animatie"
 date: 2026-10-01T08:30:00+02:00
 schooljaar: "2026-2027"
 klas: "5CRM"

@@ -1,5 +1,5 @@
 ---
-title: "Klant Pitch & Live Portfolio"
+title: "Pitch & Live Portfolio"
 date: 2026-04-10T09:30:00+02:00
 schooljaar: "2026-2027"
 klas: "6CRM"

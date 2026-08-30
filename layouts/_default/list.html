@@ -1,10 +1,16 @@
 {{ define "main" }}
 <h1>
   {{ $sec := partial "sectionName.html" . }}
-  {{ if and $sec (ne (trim $sec " \n\r\t") (trim .Title " \n\r\t")) }}
-    {{ $sec }}<br>
+  {{ $opdrachtTitle := .Title }}
+  {{ with .Params.thema }}
+    {{ if ne (trim . " ") "" }}
+      {{ $opdrachtTitle = printf "%s: %s" . $.Title }}
+    {{ end }}
   {{ end }}
-  {{ .Title }}
+  <span class="vaknaam">{{ $sec }}</span>
+  {{ if and $opdrachtTitle (ne (trim $sec " \n\r\t") (trim $opdrachtTitle " \n\r\t")) (ne (trim $sec " \n\r\t") (trim .Title " \n\r\t")) }}
+    <span class="opdrachtnaam">{{ $opdrachtTitle }}</span>
+  {{ end }}
 </h1>
 
 {{ if .Content }}
@@ -14,7 +20,7 @@
 {{ if .Pages }}
 <ul>
   {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    <li><a href="{{ .RelPermalink }}">{{ with .Params.thema }}{{ if ne (trim . " ") "" }}{{ . }}: {{ end }}{{ end }}{{ .Title }}</a></li>
   {{ end }}
 </ul>
 {{ end }}

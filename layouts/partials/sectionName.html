@@ -1,20 +1,49 @@
-{{/* Bepaal weergavenaam van het vak/sectie via frontmatter (.Params.vak), URL-pad of sectie */}}
-{{ $s := newScratch }}
-{{ $vakKey := .Params.vak | default "" | lower }}
+{{- /* Bepaal weergavenaam van het vak/sectie via frontmatter (.Params.vak), URL-pad of sectie */ -}}
+{{- $page := . -}}
+{{- $short := false -}}
+{{- if reflect.IsMap . -}}
+  {{- $page = or .page .context .Page -}}
+  {{- $short = .short | default false -}}
+{{- end -}}
 
-{{ if and $vakKey (index site.Params.sectionNames $vakKey) }}
-  {{ $s.Set "key" $vakKey }}
-{{ else }}
-  {{ $s.Set "key" (or .Params.sectionKey .Type .Section) }}
-  {{ $segs := split (trim .RelPermalink "/") "/" }}
-  {{ range $segs }}
-    {{ $segLower := . | lower }}
-    {{ if index site.Params.sectionNames $segLower }}
-      {{ $s.Set "key" $segLower }}
-    {{ end }}
-  {{ end }}
-{{ end }}
+{{- $s := newScratch -}}
+{{- $vakKey := $page.Params.vak | default "" | lower -}}
 
-{{ $key := $s.Get "key" }}
-{{ $label := index site.Params.sectionNames $key | default $key }}
-{{ $label }}
+{{- if and $vakKey (index site.Params.sectionNames $vakKey) -}}
+  {{- $s.Set "key" $vakKey -}}
+{{- else -}}
+  {{- $s.Set "key" (or $page.Params.sectionKey $page.Type $page.Section) -}}
+  {{- $segs := split (trim $page.RelPermalink "/") "/" -}}
+  {{- range $segs -}}
+    {{- $segLower := . | lower -}}
+    {{- if index site.Params.sectionNames $segLower -}}
+      {{- $s.Set "key" $segLower -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $key := $s.Get "key" -}}
+{{- $label := "" -}}
+{{- if $short -}}
+  {{- $label = $key | title -}}
+{{- else -}}
+  {{- $label = index site.Params.sectionNames $key | default ($key | title) -}}
+{{- end -}}
+
+{{- /* Bepaal klas indien aanwezig in frontmatter of URL-pad */ -}}
+{{- $klas := $page.Params.klas | default "" | upper -}}
+{{- if not $klas -}}
+  {{- $segs := split (trim $page.RelPermalink "/") "/" -}}
+  {{- range $segs -}}
+    {{- $segUpper := . | upper -}}
+    {{- if or (eq $segUpper "5CRM") (eq $segUpper "6CRM") -}}
+      {{- $klas = $segUpper -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and $klas (or $page.Params.vak (in $page.RelPermalink "/5crm/") (in $page.RelPermalink "/6crm/")) -}}
+  {{- printf "%s - %s" $klas $label -}}
+{{- else -}}
+  {{- $label -}}
+{{- end -}}

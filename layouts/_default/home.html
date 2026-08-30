@@ -39,7 +39,7 @@
 
   .kolommen {
     margin-bottom: 1.5rem;
-    columns: 4;
+    columns: 3;
   }
 
   .kolommen div {
@@ -218,7 +218,7 @@
 
         {{ if and (eq $pKlas $klas) (eq $pVak $vak) }}
         <div>
-          <a href="{{ .RelPermalink }}" target="_blank">{{ .Title | default .File.ContentBaseName }}</a><br />
+          <a href="{{ .RelPermalink }}" target="_blank">{{ with .Params.thema }}{{ if ne (trim . " ") "" }}{{ . }}: {{ end }}{{ end }}{{ .Title | default .File.ContentBaseName }}</a><br />
           <time datetime="{{ .Date | time.Format $.Site.Params.dateFormatISO }}" class="pill">
             {{ .Date | time.Format $.Site.Params.dateFormat }}
           </time>

@@ -212,7 +212,7 @@ body::after {
   bottom: 50vh;
   right: calc(-3rem - 2px);
   padding: 1rem 2ch;
-  content: "Kunstkaai - V. Vander Cruyssen";
+  content: "Avant - V. Vander Cruyssen";
   background-color: var(--fgcolor);
   font-size: 0.6rem;
   rotate: 90deg;
@@ -237,6 +237,10 @@ details,
 .highlight,
 pre {
   margin-bottom: var(--margin-bottom);
+}
+
+li {
+  margin-bottom: calc(var(--margin-bottom) * 2);
 }
 
 h2,
@@ -273,6 +277,15 @@ h1 {
   font-size: 2.5rem;
   /* overflow: hidden; */
   text-overflow: ellipsis;
+}
+
+h1 .vaknaam {
+  display: block;
+}
+
+h1 .opdrachtnaam {
+  display: block;
+  font-size: 0.8em;
 }
 
 h2 {

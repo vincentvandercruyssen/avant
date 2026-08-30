@@ -1,5 +1,5 @@
 ---
-title: "Fashion Fotoshoot & Digitaal Lookbook"
+title: "Fotoshoot & Digitaal Lookbook"
 date: 2026-01-15T13:30:00+01:00
 schooljaar: "2026-2027"
 klas: "6CRM"

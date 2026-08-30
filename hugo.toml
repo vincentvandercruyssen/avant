@@ -1,6 +1,6 @@
 baseURL = "https://vincentvandercruyssen.github.io/avant/"
 languageCode = "nl"
-title = "Avant | Crossmedia"
+title = "Avant"
 buildFuture = true
 
 [taxonomies]
