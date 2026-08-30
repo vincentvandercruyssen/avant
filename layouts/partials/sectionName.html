@@ -1,0 +1,20 @@
+{{/* Bepaal weergavenaam van het vak/sectie via frontmatter (.Params.vak), URL-pad of sectie */}}
+{{ $s := newScratch }}
+{{ $vakKey := .Params.vak | default "" | lower }}
+
+{{ if and $vakKey (index site.Params.sectionNames $vakKey) }}
+  {{ $s.Set "key" $vakKey }}
+{{ else }}
+  {{ $s.Set "key" (or .Params.sectionKey .Type .Section) }}
+  {{ $segs := split (trim .RelPermalink "/") "/" }}
+  {{ range $segs }}
+    {{ $segLower := . | lower }}
+    {{ if index site.Params.sectionNames $segLower }}
+      {{ $s.Set "key" $segLower }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $key := $s.Get "key" }}
+{{ $label := index site.Params.sectionNames $key | default $key }}
+{{ $label }}

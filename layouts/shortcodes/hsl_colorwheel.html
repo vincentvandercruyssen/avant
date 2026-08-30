@@ -1,0 +1,77 @@
+<style>
+  :root {
+    --stage-max: 520px;
+    --ring: 20%;
+    --label-gap: 15%;
+    --label-offset: 1.2em; /* nieuw: hoeveelheid dat labels naar binnen schuiven */
+  }
+
+  .stage {
+    position: relative;
+    width: min(100%, var(--stage-max));
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    margin-bottom: var(--margin-bottom);
+  }
+
+  /* Ring */
+  .wheel {
+    position: relative;
+    width: calc(100% - var(--label-gap) * 2);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: conic-gradient(red 0, orange, yellow, #8bdc00, #00d084, #00bcd4, #2979ff, #673ab7, #e91e63, red 1turn);
+  }
+
+  .wheel::after {
+    content: '';
+    position: absolute;
+    inset: var(--ring);
+    border-radius: 50%;
+    background: var(--fgcolor);
+  }
+
+  /* LABELS */
+  .labels {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  /* Elke label roteert */
+  .label {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-start; /* ← START punt bovenaan cirkel */
+    justify-content: center;
+    transform: rotate(var(--ang));
+  }
+
+  /* Plaats op 50% van de radius */
+  .label span {
+    font-size: 1.25rem;
+
+    /* 50% = rand van de stage, offset duwt alles naar binnen */
+    transform: translateY(calc(-50% + var(--label-offset))) rotate(calc(-1 * var(--ang)));
+  }
+</style>
+
+<div class="stage" role="img" aria-label="Kleurencirkel met gradenlabels per 30 graden">
+  <div class="wheel"></div>
+  <div class="labels" aria-hidden="true">
+    <div class="label" style="--ang:   0deg;"><span>0°</span></div>
+    <div class="label" style="--ang:  30deg;"><span>30°</span></div>
+    <div class="label" style="--ang:  60deg;"><span>60°</span></div>
+    <div class="label" style="--ang:  90deg;"><span>90°</span></div>
+    <div class="label" style="--ang: 120deg;"><span>120°</span></div>
+    <div class="label" style="--ang: 150deg;"><span>150°</span></div>
+    <div class="label" style="--ang: 180deg;"><span>180°</span></div>
+    <div class="label" style="--ang: 210deg;"><span>210°</span></div>
+    <div class="label" style="--ang: 240deg;"><span>240°</span></div>
+    <div class="label" style="--ang: 270deg;"><span>270°</span></div>
+    <div class="label" style="--ang: 300deg;"><span>300°</span></div>
+    <div class="label" style="--ang: 330deg;"><span>330°</span></div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+baseURL = "https://vincentvandercruyssen.github.io/avant/"
+languageCode = "nl"
+title = "Avant | Crossmedia"
+buildFuture = true
+
+[taxonomies]
+  thema = "themas"
+  vak = "vakken"
+  schooljaar = "schooljaren"
+  leerkracht = "leerkrachten"
+
+[params.sectionNames]
+  motion = "Motion"
+  web = "Webdesign en storytelling"
+  beeld = "Beeldanalyse en -bewerking"
+  grafische = "Grafische vormgeving"
+  cursussen = "Cursussen"
+  doelen = "Leerplandoelen"
+
+[params]
+  dateFormat = "2006-01-02"
+  dateFormatISO = "2006-01-02"
+
+[imaging]
+  quality = 90
+  resampleFilter = "Lanczos"
+
+[build]
+  cleanDestinationDir = true
+
+[markup]
+[markup.highlight]
+  style = "rose-pine-moon"

@@ -1,0 +1,48 @@
+{{ $hasDoelen := and .Params.leerplandoelen (gt (len .Params.leerplandoelen) 0) }}
+{{ $activeClusters := slice }}
+{{ if .Params.clusters }}
+  {{ range $k, $v := .Params.clusters }}
+    {{ if $v }}
+      {{ $activeClusters = $activeClusters | append $k }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $hasClusters := gt (len $activeClusters) 0 }}
+
+{{ if or $hasDoelen $hasClusters }}
+  <section class="opdracht-evaluatie">
+    {{ if $hasClusters }}
+      <h2>Evaluatieclusters</h2>
+      <ul>
+        {{ $clusterLabels := dict "analyse_workflow" "Analyse & Workflow" "design_layout" "Design & Lay-out" "multimediaproductie" "Multimediaproductie" "release_presentatie" "Release & Presentatie" "kwaliteit_context" "Kwaliteit & Context" "professionele_competenties" "Professionele competenties" }}
+        {{ range $activeClusters }}
+          <li><strong>{{ index $clusterLabels . | default . }}</strong></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    {{ if $hasDoelen }}
+      <h2>Leerplandoelen</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 15%;">Code</th>
+            <th style="width: 25%;">Doel</th>
+            <th>Omschrijving</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.leerplandoelen }}
+            {{ $code := (print .) }}
+            {{ $doel := index site.Data.leerplandoelen $code }}
+            <tr>
+              <td><code>{{ $code }}</code></td>
+              <td>{{ if $doel }}<strong>{{ $doel.titel }}</strong>{{ else }}<strong>{{ $code }}</strong>{{ end }}</td>
+              <td>{{ if $doel }}{{ $doel.omschrijving }}{{ else }}-{{ end }}</td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    {{ end }}
+  </section>
+{{ end }}

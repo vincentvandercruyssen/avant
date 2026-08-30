@@ -1,0 +1,59 @@
+CRS01:
+  code: "CRS01"
+  titel: "Analyse & Workflow"
+  cluster: "analyse_workflow"
+  omschrijving: "De leerling analyseert de ontwerpopdracht, doelgroep en technische vereisten en vertaalt deze naar een gestructureerde workflow."
+
+CRS02:
+  code: "CRS02"
+  titel: "Beeldcompositie & Fotografie"
+  cluster: "multimediaproductie"
+  omschrijving: "De leerling realiseert en bewerkt fotografische opnames met oog voor compositie, belichting, kleurcorrectie en beelduitsnede."
+
+CRS06:
+  code: "CRS06"
+  titel: "Typografie & Lay-out"
+  cluster: "design_layout"
+  omschrijving: "De leerling past typografische hiërarchie, grids, zetwerkregels en visuele compositieprincipes toe in statische en dynamische lay-outs."
+
+CRS15:
+  code: "CRS15"
+  titel: "Motion Design & Animatie"
+  cluster: "multimediaproductie"
+  omschrijving: "De leerling creëert bewegende beelden en kinetische typografie met behulp van professionele animatiesoftware."
+
+CRS16:
+  code: "CRS16"
+  titel: "Timing & Dynamiek"
+  cluster: "multimediaproductie"
+  omschrijving: "De leerling hanteert timing, keyframing, easing en ritmische overgangen voor dynamische multimediaproducties."
+
+CRS18:
+  code: "CRS18"
+  titel: "Frontend Web & Interactie"
+  cluster: "multimediaproductie"
+  omschrijving: "De leerling bouwt responsieve en toegankelijke webpagina's met semantische HTML, moderne CSS en interactieve componenten."
+
+CRS21:
+  code: "CRS21"
+  titel: "Drukwerkvoorbereiding & Prepress"
+  cluster: "release_presentatie"
+  omschrijving: "De leerling bereidt grafische bestanden voor conform druktechnische standaarden (resolutie, kleurruimte, afloop en snijtekens)."
+
+CRS25:
+  code: "CRS25"
+  titel: "Pitch & Presentatie"
+  cluster: "release_presentatie"
+  omschrijving: "De leerling presenteert en verdedigt het gemaakte werk professioneel en overtuigend aan medeleerlingen of opdrachtgevers."
+
+"05.02":
+  code: "05.02"
+  titel: "Digitale Interactie & Usability"
+  cluster: "kwaliteit_context"
+  omschrijving: "De leerling optimaliseert gebruiksvriendelijkheid, responsive gedrag en interactiepatronen in digitale interfaces."
+
+"16.04":
+  code: "16.04"
+  titel: "Visuele Identiteit & Concept"
+  cluster: "design_layout"
+  omschrijving: "De leerling vertaalt een thematisch concept naar een consistente grafische identiteit over diverse dragers."
