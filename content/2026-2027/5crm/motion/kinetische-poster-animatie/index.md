@@ -37,4 +37,4 @@ Ontwerp een geanimeerde poster gebaseerd op de principes van kinetische kunst en
 ## Materiaal & Software
 - Adobe Illustrator (vectorbasis)
 - Adobe After Effects
-- Bekijk de handleiding: [Cursus After Effects](/cursussen/after_effects/)
+- Bekijk de handleiding: [Cursus After Effects](/cursus/after_effects/)

@@ -38,4 +38,4 @@ Organiseer en executeer een redactionele modeshoot (editorial fashion shoot). De
 ## Materiaal & Software
 - Professionele camera-opstelling & tethering kabel
 - Adobe Photoshop, InDesign & Capture One
-- Handleiding: [Cursus Fotografie](/cursussen/fotografie/)
+- Handleiding: [Cursus Fotografie](/cursus/fotografie/)

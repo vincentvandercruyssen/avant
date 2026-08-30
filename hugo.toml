@@ -14,8 +14,8 @@ buildFuture = true
   web = "Webdesign en storytelling"
   beeld = "Beeldanalyse en -bewerking"
   grafische = "Grafische vormgeving"
-  cursussen = "Cursussen"
-  doelen = "Leerplandoelen"
+  cursus = "Cursusmateriaal"
+  doelen = "Doelstellingen"
 
 [params]
   dateFormat = "2006-01-02"

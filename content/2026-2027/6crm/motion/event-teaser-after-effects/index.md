@@ -38,4 +38,4 @@ Creëer een energieke motion teaser van 30 seconden voor een grootschalig cultur
 ## Materiaal & Software
 - Adobe After Effects & Premiere Pro
 - Blender (3D modeling & render)
-- Handleidingen: [Cursus After Effects](/cursussen/after_effects/) | [Cursus Blender](/cursussen/blender/)
+- Handleidingen: [Cursus After Effects](/cursus/after_effects/) | [Cursus Blender](/cursus/blender/)

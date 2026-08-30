@@ -37,4 +37,4 @@ Onderzoek portretfotografie en geavanceerde beeldbewerking. We focussen op licht
 ## Materiaal & Software
 - DSLR / Mirrorless camera's & studioflitsers
 - Adobe Photoshop & Lightroom Classic
-- Bekijk de handleiding: [Cursus Fotografie](/cursussen/fotografie/)
+- Bekijk de handleiding: [Cursus Fotografie](/cursus/fotografie/)

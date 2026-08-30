@@ -1,7 +1,10 @@
 <div class="fixed">
   <!-- Display the site title and the current section -->
   <h1>
-    {{ partial "sectionName.html" . }}<br>
+    {{ $sec := partial "sectionName.html" . }}
+    {{ if and $sec (ne (trim $sec " \n\r\t") (trim .Title " \n\r\t")) }}
+      {{ $sec }}<br>
+    {{ end }}
     {{ .Title }}
   </h1>
   {{ .TableOfContents }}

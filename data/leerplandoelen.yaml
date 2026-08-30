@@ -1,59 +1,370 @@
-CRS01:
-  code: "CRS01"
-  titel: "Analyse & Workflow"
-  cluster: "analyse_workflow"
-  omschrijving: "De leerling analyseert de ontwerpopdracht, doelgroep en technische vereisten en vertaalt deze naar een gestructureerde workflow."
-
-CRS02:
-  code: "CRS02"
-  titel: "Beeldcompositie & Fotografie"
-  cluster: "multimediaproductie"
-  omschrijving: "De leerling realiseert en bewerkt fotografische opnames met oog voor compositie, belichting, kleurcorrectie en beelduitsnede."
-
-CRS06:
-  code: "CRS06"
-  titel: "Typografie & Lay-out"
-  cluster: "design_layout"
-  omschrijving: "De leerling past typografische hiërarchie, grids, zetwerkregels en visuele compositieprincipes toe in statische en dynamische lay-outs."
-
-CRS15:
-  code: "CRS15"
-  titel: "Motion Design & Animatie"
-  cluster: "multimediaproductie"
-  omschrijving: "De leerling creëert bewegende beelden en kinetische typografie met behulp van professionele animatiesoftware."
-
-CRS16:
-  code: "CRS16"
-  titel: "Timing & Dynamiek"
-  cluster: "multimediaproductie"
-  omschrijving: "De leerling hanteert timing, keyframing, easing en ritmische overgangen voor dynamische multimediaproducties."
-
-CRS18:
-  code: "CRS18"
-  titel: "Frontend Web & Interactie"
-  cluster: "multimediaproductie"
-  omschrijving: "De leerling bouwt responsieve en toegankelijke webpagina's met semantische HTML, moderne CSS en interactieve componenten."
-
-CRS21:
-  code: "CRS21"
-  titel: "Drukwerkvoorbereiding & Prepress"
+"04.01":
+  code: "04.01"
+  titel: "Gebruiken doelgericht courante functionaliteiten van ve..."
   cluster: "release_presentatie"
-  omschrijving: "De leerling bereidt grafische bestanden voor conform druktechnische standaarden (resolutie, kleurruimte, afloop en snijtekens)."
+  dimensie: "creëren"
+  omschrijving: "De leerlingen gebruiken doelgericht courante functionaliteiten van vergelijkbare toepassingen om digitale inhouden te creëren."
 
-CRS25:
-  code: "CRS25"
-  titel: "Pitch & Presentatie"
-  cluster: "release_presentatie"
-  omschrijving: "De leerling presenteert en verdedigt het gemaakte werk professioneel en overtuigend aan medeleerlingen of opdrachtgevers."
+"04.02":
+  code: "04.02"
+  titel: "Respecteren ethische, sociale en legale regels bij het ..."
+  cluster: "professionele_competenties"
+  dimensie: "creëren"
+  omschrijving: "De leerlingen respecteren ethische, sociale en legale regels bij het gebruiken van digitale technologie."
+
+"04.03":
+  code: "04.03"
+  titel: "Passen maatregelen toe om zichzelf en anderen te besche..."
+  cluster: "professionele_competenties"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen passen maatregelen toe om zichzelf en anderen te beschermen tegen bedreigingen en risico’s van de digitale wereld."
+
+"05.01":
+  code: "05.01"
+  titel: "Gaan respectvol en constructief met anderen in interact..."
+  cluster: "professionele_competenties"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen gaan respectvol en constructief met anderen in interactie rekening houdend met elkaars grenzen."
 
 "05.02":
   code: "05.02"
-  titel: "Digitale Interactie & Usability"
+  titel: "Werken samen met medeleerlingen aan de uitwerking van e..."
+  cluster: "professionele_competenties"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen werken samen met medeleerlingen aan de uitwerking van een gezamenlijk resultaat."
+
+"13.01":
+  code: "13.01"
+  titel: "Kiezen en gebruiken doelgericht een zoekstrategie om di..."
+  cluster: "analyse_workflow"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen kiezen en gebruiken doelgericht een zoekstrategie om diverse bronnen te selecteren in functie van een informatievraag."
+
+"13.02":
+  code: "13.02"
+  titel: "Verwerken op een kritische en systematische manier info..."
+  cluster: "analyse_workflow"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen verwerken op een kritische en systematische manier informatie uit diverse bronnen om een informatievraag te beantwoorden."
+
+"13.04":
+  code: "13.04"
+  titel: "Zetten in op metacognitieve leerstrategieën in functie ..."
   cluster: "kwaliteit_context"
-  omschrijving: "De leerling optimaliseert gebruiksvriendelijkheid, responsive gedrag en interactiepatronen in digitale interfaces."
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen zetten in op metacognitieve leerstrategieën in functie van zelfregulerend leren."
+
+"13.05":
+  code: "13.05"
+  titel: "Reflecteren cyclisch en vakspecifiek over het eigen lee..."
+  cluster: "kwaliteit_context"
+  dimensie: "evalueren"
+  omschrijving: "De leerlingen reflecteren cyclisch en vakspecifiek over het eigen leerproces en sturen het op basis daarvan doelgericht bij."
+
+"13.08":
+  code: "13.08"
+  titel: "Gebruiken vaktaal."
+  cluster: "release_presentatie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen gebruiken vaktaal."
+
+"15.02":
+  code: "15.02"
+  titel: "Generen creatieve ideeën om een probleem op te lossen."
+  cluster: "design_layout"
+  dimensie: "creëren"
+  omschrijving: "De leerlingen generen creatieve ideeën om een probleem op te lossen."
+
+"15.03":
+  code: "15.03"
+  titel: "Bespreken de uitvoerbaarheid van creatieve ideeën aan d..."
+  cluster: "design_layout"
+  dimensie: "evalueren"
+  omschrijving: "De leerlingen bespreken de uitvoerbaarheid van creatieve ideeën aan de hand van criteria."
+
+"15.04":
+  code: "15.04"
+  titel: "Creëren een oplossing voor een uitdaging met inzet van ..."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen creëren een oplossing voor een uitdaging met inzet van digitale technologie."
+
+"16.01":
+  code: "16.01"
+  titel: "Brengen kunst- en cultuuruitingen in verband met de con..."
+  cluster: "kwaliteit_context"
+  dimensie: "reflecteren"
+  omschrijving: "De leerlingen brengen kunst- en cultuuruitingen in verband met de context waarin ze voorkomen."
+
+"16.02":
+  code: "16.02"
+  titel: "Reflecteren over eigen beleving bij uiteenlopende kunst..."
+  cluster: "kwaliteit_context"
+  dimensie: "evalueren"
+  omschrijving: "De leerlingen reflecteren over eigen beleving bij uiteenlopende kunst- en cultuuruitingen."
+
+"16.03":
+  code: "16.03"
+  titel: "Lichten toe hoe een kunstwerk vanuit vorm en inhoud bet..."
+  cluster: "kwaliteit_context"
+  dimensie: "begrijpen"
+  omschrijving: "De leerlingen lichten toe hoe een kunstwerk vanuit vorm en inhoud betekenis geeft."
 
 "16.04":
   code: "16.04"
-  titel: "Visuele Identiteit & Concept"
+  titel: "Doorlopen een artistiek-creatief proces vanuit verbeeld..."
   cluster: "design_layout"
-  omschrijving: "De leerling vertaalt een thematisch concept naar een consistente grafische identiteit over diverse dragers."
+  dimensie: "creëren"
+  omschrijving: "De leerlingen doorlopen een artistiek-creatief proces vanuit verbeelding."
+
+"CRS01":
+  code: "CRS01"
+  titel: "Analyseren productievereisten, -instructies en -voorsch..."
+  cluster: "analyse_workflow"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen analyseren productievereisten, -instructies en -voorschriften in functie van de opdracht."
+
+"CRS02":
+  code: "CRS02"
+  titel: "Selecteren technieken, middelen en materialen in functi..."
+  cluster: "analyse_workflow"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen selecteren technieken, middelen en materialen in functie van de opdracht."
+
+"CRS03":
+  code: "CRS03"
+  titel: "Plannen de werkzaamheden in functie van het voorbereide..."
+  cluster: "analyse_workflow"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen plannen de werkzaamheden in functie van het voorbereiden, maken, verbeteren en beheren van crossmediale producten."
+
+"CRS04":
+  code: "CRS04"
+  titel: "Houden de administratie bij."
+  cluster: "professionele_competenties"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen houden de administratie bij."
+
+"CRS05":
+  code: "CRS05"
+  titel: "Werken deontologisch."
+  cluster: "professionele_competenties"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen werken deontologisch."
+
+"CRS06":
+  code: "CRS06"
+  titel: "Gebruiken doelgericht software en hardware in functie v..."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen gebruiken doelgericht software en hardware in functie van de opdracht."
+
+"CRS07":
+  code: "CRS07"
+  titel: "Selecteren geschikt beeldmateriaal op servers of online..."
+  cluster: "multimediaproductie"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen selecteren geschikt beeldmateriaal op servers of online."
+
+"CRS08":
+  code: "CRS08"
+  titel: "Beoordelen de kwaliteit, beeldresolutie, kleurmodus van..."
+  cluster: "kwaliteit_context"
+  dimensie: "evalueren"
+  omschrijving: "De leerlingen beoordelen de kwaliteit, beeldresolutie, kleurmodus van het beeldmateriaal."
+
+"CRS09":
+  code: "CRS09"
+  titel: "Bepalen de stappen voor beeldmanipulatie of beeldcorrec..."
+  cluster: "multimediaproductie"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen bepalen de stappen voor beeldmanipulatie of beeldcorrectie."
+
+"CRS10":
+  code: "CRS10"
+  titel: "Bewerken beeldmateriaal in functie van de opdracht."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen bewerken beeldmateriaal in functie van de opdracht."
+
+"CRS11":
+  code: "CRS11"
+  titel: "Kadreren aangeleverd beeldmateriaal rekening houdend me..."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen kadreren aangeleverd beeldmateriaal rekening houdend met de vormvereisten voor een correcte visuele interpretatie of positieve ervaring door de gebruiker."
+
+"CRS12":
+  code: "CRS12"
+  titel: "Selecteren audiobestanden in functie van het specifieke..."
+  cluster: "multimediaproductie"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen selecteren audiobestanden in functie van het specifieke productieproces."
+
+"CRS13":
+  code: "CRS13"
+  titel: "Selecteren videobestanden in functie van het specifieke..."
+  cluster: "multimediaproductie"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen selecteren videobestanden in functie van het specifieke productieproces."
+
+"CRS14":
+  code: "CRS14"
+  titel: "Gebruiken software om audio- en videobestanden te manip..."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen gebruiken software om audio- en videobestanden te manipuleren en gebruiksklaar te maken."
+
+"CRS15":
+  code: "CRS15"
+  titel: "Selecteren geschikt beeld- en tekstmateriaal om te inte..."
+  cluster: "multimediaproductie"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen selecteren geschikt beeld- en tekstmateriaal om te integreren in een animatie."
+
+"CRS16":
+  code: "CRS16"
+  titel: "Realiseren eenvoudige animaties voor integratie in cros..."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen realiseren eenvoudige animaties voor integratie in crossmediale publicaties."
+
+"CRS17":
+  code: "CRS17"
+  titel: "Bewerken illustratieve content in functie van de opdrac..."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen bewerken illustratieve content in functie van de opdracht."
+
+"CRS18":
+  code: "CRS18"
+  titel: "Creëren een crossmediale webtoepassing."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen creëren een crossmediale webtoepassing."
+
+"CRS19":
+  code: "CRS19"
+  titel: "Integreren een database in een crossmediaal product."
+  cluster: "multimediaproductie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen integreren een database in een crossmediaal product."
+
+"CRS20":
+  code: "CRS20"
+  titel: "Bundelen het materiaal om de inhoudelijke content uit t..."
+  cluster: "release_presentatie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen bundelen het materiaal om de inhoudelijke content uit te werken."
+
+"CRS21":
+  code: "CRS21"
+  titel: "Bewerken teksten met aandacht voor lay-out technisch on..."
+  cluster: "design_layout"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen bewerken teksten met aandacht voor lay-out technisch ontwerp en typografie."
+
+"CRS22":
+  code: "CRS22"
+  titel: "Bewerken beeldmateriaal esthetisch en creatief."
+  cluster: "design_layout"
+  dimensie: "creëren"
+  omschrijving: "De leerlingen bewerken beeldmateriaal esthetisch en creatief."
+
+"CRS23":
+  code: "CRS23"
+  titel: "Controleren bestanden op bruikbaarheid, kwaliteit, kleu..."
+  cluster: "kwaliteit_context"
+  dimensie: "evalueren"
+  omschrijving: "De leerlingen controleren bestanden op bruikbaarheid, kwaliteit, kleurmodus, resolutie en bestandsformaat."
+
+"CRS24":
+  code: "CRS24"
+  titel: "Passen een evenwichtige opmaak toe in functie van het b..."
+  cluster: "design_layout"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen passen een evenwichtige opmaak toe in functie van het beoogde doel en de doelgroep."
+
+"CRS25":
+  code: "CRS25"
+  titel: "Selecteren content in functie van het beoogde doel en d..."
+  cluster: "design_layout"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen selecteren content in functie van het beoogde doel en de doelgroep."
+
+"CRS26":
+  code: "CRS26"
+  titel: "Integreren een bestaande huisstijl."
+  cluster: "design_layout"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen integreren een bestaande huisstijl."
+
+"CRS27":
+  code: "CRS27"
+  titel: "Passen de stappen toe om (onderdelen van) een crossmedi..."
+  cluster: "release_presentatie"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen passen de stappen toe om (onderdelen van) een crossmediale productie op te leveren."
+
+"CRS28":
+  code: "CRS28"
+  titel: "Updaten inhoudelijk, grafisch en technisch crossmediale..."
+  cluster: "kwaliteit_context"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen updaten inhoudelijk, grafisch en technisch crossmediale producties."
+
+"CRS29":
+  code: "CRS29"
+  titel: "Ontwerpen, creëren en presenteren een eigen crossmediaa..."
+  cluster: "design_layout"
+  dimensie: "creëren"
+  omschrijving: "De leerlingen ontwerpen, creëren en presenteren een eigen crossmediaal product."
+
+"GEC01":
+  code: "GEC01"
+  titel: "Werken in een teamverband met aandacht voor de organisa..."
+  cluster: "professionele_competenties"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen werken in een teamverband met aandacht voor de organisatiecultuur, communicatie en procedures."
+
+"GEC02":
+  code: "GEC02"
+  titel: "Handelen kwaliteitsbewust."
+  cluster: "kwaliteit_context"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen handelen kwaliteitsbewust."
+
+"GEC03":
+  code: "GEC03"
+  titel: "Handelen economisch en duurzaam."
+  cluster: "professionele_competenties"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen handelen economisch en duurzaam."
+
+"GEC04":
+  code: "GEC04"
+  titel: "Handelen veilig, ergonomisch en hygiënisch."
+  cluster: "professionele_competenties"
+  dimensie: "toepassen"
+  omschrijving: "De leerlingen handelen veilig, ergonomisch en hygiënisch."
+
+"SV01.01":
+  code: "SV01.01"
+  titel: "Doorlopen een onderzoekscyclus in samenhang met inhoude..."
+  cluster: "analyse_workflow"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen doorlopen een onderzoekscyclus in samenhang met inhouden van minstens 1 wetenschapdomein verbonden aan de studierichting."
+
+"SV04.06":
+  code: "SV04.06"
+  titel: "Analyseren kunstuitingen uit verschillende stromingen, ..."
+  cluster: "kwaliteit_context"
+  dimensie: "analyseren"
+  omschrijving: "De leerlingen analyseren kunstuitingen uit verschillende stromingen, periodes en westerse en niet-westerse samenlevingen."
+
+"SV04.07":
+  code: "SV04.07"
+  titel: "Reflecteren vanuit meerdere perspectieven over de betek..."
+  cluster: "kwaliteit_context"
+  dimensie: "evalueren"
+  omschrijving: "De leerlingen reflecteren vanuit meerdere perspectieven over de betekenis van kunst en kunstuitingen in diverse contexten."

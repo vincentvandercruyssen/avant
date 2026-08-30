@@ -18,22 +18,19 @@ Deze Hugo-site fungeert als intern werkdashboard en opdrachtgenerator voor leerk
 ## 📂 Structuur
 
 ```
-content/
-├── 2026-2027/
-│   ├── 5crm/
-│   │   ├── beeld/
-│   │   ├── grafische/
-│   │   ├── motion/
-│   │   └── web/
-│   └── 6crm/
-│       ├── beeld/
-│       ├── grafische/
-│       ├── motion/
-│       └── web/
-└── cursussen/
-    ├── after_effects.md
-    ├── blender.md
-    └── fotografie.md
+├── content/
+│   ├── 2026-2027/
+│   │   ├── 5crm/
+│   │   └── 6crm/
+│   ├── cursus/
+│   │   ├── after_effects.md
+│   │   ├── blender.md
+│   │   └── fotografie.md
+│   └── doelen/
+│       ├── _index.md          # Verzamelpagina doelstellingen
+│       └── crossmedia.md      # 53 Crossmedia leerplandoelen & evaluatieclusters
+└── data/
+    └── leerplandoelen.yaml    # Centrale dataset met alle doelstellingen, codes en clusters
 ```
 
 ### 📄 Opdrachten als Page Bundles
@@ -41,8 +38,8 @@ Opdrachten worden ingericht als Leaf Bundles (`content/2026-2027/{klas}/{vak}/{o
 
 ### 🎯 Evaluatieclusters & Leerplandoelen
 Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en automatisch gerenderd via het partial `opdracht-evaluatie.html` op basis van frontmatter-metadata:
-- `leerplandoelen:` (lijst met CRS-codes)
-- `clusters:` (boolean flags voor analyse_workflow, design_layout, multimediaproductie, release_presentatie, kwaliteit_context, professionele_competenties)
+- `leerplandoelen:` (lijst met doelcodes zoals `CRS01`, `SV01.01`, `13.01`, `16.04`, etc.)
+- `clusters:` (boolean flags voor `analyse_workflow`, `design_layout`, `multimediaproductie`, `release_presentatie`, `kwaliteit_context`, `professionele_competenties`)
 
 ---
 
