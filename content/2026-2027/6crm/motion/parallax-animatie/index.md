@@ -45,6 +45,10 @@ In deze opdracht combineer je geavanceerde **beeldmanipulatie**, **typografie** 
 
 Het **parallax-effect** ontstaat wanneer verschillende lagen met een verschillende snelheid ten opzichte van elkaar bewegen. Denk aan het kijken uit het raam van een rijdende trein: elementen vlakbij het spoor razen voorbij, terwijl heuvels of bergen in de verre achtergrond traag lijken voorbij te gaan. Door voorgrond, achtergrond en typografie op verschillende Z-afstanden (dieptes) in een 3D-ruimte te plaatsen en een camera te laten bewegen, wek je een realistische driedimensionale diepte op.
 
+![Parallax animatie](gifer-7ujF.gif)
+![Parallax bos](tenor-parallax-woods.gif)
+![Parallax landschap](gifer-3xaB.gif)
+
 ### Je concept
 
 Je ontwerpt en animeert een video van **8 seconden** in het verticale **4:5-formaat**. Je kiest uit één van de volgende drie concepten:
@@ -61,7 +65,7 @@ De compositie en animatie is opgebouwd uit drie lagen:
 * **Voorgrond:** Het personage of hoofdonderwerp, haarfijn en niet-destructief vrijgemaakt van zijn oorspronkelijke achtergrond.
 * **Typografie:** Eén krachtig kernwoord en een korte slagzin/citaat, geplaatst in de 3D-ruimte (bijvoorbeeld tussen voorgrond en achtergrond) en expressief geanimeerd.
 
-## Technische Specificaties
+## Technische specificaties
 
 | Instelling | Aanbevolen waarde | Toelichting |
 | :--- | :--- | :--- |
@@ -85,7 +89,7 @@ De compositie en animatie is opgebouwd uit drie lagen:
 In dit voorbeeld werken we met een vintage walkman als voorgrondobject en een mistig berglandschap als sfeervolle achtergrond.
 
 ![Voorgrond zoeken op Pexels](foto_voorgrond_zoeken-walkman.png)
-![Gratis download knop op Pexels](foto_voorgrond_zoeken-freedownload_knop.png?w=30%)
+![Gratis download knop op Pexels](foto_voorgrond_zoeken-freedownload_knop.png?w=40%)
 
 ![Originele voorgrondfoto](pexels-ds-stories-9227554.jpg?w=40%)
 [Pexels - Person holding cassette player](https://www.pexels.com/photo/a-person-holding-a-cassette-player-9227554/)
@@ -128,7 +132,7 @@ Open de gedownloade beelden via **Bestand → Openen** (sleep ze niet rechtstree
 
 * Voeg onderaan het Lagenpaneel een **Laagmasker** toe (wis **nooit** pixels met de gom of delete, dan kun je niet meer terug indien je een fout maakt). Door te werken met maskers kun je altijd herstellen waar nodig.
 
-![Laagmasker toevoegen](photoshop-object_maskeren-1.png)
+![Laagmasker toevoegen](photoshop-object_maskeren-1.png?w=30%)
 ![Resultaat met masker](photoshop-object_maskeren-2.png)
 
 #### Converteren naar Slimme laag
@@ -144,7 +148,7 @@ Zet de gemaskeerde laag om met **Filter → Omzetten voor Slimme Filter** (*Conv
 * Druk op `Ctrl + T` (*Vrije transformatie*) om positie, schaal en rotatie af te stemmen. Hernoem de laag naar `Voorgrond`.
 
 ![Voorgrond transformeren](photoshop-voorgrond_transformeren.png)
-![Lagen hernoemen](photoshop-lagen_hernoemen.png)
+![Lagen hernoemen](photoshop-lagen_hernoemen.png?w=40%)
 
 * Plaats ook de achtergrondfoto in het document en noem deze laag `Achtergrond`.
 
@@ -217,7 +221,7 @@ Schakel voor alle lagen (voorgrond, achtergrond, tekstlagen) de **3D Layer switc
   * **Track XY / Pan Tool:** Verschuift de camera horizontaal en verticaal.
   * **Dolly Tool:** Beweegt de camera naar voren of achteren.
 
-![Cameragereedschappen](ae-camera_tools.png)
+![Cameragereedschappen](ae-camera_tools.png?w=20%)
 
 * Zet op seconde **0:00** een keyframe op **Position** en **Point of Interest**.
 

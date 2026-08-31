@@ -97,7 +97,7 @@
 
 {{/* 9. HTML Renderen */}}
 {{- if $image -}}
-  {{- if eq $image.MediaType.SubType "svg" -}}
+  {{- if or (eq $image.MediaType.SubType "svg") (eq $image.MediaType.SubType "gif") -}}
     <img 
       src="{{ $image.RelPermalink }}" 
       alt="{{ .Text }}" 

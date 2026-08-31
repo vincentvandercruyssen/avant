@@ -101,6 +101,11 @@ Alle Markdown-afbeeldingen worden via een **Image Render Hook** ([`render-image.
   {{< /grid >}}
   ```
 
+### 📸 Aanbevolen Stockplatformen (Bronmateriaal)
+Voor opdrachten rond beeldbewerking, compositing en motion design gebruiken leerlingen kwalitatief, rechtenvrij beeldmateriaal via:
+- [Pexels](https://www.pexels.com/): Gratis rechtenvrije foto's en video's in hoge resolutie.
+- [Unsplash](https://unsplash.com/): Uitgebreide bibliotheek met creatieve en artistieke stockfoto's.
+
 ### 🎯 Automatische Evaluatieclusters & Succescriteria (Eigen Taal)
 Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.yaml`. De clusters worden **volledig automatisch** afgeleid en gerangschikt in de volgorde van het officiële evaluatiesjabloon:
 - `leerplandoelen:` ondersteunt zowel losse codes als succescriteria in eigen woorden:
@@ -115,6 +120,7 @@ Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.y
 - Het onderdeel **Puntenverdeling** bevat het evaluatieniveau-kader (Niveau 0–3), het vaklabel en de succescriteriatabel en is direct gelinkt in de Table of Contents (TOC).
 
 ### 🎨 CSS & Styling Filosofie
+- **Typografie & Fonts:** De site gebruikt de lettertypefamilie **Aptos** en **Aptos Mono** voor optimale schermleesbaarheid, lokaal geserveerd vanuit `static/fonts/` ([Microsoft Aptos Fonts](https://www.microsoft.com/en-us/download/details.aspx?id=106087)).
 - **Semantische HTML & CSS Structuur:** We vermijden overbodige utility-classes of BEM-klassen in de HTML (bv. geen `.sc-main-header`).
 - **Structurele Selectors:** Styling gebeurt bij voorkeur via de natuurlijke logica van CSS: elementselectors, structurele pseudo-classes (`:first-child`, `:nth-child()`, `:has()`), en attribuutselectors.
 

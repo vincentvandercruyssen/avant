@@ -112,12 +112,11 @@
   src: url("../fonts/Aptos-Mono-Bold-Italic.ttf");
 }
 
-
 :root {
   /* Afstanden */
   --sidebar-width: 20rem;
-  --margin-top: 1.0em;
-  --margin-bottom: 0.5em;
+  --margin-top: 1em;
+  --margin-bottom: 1em;
 
   /* Basis kleuren */
   --anchor: #19f;
@@ -236,23 +235,20 @@ hr,
 details,
 .highlight,
 pre {
+  margin-top: var(--margin-top);
   margin-bottom: var(--margin-bottom);
 }
 
-li {
-  margin-bottom: calc(var(--margin-bottom) * 2);
-}
-
+h1,
 h2,
-h3 {
-  margin-top: var(--margin-top);
+h3,
+h4,
+h5 {
+  margin-bottom: calc(var(--margin-bottom) / 2);
 }
 
-h1+h2 {
-  margin-top: 0;
-}
-
-h2+h3 {
+h1,
+p img {
   margin-top: 0;
 }
 
@@ -344,7 +340,6 @@ p:has(> :is(img, a:has(img)):nth-of-type(2)) {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
-  margin-bottom: calc(var(--margin-bottom) * 2);
 }
 
 /* Zorgen dat de 2 afbeeldingen in 2 gelijke kolommen komen, instellingen img */
@@ -357,7 +352,8 @@ p:has(> :is(img, a:has(img)):nth-of-type(2)) > :is(img, a) {
 }
 
 /* Onevenredige verdeling als een afbeelding een custom breedte heeft (bv. ?w=30%, #third) */
-p:has(> :is(img, a:has(img)):nth-of-type(2)) > :is(img[style*="width"], a:has(img[style*="width"])) {
+p:has(> :is(img, a:has(img)):nth-of-type(2))
+  > :is(img[style*="width"], a:has(img[style*="width"])) {
   flex: 0 0 auto;
 }
 
@@ -502,20 +498,20 @@ header nav#TableOfContents {
 
 /* reset h3 */
 main h2,
-header nav#TableOfContents>ul>li {
+header nav#TableOfContents > ul > li {
   counter-reset: h3;
 }
 
 /* prefix voor h2 */
 main h2::before,
-header nav#TableOfContents>ul>li>a::before {
+header nav#TableOfContents > ul > li > a::before {
   counter-increment: h2;
   content: counter(h2) ". ";
 }
 
 /* prefix voor h3 */
 main h3::before,
-header nav#TableOfContents>ul>li>ul>li>a::before {
+header nav#TableOfContents > ul > li > ul > li > a::before {
   counter-increment: h3;
   content: counter(h2) "." counter(h3) " ";
 }
@@ -588,6 +584,10 @@ span {
   padding-right: 0.5ch;
   margin-right: 0.2ch;
   border-right: 1px solid var(--text);
+}
+
+.niveaus-table tbody td {
+  vertical-align: middle;
 }
 
 .niveaus-table tbody td:nth-child(1) {
