@@ -399,6 +399,11 @@ summary {
   user-select: none;
 }
 
+blockquote {
+  padding-left: 2rem;
+  border-left: 1px solid color-mix(in srgb, var(--text) 50%, transparent);
+}
+
 header,
 main {
   padding: 0;
