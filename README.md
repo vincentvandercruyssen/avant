@@ -31,6 +31,16 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 4. **April–Mei:** `Naar klant`
 * **Vrije opdrachten:** `thema: "Vrij"` of leeg laten (`thema: ""`)
 
+### 🤝 Klasregels
+
+- We tonen respect en begrip voor ieders eigenheid
+- We tonen geen grensoverschrijdend gedrag, fysieke of verbale agressie
+- We dragen zorg voor het schoolgebouw en de omgeving
+- We zijn steeds tijdig aanwezig op de afgesproken plaats
+- We hebben steeds al ons materiaal bij
+- We nemen een positieve werkhouding aan in de klas
+- We gebruiken altijd en tegen iedereen gepaste taal
+
 ---
 
 ## 📂 Structuur
@@ -118,6 +128,12 @@ Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.y
     - "CRS21" # losse code zonder extra velden
   ```
 - Het onderdeel **Puntenverdeling** bevat het evaluatieniveau-kader (Niveau 0–3), het vaklabel en de succescriteriatabel en is direct gelinkt in de Table of Contents (TOC).
+
+### 📑 Dynamische Table of Contents (TOC) & Scroll Spy
+- **Diepte H2 tot H4:** Hugo genereert de inhoudsopgave van niveau 2 t.e.m. 4 (`[markup.tableOfContents] startLevel = 2, endLevel = 4`).
+- **Inklapbare H4-subniveau's:** H4-onderdelen zijn standaard ingeklapt in de zijbalk en worden enkel zichtbaar wanneer het bijhorende H3-hoofdonderdeel actief is of door het scherm passeert.
+- **Scroll Spy & Synchronisatie:** Tijdens het scrollen markeert vanilla JavaScript (`main.js`) automatisch de huidige actieve sectie (`.is-active`, `.has-active`) en scrollt het TOC-menu mee indien nodig.
+- **Automatische hiërarchische nummering:** Zowel in de broodtekst als in de TOC worden koppen consistent genummerd via CSS counters (`1. `, `1.1 `, `1.1.1 `).
 
 ### 🎨 CSS & Styling Filosofie
 - **Typografie & Fonts:** De site gebruikt de lettertypefamilie **Aptos** en **Aptos Mono** voor optimale schermleesbaarheid, lokaal geserveerd vanuit `static/fonts/` ([Microsoft Aptos Fonts](https://www.microsoft.com/en-us/download/details.aspx?id=106087)).
