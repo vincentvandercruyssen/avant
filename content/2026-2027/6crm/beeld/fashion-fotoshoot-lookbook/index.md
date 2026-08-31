@@ -12,15 +12,14 @@ software:
   - "InDesign"
   - "Capture One"
 leerplandoelen:
-  - "CRS02"
-  - "CRS06"
-clusters:
-  analyse_workflow: true
-  design_layout: true
-  multimediaproductie: true
-  release_presentatie: false
-  kwaliteit_context: true
-  professionele_competenties: false
+  - code: "CRS02"
+    criterium: "Zelfstandig een passend belichtingsplan, camera-instellingen en tethered shooting opstellen in functie van het fashion concept."
+  - code: "CRS06"
+    criterium: "Professioneel retoucheren in Photoshop met behoud van huidtextuur, high-end frequency separation en doordachte color grading."
+  - code: "CRS21"
+    criterium: "Typografie en editorial grid in InDesign strak en evenwichtig opbouwen voor het 16-pagina lookbook."
+  - code: "CRS08"
+    criterium: "Kleurprofielen (CMYK/RGB), resolutie (300 ppi) en exportinstellingen technisch controleren voor drukwerk en digitaal formaat."
 draft: false
 ---
 

@@ -37,7 +37,7 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 
 ```
 ├── archetypes/
-│   └── opdracht/index.md      # Archetype met alle cluster-flags en periodes/thema's
+│   └── opdracht/index.md      # Archetype met periodes/thema's en succescriteria-indeling
 ├── content/
 │   ├── 2026-2027/
 │   │   ├── 5crm/
@@ -57,8 +57,9 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   └── doelen/
 │       ├── _index.md          # Verzamelpagina doelstellingen
 │       └── crossmedia.md      # 53 Crossmedia leerplandoelen & evaluatieclusters
-└── data/
-    └── leerplandoelen.yaml    # Centrale dataset met alle doelstellingen, codes en clusters
+├── data/
+│   ├── clusters.yaml          # 6 Evaluatieclusters in volgorde van CRM sjabloon opdracht.docx
+│   └── leerplandoelen.yaml    # Centrale dataset met alle 53 doelstellingen, codes en clusters
 ```
 
 ### 📄 Opdrachten als Page Bundles
@@ -67,10 +68,22 @@ Opdrachten worden ingericht als Leaf Bundles (`content/2026-2027/{klas}/{vak}/{o
 - **Titel- & Themahiërarchie:** De hoofding toont `Klas - Vaknaam` (met verkorte vaknaam in de sidebar header) en daaronder `Thema: Opdrachtnaam` (of enkel `Opdrachtnaam` indien `thema: ""` leeg is).
 - **Homepagina:** Opdrachten worden gerangschikt per schooljaar, vak en klas met weergave van het thema.
 
-### 🎯 Evaluatieclusters & Leerplandoelen
-Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en automatisch gerenderd via het partial `opdracht-evaluatie.html` op basis van frontmatter-metadata:
-- `leerplandoelen:` (lijst met doelcodes zoals `CRS01`, `SV01.01`, `13.01`, `16.04`, etc.)
-- `clusters:` (boolean flags voor `analyse_workflow`, `design_layout`, `multimediaproductie`, `release_presentatie`, `kwaliteit_context`, `professionele_competenties`)
+### 🎯 Automatische Evaluatieclusters & Succescriteria (Eigen Taal)
+Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.yaml`. De clusters worden **volledig automatisch** afgeleid en gerangschikt in de volgorde van het officiële evaluatiesjabloon:
+- `leerplandoelen:` ondersteunt zowel losse codes als succescriteria in eigen woorden:
+  ```yaml
+  leerplandoelen:
+    - code: "CRS02"
+      criterium: "Zelfstandig een passend belichtingsplan en camera-instellingen selecteren."
+    - code: "CRS06"
+      criterium: "Professioneel retoucheren in Photoshop met behoud van textuur."
+    - "CRS21" # losse code zonder extra velden
+  ```
+- Het onderdeel **Puntenverdeling** bevat het evaluatieniveau-kader (Niveau 0–3), het vaklabel en de succescriteriatabel en is direct gelinkt in de Table of Contents (TOC).
+
+### 🎨 CSS & Styling Filosofie
+- **Semantische HTML & CSS Structuur:** We vermijden overbodige utility-classes of BEM-klassen in de HTML (bv. geen `.sc-main-header`).
+- **Structurele Selectors:** Styling gebeurt bij voorkeur via de natuurlijke logica van CSS: elementselectors, structurele pseudo-classes (`:first-child`, `:nth-child()`, `:has()`), en attribuutselectors.
 
 ---
 

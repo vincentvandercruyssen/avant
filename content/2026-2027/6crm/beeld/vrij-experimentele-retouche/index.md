@@ -14,13 +14,6 @@ leerplandoelen:
   - "CRS10"
   - "CRS22"
   - "16.04"
-clusters:
-  analyse_workflow: false
-  design_layout: true
-  multimediaproductie: true
-  release_presentatie: false
-  kwaliteit_context: true
-  professionele_competenties: false
 draft: false
 ---
 

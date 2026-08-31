@@ -14,13 +14,6 @@ leerplandoelen:
   - "CRS21"
   - "CRS24"
   - "16.01"
-clusters:
-  analyse_workflow: false
-  design_layout: true
-  multimediaproductie: true
-  release_presentatie: false
-  kwaliteit_context: true
-  professionele_competenties: false
 draft: false
 ---
 

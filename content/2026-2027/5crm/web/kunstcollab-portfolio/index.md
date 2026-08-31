@@ -14,13 +14,6 @@ software:
 leerplandoelen:
   - "CRS18"
   - "05.02"
-clusters:
-  analyse_workflow: true
-  design_layout: false
-  multimediaproductie: true
-  release_presentatie: false
-  kwaliteit_context: true
-  professionele_competenties: false
 draft: false
 ---
 

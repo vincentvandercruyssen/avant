@@ -1,0 +1,35 @@
+- id: "analyse_workflow"
+  titel: "Analyse & workflow"
+  ondertitel: "De start: van opdracht naar plan"
+  anchor: "analyse--workflow"
+  volgorde: 1
+
+- id: "design_layout"
+  titel: "Design & lay-out"
+  ondertitel: "Het creatieve oog: vormgeving en concept"
+  anchor: "design--lay-out"
+  volgorde: 2
+
+- id: "multimediaproductie"
+  titel: "Multimediaproductie"
+  ondertitel: "De maker: technische realisatie en content"
+  anchor: "multimediaproductie"
+  volgorde: 3
+
+- id: "release_presentatie"
+  titel: "Release & presentatie"
+  ondertitel: "De output: oplevering en duiding"
+  anchor: "release--presentatie"
+  volgorde: 4
+
+- id: "kwaliteit_context"
+  titel: "Kwaliteit & context"
+  ondertitel: "De expert: technische controle en reflectie"
+  anchor: "kwaliteit--context"
+  volgorde: 5
+
+- id: "professionele_competenties"
+  titel: "Professionele competenties"
+  ondertitel: "De professional: teamwork en beheer"
+  anchor: "professionele-competenties"
+  volgorde: 6

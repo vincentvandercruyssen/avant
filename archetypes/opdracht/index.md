@@ -8,14 +8,12 @@ leerkracht: ""
 periode: "" # 5CRM: September | Oktober | November-Januari | Januari-Mei --- 6CRM: September | Oktober-December | Januari-Maart | April-Mei
 thema: "" # 5CRM: Introductie | Kinetische kunst | Zwaartekracht (Poëzieweek) | Kunstcollab --- 6CRM: Herhaling | Event | Fashion | Naar klant --- Leeg laten voor vrije opdrachten zonder thema
 software: []
-leerplandoelen: []
-clusters:
-  analyse_workflow: false
-  design_layout: false
-  multimediaproductie: false
-  release_presentatie: false
-  kwaliteit_context: false
-  professionele_competenties: false
+leerplandoelen:
+  # Voorbeeld met succescriterium in eigen woorden:
+  # - code: "CRS02"
+  #   criterium: "Zelfstandig een passend plan en techniek selecteren."
+  # Of eenvoudige code:
+  # - "CRS01"
 draft: false
 ---
 

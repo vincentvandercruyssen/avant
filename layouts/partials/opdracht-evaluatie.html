@@ -1,48 +1,196 @@
-{{ $hasDoelen := and .Params.leerplandoelen (gt (len .Params.leerplandoelen) 0) }}
-{{ $activeClusters := slice }}
-{{ if .Params.clusters }}
-  {{ range $k, $v := .Params.clusters }}
-    {{ if $v }}
-      {{ $activeClusters = $activeClusters | append $k }}
+{{ $rawDoelen := .Params.leerplandoelen | default .Params.evaluatie | default .Params.doelen }}
+{{ $items := slice }}
+
+{{ with $rawDoelen }}
+  {{ range . }}
+    {{ $code := "" }}
+    {{ $criterium := "" }}
+
+    {{ if reflect.IsMap . }}
+      {{ $code = .code | default .doel | default .id | default "" }}
+      {{ $criterium = .criterium | default .succescriterium | default .omschrijving | default .tekst | default .titel | default "" }}
+    {{ else }}
+      {{ $code = print . }}
+    {{ end }}
+
+    {{ $code = trim $code " " }}
+    {{ if ne $code "" }}
+      {{ $doel := index site.Data.leerplandoelen $code }}
+      {{ $clusterId := "overig" }}
+      {{ if $doel }}
+        {{ $clusterId = $doel.cluster | default "overig" }}
+      {{ end }}
+
+      {{ $item := dict "code" $code "criterium" $criterium "doel" $doel "cluster" $clusterId }}
+      {{ $items = $items | append $item }}
     {{ end }}
   {{ end }}
 {{ end }}
-{{ $hasClusters := gt (len $activeClusters) 0 }}
 
-{{ if or $hasDoelen $hasClusters }}
-  <section class="opdracht-evaluatie">
-    {{ if $hasClusters }}
-      <h2>Evaluatieclusters</h2>
-      <ul>
-        {{ $clusterLabels := dict "analyse_workflow" "Analyse & Workflow" "design_layout" "Design & Lay-out" "multimediaproductie" "Multimediaproductie" "release_presentatie" "Release & Presentatie" "kwaliteit_context" "Kwaliteit & Context" "professionele_competenties" "Professionele competenties" }}
-        {{ range $activeClusters }}
-          <li><strong>{{ index $clusterLabels . | default . }}</strong></li>
-        {{ end }}
-      </ul>
+{{ if gt (len $items) 0 }}
+{{ $vakKey := .Params.vak | default "" | lower }}
+{{ if not $vakKey }}
+  {{ $segs := split (trim .RelPermalink "/") "/" }}
+  {{ range $segs }}
+    {{ $segLower := . | lower }}
+    {{ if index site.Params.sectionNames $segLower }}
+      {{ $vakKey = $segLower }}
     {{ end }}
+  {{ end }}
+{{ end }}
+{{ $vakVoluit := index site.Params.sectionNames $vakKey | default ($vakKey | title) }}
 
-    {{ if $hasDoelen }}
-      <h2>Leerplandoelen</h2>
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 15%;">Code</th>
-            <th style="width: 25%;">Doel</th>
-            <th>Omschrijving</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range .Params.leerplandoelen }}
-            {{ $code := (print .) }}
-            {{ $doel := index site.Data.leerplandoelen $code }}
-            <tr>
-              <td><code>{{ $code }}</code></td>
-              <td>{{ if $doel }}<strong>{{ $doel.titel }}</strong>{{ else }}<strong>{{ $code }}</strong>{{ end }}</td>
-              <td>{{ if $doel }}{{ $doel.omschrijving }}{{ else }}-{{ end }}</td>
-            </tr>
+<h2 id="puntenverdeling">Puntenverdeling</h2>
+
+<p class="leerplandoelen-header">Leerplandoelen 3e graad Dubbele Finaliteit – Crossmedia – POV - VAK: {{ $vakVoluit }}</p>
+
+<table class="niveaus-table">
+  <thead>
+    <tr>
+      <th colspan="3">
+        <span>Behaald niveau</span> Een gemiddelde van 1,5 is geslaagd
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Verdiepend beheerst</td>
+      <td>Niveau 3</td>
+      <td>Leerling werkt zelfstandig, neemt eigen initiatief, toont aan het leerproces in eigen handen te nemen</td>
+    </tr>
+    <tr>
+      <td>Voldoende beheerst</td>
+      <td>Niveau 2</td>
+      <td>Leerling werkt doorgaans zelfstandig maar heeft nog begeleiding/bijsturing nodig. Leerling kan gericht om hulp vragen.</td>
+    </tr>
+    <tr>
+      <td>In ontwikkeling</td>
+      <td>Niveau 1</td>
+      <td>Leerling heeft nog geregeld begeleiding/hulp nodig. Leerling kan moeilijk een hulpvraag formuleren.</td>
+    </tr>
+    <tr>
+      <td>Niet beheerst</td>
+      <td>Niveau 0</td>
+      <td>Leerling behaalt met begeleiding/hulp nog onvoldoende resultaat. De leerling kan moeilijk tot geen hulpvragen formuleren.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="succescriteria-table">
+  <thead>
+    <tr>
+      <th colspan="2">
+        <strong>SUCCESCRITERIA</strong> wat van mij verwacht wordt
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ $handledClusterIds := slice }}
+
+    {{/* Loop door alle 6 clusters (worden altijd getoond) */}}
+    {{ range site.Data.clusters }}
+      {{ $currentCluster := . }}
+      {{ $handledClusterIds = $handledClusterIds | append $currentCluster.id }}
+      {{ $clusterItems := slice }}
+      {{ $clusterDoelen := slice }}
+      {{ $seenCodes := slice }}
+
+      {{ range $items }}
+        {{ if eq .cluster $currentCluster.id }}
+          {{ $clusterItems = $clusterItems | append . }}
+          {{ if not (in $seenCodes .code) }}
+            {{ $seenCodes = $seenCodes | append .code }}
+            {{ if .doel }}
+              {{ $clusterDoelen = $clusterDoelen | append .doel }}
+            {{ else }}
+              {{ $clusterDoelen = $clusterDoelen | append (dict "code" .code "omschrijving" "") }}
+            {{ end }}
           {{ end }}
-        </tbody>
-      </table>
+        {{ end }}
+      {{ end }}
+
+      <tr class="sc-cluster-header">
+        <td colspan="2">
+          <strong>{{ $currentCluster.titel }}</strong>{{ with $currentCluster.ondertitel }}<br>“{{ . }}”{{ end }}
+        </td>
+      </tr>
+
+      {{ if gt (len $clusterItems) 0 }}
+        {{ range $clusterItems }}
+          {{ $hasCustomText := and .criterium (ne (trim .criterium " ") "") }}
+          <tr class="sc-criterium-row">
+            <td class="sc-criterium-text">
+              {{ if $hasCustomText }}
+                {{ .criterium }} ({{ .code }})
+              {{ else if .doel }}
+                {{ .doel.omschrijving | default .doel.titel }} ({{ .code }})
+              {{ else }}
+                {{ .code }}
+              {{ end }}
+            </td>
+            <td class="sc-score-cell"></td>
+          </tr>
+        {{ end }}
+
+        {{ if gt (len $clusterDoelen) 0 }}
+          <tr class="sc-official-doelen-row">
+            <td colspan="2" class="sc-official-doelen">
+              {{ range $clusterDoelen }}
+                <div>{{ .code }} {{ .omschrijving }}{{ with .dimensie }} ({{ . }}){{ end }}</div>
+              {{ end }}
+            </td>
+          </tr>
+        {{ end }}
+      {{ end }}
     {{ end }}
-  </section>
+
+    {{/* Eventuele onbekende doelen */}}
+    {{ $otherItems := slice }}
+    {{ $otherDoelen := slice }}
+    {{ $seenOtherCodes := slice }}
+    {{ range $items }}
+      {{ if not (in $handledClusterIds .cluster) }}
+        {{ $otherItems = $otherItems | append . }}
+        {{ if not (in $seenOtherCodes .code) }}
+          {{ $seenOtherCodes = $seenOtherCodes | append .code }}
+          {{ if .doel }}
+            {{ $otherDoelen = $otherDoelen | append .doel }}
+          {{ else }}
+            {{ $otherDoelen = $otherDoelen | append (dict "code" .code "omschrijving" "") }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ if gt (len $otherItems) 0 }}
+      <tr class="sc-cluster-header">
+        <td colspan="2"><strong>Overige doelstellingen</strong></td>
+      </tr>
+      {{ range $otherItems }}
+        {{ $hasCustomText := and .criterium (ne (trim .criterium " ") "") }}
+        <tr class="sc-criterium-row">
+          <td class="sc-criterium-text">
+            {{ if $hasCustomText }}
+              {{ .criterium }} ({{ .code }})
+            {{ else if .doel }}
+              {{ .doel.omschrijving | default .doel.titel }} ({{ .code }})
+            {{ else }}
+              {{ .code }}
+            {{ end }}
+          </td>
+          <td class="sc-score-cell"></td>
+        </tr>
+      {{ end }}
+      {{ if gt (len $otherDoelen) 0 }}
+        <tr class="sc-official-doelen-row">
+          <td colspan="2" class="sc-official-doelen">
+            {{ range $otherDoelen }}
+              <div>{{ .code }} {{ .omschrijving }}{{ with .dimensie }} ({{ . }}){{ end }}</div>
+            {{ end }}
+          </td>
+        </tr>
+      {{ end }}
+    {{ end }}
+  </tbody>
+</table>
 {{ end }}

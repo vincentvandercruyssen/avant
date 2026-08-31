@@ -13,5 +13,12 @@
       <span class="opdrachtnaam">{{ $opdrachtTitle }}</span>
     {{ end }}
   </h1>
-  {{ .TableOfContents }}
+  {{ $toc := .TableOfContents }}
+  {{ if and (or .Params.leerplandoelen .Params.evaluatie .Params.doelen) (ne $toc "") }}
+    {{ $toc = replace $toc "</ul>\n</nav>" "  <li><a href=\"#puntenverdeling\">Puntenverdeling</a></li>\n  </ul>\n</nav>" }}
+    {{ $toc = replace $toc "</ul></nav>" "<li><a href=\"#puntenverdeling\">Puntenverdeling</a></li></ul></nav>" }}
+    {{ $toc | safeHTML }}
+  {{ else }}
+    {{ $toc }}
+  {{ end }}
 </div>

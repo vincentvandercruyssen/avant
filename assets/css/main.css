@@ -341,8 +341,8 @@ object {
 
 table {
   border-spacing: 0;
-  width: calc(100% + 1rem);
-  margin-left: -0.5rem;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 table th {
@@ -378,7 +378,8 @@ table tr td p {
 }
 
 table tr:last-child td {
-  padding-bottom: 0;
+  /* Niet zeker van waar deze kwam, 2026-08-31 */
+  /* padding-bottom: 0; */
 }
 
 table img,
@@ -503,6 +504,105 @@ main ol li:nth-child(n + 10)::before {
 
 span {
   color: var(--text);
+}
+
+.leerplandoelen-header {
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--text) 70%, transparent);
+  margin-bottom: 1em;
+}
+
+/* Niveaus tabel */
+.niveaus-table {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.niveaus-table th,
+.niveaus-table td {
+  border: 1px solid color-mix(in srgb, var(--text) 50%, transparent);
+  padding: 0.5rem;
+}
+
+.niveaus-table thead th {
+  font-weight: 400;
+}
+
+.niveaus-table thead th span {
+  padding-right: 0.5ch;
+  margin-right: 0.2ch;
+  border-right: 1px solid var(--text);
+}
+
+.niveaus-table tbody td:nth-child(1) {
+  width: 20%;
+}
+
+.niveaus-table tbody td:nth-child(2) {
+  width: 12%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.niveaus-table tbody tr:nth-child(1) td:nth-child(2) {
+  background-color: color-mix(in srgb, #507ad0 20%, var(--fgcolor));
+}
+
+.niveaus-table tbody tr:nth-child(2) td:nth-child(2) {
+  background-color: color-mix(in srgb, #7abd50 20%, var(--fgcolor));
+}
+
+.niveaus-table tbody tr:nth-child(3) td:nth-child(2) {
+  background-color: color-mix(in srgb, #ffd73c 25%, var(--fgcolor));
+}
+
+.niveaus-table tbody tr:nth-child(4) td:nth-child(2) {
+  background-color: color-mix(in srgb, #ff2b30 20%, var(--fgcolor));
+}
+
+/* Succescriteria tabel */
+.succescriteria-table {
+  margin-top: 2rem;
+}
+
+.succescriteria-table th,
+.succescriteria-table td {
+  border: 1px solid color-mix(in srgb, var(--text) 50%, transparent);
+  padding: 0.5rem;
+}
+
+.succescriteria-table thead th {
+  background-color: color-mix(in srgb, var(--text) 25%, var(--bgcolor));
+  text-align: center;
+  font-weight: 400;
+}
+
+.succescriteria-table thead th strong {
+  padding-right: 0.5ch;
+  margin-right: 0.2ch;
+  border-right: 1px solid var(--text);
+  font-weight: 800;
+}
+
+.succescriteria-table .sc-cluster-header td {
+  background-color: color-mix(in srgb, var(--text) 5%, var(--bgcolor));
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.succescriteria-table .sc-cluster-header strong {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.succescriteria-table .sc-official-doelen {
+  font-size: 0.6rem;
+  color: color-mix(in srgb, var(--text) 50%, transparent);
+}
+
+.succescriteria-table .sc-score-cell {
+  width: 10%;
 }
 
 footer {

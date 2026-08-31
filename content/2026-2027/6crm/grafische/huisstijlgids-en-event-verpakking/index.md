@@ -14,14 +14,7 @@ software:
 leerplandoelen:
   - "CRS24"
   - "CRS26"
-  - "SV06.72"
-clusters:
-  analyse_workflow: true
-  design_layout: true
-  multimediaproductie: true
-  release_presentatie: false
-  kwaliteit_context: true
-  professionele_competenties: false
+  - "GEC02"
 draft: false
 ---
 

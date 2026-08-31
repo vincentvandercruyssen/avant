@@ -11,15 +11,10 @@ software:
   - "Photoshop"
   - "Lightroom"
 leerplandoelen:
-  - "CRS02"
-  - "CRS06"
-clusters:
-  analyse_workflow: false
-  design_layout: true
-  multimediaproductie: true
-  release_presentatie: false
-  kwaliteit_context: false
-  professionele_competenties: false
+  - code: "CRS02"
+    criterium: "Doelgericht de juiste studioflitsers, lichtvormers en camera-instellingen selecteren voor een dramatisch portret."
+  - code: "CRS06"
+    criterium: "Non-destructieve RAW-ontwikkeling in Lightroom en retouche in Photoshop nauwkeurig uitvoeren."
 draft: false
 ---
 
