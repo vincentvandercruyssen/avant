@@ -1,0 +1,5 @@
+{{- $cols := .Get "cols" | default (.Get 0) | default "2" -}}
+{{- $gap := .Get "gap" | default "1rem" -}}
+<div class="content-grid" style="--grid-cols: {{ $cols }}; --grid-gap: {{ $gap }};">
+  {{ .Inner | markdownify }}
+</div>

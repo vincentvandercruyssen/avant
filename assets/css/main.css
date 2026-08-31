@@ -339,10 +339,60 @@ object {
   height: auto;
 }
 
+/* Automatische kolommen wanneer 2 of meer afbeeldingen in één alinea staan, instellingen p */
+p:has(> :is(img, a:has(img)):nth-of-type(2)) {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: calc(var(--margin-bottom) * 2);
+}
+
+/* Zorgen dat de 2 afbeeldingen in 2 gelijke kolommen komen, instellingen img */
+p:has(> :is(img, a:has(img)):nth-of-type(2)) > :is(img, a) {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+/* Onevenredige verdeling als een afbeelding een custom breedte heeft (bv. ?w=30%, #third) */
+p:has(> :is(img, a:has(img)):nth-of-type(2)) > :is(img[style*="width"], a:has(img[style*="width"])) {
+  flex: 0 0 auto;
+}
+
+/* Grid shortcode voor meer flexibiliteit */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols, 2), 1fr);
+  gap: var(--grid-gap, 1rem);
+  align-items: start;
+  margin-bottom: var(--margin-bottom);
+}
+
+.content-grid > * {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  p:has(> :is(img, a:has(img)):nth-of-type(2)) {
+    flex-direction: column;
+    gap: var(--margin-bottom);
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 table {
   border-spacing: 0;
   border-collapse: collapse;
   width: 100%;
+}
+
+table thead:not(:has(th:not(:empty))) {
+  display: none;
 }
 
 table th {
@@ -366,6 +416,7 @@ table td {
   padding-bottom: 1rem;
   padding-left: 0.5rem;
   height: 100%;
+  vertical-align: top;
   /* word-break: break-word; */
 }
 

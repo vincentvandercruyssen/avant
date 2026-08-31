@@ -85,12 +85,14 @@ De compositie en animatie is opgebouwd uit drie lagen:
 In dit voorbeeld werken we met een vintage walkman als voorgrondobject en een mistig berglandschap als sfeervolle achtergrond.
 
 ![Voorgrond zoeken op Pexels](foto_voorgrond_zoeken-walkman.png)
-![Gratis download knop op Pexels](foto_voorgrond_zoeken-freedownload_knop.png)
-![Originele voorgrondfoto](pexels-ds-stories-9227554.jpg)
+![Gratis download knop op Pexels](foto_voorgrond_zoeken-freedownload_knop.png?w=30%)
+
+![Originele voorgrondfoto](pexels-ds-stories-9227554.jpg?w=40%)
 [Pexels - Person holding cassette player](https://www.pexels.com/photo/a-person-holding-a-cassette-player-9227554/)
 
 ![Achtergrond zoeken op Pexels](foto_achtergrond_zoeken-berglandschap.png)
 ![Originele achtergrondfoto](pexels-alohaphotostudio-10471894.jpg)
+
 [Pexels - Foggy mountains](https://www.pexels.com/photo/foggy-mountains-10471894/)
 
 ### Mappenstructuur
@@ -132,7 +134,7 @@ Open de gedownloade beelden via **Bestand → Openen** (sleep ze niet rechtstree
 #### Converteren naar Slimme laag
 Zet de gemaskeerde laag om met **Filter → Omzetten voor Slimme Filter** (*Convert for Smart Filters*). Hierdoor kun je de laag later onbeperkt schalen en transformeren zonder kwaliteitsverlies.
 
-![Omzetten naar slim object](photoshop-convertern_slimmelaag.png)
+![Omzetten naar slim object](photoshop-convertern_slimmelaag.png?w=50%)
 
 #### Samenvoegen in document
 * Sleep de slimme laag naar je hoofdontwerpdocument (`VoornaamA_Parallax-Ontwerp.psd`).
@@ -152,7 +154,7 @@ Zet de gemaskeerde laag om met **Filter → Omzetten voor Slimme Filter** (*Conv
 #### Kleurcorrectie (compositing)
 Twee afzonderlijke foto's sluiten zelden direct op elkaar aan qua belichting, contrast, kleurtemperatuur, scherpte enzomeer. Gebruik **Aanpassingslagen** (*Kleurbalans*, *Curven*, *Helderheid/Contrast*) om voor- en achtergrond naadloos op elkaar af te stemmen.
 
-![Aanpassingslagen toevoegen](photoshop-aanpassingslagen.png)
+![Aanpassingslagen toevoegen](photoshop-aanpassingslagen.png?w=30%)
 
 *Vergelijk hieronder het beeld voor en na bewerking:*
 
@@ -174,18 +176,18 @@ Plaats je tekst op aparte lagen. Experimenteer met fontkeuze, corpsgrootte, trac
 #### PSD importeren als Compositie
 * Start After Effects en sleep je Photoshop-bestand naar het **Project-paneel** (of kies **File → Import → File...**).
 
-![Bestand importeren in After Effects](ae-import-1.png)
+![Bestand importeren in After Effects](ae-import-1.png?w=50%)
 
 * **Cruciaal:** Kies bij *Import Kind* voor **Composition - Retain Layer Sizes** en selecteer **Editable Layer Styles**. Hierdoor behoudt elke laag zijn eigen begrenzingskader en worden alle toekomstige aanpassingen in Photoshop automatisch bijgewerkt in After Effects!
 
-![Importinstellingen Composition Retain Layer Sizes](ae-import_comp_layersizes.png)
+![Importinstellingen Composition Retain Layer Sizes](ae-import_comp_layersizes.png?w=50%)
 
 Sla het project op als `VoornaamA_Parallax-Animatie.aep`.
 
 #### Compositie-instellingen controleren
 Dubbelklik op de compositie in het Project-paneel. Open de instellingen via `Ctrl + K` (*Composition Settings*) en controleer de framerate (**30 fps**) en de duur (**8 seconden**, `0:00:08:00`).
 
-![Compositie instellingen controleren](ae-comp_settings.png)
+![Compositie instellingen controleren](ae-comp_settings.png?w=60%)
 
 #### Camera
 * Voeg een camera toe via **Layer → New → Camera...** (kies bv. een 35mm of 50mm lens).

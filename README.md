@@ -80,6 +80,27 @@ Alle Markdown-afbeeldingen worden via een **Image Render Hook** ([`render-image.
     - `#third` of `#33%` (33.3% kolombreedte)
     - `#center` (gecentreerd uitlijnen, bv. `![Alt](foto.png#half#center)`)
 
+### 📐 Automatische Afbeeldingskolommen & Flex-lay-out
+- **Gelijke kolommen (Pure Markdown):** Plaats 2 of meer afbeeldingen direct onder elkaar zonder witregel. De CSS groepeert ze automatisch in gelijke kolommen (50/50 bij 2 beelden, 33/33/33 bij 3 beelden):
+  ```markdown
+  ![Voorgrond](voorgrond.png)
+  ![Achtergrond](achtergrond.png)
+  ```
+- **Onevenredige kolommen:** Geef één van de afbeeldingen een breedte mee (bv. `?w=30%` of `#third`). De andere afbeelding vult automatisch de resterende breedte op:
+  ```markdown
+  ![Groot overzicht](overzicht.png)
+  ![Detailknop](knop.png?w=30%)
+  ```
+- **Responsief:** Op smalle schermen ($\le 600\text{px}$) schakelen multi-image alinea's automatisch over naar een verticale stapeling.
+- **Shortcode `{{< grid >}}`:** Voor meer complexe lay-outs of gemengde content (tekst, code, beelden) is er een lichte grid-shortcode ([`grid.html`](file:///f:/Webhost/hugo/avant/layouts/shortcodes/grid.html)):
+  ```markdown
+  {{< grid cols=2 gap="1rem" >}}
+  Linkerkolom content...
+
+  Rechterkolom content...
+  {{< /grid >}}
+  ```
+
 ### 🎯 Automatische Evaluatieclusters & Succescriteria (Eigen Taal)
 Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.yaml`. De clusters worden **volledig automatisch** afgeleid en gerangschikt in de volgorde van het officiële evaluatiesjabloon:
 - `leerplandoelen:` ondersteunt zowel losse codes als succescriteria in eigen woorden:
