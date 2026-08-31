@@ -1,0 +1,156 @@
+{{- $rawDest := .Destination -}}
+{{- $dest := $rawDest -}}
+{{- $queryStr := "" -}}
+{{- $fragment := "" -}}
+
+{{/* 1. Veilig splitsen van # (fragment) zonder URL-parser fouten bij % tekens */}}
+{{- if in $dest "#" -}}
+  {{- $parts := split $dest "#" -}}
+  {{- $dest = index $parts 0 -}}
+  {{- $fragment = index $parts 1 -}}
+{{- end -}}
+
+{{/* 2. Veilig splitsen van ? (query string) */}}
+{{- if in $dest "?" -}}
+  {{- $parts := split $dest "?" -}}
+  {{- $dest = index $parts 0 -}}
+  {{- $queryStr = index $parts 1 -}}
+{{- end -}}
+
+{{/* 3. Query parameters ontleden */}}
+{{- $queryParams := dict -}}
+{{- if $queryStr -}}
+  {{- range (split $queryStr "&") -}}
+    {{- $kv := split . "=" -}}
+    {{- if ge (len $kv) 2 -}}
+      {{- $queryParams = merge $queryParams (dict (index $kv 0) (index $kv 1)) -}}
+    {{- else if eq (len $kv) 1 -}}
+      {{- $queryParams = merge $queryParams (dict (index $kv 0) "true") -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* 4. Zoek de resource in de Page Bundle of Global assets */}}
+{{- $image := .Page.Resources.GetMatch $dest -}}
+{{- if not $image -}}
+  {{- $image = .Page.Resources.GetMatch (strings.TrimPrefix "./" $dest) -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- $image = resources.Get $dest -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- $image = resources.Get (strings.TrimPrefix "/" $dest) -}}
+{{- end -}}
+
+{{/* 5. Bepaal custom breedte via Attributes, Query params of Hashtags */}}
+{{- $customWidth := "" -}}
+{{- if .Attributes.width -}}
+  {{- $customWidth = (string .Attributes.width) -}}
+{{- else if (index $queryParams "width") -}}
+  {{- $customWidth = (string (index $queryParams "width")) -}}
+{{- else if (index $queryParams "w") -}}
+  {{- $customWidth = (string (index $queryParams "w")) -}}
+{{- else if (index $queryParams "percent") -}}
+  {{- $customWidth = printf "%s%%" (strings.TrimSuffix "%" (string (index $queryParams "percent"))) -}}
+{{- else if or (in $fragment "half") (in $fragment "50%") -}}
+  {{- $customWidth = "50%" -}}
+{{- else if or (in $fragment "third") (in $fragment "33%") -}}
+  {{- $customWidth = "33.33%" -}}
+{{- else if in $fragment "small" -}}
+  {{- $customWidth = "380px" -}}
+{{- else if in $fragment "medium" -}}
+  {{- $customWidth = "600px" -}}
+{{- end -}}
+
+{{/* Als customWidth alleen cijfers bevat: < 100 kan % zijn als percent gebruikt is, anders px */}}
+{{- if and $customWidth (not (findRE "[^0-9]" $customWidth)) -}}
+  {{- $customWidth = printf "%spx" $customWidth -}}
+{{- end -}}
+
+{{/* 6. Bepaal centrering */}}
+{{- $isCenter := or (eq .Attributes.class "center") (in $fragment "center") (eq (index $queryParams "center") "true") -}}
+
+{{/* 7. Inline styles samenstellen */}}
+{{- $styles := slice -}}
+{{- if $customWidth -}}
+  {{- if hasSuffix $customWidth "%" -}}
+    {{- $styles = $styles | append (printf "width: %s; max-width: 100%%; height: auto;" $customWidth) -}}
+  {{- else -}}
+    {{- $styles = $styles | append (printf "max-width: %s; width: 100%%; height: auto;" $customWidth) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $isCenter -}}
+  {{- $styles = $styles | append "margin-left: auto; margin-right: auto;" -}}
+{{- end -}}
+{{- $styleAttr := delimit $styles " " -}}
+
+{{/* 8. Classes samenstellen */}}
+{{- $classes := slice -}}
+{{- with .Attributes.class -}}
+  {{- $classes = $classes | append . -}}
+{{- end -}}
+{{- with (index $queryParams "class") -}}
+  {{- $classes = $classes | append . -}}
+{{- end -}}
+{{- $classAttr := delimit $classes " " -}}
+
+{{/* 9. HTML Renderen */}}
+{{- if $image -}}
+  {{- if eq $image.MediaType.SubType "svg" -}}
+    <img 
+      src="{{ $image.RelPermalink }}" 
+      alt="{{ .Text }}" 
+      {{ with .Title }}title="{{ . }}"{{ end }} 
+      {{ with $classAttr }}class="{{ . }}"{{ end }}
+      {{ with $styleAttr }}style="{{ . | safeCSS }}"{{ end }}
+      loading="lazy" 
+      decoding="async">
+  {{- else -}}
+    {{/* Maximaal 1920px breed voor desktop 27", anders de natuurlijke afmeting */}}
+    {{- $fallback := $image -}}
+    {{- if gt $image.Width 1920 -}}
+      {{- $fallback = $image.Resize "1920x webp" -}}
+    {{- else -}}
+      {{- $fallback = $image.Process "webp" -}}
+    {{- end -}}
+
+    {{/* Responsive formaten voor smartphone (480, 768), laptop 15" (1080, 1440) en desktop 27" (1920) */}}
+    {{- $widths := slice 480 768 1080 1440 1920 -}}
+    {{- $srcset := slice -}}
+    {{- range $widths -}}
+      {{- if lt . $fallback.Width -}}
+        {{- $resized := $image.Resize (printf "%dx webp" .) -}}
+        {{- $srcset = $srcset | append (printf "%s %dw" $resized.RelPermalink .) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $srcset = $srcset | append (printf "%s %dw" $fallback.RelPermalink $fallback.Width) -}}
+
+    {{- $srcsetString := delimit $srcset ", " -}}
+    {{- $sizesAttr := "(max-width: 900px) 100vw, 850px" -}}
+    {{- if and $customWidth (not (hasSuffix $customWidth "%")) -}}
+      {{- $sizesAttr = printf "(max-width: 900px) 100vw, %s" $customWidth -}}
+    {{- end -}}
+
+    <img 
+      src="{{ $fallback.RelPermalink }}"
+      {{ if gt (len $srcset) 1 }}srcset="{{ $srcsetString }}" sizes="{{ $sizesAttr }}"{{ end }}
+      width="{{ $fallback.Width }}"
+      height="{{ $fallback.Height }}"
+      alt="{{ .Text }}"
+      {{ with .Title }}title="{{ . }}"{{ end }}
+      {{ with $classAttr }}class="{{ . }}"{{ end }}
+      {{ with $styleAttr }}style="{{ . | safeCSS }}"{{ end }}
+      loading="lazy"
+      decoding="async">
+  {{- end -}}
+{{- else -}}
+  <img 
+    src="{{ .Destination | safeURL }}" 
+    alt="{{ .Text }}" 
+    {{ with .Title }}title="{{ . }}"{{ end }} 
+    {{ with $classAttr }}class="{{ . }}"{{ end }}
+    {{ with $styleAttr }}style="{{ . | safeCSS }}"{{ end }}
+    loading="lazy" 
+    decoding="async">
+{{- end -}}

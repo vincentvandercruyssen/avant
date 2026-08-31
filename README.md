@@ -68,6 +68,18 @@ Opdrachten worden ingericht als Leaf Bundles (`content/2026-2027/{klas}/{vak}/{o
 - **Titel- & Themahiërarchie:** De hoofding toont `Klas - Vaknaam` (met verkorte vaknaam in de sidebar header) en daaronder `Thema: Opdrachtnaam` (of enkel `Opdrachtnaam` indien `thema: ""` leeg is).
 - **Homepagina:** Opdrachten worden gerangschikt per schooljaar, vak en klas met weergave van het thema.
 
+### 🖼️ Automatische WebP Image Processing & Responsive Beelden
+Alle Markdown-afbeeldingen worden via een **Image Render Hook** ([`render-image.html`](file:///f:/Webhost/hugo/avant/layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
+- **WebP & Responsive `srcset`:** Converteert PNG/JPG automatisch naar WebP met breakpoints voor smartphone (`480w`, `768w`), 15" laptop (`1080w`, `1440w`) en 27" desktop (`1920w`).
+- **Formaat- & Stijlparameters in Markdown:**
+  - **Query parameters:** `![Alt](foto.png?width=450px)` of `![Alt](foto.png?w=60%)`
+  - **Snelle hashtags:**
+    - `#small` (380px breed)
+    - `#medium` (600px breed)
+    - `#half` of `#50%` (50% kolombreedte)
+    - `#third` of `#33%` (33.3% kolombreedte)
+    - `#center` (gecentreerd uitlijnen, bv. `![Alt](foto.png#half#center)`)
+
 ### 🎯 Automatische Evaluatieclusters & Succescriteria (Eigen Taal)
 Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.yaml`. De clusters worden **volledig automatisch** afgeleid en gerangschikt in de volgorde van het officiële evaluatiesjabloon:
 - `leerplandoelen:` ondersteunt zowel losse codes als succescriteria in eigen woorden:

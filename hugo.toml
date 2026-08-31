@@ -29,5 +29,8 @@ buildFuture = true
   cleanDestinationDir = true
 
 [markup]
-[markup.highlight]
-  style = "rose-pine-moon"
+  [markup.highlight]
+    style = "rose-pine-moon"
+  [markup.goldmark.parser.attribute]
+    block = true
+    title = true

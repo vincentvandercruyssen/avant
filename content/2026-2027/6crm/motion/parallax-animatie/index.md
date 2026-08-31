@@ -110,12 +110,12 @@ VoornaamA_Parallax/
 #### Nieuw document
 Maak een nieuw Photoshop-bestand aan met afmetingen **2160 × 2700 px** (of 1080 × 1350 px), kleurmodus **RGB**. Sla het bestand op als `VoornaamA_Parallax-Ontwerp.psd`.
 
-![Nieuw bestand aanmaken in Photoshop](photoshop-nieuw_bestand.png)
+![Nieuw bestand aanmaken in Photoshop](photoshop-nieuw_bestand.png?w=60%)
 
 #### Bestanden openen
 Open de gedownloade beelden via **Bestand → Openen** (sleep ze niet rechtstreeks in het canvas), detoureren is anders omslachtiger.
 
-![Bestanden openen in Photoshop](photoshop-open_bestanden.png)
+![Bestanden openen in Photoshop](photoshop-open_bestanden.png?w=60%)
 
 #### Niet-destructief uitsnijden
 * Activeer het gereedschap **Object selecteren** (*Object Selection Tool*, sneltoets `W`).
