@@ -261,11 +261,13 @@ ol {
   list-style-type: none;
 }
 
-ul li ul {
+li > ul,
+li > ol {
   padding-left: 2ch;
 }
 
-ul li ul li {
+li > ul > li,
+li > ol > li {
   margin-bottom: 0;
 }
 
@@ -297,7 +299,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 p,
@@ -556,21 +558,25 @@ main {
   padding: 1rem 2rem;
 }
 
-main ul li::before {
+main ul > li::before {
   content: "↪ ";
 }
 
 /* ordered lists: altijd dubbele digits */
 
-main ol li {
+main ol {
+  counter-reset: item;
+}
+
+main ol > li {
   counter-increment: item;
 }
 
-main ol li::before {
+main ol > li::before {
   content: "0" counter(item) ". ";
 }
 
-main ol li:nth-child(n + 10)::before {
+main ol > li:nth-child(n + 10)::before {
   content: counter(item) ". ";
 }
 
