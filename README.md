@@ -145,6 +145,163 @@ Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.y
 
 ---
 
+## ✍️ Stijlgids & Redactie van Opdrachten
+
+Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard om herkenbaarheid, rust en kwaliteit te waarborgen.
+
+### 1. Titels & Frontmatter
+- **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Parallax"`, `title: "Paspoort"`, `title: "Typografie"`, `title: "Lookbook"`).
+- **Software-stack:** Volledige opsomming van gebruikte tools, browsers en standaarden.
+- **Succescriteria in eigen taal:** Koppel bij elk leerplandoel een concreet, begrijpelijk succescriterium geformuleerd in leerlingentaal:
+  ```yaml
+  leerplandoelen:
+    - code: "CRS01"
+      criterium: "Productievereisten en bestandsconventies voor webprojecten analyseren en toepassen."
+    - code: "CRS06"
+      criterium: "Vlot en efficiënt werken met Visual Studio Code en browser-inspectietools."
+  ```
+
+### 2. Redactionele & Typografische Regels
+- **Aanspreekvorm (geen "we"):** Schrijf opdrachten in een directe, activerende stijl gericht naar de individuele leerling (**je / jij / jouw** of directe imperatief: *"Open de browser"*, *"Selecteer het onderwerp"*, *"Sla het bestand op"*). Vermijd meervoudsvormen zoals *"we"*, *"wij"* of *"laten we"*.
+- **Hoofdletters in tussentitels (Sentence case):** Begin in (tussen)titels enkel het eerste woord met een hoofdletter, tenzij het om eigennamen of softwarenamen gaat (bv. `#### Niet-destructief uitsnijden`, `#### Renderen in Media Encoder`, `#### HTML-basis in VS Code`). Vermijd overbodig Engels *Title Case* waarin elk woord met een hoofdletter begint.
+- **Softwaretermen & Sneltoetsen:** Vermeld bij softwarefuncties zowel de Nederlandstalige als Engelstalige benaming met sneltoetsen (`Object selecteren (Object Selection Tool, W)`, `Ctrl + T`, `F9 (Easy Ease)`).
+- **Beeldvergelijkingen (50/50):** Plaats 2 beelden direct onder elkaar zonder witregel voor een automatische side-by-side flex-kolom. Gebruik breedteparameters (`?w=30%` tot `?w=60%`) voor compacte menuknoppen en detailvensters.
+- **Geen scheidingslijnen:** Gebruik **geen `---`** in de Markdown-body; de visuele rust en hiërarchie worden gedragen door de koppen (`##`, `###`, `####`), witruimte en callouts.
+- **Belangrijke tips & valkuilen:** Plaats cruciale waarschuwingen of tussentijdse evaluatiemomenten in Markdown callouts (`>`).
+
+### 3. Vaste Hoofdstukhiërarchie
+Elke opdracht volgt een vaste 5-delige structuur:
+
+1. `## Briefing & Concept` — Introductie met praktijkcontext, sfeer-GIF/beeld, kernbegrip/theorie en conceptkeuzes.
+2. `## Technische specificaties` (of `## Afspraken`) — Tabel met resoluties, framerates, codecs of bestandsafspraken en de verplichte `VoornaamA_Opdrachtnaam/` mappenstructuur.
+3. `## Stappenplan` — Modulair en chronologisch opgedeeld per fase (`### Fase`, `#### Substap`):
+   - Start bij voorkeur met actief/onderzoekend leren (bv. broncode-inspectie of beeldselectie op Pexels/Unsplash).
+   - Inclusief een `### Extra's` of `### Extra uitdagingen` voor differentiatie en verdieping.
+4. `## Zelfevaluatie & Kwaliteitscontrole` (of `## Checklist`) — Concrete afvinkpunten voor bestanden/mappen, technische eisen en visuele afwerking.
+5. `## Oplevering` — Duidelijke exportformaten, naamconventie, uploadzone en deadline.
+
+---
+
+## 📋 Sjabloon voor Nieuwe Opdrachten (`index.md`)
+
+Onderstaand sjabloon dient als startpunt bij het aanmaken van een nieuwe opdracht:
+
+```markdown
+---
+title: "Kernwoord"
+date: 2026-09-02T08:30:00+02:00
+schooljaar: "2026-2027"
+klas: "6CRM"
+vak: "motion"
+leerkracht: "Vincent Vander Cruyssen"
+periode: "September"
+thema: "Herhaling"
+software:
+  - "Software 1"
+  - "Software 2"
+leerplandoelen:
+  - code: "CRS01"
+    criterium: "Concreet succescriterium beschreven in begrijpelijke leerlingentaal."
+  - code: "CRS02"
+    criterium: "Passende technieken en tools doelgericht selecteren in functie van het beoogde resultaat."
+draft: false
+---
+
+## Briefing & Concept
+
+Wervende introductie waarin je de opdracht linkt aan de praktijk of het werkveld. Leg uit wat de leerling gaat maken en waarom deze techniek belangrijk is.
+
+![Hero animatie of sfeerbeeld](hero.gif?w=50%)
+
+### Wat is [Kernbegrip]?
+
+Beknopte uitleg van de theoretische basis of het onderliggende ontwerpprincipe.
+
+![Voorbeeld voor](voorbeeld-voor.png)
+![Voorbeeld na](voorbeeld-na.png)
+
+### Je concept
+
+Geef de leerling duidelijke kaders of keuzemogelijkheden:
+1. **Optie 1:** Omschrijving.
+2. **Optie 2:** Omschrijving.
+3. **Optie 3:** Omschrijving.
+
+## Technische specificaties
+
+| Instelling | Aanbevolen waarde | Toelichting |
+| :--- | :--- | :--- |
+| **Formaat / Resolutie** | **1080 × 1350 px** | Toelichting bij de keuze van de resolutie/verhouding. |
+| **Framerate / Modus** | **30 fps / RGB** | Technische standaard voor scherm of video. |
+| **Codec / Container** | **H.264 in MP4** | Universele compatibiliteit. |
+
+### Mappenstructuur
+
+Zet vooraf een ordelijke mappenstructuur op in je OneDrive onder het vak **[Vaknaam]**:
+
+```text
+VoornaamA_Opdrachtnaam/
+├── 01_assets/          <- Ruwe bronbestanden, foto's, fonts, audio
+├── 02_werkbestanden/   <- Bewerkbare projectbestanden (.psd, .aep, .ai)
+└── 03_exports/         <- Definitieve opleveringen (.jpg, .mp4, .zip)
+```
+
+## Stappenplan
+
+### Voorbereiding & Bronmateriaal
+* Verzamel kwalitatief bronmateriaal via [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/).
+* Bepaal je compositie en typografische hiërarchie.
+
+### [Eerste fase / Software]
+
+#### Document aanmaken
+Maak een nieuw bestand aan met de gevraagde afmetingen en sla het direct op als `VoornaamA_Opdrachtnaam.ext`.
+
+#### [Belangrijkste handeling]
+* Activeer het gereedschap **Naam gereedschap** (*Engelse toolnaam*, sneltoets `T`).
+* Pas de instellingen aan.
+
+> **Belangrijke tip of valkuil!**  
+> Plaats hier een didactische waarschuwing of toelichting (bv. over niet-destructief werken).
+
+### [Tweede fase / Software]
+
+#### Importeren en opzetten
+Werkwijze voor het integreren, animeren of stijlen van de onderdelen.
+
+### Extra's
+
+Voor wie sneller klaar is of extra diepte wil toevoegen:
+* **Optie A:** Beschrijving van een gevorderde techniek of effect.
+* **Optie B:** Verfijning in sound design, micro-interacties of typografie.
+
+## Zelfevaluatie & Kwaliteitscontrole
+
+Controleer je werk grondig aan de hand van deze checklist vóór je definitief inlevert:
+
+### Bestanden & mappen
+- De hoofdmap heet exact `VoornaamA_Opdrachtnaam`.
+- Alle bestanden staan in de juiste submappen zonder spaties of hoofdletters waar niet toegestaan.
+
+### Technische kwaliteit
+- Resolutie, verhouding en kleurmodus/kleurruimte zijn correct ingesteld.
+- Niet-destructieve werkmethodes zijn consequent toegepast.
+
+### Vormgeving & Boodschap
+- Typografische hiërarchie en leesbaarheid zijn verzorgd.
+- Het eindresultaat vormt een evenwichtig en harmonieus geheel.
+
+## Oplevering
+
+Lever de gevraagde bestanden tijdig in via de uploadzone:
+
+> **Opleveringsformaat:** `VoornaamA_Opdrachtnaam.ext` of `.zip`  
+> **Uploadzone:** *Vak CRM → Uploadzone → [Schooljaar] → [Thema] → [Vak] → [Opdracht]*  
+> **Deadline:** Einde van de voorziene lesblokken.
+```
+
+---
+
 ## 🛠️ Lokaal ontwikkelen
 
 Vereisten: **Hugo Extended** (zie `.hugo-version`) en **Node.js**.

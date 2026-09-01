@@ -101,17 +101,13 @@ VoornaamA_Paspoort/
 
 ### Onderzoek
 
-Start direct met een interactieve **Scavenger Hunt** in plaats van een saaie handleiding. Elke website op het internet is openbaar te inspecteren. Vandaag ontdek jij hoe professionele websites zijn opgebouwd!
-
-![Rechtermuisknop inspecteren in Google Chrome](devtools-inspecteren-menu.png?w=50%)
+Elke website op het internet is openbaar te inspecteren via de browser. Voor je zelf start met coderen, analyseer je eerst hoe bestaande websites zijn opgebouwd en welke HTML-tags de basisstructuur vormen.
 
 #### Hoe open je de inspectietool?
 1. Open Google Chrome, Firefox of Safari.
 2. Surf naar een website naar keuze (bijvoorbeeld [Wikipedia](https://nl.wikipedia.org), [VRT NWS](https://www.vrt.be/vrtnws/nl/), [Spotify Web](https://open.spotify.com), je favoriete webshop of iets heel anders).
 3. Klik met de **rechtermuisknop** op een willekeurig onderdeel van de pagina en kies **Inspecteren** (of druk op `F12` / `Ctrl + Shift + C`).
 4. Kijk naar het tabblad **Elements** (Elementen). Welkom in de broncode van het internet!
-
-![Het Elements paneel in Chrome DevTools met geselecteerde HTML](devtools-elementen-paneel.png)
 
 #### Opsporingsmissie
 

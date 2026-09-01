@@ -18,12 +18,67 @@ draft: false
 ---
 
 ## Briefing & Concept
-Doelstelling, context en beoogde output van de opdracht.
 
-## Afspraken & Fasering
-- **Fase 1:** Onderzoek en voorontwerp
-- **Fase 2:** Uitwerking en tussentijdse feedback
-- **Fase 3:** Finale oplevering en evaluatie
+Wervende introductie met context naar de praktijk of het werkveld.
 
-## Materiaal & Software
-Benodigde software en eventuele links naar overkoepelende cursussen.
+### Wat is [Kernbegrip]?
+
+Korte theoretische toelichting of ontwerpprincipe.
+
+### Je concept
+
+1. **Optie 1:** Omschrijving
+2. **Optie 2:** Omschrijving
+
+## Technische specificaties
+
+| Instelling | Aanbevolen waarde | Toelichting |
+| :--- | :--- | :--- |
+| **Formaat / Resolutie** | **1080 × 1350 px** | Toelichting. |
+| **Framerate / Modus** | **30 fps / RGB** | Scherm / video. |
+
+### Mappenstructuur
+
+```text
+VoornaamA_Opdrachtnaam/
+├── 01_assets/
+├── 02_werkbestanden/
+└── 03_exports/
+```
+
+## Stappenplan
+
+### Voorbereiding & Bronmateriaal
+* Zoek kwalitatief bronmateriaal via Pexels of Unsplash.
+
+### [Eerste fase / Software]
+
+#### Document aanmaken
+Maak een nieuw document aan.
+
+#### [Belangrijkste handeling]
+* Instructies en sneltoetsen.
+
+### [Tweede fase / Software]
+
+#### Importeren en verwerken
+Verdere uitwerking.
+
+### Extra's
+
+* Verdiepende techniek voor wie sneller klaar is.
+
+## Zelfevaluatie & Kwaliteitscontrole
+
+### Bestanden & mappen
+- Mapstructuur en naamgeving zijn conform de afspraken.
+
+### Technische & visuele kwaliteit
+- Correcte verhoudingen, resoluties en niet-destructieve werkwijze.
+
+## Oplevering
+
+> **Opleveringsformaat:** `VoornaamA_Opdrachtnaam.ext` of `.zip`  
+> **Uploadzone:** *Vak CRM → Uploadzone → [Schooljaar] → [Thema] → [Vak] → [Opdracht]*  
+> **Deadline:** Einde van de voorziene lesblokken.
+
