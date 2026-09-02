@@ -61,7 +61,10 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   │       ├── motion/
 │   │       └── web/
 │   ├── cursus/
-│   │   ├── after_effects.md
+│   │   ├── after_effects/
+│   │   │   ├── img/           # 62 geëxtraheerde schermafbeeldingen en illustraties
+│   │   │   ├── oefenbestanden/# Downloadbare Illustrator oefenbestanden (.ai)
+│   │   │   └── index.md       # Cursus Adobe After Effects (8 hoofdstukken + cheat sheet)
 │   │   ├── blender.md
 │   │   └── fotografie.md
 │   └── doelen/
