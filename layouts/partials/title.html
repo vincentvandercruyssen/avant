@@ -1,0 +1,71 @@
+{{- $page := . -}}
+{{- $isPlanning := false -}}
+{{- if reflect.IsMap . -}}
+  {{- $page = or .page .Page .context -}}
+  {{- $isPlanning = .isPlanning | default false -}}
+{{- end -}}
+
+{{- if $page.IsHome -}}
+  {{- site.Title -}}
+{{- else -}}
+  {{- /* 1. Bepaal de titel van het item */ -}}
+  {{- $itemTitle := $page.Title -}}
+  {{- if $isPlanning -}}
+    {{- $itemTitle = printf "%s (Planning)" $itemTitle -}}
+  {{- end -}}
+
+  {{- /* 2. Bepaal klas en vak */ -}}
+  {{- $klas := $page.Params.klas | default "" | upper -}}
+  {{- $vak := $page.Params.vak | default "" -}}
+
+  {{- if not $klas -}}
+    {{- $segs := split (trim $page.RelPermalink "/") "/" -}}
+    {{- range $segs -}}
+      {{- $segUpper := . | upper -}}
+      {{- if or (eq $segUpper "5CRM") (eq $segUpper "6CRM") -}}
+        {{- $klas = $segUpper -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if not $vak -}}
+    {{- $segs := split (trim $page.RelPermalink "/") "/" -}}
+    {{- range $segs -}}
+      {{- $segLower := . | lower -}}
+      {{- if in (slice "motion" "web" "beeld" "grafische") $segLower -}}
+        {{- $vak = $segLower -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* Format vak name (e.g. Motion, Web, Beeld, Grafische) */ -}}
+  {{- $vakFormatted := "" -}}
+  {{- if $vak -}}
+    {{- $vakLower := $vak | lower -}}
+    {{- if eq $vakLower "web" -}}
+      {{- $vakFormatted = "Web" -}}
+    {{- else if eq $vakLower "motion" -}}
+      {{- $vakFormatted = "Motion" -}}
+    {{- else if eq $vakLower "beeld" -}}
+      {{- $vakFormatted = "Beeld" -}}
+    {{- else if eq $vakLower "grafische" -}}
+      {{- $vakFormatted = "Grafische" -}}
+    {{- else -}}
+      {{- $vakFormatted = $vak | title -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* 3. Bouw suffix: bv. Avant 6CRM Motion */ -}}
+  {{- $suffix := site.Title -}}
+  {{- if or $klas $vakFormatted -}}
+    {{- if and $klas $vakFormatted -}}
+      {{- $suffix = printf "%s %s %s" site.Title $klas $vakFormatted -}}
+    {{- else if $klas -}}
+      {{- $suffix = printf "%s %s" site.Title $klas -}}
+    {{- else if $vakFormatted -}}
+      {{- $suffix = printf "%s %s" site.Title $vakFormatted -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- printf "%s | %s" $itemTitle $suffix -}}
+{{- end -}}

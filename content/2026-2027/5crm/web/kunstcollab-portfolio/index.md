@@ -1,6 +1,6 @@
 ---
 title: "Portfolio Platform"
-date: 2026-01-20T10:00:00+01:00
+date: 2026-01-20
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "web"

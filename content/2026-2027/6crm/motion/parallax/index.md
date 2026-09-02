@@ -1,6 +1,6 @@
 ---
 title: "Parallax"
-date: 2026-09-02T08:30:00+02:00
+date: 2026-09-01
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "motion"
@@ -45,9 +45,9 @@ In deze opdracht combineer je geavanceerde **beeldmanipulatie**, **typografie** 
 
 Het **parallax-effect** ontstaat wanneer verschillende lagen met een verschillende snelheid ten opzichte van elkaar bewegen. Denk aan het kijken uit het raam van een rijdende trein: elementen vlakbij het spoor razen voorbij, terwijl heuvels of bergen in de verre achtergrond traag lijken voorbij te gaan. Door voorgrond, achtergrond en typografie op verschillende Z-afstanden (dieptes) in een 3D-ruimte te plaatsen en een camera te laten bewegen, wek je een realistische driedimensionale diepte op.
 
-![Parallax animatie](gifer-7ujF.gif)
-![Parallax bos](tenor-parallax-woods.gif)
-![Parallax landschap](gifer-3xaB.gif)
+![Parallax animatie](img/gifer-7ujF.gif)
+![Parallax bos](img/tenor-parallax-woods.gif)
+![Parallax landschap](img/gifer-3xaB.gif)
 
 ### Je concept
 
@@ -88,14 +88,14 @@ De compositie en animatie is opgebouwd uit drie lagen:
 
 In dit voorbeeld werken we met een vintage walkman als voorgrondobject en een mistig berglandschap als sfeervolle achtergrond.
 
-![Voorgrond zoeken op Pexels](foto_voorgrond_zoeken-walkman.png)
-![Gratis download knop op Pexels](foto_voorgrond_zoeken-freedownload_knop.png?w=40%)
+![Voorgrond zoeken op Pexels](img/foto_voorgrond_zoeken-walkman.png)
+![Gratis download knop op Pexels](img/foto_voorgrond_zoeken-freedownload_knop.png?w=40%)
 
-![Originele voorgrondfoto](pexels-ds-stories-9227554.jpg?w=40%)
+![Originele voorgrondfoto](img/pexels-ds-stories-9227554.jpg?w=40%)
 [Pexels - Person holding cassette player](https://www.pexels.com/photo/a-person-holding-a-cassette-player-9227554/)
 
-![Achtergrond zoeken op Pexels](foto_achtergrond_zoeken-berglandschap.png)
-![Originele achtergrondfoto](pexels-alohaphotostudio-10471894.jpg)
+![Achtergrond zoeken op Pexels](img/foto_achtergrond_zoeken-berglandschap.png)
+![Originele achtergrondfoto](img/pexels-alohaphotostudio-10471894.jpg)
 
 [Pexels - Foggy mountains](https://www.pexels.com/photo/foggy-mountains-10471894/)
 
@@ -116,60 +116,60 @@ VoornaamA_Parallax/
 #### Nieuw document
 Maak een nieuw Photoshop-bestand aan met afmetingen **2160 × 2700 px** (of 1080 × 1350 px), kleurmodus **RGB**. Sla het bestand op als `VoornaamA_Parallax-Ontwerp.psd`.
 
-![Nieuw bestand aanmaken in Photoshop](photoshop-nieuw_bestand.png?w=60%)
+![Nieuw bestand aanmaken in Photoshop](img/photoshop-nieuw_bestand.png?w=60%)
 
 #### Bestanden openen
 Open de gedownloade beelden via **Bestand → Openen** (sleep ze niet rechtstreeks in het canvas), detoureren is anders omslachtiger.
 
-![Bestanden openen in Photoshop](photoshop-open_bestanden.png?w=60%)
+![Bestanden openen in Photoshop](img/photoshop-open_bestanden.png?w=60%)
 
 #### Niet-destructief uitsnijden
 * Activeer het gereedschap **Object selecteren** (*Object Selection Tool*, sneltoets `W`).
 * Sleep een kader rond het voorgrondobject om Photoshop automatisch een selectie te laten maken.
 
-![Object selecteren](photoshop-object_selecteren-1.png)
-![Selectiekader rond voorgrondobject](photoshop-object_selecteren-2.png)
+![Object selecteren](img/photoshop-object_selecteren-1.png)
+![Selectiekader rond voorgrondobject](img/photoshop-object_selecteren-2.png)
 
 * Voeg onderaan het Lagenpaneel een **Laagmasker** toe (wis **nooit** pixels met de gom of delete, dan kun je niet meer terug indien je een fout maakt). Door te werken met maskers kun je altijd herstellen waar nodig.
 
-![Laagmasker toevoegen](photoshop-object_maskeren-1.png?w=30%)
-![Resultaat met masker](photoshop-object_maskeren-2.png)
+![Laagmasker toevoegen](img/photoshop-object_maskeren-1.png?w=30%)
+![Resultaat met masker](img/photoshop-object_maskeren-2.png)
 
 #### Converteren naar Slimme laag
 Zet de gemaskeerde laag om met **Filter → Omzetten voor Slimme Filter** (*Convert for Smart Filters*). Hierdoor kun je de laag later onbeperkt schalen en transformeren zonder kwaliteitsverlies.
 
-![Omzetten naar slim object](photoshop-convertern_slimmelaag.png?w=50%)
+![Omzetten naar slim object](img/photoshop-convertern_slimmelaag.png?w=50%)
 
 #### Samenvoegen in document
 * Sleep de slimme laag naar je hoofdontwerpdocument (`VoornaamA_Parallax-Ontwerp.psd`).
 
-![Slimme laag slepen naar hoofddocument](photoshop-laag_slepen.png)
+![Slimme laag slepen naar hoofddocument](img/photoshop-laag_slepen.png)
 
 * Druk op `Ctrl + T` (*Vrije transformatie*) om positie, schaal en rotatie af te stemmen. Hernoem de laag naar `Voorgrond`.
 
-![Voorgrond transformeren](photoshop-voorgrond_transformeren.png)
-![Lagen hernoemen](photoshop-lagen_hernoemen.png?w=40%)
+![Voorgrond transformeren](img/photoshop-voorgrond_transformeren.png)
+![Lagen hernoemen](img/photoshop-lagen_hernoemen.png?w=40%)
 
 * Plaats ook de achtergrondfoto in het document en noem deze laag `Achtergrond`.
 
-![Voorgrond en achtergrond samen](photoshop-voorgrond+achtergrond.png)
-![Lagenpaneel met voorgrond en achtergrond](photoshop-voorgrond+achtergrond_lagen.png)
+![Voorgrond en achtergrond samen](img/photoshop-voorgrond+achtergrond.png)
+![Lagenpaneel met voorgrond en achtergrond](img/photoshop-voorgrond+achtergrond_lagen.png)
 
 #### Kleurcorrectie (compositing)
 Twee afzonderlijke foto's sluiten zelden direct op elkaar aan qua belichting, contrast, kleurtemperatuur, scherpte enzomeer. Gebruik **Aanpassingslagen** (*Kleurbalans*, *Curven*, *Helderheid/Contrast*) om voor- en achtergrond naadloos op elkaar af te stemmen.
 
-![Aanpassingslagen toevoegen](photoshop-aanpassingslagen.png?w=30%)
+![Aanpassingslagen toevoegen](img/photoshop-aanpassingslagen.png?w=30%)
 
 *Vergelijk hieronder het beeld voor en na bewerking:*
 
-![Compositie voor bewerking](photoshop-zonder_tekst-voor.png)
-![Compositie na bewerking](photoshop-zonder_tekst-na.png)
+![Compositie voor bewerking](img/photoshop-zonder_tekst-voor.png)
+![Compositie na bewerking](img/photoshop-zonder_tekst-na.png)
 
 #### Typografie toevoegen
 Plaats je tekst op aparte lagen. Experimenteer met fontkeuze, corpsgrootte, tracking en kleur. Zorg voor een sterke hiërarchie tussen het hoofdwoord en de slagzin.
 
-![Compositie met typografie eerste opzet](photoshop-met_tekst-voor.png)
-![Compositie met typografie na bewerking](photoshop-met_tekst-na.png)
+![Compositie met typografie eerste opzet](img/photoshop-met_tekst-voor.png)
+![Compositie met typografie na bewerking](img/photoshop-met_tekst-na.png)
 
 > **Oplevering voor het vak Beeld!**  
 > `Familienaam_Voornaam_Voorstudie.psd` (gelaagd werkbestand)  
@@ -180,39 +180,39 @@ Plaats je tekst op aparte lagen. Experimenteer met fontkeuze, corpsgrootte, trac
 #### PSD importeren als Compositie
 * Start After Effects en sleep je Photoshop-bestand naar het **Project-paneel** (of kies **File → Import → File...**).
 
-![Bestand importeren in After Effects](ae-import-1.png?w=50%)
+![Bestand importeren in After Effects](img/ae-import-1.png?w=50%)
 
 * **Cruciaal:** Kies bij *Import Kind* voor **Composition - Retain Layer Sizes** en selecteer **Editable Layer Styles**. Hierdoor behoudt elke laag zijn eigen begrenzingskader en worden alle toekomstige aanpassingen in Photoshop automatisch bijgewerkt in After Effects!
 
-![Importinstellingen Composition Retain Layer Sizes](ae-import_comp_layersizes.png?w=50%)
+![Importinstellingen Composition Retain Layer Sizes](img/ae-import_comp_layersizes.png?w=50%)
 
 Sla het project op als `VoornaamA_Parallax-Animatie.aep`.
 
 #### Compositie-instellingen controleren
 Dubbelklik op de compositie in het Project-paneel. Open de instellingen via `Ctrl + K` (*Composition Settings*) en controleer de framerate (**30 fps**) en de duur (**8 seconden**, `0:00:08:00`).
 
-![Compositie instellingen controleren](ae-comp_settings.png?w=60%)
+![Compositie instellingen controleren](img/ae-comp_settings.png?w=60%)
 
 #### Camera
 * Voeg een camera toe via **Layer → New → Camera...** (kies bv. een 35mm of 50mm lens).
 
-![Nieuwe camera toevoegen](ae-nieuwe_camera.png)
+![Nieuwe camera toevoegen](img/ae-nieuwe_camera.png)
 
 #### 3D-Lagen activeren
 Schakel voor alle lagen (voorgrond, achtergrond, tekstlagen) de **3D Layer switch** (het kubus-icoontje) in.
 
-![3D lagen activeren](ae-3d_lagen.png)
+![3D lagen activeren](img/ae-3d_lagen.png)
 
 ####  Diepte instellen (Z-as)
 * Selecteer de voorgrondlaag, druk op `P` (*Position*) en wijzig de **Z-waarde** (de 3e waarde) zodat de voorgrond naar voren komt (negatieve Z-waarde, dichter bij de camera).
 * Schaal de laag eventueel bij met `S` (*Scale*) om de gewenste kadrering te behouden.
 
-![Z-positie aanpassen](ae-transformeren_z-1.png)
-![Z-positie transformatie](ae-transformeren_z-2.png)
+![Z-positie aanpassen](img/ae-transformeren_z-1.png)
+![Z-positie transformatie](img/ae-transformeren_z-2.png)
 
 * Schakel in het weergavepaneel over naar *Custom View 1* of *Top View* om de ruimtelijke afstand tussen je lagen te inspecteren.
 
-![3D diepte en lagenspreiding in Custom View](ae-transformeren_z-3.png)
+![3D diepte en lagenspreiding in Custom View](img/ae-transformeren_z-3.png)
 
 #### Camerabeweging en keyframes
 
@@ -221,15 +221,15 @@ Schakel voor alle lagen (voorgrond, achtergrond, tekstlagen) de **3D Layer switc
   * **Track XY / Pan Tool:** Verschuift de camera horizontaal en verticaal.
   * **Dolly Tool:** Beweegt de camera naar voren of achteren.
 
-![Cameragereedschappen](ae-camera_tools.png?w=20%)
+![Cameragereedschappen](img/ae-camera_tools.png?w=20%)
 
 * Zet op seconde **0:00** een keyframe op **Position** en **Point of Interest**.
 
-![Camera keyframe op startpositie](ae-camera_keyframe-1.png)
+![Camera keyframe op startpositie](img/ae-camera_keyframe-1.png)
 
 * Verplaats de tijdindicator naar het einde (**8:00**) en pas de camerapositie aan voor een subtiele, cinematische beweging (zoals een lichte push-in, orbit of pan).
 
-![Camera keyframe op eindpositie](ae-camera_keyframe-2.png)
+![Camera keyframe op eindpositie](img/ae-camera_keyframe-2.png)
 
 * Selecteer alle keyframes, druk op `F9` (*Easy Ease*) en verfijn de bewegingscurve in de **Graph Editor**.
 
@@ -239,7 +239,7 @@ Als alternatief, zonder camera, kun je de lagen ook los van elkaar animeren door
 #### Typografische Animatie
 Laat de tekst dynamisch verschijnen en bewegen. Animeer de *Position*, *Opacity*, *Tracking* of gebruik de ingebouwde **Text Animators** (met *Range Selectors*, *Blur* of *Wipe*-effecten). Zorg dat de beweging natuurlijk aansluit bij de sfeer van het beeld.
 
-![Tekstlagen animeren in After Effects](ae-animeren_tekstlagen_posities.png)
+![Tekstlagen animeren in After Effects](img/ae-animeren_tekstlagen_posities.png)
 
 ### Extra's
 
@@ -252,14 +252,14 @@ Voor wie een stap verder wil gaan en extra diepte wil toevoegen:
 
 Selecteer je compositie in After Effects en druk op `Ctrl + Alt + M` (**Composition → Add to Adobe Media Encoder Queue**).
 
-![Compositie toevoegen aan Adobe Media Encoder](ae-ame_export-1.png)
+![Compositie toevoegen aan Adobe Media Encoder](img/ae-ame_export-1.png)
 
 Stel in Adobe Media Encoder de parameters in:
 * **Formaat:** `H.264`
 * **Preset:** `Match Source - Medium Bitrate` (of pas de bitrate handmatig aan).
 * **Doelgrootte:** Zorg dat het definitieve MP4-bestand tussen de **3 MB en 5 MB** blijft (maximaal 6 MB).
 
-![Renderinstellingen in Adobe Media Encoder](ae-ame_export-2.png)
+![Renderinstellingen in Adobe Media Encoder](img/ae-ame_export-2.png)
 
 Klik op de groene afspeelknop om de render te starten.
 

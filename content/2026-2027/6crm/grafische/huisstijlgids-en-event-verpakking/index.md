@@ -1,6 +1,6 @@
 ---
 title: "Huisstijlgids & Verpakking op Maat"
-date: 2026-11-10T11:00:00+01:00
+date: 2026-11-10
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "grafische"

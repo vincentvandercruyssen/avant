@@ -1,6 +1,6 @@
 ---
 title: "Interactieve Micro-animaties & UI State"
-date: 2026-12-05T10:00:00+01:00
+date: 2026-12-05
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "web"

@@ -38,3 +38,17 @@ buildFuture = true
     startLevel = 2
     endLevel = 4
     ordered = false
+
+[outputFormats.Planning]
+  name = "Planning"
+  mediaType = "text/html"
+  baseName = "planning"
+  isPlainText = false
+
+[outputs]
+  home = ["HTML"]
+  page = ["HTML", "Planning"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+

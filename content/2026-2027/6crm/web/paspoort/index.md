@@ -1,6 +1,6 @@
 ---
 title: "Paspoort"
-date: 2026-09-02T08:30:00+02:00
+date: 2026-09-02
 schooljaar: "2026-2027"
 klant: ""
 klas: "6CRM"
@@ -47,7 +47,7 @@ Maar hoe zet een webbrowser (zoals Firefox, Chrome, Safari of Edge) jouw visuele
 
 In deze opdracht trek je de motorkap van het wereldwijde web open. Je start als een echte detective met het inspectiegereedschap van je browser en zoekt naar de bouwstenen achter websites. Vervolgens transformeer je jouw onderzoeksresultaten naar je allereerste eigen codeerproject: een strakke, persoonlijke profielpagina waarin je jezelf als creatieve crossmediamaker voorstelt.
 
-![Inspector Gadget](giphy-inspector_gadget-1.gif?w=40%)
+![Inspector Gadget](img/giphy-inspector_gadget-1.gif?w=40%)
 
 ### Inhoud en vormgeving
 
@@ -56,8 +56,8 @@ In webdesign worden inhoud en vormgeving strikt gescheiden door twee codeertalen
 * **HTML (HyperText Markup Language):** Dit is de inhoud van je website. Het bepaalt *wat* er op de pagina staat (titels, tekstblokken, foto's, lijstjes, knoppen).
 * **CSS (Cascading Style Sheets):** Dit is de vormgeving van je website. Het bepaalt hoe alles eruitziet (kleuren, typografie, afmetingen, marges, afgeronde hoeken).
 
-![Voor CSS](voorbeeld-css_voor.png)
-![Na CSS](voorbeeld-css_na.png)
+![Voor CSS](img/voorbeeld-css_voor.png)
+![Na CSS](img/voorbeeld-css_na.png)
 
 Voor en na het toevoegen of aanpassen van CSS.
 
@@ -78,7 +78,7 @@ Schrijf bestandsnamen in **kleine letters**. Webservers maken onderscheid tussen
 ### Code-editor
 Gebruik bij voorkeur [Visual Studio Code](https://code.visualstudio.com/), de industriestandaard die overzichtelijke syntaxkleuren, automatische tag-sluiting en handige extensies biedt.
 
-![VS Code](vsc-screenshot-1.png)
+![VS Code](img/vsc-screenshot-1.png)
 
 ### Browser
 Gebruik voor het testen en live inspecteren van je webpagina een actuele **Chromium-gebaseerde** browser (zoals Chrome of Edge), **Firefox** of **Safari** die beschikt over ingebouwde ontwikkelaarstools (*Developer Tools*).

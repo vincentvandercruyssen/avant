@@ -36,6 +36,12 @@
   {{- $image = .Page.Resources.GetMatch (strings.TrimPrefix "./" $dest) -}}
 {{- end -}}
 {{- if not $image -}}
+  {{- $image = .Page.Resources.GetMatch (printf "*%s*" (path.Base $dest)) -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- $image = .Page.Resources.GetMatch (printf "**/%s" (path.Base $dest)) -}}
+{{- end -}}
+{{- if not $image -}}
   {{- $image = resources.Get $dest -}}
 {{- end -}}
 {{- if not $image -}}
@@ -146,7 +152,7 @@
   {{- end -}}
 {{- else -}}
   <img 
-    src="{{ .Destination | safeURL }}" 
+    src="{{ $dest | safeURL }}" 
     alt="{{ .Text }}" 
     {{ with .Title }}title="{{ . }}"{{ end }} 
     {{ with $classAttr }}class="{{ . }}"{{ end }}

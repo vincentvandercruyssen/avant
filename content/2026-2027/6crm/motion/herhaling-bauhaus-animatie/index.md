@@ -1,6 +1,6 @@
 ---
 title: "Bauhaus Typografische Animatie"
-date: 2026-09-20T08:30:00+02:00
+date: 2026-09-20
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "motion"

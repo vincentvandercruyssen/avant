@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .File.ContentBaseName "-" " " | title }}"
-date: {{ .Date }}
+date: {{ .Date.Format "2006-01-02" }}
 schooljaar: "2026-2027"
 klas: "5CRM" # of 6CRM
 vak: "" # motion, web, beeld, grafische

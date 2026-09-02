@@ -1,6 +1,6 @@
 ---
 title: "Poster animatie"
-date: 2026-10-01T08:30:00+02:00
+date: 2026-10-01
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "motion"

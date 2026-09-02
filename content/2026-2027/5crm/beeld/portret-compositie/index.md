@@ -1,6 +1,6 @@
 ---
 title: "Portret & Beeldcompositie"
-date: 2026-09-10T08:30:00+02:00
+date: 2026-09-10
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "beeld"

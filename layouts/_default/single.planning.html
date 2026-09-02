@@ -1,0 +1,67 @@
+{{ define "title" }}{{ partial "title.html" (dict "page" . "isPlanning" true) }}{{ end }}
+
+{{ define "header" }}
+<div class="fixed">
+  {{ $sec := partial "sectionName.html" (dict "page" . "short" true) }}
+  {{ $opdrachtTitle := .Title }}
+  {{ with .Params.thema }}
+    {{ if ne (trim . " ") "" }}
+      {{ $opdrachtTitle = printf "%s: %s" . $.Title }}
+    {{ end }}
+  {{ end }}
+  <h1>
+    <span class="vaknaam">{{ $sec }}</span>
+    {{ if and $opdrachtTitle (ne (trim $sec " \n\r\t") (trim $opdrachtTitle " \n\r\t")) (ne (trim $sec " \n\r\t") (trim .Title " \n\r\t")) }}
+      <span class="opdrachtnaam">{{ $opdrachtTitle }} — Planning</span>
+    {{ end }}
+  </h1>
+  {{ $planningResource := .Resources.GetMatch "*planning*" }}
+  {{ if $planningResource }}
+    <nav id="TableOfContents">
+      <ul>
+        <li><a href="{{ .RelPermalink }}">← Terug naar opdracht</a></li>
+        {{ $headings := findRESubmatch `<h([23]) id="([^"]+)">([^<]+)</h[23]>` $planningResource.Content }}
+        {{ range $headings }}
+          {{ $level := index . 1 }}
+          {{ $id := index . 2 }}
+          {{ $title := index . 3 }}
+          {{ if eq $level "2" }}
+            <li style="margin-top: 0.6rem;"><a href="#{{ $id }}" style="font-weight: 600;">{{ $title }}</a></li>
+          {{ else if eq $level "3" }}
+            <li style="padding-left: 1.5ch; font-size: 0.9em; opacity: 0.85;"><a href="#{{ $id }}">{{ $title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </nav>
+  {{ else }}
+    <nav id="TableOfContents">
+      <ul>
+        <li><a href="{{ .RelPermalink }}">← Terug naar opdracht</a></li>
+      </ul>
+    </nav>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ define "main" }}
+{{ $planningResource := .Resources.GetMatch "*planning*" }}
+<h1>
+  <span class="vaknaam">{{ partial "sectionName.html" . }}</span>
+  <span class="opdrachtnaam">{{ with .Params.thema }}{{ if ne (trim . " ") "" }}{{ . }}: {{ end }}{{ end }}{{ .Title }} — Planning</span>
+</h1>
+
+<p>
+  <a href="{{ .RelPermalink }}">
+    ← Terug naar opdracht
+  </a>
+</p>
+
+{{ if $planningResource }}
+<div class="planning-content">
+  {{ $planningResource.Content }}
+</div>
+{{ else }}
+<p>Geen planning beschikbaar voor deze opdracht.</p>
+{{ end }}
+
+{{ end }}

@@ -72,26 +72,43 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   └── leerplandoelen.yaml    # Centrale dataset met alle 53 doelstellingen, codes en clusters
 ```
 
-### 📄 Opdrachten als Page Bundles
-Opdrachten worden ingericht als Leaf Bundles (`content/2026-2027/{klas}/{vak}/{opdracht-slug}/index.md`), zodat afbeeldingen en bijlagen direct binnen de opdrachtmap bewaard en verwerkt worden.
+### 📄 Opdrachten als Page Bundles & Mappenstructuur
+Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas}/{vak}/{opdracht-slug}/`):
+
+```text
+{opdracht-slug}/
+├── img/               # Alle afbeeldingen, screenshots en animaties (PNG, JPG, GIF)
+├── index.md           # Opdrachtdocumentatie voor leerlingen
+└── planning.md        # (Optioneel) Smartschool-lesplanning en fiches voor leerkrachten
+```
 
 - **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Parallax"`, `title: "Paspoort"`, `title: "Bauhaus"`, `title: "Lookbook"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
+- **Datumconventie:** Gebruik uitsluitend het formaat `YYYY-MM-DD` (bv. `date: 2026-09-01`).
+- **Paginatitels (`<title>`):**
+  - Opdrachten: `Opdracht | Avant [Klas] [Vak]` (bv. `Parallax | Avant 6CRM Motion`).
+  - Planning: `Opdracht (Planning) | Avant [Klas] [Vak]` (bv. `Parallax (Planning) | Avant 6CRM Motion`).
 - **Titel- & Themahiërarchie:** De hoofding toont `Klas - Vaknaam` (met verkorte vaknaam in de sidebar header) en daaronder `Thema: Opdrachtnaam` (of enkel `Opdrachtnaam` indien `thema: ""` leeg is).
-- **Geen horizontale scheidingslijnen (`---` / `<hr>`):** Gebruik **geen `---`** in de Markdown-body van opdrachten. De visuele structuur, rust en hiërarchie worden volledig gedragen door semantische koppen (`##`, `###`, `####`), witruimte, callouts en de automatische CSS-lay-out.
-- **Didactische toon & Aanspreekvorm (geen "we"):** Schrijf opdrachten in een directe, activerende stijl gericht naar de individuele leerling (**je / jij / jouw** of actieve imperatief: *"Open de browser"*, *"Onderzoek de broncode"*, *"Voor je start..."*). Vermijd meervoudsvormen zoals *"we"*, *"wij"*, *"ons"* of *"laten we"* (bv. niet *"Voordat we coderen..."*, maar *"Voor je start met coderen..."*). Dit stimuleert zelfstandigheid en eigenaarschap over het leerproces.
-- **Homepagina:** Opdrachten worden gerangschikt per schooljaar, vak en klas met weergave van het thema.
+- **Geen horizontale scheidingslijnen (`---` / `<hr>`):** Gebruik **geen `---`** in de Markdown-body van opdrachten of planningen. De visuele structuur en rust worden volledig gedragen door semantische koppen (`##`, `###`, `####`), witruimte, callouts en de automatische CSS-lay-out.
+- **Didactische toon & Aanspreekvorm (geen "we"):** Schrijf opdrachten in een directe, activerende stijl gericht naar de individuele leerling (**je / jij / jouw** of actieve imperatief: *"Open de browser"*, *"Onderzoek de broncode"*, *"Voor je start..."*). Vermijd meervoudsvormen zoals *"we"*, *"wij"*, *"ons"* of *"laten we"*.
+- **Homepagina:** Opdrachten worden gerangschikt per schooljaar, vak en klas met directe links naar de opdracht en (indien aanwezig) de bijhorende lesplanning.
+
+### 📅 Smartschool Lesplanning (`planning.md`)
+Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
+- **Aparte pagina via Custom Output Format:** Hugo genereert automatisch `.../planning.html` (bereikbaar via de link onder de opdracht op de homepage).
+- **Afgeschermd voor leerlingen:** De planning-knop verschijnt niet op de leerlingpagina van de opdracht zelf.
+- **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert automatisch ankernavigatie voor zowel de lessen (`## 📅 Les X ...`) als de interne onderdelen (`### 📌 Titel lesfiche`, `### 🎯 Leerplandoelen`, `### 💬 Info voor de leerling`, `### 📋 Organisatie of verloop`).
 
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
-Alle Markdown-afbeeldingen worden via een **Image Render Hook** ([`render-image.html`](file:///f:/Webhost/hugo/avant/layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
+Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](file:///f:/Webhost/hugo/avant/layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
 - **WebP & Responsive `srcset`:** Converteert PNG/JPG automatisch naar WebP met breakpoints voor smartphone (`480w`, `768w`), 15" laptop (`1080w`, `1440w`) en 27" desktop (`1920w`).
 - **Formaat- & Stijlparameters in Markdown:**
-  - **Query parameters:** `![Alt](foto.png?width=450px)` of `![Alt](foto.png?w=60%)`
+  - **Query parameters:** `![Alt](img/foto.png?width=450px)` of `![Alt](img/foto.png?w=60%)`
   - **Snelle hashtags:**
     - `#small` (380px breed)
     - `#medium` (600px breed)
     - `#half` of `#50%` (50% kolombreedte)
     - `#third` of `#33%` (33.3% kolombreedte)
-    - `#center` (gecentreerd uitlijnen, bv. `![Alt](foto.png#half#center)`)
+    - `#center` (gecentreerd uitlijnen, bv. `![Alt](img/foto.png#half#center)`)
 
 ### 📐 Automatische Afbeeldingskolommen & Flex-lay-out
 - **Gelijke kolommen (Pure Markdown):** Plaats 2 of meer afbeeldingen direct onder elkaar zonder witregel. De CSS groepeert ze automatisch in gelijke kolommen (50/50 bij 2 beelden, 33/33/33 bij 3 beelden):
@@ -189,7 +206,7 @@ Onderstaand sjabloon dient als startpunt bij het aanmaken van een nieuwe opdrach
 ```markdown
 ---
 title: "Kernwoord"
-date: 2026-09-02T08:30:00+02:00
+date: 2026-09-02
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "motion"

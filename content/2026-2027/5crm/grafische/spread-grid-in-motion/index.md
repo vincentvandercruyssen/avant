@@ -1,6 +1,6 @@
 ---
 title: "Kinetic Spread & Grid in Motion"
-date: 2026-10-10T10:00:00+02:00
+date: 2026-10-10
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "grafische"

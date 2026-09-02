@@ -1,6 +1,6 @@
 ---
 title: "Typografische Affichage & Motion"
-date: 2026-11-15T09:00:00+01:00
+date: 2026-11-15
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "motion"

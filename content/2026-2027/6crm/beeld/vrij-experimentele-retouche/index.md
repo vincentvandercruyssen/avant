@@ -1,6 +1,6 @@
 ---
 title: "Experimentele Creatieve Beeldbewerking"
-date: 2026-11-28T14:00:00+01:00
+date: 2026-11-28
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "beeld"

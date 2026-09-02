@@ -1,6 +1,6 @@
 ---
 title: "Teaser & Motion Branding"
-date: 2026-10-15T11:00:00+02:00
+date: 2026-10-15
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "motion"
