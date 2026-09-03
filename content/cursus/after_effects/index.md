@@ -270,7 +270,7 @@ Je kunt meerdere vectorvormen (zoals een cirkel, veelhoek en ster) binnen dezelf
 ![Individuele vormparameters keyframen](img/ae-vormlaag-parameters-animeren-keyframing.jpg)
 
 
-### Shape Morphing: Vorm A Laten Overvloeien in Vorm B
+### Shape Morphing: Vormen overvloeien
 
 Een van de krachtigste effecten in After Effects is **Shape Morphing** (waarbij bijvoorbeeld een ster naadloos transformeert in een cirkel).
 
