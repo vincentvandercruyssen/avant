@@ -3,6 +3,8 @@ title: "3DA Crossmedia"
 graad: "3de graad"
 finaliteit: "Dubbele finaliteit (D/A)"
 codePrefix: "CRS"
+auteurs:
+  - "Vincent Vander Cruyssen"
 ---
 
 Leerplandoelen 3e graad Dubbele Finaliteit – Crossmedia (POV).

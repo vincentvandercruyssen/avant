@@ -4,7 +4,8 @@ date: 2026-12-05
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "web"
-leerkracht: "Vincent Vander Cruyssen"
+auteurs:
+  - "Vincent Vander Cruyssen"
 periode: "Vrij"
 thema: ""
 software:

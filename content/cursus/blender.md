@@ -5,6 +5,8 @@ vakken:
   - "motion"
   - "beeld"
 niveau: "Basis"
+auteurs:
+  - "Vincent Vander Cruyssen"
 draft: false
 ---
 

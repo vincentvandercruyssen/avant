@@ -4,4 +4,6 @@ sectionKey: "cursus"
 aliases:
   - /cursussen/
   - /curus/
+auteurs:
+  - "Vincent Vander Cruyssen"
 ---

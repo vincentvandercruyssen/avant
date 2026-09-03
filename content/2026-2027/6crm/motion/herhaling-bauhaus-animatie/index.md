@@ -4,7 +4,8 @@ date: 2026-09-20
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "motion"
-leerkracht: "Vincent Vander Cruyssen"
+auteurs:
+  - "Vincent Vander Cruyssen"
 periode: "September"
 thema: "Herhaling"
 software:

@@ -4,7 +4,8 @@ date: 2026-01-15
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "beeld"
-leerkracht: "Vincent Vander Cruyssen"
+auteurs:
+  - "Vincent Vander Cruyssen"
 periode: "Januari-Maart"
 thema: "Fashion"
 software:

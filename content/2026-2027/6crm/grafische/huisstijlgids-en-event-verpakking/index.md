@@ -4,7 +4,8 @@ date: 2026-11-10
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "grafische"
-leerkracht: "Birthe"
+auteurs:
+  - "Vincent Vander Cruyssen"
 periode: "Oktober-December"
 thema: "Event"
 software:

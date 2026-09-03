@@ -8,7 +8,56 @@
   <link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
   <link rel="icon" type="image/svg" href="{{ "favicon.svg" | relURL }}">
 </head>
-<body>
+{{- $rawCredits := slice -}}
+{{- with .Params.auteurs -}}
+  {{- if reflect.IsSlice . -}}
+    {{- $rawCredits = . -}}
+  {{- else -}}
+    {{- $rawCredits = slice . -}}
+  {{- end -}}
+{{- else with .Params.auteur -}}
+  {{- if reflect.IsSlice . -}}
+    {{- $rawCredits = . -}}
+  {{- else -}}
+    {{- $rawCredits = slice . -}}
+  {{- end -}}
+{{- else with .Params.credits -}}
+  {{- if reflect.IsSlice . -}}
+    {{- $rawCredits = . -}}
+  {{- else -}}
+    {{- $rawCredits = slice . -}}
+  {{- end -}}
+{{- else with .Params.authors -}}
+  {{- if reflect.IsSlice . -}}
+    {{- $rawCredits = . -}}
+  {{- else -}}
+    {{- $rawCredits = slice . -}}
+  {{- end -}}
+{{- else -}}
+  {{- $rawCredits = slice "Vincent Vander Cruyssen" -}}
+{{- end -}}
+
+{{- $formattedCredits := slice -}}
+{{- range $rawCredits -}}
+  {{- $name := trim (string .) " " -}}
+  {{- if ne $name "" -}}
+    {{- $parts := split $name " " -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $first := index $parts 0 -}}
+      {{- $initial := printf "%s." (substr (strings.TrimSuffix "." $first) 0 1) -}}
+      {{- $rest := slice -}}
+      {{- range (after 1 $parts) -}}
+        {{- $rest = $rest | append . -}}
+      {{- end -}}
+      {{- $formattedCredits = $formattedCredits | append (printf "%s %s" $initial (delimit $rest " ")) -}}
+    {{- else -}}
+      {{- $formattedCredits = $formattedCredits | append $name -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $creditText := printf "%s - %s" site.Title (delimit $formattedCredits ", ") -}}
+<body data-credit="{{ $creditText }}">
   <select data-theme-picker name="themepicker" id="theme">
     <option value="🖥️">🖥️</option>
     <option value="☀️">☀️</option>

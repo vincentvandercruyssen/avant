@@ -3,6 +3,10 @@ title: "Cursus: After Effects"
 software: "Adobe After Effects"
 vakken:
   - "motion"
+auteurs:
+  - "Ineke Doggen"
+  - "Birthe Fockaert"
+  - "Vincent Vander Cruyssen"
 niveau: "Basis tot Gevorderd"
 draft: false
 aliases:
@@ -14,7 +18,7 @@ aliases:
 
 **Adobe After Effects (AE)** is de toonaangevende industriestandaard voor motion design, digitale visuele effecten (VFX) en compositing. Waar programma's zoals Adobe Premiere Pro zich richten op montage en het aan elkaar knippen van videosequenties, gebruik je After Effects om grafische elementen, typografie, illustraties en video's tot leven te wekken met vloeiende animaties en dynamische effecten.
 
-![Adobe After Effects](img/ae-logo.png?w=160px&center=true)
+![Adobe After Effects](img/ae-logo.svg?w=160px&center=true)
 
 ### De Drie Kernpanelen
 

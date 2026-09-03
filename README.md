@@ -163,6 +163,7 @@ Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.y
 
 ### 🎨 CSS & Styling Filosofie
 - **Typografie & Fonts:** De site gebruikt de lettertypefamilie **Aptos** en **Aptos Mono** voor optimale schermleesbaarheid, lokaal geserveerd vanuit `static/fonts/` ([Microsoft Aptos Fonts](https://www.microsoft.com/en-us/download/details.aspx?id=106087)).
+- **Dynamische Auteurscredit (`body::after`):** Elke pagina toont rechts verticaal een vaste auteursbadge (`writing-mode: vertical-rl;`). De tekst wordt automatisch samengesteld via `auteurs:` in de frontmatter (waarbij de sitetitel dynamisch voorop staat en voornamen automatisch worden gereduceerd tot hun initiaal, bv. `Avant - I. Doggen, B. Fockaert, V. Vander Cruyssen`).
 - **Semantische HTML & CSS Structuur:** We vermijden overbodige utility-classes of BEM-klassen in de HTML (bv. geen `.sc-main-header`).
 - **Structurele Selectors:** Styling gebeurt bij voorkeur via de natuurlijke logica van CSS: elementselectors, structurele pseudo-classes (`:first-child`, `:nth-child()`, `:has()`), en attribuutselectors.
 
@@ -174,9 +175,12 @@ Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard
 
 ### 1. Titels & Frontmatter
 - **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Parallax"`, `title: "Paspoort"`, `title: "Typografie"`, `title: "Lookbook"`).
+- **Auteurs (`auteurs:`):** Noteer de volledige naam van de auteur(s) (bv. `auteurs: ["Vincent Vander Cruyssen"]` of meerdere auteurs bij gedeeld lesmateriaal). De weergavebadge verkort de voornaam automatisch.
 - **Software-stack:** Volledige opsomming van gebruikte tools, browsers en standaarden.
 - **Succescriteria in eigen taal:** Koppel bij elk leerplandoel een concreet, begrijpelijk succescriterium geformuleerd in leerlingentaal:
   ```yaml
+  auteurs:
+    - "Vincent Vander Cruyssen"
   leerplandoelen:
     - code: "CRS01"
       criterium: "Productievereisten en bestandsconventies voor webprojecten analyseren en toepassen."
@@ -217,7 +221,8 @@ date: 2026-09-02
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "motion"
-leerkracht: "Vincent Vander Cruyssen"
+auteurs:
+  - "Vincent Vander Cruyssen"
 periode: "September"
 thema: "Herhaling"
 software:

@@ -4,7 +4,8 @@ date: 2026-09-10
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "beeld"
-leerkracht: "Vincent Vander Cruyssen"
+auteurs:
+  - "Vincent Vander Cruyssen"
 periode: "September"
 thema: "Introductie"
 software:

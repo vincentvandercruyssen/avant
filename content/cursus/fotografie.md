@@ -5,6 +5,8 @@ vakken:
   - "beeld"
   - "grafische"
 niveau: "Basis"
+auteurs:
+  - "Vincent Vander Cruyssen"
 draft: false
 ---
 

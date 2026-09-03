@@ -4,7 +4,8 @@ date: 2026-10-01
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "motion"
-leerkracht: "Vincent Vander Cruyssen"
+auteurs:
+  - "Vincent Vander Cruyssen"
 periode: "Oktober"
 thema: "Kinetische kunst"
 software:

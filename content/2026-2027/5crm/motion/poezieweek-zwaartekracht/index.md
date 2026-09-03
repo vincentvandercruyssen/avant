@@ -4,7 +4,8 @@ date: 2026-11-15
 schooljaar: "2026-2027"
 klas: "5CRM"
 vak: "motion"
-leerkracht: "Vincent Vander Cruyssen"
+auteurs:
+  - "Vincent Vander Cruyssen"
 periode: "November-Januari"
 thema: "Zwaartekracht (Poëzieweek)"
 software:

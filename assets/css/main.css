@@ -208,14 +208,15 @@ body {
 
 body::after {
   position: fixed;
-  bottom: 50vh;
-  right: calc(-3rem - 2px);
-  padding: 1rem 2ch;
-  content: "Avant - V. Vander Cruyssen";
+  top: 50vh;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 2ch 0.5rem;
+  content: attr(data-credit);
   background-color: var(--fgcolor);
   font-size: 0.6rem;
-  rotate: 90deg;
-  line-height: 0;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
 }
 
 h1,

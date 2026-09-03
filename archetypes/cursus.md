@@ -3,6 +3,8 @@ title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 software: ""
 vakken: []
 niveau: "Basis" # Basis, Gevorderd
+auteurs:
+  - "Vincent Vander Cruyssen"
 draft: false
 ---
 
