@@ -8,21 +8,16 @@
 ## 📅 Les 1 01/09/2026 (2x Motion, 09:10 – 11:00)
 
 ### 📌 Titel lesfiche
-> **Kennismaking & Briefing Parallax-animatie**
+> **Parallax: Kennismaking & Briefing**
 
 ### 🎯 Leerplandoelen
 * **CRS01:** Productievereisten en instructies grondig analyseren (resolutie 1080×1350, 4:5 verhouding, 30 fps, H.264).
 * **CRS02:** Passende technieken doelgericht selecteren (maskering, slimme objecten, 3D camera parallax, kinetische typografie).
 
-### 💬 Info voor de leerling
-Kennismaking, overlopen de praktische afspraken en toelichten van het eerste project: Parallax.
-* Bekijken hoe je met dieptewerking, 2.5D camera's en kinetische typografie een statisch beeld omzet in een levendige social media video.
-* Overlopen van de briefing en specificaties.
-
-### 📋 Organisatie of verloop
-1. **09:10 – 09:40:** Onthaal 6CRM, klasafspraken, toelichting jaarplanning vak Motion.
-2. **09:40 – 10:30:** Presentatie van de opdracht *Parallax*. Voorbeelden tonen en het 2.5D parallax-principe (verschillende snelheden van voor- en achtergrondlagen) uitleggen.
-3. **10:30 – 11:00:** Vragenronde en voorbereiding voor de zoektocht naar bronmateriaal.
+### 📋 Lesverloop & inhoud
+1. **Onthaal & introductie:** Kennismaking en voorstelling van het vak Motion (6CRM), toelichting bij de algemene werkwijze, Smartschool-vakomgeving, klasafspraken, inleverprocedures, deadlines, punten evaluatie en overzicht van de planning.
+2. **Wat is parallax & briefing:** Presentatie van de opdracht *Parallax*. Demonstratie van voorbeeld en parallax-principe (verschillende bewegingssnelheden van voor- en achtergrondlagen), dieptewerking, 2.5D camera's en kinetische typografie voor social media video's.
+3. **Specificaties & voorbereiding:** Overlopen van de technische vereisten (1080 × 1350 px, 4:5, 30 fps) en voorbereiding van het zoeken naar bron- en inspiratie materiaal.
 
 ## 📅 Les 2 01/09/2026 (2x Motion, 13:30 – 15:20)
 
@@ -35,15 +30,11 @@ Kennismaking, overlopen de praktische afspraken en toelichten van het eerste pro
 * **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen.
 * **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop.
 
-### 💬 Info voor de leerling
-Vandaag gaan we praktisch van start:
-1. **Concept & Brainstorm:** Kies je thema (landschap, retro object, fashion, sciencefiction) en zoek twee complementaire beelden in hoge resolutie via Pexels of Unsplash (een duidelijke voorgrond en een sfeervolle achtergrond).
-2. **Mapstructuur:** Maak je OneDrive-projectmap aan: `VoornaamA_Parallax` met submappen `01_assets`, `02_photoshop`, `03_aftereffects`, `04_exports`.
-3. **Photoshop:** Maak je hoofddocument `VoornaamA_Parallax-Ontwerp.psd` aan (2160 × 2700 px of 1080 × 1350 px, RGB). Maak het voorgrondobject vakkundig vrij met een laagmasker (niet-destructief!).
-
-### 📋 Organisatie of verloop
-1. **13:30 – 14:15:** Zelfstandig zoeken en selecteren van beeldmateriaal. Goedkeuring concept door leerkracht. Opzetten van de ordelijke projectmappen en Photoshop-canvas.
-2. **14:15 – 15:20:** Vrijmaken van het hoofdonderwerp via Selecteren en maskeren / Laagmaskers. Individuele begeleiding bij complexe selecties (haar, randen).
+### 📋 Lesverloop & inhoud
+1. **Concept & bronmateriaal:** Thema kiezen (landschap, retro object, fashion, sciencefiction) en twee complementaire beelden in hoge resolutie selecteren via Pexels of Unsplash (een uitgesproken voorgrond en een sfeervolle achtergrond). Goedkeuring concept door de leerkracht.
+2. **Mappenstructuur opzetten:** OneDrive-projectmap aanmaken: `VoornaamA_Parallax` met submappen `01_assets`, `02_photoshop`, `03_aftereffects` en `04_exports`.
+3. **Photoshop documentopzet:** Hoofddocument `VoornaamA_Parallax-Ontwerp.psd` aanmaken (2160 × 2700 px of 1080 × 1350 px, RGB).
+4. **Vrijmaken hoofdonderwerp:** Niet-destructief vrijmaken van het voorgrondobject via *Selecteren en maskeren* en laagmaskers. Individuele coaching bij complexe randselecties (haar, texturen).
 
 ## 📅 Les 3 07/09/2026 (2x Beeld)
 
@@ -58,14 +49,11 @@ Vandaag gaan we praktisch van start:
 * **CRS23:** Bestanden controleren op correcte resolutie en kleurruimte (sRGB).
 * **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Beeld.
 
-### 💬 Info voor de leerling
-* **🎨 DEADLINE BEELD:** Aan het einde van deze les moet je Photoshop-ontwerp (`VoornaamA_Parallax-Ontwerp.psd`) **volledig klaar** zijn voor animatie.
-* **Typografie:** Voeg een krachtige titel en quote toe. Plaats de tekstlaag slim tussen de achtergrond en het vrijgemaakte voorgrondobject.
-* **Kleur & Sfeer:** Gebruik aanpassingslagen (Kleurbalans, Curven, Kleur opzoeken) om voorgrond en achtergrond naadloos samen te smelten tot één geheel.
-
-### 📋 Organisatie of verloop
-1. **Lesuur 1:** Typografie ontwerpen (fontkeuze, hiërarchie, tussenliggende positionering) en niet-destructieve kleurcorrecties toevoegen.
-2. **Lesuur 2:** Kwaliteitscontrole op resolutie (1080×1350 / 2160×2700), lagenstructuur met betekenisvolle namen, en afronding van de Photoshop-fase.
+### 📋 Lesverloop & inhoud
+1. **Typografie & gelaagdheid:** Toevoegen van een krachtige titel en quote. Typografische lagen slim positioneren tussen de achtergrond en het vrijgemaakte voorgrondobject.
+2. **Kleurharmonisatie & sfeer:** Gebruik van aanpassingslagen (Kleurbalans, Curven, Kleur opzoeken / LUTs) om voorgrond en achtergrond naadloos samen te smelten tot één esthetisch geheel.
+3. **Kwaliteitscontrole & afronding:** Controle op resoluties (1080×1350 / 2160×2700), kleurruimte (sRGB) en gestructureerde lagen met betekenisvolle namen.
+4. **🎨 DEADLINE BEELD:** Aan het einde van deze les moet het Photoshop-ontwerp (`VoornaamA_Parallax-Ontwerp.psd`) **volledig klaar** zijn voor animatie in After Effects.
 
 ## 📅 Les 4 08/09/2026 (2x Motion, 09:10 – 11:00)
 
@@ -77,16 +65,12 @@ Vandaag gaan we praktisch van start:
 * **CRS15:** Geschikt beeldmateriaal en typografie gestructureerd voorbereiden voor animatie in After Effects.
 * **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
 
-### 💬 Info voor de leerling
-Vandaag brengen we onze Photoshop-compositie tot leven in Adobe After Effects:
-1. **Import:** Importeer `VoornaamA_Parallax-Ontwerp.psd` als *Composition - Retain Layer Sizes*.
-2. **3D Lagen:** Activeer de 3D-laagschakelaar (kubus-icoon) voor alle lagen (voorgrond, typografie, achtergrond).
-3. **Z-Diepte:** Plaats de lagen op verschillende Z-afstanden (achtergrond diep naar achter + schalen, voorgrond dichtbij).
-4. **3D Camera:** Maak een nieuwe camera aan (35 mm of 50 mm) en animeer de camerabeweging over een tijdlijn van 6 à 8 seconden.
-
-### 📋 Organisatie of verloop
-1. **09:10 – 09:40:** Demonstratie: importeren van PSD in After Effects met behoud van laaggroottes en omzetten naar 3D-space. Werken met *Two Views* (Top & Active Camera), Z-as transformaties en herschalen van de achtergrond.
-2. **09:40 – 11:00:** Camera aanmaken, Position & Point of Interest animeren met keyframes. Toepassen van Easy Ease (`F9`).
+### 📋 Lesverloop & inhoud
+1. **Demonstratie 3D Camera & Parallax:**
+   * Importeren van `VoornaamA_Parallax-Ontwerp.psd` als *Composition - Retain Layer Sizes*.
+   * Omzetten van alle lagen naar 3D-lagen (kubus-icoon) en dieptewerking creëren via Z-as afstanden (achtergrond diep naar achter + schalen, voorgrond dichtbij).
+   * Werken met *Two Views* (Top & Active Camera), een 3D camera aanmaken (35 mm of 50 mm) en het animeren van *Position* en *Point of Interest* met Easy Ease (`F9`).
+2. **Zelfstandig werk & animatie:** Opzetten van de compositie (duur 6 à 8 seconden) en camerabeweging afstemmen voor een natuurlijk dieptegevoel.
 
 ## 📅 Les 5 08/09/2026 (2x Motion, 13:30 – 15:20)
 
@@ -99,16 +83,10 @@ Vandaag brengen we onze Photoshop-compositie tot leven in Adobe After Effects:
 * **CRS22:** Beeldelementen esthetisch harmoniseren met overgangen en animatiecurven.
 * **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (3-5 MB).
 
-### 💬 Info voor de leerling
-Laatste productieles voor de Parallax-animatie:
-1. **Kinetische typografie:** Animeer de titel- en tekstlagen (positie, opacity of After Effects tekstanimators) zodat ze vloeiend binnenvloeien.
-2. **Motion Blur & Curves:** Schakel Motion Blur in en verfijn de versnelling/vertraging via de *Graph Editor*.
-3. **Export:** Render via **Adobe Media Encoder** naar H.264 MP4 (`Familienaam_Voornaam_Parallax.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5–8 Mbps).
-
-### 📋 Organisatie of verloop
-1. **13:30 – 14:00:** Demonstratie tekstanimatie en finetuning met de Graph Editor.
-2. **14:00 – 14:50:** Zelfstandig afwerken van de animatie en instellen van Motion Blur.
-3. **14:50 – 15:20:** Testrenders uitvoeren via Adobe Media Encoder, bitrate afstemmen op bestandsgrootte (< 5 MB) en bestandscontrole.
+### 📋 Lesverloop & inhoud
+1. **Instructie kinetische typografie & Graph Editor:** Titel- en quotelagen animeren (positie, dekking of After Effects animators), Motion Blur activeren en de snelheidsdynamiek verfijnen in de Graph Editor.
+2. **Zelfstandige afwerking:** Finetuning van keyframe-curves en timing.
+3. **Batch-export in Adobe Media Encoder:** Renderen naar H.264 MP4 (`Familienaam_Voornaam_Parallax.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5–8 Mbps, bestandsgrootte < 5 MB in `04_exports/`).
 
 ## 📅 Les 6 15/09/2026 (2x Motion, 09:10 – 11:00)
 
@@ -119,11 +97,7 @@ Laatste productieles voor de Parallax-animatie:
 * **CRS23:** Bestanden controleren op correcte resolutie, kleurruimte (sRGB) en optimale bestandsgrootte.
 * **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor zowel Beeld als Motion.
 
-### 💬 Info voor de leerling
-* **⏰ DEADLINE:** Om **09:10** (begin van de les) moet jouw video `Familienaam_Voornaam_Parallax.mp4` geüpload zijn in de Smartschool Uploadzone.
-* **Klassikale screening:** We bekijken elkaars video's op het grote scherm en bespreken de dieptewerking, typografische timing en technische kwaliteit.
-
-### 📋 Organisatie of verloop
-1. **09:10 – 09:25:** Oplevering in Smartschool Uploadzone en controle van de projectbestanden.
-2. **09:25 – 10:30:** Klassikale screening en evaluatie van alle ingeleverde Parallax-video's.
-3. **10:30 – 11:00:** Feedback en afronding module Parallax.
+### 📋 Lesverloop & inhoud
+1. **⏰ DEADLINE & Inlevering:** Aan het begin van de les (09:10) is de finale MP4-video `Familienaam_Voornaam_Parallax.mp4` geüpload in de Smartschool Uploadzone. Korte controle van de projectbestanden.
+2. **Klassikale screening:** Gezamenlijk vertonen en analyseren van alle ingeleverde Parallax-video's op het grote scherm.
+3. **Evaluatie & feedback:** Bespreking van dieptewerking, typografische timing, technische kwaliteit en reflectie op de samenwerking tussen Beeld en Motion.

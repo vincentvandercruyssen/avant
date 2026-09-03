@@ -167,6 +167,10 @@ Teken voor **elk van de vier composities** een klein storyboard in je schetsboek
 2. Geef met **bewegingspijlen** aan hoe een vorm binnenkomt, draait, vergroot of splitst.
 3. Noteer onder elk kader welke eigenschap verandert (bv. *Positie*, *Schaal*, *Rotatie*, *Dekking* of *Grootte*) en op welke seconde de actie plaatsvindt.
 
+> [!TIP]
+> **Flexibele workflow & opvolging**  
+> Je kiest zelf je werktempo en volgorde: je mag eerst alle vier de composities uittekenen vóór je animeert, of telkens één compositie schetsen en meteen digitaal uitwerken in After Effects. Zorg dat je **Pinboard** en **alle vier de storyboardschetsen** uiterlijk tegen **volgende week vrijdag tijdens de les** klaar zijn voor controle.
+
 ### Projectopzet & Compositie 1
 
 In deze eerste compositie focus je op het gebruik van de **Positie** & **Schaal** eigenschappen.

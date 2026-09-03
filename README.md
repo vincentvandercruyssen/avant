@@ -99,10 +99,9 @@ Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas
 Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
 - **Aparte pagina via Custom Output Format:** Hugo genereert automatisch `.../planning.html` (bereikbaar via de link onder de opdracht op de homepage).
 - **Afgeschermd voor leerlingen:** De planning-knop verschijnt niet op de leerlingpagina van de opdracht zelf.
-- **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert automatisch ankernavigatie voor zowel de lessen (`## 📅 Les X ...`) als de interne onderdelen (`### 📌 Titel lesfiche`, `### 🎯 Leerplandoelen`, `### 💬 Info voor de leerling`, `### 📋 Organisatie of verloop`).
-- **Titel lesfiche (geen vak/klas prefix):** Plaats onder `### 📌 Titel lesfiche` enkel de zuivere titel van de lesfiche zoals die in Smartschool staat (bv. `> **Kennismaking, After Effects, Pinboard & Storyboard**` of `> **Start After Effects & Compositie 1**`). Vermijd overbodige prefixen zoals `Motion 5CRM:` of `Web 6CRM:` aangezien de lesfiche in Smartschool reeds binnen het juiste vakvak zit.
-- **Info voor de leerling (1-op-1 overname):** Schrijf de inhoud onder `### 💬 Info voor de leerling` direct to-the-point en overzichtelijk met bullet points (zonder lange begroetingen zoals *"Welkom bij het vak..."*). Dit maakt directe copy-paste naar het Smartschool-veld mogelijk.
-- **Organisatie of verloop (interne lesopbouw):** Bevat de concrete timing en didactische stappen per lesblok (in Smartschool gemarkeerd met *"Leerlingen zien dit niet"*).
+- **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert automatisch ankernavigatie voor zowel de lessen (`## 📅 Les X ...`) als de interne onderdelen (`### 📌 Titel lesfiche`, `### 🎯 Leerplandoelen`, `### 📋 Lesverloop & inhoud`).
+- **Titel lesfiche:** Plaats onder `### 📌 Titel lesfiche` de titel van de lesfiche zoals die in Smartschool staat (bv. `> **Vormen: Kennismaking, After Effects, Pinboard & Storyboard**` of `> **Paspoort: Introductie & Onderzoek HTML-tags**`).
+- **Lesverloop & inhoud:** Bevat een beknopt, genummerd overzicht van de didactische stappen, klasafspraken, tools, compositie-instellingen en praktische doelen (zonder rigide minuut-tot-minuut tijdsblokken).
 
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
 Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](file:///f:/Webhost/hugo/avant/layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
