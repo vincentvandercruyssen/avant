@@ -8,7 +8,7 @@
 ## 📅 Les 1 03/09/2026 (2x Motion)
 
 ### 📌 Titel lesfiche
-> **Motion 5CRM: Kennismaking, After Effects Interface, Pinboard & Storyboard**
+> **Kennismaking, After Effects, Pinboard & Storyboard**
 
 ### 🎯 Leerplandoelen
 * **CRS01:** Productievereisten, verschillende beeldformaten (Full HD 16:9, Portret 4:5, Ultrawide 21:9, Vierkant 1:1), 30 fps framerate en video-export analyseren.
@@ -16,10 +16,9 @@
 * **CRS07:** Inspiratiebronnen en bewegingsvoorbeelden doelgericht verzamelen en ordenen op een digitaal pinboard.
 
 ### 💬 Info voor de leerling
-Welkom in het 5e jaar Crossmedia en het vak **Motion**!
-* Vandaag maken we kennis met elkaar, verkennen we de klasafspraken en ontdekken we wat motion design inhoudt.
-* We bekijken professionele voorbeelden van 2D shape animation en kinetische typografie.
-* **Praktisch:** Je legt een digitaal **Pinboard** aan (Pinterest, Milanote of Miro) met inspiratie en start met het uittekenen van storyboardschetsen in je schetsboek voor vier korte animatiecomposities.
+* Kennismaking, verkennen we de klasafspraken en ontdekken wat motion design inhoudt.
+* Bekijken van enkele voorbeelden van 2D shape animation en kinetische typografie.
+* **Praktisch:** Je legt een digitaal **Pinboard** aan (Pinterest) met inspiratie en start met het uittekenen van storyboardschetsen in je schetsboek voor vier korte animatiecomposities.
 
 ### 📋 Organisatie of verloop
 1. **08:25 – 09:00:** Onthaal 5CRM, voorstelling van het vak Motion, klasafspraken en jaaroverzicht. Kennis en eerdere ervaring van leerlingen met grafische software en video aftasten via een korte interactieve brainstorm.
@@ -30,7 +29,7 @@ Welkom in het 5e jaar Crossmedia en het vak **Motion**!
 ## 📅 Les 2 04/09/2026 (2x Motion)
 
 ### 📌 Titel lesfiche
-> **Motion 5CRM: Start After Effects, Compositie 1 (Positie) & Compositie 2 (Transformaties)**
+> **Start After Effects, Compositie 1 (Positie) & Compositie 2 (Transformaties)**
 
 ### 🎯 Leerplandoelen
 * **CRS02:** Doelgericht transformatie-eigenschappen (Positie, Schaal, Rotatie) en vormparameters selecteren.
@@ -53,8 +52,8 @@ Vandaag openen we voor het eerst Adobe After Effects en gaan we praktisch animer
 
 ## 📅 Les 3 10/09/2026 (2x Motion)
 
-### 📌 Lesfiche
-> **Motion 5CRM: Compositie 3 (Kinetische Typografie) & Compositie 4 (Vierkant 1:1 met Achtergrond)**
+### 📌 Titel lesfiche
+> **Compositie 3 (Kinetische Typografie) & Compositie 4 (Vierkant 1:1 met Achtergrond)**
 
 ### 🎯 Leerplandoelen
 * **CRS15:** Typografie en extern beeldmateriaal voorbereiden voor animatie in After Effects.
@@ -75,7 +74,7 @@ We bouwen onze volgende twee composities in hetzelfde After Effects-project:
 ## 📅 Les 4 11/09/2026 (2x Motion)
 
 ### 📌 Titel lesfiche
-> **Motion 5CRM: Graph Editor Dynamiek, Renderen in Media Encoder & Klassikale Screening**
+> **Graph Editor Dynamiek, Renderen in Media Encoder & Klassikale Screening**
 
 ### 🎯 Leerplandoelen
 * **CRS06:** Doelgericht Adobe Media Encoder gebruiken voor batch-export naar H.264 MP4.

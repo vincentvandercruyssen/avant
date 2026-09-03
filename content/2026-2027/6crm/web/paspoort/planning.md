@@ -8,7 +8,7 @@
 ## 📅 Les 1 02/09/2026 (3x Web)
 
 ### 📌 Titel lesfiche
-> **Web 6CRM: Introductie vak & Onderzoek HTML-tags (Paspoort)**
+> **Introductie vak & Onderzoek HTML-tags (Paspoort)**
 
 ### 🎯 Leerplandoelen
 * **13.01:** Doelgericht de inspectietool van de browser inzetten om broncode en elementstructuren van bestaande websites te ontleden.
@@ -17,9 +17,9 @@
 * **CRS06:** Vlot en efficiënt werken met browserontwikkelaarstools (Inspect Element).
 
 ### 💬 Info voor de leerling
-Welkom bij het vak Webdesign & storytelling in 6CRM! Vandaag starten we met onze eerste herhalingsopdracht: **Paspoort**. 
-We duiken onder de motorkap van het web via de **Browser DevTools (Inspect Element)**.
-* **Doel vandaag:** Het volledige onderdeel **`### Onderzoek`** op de cursuswebsite doorlopen en alle vragen over HTML-elementen (titels, paragrafen, afbeeldingen, links, lijsten) beantwoorden.
+Vandaag start je met een eerste herhalingsopdracht: **Paspoort**. Je duikt onder de motorkap van het web via de **Browser DevTools (Inspect Element)**.
+
+* **Doel vandaag:** Het onderdeel **### Onderzoek** op de cursuswebsite doorlopen en alle vragen over HTML-elementen (titels, paragrafen, afbeeldingen, links, lijsten) beantwoorden. Eerste aanzet wireframe schets.
 
 ### 📋 Organisatie of verloop
 1. **10:10 – 10:40:** Welkom, afspraken vak Web in 6CRM, werking cursuswebsite en overloop van de opdracht *Paspoort*.
@@ -29,7 +29,7 @@ We duiken onder de motorkap van het web via de **Browser DevTools (Inspect Eleme
 ## 📅 Les 2 09/09/2026 (3x Web)
 
 ### 📌 Titel lesfiche
-> **Web 6CRM: Wireframe, Semantische HTML & Start CSS (Paspoort)**
+> **Wireframe, Semantische HTML & Start CSS (Paspoort)**
 
 ### 🎯 Leerplandoelen
 * **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.
@@ -54,7 +54,7 @@ Vandaag bouwen we het Paspoort van scratch op in Visual Studio Code:
 ## 📅 Les 3 16/09/2026 (3x Web)
 
 ### 📌 Titel lesfiche
-> **Web 6CRM: Deadline Oplevering Paspoort & Evaluatie**
+> **Deadline Oplevering Paspoort & Evaluatie**
 
 ### 🎯 Leerplandoelen
 * **CRS18:** Een semantisch correcte, functionele en gestijlde eerste webpagina (Paspoort) realiseren.
