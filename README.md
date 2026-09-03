@@ -336,8 +336,10 @@ Lever de gevraagde bestanden tijdig in via de uploadzone:
 Vereisten: **Hugo Extended** (zie `.hugo-version`) en **Node.js**.
 
 ```bash
-# Start de lokale ontwikkelserver
-hugo server
+# Start de lokale ontwikkelserver (standaard poort 1313)
+npm run dev
+# of direct via Hugo:
+hugo server -p 1313
 
 # Productie build genereren
 hugo --gc --minify

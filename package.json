@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "dev": "hugo server -p 1313",
+    "start": "hugo server -p 1313"
+  },
   "devDependencies": {
     "prettier": "^3.6.2",
     "prettier-plugin-go-template": "^0.0.15"
