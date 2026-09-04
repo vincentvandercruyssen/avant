@@ -108,11 +108,15 @@ VoornaamA_Profiel/
 Jullie zijn in duo's verdeeld. Neem 10 minuten de tijd om elkaar te interviewen en de nodige informatie te noteren:
 
 1. **Wie is je partner?** (Volledige voornaam en achternaam, bijnaam, creatieve rol of studierichting)
-2. **Korte biografie / introductie:** Schrijf een korte, vlotte voorstelling (2 à 3 zinnen) over wie hij/zij is en wat hem/haar typeert.
+2. **Korte biografie / introductie:** Schrijf een korte, vlotte voorstelling (2 à 3 zinnen) over wie je partner is en wat diegene typeert.
 3. **Interesses, hobby's & vaardigheden:** Noteer minstens 3 favoriete bezigheden, creatieve talenten of tools.
 4. **Persoonlijke Top:** Vraag naar een top 3 of top 5 van iets specifieks (bijvoorbeeld: *Top 3 favoriete films/series*, *Top 3 favoriete games*, *Top 3 muzieknummers/artiesten*, *Top 3 favoriete snacks/eten*, of *Top 3 droombestemmingen*).
 5. **Inspiratielink:** Wat is zijn/haar favoriete website, YouTube-kanaal, portfolio of online inspiratiebron?
 6. **Beeldmateriaal:** Maak een toffe foto van je partner of vraag een representatieve afbeelding van zijn/haar grootste passie of interesse.
+
+#### Indienen
+
+Dien in als document of pdf (`VoornaamA_Profiel-Interview.pdf`).
 
 ### Onderzoek: Inspectie op Wikipedia
 
@@ -155,7 +159,7 @@ Dubbelklik in het *Elements*-paneel van je DevTools rechtstreeks op de tekst van
 * **Omschrijf in je notities** wat je precies hebt aangepast.
 * *Vraag:* Is de website nu écht gewijzigd voor iedereen op de wereld, of enkel lokaal in het geheugen van jouw browser? Wat gebeurt er als je op `F5` (verversen) drukt?
 
-##### Afbeeldingen (`<img>`)
+##### Afbeeldingen (Images)
 
 Klik met de rechtermuisknop op een foto in het artikel en kies *Inspecteren*.
 
@@ -176,6 +180,10 @@ Inspecteer het menu aan de linkerkant van de pagina (of een inhoudsopgave).
 
 * Het linkermenu bestaat uit klikbare linkjes (`<a>`), maar welke tags worden gebruikt om het geheel als een nette opsomming of menu te structureren?
 * Welke twee tags werken hier als een hecht duo samen?
+
+#### Indienen
+
+Dien in als document of pdf (`VoornaamA_Profiel-Onderzoek.pdf`).
 
 ### HTML: Pagina bouwen
 
