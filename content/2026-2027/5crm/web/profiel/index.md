@@ -103,7 +103,18 @@ VoornaamA_Profiel/
 
 ## Stappenplan
 
-### Onderzoek: Inspectiemissie op Wikipedia
+### Interview: Het duo-interview
+
+Jullie zijn in duo's verdeeld. Neem 10 minuten de tijd om elkaar te interviewen en de nodige informatie te noteren:
+
+1. **Wie is je partner?** (Volledige voornaam en achternaam, bijnaam, creatieve rol of studierichting)
+2. **Korte biografie / introductie:** Schrijf een korte, vlotte voorstelling (2 à 3 zinnen) over wie hij/zij is en wat hem/haar typeert.
+3. **Interesses, hobby's & vaardigheden:** Noteer minstens 3 favoriete bezigheden, creatieve talenten of tools.
+4. **Persoonlijke Top:** Vraag naar een top 3 of top 5 van iets specifieks (bijvoorbeeld: *Top 3 favoriete films/series*, *Top 3 favoriete games*, *Top 3 muzieknummers/artiesten*, *Top 3 favoriete snacks/eten*, of *Top 3 droombestemmingen*).
+5. **Inspiratielink:** Wat is zijn/haar favoriete website, YouTube-kanaal, portfolio of online inspiratiebron?
+6. **Beeldmateriaal:** Maak een toffe foto van je partner of vraag een representatieve afbeelding van zijn/haar grootste passie of interesse.
+
+### Onderzoek: Inspectie op Wikipedia
 
 Elke webpagina op het internet is openbaar te inspecteren via de browser. Voor je zelf start met coderen, analyseer je eerst hoe een bestaande webpagina is opgebouwd en welke HTML-tags de basisstructuur vormen.
 
@@ -166,20 +177,9 @@ Inspecteer het menu aan de linkerkant van de pagina (of een inhoudsopgave).
 * Het linkermenu bestaat uit klikbare linkjes (`<a>`), maar welke tags worden gebruikt om het geheel als een nette opsomming of menu te structureren?
 * Welke twee tags werken hier als een hecht duo samen?
 
-### HTML: Het Duo-Interview & De Pagina Bouwen
+### HTML: Pagina bouwen
 
 Je gaat nu zelf aan de slag met zuivere HTML-code om een profielpagina te bouwen voor jouw klasgenoot.
-
-#### Het duo-interview
-
-Jullie zijn in duo's verdeeld. Neem 10 minuten de tijd om elkaar te interviewen en de nodige informatie te noteren:
-
-1. **Wie is je partner?** (Volledige voornaam en achternaam, bijnaam, creatieve rol of studierichting)
-2. **Korte biografie / introductie:** Schrijf een korte, vlotte voorstelling (2 à 3 zinnen) over wie hij/zij is en wat hem/haar typeert.
-3. **Interesses, hobby's & vaardigheden:** Noteer minstens 3 favoriete bezigheden, creatieve talenten of tools.
-4. **Persoonlijke Top:** Vraag naar een top 3 of top 5 van iets specifieks (bijvoorbeeld: *Top 3 favoriete films/series*, *Top 3 favoriete games*, *Top 3 muzieknummers/artiesten*, *Top 3 favoriete snacks/eten*, of *Top 3 droombestemmingen*).
-5. **Inspiratielink:** Wat is zijn/haar favoriete website, YouTube-kanaal, portfolio of online inspiratiebron?
-6. **Beeldmateriaal:** Maak een toffe foto van je partner of vraag een representatieve afbeelding van zijn/haar grootste passie of interesse.
 
 #### Wireframe, schets op papier
 

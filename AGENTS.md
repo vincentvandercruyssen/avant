@@ -5,5 +5,5 @@
 - **Headings & Numbering**: Do NOT use manual numbering or phase prefixes (e.g. `Fase 1:`, `Stap 1:`, `1.`, `2.`) in Markdown headings (`###`, `####`, `#####`). The TOC and CSS counters handle hierarchical numbering automatically.
 - **No Horizontal Rules**: Do NOT use `---` / `<hr>` in the Markdown body of assignments or planning files.
 - **Tone**: Direct, activating address to the student (*je / jij / jouw* or imperative). Never use plural *we / wij / laten we*.
-- **Sentence Case**: Use sentence case for headings (only capitalize first word and proper nouns).
+- **Sentence Case**: Use sentence case for headings (only capitalize first word and proper nouns; capitalizing the first word after a colon is permitted, e.g. `### CSS: Vormgeving`).
 

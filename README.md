@@ -31,15 +31,15 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 4. **April–Mei:** `Naar klant`
 * **Vrije opdrachten:** `thema: "Vrij"` of leeg laten (`thema: ""`)
 
-### 🤝 Klasregels
+### 🤝 Klasafspraken
 
 - We tonen respect en begrip voor ieders eigenheid
+- We gebruiken altijd en tegen iedereen gepaste taal
 - We tonen geen grensoverschrijdend gedrag, fysieke of verbale agressie
 - We dragen zorg voor het schoolgebouw en de omgeving
 - We zijn steeds tijdig aanwezig op de afgesproken plaats
 - We hebben steeds al ons materiaal bij
 - We nemen een positieve werkhouding aan in de klas
-- We gebruiken altijd en tegen iedereen gepaste taal
 
 ---
 
@@ -189,7 +189,7 @@ Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard
 
 ### 2. Redactionele & Typografische Regels
 - **Aanspreekvorm (geen "we"):** Schrijf opdrachten in een directe, activerende stijl gericht naar de individuele leerling (**je / jij / jouw** of directe imperatief: *"Open de browser"*, *"Selecteer het onderwerp"*, *"Sla het bestand op"*). Vermijd meervoudsvormen zoals *"we"*, *"wij"* of *"laten we"*.
-- **Hoofdletters in tussentitels (Sentence case):** Begin in (tussen)titels enkel het eerste woord met een hoofdletter, tenzij het om eigennamen of softwarenamen gaat (bv. `#### Niet-destructief uitsnijden`, `#### Renderen in Media Encoder`, `#### HTML-basis in VS Code`). Vermijd overbodig Engels *Title Case* waarin elk woord met een hoofdletter begint.
+- **Hoofdletters in tussentitels (Sentence case):** Begin in (tussen)titels enkel het eerste woord met een hoofdletter, tenzij het om eigennamen, softwarenamen of tekst na een dubbelpunt gaat (bv. `#### Niet-destructief uitsnijden`, `### CSS: Vormgeving`, `### Onderzoek: Inspectie op Wikipedia`, `#### HTML-basis in VS Code`). Vermijd overbodig Engels *Title Case* waarin elk willekeurig woord met een hoofdletter begint.
 - **Softwaretermen & Sneltoetsen:** Vermeld bij softwarefuncties zowel de Nederlandstalige als Engelstalige benaming met sneltoetsen (`Object selecteren (Object Selection Tool, W)`, `Ctrl + T`, `F9 (Easy Ease)`).
 - **Getallen en telwoorden (voluit onder de tien):** Schrijf aantallen en telwoorden onder de tien in lopende tekst bij voorkeur voluit in het Nederlands (bv. *"je maakt vier afzonderlijke composities"*, *"kies drie beelden"*, *"de vijf basistransformaties"* in plaats van *"4 composities"* of *"de 5 basistransformaties"*). Technische eenheden, tijden, afmetingen en labels schrijf je wel als cijfer (bv. *"minimaal 5 seconden"*, *"30 fps"*, *"1080 px"*, *"Stap 1"* of *"Compositie 1"*).
 - **Beeldvergelijkingen (50/50):** Plaats 2 beelden direct onder elkaar zonder witregel voor een automatische side-by-side flex-kolom. Gebruik breedteparameters (`?w=30%` tot `?w=60%`) voor compacte menuknoppen en detailvensters.
