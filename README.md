@@ -85,7 +85,7 @@ Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas
 └── planning.md        # (Optioneel) Smartschool-lesplanning en fiches voor leerkrachten
 ```
 
-- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Parallax"`, `title: "Paspoort"`, `title: "Bauhaus"`, `title: "Lookbook"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
+- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Parallax"`, `title: "Paspoort"`, `title: "Profiel"`, `title: "Bauhaus"`, `title: "Lookbook"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
 - **Datumconventie:** Gebruik uitsluitend het formaat `YYYY-MM-DD` (bv. `date: 2026-09-01`).
 - **Paginatitels (`<title>`):**
   - Opdrachten: `Opdracht | Avant [Klas] [Vak]` (bv. `Parallax | Avant 6CRM Motion`).
@@ -173,7 +173,7 @@ Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.y
 Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard om herkenbaarheid, rust en kwaliteit te waarborgen.
 
 ### 1. Titels & Frontmatter
-- **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Parallax"`, `title: "Paspoort"`, `title: "Typografie"`, `title: "Lookbook"`).
+- **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Parallax"`, `title: "Paspoort"`, `title: "Profiel"`, `title: "Typografie"`, `title: "Lookbook"`).
 - **Auteurs (`auteurs:`):** Noteer de volledige naam van de auteur(s) (bv. `auteurs: ["Vincent Vander Cruyssen"]` of meerdere auteurs bij gedeeld lesmateriaal). De weergavebadge verkort de voornaam automatisch.
 - **Software-stack:** Volledige opsomming van gebruikte tools, browsers en standaarden.
 - **Succescriteria in eigen taal:** Koppel bij elk leerplandoel een concreet, begrijpelijk succescriterium geformuleerd in leerlingentaal:
@@ -193,6 +193,7 @@ Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard
 - **Softwaretermen & Sneltoetsen:** Vermeld bij softwarefuncties zowel de Nederlandstalige als Engelstalige benaming met sneltoetsen (`Object selecteren (Object Selection Tool, W)`, `Ctrl + T`, `F9 (Easy Ease)`).
 - **Getallen en telwoorden (voluit onder de tien):** Schrijf aantallen en telwoorden onder de tien in lopende tekst bij voorkeur voluit in het Nederlands (bv. *"je maakt vier afzonderlijke composities"*, *"kies drie beelden"*, *"de vijf basistransformaties"* in plaats van *"4 composities"* of *"de 5 basistransformaties"*). Technische eenheden, tijden, afmetingen en labels schrijf je wel als cijfer (bv. *"minimaal 5 seconden"*, *"30 fps"*, *"1080 px"*, *"Stap 1"* of *"Compositie 1"*).
 - **Beeldvergelijkingen (50/50):** Plaats 2 beelden direct onder elkaar zonder witregel voor een automatische side-by-side flex-kolom. Gebruik breedteparameters (`?w=30%` tot `?w=60%`) voor compacte menuknoppen en detailvensters.
+- **Geen redundante fase- of stapnummers in koppen:** Vermijd handmatige nummering zoals `Fase 1:`, `Fase 2:`, `1.`, `2.` of `Stap 1:` in Markdown-koppen (`###`, `####`, `#####`). De Table of Contents en CSS counters nummeren secties automatisch.
 - **Geen scheidingslijnen:** Gebruik **geen `---`** in de Markdown-body; de visuele rust en hiërarchie worden gedragen door de koppen (`##`, `###`, `####`), witruimte en callouts.
 - **Belangrijke tips & valkuilen:** Plaats cruciale waarschuwingen of tussentijdse evaluatiemomenten in Markdown callouts (`>`).
 

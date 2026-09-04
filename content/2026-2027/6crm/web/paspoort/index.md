@@ -2,7 +2,6 @@
 title: "Paspoort"
 date: 2026-09-02
 schooljaar: "2026-2027"
-klant: ""
 klas: "6CRM"
 vak: "web"
 auteurs:
