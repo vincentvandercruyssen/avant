@@ -139,47 +139,46 @@ Voer de volgende zes opdrachten uit op jouw gekozen Wikipedia-pagina. Noteer je 
 Klik met de rechtermuisknop op de hoofdtitel van het artikel bovenaan de pagina en kies *Inspecteren*.
 
 * **Let op:** Op Wikipedia zitten de woorden zelf vaak nog eens verpakt in een `<span>`-tag. Kijk naar de **tag die daarboven/errond** zit!
-* Welke tag staat er rond deze grote hoofdtitel? 
-* Zoek ook naar een kleinere tussentitel verderop in de tekst. Welke tag zie je daar?
-* Wat valt je op aan de nummering van de tags?
+1. Welke tag staat er rond deze grote hoofdtitel? 
+2. Zoek ook naar een kleinere tussentitel verderop in de tekst. Welke tag zie je daar?
+3. Wat valt je op aan de nummering van de tags?
 
 ##### Tekst (Alinea's)
 
 Inspecteer een gewone doorlopende leesalinea met tekst onder een titel.
 
-* Welke korte tag staat er telkens aan het begin en einde van een alinea tekst?
-* Waar staat deze letter volgens jou voor in het Engels?
+1. Welke korte tag staat er telkens aan het begin en einde van een alinea tekst?
+2. Waar staat deze letter volgens jou voor in het Engels?
 
-##### Hacken?
+##### Hacken
 
-Dubbelklik in het *Elements*-paneel van je DevTools rechtstreeks op de tekst van de hoofdtitel of een alinea. Pas de tekst aan naar jouw eigen naam of verzin een grappige alternatieve introductie en druk op `Enter`.
-
-* De live website toont nu jouw aangepaste tekst!
-* **Neem een screenshot** van je gehackte pagina.
-* **Omschrijf in je notities** wat je precies hebt aangepast.
-* *Vraag:* Is de website nu écht gewijzigd voor iedereen op de wereld, of enkel lokaal in het geheugen van jouw browser? Wat gebeurt er als je op `F5` (verversen) drukt?
+1. Dubbelklik in het *Elements*-paneel van je DevTools rechtstreeks op de tekst van de hoofdtitel of een alinea. Pas de tekst aan naar jouw eigen naam of verzin een grappige alternatieve introductie en druk op `Enter`. De live website toont nu jouw aangepaste tekst!
+2. **Neem een screenshot** van je gehackte pagina.
+3. **Omschrijf in je notities** wat je precies hebt aangepast.
+4. *Vraag:* Is de website nu écht gewijzigd voor iedereen op de wereld, of enkel lokaal in het geheugen van jouw browser? Wat gebeurt er als je op `F5` (verversen) drukt?
 
 ##### Afbeeldingen (Images)
 
 Klik met de rechtermuisknop op een foto in het artikel en kies *Inspecteren*.
 
-* Welke tag wordt gebruikt om een afbeelding te tonen?
-* Welk woordje (*attribuut*) zie je staan voor de link naar het afbeeldingsbestand?
-* **Belangrijk:** Heeft jouw gekozen Wikipedia-pagina geen foto? Inspecteer dan het **Wikipedia-logo** (de wereldbol met puzzelstukjes) linksboven en kijk welke tag daar gebruikt wordt!
+1. Welke tag wordt gebruikt om een afbeelding te tonen?
+2. Welk woordje (*attribuut*) zie je staan voor de link naar het afbeeldingsbestand?
+
+**Belangrijk:** Heeft jouw gekozen Wikipedia-pagina geen foto? Inspecteer dan het **Wikipedia-logo** (de wereldbol met puzzelstukjes) linksboven en kijk welke tag daar gebruikt wordt!
 
 ##### Links (Hyperlinks)
 
 Inspecteer een blauwe klikbare link in de lopende tekst.
 
-* Welke tag herkent de browser als een hyperlink?
-* Welk attribuut bepaalt naar welk webadres je surft als je op de link klikt?
+1. Welke tag herkent de browser als een hyperlink?
+2. Welk attribuut bepaalt naar welk webadres je surft als je op de link klikt?
 
-##### Lijstjes (Opsommingen & Menu)
+##### Lijstjes (Opsommingen & menu)
 
 Inspecteer het menu aan de linkerkant van de pagina (of een inhoudsopgave).
 
-* Het linkermenu bestaat uit klikbare linkjes (`<a>`), maar welke tags worden gebruikt om het geheel als een nette opsomming of menu te structureren?
-* Welke twee tags werken hier als een hecht duo samen?
+1. Het linkermenu bestaat uit klikbare linkjes (`<a>`), maar welke tags worden gebruikt om het geheel als een nette opsomming of menu te structureren?
+2. Welke twee tags werken hier als een hecht duo samen?
 
 #### Indienen
 
