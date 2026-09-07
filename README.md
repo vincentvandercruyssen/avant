@@ -100,7 +100,7 @@ Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
 - **Aparte pagina via Custom Output Format:** Hugo genereert automatisch `.../planning.html` (bereikbaar via de link onder de opdracht op de homepage).
 - **Afgeschermd voor leerlingen:** De planning-knop verschijnt niet op de leerlingpagina van de opdracht zelf.
 - **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert automatisch ankernavigatie voor zowel de lessen (`## 📅 Les X ...`) als de interne onderdelen (`### 📌 Titel lesfiche`, `### 🎯 Leerplandoelen`, `### 📋 Lesverloop & inhoud`).
-- **Titel lesfiche:** Plaats onder `### 📌 Titel lesfiche` de titel van de lesfiche zoals die in Smartschool staat (bv. `> **Vormen: Kennismaking, After Effects, Pinboard & Storyboard**` of `> **Paspoort: Introductie & Onderzoek HTML-tags**`).
+- **Titel lesfiche:** Plaats onder `### 📌 Titel lesfiche` de titel van de lesfiche zoals die in Smartschool staat (bv. `> **Parallax: Kennismaking & Briefing**`, `> **Vormen: Kennismaking, After Effects, Pinboard & Storyboard**` of `> **Paspoort: Introductie & Onderzoek HTML-tags**`).
 - **Lesverloop & inhoud:** Bevat een beknopt, genummerd overzicht van de didactische stappen, klasafspraken, tools, compositie-instellingen en praktische doelen (zonder rigide minuut-tot-minuut tijdsblokken).
 
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
