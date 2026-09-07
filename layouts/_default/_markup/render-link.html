@@ -1,1 +1,14 @@
-<a href="{{ .Destination | safeURL }}" target="_blank" rel="noopener noreferrer">{{ .Text | safeHTML }}</a>
+{{- $dest := .Destination -}}
+{{- $isExternal := or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://") (strings.HasPrefix $dest "mailto:") (strings.HasPrefix $dest "tel:") -}}
+{{- $isAnchor := strings.HasPrefix $dest "#" -}}
+{{- $href := $dest -}}
+{{- if strings.HasPrefix $dest "/" -}}
+  {{- $basePrefix := site.Home.RelPermalink -}}
+  {{- if and (ne $basePrefix "/") (strings.HasPrefix $dest $basePrefix) -}}
+    {{- $href = $dest -}}
+  {{- else -}}
+    {{- $clean := strings.TrimPrefix "/" $dest -}}
+    {{- $href = $clean | relURL -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ $href | safeURL }}"{{ if not $isAnchor }} target="_blank" rel="noopener noreferrer"{{ end }}{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>

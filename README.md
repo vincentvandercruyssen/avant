@@ -106,7 +106,7 @@ Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
 - **Lesverloop & inhoud:** Bevat een beknopt, genummerd overzicht van de didactische stappen, klasafspraken, tools, compositie-instellingen en praktische doelen (zonder rigide minuut-tot-minuut tijdsblokken).
 
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
-Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](file:///f:/Webhost/hugo/avant/layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
+Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
 - **WebP & Responsive `srcset`:** Converteert PNG/JPG automatisch naar WebP met breakpoints voor smartphone (`480w`, `768w`), 15" laptop (`1080w`, `1440w`) en 27" desktop (`1920w`).
 - **Formaat- & Stijlparameters in Markdown:**
   - **Query parameters:** `![Alt](img/foto.png?width=450px)` of `![Alt](img/foto.png?w=60%)`
@@ -116,6 +116,13 @@ Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`ren
     - `#half` of `#50%` (50% kolombreedte)
     - `#third` of `#33%` (33.3% kolombreedte)
     - `#center` (gecentreerd uitlijnen, bv. `![Alt](img/foto.png#half#center)`)
+
+### 🔗 Link Render Hook & URL-Resolutie
+Alle Markdown-links worden verwerkt via een **Link Render Hook** ([`render-link.html`](layouts/_default/_markup/render-link.html)):
+- **Root-relatieve links (`/`):** Links die starten met een slash (bv. `[Cursus Fotografie](/cursus/fotografie/)` of `[Kijkkader](/2026-2027/5crm/beeld/kijkkader/#concept--thema)`) worden via `relURL` automatisch gekoppeld aan het `baseURL`-subpad (`/avant/`). Hierdoor werken links foutloos, zowel lokaal (`http://localhost:1313/avant/...`) als online op GitHub Pages (`https://vincentvandercruyssen.github.io/avant/...`).
+- **Nieuw tabblad (`target="_blank"`):** Externe links en interne pagina-/cursusverwijzingen openen standaard in een nieuw tabblad met `rel="noopener noreferrer"`, zodat leerlingen de actieve opdracht niet verliezen.
+- **In-page ankers (`#`):** Interne ankerverwijzingen binnen dezelfde pagina (startend met `#`, bv. `[Stap 1](#stap-1)`) navigeren direct binnen dezelfde pagina (zonder `target="_blank"`).
+- **Relatieve downloadlinks:** Lokale bronnen binnen page bundles (zoals `[Voorbeeld](oefenbestanden/bestand.ai)`) behouden hun relatieve pad intact.
 
 ### 📐 Automatische Afbeeldingskolommen & Flex-lay-out
 - **Gelijke kolommen (Pure Markdown):** Plaats 2 of meer afbeeldingen direct onder elkaar zonder witregel. De CSS groepeert ze automatisch in gelijke kolommen (50/50 bij 2 beelden, 33/33/33 bij 3 beelden):
