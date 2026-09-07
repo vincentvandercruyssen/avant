@@ -51,14 +51,35 @@
 ## 📅 Les 3 08/09/2026 (2x Motion, 09:10 – 11:00)
 
 ### 📌 Titel lesfiche
-> **Parallax: Typografie, Kleurharmonisatie & After Effects Opstart**
+> **Parallax: Afwerken Onderzoek & Start Photoshop Ontwerp**
 
 ### 🎯 Leerplandoelen
-* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking, uitsnijding en kleurharmonisatie correct bepalen.
+* **CRS01:** Productievereisten en bestandsconventies voor mediaprojecten toepassen.
+* **CRS07:** Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren en ordenen op een pinboard.
+* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen.
+* **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop.
+* **CRS21:** Typografie en beeldelementen doordacht onderzoeken in functie van de compositie.
+
+### 📋 Lesverloop & inhoud
+1. **Afronden voorstudie & onderzoek:** Voltooien van het digitale pinboard en de definitieve keuze van complementair bronmateriaal (sfeervolle achtergrond, krachtig voorgrondobject of personage, en typografische stijl/quote).
+2. **Mappenstructuur & bestandsbeheer:** Controleren van de projectmap `VoornaamA_Parallax/` in OneDrive en ruwe bronbestanden ordenen in `01_assets/`.
+3. **Start Photoshop-ontwerp:**
+   * Hoofddocument aanmaken in Photoshop: `VoornaamA_Parallax-Ontwerp.psd` (2160 × 2700 px of 1080 × 1350 px, 4:5, RGB).
+   * Niet-destructief werken: beelden openen, voorgrondobject uitsnijden met het *Object selecteren*-gereedschap (`W`) en verfijnen via *Selecteren en maskeren*.
+   * Toevoegen van een **laagmasker** (geen pixels wissen met de gom) en de laag omzetten naar een **slim object** (*Smart Object*) voor behoud van flexibiliteit en beeldkwaliteit.
+4. **Eerste compositieopzet:** Voorgrond en achtergrond harmonieus samenbrengen en positioneren binnen het 4:5 kader als basis voor de typografische en filmische afwerking.
+
+## 📅 Les 4 08/09/2026 (2x Motion, 13:30 – 15:20)
+
+### 📌 Titel lesfiche
+> **Parallax: Typografie, Kleurharmonisatie & Start After Effects (3D Camera)**
+
+### 🎯 Leerplandoelen
+* **CRS02:** Passende technieken doelgericht selecteren (aanpassingslagen, 3D camera parallax, animatieparameters).
 * **CRS15:** Geschikt beeldmateriaal en typografie gestructureerd voorbereiden voor animatie in After Effects.
+* **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
 * **CRS21:** Typografie doordacht vormgeven met aandacht voor leesbaarheid en hiërarchie.
 * **CRS22:** Beeldelementen esthetisch harmoniseren met aanpassingslagen en kleurcorrecties tot één consistent geheel.
-* **CRS23:** Bestanden controleren op correcte resolutie en kleurruimte (sRGB).
 * **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Beeld.
 
 ### 📋 Lesverloop & inhoud
@@ -66,34 +87,22 @@
 2. **Kleurharmonisatie & sfeer:** Gebruik van aanpassingslagen (Kleurbalans, Curven, Kleur opzoeken / LUTs) om voorgrond en achtergrond naadloos samen te smelten tot één esthetisch geheel.
 3. **Kwaliteitscontrole & afronding Beeld:** Controle op resoluties (1080×1350 / 2160×2700), kleurruimte (sRGB) en gestructureerde lagen met betekenisvolle namen. Oplevering van het Photoshop-ontwerp voor Beeld (`Familienaam_Voornaam_Voorstudie.psd` en `.jpg`).
 4. **After Effects opstart & 3D-lagen:** Importeren van `VoornaamA_Parallax-Ontwerp.psd` als *Composition - Retain Layer Sizes*, activeren van de 3D-lagen (kubus-icoon) en dieptewerking creëren via de Z-as afstanden.
-
-## 📅 Les 4 08/09/2026 (2x Motion, 13:30 – 15:20)
-
-### 📌 Titel lesfiche
-> **Parallax: 3D Camera Parallax, Kinetische Typografie & Graph Editor**
-
-### 🎯 Leerplandoelen
-* **CRS02:** Passende technieken doelgericht selecteren (3D camera parallax, animatieparameters).
-* **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
-* **CRS21:** Typografie doordacht animeren met aandacht voor leesbaarheid, hiërarchie en ritme.
-* **CRS22:** Beeldelementen esthetisch harmoniseren met overgangen en animatiecurven.
-
-### 📋 Lesverloop & inhoud
-1. **Demonstratie 3D Camera & Parallax:** Werken met *Two Views* (Top & Active Camera), een 3D camera toevoegen (35 mm of 50 mm) en *Position* en *Point of Interest* animeren met Easy Ease (`F9`). Compositieduur instellen op 8 seconden.
-2. **Kinetische typografie:** Titel- en quotelagen animeren (positie, dekking of After Effects animators) en Motion Blur activeren.
-3. **Graph Editor & timing:** Snelheidscurves verfijnen in de Graph Editor voor een natuurlijk bewegingsritme.
+5. **Demonstratie 3D Camera & Parallax:** Werken met *Two Views* (Top & Active Camera), een 3D camera toevoegen (35 mm of 50 mm) en *Position* en *Point of Interest* animeren met Easy Ease (`F9`). Compositieduur instellen op 8 seconden.
 
 ## 📅 Les 5 15/09/2026 (2x Motion, 09:10 – 11:00)
 
 ### 📌 Titel lesfiche
-> **Parallax: Video Render, Deadline Oplevering & Screening**
+> **Parallax: Kinetische Typografie, Video Render & Screening**
 
 ### 🎯 Leerplandoelen
 * **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
+* **CRS21:** Typografie doordacht animeren met aandacht voor leesbaarheid, hiërarchie en ritme.
 * **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (3–5 MB).
 * **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Motion.
 
 ### 📋 Lesverloop & inhoud
-1. **Batch-export in Adobe Media Encoder:** Renderen naar H.264 MP4 (`Familienaam_Voornaam_Parallax.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5–8 Mbps, bestandsgrootte 3–5 MB in `04_exports/`).
-2. **⏰ DEADLINE & Inlevering:** Uploaden van de finale MP4 in de Smartschool Uploadzone samen met het georganiseerde After Effects-project.
-3. **Klassikale screening & evaluatie:** Gezamenlijk vertonen en analyseren van alle Parallax-video's op het grote scherm met feedback op dieptewerking, timing, typografie en het geïntegreerde proces.
+1. **Kinetische typografie:** Titel- en quotelagen animeren in After Effects (positie, dekking of After Effects animators) en Motion Blur activeren.
+2. **Graph Editor & timing:** Snelheidscurves verfijnen in de Graph Editor voor een natuurlijk bewegingsritme.
+3. **Batch-export in Adobe Media Encoder:** Renderen naar H.264 MP4 (`Familienaam_Voornaam_Parallax.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5–8 Mbps, bestandsgrootte 3–5 MB in `02_exports/`).
+4. **⏰ DEADLINE & Inlevering:** Uploaden van de finale MP4 in de Smartschool Uploadzone samen met het georganiseerde After Effects-project.
+5. **Klassikale screening & evaluatie:** Gezamenlijk vertonen en analyseren van alle Parallax-video's op het grote scherm met feedback op dieptewerking, timing, typografie en het geïntegreerde proces.

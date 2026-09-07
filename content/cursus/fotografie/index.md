@@ -381,7 +381,7 @@ Om je beeldcompositie kracht, diepte en zeggingskracht te geven, hanteer je tien
 
 ### Regel van derden, de gulden snede, kadrering
 
-Plaats je een onderwerp precies in het midden van het kader, dan levert dat vaak een statische, weinig boeiende compositie op.
+Plaats je een onderwerp precies in het midden van het kader, dan levert dat vaak een eerder statische compositie op. Daarnaast is er de **symmetrische compositie** waarbij beide helften van het beeld elkaar min of meer weerspiegelen. Dit zorgt voor rust, orde en een statische, formele uitstraling.
 
 De **regel van derden** verdeelt het zoekerbeeld met twee horizontale en twee verticale lijnen in negen gelijke vlakken. De vier snijpunten van deze lijnen vormen de natuurlijke **sterke punten** van je frame. Plaats je hoofdonderwerp (bv. het oog van een model, een boom of een bootje) op een van deze snijpunten, en leg de horizonlijn op de bovenste of onderste derdenlijn voor maximale visuele dynamiek.
 
@@ -400,8 +400,8 @@ Een foto is een tweedimensionaal plat vlak. Als fotograaf is het jouw uitdaging 
 
 Je suggereert diepte door:
 - **Inlopende diagonalen:** Lijnen die vanuit de hoeken naar het centrum of verdwijnpunt lopen.
-- **Overlappende lagen:** Een duidelijke voorgrond (*foreground*), middenplan (*midground*) en achtergrond (*background*).
 - **Kijklijnen:** Wegen, hekwerken, spoorrails of rivieren die het oog diep het landschap in zuigen.
+- **Overlappende lagen:** Een duidelijke voorgrond (*foreground*), middenplan (*midground*) en achtergrond (*background*).
 
 ![Dieptewerking via sterke diagonale lijnen](img/aspecten-diepte-diagonalen-1.png)
 ![Kijklijnen](img/aspecten-diepte-diagonalen-2.png)
@@ -424,8 +424,8 @@ De Amerikaanse topfotografe **Sally Mann** demonstreerde dit meesterlijk in haar
 - **In het eerste beeld** kiest Sally Mann voor een groot diafragma. De achtergrond vervaagt tot een zachte waas. De blik focust uitsluitend op het meisje en haar kwetsbaarheid.
 - **In het tweede beeld** gebruikt ze een kleiner diafragma. De achtergrond en de omstanders worden haarscherp zichtbaar en vertellen direct mee het verhaal van de sociale context.
 
-![Sally Mann 1](img/aspecten-sally_mann-1.png)
 ![Sally Mann 2](img/aspecten-sally_mann-2.png)
+![Sally Mann 1](img/aspecten-sally_mann-1.png)
 
 ### Standpunt, perspectief en beeldpsychologie
 

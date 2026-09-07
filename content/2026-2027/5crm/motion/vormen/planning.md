@@ -60,7 +60,7 @@
 ### 📋 Lesverloop & inhoud
 1. **Instructie & demonstratie:**
    * **Compositie 3 (`VoornaamA_Vormen-Comp_3`, 2520 × 1080 px, Ultrawide, min. 5 sec):** Kinetische typografie, actiewoord (*BEWEEG*, *RITME*, *VERSNEL*, *VERVORM*, *TRANSFORMEER*, *KRACHT*, *BOUNCE*, *FLOW*), Character-paneel, ankerpunten bij tekst en strakke ritmische verschijning via positie, schaal of rotatie.
-   * **Compositie 4 (`VoornaamA_Vormen-Comp_4`, 1080 × 1080 px, 1:1 vierkant, min. 10 sec):** Downloaden en importeren van een contrastrijke achtergrondfoto (Pexels / Unsplash) in `01_assets/`, vectorvormen laten reageren op de foto en Motion Blur (bewegingsonscherpte) activeren voor een filmische look.
+   * **Compositie 4 (`VoornaamA_Vormen-Comp_4`, 1080 × 1080 px, 1:1 vierkant, min. 10 sec):** Importeren van een contrastrijke achtergrondfoto (bijvoorbeeld de eigen opname uit *Beeld: Kijkkader*, of Pexels / Unsplash) in `01_assets/`, vectorvormen laten reageren op de foto en Motion Blur (bewegingsonscherpte) activeren voor een filmische look.
 2. **Zelfstandig werk:** Leerlingen bouwen hun composities verder uit in After Effects (Composities 1 t.e.m. 4). Individuele begeleiding bij typografische keuzes, ritme, overgangen en compositie.
 3. **Opvolging & feedback:** Voortgangscontrole van de storyboards en Pinboards met het oog op de deadline van morgen.
 

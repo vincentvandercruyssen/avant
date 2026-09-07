@@ -240,7 +240,7 @@ In de vierde compositie werk je met een vierkant formaat en breng je bewegende e
    * **Grootte:** `1080 × 1080 px` (Vierkant, 1:1)
    * **Frame Rate:** `30 fps`
    * **Duration:** `0:00:10:00` (**minimaal 10 seconden**)
-2. Zoek een sfeervolle, contrastrijke achtergrondfoto op [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/) en sla deze op in `01_assets/`.
+2. Gebruik bijvoorbeeld jouw eigen opname uit de opdracht [Beeld: Kijkkader](/2026-2027/5crm/beeld/kijkkader/#optionele-integratie-met-5crm-motion) (`VoornaamA_Motion-Achtergrond.jpg`) of zoek een sfeervolle, contrastrijke achtergrondfoto op [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/) en bewaar deze in `01_assets/`.
 3. Importeer de foto in After Effects (`Ctrl + I`) en sleep hem onderaan in de tijdlijn.
 4. Schaal de foto passend en zet eventueel een subtiele schaal-animatie op de foto (bv. een langzame zoom van `100%` naar `108%` over 10 seconden).
 5. Teken contrasterende vectorvormen bovenop de foto (kaders, lijnen, cirkels of typografische accenten).

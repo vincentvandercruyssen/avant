@@ -87,7 +87,7 @@ Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas
 └── planning.md        # (Optioneel) Smartschool-lesplanning en fiches voor leerkrachten
 ```
 
-- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Parallax"`, `title: "Paspoort"`, `title: "Profiel"`, `title: "Bauhaus"`, `title: "Lookbook"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
+- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Kijkkader"`, `title: "Vormen"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Bauhaus"`, `title: "Lookbook"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
 - **Datumconventie:** Gebruik uitsluitend het formaat `YYYY-MM-DD` (bv. `date: 2026-09-01`).
 - **Paginatitels (`<title>`):**
   - Opdrachten: `Opdracht | Avant [Klas] [Vak]` (bv. `Parallax | Avant 6CRM Motion`).
@@ -102,7 +102,7 @@ Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
 - **Aparte pagina via Custom Output Format:** Hugo genereert automatisch `.../planning.html` (bereikbaar via de link onder de opdracht op de homepage).
 - **Afgeschermd voor leerlingen:** De planning-knop verschijnt niet op de leerlingpagina van de opdracht zelf.
 - **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert automatisch ankernavigatie voor zowel de lessen (`## 📅 Les X ...`) als de interne onderdelen (`### 📌 Titel lesfiche`, `### 🎯 Leerplandoelen`, `### 📋 Lesverloop & inhoud`).
-- **Titel lesfiche:** Plaats onder `### 📌 Titel lesfiche` de titel van de lesfiche zoals die in Smartschool staat (bv. `> **Parallax: Kennismaking & Briefing**`, `> **Vormen: Kennismaking, After Effects, Pinboard & Storyboard**` of `> **Paspoort: Introductie & Onderzoek HTML-tags**`).
+- **Titel lesfiche:** Plaats onder `### 📌 Titel lesfiche` de titel van de lesfiche zoals die in Smartschool staat (bv. `> **Kijkkader: Introductie Beeldtaal, Compositieregels & Praktijkshoot op Locatie**`, `> **Vormen: Kennismaking, After Effects, Pinboard & Storyboard**`, `> **Profiel: Introductie, Duo-Interview & DevTools**` of `> **Parallax: Kennismaking & Briefing**`).
 - **Lesverloop & inhoud:** Bevat een beknopt, genummerd overzicht van de didactische stappen, klasafspraken, tools, compositie-instellingen en praktische doelen (zonder rigide minuut-tot-minuut tijdsblokken).
 
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
@@ -180,7 +180,7 @@ Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.y
 Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard om herkenbaarheid, rust en kwaliteit te waarborgen.
 
 ### 1. Titels & Frontmatter
-- **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Parallax"`, `title: "Paspoort"`, `title: "Profiel"`, `title: "Typografie"`, `title: "Lookbook"`).
+- **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Kijkkader"`, `title: "Vormen"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Typografie"`, `title: "Lookbook"`).
 - **Auteurs (`auteurs:`):** Noteer de volledige naam van de auteur(s) (bv. `auteurs: ["Vincent Vander Cruyssen"]` of meerdere auteurs bij gedeeld lesmateriaal). De weergavebadge verkort de voornaam automatisch.
 - **Software-stack:** Volledige opsomming van gebruikte tools, browsers en standaarden.
 - **Succescriteria in eigen taal:** Koppel bij elk leerplandoel een concreet, begrijpelijk succescriterium geformuleerd in leerlingentaal:
