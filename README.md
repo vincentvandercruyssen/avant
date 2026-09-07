@@ -127,13 +127,17 @@ Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`ren
   ![Detailknop](knop.png?w=30%)
   ```
 - **Responsief:** Op smalle schermen ($\le 600\text{px}$) schakelen multi-image alinea's automatisch over naar een verticale stapeling.
-- **Shortcode `{{< grid >}}`:** Voor meer complexe lay-outs of gemengde content (tekst, code, beelden) is er een lichte grid-shortcode ([`grid.html`](file:///f:/Webhost/hugo/avant/layouts/shortcodes/grid.html)):
+- **Shortcode `{{< grid >}}`:** Voor meer complexe lay-outs of gemengde content (tekst, code, beelden) is er een lichte grid-shortcode ([`grid.html`](layouts/shortcodes/grid.html)):
   ```markdown
   {{< grid cols=2 gap="1rem" >}}
   Linkerkolom content...
 
   Rechterkolom content...
   {{< /grid >}}
+  ```
+- **Shortcode `{{< pinboard >}}`:** Voor het insluiten van een interactief Pinterest-bord ([`pinboard.html`](layouts/shortcodes/pinboard.html)):
+  ```markdown
+  {{< pinboard url="https://www.pinterest.com/gebruikersnaam/naam_board/" >}}
   ```
 
 ### 📸 Aanbevolen Stockplatformen (Bronmateriaal)

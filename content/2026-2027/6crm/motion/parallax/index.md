@@ -66,6 +66,8 @@ De compositie en animatie is opgebouwd uit drie lagen:
 * **Voorgrond:** Het personage of hoofdonderwerp, haarfijn en niet-destructief vrijgemaakt van zijn oorspronkelijke achtergrond.
 * **Typografie:** Eén krachtig kernwoord en een korte slagzin/citaat, geplaatst in de 3D-ruimte (bijvoorbeeld tussen voorgrond en achtergrond) en expressief geanimeerd.
 
+{{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/parallax/" >}}
+
 ## Technische specificaties
 
 | Instelling | Aanbevolen waarde | Toelichting |
@@ -79,15 +81,42 @@ De compositie en animatie is opgebouwd uit drie lagen:
 
 ## Stappenplan
 
-### Brainstorm
+### Onderzoek
 
 * Bepaal je thema, onderwerp en centrale boodschap.
 * Kies je tekst: houd het beknopt en krachtig. Let op typografische hiërarchie, ritme en leesbaarheid.
-* Verzamel hoogwaardig beeldmateriaal via eigen fotografie of kwalitatieve stockplatformen (zoals Pexels of Unsplash).
+
+#### Pinboard
+
+Maak een account aan op [Pinterest](https://www.pinterest.com/) en maak een nieuw bord aan met de naam van de opdracht: **Parallax**. Verzamel hierin visuele referenties en inspiratie voor je voorgrond, achtergrond, kleurharmonie en typografie.
+
+Vanuit deze inspiratie verzamel je hierna hoogwaardig beeldmateriaal via eigen fotografie of kwalitatieve stockplatformen (zoals [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/)).
+
+#### Document, moodboard, schets
+
+Stel een document op met je verzamelde ideeën en concept (dit mag een digitaal document zijn, een moodboard of een getekende schets).
+
+#### Indienen
+
+Dien je vooronderzoek in als document, PDF of afbeelding (`VoornaamA_Parallax-Onderzoek.pdf`, `.doc` of `.jpg`). Plaats in dit document ook de rechtstreekse link naar jouw Pinterest-bord. De URL-structuur van een Pinterest-bord is telkens:
+
+`https://www.pinterest.com/gebruikersnaam/naam_board` (bijvoorbeeld `https://www.pinterest.com/jouwnaam/parallax`).
+
+### Mappenstructuur
+
+Alvorens aan de slag te gaan in Photoshop en After Effects zet je een ordelijke projectmap op in je OneDrive onder het vak **Motion**: `VoornaamA_Parallax`. Zorg voor duidelijke, gestandaardiseerde submappen en bestandsnamen, bijvoorbeeld:
+
+```text
+VoornaamA_Parallax/
+├── 01_assets/     <- Originele foto's, fonts, audiobestanden
+├── 02_exports/    <- .mp4, .jpg
+├── VoornaamA_Parallax-Animatie.aep
+└── VoornaamA_Parallax-Ontwerp.psd
+```
 
 #### Voorbeeld
 
-In dit voorbeeld werken we met een vintage walkman als voorgrondobject en een mistig berglandschap als sfeervolle achtergrond.
+In dit voorbeeld zie je een vintage walkman als voorgrondobject en een mistig berglandschap als sfeervolle achtergrond.
 
 ![Voorgrond zoeken op Pexels](img/foto_voorgrond_zoeken-walkman.png)
 ![Gratis download knop op Pexels](img/foto_voorgrond_zoeken-freedownload_knop.png?w=40%)
@@ -99,18 +128,6 @@ In dit voorbeeld werken we met een vintage walkman als voorgrondobject en een mi
 ![Originele achtergrondfoto](img/pexels-alohaphotostudio-10471894.jpg)
 
 [Pexels - Foggy mountains](https://www.pexels.com/photo/foggy-mountains-10471894/)
-
-### Mappenstructuur
-
-Zet een ordelijke projectmap op in je OneDrive onder het vak **Motion**: `VoornaamA_Parallax`. Zorg voor duidelijke, gestandaardiseerde submappen en bestandsnamen:
-
-```text
-VoornaamA_Parallax/
-├── 01_assets/          <- Originele foto's, fonts, audiobestanden
-├── 02_photoshop/       <- VoornaamA_Parallax-Ontwerp.psd & *.jpg
-├── 03_aftereffects/    <- VoornaamA_Parallax-Animatie.aep & (Footage)
-└── 04_exports/         <- VoornaamA_Parallax-Animatie.mp4
-```
 
 ### Beeldbewerking in Photoshop
 
@@ -242,7 +259,7 @@ Laat de tekst dynamisch verschijnen en bewegen. Animeer de *Position*, *Opacity*
 
 ![Tekstlagen animeren in After Effects](img/ae-animeren_tekstlagen_posities.png)
 
-### Extra's
+#### Extra uitdagingen
 
 Voor wie een stap verder wil gaan en extra diepte wil toevoegen:
 
@@ -269,6 +286,7 @@ Klik op de groene afspeelknop om de render te starten.
 Plaats de bestanden tijdig in de voorziene mappen op de uploadzone:
 
 ### Voor het vak Beeld
+* Onderzoek en Pinterest-link: `VoornaamA_Parallax-Onderzoek.pdf` (of `.doc` / `.jpg`)
 * Photoshop-werkbestand met alle lagen: `Familienaam_Voornaam_Voorstudie.psd`
 * Export: `Familienaam_Voornaam_Voorstudie.jpg`
 
