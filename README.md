@@ -66,7 +66,9 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   │   │   ├── oefenbestanden/# Downloadbare Illustrator oefenbestanden (.ai)
 │   │   │   └── index.md       # Cursus Adobe After Effects (8 hoofdstukken + cheat sheet)
 │   │   ├── blender.md
-│   │   └── fotografie.md
+│   │   └── fotografie/
+│   │       ├── img/           # 162 geëxtraheerde illustraties, diagrammen en voorbeelden
+│   │       └── index.md       # Cursus Fotografie & beeldanalyse (Kathleen Michiels & Vincent Vander Cruyssen)
 │   └── doelen/
 │       ├── _index.md          # Verzamelpagina doelstellingen
 │       └── crossmedia.md      # 53 Crossmedia leerplandoelen & evaluatieclusters
@@ -135,6 +137,7 @@ Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`ren
   Rechterkolom content...
   {{< /grid >}}
   ```
+- **Geen shortcode nodig voor beelden:** Het gebruik van `{{< grid >}}` (of een aangepaste gap) om afbeeldingen naast elkaar te plaatsen is niet nodig. Markdown-afbeeldingen direct onder elkaar plaatsen activeert automatisch de CSS-flexbox met standaard `1rem` gap.
 - **Shortcode `{{< pinboard >}}`:** Voor het insluiten van een interactief Pinterest-bord ([`pinboard.html`](layouts/shortcodes/pinboard.html)):
   ```markdown
   {{< pinboard url="https://www.pinterest.com/gebruikersnaam/naam_board/" >}}

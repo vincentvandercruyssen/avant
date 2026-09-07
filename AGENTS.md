@@ -6,4 +6,6 @@
 - **No Horizontal Rules**: Do NOT use `---` / `<hr>` in the Markdown body of assignments or planning files.
 - **Tone**: Direct, activating address to the student (*je / jij / jouw* or imperative). Never use plural *we / wij / laten we*.
 - **Sentence Case**: Use sentence case for headings (only capitalize first word and proper nouns; capitalizing the first word after a colon is permitted, e.g. `### CSS: Vormgeving`).
+- **Afbeeldingen & Grids**: Gebruik van `{{< grid >}}` shortcode (of custom gap) om afbeeldingen naast elkaar te plaatsen is niet nodig. Door markdown afbeeldingen direct onder elkaar te plaatsen (zonder witregel ertussen) komen ze in één `<p>` en zorgt de CSS (`p:has(> img:nth-of-type(2))`) automatisch voor een flexbox layout met gelijke kolommen en standaard `1rem` gap.
+
 
