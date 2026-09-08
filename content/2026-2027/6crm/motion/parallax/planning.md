@@ -72,22 +72,29 @@
 ## 📅 Les 4 08/09/2026 (2x Motion, 13:30 – 15:20)
 
 ### 📌 Titel lesfiche
-> **Parallax: Typografie, Kleurharmonisatie & Start After Effects (3D Camera)**
+> **Parallax: Onderzoek bespreken, Niet-destructief bewerken, Aanpassingslagen**
 
 ### 🎯 Leerplandoelen
-* **CRS02:** Passende technieken doelgericht selecteren (aanpassingslagen, 3D camera parallax, animatieparameters).
-* **CRS15:** Geschikt beeldmateriaal en typografie gestructureerd voorbereiden voor animatie in After Effects.
-* **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
-* **CRS21:** Typografie doordacht vormgeven met aandacht voor leesbaarheid en hiërarchie.
-* **CRS22:** Beeldelementen esthetisch harmoniseren met aanpassingslagen en kleurcorrecties tot één consistent geheel.
-* **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Beeld.
+* **CRS02:** Passende technieken doelgericht selecteren (laagmaskers, slimme objecten, slimme filters, aanpassingslagen, overvloeimodi).
+* **CRS07:** Kwalitatief en complementair fotomateriaal (hoge resolutie) doelgericht selecteren op basis van het pinboard.
+* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen en toepassen.
+* **CRS10:** Beeldmateriaal vakkundig vrijmaken met het gereedschap *Object selecteren* en verfijnen met laagmaskers.
+* **CRS22:** Beeldelementen esthetisch harmoniseren met aanpassingslagen (licht, kleur, levendigheid, curven, egale kleur en overvloeimodi) en uitknipmaskers tot één consistent geheel.
 
 ### 📋 Lesverloop & inhoud
-1. **Typografie & gelaagdheid:** Toevoegen van een krachtige titel en quote in Photoshop. Typografische lagen slim positioneren tussen de achtergrond en het vrijgemaakte voorgrondobject.
-2. **Kleurharmonisatie & sfeer:** Gebruik van aanpassingslagen (Kleurbalans, Curven, Kleur opzoeken / LUTs) om voorgrond en achtergrond naadloos samen te smelten tot één esthetisch geheel.
-3. **Kwaliteitscontrole & afronding Beeld:** Controle op resoluties (1080×1350 / 2160×2700), kleurruimte (sRGB) en gestructureerde lagen met betekenisvolle namen. Oplevering van het Photoshop-ontwerp voor Beeld (`Familienaam_Voornaam_Voorstudie.psd` en `.jpg`).
-4. **After Effects opstart & 3D-lagen:** Importeren van `VoornaamA_Parallax-Ontwerp.psd` als *Composition - Retain Layer Sizes*, activeren van de 3D-lagen (kubus-icoon) en dieptewerking creëren via de Z-as afstanden.
-5. **Demonstratie 3D Camera & Parallax:** Werken met *Two Views* (Top & Active Camera), een 3D camera toevoegen (35 mm of 50 mm) en *Position* en *Point of Interest* animeren met Easy Ease (`F9`). Compositieduur instellen op 8 seconden.
+1. **Bespreking onderzoek & selectie fotomateriaal:**
+   * Klassikale bespreking van het vooronderzoek en de Pinterest-borden.
+   * Gerichte zoektocht naar kwalitatief, beeldmateriaal in hoge resolutie (via stockplatformen of eigen fotografie).
+2. **Niet-destructieve beeldbewerking & uitsnijden:**
+   * Voordelen van een **niet-destructieve werkwijze**.
+   * Voorgrondobject uitsnijden met het gereedschap **Object selecteren**.
+   * Lagen omzetten naar **slimme objecten** (*Smart Objects*) om bewerkingen flexibel te houden.
+3. **Tint, licht en contrast afstemmen via aanpassingslagen & uitknipmaskers:**
+   * Toepassen van **aanpassingslagen** (*Adjustment Layers*) voor licht/helderheid, kleur en levendigheid (*Light*, *Color and Vibrance*) om voorgrond en achtergrond visueel af te stemmen tot één samenhangend geheel.
+   * Werken met **uitknipmaskers** (*Clipping Masks*): een aanpassingslaag koppelen aan één onderliggende laag (bv. uitsluitend de voorgrondlaag corrigeren zonder de achtergrond te beïnvloeden).
+4. **Contrast, sfeer & speciale effecten:**
+   * Nauwkeurige sturing van contrast en toonwaarden met behulp van **Curven** (*Curves*).
+   * Inzetten van een **Egale kleur** (*Solid Color*) in combinatie met een **overvloeimodus** (*Blend Mode*) voor creatieve kleurschakeringen, *color grading* en een bepaalde sfeer.
 
 ## 📅 Les 5 15/09/2026 (2x Motion, 09:10 – 11:00)
 
