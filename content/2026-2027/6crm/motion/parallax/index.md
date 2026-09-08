@@ -83,12 +83,12 @@ De compositie en animatie is opgebouwd uit drie lagen:
 
 ### Onderzoek
 
-* Bepaal je thema, onderwerp en centrale boodschap.
+* Bedenk je thema, onderwerp en centrale boodschap.
 * Kies je tekst: houd het beknopt en krachtig. Let op typografische hiërarchie, ritme en leesbaarheid.
 
 #### Pinboard
 
-Maak een account aan op [Pinterest](https://www.pinterest.com/) en maak een nieuw bord aan met de naam van de opdracht: **Parallax**. Verzamel hierin visuele referenties en inspiratie voor je voorgrond, achtergrond, kleurharmonie en typografie.
+Maak een account aan op [Pinterest](https://www.pinterest.com/) en maak een nieuw bord aan met de naam van de opdracht: **Parallax**. Verzamel hierin visuele referenties en inspiratie voor je voorgrond, achtergrond, typografie, animatie,...
 
 Vanuit deze inspiratie verzamel je hierna hoogwaardig beeldmateriaal via eigen fotografie of kwalitatieve stockplatformen (zoals [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/)).
 

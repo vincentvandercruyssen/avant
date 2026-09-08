@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 120 90">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+        opacity: .2;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .st2 {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <rect class="st0" width="120" height="90"/>
+  <line class="st1" x1="40" y1="0" x2="40" y2="90"/>
+  <line class="st1" x1="80" y1="0" x2="80" y2="90"/>
+  <line class="st1" x1="120" y1="30" y2="30"/>
+  <line class="st1" x1="120" y1="60" y2="60"/>
+  <circle class="st2" cx="40" cy="30" r="2.5"/>
+  <circle class="st2" cx="80" cy="30" r="2.5"/>
+  <circle class="st2" cx="40" cy="60" r="2.5"/>
+  <circle class="st2" cx="80" cy="60" r="2.5"/>
+</svg>

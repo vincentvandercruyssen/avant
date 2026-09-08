@@ -50,8 +50,8 @@ Als fotograaf en crossmediaal ontwerper registreer je de werkelijkheid niet pass
 
 In deze eerste opdracht voor **Beeld** train je jouw actieve fotografische blik. Je onderzoekt fundamentele compositieregels en trekt met een camera op verkenning door de schoolomgeving. Vervolgens selecteer je jouw sterkste opnames in **Adobe Bridge**, optimaliseer je ze in **Adobe Photoshop** en presenteer je jouw werk in een strak, professioneel **drieluik**.
 
-![Uitsnede en kadrering volgens de regel van derden](img/aspecten-regel-van-derden-portret.png)
-![Regel van derden raster](img/aspecten-regel-van-derden-raster.png)
+![Uitsnede en kadrering volgens de regel van derden](img/aspecten-regel-van-derden-portret.png?w=52%)
+![Regel van derden raster](img/aspecten-regel-van-derden-raster.svg)
 
 Met behulp van beeldaspecten geef je een plat tweedimensionaal vlak diepte, betekenis en spanning mee. Door bewust te experimenteren met camerastandpunt, kadrering, kijklijnen en gelaagdheid bepaal je direct welk gevoel jouw beeld oproept.
 
@@ -83,9 +83,9 @@ Plaats je onderwerp niet pal in het midden. Verdeel het beeldvlak met twee horiz
 
 Een foto is plat, maar de werkelijkheid is driedimensionaal. Om diepte en ruimtelijkheid te suggereren, bouw je jouw compositie op in drie overlappende vlakken:
 
-* **Voorgrond (*Foreground*):** Een object vlak voor de lens (een muurtje, een tak, een deurpost of een vage schouder) trekt de kijker direct het beeld in.
-* **Middenplan (*Midground*):** Hier bevindt zich meestal het hoofdonderwerp.
-* **Achtergrond (*Background*):** Biedt context, sfeer en ruimtelijk perspectief zonder het hoofdonderwerp te overstemmen.
+* **Voorgrond:** Een object vlak voor de lens (een muurtje, een tak, een deurpost of een vage schouder) trekt de kijker direct het beeld in.
+* **Middenplan:** Hier bevindt zich meestal het hoofdonderwerp.
+* **Achtergrond:** Biedt context, sfeer en ruimtelijk perspectief zonder het hoofdonderwerp te overstemmen.
 
 ![Dieptewerking via overlappende lagen](img/aspecten-diepte-diagonalen-3.png)
 ![Inlopende kijklijnen](img/aspecten-diepte-diagonalen-1.png)
@@ -117,7 +117,7 @@ Lijnen zijn de snelwegen voor het menselijk oog. Ze gidsen de blik door het beel
 | Eigenschap | Specificatie | Toelichting |
 | :--- | :--- | :--- |
 | **Opnameapparatuur** | **Camera van de school (DSLR / DSLM)** | Gebruik bij voorkeur een spiegelreflex- of systeemcamera van de school. |
-| **Beeldverhouding foto's** | **Oorspronkelijke verhouding (*Original Ratio*)** | Behoud de originele verhouding van de camera tijdens het uitsnijden. |
+| **Beeldverhouding foto's** | **Oorspronkelijke verhouding (3:2)** | Behoud de originele verhouding van de camera tijdens het uitsnijden. |
 | **Formaat drieluik** | **A4 liggend (297 × 210 mm)** | Drieluik-presentatie waarin drie geselecteerde beelden naast elkaar worden gepresenteerd. |
 | **Optioneel Motion-beeld** | **1:1 vierkant (1080 × 1080 px)** | Achtergrondbeeld voor After Effects in *5CRM Motion (Vormen - Compositie 4)*. |
 | **Bestandstypes** | **.PSD** (werkbestand) & **.JPG** (export) | Behoud van niet-destructieve slimme objecten en aanpassingslagen. |

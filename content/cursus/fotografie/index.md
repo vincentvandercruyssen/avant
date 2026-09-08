@@ -388,7 +388,7 @@ De **regel van derden** verdeelt het zoekerbeeld met twee horizontale en twee ve
 De **gulden snede** (verhouding 1:1,618) en de Fibonacci-spiraal vormen de wiskundige voorloper hiervan, zoals we die in schelpen, planten en klassieke kunst terugvinden.
 
 ![Regel van derden toegepast op een portret](img/aspecten-regel-van-derden-portret.png)
-![Grafisch raster van de regel van derden](img/aspecten-regel-van-derden-raster.png)
+![Grafisch raster van de regel van derden](img/aspecten-regel-van-derden-raster.svg)
 ![Regel van derden boom in steppe](img/aspecten-regel-van-derden-boom.png)
 
 ![Geometrische opbouw van de gulden snede verhouding](img/aspecten-gulden-snede-diagram.png)

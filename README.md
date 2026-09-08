@@ -82,7 +82,7 @@ Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas
 
 ```text
 {opdracht-slug}/
-├── img/               # Alle afbeeldingen, screenshots en animaties (PNG, JPG, GIF)
+├── img/               # Alle afbeeldingen, illustraties en animaties (PNG, JPG, SVG, GIF)
 ├── index.md           # Opdrachtdocumentatie voor leerlingen
 └── planning.md        # (Optioneel) Smartschool-lesplanning en fiches voor leerkrachten
 ```
@@ -108,6 +108,7 @@ Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
 Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
 - **WebP & Responsive `srcset`:** Converteert PNG/JPG automatisch naar WebP met breakpoints voor smartphone (`480w`, `768w`), 15" laptop (`1080w`, `1440w`) en 27" desktop (`1920w`).
+- **Vector- & animatiebestanden:** SVG- en geanimeerde GIF-bestanden worden zonder kwaliteitsverlies doorgelust (niet geconverteerd naar WebP), met volledige ondersteuning voor custom breedtes en centrering.
 - **Formaat- & Stijlparameters in Markdown:**
   - **Query parameters:** `![Alt](img/foto.png?width=450px)` of `![Alt](img/foto.png?w=60%)`
   - **Snelle hashtags:**
