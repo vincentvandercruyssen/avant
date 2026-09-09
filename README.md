@@ -66,9 +66,12 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   │   │   ├── oefenbestanden/# Downloadbare Illustrator oefenbestanden (.ai)
 │   │   │   └── index.md       # Cursus Adobe After Effects (8 hoofdstukken + cheat sheet)
 │   │   ├── blender.md
-│   │   └── fotografie/
-│   │       ├── img/           # 162 geëxtraheerde illustraties, diagrammen en voorbeelden
-│   │       └── index.md       # Cursus Fotografie & beeldanalyse (Kathleen Michiels & Vincent Vander Cruyssen)
+│   │   ├── fotografie/
+│   │   │   ├── img/           # 162 geëxtraheerde illustraties, diagrammen en voorbeelden
+│   │   │   └── index.md       # Cursus Fotografie & beeldanalyse (Kathleen Michiels & Vincent Vander Cruyssen)
+│   │   └── html/
+│   │       ├── img/           # Schermafbeeldingen browser rendering
+│   │       └── index.md       # Cursus HTML (bouwstenen, tags, structuur & formulieren)
 │   └── doelen/
 │       ├── _index.md          # Verzamelpagina doelstellingen
 │       └── crossmedia.md      # 53 Crossmedia leerplandoelen & evaluatieclusters
