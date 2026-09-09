@@ -105,8 +105,12 @@ Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
 - **Aparte pagina via Custom Output Format:** Hugo genereert automatisch `.../planning.html` (bereikbaar via de link onder de opdracht op de homepage).
 - **Afgeschermd voor leerlingen:** De planning-knop verschijnt niet op de leerlingpagina van de opdracht zelf.
 - **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert automatisch ankernavigatie voor zowel de lessen (`## 📅 Les X ...`) als de interne onderdelen (`### 📌 Titel lesfiche`, `### 🎯 Leerplandoelen`, `### 📋 Lesverloop & inhoud`).
-- **Titel lesfiche:** Plaats onder `### 📌 Titel lesfiche` de titel van de lesfiche zoals die in Smartschool staat (bv. `> **Kijkkader: Introductie Beeldtaal, Compositieregels & Praktijkshoot op Locatie**`, `> **Vormen: Kennismaking, After Effects, Pinboard & Storyboard**`, `> **Profiel: Introductie, Duo-Interview & DevTools**` of `> **Parallax: Kennismaking & Briefing**`).
-- **Lesverloop & inhoud:** Bevat een beknopt, genummerd overzicht van de didactische stappen, klasafspraken, tools, compositie-instellingen en praktische doelen (zonder rigide minuut-tot-minuut tijdsblokken).
+- **Titel lesfiche:** Plaats onder `### 📌 Titel lesfiche` de titel van de lesfiche conform Smartschool volgens het vaste patroon `> **[Opdrachtnaam]: [Kernonderwerpen & Focus]**` (bv. `> **Paspoort: Wireframe, Cursus HTML & Uitwerking HTML & CSS**`, `> **Kijkkader: Introductie Beeldtaal, Compositieregels & Praktijkshoot op Locatie**` of `> **Parallax: Kennismaking & Briefing**`).
+- **Lesverloop & inhoud (maatstaf voor didactische fiches):**
+  - **Telegrafisch & zakelijk (geen handleiding):** Schrijf als een strak didactisch draaiboek voor de leerkracht. Vermijd wollige volzinnen, langdradige leerlinginstructies en open deuren (*geen "individuele coaching & opvolging"*, *geen "klassikaal de theorie doornemen"*).
+  - **Afzonderlijke didactische kernstappen:** Splits het lesverloop op in genummerde stappen (`1.` t.e.m. `5.`). Belangrijke leermomenten zoals een toets, theorie-ontleding of klassikale demonstratie krijgen altijd een eigen genummerde stap en worden niet weggemoffeld als sub-item.
+  - **Eenvoudige nesting (maximaal 1 subniveau):** Onder een genummerde stap gebruik je uitsluitend een vlakke lijst met bullet points (`1. -> *`). Gebruik **geen sub-sub-bullets** (`* -> *`).
+  - **Beknopte, functionele benamingen:** Gebruik heldere termen (bv. *Wireframe met aanduiding HTML-tags*, *Ontleding HTML-document*, *Kleine toets HTML*, *Uitwerken Paspoort (HTML & CSS)*).
 
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
 Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
@@ -345,6 +349,46 @@ Lever de gevraagde bestanden tijdig in via de uploadzone:
 > **Opleveringsformaat:** `VoornaamA_Opdrachtnaam.ext` of `.zip`  
 > **Uploadzone:** *Vak CRM → Uploadzone → [Schooljaar] → [Thema] → [Vak] → [Opdracht]*  
 > **Deadline:** Einde van de voorziene lesblokken.
+```
+
+---
+
+## 📅 Sjabloon voor Lesplanning (`planning.md`)
+
+Onderstaand sjabloon toont de maatstaf voor een strakke, telegrafische Smartschool-lesfiche:
+
+```markdown
+# Smartschool Planning: [Opdrachtnaam] ([Vak])
+
+**Vak:** [Volledige vaknaam] ([Klas])  
+**Lokaal:** [Lokaalnummer]  
+**Totale duurtijd:** [duurtijd voluit geschreven, bv. drie weken (drie lesuren per woensdag)]  
+**Periode:** [Maand Jaar]  
+
+## 📅 Les 1 [DD/MM/YYYY] ([Aantal]x [Vak], [Starttijd] – [Eindtijd])
+
+### 📌 Titel lesfiche
+> **[Opdrachtnaam]: [Onderwerp & Focus]**
+
+### 🎯 Leerplandoelen
+* **[Code]:** [Succescriterium in concrete leerkracht-/leerlingentaal]
+
+### 📋 Lesverloop & inhoud
+1. **[Beknopte stapnaam]:**
+   * [Doelgerichte handeling of taak].
+   * [Technisch bouwplan of concrete afspraak].
+2. **[Volgende didactische stap]:**
+   * [Toelichting software, editor of methode].
+   * [Mappenstructuur en naamconventies].
+3. **[Theorie / Cursusonderdeel]:**
+   * **[Kernbegrip 1]:** [Beknopte focus].
+   * **[Kernbegrip 2]:** [Beknopte focus].
+4. **[Evaluatie / Toets]:**
+   * **Vraagformaat:** [Type vragen, bv. meerkeuzevragen gecombineerd met invulvragen].
+   * **Leerbronnen:** [Verwijzing naar planner, cursus en opdrachten].
+5. **[Praktische realisatie]:**
+   * **[Deeltaak 1]:** [Actie met concrete tools of bestanden].
+   * **[Deeltaak 2]:** [Actie met styling, animatie of exports].
 ```
 
 ---

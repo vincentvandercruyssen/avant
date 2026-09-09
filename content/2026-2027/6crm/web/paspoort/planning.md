@@ -2,7 +2,7 @@
 
 **Vak:** Webdesign en storytelling (6CRM)  
 **Lokaal:** A00.32  
-**Totale duurtijd:** 3 weken (3 lesuren per woensdag)  
+**Totale duurtijd:** drie weken (drie lesuren per woensdag)  
 **Periode:** September 2026  
 
 ## 📅 Les 1 02/09/2026 (3x Web, 10:10 – 12:40)
@@ -23,10 +23,10 @@
 4. **Synthese & klassikale bespreking:** Onderzoeksbevindingen en synthese-overzicht op de cursuswebsite invullen en de belangrijkste HTML-bouwstenen klassikaal overlopen.
 5. **Eerste aanzet wireframe (UI/UX):** Korte toelichting over het nut van wireframes binnen UI- en UX-design. Starten met het uittekenen van een eerste wireframe-schets op drager naar keuze voor het eigen paspoort.
 
-## 📅 Les 2 09/09/2026 (3x Web)
+## 📅 Les 2 09/09/2026 (3x Web, 10:10 – 12:40)
 
 ### 📌 Titel lesfiche
-> **Wireframe, Semantische HTML & Start CSS (Paspoort)**
+> **Paspoort: Wireframe, Cursus HTML & Uitwerking HTML & CSS**
 
 ### 🎯 Leerplandoelen
 * **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.
@@ -38,17 +38,26 @@
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
 
 ### 📋 Lesverloop & inhoud
-1. **Korte instructie:** Wireframe op papier afronden met annotaties van alle benodigde HTML-tags en voorbereiding van de assets in `assets/img/`.
-2. **Projectopzet & coderen HTML in VS Code:**
-   * Projectmap `VoornaamA_Paspoort` aanmaken in Visual Studio Code.
-   * `index.html` volledig opbouwen met correcte semantische HTML5-tags, Emmet-shortcuts, correcte nesting en inspringing (HTML moet vandaag **volledig klaar** zijn).
-3. **Start CSS (`style.css`):** Koppelen van de stylesheet, opbouw van CSS-stijlregels voor typografie, padding/marges, achtergrond, kleuren, knoppen en responsieve afbeeldingen.
-4. **Individuele coaching & opvolging:** Begeleiding bij syntax, padverwijzingen naar assets en foutopsporing via de browser.
+1. **Wireframe met aanduiding HTML-tags:**
+   * Wireframe-schets op papier uitwerken.
+   * De benodigde HTML-tags noteren (bv. `<h1>`, `<h2>`, `<p>`, `<img>`, `<ul>`/`<ol>` met `<li>`, `<a>`). Technisch bouwplan alvorens te coderen.
+2. **Herhaling Visual Studio Code & mappenstructuur:**
+   * Visual Studio Code (projectmap openen via *File → Open Folder*, Live Preview extensie, Emmet-shortcuts).
+   * Mappenstructuur: hoofdmap `VoornaamA_Opdracht/` met submap `img/` voor beeldmateriaal. Toepassen van gebruikelijke bestandsnamen: kleine letters, vermijden spaties of speciale tekens.
+3. **Cursus HTML:**
+   * **Ontleding HTML-document:** Onderscheid tussen `<head>` (het onzichtbare deel met metadata, paginatitel en stijlbladkoppeling) en `<body>` (alle zichtbare inhoud).
+   * **Ontleding HTML-element:** Openings- en sluitingstags, inhoud, attributen (`src`, `alt`, `href`, `target`) en het correct nesten van tags.
+4. **Kleine toets HTML:**
+   * **Vraagformaat:** Meerkeuzevragen gecombineerd met invulvragen.
+   * **Leerbronnen:** Alle benodigde kennis haal je uit de planner, de cursus en de opdrachten.
+5. **Uitwerken Paspoort (HTML & CSS):**
+   * **Projectopzet & coderen HTML:** `index.html` volledig opbouwen in VS Code met wireframe als gidslijn. Semantische HTML5-tags, correcte nesting en inspringing.
+   * **CSS (`style.css`):** Aanmaken van `style.css` en foutloos koppelen in de `<head>`. Eerste styling realiseren: achtergrondkleur (`background-color`), tekstkleur (`color`), typografie (`font-family`), accentkleuren voor titels en het schalen van de profielfoto met afgeronde hoeken (`width`, `border-radius`).
 
-## 📅 Les 3 16/09/2026 (3x Web)
+## 📅 Les 3 16/09/2026 (3x Web, 10:10 – 12:40)
 
 ### 📌 Titel lesfiche
-> **Deadline Oplevering Paspoort & Evaluatie**
+> **Paspoort: Deadline Oplevering & Evaluatie**
 
 ### 🎯 Leerplandoelen
 * **CRS18:** Een semantisch correcte, functionele en gestijlde eerste webpagina (Paspoort) realiseren.

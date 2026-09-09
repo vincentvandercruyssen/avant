@@ -163,11 +163,7 @@ Zoek een menu, navigatiebalk of opsomming met bullet points en inspecteer deze.
 
 Welke twee tags werken hier altijd als een hecht duo samen?
 
-### HTML
-
-Je gaat nu zelf bouwen met de belangrijkste HTML-tags die je net beter hebt leren kennen. Geen kant-en-klare templates of websitebouwers, maar zuivere code vanaf nul!
-
-#### Wireframe, schets op papier
+### Wireframe, schets op papier
 
 Net zoals je eerst schermen uittekende met Adobe XD, maak je in webdesign vaak eerst een snelle **analytische schets**.
 
@@ -179,6 +175,10 @@ Net zoals je eerst schermen uittekende met Adobe XD, maak je in webdesign vaak e
    * Waar komt je lijstje met creatieve skills?
    * Waar komt je favoriete inspiratielink?
 3. **Schrijf bij elk getekend vak de exacte HTML-tag** die je gaat gebruiken (bijvoorbeeld: `[h1]`, `[img]`, `[p]`, `[ul > li]`, `[a]`).
+
+### HTML
+
+Je gaat nu zelf bouwen met de belangrijkste HTML-tags die je net beter hebt leren kennen. Geen kant-en-klare templates of websitebouwers, maar zuivere code vanaf nul!
 
 #### HTML-basis in VS Code
 

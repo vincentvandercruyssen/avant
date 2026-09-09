@@ -20,15 +20,15 @@
     <nav id="TableOfContents">
       <ul>
         <li><a href="{{ .RelPermalink }}">← Terug naar opdracht</a></li>
-        {{ $headings := findRESubmatch `<h([23]) id="([^"]+)">([^<]+)</h[23]>` $planningResource.Content }}
+        {{ $headings := findRESubmatch `(?s)<h([23]) id="([^"]+)">(.*?)</h[23]>` $planningResource.Content }}
         {{ range $headings }}
           {{ $level := index . 1 }}
           {{ $id := index . 2 }}
           {{ $title := index . 3 }}
           {{ if eq $level "2" }}
-            <li style="margin-top: 0.6rem;"><a href="#{{ $id }}" style="font-weight: 600;">{{ $title }}</a></li>
+            <li style="margin-top: 0.6rem;"><a href="#{{ $id }}" style="font-weight: 600;">{{ $title | safeHTML }}</a></li>
           {{ else if eq $level "3" }}
-            <li style="padding-left: 1.5ch; font-size: 0.9em; opacity: 0.85;"><a href="#{{ $id }}">{{ $title }}</a></li>
+            <li style="padding-left: 1.5ch; font-size: 0.9em; opacity: 0.85;"><a href="#{{ $id }}">{{ $title | safeHTML }}</a></li>
           {{ end }}
         {{ end }}
       </ul>
