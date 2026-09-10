@@ -1,8 +1,19 @@
-{{ $width := .Get "width" | default "100%" }}
-{{ $controls := .Get "controls" | default "false" }}
+{{- $width := .Get "width" | default "100%" -}}
+{{- $controls := .Get "controls" | default "false" -}}
+{{- $src := .Get "src" -}}
+{{- $video := .Page.Resources.GetMatch $src -}}
+{{- if not $video -}}
+  {{- $video = .Page.Resources.GetMatch (printf "*%s*" (path.Base $src)) -}}
+{{- end -}}
+{{- if not $video -}}
+  {{- $video = resources.Get $src -}}
+{{- end -}}
+{{- if not $video -}}
+  {{- $video = resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- end -}}
 
-{{ $video := resources.Get (.Get "src") }}
-<video autoplay muted loop width="{{ $width }}" {{ if eq $controls "true" }}controls{{ end }}>
-  <source src="{{ $video.Permalink }}" type="video/mp4">
+<video autoplay muted loop playsinline width="{{ $width }}" {{ if eq $controls "true" }}controls{{ end }} style="max-width: 100%; height: auto; display: block; margin: 1rem 0;">
+  <source src="{{ with $video }}{{ .RelPermalink }}{{ else }}{{ $src | safeURL }}{{ end }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+

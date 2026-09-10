@@ -66,6 +66,9 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   │   │   ├── oefenbestanden/# Downloadbare Illustrator oefenbestanden (.ai)
 │   │   │   └── index.md       # Cursus Adobe After Effects (8 hoofdstukken + cheat sheet)
 │   │   ├── blender.md
+│   │   ├── css/
+│   │   │   ├── img/           # 19 illustraties, diagrammen en video-opnames
+│   │   │   └── index.md       # Cursus CSS (declaraties, boxmodel, kleuren, typografie, flexbox & grid)
 │   │   ├── fotografie/
 │   │   │   ├── img/           # 162 geëxtraheerde illustraties, diagrammen en voorbeelden
 │   │   │   └── index.md       # Cursus Fotografie & beeldanalyse (Kathleen Michiels & Vincent Vander Cruyssen)
@@ -156,6 +159,10 @@ Alle Markdown-links worden verwerkt via een **Link Render Hook** ([`render-link.
 - **Shortcode `{{< pinboard >}}`:** Voor het insluiten van een interactief Pinterest-bord ([`pinboard.html`](layouts/shortcodes/pinboard.html)):
   ```markdown
   {{< pinboard url="https://www.pinterest.com/gebruikersnaam/naam_board/" >}}
+  ```
+- **Shortcode `{{< video >}}`:** Voor het responsive insluiten van videobestanden binnen page bundles of de assetmap ([`video.html`](layouts/shortcodes/video.html)):
+  ```markdown
+  {{< video src="img/video.mp4" width="360" >}}
   ```
 
 ### 📸 Aanbevolen Stockplatformen (Bronmateriaal)

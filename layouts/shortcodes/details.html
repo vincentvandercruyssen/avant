@@ -1,4 +1,4 @@
 <details>
-    <summary><strong>{{ .Get "summary" }}</strong></summary>
-    <p>{{ .Inner }}</p>
-  </details>  
+  <summary><strong>{{ .Get "summary" }}</strong></summary>
+  <div>{{ .Page.RenderString .Inner }}</div>
+</details>  

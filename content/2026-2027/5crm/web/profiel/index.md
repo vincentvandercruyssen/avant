@@ -290,7 +290,7 @@ Dubbelklik op `index.html` of gebruik de VS Code-extensie **Live Preview**. Je z
 
 ### CSS: Vormgeving
 
-Nu tover je met CSS het kale HTML-document om tot een sfeervolle, persoonlijke profielpagina! Je hebt hierin **volledige creatieve vrijheid**: je kiest zelf een passend kleurenpalet, lettertype en lay-outaccenten die goed passen bij de persoonlijkheid en interesses van je partner.
+Nu tover je met CSS het kale HTML-document om tot een sfeervolle, persoonlijke profielpagina! Je hebt hierin **volledige creatieve vrijheid**: je kiest zelf een passend kleurenpalet, lettertype en lay-outaccenten die goed passen bij de persoonlijkheid en interesses van je partner. Raadpleeg de [Cursus CSS](/cursus/css/) voor een compleet overzicht van alle selectors, kleurnotaties, stijleigenschappen en het boxmodel.
 
 #### Hoe werkt CSS?
 In CSS selecteer je eerst een HTML-element (de **selector**), en geef je tussen accolades `{ }` aan wat je wil aanpassen (de **eigenschap** en de **waarde**):

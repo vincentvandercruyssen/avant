@@ -47,22 +47,42 @@
 * **Comp 3 (`VoornaamA_Vormen-Comp_3`, 2520 × 1080 px, 21:9, 30 fps, min. 5 sec):** Kinetische typografie (tekstanimatie, ritme).
 * **Comp 4 (`VoornaamA_Vormen-Comp_4`, 1080 × 1080 px, 1:1, 30 fps, min. 10 sec):** Vierkant met achtergrondfoto & Motion Blur.
 
-## 📅 Les 3 10/09/2026 (2x Motion)
+## 📅 Les 3 10/09/2026 (2x Motion, 12:40 – 14:20)
 
 ### 📌 Titel lesfiche
-> **Compositie 3 (Kinetische Typografie) & Compositie 4 (Vierkant 1:1 met Achtergrond)**
+> **Vormen: OneDrive, Pinboard, Storyboardschetsen & Herhaling After Effects**
 
 ### 🎯 Leerplandoelen
-* **CRS15:** Typografie en extern beeldmateriaal voorbereiden voor animatie in After Effects.
-* **CRS16:** Dynamische animaties realiseren met typografie en gelaagde beeldelementen.
-* **CRS21:** Typografie expressief animeren met aandacht voor leesbaarheid, typografische hiërarchie en ritme.
+* **CRS01:** Productievereisten, beeldformaten (16:9, 4:5, 21:9, 1:1), 30 fps framerate en mappenstructuur op OneDrive toepassen.
+* **CRS02:** Doelgericht transformatie-eigenschappen (Positie, Schaal, Rotatie, Dekking, Ankerpunt) en vormparameters selecteren.
+* **CRS03:** Een doordacht storyboard met bewegingspijlen en timing vooraf plannen en uittekenen voor de vier composities in het schetsboek.
+* **CRS06:** Vlot werken met Adobe After Effects (gereedschappen, vormlagen, keyframes, Easy Ease en Graph Editor).
+* **CRS07:** Inspiratiebronnen en bewegingsvoorbeelden doelgericht verzamelen en ordenen op een digitaal pinboard.
+* **CRS15:** 2D-basisvormen, typografische elementen en beeldmateriaal gestructureerd opzetten in After Effects.
+* **CRS16:** Dynamische 2D-animaties realiseren met keyframes, snelheidsversnelling (*Easy Ease*) en de Graph Editor.
+* **CRS21:** Typografie expressief animeren met aandacht voor leesbaarheid en ritme.
 
 ### 📋 Lesverloop & inhoud
-1. **Instructie & demonstratie:**
-   * **Compositie 3 (`VoornaamA_Vormen-Comp_3`, 2520 × 1080 px, Ultrawide, min. 5 sec):** Kinetische typografie, actiewoord (*BEWEEG*, *RITME*, *VERSNEL*, *VERVORM*, *TRANSFORMEER*, *KRACHT*, *BOUNCE*, *FLOW*), Character-paneel, ankerpunten bij tekst en strakke ritmische verschijning via positie, schaal of rotatie.
-   * **Compositie 4 (`VoornaamA_Vormen-Comp_4`, 1080 × 1080 px, 1:1 vierkant, min. 10 sec):** Importeren van een contrastrijke achtergrondfoto (bijvoorbeeld de eigen opname uit *Beeld: Kijkkader*, of Pexels / Unsplash) in `01_assets/`, vectorvormen laten reageren op de foto en Motion Blur (bewegingsonscherpte) activeren voor een filmische look.
-2. **Zelfstandig werk:** Leerlingen bouwen hun composities verder uit in After Effects (Composities 1 t.e.m. 4). Individuele begeleiding bij typografische keuzes, ritme, overgangen en compositie.
-3. **Opvolging & feedback:** Voortgangscontrole van de storyboards en Pinboards met het oog op de deadline van morgen.
+1. **Mappenstructuur OneDrive:**
+   * Hoofdmap `VoornaamA_Vormen/` aanmaken in de OneDrive-vakmap Motion.
+   * Projectbestand in opdrachtmap: `VoornaamA_Vormen.aep`.
+   * Submappen: `01_assets/` (afbeeldingen, typografie) en `02_exports/` (definitieve video-exports).
+2. **Inspiratieonderzoek & digitaal pinboard:**
+   * Pinterest-bord *Motion: Vormen* aanvullen met minimaal acht inspirerende voorbeelden.
+   * Zoek naar 2D motion design, shape animation, kinetische typografie en dynamische bewegingscurves (*ease & snap*).
+3. **Storyboardschetsen voor vier composities:**
+   * Schetsen van de vier afzonderlijke beeldkaders in het schetsboek, afgestemd op de verplichte beeldverhoudingen (16:9, 4:5, 21:9 en 1:1).
+   * Beweging aantonen met bewegingspijlen, timing en vermelding van geanimeerde eigenschappen per kader.
+4. **Klassikale herhaling After Effects:**
+   * **Werkomgeving & gereedschappen:** compositietijdlijn, gereedschappenbalk (`Q`, `V`, `Ctrl + T`).
+   * **Vormlagen (*Shape Layers*):** inhoud van de vorm (`Contents`) met specifieke eigenschappen versus algemene laagtransformaties.
+   * **Basistransformaties & keyframes:** stopwatch-principe en animeren van Positie (`P`), Schaal (`S`), Rotatie (`R`), Dekking (`T`) en Ankerpunt (`A`).
+   * **Bewegingsdynamiek:** lineaire keyframes omzetten naar *Easy Ease* (`F9`) en snelheidsverloop finetunen via Bézier-handvatten in de *Graph Editor* (*Speed Graph*).
+5. **Vier composities:**
+   * **Compositie 1 (`VoornaamA_Vormen-Comp_1`, 1920 × 1080 px, 16:9, min. 5 sec):** Horizontaal breedbeeldformaat; één enkele geometrische basisvorm (vierhoek, cirkel) waarmee alle bewegingen worden uitgevoerd; deze ene vorm vertelt het volledige verhaal.
+   * **Compositie 2 (`VoornaamA_Vormen-Comp_2`, 1080 × 1350 px, 4:5, min. 5 sec):** Verticaal formaat (Instagram post); interactie tussen meerdere vormen via duplicatie (`Ctrl + D`), gelaagde transformaties en verschuivingen in tijd.
+   * **Compositie 3 (`VoornaamA_Vormen-Comp_3`, 2520 × 1080 px, 21:9, min. 5 sec):** Ultrawide cinematisch bannerformaat; toevoegen van kinetische typografie met een expressief actiewoord of thema, Character-paneel en timing.
+   * **Compositie 4 (`VoornaamA_Vormen-Comp_4`, 1080 × 1080 px, 1:1, min. 10 sec):** Vierkant formaat; contrastrijke achtergrondafbeelding (Pexels, Unsplash) combineren met bewegende vectorvormen en *Motion Blur*, waarin alle geleerde technieken samenkomen.
 
 ## 📅 Les 4 11/09/2026 (2x Motion)
 

@@ -301,7 +301,7 @@ selector {
 
 #### Stijlen
 
-Open `style.css` en voeg de volgende CSS-selectors en eigenschappen toe. Je kunt dit uiteraard naar eigen smaak aanpassen.
+Open `style.css` en voeg de volgende CSS-selectors en eigenschappen toe. Raadpleeg bij twijfel de [Cursus CSS](/cursus/css/) voor alle selectors en stijlmogelijkheden. Je kunt dit uiteraard naar eigen smaak aanpassen.
 
 ##### Achtergrondkleur (`background-color`)
 Geef de hele pagina een zachte, moderne achtergrondkleur in plaats van fel wit.
