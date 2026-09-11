@@ -2,7 +2,7 @@
 
 **Vak:** Webdesign en storytelling (5CRM)  
 **Lokaal:** A00.32  
-**Totale duurtijd:** 3 weken (3 lesuren per week)  
+**Totale duurtijd:** drie weken (drie lesuren per vrijdag)  
 **Periode:** September 2026  
 
 ## 📅 Les 1 04/09/2026 (3x Web)
@@ -28,7 +28,7 @@
 ## 📅 Les 2 11/09/2026 (3x Web)
 
 ### 📌 Titel lesfiche
-> **Wireframe, Semantische HTML & Start CSS (Profiel)**
+> **Profiel: Wireframe, Cursus HTML, Uitwerking HTML & CSS**
 
 ### 🎯 Leerplandoelen
 * **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.
@@ -40,12 +40,21 @@
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
 
 ### 📋 Lesverloop & inhoud
-1. **Korte instructie:** Wireframe op papier afronden met annotaties van alle benodigde HTML-tags en voorbereiding van de afbeeldingsassets in `img/`.
-2. **Projectopzet & coderen HTML in VS Code:**
-   * Projectmap `VoornaamA_Profiel` aanmaken in Visual Studio Code.
-   * `index.html` volledig opbouwen met correcte semantische HTML5-tags (`<h1>`, `<h2>`, `<p>`, `<strong>`, `<em>`, `<img>`, `<ul>`/`<li>`, `<ol>`/`<li>`, `<a>`), Emmet-shortcuts, correcte nesting en inspringing (HTML moet vandaag **volledig klaar** zijn).
-3. **Start CSS (`style.css`):** Koppelen van de stylesheet (`link:css`), opbouw van eigen CSS-stijlregels en kleurenpalet (`body`, `h1`, `img`, `a`).
-4. **Individuele coaching & opvolging:** Begeleiding bij syntax, padverwijzingen naar assets en foutopsporing via de browser.
+1. **Wireframe met aanduidingen HTML-tags:**
+   * Wireframe-schets op papier uitwerken.
+   * De benodigde HTML-tags noteren (bv. `<h1>`, `<h2>`, `<p>`, `<img>`, `<ul>`/`<ol>` met `<li>`, `<a>`). 
+2. **Visual Studio Code & mappenstructuur:**
+   * Visual Studio Code (projectmap openen via *File → Open Folder*, Live Preview extensie, Emmet-shortcuts).
+   * Mappenstructuur: hoofdmap `VoornaamA_Profiel/` met submap `img/` voor beeldmateriaal. Toepassen van gebruikelijke bestandsnamen: kleine letters, vermijden spaties of speciale tekens.
+3. **Cursus HTML:**
+   * **Ontleding HTML-document:** Onderscheid tussen `<head>` (het onzichtbare deel met metadata, paginatitel en stijlbladkoppeling) en `<body>` (alle zichtbare inhoud).
+   * **Ontleding HTML-element:** Openings- en sluitingstags, inhoud, attributen (`src`, `alt`, `href`, `target`) en het correct nesten van tags.
+4. **Toets aankondigen:**
+   * **Vraagformaat:** Meerkeuzevragen gecombineerd met invulvragen.
+   * **Leerbronnen:** Alle benodigde kennis haal je uit de planner, de cursus en de opdrachten.
+5. **Uitwerken Profiel (HTML & CSS):**
+   * **Projectopzet & HTML:** `index.html` volledig opbouwen in VS Code met het wireframe als gidslijn. Semantische HTML5-tags (`<h1>`, `<h2>`, `<p>`, `<strong>`, `<em>`, `<img>`, `<ul>`/`<li>`, `<ol>`/`<li>`, `<a>`), Emmet-shortcuts, correcte nesting en inspringing.
+   * **CSS (`style.css`):** Aanmaken van `style.css` en foutloos koppelen in de `<head>`. Eerste styling realiseren: achtergrondkleur (`background-color`), tekstkleur (`color`), typografie (`font-family`), accentkleuren voor titels en het schalen van de profielfoto met afgeronde hoeken (`width`, `border-radius`).
 
 ## 📅 Les 3 18/09/2026 (3x Web)
 

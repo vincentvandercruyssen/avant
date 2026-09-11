@@ -184,13 +184,9 @@ Inspecteer het menu aan de linkerkant van de pagina (of een inhoudsopgave).
 
 Dien in als document of pdf (`VoornaamA_Profiel-Onderzoek.pdf`).
 
-### HTML: Pagina bouwen
+### Wireframe, schets op papier
 
-Je gaat nu zelf aan de slag met zuivere HTML-code om een profielpagina te bouwen voor jouw klasgenoot.
-
-#### Wireframe, schets op papier
-
-Maak eerst een snelle **analytische schets** van de pagina op papier:
+Maak eerst een schets van de webpagina op papier.
 
 1. Teken een rechthoek (het beeldscherm).
 2. Teken de vakken voor de onderdelen van het profiel:
@@ -201,6 +197,14 @@ Maak eerst een snelle **analytische schets** van de pagina op papier:
    * Waar komt de persoonlijke top?
    * Waar komt de favoriete link?
 3. **Schrijf bij elk getekend vak de exacte HTML-tag** die je gaat gebruiken (bijvoorbeeld: `<h1>`, `<h2>`, `<p>`, `<img>`, `<ul> > <li>`, `<ol> > <li>`, `<a>`).
+
+#### Indienen
+
+Neem een foto van je schets en dien deze in als `VoornaamA_Profiel-Wireframe.jpg`.
+
+### HTML
+
+Je gaat nu zelf aan de slag met zuivere HTML-code om een profielpagina te bouwen voor jouw klasgenoot.
 
 #### HTML-basis in VS Code
 

@@ -113,7 +113,7 @@ Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
   - **Telegrafisch & zakelijk (geen handleiding):** Schrijf als een strak didactisch draaiboek voor de leerkracht. Vermijd wollige volzinnen, langdradige leerlinginstructies en open deuren (*geen "individuele coaching & opvolging"*, *geen "klassikaal de theorie doornemen"*).
   - **Afzonderlijke didactische kernstappen:** Splits het lesverloop op in genummerde stappen (`1.` t.e.m. `5.`). Belangrijke leermomenten zoals een toets, theorie-ontleding of klassikale demonstratie krijgen altijd een eigen genummerde stap en worden niet weggemoffeld als sub-item.
   - **Eenvoudige nesting (maximaal 1 subniveau):** Onder een genummerde stap gebruik je uitsluitend een vlakke lijst met bullet points (`1. -> *`). Gebruik **geen sub-sub-bullets** (`* -> *`).
-  - **Beknopte, functionele benamingen:** Gebruik heldere termen (bv. *Wireframe met aanduiding HTML-tags*, *Ontleding HTML-document*, *Kleine toets HTML*, *Uitwerken Paspoort (HTML & CSS)*).
+  - **Beknopte, functionele benamingen:** Gebruik heldere termen (bv. *Wireframe met aanduidingen HTML-tags*, *Ontleding HTML-document*, *Toets aankondigen*, *Kleine toets HTML*, *Uitwerken Paspoort (HTML & CSS)*).
 
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
 Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
