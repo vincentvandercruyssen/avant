@@ -87,15 +87,33 @@
 ## 📅 Les 4 11/09/2026 (2x Motion)
 
 ### 📌 Titel lesfiche
-> **Graph Editor Dynamiek, Renderen in Media Encoder & Klassikale Screening**
+> **Vormen: Afwerking Pinboard & Storyboards (Comp 1–2), Wegwijs After Effects & Composities**
 
 ### 🎯 Leerplandoelen
-* **CRS06:** Doelgericht Adobe Media Encoder gebruiken voor batch-export naar H.264 MP4.
-* **CRS23:** Composities en videobestanden controleren op kwaliteit, framerate (30 fps) en resolutie.
-* **CRS27:** Het volledige project en vier exports tijdig opleveren in de Smartschool Uploadzone.
+* **CRS01:** Productievereisten, beeldformaten (16:9, 4:5, 21:9, 1:1), 30 fps framerate en mappenstructuur op OneDrive toepassen.
+* **CRS02:** Doelgericht transformatie-eigenschappen (Positie, Schaal, Rotatie, Dekking, Ankerpunt) en vormparameters selecteren.
+* **CRS03:** Een doordacht storyboard met bewegingspijlen en timing vooraf plannen en uittekenen voor de composities in het schetsboek.
+* **CRS06:** Vlot werken met Adobe After Effects (gereedschappen, vormlagen, keyframes, Easy Ease en Graph Editor).
+* **CRS07:** Inspiratiebronnen en bewegingsvoorbeelden doelgericht verzamelen en ordenen op een digitaal pinboard.
+* **CRS15:** 2D-basisvormen, typografische elementen en beeldmateriaal gestructureerd opzetten in After Effects.
+* **CRS16:** Dynamische 2D-animaties realiseren met keyframes, snelheidsversnelling (*Easy Ease*) en de Graph Editor.
+* **CRS21:** Typografie expressief animeren met aandacht voor leesbaarheid en ritme.
 
 ### 📋 Lesverloop & inhoud
-1. **📌 DEADLINE & Controle voorbereiding:** Definitieve controle en evaluatie van alle Pinboards en het storyboard-schetswerk tijdens de les.
-2. **Instructie Graph Editor & batch-export:** Dynamiek verfijnen via de *Speed Graph* en Bézier-curves; batch-export instellen via Adobe Media Encoder (H.264 MP4, `Match Source - High Bitrate` naar `02_exports/`).
-3. **Kwaliteitscontrole & afwerking:** Controleren of alle vier de composities voldoen aan de specificaties (30 fps, juiste resoluties, Compositie 1–3 min. 5 sec, Compositie 4 min. 10 sec). Exporteren van `VoornaamA_Vormen-Comp_1.mp4` t.e.m. `_4.mp4`.
-4. **Oplevering & Klassikale Screening:** Projectmap zippen naar `VoornaamA_Vormen.zip` en inleveren in de Smartschool Uploadzone. Afsluiten met een klassikale vertoning van elkaars animaties op het grote scherm met feedback en reflectie.
+1. **Tussentijdse deadline:**
+   * **In de les afwerken:** digitaal pinboard (minimaal acht voorbeelden) en de storyboardschetsen voor minimaal twee composities (Comp 1 & Comp 2).
+   * **Deadline huiswerk:** de resterende storyboardschetsen voor alle vier de composities moeten uiterlijk zondag (13/09/2026 om 23:59) afgewerkt zijn in het schetsboek.
+   * **Mappenstructuur OneDrive:** Vakmap met `VoornaamA_Vormen/` met projectbestand `VoornaamA_Vormen.aep` en submappen `01_assets/` en `02_exports/`.
+2. **Afwerking digitaal pinboard & storyboards (Comp 1 & 2):**
+   * Pinterest-bord *Motion: Vormen* afronden met minimaal acht inspiratievoorbeelden (2D motion design, shape animation, kinetische typografie, snelheid,...).
+   * Storyboardkaders voor minstens twee composities (16:9 en 4:5) uittekenen in het schetsboek met duidelijke bewegingspijlen, timing en aanduiding van geanimeerde eigenschappen.
+3. **After Effects:**
+   * **Werkomgeving & gereedschappen:** compositietijdlijn, gereedschappenbalk (`Q`, `V`, `Ctrl + T`).
+   * **Vormlagen (*Shape Layers*):** inhoud van de vorm met specifieke vormparameters versus algemene laagtransformaties.
+   * **Basistransformaties & keyframes:** stopwatch-principe en animeren van Positie (`P`), Schaal (`S`), Rotatie (`R`), Dekking (`T`) en Ankerpunt (`A`).
+   * **Bewegingsdynamiek:** lineaire keyframes omzetten naar *Easy Ease* (`F9`) en snelheidsverloop finetunen in de *Graph Editor* (*Speed Graph*).
+4. **Vier composities:**
+   * **Compositie 1 (`VoornaamA_Vormen-Comp_1`, 1920 × 1080 px, 16:9, min. 5 sec):** Horizontaal breedbeeldformaat; één enkele geometrische basisvorm (vierhoek, cirkel) waarmee alle bewegingen worden uitgevoerd; deze ene vorm vertelt het volledige verhaal.
+   * **Compositie 2 (`VoornaamA_Vormen-Comp_2`, 1080 × 1350 px, 4:5, min. 5 sec):** Verticaal formaat (Instagram post); interactie tussen meerdere vormen via duplicatie (`Ctrl + D`), gelaagde transformaties en verschuivingen in tijd.
+   * **Compositie 3 (`VoornaamA_Vormen-Comp_3`, 2520 × 1080 px, 21:9, min. 5 sec):** Ultrawide cinematisch bannerformaat; toevoegen van kinetische typografie met een expressief actiewoord of thema, Character-paneel en timing.
+   * **Compositie 4 (`VoornaamA_Vormen-Comp_4`, 1080 × 1080 px, 1:1, min. 10 sec):** Vierkant formaat; contrastrijke achtergrondafbeelding (Pexels, Unsplash) combineren met bewegende vectorvormen en *Motion Blur*, waarin alle geleerde technieken samenkomen.
