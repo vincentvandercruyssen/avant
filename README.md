@@ -224,18 +224,21 @@ Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard
 - **Beeldvergelijkingen (50/50):** Plaats 2 beelden direct onder elkaar zonder witregel voor een automatische side-by-side flex-kolom. Gebruik breedteparameters (`?w=30%` tot `?w=60%`) voor compacte menuknoppen en detailvensters.
 - **Geen redundante fase- of stapnummers in koppen:** Vermijd handmatige nummering zoals `Fase 1:`, `Fase 2:`, `1.`, `2.` of `Stap 1:` in Markdown-koppen (`###`, `####`, `#####`). De Table of Contents en CSS counters nummeren secties automatisch.
 - **Geen scheidingslijnen:** Gebruik **geen `---`** in de Markdown-body; de visuele rust en hiërarchie worden gedragen door de koppen (`##`, `###`, `####`), witruimte en callouts.
-- **Belangrijke tips & valkuilen:** Plaats cruciale waarschuwingen of tussentijdse evaluatiemomenten in Markdown callouts (`>`).
+- **Belangrijke tips & valkuilen:** Plaats cruciale waarschuwingen of didactische aandachtspunten in Markdown callouts (`>`).
+- **Vereenvoudigde ASCII-mappenstructuur (`└─`):** Gebruik in codeblokken voor mappen- en archiefstructuren consequent het uniforme boomteken `└─` (in plaats van wisselende `├──` en `└──`). Dit zorgt voor visuele rust en snelle bewerkbaarheid.
+- **Meervoudige bestandsnotatie:** Verwijs bij genummerde reeksen beknopt naar opeenvolgende varianten tussen haakjes, bv. `VoornaamA_Opdracht-Comp_1.mp4 (2,3,4)` of `VoornaamA_Opdracht-Storyboard-1.jpg (2,3,4) of .pdf`.
 
 ### 3. Vaste Hoofdstukhiërarchie
 Elke opdracht volgt een vaste 5-delige structuur:
 
 1. `## Briefing & Concept` — Introductie met praktijkcontext, sfeer-GIF/beeld, kernbegrip/theorie en conceptkeuzes.
-2. `## Technische specificaties` (of `## Afspraken`) — Tabel met resoluties, framerates, codecs of bestandsafspraken en de verplichte `VoornaamA_Opdrachtnaam/` mappenstructuur.
+2. `## Technische specificaties` (of `## Afspraken`) — Tabel met resoluties, framerates, codecs of bestandsafspraken en de verplichte `VoornaamA_Opdrachtnaam/` mappenstructuur met `└─`.
 3. `## Stappenplan` — Modulair en chronologisch opgedeeld per fase (`### Fase`, `#### Substap`):
    - Start bij voorkeur met actief/onderzoekend leren (bv. broncode-inspectie of beeldselectie op Pexels/Unsplash).
+   - Gebruik gerichte subkoppen zoals `#### Voorbeeld` (voor de concrete actiestappen los van algemene kaders) en `#### Indienen` (voor tussentijdse evaluaties en uploads).
    - Inclusief een `### Extra's` of `### Extra uitdagingen` voor differentiatie en verdieping.
 4. `## Zelfevaluatie & Kwaliteitscontrole` (of `## Checklist`) — Concrete afvinkpunten voor bestanden/mappen, technische eisen en visuele afwerking.
-5. `## Oplevering` — Duidelijke exportformaten, naamconventie, uploadzone en deadline.
+5. `## Oplevering` — Directe instructie gevolgd door een visueel ASCII-codeblok van het `.zip`-bestand met de exacte inhoud (in plaats van een abstracte callout).
 
 ---
 
@@ -299,9 +302,9 @@ Zet vooraf een ordelijke mappenstructuur op in je OneDrive onder het vak **[Vakn
 
 ```text
 VoornaamA_Opdrachtnaam/
-├── 01_assets/          <- Ruwe bronbestanden, foto's, fonts, audio
-├── 02_werkbestanden/   <- Bewerkbare projectbestanden (.psd, .aep, .ai)
-└── 03_exports/         <- Definitieve opleveringen (.jpg, .mp4, .zip)
+└─ 01_assets/          <- Ruwe bronbestanden, foto's, fonts, audio
+└─ 02_werkbestanden/   <- Bewerkbare projectbestanden (.psd, .aep, .ai)
+└─ 03_exports/         <- Definitieve opleveringen (.jpg, .mp4)
 ```
 
 ## Stappenplan
@@ -312,12 +315,12 @@ VoornaamA_Opdrachtnaam/
 
 ### [Eerste fase / Software]
 
-#### Document aanmaken
-Maak een nieuw bestand aan met de gevraagde afmetingen en sla het direct op als `VoornaamA_Opdrachtnaam.ext`.
+Instructies of technische vereisten van deze fase.
 
-#### [Belangrijkste handeling]
-* Activeer het gereedschap **Naam gereedschap** (*Engelse toolnaam*, sneltoets `T`).
-* Pas de instellingen aan.
+#### Voorbeeld
+
+1. Activeer het gereedschap **Naam gereedschap** (*Engelse toolnaam*, sneltoets `T`).
+2. Pas de instellingen aan.
 
 > **Belangrijke tip of valkuil!**  
 > Plaats hier een didactische waarschuwing of toelichting (bv. over niet-destructief werken).
@@ -335,7 +338,7 @@ Voor wie sneller klaar is of extra diepte wil toevoegen:
 
 ## Zelfevaluatie & Kwaliteitscontrole
 
-Controleer je werk grondig aan de hand van deze checklist vóór je definitief inlevert:
+Controleer je werk grondig aan de hand van onderstaande checklist vóór je definitief inlevert:
 
 ### Bestanden & mappen
 - De hoofdmap heet exact `VoornaamA_Opdrachtnaam`.
@@ -351,11 +354,15 @@ Controleer je werk grondig aan de hand van deze checklist vóór je definitief i
 
 ## Oplevering
 
-Lever de gevraagde bestanden tijdig in via de uploadzone:
+Lever de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone.
 
-> **Opleveringsformaat:** `VoornaamA_Opdrachtnaam.ext` of `.zip`  
-> **Uploadzone:** *Vak CRM → Uploadzone → [Schooljaar] → [Thema] → [Vak] → [Opdracht]*  
-> **Deadline:** Einde van de voorziene lesblokken.
+```text
+VoornaamA_Opdrachtnaam.zip
+└─ 01_assets/
+└─ 02_exports/VoornaamA_Opdrachtnaam-Comp_1.mp4 (2,3,4)
+└─ VoornaamA_Opdrachtnaam.aep
+└─ VoornaamA_Opdrachtnaam-Storyboard-1.jpg (2,3,4) of .pdf
+```
 ```
 
 ---
