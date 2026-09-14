@@ -20,7 +20,7 @@ leerplandoelen:
   - code: "CRS07"
     criterium: "Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren."
   - code: "CRS09"
-    criterium: "Het stappenplan voor niet-destructieve beeldbewerking, uitsnijding en kleurharmonisatie correct bepalen."
+    criterium: "Het stappenplan voor niet-destructieve beeldbewerking, uitsnijding en kleurafstemming correct bepalen."
   - code: "CRS10"
     criterium: "Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop."
   - code: "CRS15"

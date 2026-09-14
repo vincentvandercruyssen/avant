@@ -109,7 +109,7 @@
 
 ### Leerplandoelen
 * **CRS02:** Passende technieken doelgericht selecteren (laagmaskers, slimme objecten, aanpassingslagen, uitknipmaskers).
-* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking, uitsnijding en kleurharmonisatie bepalen en toepassen.
+* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking, uitsnijding en kleurafstemming bepalen en toepassen.
 * **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en niet-destructief verfijnen in Photoshop.
 * **CRS15:** Geschikt beeldmateriaal en typografie gestructureerd voorbereiden voor animatie in After Effects.
 * **CRS21:** Typografie doordacht vormgeven met aandacht voor leesbaarheid, hiërarchie en contrast.
