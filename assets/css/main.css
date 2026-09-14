@@ -482,6 +482,15 @@ header a {
   padding: 0.4rem 0;
 }
 
+header a.terug-link {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+header a.terug-link:hover {
+  opacity: 1;
+}
+
 header nav {
   font-size: 0.8rem;
   overflow-y: scroll;

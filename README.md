@@ -107,13 +107,19 @@ Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas
 Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
 - **Aparte pagina via Custom Output Format:** Hugo genereert automatisch `.../planning.html` (bereikbaar via de link onder de opdracht op de homepage).
 - **Afgeschermd voor leerlingen:** De planning-knop verschijnt niet op de leerlingpagina van de opdracht zelf.
-- **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert automatisch ankernavigatie voor zowel de lessen (`## 📅 Les X ...`) als de interne onderdelen (`### 📌 Titel lesfiche`, `### 🎯 Leerplandoelen`, `### 📋 Lesverloop & inhoud`).
-- **Titel lesfiche:** Plaats onder `### 📌 Titel lesfiche` de titel van de lesfiche conform Smartschool volgens het vaste patroon `> **[Opdrachtnaam]: [Kernonderwerpen & Focus]**` (bv. `> **Paspoort: Wireframe, Cursus HTML & Uitwerking HTML & CSS**`, `> **Kijkkader: Introductie Beeldtaal, Compositieregels & Praktijkshoot op Locatie**` of `> **Parallax: Kennismaking & Briefing**`).
+- **Directe leskop & geen overbodige metadata:** Planningsbestanden beginnen direct met de eerste leskop (`## Les 1 ...`). Een documenttitel zoals `# Planning:...` of herhaalde metadata over vak, lokaal en duurtijd worden weggelaten; deze context wordt automatisch door de Hugo-layout gegenereerd.
+- **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert een semantisch geneste inhoudsopgave (`<ul><li>...<ul><li>...</li></ul></li>`) met identieke CSS-nummering (`1.`, `1.1`, `1.2`, ...) als reguliere opdrachten, een losse terug-link naar de opdracht en actieve highlighting (`font-weight: 700`) via scrollspy.
+- **Titel lesfiche:** Plaats de titel van de lesfiche conform Smartschool rechtstreeks als subkop (`### [Opdrachtnaam]: [Kernonderwerpen & Focus]`). Hierdoor is de inhoudelijke focus van de les direct zichtbaar in de inhoudsopgave (TOC) zonder overbodig tussenkopje of blockquote.
+- **Volgorde van onderdelen:** Plaats `### Lesverloop & inhoud` altijd direct na de titel van de lesfiche, gevolgd door `### Leerplandoelen`.
+- **Geen emoji's in koppen & gewone hyphen:** Gebruik geen emoji's in Markdown-koppen (`## Les X`, `### Lesverloop & inhoud`, `### Leerplandoelen`). Gebruik voor lesuren en tijdsintervallen altijd een gewone hyphen (` - `) in plaats van een kastlijn of gedachtestreepje (`–`).
 - **Lesverloop & inhoud (maatstaf voor didactische fiches):**
   - **Telegrafisch & zakelijk (geen handleiding):** Schrijf als een strak didactisch draaiboek voor de leerkracht. Vermijd wollige volzinnen, langdradige leerlinginstructies en open deuren (*geen "individuele coaching & opvolging"*, *geen "klassikaal de theorie doornemen"*).
+  - **Resultaatgericht zonder softwaremechanica:** Beschrijf de didactische of creatieve handeling en het beoogde resultaat, niet de technische werking van de software. Vermijd uitleg over gereedschappen, panelen, functienamen tussen haakjes of verklarende bijzinnen.
+  - **Logische productiefasering:** Bouw de kernstappen op volgens de natuurlijke volgorde van het productie- en ontwerpproces: breng eerst inhoudelijke en structurele beeldelementen samen alvorens overkoepelende sfeer, toonwaarden en kleurharmonisatie toe te passen.
   - **Afzonderlijke didactische kernstappen:** Splits het lesverloop op in genummerde stappen (`1.` t.e.m. `5.`). Belangrijke leermomenten zoals een toets, theorie-ontleding of klassikale demonstratie krijgen altijd een eigen genummerde stap en worden niet weggemoffeld als sub-item.
+  - **Enkelvoudige, compacte stapkoppen:** Houd genummerde koppen beknopt en gefocust op één didactische kernactiviteit. Vermijd samengestelde koppen; een administratieve afronding of inlevering vormt een sub-bullet onder de laatste stap en hoort niet thuis in de koptitel.
   - **Eenvoudige nesting (maximaal 1 subniveau):** Onder een genummerde stap gebruik je uitsluitend een vlakke lijst met bullet points (`1. -> *`). Gebruik **geen sub-sub-bullets** (`* -> *`).
-  - **Beknopte, functionele benamingen:** Gebruik heldere termen (bv. *Wireframe met aanduidingen HTML-tags*, *Ontleding HTML-document*, *Toets aankondigen*, *Kleine toets HTML*, *Uitwerken Paspoort (HTML & CSS)*).
+  - **Consistente bestands- en projectreferenties:** Zorg dat alle bestandsnamen en op te leveren documenten in de leerplandoelen en het lesverloop letterlijk overeenkomen met de vastgelegde mappen- en documentstructuur van de opdracht.
 
 ### 🖼️ Automatische WebP Image Processing & Responsive Beelden
 Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
@@ -146,7 +152,7 @@ Alle Markdown-links worden verwerkt via een **Link Render Hook** ([`render-link.
   ![Groot overzicht](overzicht.png)
   ![Detailknop](knop.png?w=30%)
   ```
-- **Responsief:** Op smalle schermen ($\le 600\text{px}$) schakelen multi-image alinea's automatisch over naar een verticale stapeling.
+- **Responsief:** Op smalle schermen (≤ 600px) schakelen multi-image alinea's automatisch over naar een verticale stapeling.
 - **Shortcode `{{< grid >}}`:** Voor meer complexe lay-outs of gemengde content (tekst, code, beelden) is er een lichte grid-shortcode ([`grid.html`](layouts/shortcodes/grid.html)):
   ```markdown
   {{< grid cols=2 gap="1rem" >}}
@@ -372,22 +378,11 @@ VoornaamA_Opdrachtnaam.zip
 Onderstaand sjabloon toont de maatstaf voor een strakke, telegrafische Smartschool-lesfiche:
 
 ```markdown
-# Smartschool Planning: [Opdrachtnaam] ([Vak])
+## Les 1 [DD/MM/YYYY] ([Vak], [Starttijd] - [Eindtijd])
 
-**Vak:** [Volledige vaknaam] ([Klas])  
-**Lokaal:** [Lokaalnummer]  
-**Totale duurtijd:** [duurtijd voluit geschreven, bv. drie weken (drie lesuren per woensdag)]  
-**Periode:** [Maand Jaar]  
+### [Opdrachtnaam]: [Onderwerp & Focus]
 
-## 📅 Les 1 [DD/MM/YYYY] ([Aantal]x [Vak], [Starttijd] – [Eindtijd])
-
-### 📌 Titel lesfiche
-> **[Opdrachtnaam]: [Onderwerp & Focus]**
-
-### 🎯 Leerplandoelen
-* **[Code]:** [Succescriterium in concrete leerkracht-/leerlingentaal]
-
-### 📋 Lesverloop & inhoud
+### Lesverloop & inhoud
 1. **[Beknopte stapnaam]:**
    * [Doelgerichte handeling of taak].
    * [Technisch bouwplan of concrete afspraak].
@@ -403,6 +398,9 @@ Onderstaand sjabloon toont de maatstaf voor een strakke, telegrafische Smartscho
 5. **[Praktische realisatie]:**
    * **[Deeltaak 1]:** [Actie met concrete tools of bestanden].
    * **[Deeltaak 2]:** [Actie met styling, animatie of exports].
+
+### Leerplandoelen
+* **[Code]:** [Succescriterium in concrete leerkracht-/leerlingentaal]
 ```
 
 ---

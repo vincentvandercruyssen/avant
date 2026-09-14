@@ -12,33 +12,48 @@
   <h1>
     <span class="vaknaam">{{ $sec }}</span>
     {{ if and $opdrachtTitle (ne (trim $sec " \n\r\t") (trim $opdrachtTitle " \n\r\t")) (ne (trim $sec " \n\r\t") (trim .Title " \n\r\t")) }}
-      <span class="opdrachtnaam">{{ $opdrachtTitle }} — Planning</span>
+      <span class="opdrachtnaam">{{ $opdrachtTitle }} (Planning)</span>
     {{ end }}
   </h1>
+  <a href="{{ .RelPermalink }}" class="terug-link">← Terug naar opdracht</a>
   {{ $planningResource := .Resources.GetMatch "*planning*" }}
   {{ if $planningResource }}
-    <nav id="TableOfContents">
-      <ul>
-        <li><a href="{{ .RelPermalink }}">← Terug naar opdracht</a></li>
-        {{ $headings := findRESubmatch `(?s)<h([23]) id="([^"]+)">(.*?)</h[23]>` $planningResource.Content }}
-        {{ range $headings }}
-          {{ $level := index . 1 }}
-          {{ $id := index . 2 }}
-          {{ $title := index . 3 }}
-          {{ if eq $level "2" }}
-            <li style="margin-top: 0.6rem;"><a href="#{{ $id }}" style="font-weight: 600;">{{ $title | safeHTML }}</a></li>
-          {{ else if eq $level "3" }}
-            <li style="padding-left: 1.5ch; font-size: 0.9em; opacity: 0.85;"><a href="#{{ $id }}">{{ $title | safeHTML }}</a></li>
+    {{ $headings := findRESubmatch `(?s)<h([23]) id="([^"]+)">(.*?)</h[23]>` $planningResource.Content }}
+    {{ if gt (len $headings) 0 }}
+      <nav id="TableOfContents">
+        <ul>
+          {{ $s := newScratch }}
+          {{ $s.Set "inH2" false }}
+          {{ $s.Set "inH3" false }}
+          {{ range $headings }}
+            {{ $level := index . 1 }}
+            {{ $id := index . 2 }}
+            {{ $title := index . 3 }}
+            {{ if eq $level "2" }}
+              {{ if $s.Get "inH3" }}
+                </ul></li>
+                {{ $s.Set "inH3" false }}
+              {{ else if $s.Get "inH2" }}
+                </li>
+              {{ end }}
+              <li><a href="#{{ $id }}">{{ $title | safeHTML }}</a>
+              {{ $s.Set "inH2" true }}
+            {{ else if eq $level "3" }}
+              {{ if not ($s.Get "inH3") }}
+                <ul>
+                {{ $s.Set "inH3" true }}
+              {{ end }}
+              <li><a href="#{{ $id }}">{{ $title | safeHTML }}</a></li>
+            {{ end }}
           {{ end }}
-        {{ end }}
-      </ul>
-    </nav>
-  {{ else }}
-    <nav id="TableOfContents">
-      <ul>
-        <li><a href="{{ .RelPermalink }}">← Terug naar opdracht</a></li>
-      </ul>
-    </nav>
+          {{ if $s.Get "inH3" }}
+            </ul></li>
+          {{ else if $s.Get "inH2" }}
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    {{ end }}
   {{ end }}
 </div>
 {{ end }}
@@ -47,7 +62,7 @@
 {{ $planningResource := .Resources.GetMatch "*planning*" }}
 <h1>
   <span class="vaknaam">{{ partial "sectionName.html" . }}</span>
-  <span class="opdrachtnaam">{{ with .Params.thema }}{{ if ne (trim . " ") "" }}{{ . }}: {{ end }}{{ end }}{{ .Title }} — Planning</span>
+  <span class="opdrachtnaam">{{ with .Params.thema }}{{ if ne (trim . " ") "" }}{{ . }}: {{ end }}{{ end }}{{ .Title }} (Planning)</span>
 </h1>
 
 <p>
@@ -57,11 +72,9 @@
 </p>
 
 {{ if $planningResource }}
-<div class="planning-content">
   {{ $planningResource.Content }}
-</div>
 {{ else }}
-<p>Geen planning beschikbaar voor deze opdracht.</p>
+  <p>Geen planning beschikbaar voor deze opdracht.</p>
 {{ end }}
 
 {{ end }}

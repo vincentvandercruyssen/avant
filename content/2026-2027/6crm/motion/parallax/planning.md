@@ -1,37 +1,21 @@
-# Smartschool Planning: Parallax (Motion & Beeld)
+## Les 1 01/09/2026 (Motion, 13:30 - 15:20)
 
-**Vakken:** Motion (dinsdag 09:10–11:00 & 13:30–15:20) & Beeld (maandag 13:30–15:20) (6CRM)  
-**Lokalen:** A00.39 (Motion Lab) / A00.32 (Beeld Lab)  
-**Totale duurtijd:** vijf lesmomenten (Motion + Beeld integratie)  
-**Periode:** September 2026  
+### Parallax: Kennismaking & Briefing
 
-## 📅 Les 1 01/09/2026 (2x Motion, 13:30 – 15:20)
-
-### 📌 Titel lesfiche
-> **Parallax: Kennismaking & Briefing**
-
-### 🎯 Leerplandoelen
-* **CRS01:** Productievereisten en instructies grondig analyseren (resolutie 1080×1350, 4:5 verhouding, 30 fps, H.264).
-* **CRS02:** Passende technieken doelgericht selecteren (maskering, slimme objecten, 3D camera parallax, kinetische typografie).
-
-### 📋 Lesverloop & inhoud
+### Lesverloop & inhoud
 1. **Onthaal & introductie:** Kennismaking en voorstelling van het vak Motion (6CRM), toelichting bij de algemene werkwijze, Smartschool-vakomgeving, klasafspraken, inleverprocedures, deadlines, punten evaluatie en overzicht van de planning.
 2. **Wat is parallax & briefing:** Presentatie van de opdracht *Parallax*. Demonstratie van voorbeeld en parallax-principe (verschillende bewegingssnelheden van voor- en achtergrondlagen), dieptewerking, 2.5D camera's en kinetische typografie voor social media video's.
 3. **Specificaties & voorbereiding:** Overlopen van de technische vereisten (1080 × 1350 px, 4:5, 30 fps) en voorbereiding van het zoeken naar bron- en inspiratiemateriaal.
 
-## 📅 Les 2 07/09/2026 (2x Beeld, 13:30 – 15:20)
+### Leerplandoelen
+* **CRS01:** Productievereisten en instructies grondig analyseren (resolutie 1080×1350, 4:5 verhouding, 30 fps, H.264).
+* **CRS02:** Passende technieken doelgericht selecteren (maskering, slimme objecten, 3D camera parallax, kinetische typografie).
 
-### 📌 Titel lesfiche
-> **Parallax: Inspiratie, Pinboard, Mappenstructuur & Start Photoshop**
+## Les 2 07/09/2026 (Beeld, 13:30 - 15:20)
 
-### 🎯 Leerplandoelen
-* **CRS01:** Productievereisten en bestandsconventies voor mediaprojecten toepassen.
-* **CRS07:** Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren.
-* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen.
-* **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop.
-* **CRS21:** Typografie en beeldelementen doordacht onderzoeken en verzamelen in functie van de compositie.
+### Parallax: Inspiratie, Pinboard, Mappenstructuur & Start Photoshop
 
-### 📋 Lesverloop & inhoud
+### Lesverloop & inhoud
 1. **Herhaling verwachtingen & voorbeeld:** Korte herhaling van de briefing en verwachtingen van de Parallax-opdracht aan de hand van een voorbeeld (dieptewerking, 4:5-beeldverhouding, gelaagdheid en animatiedoel).
 2. **Inspiratie & pinboard:** Doelgericht zoeken naar complementair bronmateriaal en referenties:
    * Sfeervolle achtergrond (landschap, textuur, architectuur)
@@ -48,19 +32,18 @@
    * Niet-destructief werken: beelden openen via *Bestand → Openen*, voorgrondobject uitsnijden met het *Object selecteren*-gereedschap (`W`) en verfijnen via *Selecteren en maskeren*.
    * Toevoegen van een **laagmasker** (geen pixels wissen met de gom) en de laag omzetten naar een **slim object** (*Smart Object*) voor behoud van flexibiliteit en beeldkwaliteit.
 
-## 📅 Les 3 08/09/2026 (2x Motion, 09:10 – 11:00)
-
-### 📌 Titel lesfiche
-> **Parallax: Afwerken Onderzoek & Start Photoshop Ontwerp**
-
-### 🎯 Leerplandoelen
+### Leerplandoelen
 * **CRS01:** Productievereisten en bestandsconventies voor mediaprojecten toepassen.
-* **CRS07:** Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren en ordenen op een pinboard.
+* **CRS07:** Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren.
 * **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen.
 * **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop.
-* **CRS21:** Typografie en beeldelementen doordacht onderzoeken in functie van de compositie.
+* **CRS21:** Typografie en beeldelementen doordacht onderzoeken en verzamelen in functie van de compositie.
 
-### 📋 Lesverloop & inhoud
+## Les 3 08/09/2026 (Motion, 09:10 - 11:00)
+
+### Parallax: Afwerken Onderzoek & Start Photoshop Ontwerp
+
+### Lesverloop & inhoud
 1. **Afronden voorstudie & onderzoek:** Voltooien van het digitale pinboard en de definitieve keuze van complementair bronmateriaal (sfeervolle achtergrond, krachtig voorgrondobject of personage, en typografische stijl/quote).
 2. **Mappenstructuur & bestandsbeheer:** Controleren van de projectmap `VoornaamA_Parallax/` in OneDrive en ruwe bronbestanden ordenen in `01_assets/`.
 3. **Start Photoshop-ontwerp:**
@@ -69,19 +52,18 @@
    * Toevoegen van een **laagmasker** (geen pixels wissen met de gom) en de laag omzetten naar een **slim object** (*Smart Object*) voor behoud van flexibiliteit en beeldkwaliteit.
 4. **Eerste compositieopzet:** Voorgrond en achtergrond harmonieus samenbrengen en positioneren binnen het 4:5 kader als basis voor de typografische en filmische afwerking.
 
-## 📅 Les 4 08/09/2026 (2x Motion, 13:30 – 15:20)
+### Leerplandoelen
+* **CRS01:** Productievereisten en bestandsconventies voor mediaprojecten toepassen.
+* **CRS07:** Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren en ordenen op een pinboard.
+* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen.
+* **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop.
+* **CRS21:** Typografie en beeldelementen doordacht onderzoeken in functie van de compositie.
 
-### 📌 Titel lesfiche
-> **Parallax: Onderzoek bespreken, Niet-destructief bewerken, Aanpassingslagen**
+## Les 4 08/09/2026 (Motion, 13:30 - 15:20)
 
-### 🎯 Leerplandoelen
-* **CRS02:** Passende technieken doelgericht selecteren (laagmaskers, slimme objecten, slimme filters, aanpassingslagen, overvloeimodi).
-* **CRS07:** Kwalitatief en complementair fotomateriaal (hoge resolutie) doelgericht selecteren op basis van het pinboard.
-* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen en toepassen.
-* **CRS10:** Beeldmateriaal vakkundig vrijmaken met het gereedschap *Object selecteren* en verfijnen met laagmaskers.
-* **CRS22:** Beeldelementen esthetisch harmoniseren met aanpassingslagen (licht, kleur, levendigheid, curven, egale kleur en overvloeimodi) en uitknipmaskers tot één consistent geheel.
+### Parallax: Onderzoek bespreken, Niet-destructief bewerken, Aanpassingslagen
 
-### 📋 Lesverloop & inhoud
+### Lesverloop & inhoud
 1. **Bespreking onderzoek & selectie fotomateriaal:**
    * Klassikale bespreking van het vooronderzoek en de Pinterest-borden.
    * Gerichte zoektocht naar kwalitatief, beeldmateriaal in hoge resolutie (via stockplatformen of eigen fotografie).
@@ -96,20 +78,59 @@
    * Nauwkeurige sturing van contrast en toonwaarden met behulp van **Curven** (*Curves*).
    * Inzetten van een **Egale kleur** (*Solid Color*) in combinatie met een **overvloeimodus** (*Blend Mode*) voor creatieve kleurschakeringen, *color grading* en een bepaalde sfeer.
 
-## 📅 Les 5 15/09/2026 (2x Motion, 09:10 – 11:00)
+### Leerplandoelen
+* **CRS02:** Passende technieken doelgericht selecteren (laagmaskers, slimme objecten, slimme filters, aanpassingslagen, overvloeimodi).
+* **CRS07:** Kwalitatief en complementair fotomateriaal (hoge resolutie) doelgericht selecteren op basis van het pinboard.
+* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen en toepassen.
+* **CRS10:** Beeldmateriaal vakkundig vrijmaken met het gereedschap *Object selecteren* en verfijnen met laagmaskers.
+* **CRS22:** Beeldelementen esthetisch harmoniseren met aanpassingslagen (licht, kleur, levendigheid, curven, egale kleur en overvloeimodi) en uitknipmaskers tot één consistent geheel.
 
-### 📌 Titel lesfiche
-> **Parallax: Kinetische Typografie, Video Render & Screening**
+## Les 5 14/09/2026 (Beeld, 13:30 - 15:20)
 
-### 🎯 Leerplandoelen
+### Parallax: Uitwerking Photoshop-ontwerp, Typografie, Sfeer & AE-voorbereiding
+
+### Lesverloop & inhoud
+1. **Niet-destructief werken & slimme objecten:**
+   * Voorgrondobject uitsnijden met laagmaskers.
+   * Lagen omzetten naar slimme objecten (*Smart Objects*) voor flexibiliteit.
+2. **Lagen afstemmen via aanpassingslagen & uitknipmaskers:**
+   * Aanpassingslagen voor helderheid, contrast en kleurbalans om voorgrond en achtergrond op elkaar af te stemmen.
+   * Werken met uitknipmaskers (*Clipping Masks*): aanpassingslagen specifiek koppelen aan afzonderlijke lagen voor gerichte correcties per laag.
+3. **Typografie & compositie:**
+   * Tekstlagen toevoegen (hoofdwoord en quote) en positioneren tussen de achtergrond en het vrijgemaakte voorgrondobject.
+   * Typografische hiërarchie, fontkeuze, corpsgrootte, regelafstand en tracking afstemmen op compositie en leesbaarheid.
+4. **Sfeer, contrast & color grading:**
+   * Toonwaarden en contrast finetunen.
+   * Creatieve kleurschakeringen en sfeer bepalen.
+5. **Photoshop-document klaarmaken voor After Effects:**
+   * Lagenstructuur organiseren en lagen betekenisvol benoemen (`Voorgrond`, `Achtergrond`).
+   * Technische kwaliteitscontrole op afmetingen (2160 × 2700 px of 1080 × 1350 px, 4:5-verhouding).
+   * Oplevering voor Beeld: werkbestand `VoornaamA_Parallax-Ontwerp.psd` en geëxporteerde `VoornaamA_Parallax-Ontwerp.jpg` indienen in de Smartschool Uploadzone.
+
+### Leerplandoelen
+* **CRS02:** Passende technieken doelgericht selecteren (laagmaskers, slimme objecten, aanpassingslagen, uitknipmaskers).
+* **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking, uitsnijding en kleurharmonisatie bepalen en toepassen.
+* **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en niet-destructief verfijnen in Photoshop.
+* **CRS15:** Geschikt beeldmateriaal en typografie gestructureerd voorbereiden voor animatie in After Effects.
+* **CRS21:** Typografie doordacht vormgeven met aandacht voor leesbaarheid, hiërarchie en contrast.
+* **CRS22:** Beeldelementen esthetisch harmoniseren met aanpassingslagen (curven, overvloeimodi) en uitknipmaskers tot één consistente sfeer.
+* **CRS23:** Bestanden controleren op correcte resolutie (2160 × 2700 px of 1080 × 1350 px) en kleurruimte (sRGB).
+* **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Beeld (`VoornaamA_Parallax-Ontwerp.psd` en `.jpg`).
+
+## Les 6 15/09/2026 (Motion, 09:10 - 11:00)
+
+### Parallax: 3D Camera, Kinetische Typografie, Video Render & Screening
+
+### Lesverloop & inhoud
+1. **After Effects import & 3D-lagen:** Importeren van `VoornaamA_Parallax-Ontwerp.psd` als *Composition - Retain Layer Sizes*, compositie-instellingen controleren (1080 × 1350 px, 30 fps, 8 sec) en de 3D Layer switch inschakelen voor alle lagen.
+2. **3D Camera & Parallax-diepte:** Een camera toevoegen (35 mm of 50 mm), lagen ruimtelijk spreiden over de Z-as via *Top View* of *Custom View* en camerabeweging animeren met keyframes en Easy Ease (`F9`).
+3. **Kinetische typografie & Graph Editor:** Tekstlagen dynamisch animeren (positie, dekking of *Text Animators* met range selectors), bewegingsonscherpte (*Motion Blur*) activeren en snelheidscurves verfijnen in de Graph Editor.
+4. **Batch-export in Adobe Media Encoder:** Renderen naar H.264 MP4 (`Familienaam_Voornaam_Parallax.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5-8 Mbps, bestandsgrootte 3-5 MB in `02_exports/`).
+5. **⏰ DEADLINE, inlevering & screening:** Uploaden van de finale MP4 en het georganiseerde After Effects-project in de Smartschool Uploadzone, gevolgd door een klassikale screening met feedback op dieptewerking, timing en typografie.
+
+### Leerplandoelen
+* **CRS15:** Geschikt beeldmateriaal en typografie gestructureerd importeren en voorbereiden in After Effects.
 * **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
 * **CRS21:** Typografie doordacht animeren met aandacht voor leesbaarheid, hiërarchie en ritme.
-* **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (3–5 MB).
+* **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (3-5 MB).
 * **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Motion.
-
-### 📋 Lesverloop & inhoud
-1. **Kinetische typografie:** Titel- en quotelagen animeren in After Effects (positie, dekking of After Effects animators) en Motion Blur activeren.
-2. **Graph Editor & timing:** Snelheidscurves verfijnen in de Graph Editor voor een natuurlijk bewegingsritme.
-3. **Batch-export in Adobe Media Encoder:** Renderen naar H.264 MP4 (`Familienaam_Voornaam_Parallax.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5–8 Mbps, bestandsgrootte 3–5 MB in `02_exports/`).
-4. **⏰ DEADLINE & Inlevering:** Uploaden van de finale MP4 in de Smartschool Uploadzone samen met het georganiseerde After Effects-project.
-5. **Klassikale screening & evaluatie:** Gezamenlijk vertonen en analyseren van alle Parallax-video's op het grote scherm met feedback op dieptewerking, timing, typografie en het geïntegreerde proces.
