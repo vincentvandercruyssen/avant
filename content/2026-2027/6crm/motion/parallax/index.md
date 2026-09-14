@@ -108,10 +108,10 @@ Alvorens aan de slag te gaan in Photoshop en After Effects zet je een ordelijke 
 
 ```text
 VoornaamA_Parallax/
-├── 01_assets/     <- Originele foto's, fonts, audiobestanden
-├── 02_exports/    <- .mp4, .jpg
-├── VoornaamA_Parallax-Animatie.aep
-└── VoornaamA_Parallax-Ontwerp.psd
+└─ 01_assets/     <- Originele foto's, fonts, audiobestanden
+└─ 02_exports/    <- .mp4, .jpg
+└─ VoornaamA_Parallax-Animatie.aep
+└─ VoornaamA_Parallax-Ontwerp.psd
 ```
 
 #### Voorbeeld
@@ -189,9 +189,11 @@ Plaats je tekst op aparte lagen. Experimenteer met fontkeuze, corpsgrootte, trac
 ![Compositie met typografie eerste opzet](img/photoshop-met_tekst-voor.png)
 ![Compositie met typografie na bewerking](img/photoshop-met_tekst-na.png)
 
-> **Oplevering voor het vak Beeld!**  
-> `Familienaam_Voornaam_Voorstudie.psd` (gelaagd werkbestand)  
-> `Familienaam_Voornaam_Voorstudie.jpg` (export)  
+#### Indienen
+
+Dien je afgewerkte compositie voor het vak Beeld in via de Smartschool Uploadzone:
+* `VoornaamA_Parallax-Ontwerp.psd` (gelaagd werkbestand)
+* `VoornaamA_Parallax-Ontwerp.jpg` (export)  
 
 ### Parallax animatie in After Effects
 
@@ -281,18 +283,30 @@ Stel in Adobe Media Encoder de parameters in:
 
 Klik op de groene afspeelknop om de render te starten.
 
+#### Indienen
+
+Lever voor het vak Motion de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone. Zorg dat alle gekoppelde bronbestanden, het Photoshop-ontwerp en de definitieve video-export aanwezig zijn:
+
+```text
+VoornaamA_Parallax.zip
+└─ 01_assets/
+└─ 02_exports/VoornaamA_Parallax-Animatie.mp4
+└─ VoornaamA_Parallax-Animatie.aep
+└─ VoornaamA_Parallax-Ontwerp.psd
+```
+
 ## Checklist
 
 Plaats de bestanden tijdig in de voorziene mappen op de uploadzone:
 
 ### Voor het vak Beeld
 * Onderzoek en Pinterest-link: `VoornaamA_Parallax-Onderzoek.pdf` (of `.doc` / `.jpg`)
-* Photoshop-werkbestand met alle lagen: `Familienaam_Voornaam_Voorstudie.psd`
-* Export: `Familienaam_Voornaam_Voorstudie.jpg`
+* Photoshop-werkbestand met alle lagen: `VoornaamA_Parallax-Ontwerp.psd`
+* Export: `VoornaamA_Parallax-Ontwerp.jpg`
 
 ### Voor het vak Motion
 * Volledig gearchiveerd After Effects-project (`.aep` + bronassets)
-* Definitieve video-export: `Familienaam_Voornaam_Parallax.mp4`
+* Definitieve video-export: `VoornaamA_Parallax-Animatie.mp4`
 
 ### Kwaliteitscontrole
 * Beeldverhouding is exact **4:5** (1080 × 1350 px).

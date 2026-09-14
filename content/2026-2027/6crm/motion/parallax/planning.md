@@ -125,7 +125,7 @@
 1. **After Effects import & 3D-lagen:** Importeren van `VoornaamA_Parallax-Ontwerp.psd` als *Composition - Retain Layer Sizes*, compositie-instellingen controleren (1080 × 1350 px, 30 fps, 8 sec) en de 3D Layer switch inschakelen voor alle lagen.
 2. **3D Camera & Parallax-diepte:** Een camera toevoegen (35 mm of 50 mm), lagen ruimtelijk spreiden over de Z-as via *Top View* of *Custom View* en camerabeweging animeren met keyframes en Easy Ease (`F9`).
 3. **Kinetische typografie & Graph Editor:** Tekstlagen dynamisch animeren (positie, dekking of *Text Animators* met range selectors), bewegingsonscherpte (*Motion Blur*) activeren en snelheidscurves verfijnen in de Graph Editor.
-4. **Batch-export in Adobe Media Encoder:** Renderen naar H.264 MP4 (`Familienaam_Voornaam_Parallax.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5-8 Mbps, bestandsgrootte 3-5 MB in `02_exports/`).
+4. **Batch-export in Adobe Media Encoder:** Renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5-8 Mbps, bestandsgrootte 3-5 MB in `02_exports/`).
 5. **⏰ DEADLINE, inlevering & screening:** Uploaden van de finale MP4 en het georganiseerde After Effects-project in de Smartschool Uploadzone, gevolgd door een klassikale screening met feedback op dieptewerking, timing en typografie.
 
 ### Leerplandoelen
