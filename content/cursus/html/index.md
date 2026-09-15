@@ -95,6 +95,12 @@ Bepaalde HTML-elementen maken geen tekstuele inhoud op en worden daarom 'lege el
 
 ### Anatomie van een HTML-document
 
+Een HTML-pagina heeft een vaste basisstructuur. Met de doctype-declaratie `<!DOCTYPE html>` vertel je de browser dat het document volgens de moderne HTML5-standaard gelezen moet worden.
+
+Het `<html>`-rootelement omvat alle inhoud van de pagina. In het `<head>`-element plaats je achtergrondinformatie en metadata die onzichtbaar blijven voor de bezoeker, zoals de paginatitel (binnen het ` <title>`-element) en gekoppelde bestanden.
+
+In het `<body>`-element plaats je daarentegen alle zichtbare inhoud die je binnen het browser-venster wilt tonen, zoals koppen, tussenkopjes, teksten, afbeeldingen, links enzovoort.
+
 ```html
 <!DOCTYPE html>
 <html lang="nl">
@@ -114,12 +120,12 @@ Bepaalde HTML-elementen maken geen tekstuele inhoud op en worden daarom 'lege el
 ### Belangrijkste onderdelen van een document
 
 1. **`<!DOCTYPE html>`** De doctype is een verplichte inleiding. Het zorgt ervoor dat de browser de relevante specificaties volgt.
-2. **`<html>... </html>`** Het `<html>`-element omhult alle inhoud van de pagina.
-3. **`<head>... </head>`** Het `<head>`-element bevat metagegevens zoals trefwoorden, stijlen en scripts.
+2. **`<html>...</html>`** Het `<html>`-element omhult alle inhoud van de pagina.
+3. **`<head>...</head>`** Het `<head>`-element bevat metagegevens zoals trefwoorden, stijlen en scripts.
 4. **`<meta charset="UTF-8" />`** Stelt de tekenset van het document in.
 5. **`<meta name="viewport" content="width=device-width, initial-scale=1.0" />`** Zorgt ervoor dat de pagina op de breedte van het apparaat wordt weergegeven.
-6. **`<title>... </title>`** Stelt de titel van de pagina in die in het tabblad van de browser wordt weergegeven.
-7. **`<body>... </body>`** Bevat alle zichtbare inhoud voor gebruikers.
+6. **`<title>...</title>`** Stelt de titel van de pagina in die in het tabblad van de browser wordt weergegeven.
+7. **`<body>...</body>`** Bevat alle zichtbare inhoud voor gebruikers.
 
 ### Documentmetadata
 
@@ -139,9 +145,7 @@ Metadata is informatie over andere gegevens, ofwel data over data. In het geval 
 
 ## Inhoudsstroom
 
-De inhoudsstroom, *flow content*, omvat de meeste elementen die binnen het `<body>`-element kunnen worden geplaatst:
-
-`<a>`, `<audio>`, `<blockquote>`, `<br>`, `<button>`, `<canvas>`, `<code>`, `<div>`, `<em>`, `<embed>`, `<footer>`, `<form>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<header>`, `<hr>`, `<iframe>`, `<img>`, `<input>`, `<label>`, `<main>`, `<mark>`, `<nav>`, `<ol>`, `<p>`, `<picture>`, `<script>`, `<section>`, `<select>`, `<span>`, `<strong>`, `<sub>`, `<sup>`, `<svg>`, `<textarea>`, `<time>`, `<ul>`, `<video>`
+De inhoudsstroom, *flow content*, omvat de meeste elementen die binnen het `<body>`-element kunnen worden geplaatst, zoals koppen (`<h1>`-`<h6>`), alinea's (`<p>`), hyperlinks (`<a>`), afbeeldingen (`<img>`) en structurele secties ofwel inhoudsverdelingen (`<header>`, `<main>`, `<footer>`).
 
 ### Inhoudsverdeling
 
@@ -155,7 +159,7 @@ Inhoudsverdeling, *sectioning content*, verdeelt of segmenteert alle inhoud binn
 
 ### Kopteksten
 
-Kopinhoud, *heading content*, omschrijft de titel of ondertitel van een onderdeel.
+Kopinhoud, *heading content*, omschrijft de titel of ondertitel van een onderdeel. Er zijn zes niveaus die in een duidelijke hiërarchie lopen: `<h1>` is de belangrijkste titel en wordt standaard het grootst weergegeven, waarna het belang en de lettergrootte trapsgewijs afnemen tot `<h6>`.
 
 ```html
 <h1>Koptitel</h1>
@@ -168,7 +172,7 @@ Kopinhoud, *heading content*, omschrijft de titel of ondertitel van een onderdee
 
 ### Alinea-element
 
-Het `<p>`-element vertegenwoordigt een alinea.
+Het `<p>`-element vertegenwoordigt een alinea. De letter 'p' staat voor het Engelse *paragraph* (paragraaf) en gebruik je voor alle gewone, doorlopende tekst op je pagina.
 
 ```html
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus quae placeat, ipsam minus necessitatibus atque.</p>
@@ -206,7 +210,7 @@ Dit wordt:
 
 ### Attributen of kenmerken
 
-Elementen in HTML hebben vaak *attributes*.
+Elementen in HTML hebben vaak *attributes*. Je plaatst attributen altijd in de openingstag van een element, direct na de elementnaam en gescheiden door een spatie. Een element kan meerdere attributen bevatten.
 
 1. **`id="..."`** Definieert een unieke identifier.
 2. **`src="..."`** Geeft de URL aan van de in te sluiten inhoud.
@@ -214,6 +218,16 @@ Elementen in HTML hebben vaak *attributes*.
 4. **`href="..."`** Verwijst naar een gekoppelde bron.
 5. **`width="..."`** Bepaalt de breedte van een afbeelding.
 6. **`height="..."`** Bepaalt de hoogte van een afbeelding.
+
+Bepaalde attributen kunnen ook meerdere waarden hebben (zoals bij het `class`-attribuut), die je eveneens met een spatie van elkaar scheidt.
+
+### Afbeeldingselement
+
+Het `<img>`-element voegt een afbeelding in op je webpagina. Omdat het een leeg element is, heeft het geen sluitende tag. Je gebruikt minimaal het `src`-attribuut voor het pad naar de afbeelding en het `alt`-attribuut voor een beschrijvende alternatieve tekst.
+
+```html
+<img src="images/foto.jpg" alt="Beschrijving van de foto" width="600" />
+```
 
 ### Anker-element
 
