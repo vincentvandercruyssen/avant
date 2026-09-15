@@ -105,7 +105,7 @@
 5. **Photoshop-document klaarmaken voor After Effects:**
    * Lagenstructuur organiseren en lagen betekenisvol benoemen (`Voorgrond`, `Achtergrond`).
    * Technische kwaliteitscontrole op afmetingen (2160 × 2700 px of 1080 × 1350 px, 4:5-verhouding).
-   * Oplevering voor Beeld: werkbestand `VoornaamA_Parallax-Ontwerp.psd` en geëxporteerde `VoornaamA_Parallax-Ontwerp.jpg` indienen in de Smartschool Uploadzone.
+   * Indienen voor Beeld: werkbestand `VoornaamA_Parallax-Ontwerp.psd` en geëxporteerde `VoornaamA_Parallax-Ontwerp.jpg` indienen in de Smartschool Uploadzone.
 
 ### Leerplandoelen
 * **CRS02:** Passende technieken doelgericht selecteren (laagmaskers, slimme objecten, aanpassingslagen, uitknipmaskers).
@@ -119,17 +119,69 @@
 
 ## Les 6 15/09/2026 (Motion, 09:10 - 11:00)
 
-### Parallax: 3D Camera, Kinetische Typografie, Video Render & Screening
+### Parallax: Afwerking Photoshop, After Effects import
 
 ### Lesverloop & inhoud
-1. **After Effects import & 3D-lagen:** Importeren van `VoornaamA_Parallax-Ontwerp.psd` als *Composition - Retain Layer Sizes*, compositie-instellingen controleren (1080 × 1350 px, 30 fps, 8 sec) en de 3D Layer switch inschakelen voor alle lagen.
-2. **3D Camera & Parallax-diepte:** Een camera toevoegen (35 mm of 50 mm), lagen ruimtelijk spreiden over de Z-as via *Top View* of *Custom View* en camerabeweging animeren met keyframes en Easy Ease (`F9`).
-3. **Kinetische typografie & Graph Editor:** Tekstlagen dynamisch animeren (positie, dekking of *Text Animators* met range selectors), bewegingsonscherpte (*Motion Blur*) activeren en snelheidscurves verfijnen in de Graph Editor.
-4. **Batch-export in Adobe Media Encoder:** Renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5-8 Mbps, bestandsgrootte 3-5 MB in `02_exports/`).
-5. **⏰ DEADLINE, inlevering & screening:** Uploaden van de finale MP4 en het georganiseerde After Effects-project in de Smartschool Uploadzone, gevolgd door een klassikale screening met feedback op dieptewerking, timing en typografie.
+1. **Afwerken, feedback & indienen Photoshop-ontwerp:**
+   * Afwerken Photoshop-ontwerp (`VoornaamA_Parallax-Ontwerp.psd`).
+   * Niet-destructieve uitsnijding met laagmaskers, slimme objecten, typografie en kleurafstemming.
+   * Indienen voor Beeld: werkbestand `VoornaamA_Parallax-Ontwerp.psd` en export `VoornaamA_Parallax-Ontwerp.jpg` indienen via de Smartschool Uploadzone.
+2. **Importeren in After Effects:**
+   * Werkbestand `VoornaamA_Parallax-Ontwerp.psd` importeren als *Composition - Retain Layer Sizes* met bewerkbare laagsstijlen (*Editable Layer Styles*).
+   * Project opslaan als `VoornaamA_Parallax-Animatie.aep` binnen de projectmap `VoornaamA_Parallax/`.
+3. **Compositie-instellingen:**
+   * Compositie-instellingen 1080 × 1350 px (4:5-verhouding), 30 fps en een duur van minimaal 8 seconden (`0:00:08:00`).
+4. **Camera toevoegen:**
+   * Camera toevoegen (35 mm of 50 mm lens) binnen de After Effects-compositie.
 
 ### Leerplandoelen
-* **CRS15:** Geschikt beeldmateriaal en typografie gestructureerd importeren en voorbereiden in After Effects.
+* **CRS02:** Passende technieken doelgericht selecteren (laagmaskers, slimme objecten, importinstellingen en camera).
+* **CRS10:** Beeldmateriaal in Photoshop definitief verfijnen en niet-destructief afwerken.
+* **CRS15:** PSD-lagen en typografie gestructureerd importeren (*Composition - Retain Layer Sizes*) en voorbereiden voor animatie in After Effects.
+* **CRS23:** Compositie-instellingen controleren op correcte resolutie (1080 × 1350 px), framerate (30 fps) en tijdsduur (8 sec).
+* **CRS27:** De gevraagde deliverables voor Beeld (`VoornaamA_Parallax-Ontwerp.psd` en `.jpg`) tijdig en volgens de voorschriften opleveren.
+
+## Les 7 15/09/2026 (Motion, 13:30 - 15:20)
+
+### Parallax: 3D-lagen, camera-animatie & kinetische typografie
+
+### Lesverloop & inhoud
+1. **Importeren in After Effects:**
+   * Werkbestand `VoornaamA_Parallax-Ontwerp.psd` importeren als *Composition - Retain Layer Sizes* met bewerkbare laagsstijlen (*Editable Layer Styles*).
+   * Project opslaan als `VoornaamA_Parallax-Animatie.aep` binnen de projectmap `VoornaamA_Parallax/`.
+2. **Compositie-instellingen & camera toevoegen:**
+   * Compositie-instellingen controleren op 1080 × 1350 px (4:5-verhouding), 30 fps en een duur van minimaal 8 seconden (`0:00:08:00`).
+   * Camera toevoegen (35 mm of 50 mm lens) binnen de compositie.
+3. **3D-lagen inschakelen & ruimtelijke diepte:**
+   * 3D-laagschakelaar inschakelen voor alle beeld- en typografielagen.
+   * Lagen ruimtelijk spreiden over de Z-as via *Custom View* of *Top View* voor de 2.5D dieptewerking.
+4. **Camerabeweging & parallax-diepte:**
+   * Camerabeweging animeren via keyframes op positie en richtpunt (*Point of Interest*).
+   * Bewegingscurves en timing verfijnen via *Easy Ease* (`F9`) en de *Graph Editor*.
+5. **Kinetische typografie:**
+   * Tekstlagen dynamisch animeren in de 3D-ruimte met behulp van tekstanimators en transformatie-eigenschappen.
+   * Bewegingsonscherpte (*Motion Blur*) inschakelen voor een vloeiend visueel ritme.
+
+### Leerplandoelen
+* **CRS15:** PSD-lagen gestructureerd importeren en compositie-instellingen inrichten in After Effects.
+* **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren met 3D-lagen.
+* **CRS21:** Typografie doordacht animeren met aandacht voor leesbaarheid, hiërarchie en ritme.
+
+## Les 8 21/09/2026 (Beeld, 13:30 - 15:20)
+
+### Parallax: Afwerking animatie, video-export & screening
+
+### Lesverloop & inhoud
+1. **Afwerken animatie & kinetische typografie:**
+   * Fijnregeling van camerabeweging, timing en snelheidscurves in de Graph Editor.
+   * Typografische animatie finaliseren en bewegingsonscherpte (*Motion Blur*) controleren.
+2. **Video-export in Adobe Media Encoder:**
+   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5-8 Mbps, bestandsgrootte 3-5 MB in `02_exports/`).
+3. **Deadline, inlevering & screening:**
+   * Volledige projectmap archiveren naar `VoornaamA_Parallax.zip` en inleveren via de Smartschool Uploadzone.
+   * Klassikale screening met feedback op dieptewerking, typografisch ritme en technische afwerking.
+
+### Leerplandoelen
 * **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
 * **CRS21:** Typografie doordacht animeren met aandacht voor leesbaarheid, hiërarchie en ritme.
 * **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (3-5 MB).

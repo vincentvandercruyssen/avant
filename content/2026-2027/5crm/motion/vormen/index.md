@@ -242,7 +242,7 @@ In de vierde compositie werk je met een vierkant formaat en breng je bewegende e
 
 #### Voorbeeld
 
-1. Gebruik bijvoorbeeld jouw eigen opname uit de opdracht [Beeld: Kijkkader](/2026-2027/5crm/beeld/kijkkader/#optionele-integratie-met-5crm-motion) (`VoornaamA_Motion-Achtergrond.jpg`) of zoek een sfeervolle, contrastrijke achtergrondfoto op [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/) en bewaar deze in `01_assets/`.
+1. Gebruik bijvoorbeeld jouw eigen opname uit de opdracht voor het vak Beeld: Kijkkader of zoek een sfeervolle, contrastrijke achtergrondfoto op [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/) en bewaar deze in `01_assets/`.
 2. Importeer de foto in After Effects (`Ctrl + I`) en sleep hem onderaan in de tijdlijn.
 3. Schaal de foto passend en zet eventueel een subtiele schaal-animatie op de foto (bv. een langzame zoom van `100%` naar `108%` over 10 seconden).
 4. Teken contrasterende vormen bovenop de foto (kaders, lijnen, cirkels of typografische accenten).
