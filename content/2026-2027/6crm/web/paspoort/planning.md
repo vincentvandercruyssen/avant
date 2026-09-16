@@ -47,15 +47,27 @@
 
 ## Les 3 16/09/2026 (Web, 10:10 - 12:40)
 
-### Paspoort: Deadline Oplevering & Evaluatie
+### Paspoort: Toets HTML 01, Cursus CSS, Uitwerking Paspoort
 
 ### Lesverloop & inhoud
-1. **📌 DEADLINE & Oplevering:** Aan het begin van de les (10:10) is het project `VoornaamA_Paspoort` volledig afgerond. Zelfevaluatie checklist overlopen (HTML/CSS validatie, werkende links, relatieve paden). Map zippen naar `VoornaamA_Paspoort.zip` en inleveren via de Smartschool Uploadzone.
-2. **Klassikale screening & peer-feedback:** Codekwaliteit, inspringing en visuele weergave in verschillende browserafmetingen bekijken en bespreken.
-3. **Conclusies & vooruitblik:** Feedbackronde en introductie van het volgende webproject.
+1. **Toets HTML 01:**
+   * HTML-documentstructuur (`<head>` vs `<body>`), semantische tags, nesting en attributen (`src`, `alt`, `href`).
+2. **Herhaling HTML & opdracht Paspoort:**
+   * Veelvoorkomende aandachtspunten bij HTML-structuren overlopen.
+   * Voortgang van het project `VoornaamA_Paspoort`: semantische HTML5-tags (`<h1>`-`<h2>`, `<p>`, `<img>`, `<ul>`/`<li>`, `<a>`), nesting en code-inspringing afstemmen op het wireframe.
+3. **Cursus CSS & toelichting stijlbladen:**
+   * **Verschil HTML en CSS:** Inhoud en structuur (HTML: wat staat er op de pagina) versus vormgeving en lay-out (CSS: hoe ziet het eruit).
+   * **CSS-declaraties:** Opbouw van een CSS-regelset met selectors, eigenschappen (*properties*) en waarden (*values*).
+   * **Koppeling extern stijlblad:** Aanmaken van `style.css` en integreren via `<link rel="stylesheet" href="style.css">` in de `<head>` van `index.html`.
+4. **Afwerken Paspoort (HTML & CSS):**
+   * **HTML & CSS:** HTML-code valideren in de browser via DevTools en vormgeving uitwerken in `style.css` (achtergrondkleur, typografie, tekstkleur, titels en profielfoto met `width` en `border-radius`).
+   * **Oplevering:** Zelfevaluatie checklist voltooien, projectmap comprimeren naar `VoornaamA_Paspoort.zip` en inleveren via de Smartschool Uploadzone.
 
 ### Leerplandoelen
+* **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.
+* **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
 * **CRS18:** Een semantisch correcte, functionele en gestijlde eerste webpagina (Paspoort) realiseren.
+* **CRS21:** Typografische hiërarchie (h1, h2, p, lijsten) en leesbaarheid doordacht vormgeven via CSS-stijlregels.
 * **CRS23:** Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser.
 * **CRS27:** De webbestanden (HTML, CSS, assets) volgens de afgesproken structuur en naamgeving tijdig opleveren.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
