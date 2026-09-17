@@ -162,7 +162,7 @@ Teken voor **elk van de vier composities** een klein storyboard in je schetsboek
 
 Dien je schetsen in als JPG of één samengevoegde PDF (bv. `VoornaamA_Vormen-Storyboard-1.jpg`), voeg de link naar je pinterest-board toe in de omschrijving.
 
-### Compositie 1
+### Compositie 1 (1920x1080)
 
 In deze eerste compositie focus je op het gebruik van één vorm en de transformatie-eigenschappen.
 
@@ -183,7 +183,7 @@ In deze eerste compositie focus je op het gebruik van één vorm en de transform
 5. Laat de vorm via drie tot vier tussenposities een dynamisch traject afleggen. 
 6. Optioneel: Selecteer alle keyframes en druk op `F9` (*Easy Ease*).
 
-### Compositie 2
+### Compositie 2 (1080x1350)
 
 In de tweede compositie ga je aan de slag met **meerdere vormen** en transformaties. 
 
@@ -205,7 +205,7 @@ In de tweede compositie ga je aan de slag met **meerdere vormen** en transformat
 ![Vormlaag transformaties animeren](img/ae-vormlaag-transform-animeren.jpg)
 ![Graph Editor Bézier-handvatten](img/ae-graph-editor-handvatten.jpg)
 
-### Compositie 3
+### Compositie 3 (2520x1080)
 
 In deze compositie richt je je op het gebruik van tekst.
 
@@ -215,7 +215,7 @@ In deze compositie richt je je op het gebruik van tekst.
    * **Frame Rate:** `30 fps`
    * **Duration:** `0:00:05:00` (**minimaal 5 seconden**)
 
-#### Voorbeeld 
+#### Voorbeeld
 
 1. Kies een krachtige tekst (Nederlands- of Engelstalig):
    * **Nederlandstalige actiewoorden:** *BEWEEG*, *RITME*, *KRACHT*, *GROEI*, *FOCUS*, *IMPACT*,...
@@ -230,7 +230,7 @@ In deze compositie richt je je op het gebruik van tekst.
 ![Tekst typen in Character paneel](img/ae-tekst-typen-character-paneel.jpg)
 ![Tekst transformaties stopwatches](img/ae-tekst-transformaties-stopwatches.jpg)
 
-### Compositie 4
+### Compositie 4 (1080x1080)
 
 In de vierde compositie werk je met een vierkant formaat en breng je bewegende elementen voor een achtergrond tot leven.
 

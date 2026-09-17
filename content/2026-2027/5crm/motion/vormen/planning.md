@@ -106,3 +106,32 @@
 * **CRS15:** 2D-basisvormen, typografische elementen en beeldmateriaal gestructureerd opzetten in After Effects.
 * **CRS16:** Dynamische 2D-animaties realiseren met keyframes, snelheidsversnelling (*Easy Ease*) en de Graph Editor.
 * **CRS21:** Typografie expressief animeren met aandacht voor leesbaarheid en ritme.
+
+## Les 5 17/09/2026 (Motion, 12:40 - 14:20)
+
+### Vormen: Feedback storyboards, mappenstructuur & uitwerking animaties
+
+### Lesverloop & inhoud
+1. **Feedbackronde storyboards:**
+   * Bespreking uitgetekende storyboardschetsen.
+   * Aandacht voor bewegingssuggesties, transformatiekeuzes, timing en overgangen binnen de vier formaten (16:9, 4:5, 21:9 en 1:1).
+   * Pinterest-bord delen.
+   * Te laat map.
+2. **Mappenstructuur:**
+   * Mappenstructuur `VoornaamA_Vormen/` op OneDrive en opzet van het projectbestand `VoornaamA_Vormen.aep`.
+3. **Bewegingsdynamiek & timing:**
+   * Onderzoek naar versnelling en vertraging via de *Keyframe Assistant* (*Easy Ease*, `F9`).
+   * Snelheidscurves finetunen met behulp van de *Graph Editor* (*Speed Graph*) voor dynamische bewegingen.
+   * Lagen splitsen (*Split Layer*, `Ctrl + Shift + D`) om timing sneller te organiseren op de tijdlijn.
+4. **Uitwerking vormanimaties:**
+   * Animeren van de vier composities in `VoornaamA_Vormen.aep`, focus op timing en ritme.
+
+### Leerplandoelen
+* **CRS02:** Doelgericht transformatie-eigenschappen (Positie, Schaal, Rotatie) en vormparameters selecteren in functie van het beoogde bewegingsritme.
+* **CRS03:** Storyboardschetsen met bewegingspijlen en timing vooraf plannen, kritisch evalueren en bijsturen na feedback.
+* **CRS06:** Vlot werken met Adobe After Effects (tijdlijn, vormlagen, Keyframe Assistant, Easy Ease, Graph Editor en laagsplitsing).
+* **CRS07:** Inspiratiebronnen en bewegingsvoorbeelden doelgericht verzamelen en ordenen op een digitaal pinboard.
+* **CRS15:** 2D-basisvormen en lagen gestructureerd opzetten in de compositietijdlijn.
+* **CRS16:** Dynamische 2D-animaties realiseren met keyframes, snelheidsversnelling (*Easy Ease*) en de Graph Editor.
+* **CRS27:** Ontbrekende projectonderdelen en schetsen volgens afspraak remediëren en opleveren via de inhaalzone op Smartschool.
+
