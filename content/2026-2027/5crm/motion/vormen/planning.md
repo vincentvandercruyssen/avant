@@ -135,3 +135,28 @@
 * **CRS16:** Dynamische 2D-animaties realiseren met keyframes, snelheidsversnelling (*Easy Ease*) en de Graph Editor.
 * **CRS27:** Ontbrekende projectonderdelen en schetsen volgens afspraak remediëren en opleveren via de inhaalzone op Smartschool.
 
+## Les 6 18/09/2026 (Motion)
+
+### Vormen: Afwerking composities 1 & 2, export naar MP4 & typografie-animatie
+
+### Lesverloop & inhoud
+1. **Afwerking compositie 1 & 2:**
+   * `VoornaamA_Vormen-Comp_1` (1920 × 1080 px, 16:9): één basisvorm met een vloeiend animatietraject van minimaal 5 seconden.
+   * `VoornaamA_Vormen-Comp_2` (1080 × 1350 px, 4:5): gelaagd samenspel van meerdere vormen van minimaal 5 seconden.
+2. **Video-export naar MP4:**
+   * Composities renderen via Adobe Media Encoder (`Ctrl + Alt + M`).
+   * Instellen van H.264-export (*Match Source - High Bitrate*) met behoud van 30 fps en de vastgelegde beeldformaten.
+   * Bewaren van de bestanden in de projectmap `02_exports/` als `VoornaamA_Vormen-Comp_1.mp4` en `VoornaamA_Vormen-Comp_2.mp4`.
+3. **Introductie typografie & tekst-animators:**
+   * `VoornaamA_Vormen-Comp_3` (2520 × 1080 px, Ultrawide 21:9, 30 fps, min. 5 sec).
+   * Typografische hiërarchie en woordkeuze (krachtig actiewoord of slagzin) instellen via het *Character*-paneel.
+   * Optioneel: Gebruik van tekst-animators (*Animate*-menu) en de bereikselectie (*Range Selector*) voor het ritmisch animeren van afzonderlijke letters, woorden of regels.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten, specifieke beeldformaten (Full HD 16:9, Portret 4:5, Ultrawide 21:9), 30 fps framerate en video-export toepassen.
+* **CRS02:** Doelgericht de transformatie-eigenschappen (Anchor Point, Position, Scale, Rotation, Opacity) en vormparameters selecteren in functie van het gewenste bewegingsritme.
+* **CRS06:** Vlot en efficiënt werken met Adobe After Effects (tijdlijncontroles, Easy Ease, Graph Editor, tekst-animators) en Adobe Media Encoder.
+* **CRS15:** 2D-basisvormen en typografische elementen gestructureerd opzetten in After Effects.
+* **CRS16:** Twee afzonderlijke, dynamische 2D-vormanimaties realiseren met keyframes, Easy Ease en de Graph Editor.
+* **CRS21:** Typografie expressief animeren met behulp van de Animate-functie en aandachtige timing.
+* **CRS23:** Composities en geëxporteerde MP4-videobestanden controleren op resolutie, framerate en vloeiende weergave.

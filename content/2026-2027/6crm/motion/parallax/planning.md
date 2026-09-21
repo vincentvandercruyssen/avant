@@ -169,17 +169,16 @@
 
 ## Les 8 21/09/2026 (Beeld, 13:30 - 15:20)
 
-### Parallax: Afwerking animatie, video-export & screening
+### Parallax: Afwerking animatie, video-export
 
 ### Lesverloop & inhoud
 1. **Afwerken animatie & kinetische typografie:**
-   * Fijnregeling van camerabeweging, timing en snelheidscurves in de Graph Editor.
-   * Typografische animatie finaliseren en bewegingsonscherpte (*Motion Blur*) controleren.
+   * Keyframen camerabeweging, timing en Graph Editor.
+   * Typografische animatie, eventueel bewegingsonscherpte (*Motion Blur*) controleren.
 2. **Video-export in Adobe Media Encoder:**
-   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, doel-bitrate 5-8 Mbps, bestandsgrootte 3-5 MB in `02_exports/`).
-3. **Deadline, inlevering & screening:**
+   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, bestandsgrootte max. 5 MB in `02_exports/`).
+3. **Deadline:**
    * Volledige projectmap archiveren naar `VoornaamA_Parallax.zip` en inleveren via de Smartschool Uploadzone.
-   * Klassikale screening met feedback op dieptewerking, typografisch ritme en technische afwerking.
 
 ### Leerplandoelen
 * **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.

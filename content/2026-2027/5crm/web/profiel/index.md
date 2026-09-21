@@ -72,9 +72,9 @@ In webdesign worden inhoud en vormgeving strikt gescheiden door twee codeertalen
 Hou bij het opzetten en bouwen van je webpagina's rekening met enkele technische basisafspraken:
 
 ### Bestandsstructuur
-* Het bestand `index.html` is universeel de standaard homepage die elke webserver als eerste zoekt.
+* Het bestand `index.html` is de standaard homepage die elke webserver als eerste zoekt.
 * Het bestand `style.css` bevat alle code voor de styling en vormgeving van de website.
-* Afbeeldingen verzamel je overzichtelijk in de submap `img/`.
+* Afbeeldingen verzamel je overzichtelijk in de submap `images/`.
 
 ### Naamgeving
 Schrijf bestandsnamen altijd in **kleine letters** en zonder spaties of vreemde leestekens. Webservers maken immers strikt onderscheid tussen hoofd- en kleine letters. Hou benamingen van afbeeldingen kort en duidelijk (bijvoorbeeld `foto.jpg`).
@@ -93,13 +93,13 @@ Voor je start met coderen, zet je telkens een overzichtelijke mappenstructuur op
 
 ```text
 VoornaamA_Profiel/
-├── img/
-│   └── foto.jpg           <- Foto van je partner of diens interesse
-├── index.html             <- Jouw HTML-pagina (de inhoud)
-└── style.css              <- Jouw CSS-stijlbestand (de vormgeving)
+└─ images/
+   └─ foto.jpg             <- Foto van je partner of diens interesse
+└─ index.html              <- Jouw HTML-pagina (de inhoud)
+└─ style.css               <- Jouw CSS-stijlbestand (de vormgeving)
 ```
 
-> **Belangrijk:** Plaats je HTML-bestand en je CSS-bestand rechtstreeks in de hoofdmap van de opdracht (hier `VoornaamA_Profiel`). Afbeeldingen plaats je netjes in de submap `img/`.
+> **Belangrijk:** Plaats je HTML-bestand en je CSS-bestand rechtstreeks in de hoofdmap van de opdracht (hier `VoornaamA_Profiel`). Afbeeldingen plaats je netjes in de submap `images/`.
 
 ## Stappenplan
 
@@ -202,7 +202,7 @@ Maak eerst een schets van de webpagina op papier.
 
 Neem een foto van je schets en dien deze in als `VoornaamA_Profiel-Wireframe.jpg`.
 
-### HTML
+### HTML: Inhoud
 
 Je gaat nu zelf aan de slag met zuivere HTML-code om een profielpagina te bouwen voor jouw klasgenoot.
 
@@ -211,7 +211,7 @@ Je gaat nu zelf aan de slag met zuivere HTML-code om een profielpagina te bouwen
 1. Start **Visual Studio Code**.
 2. Kies **File → Open Folder...** en open jouw projectmap `VoornaamA_Profiel`.
 3. Maak een nieuw bestand aan met de naam `index.html`.
-4. Typ het uitroepteken `!` en druk op `Tab` of `Enter` om het HTML5-skelet te genereren:
+4. Typ het uitroepteken `!` en druk op `Tab` of `Enter` om het basis HTML5-document te genereren:
 
 ```html
 <!DOCTYPE html>
@@ -219,7 +219,7 @@ Je gaat nu zelf aan de slag met zuivere HTML-code om een profielpagina te bouwen
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profiel - Voornaam Klasgenoot</title>
+    <title>Profiel: Voornaam Klasgenoot</title>
 </head>
 <body>
 
@@ -251,13 +251,13 @@ Voeg een tussentitel toe (bijvoorbeeld de rol of omschrijving) en een alinea waa
 *(Zorg dat je minstens één woord in `<strong>` (vet) en minstens één woord in `<em>` (cursief) plaatst!)*
 
 ##### Foto (`<img>`)
-1. Sla de foto van je partner (of diens interesse) op in je map `img/` als `foto.jpg`.
+1. Sla de foto van je partner (of diens interesse) op in je map `images/` als `foto.jpg`.
 2. Voeg de afbeeldingscode toe:
 ```html
-<img src="img/foto.jpg" alt="Foto van Voornaam">
+<img src="images/foto.jpg" alt="Foto van Voornaam">
 ```
 
-> **Let op het pad:** Omdat de foto in het submapje `img` zit, schrijf je `src="img/foto.jpg"`. Als je enkel `foto.jpg` typt, kan de browser de foto niet terugvinden.
+> **Let op het pad:** Omdat de foto in het submapje `images` zit, schrijf je `src="images/foto.jpg"`. Als je enkel `foto.jpg` typt, kan de browser de foto niet terugvinden.
 
 ##### Interesses en hobby's (`<ul>` en `<li>`)
 Maak een **ongeordende lijst** (*Unordered List*) met minstens 3 hobby's, interesses of vaardigheden van je partner:
@@ -397,14 +397,14 @@ Controleer jouw werk grondig aan de hand van deze checklist voor je het project 
 ### Bestanden & mappen
 - De hoofdmap heet exact `VoornaamA_Profiel` (jouw eigen voornaam + eerste letter achternaam).
 - In de hoofdmap staan `index.html` en `style.css` (allebei in kleine letters).
-- De foto staat in de submap `img/` (bijvoorbeeld `img/foto.jpg`).
+- De foto staat in de submap `images/` (bijvoorbeeld `images/foto.jpg`).
 
 ### HTML (Inhoud & structuur)
 - De basisstructuur (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`) is foutloos aanwezig.
 - Er is exact één hoofdtitel (`<h1>`) met de naam van je partner.
 - Er is minstens één tussentitel (`<h2>`) en een introductieparagraaf (`<p>`).
 - Er is minstens één woord voorzien van `<strong>` (vet) en één van `<em>` (cursief).
-- De afbeelding (`<img>`) laadt correct met het relatieve pad `img/foto.jpg` en een zinvolle `alt`-beschrijving.
+- De afbeelding (`<img>`) laadt correct met het relatieve pad `images/foto.jpg` en een zinvolle `alt`-beschrijving.
 - Er is een ongeordende lijst (`<ul>`) met minstens 3 interesses/hobby's.
 - Er is een geordende lijst (`<ol>`) met een genummerde persoonlijke top.
 - De hyperlink (`<a>`) werkt en opent via `target="_blank"` in een nieuw tabblad.
@@ -419,8 +419,14 @@ Controleer jouw werk grondig aan de hand van deze checklist voor je het project 
 
 ## Oplevering
 
-Comprimeer (zip) jouw volledige projectmap `VoornaamA_Profiel` en upload het ZIP-bestand op de voorziene uploadzone:
+Lever jouw gecomprimeerde projectmap tijdig in via de Smartschool Uploadzone:
 
-> **Opleveringsformaat:** `VoornaamA_Profiel.zip`  
-> **Uploadzone:** *Vak 5CRM → Uploadzone → 2026-2027 → Introductie → Web → Profiel*  
-> **Deadline:** Einde van de voorziene lesblokken.
+```text
+VoornaamA_Profiel.zip
+└─ images/
+   └─ foto.jpg
+└─ index.html
+└─ style.css
+```
+
+Plak bij het uploaden van je zip-bestand in de Smartschool Uploadzone ook de gedeelde **OneDrive-koppeling** naar jouw volledige vakmap (**Web**) in het veld **Omschrijving**.

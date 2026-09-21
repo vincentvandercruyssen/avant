@@ -73,8 +73,8 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   │   │   ├── img/           # 162 geëxtraheerde illustraties, diagrammen en voorbeelden
 │   │   │   └── index.md       # Cursus Fotografie & beeldanalyse (Kathleen Michiels & Vincent Vander Cruyssen)
 │   │   └── html/
-│   │       ├── img/           # Schermafbeeldingen browser rendering
-│   │       └── index.md       # Cursus HTML (bouwstenen, tags, structuur & formulieren)
+│   │       ├── img/           # Schermafbeeldingen en visuele voorbeelden
+│   │       └── index.md       # Cursus HTML (bouwstenen, tags, werkomgeving, structuur & formulieren)
 │   └── doelen/
 │       ├── _index.md          # Verzamelpagina doelstellingen
 │       └── crossmedia.md      # 53 Crossmedia leerplandoelen & evaluatieclusters
@@ -223,7 +223,9 @@ Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard
   ```
 
 ### 2. Redactionele & Typografische Regels
-- **Aanspreekvorm (geen "we"):** Schrijf opdrachten in een directe, activerende stijl gericht naar de individuele leerling (**je / jij / jouw** of directe imperatief: *"Open de browser"*, *"Selecteer het onderwerp"*, *"Sla het bestand op"*). Vermijd meervoudsvormen zoals *"we"*, *"wij"* of *"laten we"*.
+- **Aanspreekvorm:**
+  - **Opdrachten:** Schrijf in een directe, activerende stijl gericht naar de individuele leerling (**je / jij / jouw** of directe imperatief: *"Open de browser"*, *"Selecteer het onderwerp"*, *"Sla het bestand op"*). Vermijd meervoudsvormen zoals *"we"*, *"wij"* of *"laten we"*.
+  - **Cursussen & theorie (`content/cursus/`):** Hanteer een objectieve, verklarende en neutrale referentiestijl (geen opdrachtvorm of persoonlijke aanspreking met *je/jij* of *wij*), afgestemd op de doelgroep (15–18-jarigen) zonder ambtelijke of verouderde taal.
 - **Hoofdletters in tussentitels (Sentence case):** Begin in (tussen)titels enkel het eerste woord met een hoofdletter, tenzij het om eigennamen, softwarenamen of tekst na een dubbelpunt gaat (bv. `#### Niet-destructief uitsnijden`, `### CSS: Vormgeving`, `### Onderzoek: Inspectie op Wikipedia`, `#### HTML-basis in VS Code`). Vermijd overbodig Engels *Title Case* waarin elk willekeurig woord met een hoofdletter begint.
 - **Softwaretermen & Sneltoetsen:** Vermeld bij softwarefuncties zowel de Nederlandstalige als Engelstalige benaming met sneltoetsen (`Object selecteren (Object Selection Tool, W)`, `Ctrl + T`, `F9 (Easy Ease)`).
 - **Getallen en telwoorden (voluit onder de tien):** Schrijf aantallen en telwoorden onder de tien in lopende tekst bij voorkeur voluit in het Nederlands (bv. *"je maakt vier afzonderlijke composities"*, *"kies drie beelden"*, *"de vijf basistransformaties"* in plaats van *"4 composities"* of *"de 5 basistransformaties"*). Technische eenheden, tijden, afmetingen en labels schrijf je wel als cijfer (bv. *"minimaal 5 seconden"*, *"30 fps"*, *"1080 px"*, *"Stap 1"* of *"Compositie 1"*).

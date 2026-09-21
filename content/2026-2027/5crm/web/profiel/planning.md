@@ -27,7 +27,7 @@
    * De benodigde HTML-tags noteren (bv. `<h1>`, `<h2>`, `<p>`, `<img>`, `<ul>`/`<ol>` met `<li>`, `<a>`). 
 2. **Visual Studio Code & mappenstructuur:**
    * Visual Studio Code (projectmap openen via *File → Open Folder*, Live Preview extensie, Emmet-shortcuts).
-   * Mappenstructuur: hoofdmap `VoornaamA_Profiel/` met submap `img/` voor beeldmateriaal. Toepassen van gebruikelijke bestandsnamen: kleine letters, vermijden spaties of speciale tekens.
+   * Mappenstructuur: hoofdmap `VoornaamA_Profiel/` met submap `images/` voor beeldmateriaal. Toepassen van gebruikelijke bestandsnamen: kleine letters, vermijden spaties of speciale tekens.
 3. **Cursus HTML:**
    * **Ontleding HTML-document:** Onderscheid tussen `<head>` (het onzichtbare deel met metadata, paginatitel en stijlbladkoppeling) en `<body>` (alle zichtbare inhoud).
    * **Ontleding HTML-element:** Openings- en sluitingstags, inhoud, attributen (`src`, `alt`, `href`, `target`) en het correct nesten van tags.
@@ -49,16 +49,28 @@
 
 ## Les 3 18/09/2026 (Web)
 
-### Profiel: Deadline Oplevering, Peer-Feedback & Evaluatie
+### Profiel: Toets HTML 01, cursus CSS en afwerking profiel
 
 ### Lesverloop & inhoud
-1. **📌 DEADLINE & Oplevering:** Aan het begin van de les is het project `VoornaamA_Profiel` volledig afgerond. Zelfevaluatie checklist overlopen (HTML/CSS validatie, werkende links, relatieve paden). Map zippen naar `VoornaamA_Profiel.zip` en inleveren via de Smartschool Uploadzone.
-2. **Klassikale screening & peer-feedback:** Presentatie van de duo-profielen. Codekwaliteit, inspringing en visuele weergave bespreken.
-3. **Conclusies & vooruitblik:** Feedbackronde en introductie van het volgende webproject.
+1. **Toets HTML 01:**
+   * HTML-documentstructuur (`<head>` vs `<body>`), semantische tags, nesting en attributen (`src`, `alt`, `href`).
+2. **Herhaling HTML & opdracht Profiel:**
+   * Veelvoorkomende aandachtspunten bij HTML-structuren overlopen.
+   * Voortgang van het project `VoornaamA_Profiel`: semantische HTML5-tags (`<h1>`-`<h2>`, `<p>`, `<img>`, `<ul>`/`<li>`, `<a>`), nesting en code-inspringing afstemmen op het wireframe.
+3. **Cursus CSS & toelichting stijlbladen:**
+   * **Verschil HTML en CSS:** Inhoud en structuur (HTML: wat staat er op de pagina) versus vormgeving en lay-out (CSS: hoe ziet het eruit).
+   * **CSS-declaraties:** Opbouw van een CSS-regelset met selectors, eigenschappen (*properties*) en waarden (*values*).
+   * **Koppeling extern stijlblad:** Aanmaken van `style.css` en integreren via `<link rel="stylesheet" href="style.css">` in de `<head>` van `index.html`.
+4. **Afwerken Profiel (HTML & CSS):**
+   * **HTML & CSS:** HTML-code valideren in de browser via DevTools en vormgeving uitwerken in `style.css` (achtergrondkleur, typografie, tekstkleur, titels en profielfoto met `width` en `border-radius`).
+   * **Oplevering:** Zelfevaluatie checklist voltooien, projectmap comprimeren naar `VoornaamA_Profiel.zip` en inleveren via de Smartschool Uploadzone.
 
 ### Leerplandoelen
-* **05.02:** In duo's samenwerken en elkaar evalueren aan de hand van het gezamenlijk resultaat.
-* **CRS18:** Een semantisch correcte, functionele en gestijlde eerste webpagina (Profiel) realiseren.
+* **05.02:** In willekeurig samengestelde duo's samenwerken aan elkaars profielpagina.
+* **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.
+* **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
+* **CRS18:** Een semantisch correcte, functionele en gestijlde eerste webpagina (Profiel) realiseren waarin je een klasgenoot voorstelt.
+* **CRS21:** Typografische hiërarchie (h1, h2, p, lijsten) en leesbaarheid doordacht vormgeven via CSS-stijlregels.
 * **CRS23:** Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser.
 * **CRS27:** De webbestanden (HTML, CSS, assets) volgens de afgesproken structuur en naamgeving tijdig opleveren.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
