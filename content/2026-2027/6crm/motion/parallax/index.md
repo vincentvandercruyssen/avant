@@ -32,7 +32,7 @@ leerplandoelen:
   - code: "CRS22"
     criterium: "Beeldelementen esthetisch harmoniseren met aanpassingslagen en kleurcorrecties tot één consistent geheel."
   - code: "CRS23"
-    criterium: "Bestanden controleren op correcte resolutie, kleurruimte (sRGB) en optimale bestandsgrootte (3-5 MB)."
+    criterium: "Bestanden controleren op correcte resolutie, kleurruimte (sRGB) en maximale bestandsgrootte (max. 10 MB)."
   - code: "CRS27"
     criterium: "De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor zowel Beeld als Motion."
 draft: false
@@ -77,7 +77,7 @@ De compositie en animatie is opgebouwd uit drie lagen:
 | **Framerate** | **30 fps** | Afgestemd op de videoverwerking en de 60 Hz beeldschermen van smartphones. |
 | **Duur** | **8 seconden** (`0:00:08:00`) | Ideale lengte voor een vloeiende camerabeweging. |
 | **Codec & Container** | **H.264 in MP4** | Universele compatibiliteit voor web en mobiel. |
-| **Bestandsgrootte** | **3 MB à 5 MB** (max. 6 MB) | Voorkomt hercompressie en kwaliteitsverlies door Instagram. |
+| **Bestandsgrootte** | **Max. 10 MB** | Voorkomt hercompressie en kwaliteitsverlies door Instagram. |
 
 ## Stappenplan
 
@@ -277,13 +277,13 @@ Selecteer je compositie in After Effects en druk op `Ctrl + Alt + M` (**Composit
 Stel in Adobe Media Encoder de parameters in:
 * **Formaat:** `H.264`
 * **Preset:** `Match Source - Medium Bitrate` (of pas de bitrate handmatig aan).
-* **Doelgrootte:** Zorg dat het definitieve MP4-bestand tussen de **3 MB en 5 MB** blijft (maximaal 6 MB).
+* **Doelgrootte:** Zorg dat het definitieve MP4-bestand **maximaal 10 MB** is.
 
 ![Renderinstellingen in Adobe Media Encoder](img/ae-ame_export-2.png)
 
 Klik op de groene afspeelknop om de render te starten.
 
-#### Indienen
+## Oplevering
 
 Lever voor het vak Motion de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone. Zorg dat alle gekoppelde bronbestanden, het Photoshop-ontwerp en de definitieve video-export aanwezig zijn:
 
@@ -295,23 +295,23 @@ VoornaamA_Parallax.zip
 └─ VoornaamA_Parallax-Ontwerp.psd
 ```
 
-## Checklist
+### Checklist
 
-Plaats de bestanden tijdig in de voorziene mappen op de uploadzone:
+Plaats de bestanden tijdig in de voorziene mappen op de uploadzone.
 
-### Voor het vak Beeld
+#### Voor het vak Beeld
 * Onderzoek en Pinterest-link: `VoornaamA_Parallax-Onderzoek.pdf` (of `.doc` / `.jpg`)
 * Photoshop-werkbestand met alle lagen: `VoornaamA_Parallax-Ontwerp.psd`
 * Export: `VoornaamA_Parallax-Ontwerp.jpg`
 
-### Voor het vak Motion
+#### Voor het vak Motion
 * Volledig gearchiveerd After Effects-project (`.aep` + bronassets)
 * Definitieve video-export: `VoornaamA_Parallax-Animatie.mp4`
 
-### Kwaliteitscontrole
+#### Kwaliteitscontrole
 * Beeldverhouding is exact **4:5** (1080 × 1350 px).
 * Framerate staat ingesteld op **30 fps**.
-* De animatieduur is exact **8 seconden**.
+* De animatieduur is minimaal **8 seconden**.
 * Het parallax-effect toont duidelijke diepte tussen voorgrond, tekst en achtergrond.
 * Typografie is leesbaar en ondersteunend geanimeerd.
-* Bestandsgrootte van de MP4 ligt tussen **3 MB en 5 MB**.
+* Bestandsgrootte van de MP4 is **maximaal 10 MB**.

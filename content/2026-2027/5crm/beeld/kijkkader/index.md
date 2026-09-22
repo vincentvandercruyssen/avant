@@ -255,26 +255,6 @@ Dien je drieluik in als psd en jpg via de Smartschool Uploadzone.
 
 `VoornaamA_Kijkkader-Drieluik.psd` en `.jpg`
 
-## Zelfevaluatie & kwaliteitscontrole
-
-Controleer jouw werk grondig aan de hand van deze checklist.
-
-### Bestanden & mappen
-- De hoofdmap volgt `VoornaamA_Kijkkader`.
-- De map `01_assets/` bevat alle ruwe opnames van de camera én de bijhorende `.xmp`-sidecarbestanden.
-- De hoofdmap bevat het Photoshop-werkbestand voor het drieluik (`VoornaamA_Kijkkader-Drieluik.psd`). Voor de 12 afzonderlijke beelden zijn géén PSD's nodig dankzij de Camera Raw-sidecars.
-- De map `02_exports/` bevat alle 13 geëxporteerde JPEG's (12 individuele `.jpg`-bestanden en `VoornaamA_Kijkkader-Drieluik.jpg`).
-
-### Technische kwaliteit
-- Alle bewerkingen aan de 12 beelden zijn zuiver non-destructief uitgevoerd in Camera Raw en bewaard in sidecar-XMP-bestanden.
-- De uitsnedes bewaren de originele 3:2-beeldverhouding en tonen de compositieregels zuiver.
-- De belichting is gebalanceerd: doortekening in lichte partijen hersteld en geen dichtgelopen schaduwen.
-- De geëxporteerde beelden zijn scherp, tonen geen storende ruis en het drieluik staat netjes op A4 liggend.
-
-### Vormgeving & compositie
-- De 12 beelden tonen de 4 compositieregels duidelijk en herkenbaar (exact 3 per regel).
-- Het drieluik brengt 3 beelden over de regels heen harmonieus samen rond één duidelijk gekozen concept of thema.
-
 ## Oplevering
 
 Lever jouw gecomprimeerde projectmap tijdig in via de Smartschool-uploadzone:
@@ -291,3 +271,24 @@ VoornaamA_Kijkkader.zip
    └─ VoornaamA_Kijkkader-Drieluik.jpg
 └─ VoornaamA_Kijkkader-Drieluik.psd
 ```
+
+### Checklist
+
+Controleer jouw werk grondig aan de hand van deze checklist vóór je definitief inlevert.
+
+#### Bestanden & mappen
+- De hoofdmap volgt `VoornaamA_Kijkkader`.
+- De map `01_assets/` bevat alle ruwe opnames van de camera én de bijhorende `.xmp`-sidecarbestanden.
+- De hoofdmap bevat het Photoshop-werkbestand voor het drieluik (`VoornaamA_Kijkkader-Drieluik.psd`). Voor de 12 afzonderlijke beelden zijn géén PSD's nodig dankzij de Camera Raw-sidecars.
+- De map `02_exports/` bevat alle 13 geëxporteerde JPEG's (12 individuele `.jpg`-bestanden en `VoornaamA_Kijkkader-Drieluik.jpg`).
+
+#### Technische kwaliteit
+- Alle bewerkingen aan de 12 beelden zijn zuiver non-destructief uitgevoerd in Camera Raw en bewaard in sidecar-XMP-bestanden.
+- De uitsnedes bewaren de originele 3:2-beeldverhouding en tonen de compositieregels zuiver.
+- De belichting is gebalanceerd: doortekening in lichte partijen hersteld en geen dichtgelopen schaduwen.
+- De geëxporteerde beelden zijn scherp, tonen geen storende ruis en het drieluik staat netjes op A4 liggend.
+
+#### Vormgeving & compositie
+- De 12 beelden tonen de 4 compositieregels duidelijk en herkenbaar (exact 3 per regel).
+- Het drieluik brengt 3 beelden over de regels heen harmonieus samen rond één duidelijk gekozen concept of thema.
+

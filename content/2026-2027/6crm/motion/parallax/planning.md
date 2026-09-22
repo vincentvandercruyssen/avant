@@ -176,14 +176,14 @@
    * Keyframen camerabeweging, timing en Graph Editor.
    * Typografische animatie, eventueel bewegingsonscherpte (*Motion Blur*) controleren.
 2. **Video-export in Adobe Media Encoder:**
-   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, bestandsgrootte max. 5 MB in `02_exports/`).
+   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, bestandsgrootte max. 10 MB in `02_exports/`).
 3. **Deadline:**
    * Volledige projectmap archiveren naar `VoornaamA_Parallax.zip` en inleveren via de Smartschool Uploadzone.
 
 ### Leerplandoelen
 * **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
 * **CRS21:** Typografie doordacht animeren met aandacht voor leesbaarheid, hiërarchie en ritme.
-* **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (3-5 MB).
+* **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (max. 10 MB).
 * **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Motion.
 
 ## Les 9 22/09/2026 (Motion, 09:10 - 11:00)
@@ -195,14 +195,14 @@
    * Keyframen camerabeweging, timing en Graph Editor.
    * Typografische animatie, eventueel bewegingsonscherpte (*Motion Blur*) controleren.
 2. **Video-export in Adobe Media Encoder:**
-   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, bestandsgrootte max. 5 MB in `02_exports/`).
+   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, bestandsgrootte max. 10 MB in `02_exports/`).
 3. **Deadline:**
    * Volledige projectmap archiveren naar `VoornaamA_Parallax.zip` en inleveren via de Smartschool Uploadzone.
 
 ### Leerplandoelen
 * **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
 * **CRS21:** Typografie doordacht animeren met aandacht voor leesbaarheid, hiërarchie en ritme.
-* **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (3-5 MB).
+* **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (max. 10 MB).
 * **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Motion.
 
 ## Les 10 22/09/2026 (Motion, 13:30 - 15:20)
@@ -214,7 +214,7 @@
    * Camerabeweging, timing en snelheidsverloop in de Graph Editor definitief afwerken.
    * Typografische animatie en bewegingsonscherpte (*Motion Blur*) finetunen en afronden.
 2. **Video-export & kwaliteitscontrole:**
-   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, bestandsgrootte max. 5 MB in `02_exports/`).
+   * Compositie toevoegen aan Adobe Media Encoder (`Ctrl + Alt + M`) en renderen naar H.264 MP4 (`VoornaamA_Parallax-Animatie.mp4`, 1080 × 1350 px, 30 fps, bestandsgrootte max. 10 MB in `02_exports/`).
    * Kwaliteitscontrole uitvoeren op resolutie, framerate en bestandsgrootte.
 3. **Deadline:**
    * Volledige projectmap archiveren naar `VoornaamA_Parallax.zip` en inleveren via de Smartschool Uploadzone.
@@ -222,5 +222,5 @@
 ### Leerplandoelen
 * **CRS16:** Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren.
 * **CRS21:** Typografie doordacht animeren met aandacht voor leesbaarheid, hiërarchie en ritme.
-* **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (3-5 MB).
+* **CRS23:** Bestanden controleren op correcte resolutie, framerate (30 fps) en optimale bestandsgrootte (max. 10 MB).
 * **CRS27:** De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor Motion.

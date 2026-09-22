@@ -237,7 +237,7 @@ Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard
 - **Meervoudige bestandsnotatie:** Verwijs bij genummerde reeksen beknopt naar opeenvolgende varianten tussen haakjes, bv. `VoornaamA_Opdracht-Comp_1.mp4 (2,3,4)` of `VoornaamA_Opdracht-Storyboard-1.jpg (2,3,4) of .pdf`.
 
 ### 3. Vaste Hoofdstukhiërarchie
-Elke opdracht volgt een vaste 5-delige structuur:
+Elke opdracht volgt een vaste 4-delige kernstructuur:
 
 1. `## Briefing & Concept` — Introductie met praktijkcontext, sfeer-GIF/beeld, kernbegrip/theorie en conceptkeuzes.
 2. `## Technische specificaties` (of `## Afspraken`) — Tabel met resoluties, framerates, codecs of bestandsafspraken en de verplichte `VoornaamA_Opdrachtnaam/` mappenstructuur met `└─`.
@@ -245,8 +245,9 @@ Elke opdracht volgt een vaste 5-delige structuur:
    - Start bij voorkeur met actief/onderzoekend leren (bv. broncode-inspectie of beeldselectie op Pexels/Unsplash).
    - Gebruik gerichte subkoppen zoals `#### Voorbeeld` (voor de concrete actiestappen los van algemene kaders) en `#### Indienen` (voor tussentijdse evaluaties en uploads).
    - Inclusief een `### Extra's` of `### Extra uitdagingen` voor differentiatie en verdieping.
-4. `## Zelfevaluatie & Kwaliteitscontrole` (of `## Checklist`) — Concrete afvinkpunten voor bestanden/mappen, technische eisen en visuele afwerking.
-5. `## Oplevering` — Directe instructie gevolgd door een visueel ASCII-codeblok van het `.zip`-bestand met de exacte inhoud (in plaats van een abstracte callout).
+4. `## Oplevering` — Het sluitstuk van de opdracht waarin het in te leveren pakket centraal staat:
+   - Directe inleverinstructie gevolgd door een visueel ASCII-codeblok van het `.zip`-bestand met de exacte mappen- en bestandsstructuur (`└─`).
+   - Een geneste `### Checklist` (met `####`-subchecks) voor bestanden/mappen, technische eisen en visuele afwerking die de leerling vóór inlevering doorloopt.
 
 ---
 
@@ -344,25 +345,9 @@ Voor wie sneller klaar is of extra diepte wil toevoegen:
 * **Optie A:** Beschrijving van een gevorderde techniek of effect.
 * **Optie B:** Verfijning in sound design, micro-interacties of typografie.
 
-## Zelfevaluatie & Kwaliteitscontrole
-
-Controleer je werk grondig aan de hand van onderstaande checklist vóór je definitief inlevert:
-
-### Bestanden & mappen
-- De hoofdmap heet exact `VoornaamA_Opdrachtnaam`.
-- Alle bestanden staan in de juiste submappen zonder spaties of hoofdletters waar niet toegestaan.
-
-### Technische kwaliteit
-- Resolutie, verhouding en kleurmodus/kleurruimte zijn correct ingesteld.
-- Niet-destructieve werkmethodes zijn consequent toegepast.
-
-### Vormgeving & Boodschap
-- Typografische hiërarchie en leesbaarheid zijn verzorgd.
-- Het eindresultaat vormt een evenwichtig en harmonieus geheel.
-
 ## Oplevering
 
-Lever de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone.
+Lever de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone:
 
 ```text
 VoornaamA_Opdrachtnaam.zip
@@ -371,6 +356,22 @@ VoornaamA_Opdrachtnaam.zip
 └─ VoornaamA_Opdrachtnaam.aep
 └─ VoornaamA_Opdrachtnaam-Storyboard-1.jpg (2,3,4) of .pdf
 ```
+
+### Checklist
+
+Controleer je werk grondig aan de hand van onderstaande checklist vóór je definitief inlevert.
+
+#### Bestanden & mappen
+- De hoofdmap heet exact `VoornaamA_Opdrachtnaam`.
+- Alle bestanden staan in de juiste submappen zonder spaties of hoofdletters waar niet toegestaan.
+
+#### Technische kwaliteit
+- Resolutie, verhouding en kleurmodus/kleurruimte zijn correct ingesteld.
+- Niet-destructieve werkmethodes zijn consequent toegepast.
+
+#### Vormgeving & Boodschap
+- Typografische hiërarchie en leesbaarheid zijn verzorgd.
+- Het eindresultaat vormt een evenwichtig en harmonieus geheel.
 ```
 
 ---

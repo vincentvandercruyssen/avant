@@ -285,16 +285,28 @@ Ben je sneller klaar of wil je je animaties naar een hoger niveau tillen? Experi
 * **Kleurmorfose & Trim Paths:** Voeg aan een vormlaag de optie *Trim Paths* toe (via het knopje *Add: ▷* in de inhoud van de vormlaag) om lijnen dynamisch te laten tekenen en wissen.
 * **Sound design & audiosynchronisatie (SFX):** Voeg passende geluidseffecten (zoals een *whoosh*, *pop* of *click*). Druk tweemaal snel op de toets `L` (`LL`) op de audiolaag om de golfvorm (*Audio Waveform*) op de tijdlijn zichtbaar te maken. Lijn de keyframes van je transformaties exact uit op de pieken van het geluid voor maximale impact.
 
-## Zelfevaluatie & Kwaliteitscontrole
+## Oplevering
+
+Lever de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone:
+
+```text
+VoornaamA_Vormen.zip
+└─ 01_assets/
+└─ 02_exports/VoornaamA_Vormen-Comp_1.mp4 (2,3,4)
+└─ VoornaamA_Vormen.aep
+└─ VoornaamA_Vormen-Storyboard-1.jpg (2,3,4) of .pdf
+```
+
+### Checklist
 
 Controleer je werk grondig aan de hand van onderstaande checklist vóór je definitief inlevert.
 
-### Bestanden & mappen
+#### Bestanden & mappen
 - De hoofdmap heet exact `VoornaamA_Vormen`.
 - De map `01_assets` bevat je achtergrondfoto en `02_exports` bevat de vier videobestanden.
 - Het projectbestand `VoornaamA_Vormen.aep` en je storyboard-bestand (`VoornaamA_Vormen-Storyboard.jpg` of `.pdf`) staan netjes in de hoofdmap.
 
-### Technische kwaliteit
+#### Technische kwaliteit
 - Alle vier de composities zijn ingesteld op exact **30 fps**.
 - **Duur per compositie:**
   - `VoornaamA_Vormen-Comp_1`: **minimaal 5 seconden**
@@ -309,19 +321,8 @@ Controleer je werk grondig aan de hand van onderstaande checklist vóór je defi
 - Alle keyframes hebben doordachte **Easy Ease (`F9`)** of Graph Editor curves (geen starre lineaire bewegingen).
 - Motion Blur is correct ingeschakeld waar snelle bewegingen plaatsvinden.
 
-### Vormgeving & Storyboard
+#### Vormgeving & Storyboard
 - De getekende storyboardschetsen met bewegingspijlen en eigenschapaanduidingen zijn digitaal ingeleverd (`VoornaamA_Vormen-Storyboard.jpg` of `.pdf`).
 - De Pinterest Pinboard-link is gedeeld in de Smartschool-uploadzone.
 - De typografie in compositie 3 is strak uitgelijnd, leesbaar en ritmisch geanimeerd.
 
-## Oplevering
-
-Lever de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone.
-
-```text
-VoornaamA_Vormen.zip
-└─ 01_assets/
-└─ 02_exports/VoornaamA_Vormen-Comp_1.mp4 (2,3,4)
-└─ VoornaamA_Vormen.aep
-└─ VoornaamA_Vormen-Storyboard-1.jpg (2,3,4) of .pdf
-```

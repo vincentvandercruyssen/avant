@@ -390,33 +390,6 @@ Heb je de basis af en wil je jouw pagina nóg verfijnder maken? Probeer deze ext
 * **Afbeelding als ronde cirkel:**
   Probeer `border-radius: 50%;` en een vaste `height: 200px; object-fit: cover;` om van de foto een perfect ronde avatar te maken!
 
-## Zelfevaluatie & Kwaliteitscontrole
-
-Controleer jouw werk grondig aan de hand van deze checklist voor je het project inlevert:
-
-### Bestanden & mappen
-- De hoofdmap heet exact `VoornaamA_Profiel` (jouw eigen voornaam + eerste letter achternaam).
-- In de hoofdmap staan `index.html` en `style.css` (allebei in kleine letters).
-- De foto staat in de submap `images/` (bijvoorbeeld `images/foto.jpg`).
-
-### HTML (Inhoud & structuur)
-- De basisstructuur (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`) is foutloos aanwezig.
-- Er is exact één hoofdtitel (`<h1>`) met de naam van je partner.
-- Er is minstens één tussentitel (`<h2>`) en een introductieparagraaf (`<p>`).
-- Er is minstens één woord voorzien van `<strong>` (vet) en één van `<em>` (cursief).
-- De afbeelding (`<img>`) laadt correct met het relatieve pad `images/foto.jpg` en een zinvolle `alt`-beschrijving.
-- Er is een ongeordende lijst (`<ul>`) met minstens 3 interesses/hobby's.
-- Er is een geordende lijst (`<ol>`) met een genummerde persoonlijke top.
-- De hyperlink (`<a>`) werkt en opent via `target="_blank"` in een nieuw tabblad.
-
-### CSS (Vormgeving & styling)
-- Het bestand `style.css` is gekoppeld via `<link rel="stylesheet" href="style.css">` in de `<head>`.
-- `body` heeft een zelfgekozen achtergrondkleur, goed leesbare tekstkleur (voldoende contrast) en een schreefloos lettertype.
-- `h1` is visueel geaccentueerd met een eigen kleur of achtergrondbalk en eventueel een begrensde breedte.
-- `img` is netjes geschaald (bv. `width: 200px`) en voorzien van afgeronde hoeken (`border-radius`).
-- `a` heeft een zelfgekozen, opvallende accentkleur.
-- De code is netjes ingesprongen en overzichtelijk gestructureerd.
-
 ## Oplevering
 
 Lever jouw gecomprimeerde projectmap tijdig in via de Smartschool Uploadzone:
@@ -430,3 +403,30 @@ VoornaamA_Profiel.zip
 ```
 
 Plak bij het uploaden van je zip-bestand in de Smartschool Uploadzone ook de gedeelde **OneDrive-koppeling** naar jouw volledige vakmap (**Web**) in het veld **Omschrijving**.
+
+### Checklist
+
+Controleer jouw werk grondig aan de hand van deze checklist vóór je het project definitief inlevert.
+
+#### Bestanden & mappen
+- De hoofdmap heet exact `VoornaamA_Profiel` (jouw eigen voornaam + eerste letter achternaam).
+- In de hoofdmap staan `index.html` en `style.css` (allebei in kleine letters).
+- De foto staat in de submap `images/` (bijvoorbeeld `images/foto.jpg`).
+
+#### HTML: Inhoud & structuur
+- De basisstructuur (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`) is foutloos aanwezig.
+- Er is exact één hoofdtitel (`<h1>`) met de naam van je partner.
+- Er is minstens één tussentitel (`<h2>`) en een introductieparagraaf (`<p>`).
+- Er is minstens één woord voorzien van `<strong>` (vet) en één van `<em>` (cursief).
+- De afbeelding (`<img>`) laadt correct met het relatieve pad `images/foto.jpg` en een zinvolle `alt`-beschrijving.
+- Er is een ongeordende lijst (`<ul>`) met minstens 3 interesses/hobby's.
+- Er is een geordende lijst (`<ol>`) met een genummerde persoonlijke top.
+- De hyperlink (`<a>`) werkt en opent via `target="_blank"` in een nieuw tabblad.
+
+#### CSS: Vormgeving & styling
+- Het bestand `style.css` is gekoppeld via `<link rel="stylesheet" href="style.css">` in de `<head>`.
+- `body` heeft een zelfgekozen achtergrondkleur, goed leesbare tekstkleur (voldoende contrast) en een schreefloos lettertype.
+- `h1` is visueel geaccentueerd met een eigen kleur of achtergrondbalk en eventueel een begrensde breedte.
+- `img` is netjes geschaald (bv. `width: 200px`) en voorzien van afgeronde hoeken (`border-radius`).
+- `a` heeft een zelfgekozen, opvallende accentkleur.
+- De code is netjes ingesprongen en overzichtelijk gestructureerd.

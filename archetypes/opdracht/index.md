@@ -42,9 +42,9 @@ Korte theoretische toelichting of ontwerpprincipe.
 
 ```text
 VoornaamA_Opdrachtnaam/
-├── 01_assets/
-├── 02_werkbestanden/
-└── 03_exports/
+└─ 01_assets/
+└─ 02_werkbestanden/
+└─ 03_exports/
 ```
 
 ## Stappenplan
@@ -69,17 +69,27 @@ Verdere uitwerking.
 
 * Verdiepende techniek voor wie sneller klaar is.
 
-## Zelfevaluatie & Kwaliteitscontrole
-
-### Bestanden & mappen
-- Mapstructuur en naamgeving zijn conform de afspraken.
-
-### Technische & visuele kwaliteit
-- Correcte verhoudingen, resoluties en niet-destructieve werkwijze.
-
 ## Oplevering
 
-> **Opleveringsformaat:** `VoornaamA_Opdrachtnaam.ext` of `.zip`  
-> **Uploadzone:** *Vak CRM → Uploadzone → [Schooljaar] → [Thema] → [Vak] → [Opdracht]*  
-> **Deadline:** Einde van de voorziene lesblokken.
+Lever de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone:
+
+```text
+VoornaamA_Opdrachtnaam.zip
+└─ 01_assets/
+└─ 02_werkbestanden/
+└─ 03_exports/
+```
+
+### Checklist
+
+Controleer je werk grondig aan de hand van onderstaande checklist vóór je definitief inlevert.
+
+#### Bestanden & mappen
+- De hoofdmap heet exact `VoornaamA_Opdrachtnaam`.
+- Mapstructuur en naamgeving zijn conform de afspraken.
+
+#### Technische & visuele kwaliteit
+- Correcte verhoudingen, resoluties en niet-destructieve werkwijze.
+- Het eindresultaat vormt een evenwichtig en verzorgd geheel.
+
 

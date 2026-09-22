@@ -89,10 +89,10 @@ Voor je start met coderen van projecten, zet je telkens een overzichtelijke mapp
 
 ```text
 VoornaamA_Paspoort/
-├── img/
-│   └── profielfoto.jpg    <- Jouw profielfoto
-├── index.html             <- Jouw HTML-pagina (de inhoud)
-└── style.css              <- Jouw CSS-stijlbestand (de vormgeving)
+└─ img/
+   └─ profielfoto.jpg    <- Jouw profielfoto
+└─ index.html             <- Jouw HTML-pagina (de inhoud)
+└─ style.css              <- Jouw CSS-stijlbestand (de vormgeving)
 ```
 
 > Zet je HTML-bestanden en je CSS-bestanden rechtstreeks in de hoofdmap van de opdracht (hier `VoornaamA_Paspoort`). Afbeeldingen plaats je netjes verzameld in de submap `img/`.
@@ -366,16 +366,28 @@ a:hover {
 }
 ```
 
-## Zelfevaluatie & Kwaliteitscontrole
+## Oplevering
 
-Controleer jouw werk aan de hand van deze checklist voor je het project inlevert:
+Comprimeer (zip) jouw volledige projectmap `VoornaamA_Paspoort` en upload het ZIP-bestand in de Smartschool Uploadzone:
 
-### Bestanden & mappen
+```text
+VoornaamA_Paspoort.zip
+└─ img/
+   └─ profielfoto.jpg
+└─ index.html
+└─ style.css
+```
+
+### Checklist
+
+Controleer jouw werk aan de hand van deze checklist vóór je het project definitief inlevert.
+
+#### Bestanden & mappen
 - De hoofdmap heet exact `VoornaamA_Paspoort` (met jouw eigen voornaam en eerste letter achternaam).
 - In de hoofdmap staan `index.html` en `style.css` (zonder hoofdletters).
 - Jouw profielfoto staat in de submap `img/`.
 
-### HTML (Inhoud & structuur)
+#### HTML: Structuur & inhoud
 - De basisstructuur (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`) is correct opgebouwd.
 - Er is exact één hoofdtitel (`<h1>`) met jouw eigen naam.
 - Er is minstens één tussentitel (`<h2>`) en een introductieparagraaf (`<p>`).
@@ -384,17 +396,9 @@ Controleer jouw werk aan de hand van deze checklist voor je het project inlevert
 - De ongeordende lijst (`<ul>`) en geordende top 3 (`<ol>`) zijn correct opgebouwd met `<li>`-items.
 - De hyperlink (`<a>`) werkt, heeft een `href` en opent met `target="_blank"` in een nieuw tabblad.
 
-### CSS (Vormgeving)
+#### CSS: Vormgeving
 - Het bestand `style.css` is foutloos gekoppeld via een `<link>`-tag in de `<head>`.
 - Er is een aangepaste `background-color` en `color` ingesteld.
 - Er is een verzorgd schreefloos lettertype (`font-family`) geconfigureerd.
 - De profielfoto is geschaald (`width`) en voorzien van een `border-radius`.
 - De code is netjes ingesprongen (indented) zonder syntaxfouten.
-
-## Oplevering
-
-Comprimeer (zip) jouw volledige projectmap `VoornaamA_Paspoort` en upload het ZIP-bestand op de voorziene uploadzone:
-
-> **Opleveringsformaat:** `VoornaamA_Paspoort.zip`  
-> **Uploadzone:** *Vak 6CRM → Uploadzone → 2026-2027 → Herhaling → Web → Paspoort*  
-> **Deadline:** Einde van de voorziene lesblokken.
