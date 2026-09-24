@@ -42,7 +42,7 @@ leerplandoelen:
 draft: false
 ---
 
-## Briefing & concept
+## Briefing & Concept
 
 Iedereen maakt vandaag dagelijks tientallen foto's met een smartphone. Maar wat maakt een foto werkelijk krachtig, indrukwekkend en professioneel? Het verschil tussen een snelle, toevallige snapshot en een doordacht fotografisch beeld schuilt in één cruciaal element: **compositie**.
 

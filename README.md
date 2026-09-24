@@ -93,7 +93,7 @@ Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas
 └── planning.md        # (Optioneel) Smartschool-lesplanning en fiches voor leerkrachten
 ```
 
-- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Kijkkader"`, `title: "Vormen"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Stadsgids"`, `title: "Bauhaus"`, `title: "Lookbook"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
+- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Kijkkader"`, `title: "Vormen"`, `title: "Quicktype"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Stadsgids"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
 - **Datumconventie:** Gebruik uitsluitend het formaat `YYYY-MM-DD` (bv. `date: 2026-09-01`).
 - **Paginatitels (`<title>`):**
   - Opdrachten: `Opdracht | Avant [Klas] [Vak]` (bv. `Parallax | Avant 6CRM Motion`).
@@ -208,7 +208,7 @@ Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.y
 Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard om herkenbaarheid, rust en kwaliteit te waarborgen.
 
 ### 1. Titels & Frontmatter
-- **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Kijkkader"`, `title: "Vormen"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Stadsgids"`, `title: "Typografie"`, `title: "Lookbook"`).
+- **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Kijkkader"`, `title: "Vormen"`, `title: "Quicktype"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Stadsgids"`).
 - **Auteurs (`auteurs:`):** Noteer de volledige naam van de auteur(s) (bv. `auteurs: ["Vincent Vander Cruyssen"]` of meerdere auteurs bij gedeeld lesmateriaal). De weergavebadge verkort de voornaam automatisch.
 - **Software-stack:** Volledige opsomming van gebruikte tools, browsers en standaarden.
 - **Succescriteria in eigen taal:** Koppel bij elk leerplandoel een concreet, begrijpelijk succescriterium geformuleerd in leerlingentaal:
