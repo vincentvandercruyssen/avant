@@ -240,6 +240,10 @@ pre {
   margin-bottom: var(--margin-bottom);
 }
 
+div iframe {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,

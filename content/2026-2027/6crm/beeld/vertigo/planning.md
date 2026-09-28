@@ -1,0 +1,56 @@
+## Les 1 28/09/2026 (Beeld, 13:30 - 15:20)
+
+### Vertigo: Achtergrondcompressie, shoot in het Rivierenhof
+
+### Lesverloop & inhoud
+1. **Introductie & optisch principe:**
+   * Briefing van de opdracht *Vertigo* en de link naar het klassieke dolly zoom / Hitchcock-effect.
+   * Analyse van het optische fenomeen van perspectief- en achtergrondcompressie via videodemonstratie en het Pinterest-board.
+   * Uitleg over de wisselwerking tussen brandpuntsafstand (zoom) en fysieke afstand tot het onderwerp (wijd dichtbij versus tele veraf, met optionele tussenstap bij ruimer zoombereik).
+2. **Camera-instellingen & materiaal:**
+   * Schakel de schoolcamera’s in op diafragmavoorkeur (`Av/A`) of manueel (`M`).
+   * Controle van de beeldkwaliteit: opnemen in RAW-formaat op de oorspronkelijke 3:2-sensorverhouding.
+   * Het maximale zoombereik van de beschikbare objectieven bepalen (uiterst wijd versus uiterst tele).
+3. **Praktijkshoot in het Rivierenhof:**
+   * Verkenning van het park rond de campus (kasteel, rozentuin, pergola’s, bruggen, vijvers, bomenlanen, parkbankjes).
+   * Doel: fotograferen van meerdere onderwerpen (telkens wijd en tele met identieke kadrering en grootte van het hoofdonderwerp).
+4. **Toelichting zelfstandige shoot:**
+   * Terugkeer naar het lokaal en materiaalcontrole.
+   * Thuisopdracht: de opnames zelfstandig aanvullen in een contrasterende stedelijke of alledaagse omgeving om te komen tot een ruime selectie.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten, bestandsformaten (RAW, 3:2) en kwaliteitsnormen voor het perspectiefexperiment analyseren.
+* **CRS02:** Doelgericht optische brandpuntsafstanden (groothoek versus tele), camerastandpunt en belichting selecteren en beheersen.
+* **CRS07:** Zelfstandig kwalitatief fotografisch bronmateriaal capteren in het Rivierenhof en de eigen leefomgeving.
+* **CRS11:** Beeldmateriaal doelgericht kadreren en controleren zodat het hoofdonderwerp in beide opnames consistent even groot in beeld blijft.
+
+## Les 2 05/10/2026 (Beeld, 13:30 - 15:20)
+
+### Vertigo: Beeldselectie in Bridge, non-destructieve RAW-ontwikkeling en opbouw diptiek
+
+### Lesverloop & inhoud
+1. **Beeldbeheer & selectie in Adobe Bridge:**
+   * Alle RAW-bestanden (Rivierenhof + thuisopdracht) ordenen in `01_assets/`.
+   * Schermvullende inspectie met de spatiebalk op 100% scherpte, identieke kadrering en belichting.
+   * Toekennen van sterrenratings en definitieve selectie van de 5 beste koppels (`Onderwerp_1` t.e.m. `5`).
+2. **Non-destructieve beeldbewerking in Camera Raw:**
+   * Beeldparen openen via Bridge (`Ctrl + R`).
+   * Kleurtemperatuur, belichting, hooglichten en schaduwen harmoniseren met behoud van dynamisch bereik.
+   * Batch-export van de 10 JPEG-bestanden (`VoornaamA_Vertigo-Onderwerp_X-Wijd.jpg` en `-Tele.jpg`) naar `02_exports/`.
+   * Niet-destructieve opslag in `.xmp`-sidecarbestanden.
+3. **Opbouw van 1 finale diptiek in Adobe Photoshop:**
+   * Eén liggend A4-document (297 × 210 mm, 300 ppi, RGB) aanmaken (`VoornaamA_Vertigo-Diptiek.psd`).
+   * Instellen van een symmetrisch hulplijnenraster met 2 kolommen (of 3 bij gebruik van de optionele tussenstap).
+   * Het allersterkste koppel plaatsen als Smart Objects.
+   * Geen tekst toevoegen op het document (volledig clean beeld).
+4. **Export, controle en oplevering:**
+   * Diptiek exporteren als hoogwaardige JPEG (`VoornaamA_Vertigo-Diptiek.jpg`) naar `02_exports/`.
+   * Projectmap inpakken als zip-bestand (`VoornaamA_Vertigo.zip`) volgens de afgesproken structuur en uploaden naar Smartschool.
+
+### Leerplandoelen
+* **CRS06:** Vlot en efficiënt werken met spiegelreflex- of systeemcamera's, Adobe Bridge, Camera Raw en Photoshop.
+* **CRS08:** Beeldkwaliteit, scherpte, belichting en optische achtergrondcompressie van de gemaakte opnames kritisch beoordelen.
+* **CRS10:** Beeldmateriaal doelgericht corrigeren en optimaliseren met Camera Raw met behoud van de dynamische contrasten.
+* **CRS20:** Het geselecteerde beeldmateriaal bundelen in een verzorgde diptiek op A4-formaat.
+* **CRS22:** Beelden esthetisch en harmonieus samenbrengen in een strakke, evenwichtige lay-out.
+* **CRS27:** Het volledige project conform de mappenstructuur en naamconventie tijdig inleveren in de Smartschool-uploadzone.

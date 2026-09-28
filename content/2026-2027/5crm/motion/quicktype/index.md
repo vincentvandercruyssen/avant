@@ -125,6 +125,11 @@ In de eerste fase animeer je de eerste tekstregel met behulp van de geavanceerde
 
 ![Tekst transformaties en animaties instellen](img/ae-range_selector-1.png)
 
+#### Voorbeeld video's
+
+{{< youtube -VCxTi8sJ-s >}}
+{{< youtube gPL0YoR6F4s >}}
+
 ### Path options & padanimatie
 
 In de tweede fase beweegt de tweede zin met snelheid over een getekend traject.
@@ -144,6 +149,10 @@ In de tweede fase beweegt de tweede zin met snelheid over een getekend traject.
 
 ![Padanimatie met tekst](img/ae-animate_path-1.png)
 
+#### Voorbeeld video
+
+{{< youtube _CEpgznn-XU >}}
+
 ### Mesh warp & vervorming
 
 In de derde fase ondergaat de derde zin een organische, elastische vervorming. Hierdoor lijkt de typografie te reageren op fysieke krachten zoals druk of spanning.
@@ -157,6 +166,10 @@ In de derde fase ondergaat de derde zin een organische, elastische vervorming. H
 6. Bouw een dynamische beweging: begin neutraal, trek de tekst extreem krom op het moment van piekspanning, en laat hem terugveren met een elastische *snap*.
 
 ![Mesh warp](img/ae-mesh_warp-1.png)
+
+#### Voorbeeld video
+
+{{< youtube IvTXbHLtod4 >}}
 
 ### Eigen effect
 
