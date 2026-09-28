@@ -20,6 +20,8 @@ leerplandoelen:
     criterium: "Doelgericht optische brandpuntsafstanden (groothoek versus tele), camerastandpunt en belichting selecteren en beheersen in functie van het perspectiefexperiment."
   - code: "CRS06"
     criterium: "Vlot en efficiënt werken met spiegelreflex- of systeemcamera's, Adobe Bridge en Camera Raw voor non-destructieve RAW-ontwikkeling."
+  - code: "CRS07"
+    criterium: "Persfotografie op nieuwswebsites kritisch analyseren op brandpuntsafstand, camerastandpunt en visuele beeldwerking."
   - code: "CRS08"
     criterium: "Scherpte, ruis, kadrering en optische achtergrondcompressie van de gemaakte opnames kritisch beoordelen."
   - code: "CRS10"
@@ -87,9 +89,10 @@ Vervolgens kies je uit deze vijf koppels jouw **allersterkste koppel** en werk j
 | **Opnameapparatuur** | **DSLR / DSLM met zoomlens** | Gebruik een schoolcamera of eigen toestel met variabele brandpuntsafstand. |
 | **Bestandsformaat opname** | **Enkel RAW (.CR2, .CR3, .NEF, .ARW)** | Schiet uitsluitend in RAW voor maximale dynamische speelruimte. Geen rechtstreekse JPG's. |
 | **Beeldverhouding** | **3:2 (oorspronkelijke sensorverhouding)** | Behoud de authentieke beeldverhouding van de camera; snijd niet willekeurig bij. |
+| **Onderzoek** | **1 analysedocument (PDF)** | Analyse van 5 nieuwsartikels met hoofdafbeelding (wijd vs. tele en motivering). |
 | **Ingediende koppels** | **5 geselecteerde koppels (10 JPG's)** | 5× Wijd en 5× Tele van de 5 gekozen onderwerpen, geëxporteerd uit Camera Raw. |
 | **Finale diptiek** | **1 sterke diptiek (A4 liggend, 297 × 210 mm)** | Strakke tweeluik-lay-out in Photoshop van het beste koppel, **zonder tekst**. |
-| **Eindbestanden** | **1× PSD & 11× JPEG (300 ppi, sRGB)** | 10 individuele koppel-exports + 1 samengestelde diptiek (JPG) en werkbestand (PSD). |
+| **Eindbestanden** | **1× PDF, 1× PSD & 11× JPEG (300 ppi, sRGB)** | Onderzoek (PDF), 10 koppel-exports + 1 samengestelde diptiek (JPG) en werkbestand (PSD). |
 
 ### Mappenstructuur
 
@@ -108,9 +111,33 @@ VoornaamA_Vertigo/
    └─ VoornaamA_Vertigo-Onderwerp_5-Tele.jpg
    └─ VoornaamA_Vertigo-Diptiek.jpg
 └─ VoornaamA_Vertigo-Diptiek.psd
+└─ VoornaamA_Vertigo-Onderzoek.pdf
 ```
 
 ## Stappenplan
+
+### Onderzoek: nieuwswebsites
+
+Alvorens je zelf met de camera en zoomlens op pad gaat, onderzoek je hoe fotojournalisten en nieuwsredacties omgaan met brandpuntsafstanden, camerastandpunten en de fysieke afstand tot hun onderwerp. In de nieuwsfotografie is de keuze voor een specifieke lens nooit toevallig: een groothoeklens (eerder breed) trekt de kijker middenin het gebeuren en toont de omgevingscontext, terwijl een telelens (eerder tele) een onderwerp vanop afstand isoleert, de achtergrond comprimeert en intimiteit of spanning creëert.
+
+Open een nieuwswebsite (zoals [VRT NWS](https://www.vrt.be/vrtnws/nl/), [Gazet van Antwerpen](https://www.gva.be/), [De Standaard](https://www.standaard.be/), [De Morgen](https://www.demorgen.be/), [NOS](https://nos.nl/) of [BBC News](https://www.bbc.com/news)).
+
+Zoek **vijf verschillende artikels** uit telkens verschillende journalistieke rubrieken: binnenland, politiek, evenement, buitenland, oorlog, natuurramp, sport, justitie, cultuur, festival, enzoverder.
+
+#### Beeldanalyse per artikel
+
+Maak een overzichtelijk analysedocument aan. Neem van elk van de vijf artikels de **hoofdafbeelding (hero-image)** over en beantwoord telkens onderstaande vragen:
+
+1. **Artikel & context:** Wat is de kop van het artikel en rubriek. Geef de link naar het artikel.
+2. **Schatting brandpuntsafstand:** Is de hoofdfoto gemaakt met een lens die **eerder breed (groothoek)** of **eerder tele (telelens)** is?
+3. **Optische argumenten (hoe zie je dat?):**
+   * *Achtergrondcompressie:* Lijkt de achtergrond dicht op het onderwerp geplakt (tele), of toont het beeld een weidse ruimtewerking waarin elementen ver weg lijken (breed)?
+   * *Scherptediepte:* Is de achtergrond onscherp/wazig gemaakt om het onderwerp te isoleren (tele), of blijft het hele tafereel van voor tot achter scherp (breed)?
+   * *Perspectieflijnen & dynamiek:* Lopen perspectieflijnen schuin weg met een dynamische ruimtewerking (breed dichtbij), of zijn de verhoudingen vlak en natuurlijk gecomprimeerd (tele veraf)?
+   * *Fysieke afstand:* Kon de fotograaf vlak voor het onderwerp staan, of stond hij noodgedwongen op grote afstand (bv. langs de zijlijn van een sportveld of vanaf de perstribune in de rechtszaal)?
+4. **Waarom deze lenskeuze? (Motivering):** Waarom heeft de fotograaf voor deze brandpuntsafstand gekozen en niet voor het tegenovergestelde? Welk effect heeft deze optische keuze op de journalistieke boodschap en de emotionele beleving van de lezer?
+
+Exporteer je afgewerkte analysedocument als PDF naar de hoofdmap van je project onder de naam `VoornaamA_Vertigo-Onderzoek.pdf`.
 
 ### Praktijkles in het Rivierenhof
 
@@ -192,6 +219,7 @@ VoornaamA_Vertigo.zip
    └─ VoornaamA_Vertigo-Onderwerp_5-Tele.jpg
    └─ VoornaamA_Vertigo-Diptiek.jpg
 └─ VoornaamA_Vertigo-Diptiek.psd
+└─ VoornaamA_Vertigo-Onderzoek.pdf
 ```
 
 ### Checklist
@@ -200,11 +228,13 @@ Overloop deze controlepunten zorgvuldig vóór je definitief uploadt.
 
 #### Bestanden & mappen
 - De zip-map volgt de naamconventie `VoornaamA_Vertigo.zip`.
+- Het onderzoeksdocument is als PDF aanwezig in de hoofdmap (`VoornaamA_Vertigo-Onderzoek.pdf`).
 - De map `01_assets/` bevat de RAW-bestanden van de 5 geselecteerde koppels met hun bijhorende `.xmp`-bestanden.
 - De map `02_exports/` bevat alle 10 individuele koppel-JPEG's (`Onderwerp_1` t.e.m. `5`) én de samengestelde `VoornaamA_Vertigo-Diptiek.jpg`.
 - De hoofdmap bevat het Photoshop-werkbestand van de diptiek (`VoornaamA_Vertigo-Diptiek.psd`).
 
 #### Technische kwaliteit & optisch effect
+- In het onderzoek zijn vijf verschillende nieuwsartikels geanalyseerd met een duidelijke bepaling van de brandpuntsafstand (eerder breed of tele) en een grondige motivering.
 - Alle foto's zijn gemaakt in RAW met behoud van de oorspronkelijke 3:2-beeldverhouding.
 - In elk van de 5 koppels is het optische verschil tussen wijd en tele duidelijk herkenbaar door de veranderde achtergrond en ruimtewerking.
 - Het hoofdonderwerp is in beide opnames van een koppel even groot en even scherp in beeld gebracht.

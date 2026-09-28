@@ -242,7 +242,7 @@ Elke opdracht volgt een vaste 4-delige kernstructuur:
 1. `## Briefing & Concept` — Introductie met praktijkcontext, sfeer-GIF/beeld, kernbegrip/theorie en conceptkeuzes.
 2. `## Technische specificaties` (of `## Afspraken`) — Tabel met resoluties, framerates, codecs of bestandsafspraken en de verplichte `VoornaamA_Opdrachtnaam/` mappenstructuur met `└─`.
 3. `## Stappenplan` — Modulair en chronologisch opgedeeld per fase (`### Fase`, `#### Substap`):
-   - Start bij voorkeur met actief/onderzoekend leren (bv. broncode-inspectie of beeldselectie op Pexels/Unsplash).
+   - Start bij voorkeur met actief/onderzoekend leren (bv. broncode-inspectie, beeldselectie op Pexels/Unsplash of analyse van persfotografie op nieuwswebsites).
    - Gebruik gerichte subkoppen zoals `#### Voorbeeld` (voor de concrete actiestappen los van algemene kaders) en `#### Indienen` (voor tussentijdse evaluaties en uploads).
    - Inclusief een `### Extra's` of `### Extra uitdagingen` voor differentiatie en verdieping.
 4. `## Oplevering` — Het sluitstuk van de opdracht waarin het in te leveren pakket centraal staat:

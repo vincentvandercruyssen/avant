@@ -1,27 +1,32 @@
 ## Les 1 28/09/2026 (Beeld, 13:30 - 15:20)
 
-### Vertigo: Achtergrondcompressie, shoot in het Rivierenhof
+### Vertigo: Onderzoek persfotografie, optisch principe en shoot in het Rivierenhof
 
 ### Lesverloop & inhoud
 1. **Introductie & optisch principe:**
    * Briefing van de opdracht *Vertigo* en de link naar het klassieke dolly zoom / Hitchcock-effect.
    * Analyse van het optische fenomeen van perspectief- en achtergrondcompressie via videodemonstratie en het Pinterest-board.
    * Uitleg over de wisselwerking tussen brandpuntsafstand (zoom) en fysieke afstand tot het onderwerp (wijd dichtbij versus tele veraf, met optionele tussenstap bij ruimer zoombereik).
-2. **Camera-instellingen & materiaal:**
+2. **Onderzoek persfotografie:**
+   * Zelfstandige beeldanalyse op nieuwswebsites (VRT NWS, GVA, De Standaard, enz.).
+   * Vijf artikels selecteren uit verschillende rubrieken (binnenland, buitenland, sport, justitie, cultuur, economie).
+   * Hoofdafbeelding analyseren op lenskeuze (eerder breed vs. eerder tele), optische argumenten en journalistieke motivering.
+   * Resultaten verwerken in `VoornaamA_Vertigo-Onderzoek.pdf`.
+3. **Camera-instellingen & materiaal:**
    * Schakel de schoolcamera’s in op diafragmavoorkeur (`Av/A`) of manueel (`M`).
    * Controle van de beeldkwaliteit: opnemen in RAW-formaat op de oorspronkelijke 3:2-sensorverhouding.
    * Het maximale zoombereik van de beschikbare objectieven bepalen (uiterst wijd versus uiterst tele).
-3. **Praktijkshoot in het Rivierenhof:**
+4. **Praktijkshoot in het Rivierenhof:**
    * Verkenning van het park rond de campus (kasteel, rozentuin, pergola’s, bruggen, vijvers, bomenlanen, parkbankjes).
    * Doel: fotograferen van meerdere onderwerpen (telkens wijd en tele met identieke kadrering en grootte van het hoofdonderwerp).
-4. **Toelichting zelfstandige shoot:**
+5. **Toelichting zelfstandige shoot:**
    * Terugkeer naar het lokaal en materiaalcontrole.
    * Thuisopdracht: de opnames zelfstandig aanvullen in een contrasterende stedelijke of alledaagse omgeving om te komen tot een ruime selectie.
 
 ### Leerplandoelen
 * **CRS01:** Productievereisten, bestandsformaten (RAW, 3:2) en kwaliteitsnormen voor het perspectiefexperiment analyseren.
 * **CRS02:** Doelgericht optische brandpuntsafstanden (groothoek versus tele), camerastandpunt en belichting selecteren en beheersen.
-* **CRS07:** Zelfstandig kwalitatief fotografisch bronmateriaal capteren in het Rivierenhof en de eigen leefomgeving.
+* **CRS07:** Persfotografie online kritisch analyseren en zelfstandig kwalitatief fotografisch bronmateriaal capteren in het Rivierenhof en de eigen leefomgeving.
 * **CRS11:** Beeldmateriaal doelgericht kadreren en controleren zodat het hoofdonderwerp in beide opnames consistent even groot in beeld blijft.
 
 ## Les 2 05/10/2026 (Beeld, 13:30 - 15:20)
