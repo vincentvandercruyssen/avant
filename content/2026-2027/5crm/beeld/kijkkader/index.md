@@ -179,7 +179,7 @@ Start **Adobe Bridge**, het centrale programma om meerdere beelden snel te bekij
 5. Inspecteer in het paneel *Metadata* de technische opnamegegevens (sluitertijd, diafragmawaarde en ISO-gevoeligheid).
 6. Selecteer jouw **12 allersterkste opnames** (exact 3 per compositieregel) voor digitale bewerking in Camera Raw.
 
-### Bewerking in Camera Raw
+### Bewerkingen in Camera Raw
 
 Selecteer jouw geselecteerde opnames in Adobe Bridge en open ze rechtstreeks in Camera Raw met de sneltoets `Ctrl + R` (of klik met de rechtermuisknop en kies **Openen in Camera Raw...**). Je hoeft voor deze beelden Photoshop eigenlijk niet te openen.
 
@@ -219,14 +219,26 @@ Zodra alle 12 beelden geoptimaliseerd zijn, exporteer je ze als hoogwaardige JPE
 
 Klik ten slotte in Camera Raw op de knop **Gereed (*Done*)**. Al je bewerkingen worden veilig weggeschreven in de `.xmp`-sidecarbestanden en je keert terug naar Adobe Bridge.
 
-#### Indienen
+#### Indienen: 12 foto's
 
-Dien je twaalf correct benoemde en bewerkte bestanden in via de Smartschool Uploadzone.
+Upload jouw **12 afgewerkte JPEG-bestanden** (drie kwalitatieve foto's per compositieregel) rechtstreeks in de eerste uploadmap op Smartschool (**Kijkkader: 12 foto's**). 
 
-* `VoornaamA_Kijkkader-Regelvandrie-1.jpg` tot `-3.jpg`
-* `VoornaamA_Kijkkader-Diepte-1.jpg` tot `-3.jpg`
-* `VoornaamA_Kijkkader-Standpunt-1.jpg` tot `-3.jpg`
-* `VoornaamA_Kijkkader-Lijnen-1.jpg` tot `-3.jpg`
+* **Regel van derden (3 foto's):**
+  * `VoornaamA_Kijkkader-Regelvandrie-1.jpg`
+  * `VoornaamA_Kijkkader-Regelvandrie-2.jpg`
+  * `VoornaamA_Kijkkader-Regelvandrie-3.jpg`
+* **Lagen & dieptewerking (3 foto's):**
+  * `VoornaamA_Kijkkader-Diepte-1.jpg`
+  * `VoornaamA_Kijkkader-Diepte-2.jpg`
+  * `VoornaamA_Kijkkader-Diepte-3.jpg`
+* **Standpunten & perspectief (3 foto's):**
+  * `VoornaamA_Kijkkader-Standpunt-1.jpg`
+  * `VoornaamA_Kijkkader-Standpunt-2.jpg`
+  * `VoornaamA_Kijkkader-Standpunt-3.jpg`
+* **Lijnenwerk & kijklijnen (3 foto's):**
+  * `VoornaamA_Kijkkader-Lijnen-1.jpg`
+  * `VoornaamA_Kijkkader-Lijnen-2.jpg`
+  * `VoornaamA_Kijkkader-Lijnen-3.jpg`
 
 ### Drieluik samenstellen op A4
 
@@ -249,27 +261,27 @@ Breng over de compositieregels heen jouw drie sterkste beelden samen in één ha
    * **Kwaliteit:** Hoog
    * **Bestandsnaam:** `02_exports/VoornaamA_Kijkkader-Drieluik.jpg`
 
-#### Indienen
+#### Indienen: Drieluik
 
-Dien je drieluik in als psd en jpg via de Smartschool Uploadzone.
+Upload jouw samengestelde drieluik rechtstreeks in de tweede uploadmap op Smartschool (**Kijkkader: Drieluik**). Lever zowel het gelaagde werkbestand als de geëxporteerde JPEG in:
 
-`VoornaamA_Kijkkader-Drieluik.psd` en `.jpg`
+* `VoornaamA_Kijkkader-Drieluik.psd` (gelaagd Photoshop-werkbestand met hulplijnen, slimme objecten en tekstlagen)
+* `VoornaamA_Kijkkader-Drieluik.jpg` (geëxporteerde JPEG op liggend A4-formaat)
 
 ## Oplevering
 
-Lever jouw gecomprimeerde projectmap tijdig in via de Smartschool-uploadzone:
+Lever jouw werk in twee fases in via de voorziene Smartschool-uploadmappen:
 
 ```text
-VoornaamA_Kijkkader.zip
-└─ 01_assets/
-   └─ [ruwe opnames van de camera + bijhorende .xmp sidecars]
-└─ 02_exports/
-   └─ VoornaamA_Kijkkader-Regelvandrie-1.jpg (2, 3)
-   └─ VoornaamA_Kijkkader-Diepte-1.jpg (2, 3)
-   └─ VoornaamA_Kijkkader-Standpunt-1.jpg (2, 3)
-   └─ VoornaamA_Kijkkader-Lijnen-1.jpg (2, 3)
-   └─ VoornaamA_Kijkkader-Drieluik.jpg
+Uploadmap: Kijkkader 4.3 Bewerkingen
+└─ VoornaamA_Kijkkader-Regelvandrie-1.jpg (2, 3)
+└─ VoornaamA_Kijkkader-Diepte-1.jpg (2, 3)
+└─ VoornaamA_Kijkkader-Standpunt-1.jpg (2, 3)
+└─ VoornaamA_Kijkkader-Lijnen-1.jpg (2, 3)
+
+Uploadmap: Kijkkader 4.4 Drieluik
 └─ VoornaamA_Kijkkader-Drieluik.psd
+└─ VoornaamA_Kijkkader-Drieluik.jpg
 ```
 
 ### Checklist
@@ -277,18 +289,21 @@ VoornaamA_Kijkkader.zip
 Controleer jouw werk grondig aan de hand van deze checklist vóór je definitief inlevert.
 
 #### Bestanden & mappen
-- De hoofdmap volgt `VoornaamA_Kijkkader`.
+- De lokale hoofdmap op je computer volgt de structuur `VoornaamA_Kijkkader`.
+- De hoofdmap bevat het Photoshop-werkbestand voor het drieluik (`VoornaamA_Kijkkader-Drieluik.psd`).
 - De map `01_assets/` bevat alle ruwe opnames van de camera én de bijhorende `.xmp`-sidecarbestanden.
-- De hoofdmap bevat het Photoshop-werkbestand voor het drieluik (`VoornaamA_Kijkkader-Drieluik.psd`). Voor de 12 afzonderlijke beelden zijn géén PSD's nodig dankzij de Camera Raw-sidecars.
-- De map `02_exports/` bevat alle 13 geëxporteerde JPEG's (12 individuele `.jpg`-bestanden en `VoornaamA_Kijkkader-Drieluik.jpg`).
+- De map `02_exports/` bevat alle geëxporteerde JPEG's (12 foto's en `VoornaamA_Kijkkader-Drieluik.jpg`).
+- In de eerste uploadmap op Smartschool (**Kijkkader: 12 foto's**) staan de 12 afgewerkte JPEG-bestanden met de vier verschillende compositieregels (exact 3 per regel).
+- In de tweede uploadmap op Smartschool (**Kijkkader: Drieluik**) staan het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`).
 
 #### Technische kwaliteit
 - Alle bewerkingen aan de 12 beelden zijn zuiver non-destructief uitgevoerd in Camera Raw en bewaard in sidecar-XMP-bestanden.
 - De uitsnedes bewaren de originele 3:2-beeldverhouding en tonen de compositieregels zuiver.
 - De belichting is gebalanceerd: doortekening in lichte partijen hersteld en geen dichtgelopen schaduwen.
-- De geëxporteerde beelden zijn scherp, tonen geen storende ruis en het drieluik staat netjes op A4 liggend.
+- De geëxporteerde beelden zijn scherp, tonen geen storende ruis en het drieluik staat netjes op A4 liggend (297 × 210 mm).
 
 #### Vormgeving & compositie
-- De 12 beelden tonen de 4 compositieregels duidelijk en herkenbaar (exact 3 per regel).
+- De 12 beelden tonen de 4 compositieregels duidelijk en herkenbaar (exact 3 per regel: regel van derden, dieptelagen, standpunt en lijnen).
 - Het drieluik brengt 3 beelden over de regels heen harmonieus samen rond één duidelijk gekozen concept of thema.
+- De typografie op het drieluik is strak uitgelijnd in een rustige schreefloze letter en vermeldt de compositieregel en technische opnameparameters per paneel.
 

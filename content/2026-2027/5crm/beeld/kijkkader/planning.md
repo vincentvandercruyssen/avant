@@ -86,26 +86,54 @@
 
 ## Les 4 29/09/2026 (Beeld, 11:00 - 12:40)
 
-### Kijkkader: Drieluik op A4 en finale oplevering
+### Kijkkader: Afwerking en inlevering 12 beelden, opstart drieluik op A4
 
 ### Lesverloop & inhoud
-1. **Beeldselectie voor het drieluik:**
-   * Drie beelden selecteren over de compositieregels heen die samen een krachtig inhoudelijk thema vormen rond een overkoepelend concept (bv. architectuur & geometrie, mens & interactie of detail & textuur).
-2. **Opzet van het drieluik op A4:**
+1. **Afwerking beeldbewerking in Camera Raw:**
+   * Kadrering, belichting, hooglichten/schaduwen en witbalans van de 12 geselecteerde beelden (3 per compositieregel) afwerken via Adobe Bridge en Camera Raw.
+   * Behouden van de originele 3:2-beeldverhouding met non-destructieve opslag in `.xmp`-sidecarbestanden in `01_assets/`.
+2. **Batch-export en hernoemen van 12 beelden:**
+   * De 12 bewerkte beelden exporteren naar JPEG met maximale kwaliteit in `02_exports/`.
+   * Bestandsnamen controleren volgens de afgesproken naamgeving:
+     * `VoornaamA_Kijkkader-Regelvandrie-1.jpg` tot `-3.jpg`
+     * `VoornaamA_Kijkkader-Diepte-1.jpg` tot `-3.jpg`
+     * `VoornaamA_Kijkkader-Standpunt-1.jpg` tot `-3.jpg`
+     * `VoornaamA_Kijkkader-Lijnen-1.jpg` tot `-3.jpg`
+3. **Inlevering 12 beelden in Smartschool:**
+   * De 12 geëxporteerde JPEG-bestanden uploaden in de eerste Smartschool-uploadmap (*Kijkkader: 12 foto's*).
+4. **Beeldselectie en opstart drieluik:**
+   * Drie beelden selecteren die samen een inhoudelijk en visueel samenhangend concept vormen (bv. architectuur & geometrie, mens & interactie of detail & textuur).
    * Nieuw Photoshop-canvas opzetten via het tabblad Afdrukken: **A4 liggend (297 × 210 mm)** met witte achtergrond (`VoornaamA_Kijkkader-Drieluik.psd`).
-   * Automatische hulplijnen genereren met *New Guide Layout* (3 kolommen, 10 mm gutter, 15 mm marges).
-   * De 3 geselecteerde foto's importeren, proportioneel schalen en harmonieus uitlijnen binnen de kaders.
-   * Typografische bijschriften toevoegen onder elk paneel: compositieregel en fotografische parameters in een strakke schreefloze letter.
-3. **Export & kwaliteitscontrole:**
+   * Hulplijnenraster genereren via *New Guide Layout* (3 kolommen, 10 mm gutter, 15 mm marges) en de 3 foto's proportioneel inschalen en uitlijnen.
+
+### Leerplandoelen
+* **CRS06:** Vlot en efficiënt werken met professionele beeldbewerkingssoftware (Adobe Bridge, Camera Raw & Photoshop).
+* **CRS08:** Beeldkwaliteit, scherpte, belichting en kadrering van de opnames kritisch beoordelen.
+* **CRS09:** Het stappenplan voor non-destructieve beeldbewerking, kadrering en kleurbalans bepalen.
+* **CRS10:** Beelden vakkundig corrigeren en optimaliseren met Camera Raw via Bridge en het uitsnijgereedschap.
+* **CRS11:** Beeldmateriaal doelgericht kadreren volgens de visuele grammatica (regel van derden, dieptelagen, standpunten, lijnen).
+* **CRS20:** Het gemaakte beeldmateriaal bundelen in een strak gecomponeerd drieluik op A4-formaat.
+* **CRS23:** Bestanden controleren op correcte lay-out, scherpte en exportkwaliteit.
+* **CRS27:** De 12 bewerkte beelden volgens mappenstructuur en naamconventie tijdig inleveren in de Smartschool-uploadzone.
+* **GEC02:** Kwaliteitsbewust en ordelijk werken met bestanden en lagenstructuren.
+
+## Les 5 06/10/2026 (Beeld, 11:00 - 12:40)
+
+### Kijkkader: Afwerking drieluik op A4, kwaliteitscontrole en inlevering drieluik
+
+### Lesverloop & inhoud
+1. **Typografie en opmaak drieluik:**
+   * Typografische bijschriften toevoegen onder elk paneel in `VoornaamA_Kijkkader-Drieluik.psd`: compositieregel en fotografische parameters in een strakke schreefloze letter.
+   * Lijnvoering, marges en uitlijning finetunen binnen het stramien van de drie kolommen.
+2. **Export en kwaliteitscontrole:**
    * Drieluik exporteren als hoogwaardige JPEG naar `02_exports/VoornaamA_Kijkkader-Drieluik.jpg`.
-   * De 12 geëxporteerde JPEG's en het samengestelde drieluik in `02_exports/` controleren aan de hand van de zelfevaluatiechecklist.
-4. **Finale inlevering:**
-   * Projectmap zippen naar `VoornaamA_Kijkkader.zip`.
-   * Uploaden in de Smartschool-uploadzone voor het vak 5CRM Beeld.
+   * De geëxporteerde beelden, het samengestelde drieluik en het werkbestand controleren aan de hand van de checklist.
+3. **Inlevering drieluik in Smartschool:**
+   * Het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`) uploaden in de tweede Smartschool-uploadmap (*Kijkkader: Drieluik*).
 
 ### Leerplandoelen
 * **CRS20:** Het gemaakte beeldmateriaal bundelen in een strak gecomponeerd drieluik op A4-formaat.
 * **CRS22:** Beelden harmonieus en esthetisch samenbrengen met verzorgde typografie.
 * **CRS23:** Bestanden controleren op correcte lay-out (A4 liggend), scherpte en exportkwaliteit.
-* **CRS27:** Het volledige project conform mappenstructuur en naamconventie tijdig opleveren in Smartschool.
+* **CRS27:** De bestanden conform de naamconventie tijdig inleveren in de voorziene Smartschool-uploadzones.
 * **GEC02:** Kwaliteitsbewust en ordelijk werken met bestanden en lagenstructuren.

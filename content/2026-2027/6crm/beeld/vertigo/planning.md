@@ -43,14 +43,16 @@
    * Kleurtemperatuur, belichting, hooglichten en schaduwen harmoniseren met behoud van dynamisch bereik.
    * Batch-export van de 10 JPEG-bestanden (`VoornaamA_Vertigo-Onderwerp_X-Wijd.jpg` en `-Tele.jpg`) naar `02_exports/`.
    * Niet-destructieve opslag in `.xmp`-sidecarbestanden.
+   * De 10 geëxporteerde JPEG-bestanden uploaden in de eerste Smartschool-uploadmap (*Vertigo 3.5 RAW*).
 3. **Opbouw van 1 finale diptiek in Adobe Photoshop:**
    * Eén liggend A4-document (297 × 210 mm, 300 ppi, RGB) aanmaken (`VoornaamA_Vertigo-Diptiek.psd`).
    * Instellen van een symmetrisch hulplijnenraster met 2 kolommen (of 3 bij gebruik van de optionele tussenstap).
    * Het allersterkste koppel plaatsen als Smart Objects.
    * Geen tekst toevoegen op het document (volledig clean beeld).
-4. **Export, controle en oplevering:**
+4. **Export, controle en inlevering:**
    * Diptiek exporteren als hoogwaardige JPEG (`VoornaamA_Vertigo-Diptiek.jpg`) naar `02_exports/`.
-   * Projectmap inpakken als zip-bestand (`VoornaamA_Vertigo.zip`) volgens de afgesproken structuur en uploaden naar Smartschool.
+   * Kwaliteitscontrole uitvoeren aan de hand van de checklist.
+   * Het Photoshop-werkbestand (`VoornaamA_Vertigo-Diptiek.psd`) en de geëxporteerde JPEG (`VoornaamA_Vertigo-Diptiek.jpg`) uploaden in de tweede Smartschool-uploadmap (*Vertigo 3.6 Diptiek*).
 
 ### Leerplandoelen
 * **CRS06:** Vlot en efficiënt werken met spiegelreflex- of systeemcamera's, Adobe Bridge, Camera Raw en Photoshop.
@@ -58,4 +60,4 @@
 * **CRS10:** Beeldmateriaal doelgericht corrigeren en optimaliseren met Camera Raw met behoud van de dynamische contrasten.
 * **CRS20:** Het geselecteerde beeldmateriaal bundelen in een verzorgde diptiek op A4-formaat.
 * **CRS22:** Beelden esthetisch en harmonieus samenbrengen in een strakke, evenwichtige lay-out.
-* **CRS27:** Het volledige project conform de mappenstructuur en naamconventie tijdig inleveren in de Smartschool-uploadzone.
+* **CRS27:** De bestanden conform de naamconventie tijdig inleveren in de voorziene Smartschool-uploadzones.

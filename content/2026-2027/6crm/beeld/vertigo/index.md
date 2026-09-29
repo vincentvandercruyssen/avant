@@ -169,7 +169,7 @@ Koppel je SD-kaart aan de computer en open Adobe Bridge.
 5. Geef je beelden ratings met de sterren (`Ctrl + 1` t.e.m. `Ctrl + 5`).
 6. Selecteer je **5 allerbeste koppels** (10 opnames in totaal).
 
-### RAW-ontwikkeling in Camera Raw
+### Bewerkingen in Camera Raw
 
 Selecteer je 5 gekozen koppels in Bridge en open ze in Camera Raw (`Ctrl + R`).
 
@@ -181,6 +181,21 @@ Selecteer je 5 gekozen koppels in Bridge en open ze in Camera Raw (`Ctrl + R`).
   * `VoornaamA_Vertigo-Onderwerp_1-Tele.jpg`
   * ... t.e.m. `Onderwerp_5`.
 * Klik op **Gereed** om de aanpassingen non-destructief op te slaan in de `.xmp`-bestanden.
+
+#### Indienen: 10 foto's
+
+Upload jouw **10 afgewerkte JPEG-bestanden** (de 5 koppels wijd en tele) rechtstreeks in de eerste uploadmap op Smartschool (**Vertigo 3.5 RAW**). Je hoeft deze bestanden niet te zippen:
+
+* `VoornaamA_Vertigo-Onderwerp_1-Wijd.jpg`
+* `VoornaamA_Vertigo-Onderwerp_1-Tele.jpg`
+* `VoornaamA_Vertigo-Onderwerp_2-Wijd.jpg`
+* `VoornaamA_Vertigo-Onderwerp_2-Tele.jpg`
+* `VoornaamA_Vertigo-Onderwerp_3-Wijd.jpg`
+* `VoornaamA_Vertigo-Onderwerp_3-Tele.jpg`
+* `VoornaamA_Vertigo-Onderwerp_4-Wijd.jpg`
+* `VoornaamA_Vertigo-Onderwerp_4-Tele.jpg`
+* `VoornaamA_Vertigo-Onderwerp_5-Wijd.jpg`
+* `VoornaamA_Vertigo-Onderwerp_5-Tele.jpg`
 
 ### Diptiek samenstellen in Adobe Photoshop
 
@@ -198,28 +213,33 @@ Kies uit je vijf afgewerkte koppels het allersterkste paar en bouw hiervoor éé
 4. Sla het werkbestand op als `VoornaamA_Vertigo-Diptiek.psd` in de hoofdmap.
 5. Exporteer de diptiek als hoogwaardige JPEG naar `02_exports/` via **Bestand > Exporteren > Exporteren als...** (Kwaliteit 100%, sRGB) onder de naam `VoornaamA_Vertigo-Diptiek.jpg`.
 
+#### Indienen: Tweeluik
+
+Upload jouw samengestelde diptiek rechtstreeks in de tweede uploadmap op Smartschool (**Vertigo 3.6 Diptiek**). Lever zowel het gelaagde werkbestand als de geëxporteerde JPEG in (geen zip-bestand):
+
+* `VoornaamA_Vertigo-Diptiek.psd` (gelaagd Photoshop-werkbestand met hulplijnen en slimme objecten)
+* `VoornaamA_Vertigo-Diptiek.jpg` (geëxporteerde JPEG op liggend A4-formaat)
+
 ## Oplevering
 
-Comprimeer je volledige projectmap naar een zip-bestand en lever in via de Smartschool-uploadzone:
+Lever jouw werk in twee fases in via de voorziene Smartschool-uploadmappen:
 
 ```text
-VoornaamA_Vertigo.zip
-└─ 01_assets/
-   └─ [ruwe RAW-opnames van de 5 ingediende koppels + bijhorende .xmp sidecars]
-└─ 02_exports/
-   └─ VoornaamA_Vertigo-Onderwerp_1-Wijd.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_1-Tele.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_2-Wijd.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_2-Tele.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_3-Wijd.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_3-Tele.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_4-Wijd.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_4-Tele.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_5-Wijd.jpg
-   └─ VoornaamA_Vertigo-Onderwerp_5-Tele.jpg
-   └─ VoornaamA_Vertigo-Diptiek.jpg
+Uploadmap: Vertigo 3.5 Bewerkingen
+└─ VoornaamA_Vertigo-Onderwerp_1-Wijd.jpg
+└─ VoornaamA_Vertigo-Onderwerp_1-Tele.jpg
+└─ VoornaamA_Vertigo-Onderwerp_2-Wijd.jpg
+└─ VoornaamA_Vertigo-Onderwerp_2-Tele.jpg
+└─ VoornaamA_Vertigo-Onderwerp_3-Wijd.jpg
+└─ VoornaamA_Vertigo-Onderwerp_3-Tele.jpg
+└─ VoornaamA_Vertigo-Onderwerp_4-Wijd.jpg
+└─ VoornaamA_Vertigo-Onderwerp_4-Tele.jpg
+└─ VoornaamA_Vertigo-Onderwerp_5-Wijd.jpg
+└─ VoornaamA_Vertigo-Onderwerp_5-Tele.jpg
+
+Uploadmap: Vertigo 3.6 Diptiek
 └─ VoornaamA_Vertigo-Diptiek.psd
-└─ VoornaamA_Vertigo-Onderzoek.pdf
+└─ VoornaamA_Vertigo-Diptiek.jpg
 ```
 
 ### Checklist
@@ -227,11 +247,12 @@ VoornaamA_Vertigo.zip
 Overloop deze controlepunten zorgvuldig vóór je definitief uploadt.
 
 #### Bestanden & mappen
-- De zip-map volgt de naamconventie `VoornaamA_Vertigo.zip`.
+- De lokale hoofdmap op je computer volgt de structuur `VoornaamA_Vertigo`.
 - Het onderzoeksdocument is als PDF aanwezig in de hoofdmap (`VoornaamA_Vertigo-Onderzoek.pdf`).
-- De map `01_assets/` bevat de RAW-bestanden van de 5 geselecteerde koppels met hun bijhorende `.xmp`-bestanden.
+- De map `01_assets/` bevat de ruwe RAW-bestanden van de camera én de bijhorende `.xmp`-sidecarbestanden van de 5 geselecteerde koppels.
 - De map `02_exports/` bevat alle 10 individuele koppel-JPEG's (`Onderwerp_1` t.e.m. `5`) én de samengestelde `VoornaamA_Vertigo-Diptiek.jpg`.
-- De hoofdmap bevat het Photoshop-werkbestand van de diptiek (`VoornaamA_Vertigo-Diptiek.psd`).
+- In de eerste uploadmap op Smartschool (**Vertigo 3.5 RAW**) staan de 10 afgewerkte JPEG-bestanden (5 koppels wijd en tele).
+- In de tweede uploadmap op Smartschool (**Vertigo 3.6 Diptiek**) staan het Photoshop-werkbestand (`VoornaamA_Vertigo-Diptiek.psd`) en de geëxporteerde JPEG (`VoornaamA_Vertigo-Diptiek.jpg`). Er is geen zip-bestand vereist.
 
 #### Technische kwaliteit & optisch effect
 - In het onderzoek zijn vijf verschillende nieuwsartikels geanalyseerd met een duidelijke bepaling van de brandpuntsafstand (eerder breed of tele) en een grondige motivering.
