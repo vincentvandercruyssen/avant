@@ -97,6 +97,10 @@ Vóór je in After Effects aan de slag gaat, leg je de basis vast in een beknopt
 3. **Pinboard:** Maak op [Pinterest](https://www.pinterest.com/) een nieuw bord aan (*Motion: Quicktype*). Verzamel minimaal **vijf inspirerende voorbeelden** van kinetische typografie, expressieve lettervormen en dynamische overgangen.
 4. **Document opstellen:** Noteer je vier regels, je gekozen lettertype(s) en de openbare deellink naar je Pinterest-bord in een overzichtelijk document en bewaar dit als `VoornaamA_Quicktype-Voorbereiding.odt` (of `.pdf`) in je hoofdmap.
 
+#### Indienen
+
+Dien je voorbereidingsdocument in als `.odt` of `.pdf` (`VoornaamA_Quicktype-Voorbereiding.odt` of `VoornaamA_Quicktype-Voorbereiding.pdf`) via de voorziene uploadzone op Smartschool.
+
 ### Compositie & projectopzet
 
 1. Start **Adobe After Effects**.
@@ -235,11 +239,11 @@ Lever je volledige projectmap gecomprimeerd in via de Smartschool Uploadzone:
 
 ```text
 VoornaamA_Quicktype.zip
-└─ 01_assets/          <- Losse lettertypebestanden (niet vereist bij Adobe Fonts), audio
+└─ 01_assets/    <- Lettertypes (niet vereist bij Adobe Fonts), audio
 └─ 02_exports/
    └─ VoornaamA_Quicktype.mp4
 └─ VoornaamA_Quicktype.aep
-└─ VoornaamA_Quicktype-Voorbereiding.docx (of .pdf)
+└─ VoornaamA_Quicktype-Voorbereiding.odt (of .pdf)
 ```
 
 ### Checklist

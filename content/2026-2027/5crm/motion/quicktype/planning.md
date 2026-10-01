@@ -34,80 +34,90 @@
 * **CRS21:** Typografie expressief selecteren (Adobe Fonts) en animeren met aandacht voor ritme en leesbaarheid.
 * **CRS27:** Het afgewerkte project Vormen conform de mappenstructuur en bestandsconventies tijdig inleveren via de Smartschool-uploadzone.
 
-## Les 2 25/09/2026 (Motion)
+## Les 2 01/10/2026 (Motion, 12:40 - 14:20)
 
-### Quicktype: Path Options, Bézier-paden & Mesh Warp
+### Quicktype: Feedback Vormen, briefing & drie basistechnieken
 
 ### Lesverloop & inhoud
-1. **Feedback & kwaliteitscheck Range Selector:**
-   * Korte klassikale steekproef van de geanimeerde Range Selectors op het grote scherm.
-   * Evaluatie van versnelling en vertraging via de Graph Editor: vermijden van lineaire bewegingen ten voordele van een snappy curve.
-2. **Path Options & padanimatie (frase 2):**
-   * Tweede tekstfrase invoeren en selecteren in de tijdlijn.
-   * Tekenen van een dynamisch maskerpad met de Pen Tool (`G`) over het canvas (vloeiende curven of zigzaglijnen).
-   * Masker koppelen via `Text > Path Options > Path: Mask 1` en instellen van `Perpendicular to Path` of `Reverse Path`.
-   * Animeren van `First Margin` om de tekst met hoge snelheid langs het getekende traject te laten racen.
-3. **Mesh Warp & organische vervorming (frase 3):**
-   * Derde tekstfrase invoeren in een vet displaylettertype.
-   * Toepassen van het effect `Mesh Warp` (`Effect > Distort > Mesh Warp`) en instellen van een 3×3 raster.
-   * Keyframen van het raster in de tijdlijn: letters uitrekken, samenknijpen en elastisch laten terugveren voor kinetische spanning.
-4. **Overgang tussen fasen & Graph Editor:**
-   * Verbinden van fase 1, 2 en 3 via strakke overgangen (snelle match cuts, whip pans of scale punches) rond seconde 02:15 en 05:00.
-   * Finetunen van de snelheidscurves in de Speed Graph voor een naadloos ritme zonder doodse momenten.
-   * Activeren van Motion Blur op alle tekstlagen en in het algemene compositiefilter.
+1. **Feedback op inlevering Vormen:**
+   * Bespreking van de ingediende projectmappen en MP4-exports.
+2. **Briefing Quicktype:**
+   * Toelichting bij de opdracht: een kinetische typografiesequentie van ongeveer 10 seconden (1920 × 1080 px, 16:9 Full HD, 30 fps).
+   * Opbouw van de sequentie: drie verplichte basistechnieken en één zelfstandig gekozen effect.
+3. **Voorbereiding & pinboard:**
+   * Keuze van vier krachtige woorden, zinnen of regels die elkaar opvolgen.
+   * Aanleggen van een Pinterest-bord (*Motion: Quicktype*) met minimaal vijf inspirerende voorbeelden van kinetische typografie en overgangen.
+   * Typografie selecteren en activeren via [Adobe Fonts](https://fonts.adobe.com/) (of lettertypebestanden opslaan in `01_assets/`).
+   * Aanmaken van het voorbereidingsdocument `VoornaamA_Quicktype-Voorbereiding.odt` (of `.pdf`) in de hoofdmap.
+4. **Mappenstructuur & projectopzet:**
+   * Hoofdmap `VoornaamA_Quicktype/` aanmaken in de OneDrive-vakmap Motion met submappen `01_assets/` en `02_exports/`.
+   * Starten van After Effects en opslaan van het projectbestand als `VoornaamA_Quicktype.aep`.
+   * Aanmaken van de hoofdcompositie `VoornaamA_Quicktype` (1920 × 1080 px, 30 fps, 10 seconden).
+5. **Demonstratie van drie basistechnieken:**
+   * **Range Selector:** tekst-animator via `Animate` (Position/Scale/Tracking), keyframes op `Offset` (-100% naar 100%), `Shape` (Ramp Up / Smooth) onder Advanced en Easy Ease in de Graph Editor.
+   * **Path Options:** vectorpad tekenen met de Pen Tool (`G`), koppelen via `Text > Path Options > Path: Mask 1` en animeren van `First Margin` langs het traject.
+   * **Mesh Warp:** effect `Distort > Mesh Warp` met een 3×3 raster toepassen en keyframen voor kinetische, elastische lettervervorming.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten, 16:9 Full HD (1920 × 1080 px), 30 fps framerate en mappenstructuur analyseren en toepassen.
+* **CRS02:** Doelgericht tekst-animators (Range Selector), padopties en vervormingseffecten (Mesh Warp) selecteren.
+* **CRS06:** Vlot en efficiënt werken met After Effects (interface, tekstlagen, maskers, effecten, Easy Ease, Graph Editor).
+* **CRS07:** Inspiratiebronnen en bewegingsvoorbeelden van kinetische typografie doelgericht verzamelen en ordenen op een digitaal pinboard.
+* **CRS15:** Typografische lagen en compositie-instellingen gestructureerd opzetten in After Effects.
+* **CRS21:** Typografie expressief selecteren (Adobe Fonts) en animeren met aandacht voor ritme en leesbaarheid.
+* **CRS23:** De ingeleverde composities van de opdracht Vormen evalueren op technische afwerking en bewegingskwaliteit.
+
+## Les 3 02/10/2026 (Motion)
+
+### Quicktype: Uitwerking basistechnieken, overgangen & onderzoek wildcard
+
+### Lesverloop & inhoud
+1. **Zelfstandige uitwerking basistechnieken (frase 1 t.e.m. 3):**
+   * Uitwerken van de Range Selector op de eerste tekstregel met focus op snelle versnelling en easing.
+   * Uittekenen van het Bézier-maskerpad en animeren van de tweede tekstregel via Path Options.
+   * Toepassen van Mesh Warp op de derde tekstregel in een vet displaylettertype en animeren van de elastische vervorming.
+2. **Koppeling & overgangen:**
+   * Verbinden van de drie tekstfasen via dynamische overgangen (match cuts, whip pans of scale punches) rond seconde 02:15 en 05:00.
+   * Versnellingen en vertragingen strak trekken via de Graph Editor (Speed Graph) en Motion Blur activeren op alle tekstlagen.
+3. **Zelfstandig onderzoek Wildcard (frase 4):**
+   * Doelgericht online tutorials of bewegingsvoorbeelden raadplegen voor een vierde typografisch effect (bv. Echo trails, Displacement glitch, Wave Warp of CC Pixel Polly).
+   * Experimenteren met de gekozen techniek op de vierde tekstregel in de compositietijdlijn.
 
 ### Leerplandoelen
 * **CRS02:** Doelgericht padopties, maskers en vervormingseffecten selecteren in functie van het beoogde bewegingsritme.
 * **CRS06:** Vlot en efficiënt werken met Bézier-paden, maskeropties, het effect Mesh Warp en de Graph Editor.
+* **CRS13:** Doelgericht een zoekstrategie hanteren om online tutorials en referentiebronnen te selecteren en implementeren.
 * **CRS16:** Een dynamische 2D-animatiesequentie realiseren met keyframes, extreme snelheidsversnelling en effecten.
 * **CRS21:** Typografie expressief buigen en vervormen met behoud van visuele herkenbaarheid en kinetische energie.
 
-## Les 3 01/10/2026 (Motion, 12:40 - 14:20)
+## Les 4 08/10/2026 (Motion, 12:40 - 14:20)
 
-### Quicktype: Wildcard effect, overgangen & audiosynchronisatie
-
-### Lesverloop & inhoud
-1. **Zelfstandig onderzoek Wildcard (frase 4):**
-   * Doelgericht online tutorials of motion design voorbeelden raadplegen voor een innovatief vierde typografisch effect.
-   * Keuze bepalen uit geavanceerde technieken zoals Echo/Repeater trails, Displacement glitch, Wave Warp vloeibaarheid of fragmentatie (CC Pixel Polly).
-   * Zelfstandig toepassen en finetunen van de gekozen techniek op de vierde tekstfrase in de compositietijdlijn.
-2. **Afwerking van de totale sequentie:**
-   * Verbinden van alle vier de fasen tot één ononderbroken, energieke 10-seconden sequentie (exact ~300 frames aan 30 fps).
-   * Overgangen perfectioneren: timing van cuts, rotaties en kleurcontrasten scherpstellen.
-3. **Extra uitdaging: audiosynchronisatie & sound design:**
-   * Optioneel importeren van een rechtenvrije ritmische audiobeat of SFX-fragmenten (whooshes, hits, risers) in `01_assets/`.
-   * Geluidsgolf openklappen op de tijdlijn met sneltoets `LL`.
-   * Keyframes van tekstsprongen, wipes en effectpieken exact uitlijnen op de beats en transiënten van de audio.
-
-### Leerplandoelen
-* **CRS06:** Zelfstandig geavanceerde softwarefuncties, effecten en tijdlijncontroles inzetten in After Effects.
-* **CRS13:** Doelgericht een zoekstrategie hanteren om online tutorials en referentiebronnen te selecteren en implementeren.
-* **CRS16:** Vier afzonderlijke typografische technieken integreren in één krachtige, harmonieuze sequentie met doordachte overgangen.
-* **CRS21:** Kinetische typografie finetunen met aandacht voor visuele hiërarchie, ritme en eventuele geluidssynchronisatie.
-* **13.01:** Doelgericht bronnen en tutorials selecteren in functie van een technische informatievraag.
-* **15.04:** Een creatieve oplossing voor een visuele uitdaging realiseren met inzet van digitale technologie.
-
-## Les 4 02/10/2026 (Motion)
-
-### Quicktype: Kwaliteitscontrole, export naar MP4 & oplevering
+### Quicktype: Wildcard, kwaliteitscontrole, export & oplevering
 
 ### Lesverloop & inhoud
-1. **Kwaliteitscontrole aan de hand van de checklist:**
-   * Grondige controle van de compositie-instellingen: 1920 × 1080 px (16:9 Full HD), 30 fps en totale duur van circa 10 seconden.
-   * Controle van de vier verplichte technieken: Range Selector, Path Options, Mesh Warp en een aantoonbare Wildcard.
-   * Beoordeling van de typografische keuzes: afwezigheid van standaardlettertypes, sterk contrast en geactiveerde Motion Blur.
-2. **Rendering via Adobe Media Encoder:**
-   * Compositie toevoegen aan de Adobe Media Encoder wachtrij (`Ctrl + Alt + M`).
-   * Renderprofiel instellen op `H.264` met de voorinstelling `Match Source - High Bitrate`.
-   * Doelmap instellen op `02_exports/VoornaamA_Quicktype.mp4` en batch-render voltooien.
-   * Geëxporteerd videobestand afspelen in een mediaspeler en controleren op haperingen of renderfouten.
-3. **Oplevering in de Smartschool-uploadzone:**
-   * Schoonmaken van de mappenstructuur op OneDrive: eventuele losse lettertypes en audio in `01_assets/`, MP4-export in `02_exports/` en projectbestand in de hoofdmap.
-   * Comprimeren van de hoofdmap naar `VoornaamA_Quicktype.zip`.
-   * Uploaden van het zip-archief naar de voorziene uploadzone vóór de gestelde deadline.
+1. **Afwerking Wildcard & totale sequentie:**
+   * Definitieve integratie van het zelfgekozen effect op de vierde tekstregel in de sequentie van circa 10 seconden (~300 frames aan 30 fps).
+   * Verfijnen van de overgangen tussen alle vier de fasen voor een vloeiend geheel zonder doodse momenten.
+2. **Optionele audiosynchronisatie & sound design:**
+   * Importeren van een rechtenvrije ritmische audiobeat of geluidseffecten (*whooshes*, *hits*) in `01_assets/`.
+   * Geluidsgolf openen (`LL`) en keyframes exact synchroniseren met de transiënten en beats.
+3. **Kwaliteitscontrole via checklist:**
+   * Compositie-instellingen controleren: 1920 × 1080 px (16:9 Full HD), 30 fps en duur van 10 seconden.
+   * Controle van de vier verplichte technieken, typografisch contrast, actieve Motion Blur en afwezigheid van lineaire keyframes.
+4. **Video-export naar MP4:**
+   * Hoofdcompositie renderen via Adobe Media Encoder (`Ctrl + Alt + M`) met instelling `H.264 - Match Source - High Bitrate`.
+   * Opslaan als `02_exports/VoornaamA_Quicktype.mp4` en controleren op haperingen en renderfouten.
+5. **Oplevering in de Smartschool-uploadzone:**
+   * Mappenstructuur op OneDrive ordenen (`01_assets/`, `02_exports/` en projectbestand).
+   * Hoofdmap comprimeren naar `VoornaamA_Quicktype.zip` (inclusief `VoornaamA_Quicktype-Voorbereiding.odt` of `.pdf`).
+   * Zip-archief uploaden naar de Smartschool-uploadzone vóór de gestelde deadline.
 
 ### Leerplandoelen
 * **CRS01:** Productievereisten, resolutie (1920 × 1080 px), framerate (30 fps) en video-export controleren en toepassen.
 * **CRS06:** Efficiënt gebruikmaken van Adobe Media Encoder voor het genereren van webgeoptimaliseerde H.264 MP4-bestanden.
+* **CRS16:** Vier afzonderlijke typografische technieken integreren in één krachtige, harmonieuze sequentie met doordachte overgangen.
+* **CRS21:** Kinetische typografie finetunen met aandacht voor visuele hiërarchie, ritme en eventuele geluidssynchronisatie.
 * **CRS23:** Het eindproduct en de projectmap evalueren op technische kwaliteit, bestandsstructuur en specificaties vóór oplevering.
 * **CRS27:** Het volledige projectpakket conform de afgesproken structuur en naamgeving tijdig indienen via het digitaal leerplatform.
+* **13.01:** Doelgericht bronnen en tutorials selecteren in functie van een technische informatievraag.
+* **15.04:** Een creatieve oplossing voor een visuele uitdaging realiseren met inzet van digitale technologie.

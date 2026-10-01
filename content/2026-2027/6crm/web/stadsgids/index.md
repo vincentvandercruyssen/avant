@@ -142,6 +142,10 @@ Schrijf de teksten uit in je voorbereidingsdocument:
 #### Beeldmateriaal verzamelen
 Zoek kwalitatieve, rechtenvrije sfeerbeelden via platforms zoals [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/) of [Pixabay](https://pixabay.com/). Verzamel minstens 15 beelden (een hero-beeld voor de landingspagina, een hero-beeld per stad, en foto's voor alle bezienswaardigheden en het artikel). Hernoem de beelden direct naar logische, kleine bestandsnamen (zoals `stad1-gravensteen.jpg`) en plaats ze in de map `images/`.
 
+#### Indienen
+
+Dien je voorbereidingsdocument in als `.odt` of `.pdf` (`VoornaamA_Stadsgids-Onderzoek.odt` of `VoornaamA_Stadsgids-Onderzoek.pdf`).
+
 ### Wireframing in Figma
 
 Voordat je codeert, leg je de visuele indeling en de hiërarchie vast in Figma. Dit voorkomt dat je tijdens het coderen moet improviseren over lay-out en verhoudingen.
@@ -165,6 +169,12 @@ Ontwerp één consistent modulair sjabloon dat als basis dient voor de drie stad
 * **Artikel (voor één stad):** Een horizontaal uitgelicht blok dat de aandacht trekt met persoonlijke tips en een foto.
 * **Actiesectie (CTA):** Een gerichte actieknop (*"Download de route"* of *"Bekijk op de kaart"*).
 * **Footer:** Identiek aan de landingspagina.
+
+#### Indienen
+
+Dien je wireframes in via de voorziene Smartschool-uploadmap:
+* **Figma-link:** Bezorg de gedeelde link naar je Figma-bestand (kijkrechten inschakelen).
+* **Export:** Exporteer je frames als afbeeldingen (`.png` of `.jpg`) of als pdf (`VoornaamA_Stadsgids-Wireframe.pdf`).
 
 ### HTML: Semantische structuur
 
@@ -470,7 +480,7 @@ Heb je de basisstructuur en opmaak vlot afgewerkt? Verdiep je project met geavan
 
 ## Oplevering
 
-Comprimeer (zip) jouw volledige projectmap `VoornaamA_Stadsgids` en upload het ZIP-bestand in de Smartschool Uploadzone:
+De finale oplevering omvat de volledige website (HTML, CSS en eventuele extra uitdagingen). Comprimeer (zip) jouw volledige projectmap `VoornaamA_Stadsgids` en upload het ZIP-bestand in de Smartschool Uploadzone:
 
 ```text
 VoornaamA_Stadsgids.zip
