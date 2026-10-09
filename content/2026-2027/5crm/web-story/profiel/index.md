@@ -3,7 +3,9 @@ title: "Profiel"
 date: 2026-09-04
 schooljaar: "2026-2027"
 klas: "5CRM"
-vak: "web"
+vak: "web-story"
+aliases:
+  - "/2026-2027/5crm/web/profiel/"
 auteurs:
   - "Vincent Vander Cruyssen"
 periode: "September"

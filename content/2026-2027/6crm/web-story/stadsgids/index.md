@@ -3,7 +3,9 @@ title: "Stadsgids"
 date: 2026-09-23
 schooljaar: "2026-2027"
 klas: "6CRM"
-vak: "web"
+vak: "web-story"
+aliases:
+  - "/2026-2027/6crm/web/stadsgids/"
 auteurs:
   - "Vincent Vander Cruyssen"
 periode: "September"

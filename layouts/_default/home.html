@@ -144,10 +144,11 @@
   {{ $year := .Title | default .Section }}
 
   {{/* Bepaal alle vakken (inclusief vaste vakken zodat bv. Grafische vormgeving blijft staan) */}}
-  {{ $configuredVakken := slice "beeld" "grafische" "motion" "web" }}
+  {{ $configuredVakken := slice "beeld" "grafische" "motion" "web-story" }}
   {{ $vakKeys := $configuredVakken }}
   {{ range $yearPages }}
     {{ $vak := .Params.vak | default "" | lower }}
+    {{ if eq $vak "web" }}{{ $vak = "web-story" }}{{ end }}
     {{ if not $vak }}
       {{ $afterYear := replaceRE (printf "^.*/%s/" $year) "" .RelPermalink }}
       {{ $s := split (trim $afterYear "/") "/" }}
@@ -156,6 +157,7 @@
       {{ else if ge (len $s) 1 }}
         {{ $vak = index $s 0 | lower }}
       {{ end }}
+      {{ if eq $vak "web" }}{{ $vak = "web-story" }}{{ end }}
     {{ end }}
     {{ if and $vak (not (in $vakKeys $vak)) }}
       {{ $vakKeys = $vakKeys | append $vak }}
@@ -174,12 +176,14 @@
       {{ $klassen := slice }}
       {{ range $yearPages }}
         {{ $pageVak := .Params.vak | default "" | lower }}
+        {{ if eq $pageVak "web" }}{{ $pageVak = "web-story" }}{{ end }}
         {{ if not $pageVak }}
           {{ $afterYear := replaceRE (printf "^.*/%s/" $year) "" .RelPermalink }}
           {{ $s := split (trim $afterYear "/") "/" }}
           {{ if ge (len $s) 2 }}
             {{ $pageVak = index $s 1 | lower }}
           {{ end }}
+          {{ if eq $pageVak "web" }}{{ $pageVak = "web-story" }}{{ end }}
         {{ end }}
 
         {{ if eq $pageVak $vak }}
@@ -205,6 +209,7 @@
         {{ range sort $yearPages "Date" "desc" }}
         {{ $pKlas := .Params.klas | default "" | upper }}
         {{ $pVak := .Params.vak | default "" | lower }}
+        {{ if eq $pVak "web" }}{{ $pVak = "web-story" }}{{ end }}
         {{ if not $pKlas }}
           {{ $afterYear := replaceRE (printf "^.*/%s/" $year) "" .RelPermalink }}
           {{ $s := split (trim $afterYear "/") "/" }}
@@ -214,6 +219,7 @@
           {{ $afterYear := replaceRE (printf "^.*/%s/" $year) "" .RelPermalink }}
           {{ $s := split (trim $afterYear "/") "/" }}
           {{ if ge (len $s) 2 }}{{ $pVak = index $s 1 | lower }}{{ end }}
+          {{ if eq $pVak "web" }}{{ $pVak = "web-story" }}{{ end }}
         {{ end }}
 
         {{ if and (eq $pKlas $klas) (eq $pVak $vak) }}

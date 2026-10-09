@@ -54,12 +54,12 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   │   │   ├── beeld/
 │   │   │   ├── grafische/
 │   │   │   ├── motion/
-│   │   │   └── web/
+│   │   │   └── web-story/
 │   │   └── 6crm/
 │   │       ├── beeld/
 │   │       ├── grafische/
 │   │       ├── motion/
-│   │       └── web/
+│   │       └── web-story/
 │   ├── cursus/
 │   │   ├── after_effects/
 │   │   │   ├── img/           # 62 geëxtraheerde schermafbeeldingen en illustraties

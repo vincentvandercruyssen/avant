@@ -11,6 +11,7 @@ buildFuture = true
 
 [params.sectionNames]
   motion = "Motion"
+  web-story = "Webdesign en storytelling"
   web = "Webdesign en storytelling"
   beeld = "Beeldanalyse en -bewerking"
   grafische = "Grafische vormgeving"

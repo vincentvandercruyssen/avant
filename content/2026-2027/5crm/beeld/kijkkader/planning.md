@@ -119,16 +119,19 @@
 
 ## Les 5 06/10/2026 (Beeld, 11:00 - 12:40)
 
-### Kijkkader: Afwerking drieluik op A4, kwaliteitscontrole en inlevering drieluik
+### Kijkkader: Drieluik op A4
 
 ### Lesverloop & inhoud
-1. **Typografie en opmaak drieluik:**
-   * Typografische bijschriften toevoegen onder elk paneel in `VoornaamA_Kijkkader-Drieluik.psd`: compositieregel en fotografische parameters in een strakke schreefloze letter.
+1. **Beeldselectie voor het drieluik:**
+   * Drie beelden selecteren die samen een inhoudelijk en visueel samenhangend concept vormen (bv. architectuur & geometrie, mens & interactie of detail & textuur).
+   * Nieuw Photoshop-canvas opzetten via het tabblad Afdrukken: **A4 liggend (297 × 210 mm)** met witte achtergrond (`VoornaamA_Kijkkader-Drieluik.psd`).
+   * Hulplijnenraster genereren via *New Guide Layout* (3 kolommen, 10 mm gutter, 15 mm marges) en de 3 foto's proportioneel inschalen en uitlijnen.
+2. **Optioneel: Typografie en opmaak drieluik:**
+   * Typografische bijschriften toevoegen onder elk paneel in `VoornaamA_Kijkkader-Drieluik.psd`: compositieregel en fotografische parameters in een strak lettertype.
    * Lijnvoering, marges en uitlijning finetunen binnen het stramien van de drie kolommen.
-2. **Export en kwaliteitscontrole:**
+3. **Export en kwaliteitscontrole:**
    * Drieluik exporteren als hoogwaardige JPEG naar `02_exports/VoornaamA_Kijkkader-Drieluik.jpg`.
-   * De geëxporteerde beelden, het samengestelde drieluik en het werkbestand controleren aan de hand van de checklist.
-3. **Inlevering drieluik in Smartschool:**
+4. **Inlevering drieluik in Smartschool:**
    * Het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`) uploaden in de tweede Smartschool-uploadmap (*Kijkkader: Drieluik*).
 
 ### Leerplandoelen

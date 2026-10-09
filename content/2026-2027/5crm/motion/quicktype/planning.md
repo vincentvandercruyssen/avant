@@ -69,19 +69,14 @@
 
 ## Les 3 02/10/2026 (Motion)
 
-### Quicktype: Uitwerking basistechnieken, overgangen & onderzoek wildcard
+### Quicktype: Afwerken voorbereiding
 
 ### Lesverloop & inhoud
-1. **Zelfstandige uitwerking basistechnieken (frase 1 t.e.m. 3):**
-   * Uitwerken van de Range Selector op de eerste tekstregel met focus op snelle versnelling en easing.
-   * Uittekenen van het Bézier-maskerpad en animeren van de tweede tekstregel via Path Options.
-   * Toepassen van Mesh Warp op de derde tekstregel in een vet displaylettertype en animeren van de elastische vervorming.
-2. **Koppeling & overgangen:**
-   * Verbinden van de drie tekstfasen via dynamische overgangen (match cuts, whip pans of scale punches) rond seconde 02:15 en 05:00.
-   * Versnellingen en vertragingen strak trekken via de Graph Editor (Speed Graph) en Motion Blur activeren op alle tekstlagen.
-3. **Zelfstandig onderzoek Wildcard (frase 4):**
-   * Doelgericht online tutorials of bewegingsvoorbeelden raadplegen voor een vierde typografisch effect (bv. Echo trails, Displacement glitch, Wave Warp of CC Pixel Polly).
-   * Experimenteren met de gekozen techniek op de vierde tekstregel in de compositietijdlijn.
+1. **Voorbereiding & pinboard:**
+   * Voorbereidingsdocument VoornaamA_Quicktype-Voorbereiding in de opdrachtmap.
+   * Aanleggen van een Pinterest-bord (Motion: Quicktype) met minimaal vijf inspirerende voorbeelden van kinetische typografie en overgangen. Plaats link in het document.
+   * In document: Keuze van vier krachtige woorden, zinnen of regels die elkaar opvolgen.
+   * In document: Welke font(s) ga je gebruiken? Typografie selecteren en activeren via Adobe Fonts (of lettertypebestanden opslaan in 01_assets/).
 
 ### Leerplandoelen
 * **CRS02:** Doelgericht padopties, maskers en vervormingseffecten selecteren in functie van het beoogde bewegingsritme.
@@ -92,25 +87,19 @@
 
 ## Les 4 08/10/2026 (Motion, 12:40 - 14:20)
 
-### Quicktype: Wildcard, kwaliteitscontrole, export & oplevering
+### Quicktype: Uitwerking technieken, overgangen & onderzoek eigen effect
 
 ### Lesverloop & inhoud
-1. **Afwerking Wildcard & totale sequentie:**
-   * Definitieve integratie van het zelfgekozen effect op de vierde tekstregel in de sequentie van circa 10 seconden (~300 frames aan 30 fps).
-   * Verfijnen van de overgangen tussen alle vier de fasen voor een vloeiend geheel zonder doodse momenten.
-2. **Optionele audiosynchronisatie & sound design:**
-   * Importeren van een rechtenvrije ritmische audiobeat of geluidseffecten (*whooshes*, *hits*) in `01_assets/`.
-   * Geluidsgolf openen (`LL`) en keyframes exact synchroniseren met de transiënten en beats.
-3. **Kwaliteitscontrole via checklist:**
-   * Compositie-instellingen controleren: 1920 × 1080 px (16:9 Full HD), 30 fps en duur van 10 seconden.
-   * Controle van de vier verplichte technieken, typografisch contrast, actieve Motion Blur en afwezigheid van lineaire keyframes.
-4. **Video-export naar MP4:**
-   * Hoofdcompositie renderen via Adobe Media Encoder (`Ctrl + Alt + M`) met instelling `H.264 - Match Source - High Bitrate`.
-   * Opslaan als `02_exports/VoornaamA_Quicktype.mp4` en controleren op haperingen en renderfouten.
-5. **Oplevering in de Smartschool-uploadzone:**
-   * Mappenstructuur op OneDrive ordenen (`01_assets/`, `02_exports/` en projectbestand).
-   * Hoofdmap comprimeren naar `VoornaamA_Quicktype.zip` (inclusief `VoornaamA_Quicktype-Voorbereiding.odt` of `.pdf`).
-   * Zip-archief uploaden naar de Smartschool-uploadzone vóór de gestelde deadline.
+1. **Zelfstandige uitwerking basistechnieken (1 t.e.m. 3):**
+   * Uitwerken gebruik van de Range Selector met focus op snelle versnelling en easing.
+   * Uittekenen van het Bézier-maskerpad en animeren van een tekstregel via Path Options.
+   * Toepassen van Mesh Warp op een tekstregel en animeren van de elastische vervorming.
+2. **Koppeling & overgangen:**
+   * Verbinden van de drie tekstfasen via dynamische overgangen.
+   * Versnellingen en vertragingen strak trekken via de Graph Editor (Speed Graph) en eventueel Motion Blur activeren op tekstlagen.
+3. **Zelfstandig onderzoek eigen effect:**
+   * Doelgericht online tutorials of bewegingsvoorbeelden raadplegen voor een vierde typografisch effect.
+   * Experimenteren met de gekozen techniek in de compositietijdlijn.
 
 ### Leerplandoelen
 * **CRS01:** Productievereisten, resolutie (1920 × 1080 px), framerate (30 fps) en video-export controleren en toepassen.

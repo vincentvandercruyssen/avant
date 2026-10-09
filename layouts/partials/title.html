@@ -32,18 +32,18 @@
     {{- $segs := split (trim $page.RelPermalink "/") "/" -}}
     {{- range $segs -}}
       {{- $segLower := . | lower -}}
-      {{- if in (slice "motion" "web" "beeld" "grafische") $segLower -}}
+      {{- if in (slice "motion" "web" "web-story" "beeld" "grafische") $segLower -}}
         {{- $vak = $segLower -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}
 
-  {{- /* Format vak name (e.g. Motion, Web, Beeld, Grafische) */ -}}
+  {{- /* Format vak name (e.g. Motion, Web+Story, Beeld, Grafische) */ -}}
   {{- $vakFormatted := "" -}}
   {{- if $vak -}}
     {{- $vakLower := $vak | lower -}}
-    {{- if eq $vakLower "web" -}}
-      {{- $vakFormatted = "Web" -}}
+    {{- if or (eq $vakLower "web") (eq $vakLower "web-story") -}}
+      {{- $vakFormatted = "Web+Story" -}}
     {{- else if eq $vakLower "motion" -}}
       {{- $vakFormatted = "Motion" -}}
     {{- else if eq $vakLower "beeld" -}}

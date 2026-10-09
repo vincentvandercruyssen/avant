@@ -25,7 +25,11 @@
 {{- $key := $s.Get "key" -}}
 {{- $label := "" -}}
 {{- if $short -}}
-  {{- $label = $key | title -}}
+  {{- if or (eq $key "web") (eq $key "web-story") -}}
+    {{- $label = "Web+Story" -}}
+  {{- else -}}
+    {{- $label = $key | title -}}
+  {{- end -}}
 {{- else -}}
   {{- $label = index site.Params.sectionNames $key | default ($key | title) -}}
 {{- end -}}

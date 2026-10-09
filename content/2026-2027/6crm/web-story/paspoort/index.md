@@ -3,7 +3,9 @@ title: "Paspoort"
 date: 2026-09-02
 schooljaar: "2026-2027"
 klas: "6CRM"
-vak: "web"
+vak: "web-story"
+aliases:
+  - "/2026-2027/6crm/web/paspoort/"
 auteurs:
   - "Vincent Vander Cruyssen"
 periode: "September"
