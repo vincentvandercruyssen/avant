@@ -27,21 +27,22 @@
 
 ## Les 2 16/10/2026 (Web)
 
-### Receptenboek: Projectopzet, semantische HTML landingspagina & receptpagina's
+### Receptenboek: Onderzoek, wireframe en landingspagina HTML
 
 ### Lesverloop & inhoud
-1. **Mappenstructuur & bestandsbeheer:**
+1. **Onderzoek en inhoud uitwerken:**
+   * Culinair thema bepalen en inspiratiebronnen analyseren op navigatie, lay-out en elementen.
+   * Receptinhoud (titels, badges, ingrediënten en bereidingsstappen) en rechtenvrije afbeeldingen verzamelen in een voorbereidingsdocument.
+2. **Wireframe schetsen:**
+   * Analoge lay-outschets maken van de landingspagina (`index.html`) en het sjabloon voor de receptdetailpagina's.
+   * Aanduiden van de te gebruiken semantische HTML-elementen (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<img>`, `<ul>`, `<ol>`, `<footer>`).
+3. **Projectopzet en bestandsbeheer:**
    * Mappenstructuur `VoornaamA_Receptenboek/` met submap `images/` inrichten in OneDrive.
-   * Aanmaken van de vier HTML-bestanden (`index.html`, `recept_1.html`, `recept_2.html`, `recept_3.html`) en het stijlblad `style.css` in Visual Studio Code.
-2. **HTML-basisstructuur & navigatiemenu:**
-   * Emmet-shortcuts toepassen voor HTML5-basisstructuur en unieke `<title>`-tags per pagina instellen.
-   * Uniforme `<header>` opbouwen met relatieve hyperlinks tussen alle pagina's.
-3. **Landingspagina uitwerken (`index.html`):**
-   * Semantische indeling met `<main>`, `<section id="hero">` en `<section id="recepten">`.
-   * Receptkaarten opzetten via `<article class="card">` met foto, badges, titel en doorkliklink.
-4. **Receptdetailpagina's opzetten:**
-   * Detailpagina's structureren via `#inleiding` (titel, meta-badges, introtekst), `#ingredienten-sectie` (`<ul>`), `#instructies` (`<ol>`) en bronvermelding.
-   * Uniforme `<footer>` met copyright en colofon integreren op alle vier pagina's.
+   * Basisbestanden (`index.html` en `style.css`) aanmaken in Visual Studio Code.
+4. **Landingspagina HTML opbouwen (`index.html`):**
+   * Emmet-shortcuts toepassen voor de HTML5-documentbasis en unieke `<title>`.
+   * Navigatiemenu `<nav>` opzetten in de `<header>` met relatieve links naar de pagina's.
+   * Semantische structuur uitwerken met `<main>`, `<section id="hero">` en receptoverzicht `<section id="recepten">` met kaarten via `<article class="card">`.
 
 ### Leerplandoelen
 * **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.

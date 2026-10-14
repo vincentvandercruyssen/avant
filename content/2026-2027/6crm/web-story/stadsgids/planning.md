@@ -84,3 +84,37 @@
 * **CRS21:** Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels.
 * **CRS22:** Lay-outsystemen (Flexbox voor navigatie en Grid voor cards en side-by-side presentaties) doelgericht opzetten.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
+
+## Les 4 12/10/2026 (Web, 13:30 - 16:10)
+
+### Stadsgids: Landingspagina uitwerken, CSS-styling en opzet stadspagina's
+
+### Lesverloop & inhoud
+1. **Klassikale feedback onderzoek en wireframes.**
+2. **Semantische uitwerking landingspagina (`index.html`):**
+   * Header met website-identiteit en globale navigatielijst (`nav > a`).
+   * Hoofdinhoud (`main`) structureren met twee inhoudelijke onderdelen (`sections`): hero-sectie met introductie en overzichtssectie met drie stadscards (`article`).
+   * Footer voorzien van secundaire links, socials, colofon.
+3. **CSS-styling van de landingspagina (`style.css`):**
+   * Typografie, kleuren.
+   * Header en navigatie horizontaal uitlijnen via Flexbox met interactieve hover-statussen op navigatielinks.
+   * Gecentreerde lay-outcontainer (`max-width: 1200px; margin: 0 auto;`) toepassen.
+   * Hero-sectie en grid met stadscards stijlen (afbeeldingen, titels, teasers, knoppen).
+   * Footer vormgeven met achtergrondkleur, centrering en typografische hiërarchie.
+4. **Opzet stadspagina's op basis van `index.html`:**
+   * Basissjabloon van de landingspagina dupliceren naar de detailpagina's (`stad_1.html`, `stad_2.html`, `stad_3.html`).
+   * Paginatitels (`<title>`) en actieve navigatie-indicaties per detailpagina aanpassen.
+   * Header en footer behouden voor visuele en structurele consistentie over de gehele website.
+   * Inhoudelijke `main`-structuur voorbereiden met plaatshouders voor het stadsintroductieblok, bezienswaardigheden en uitgelicht artikel.
+5. **Validatie en kwaliteitscontrole:**
+   * Lokale werking en relatieve navigatie tussen de vier pagina's testen in de browser.
+   * Codekwaliteit controleren op semantiek, correcte nesting, inspringing en geldige bestandspaden.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) analyseren en toepassen.
+* **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
+* **CRS18:** Een semantisch correcte, functionele en gestijlde multipage website (Stadsgids) met coherente navigatie realiseren.
+* **CRS21:** Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels.
+* **CRS22:** Lay-outsystemen (Flexbox voor navigatie en Grid voor cards en side-by-side presentaties) doelgericht opzetten.
+* **CRS23:** Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser.
+* **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
