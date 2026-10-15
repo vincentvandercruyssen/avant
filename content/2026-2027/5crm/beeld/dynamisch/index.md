@@ -57,7 +57,9 @@ In deze opdracht werk je in twee stappen:
 
 {{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/kinetic-dynamisch/" >}}
 
-## Onderzoek: Technieken van beweging
+## Stappenplannen
+
+### Onderzoek: Technieken van beweging
 
 Onderzoek hoe beeldmakers dynamiek en beweging vastleggen. Zoek **drie verschillende technieken** op. Dat kan een fotografische opnametechniek zijn, maar net zo goed een experimentele methode of een digitale beeldbewerking (in Photoshop).
 
@@ -69,25 +71,25 @@ Denk breed in je zoektocht: kijk naar wat je tijdens de opname zelf met de camer
 
 Gebruik gerichte zoektermen op platforms zoals Pinterest, Behance, Google Images, Flickr:` motion blur photography, chronophotography, stroboscopic motion, high speed action freezing, zoom burst photography, intentional camera movement ICM, light painting trails`...
 
-### Onderzoek bundelen
+#### Indienen
 
 Bundel jouw onderzoek in een overzichtelijke PDF van 3 à 4 pagina's:
 * Duidelijke titel met jouw naam en klas.
 * Per techniek één overzichtelijke pagina: benaming van de techniek, 4 kwalitatieve referentiebeelden en jouw toelichting.
 * Exporteer als `VoornaamA_Dynamisch-Onderzoek.pdf`.
 
-## Uitwerking: Eigen creatie
+### Uitwerking: Eigen creatie
 
 Na het onderzoek ga je zelf achter de camera en/of werktafel zitten. Je brengt één gekozen techniek in de praktijk.
 
-### Keuze van jouw techniek
+#### Keuze van jouw techniek
 
 Kies uit jouw drie onderzochte technieken de techniek die jou het meest intrigeert of uitdaagt. Bepaal vooraf:
 * Welk onderwerp of welke handeling ga je in beeld brengen?
 * Welk materiaal of welke opstelling heb je nodig (statief, lamp, donkere ruimte, scanner, sportend persoon, stromend water)?
 * Werk je puur fotografisch in de camera, of combineer je fotografie met een geavanceerde bewerking in Photoshop?
 
-### Testfase: Minimaal vijf testshots
+#### Testfase: Minimaal vijf testshots
 
 Dynamiek vastleggen lukt zelden van de eerste poging. Het vraagt afstemming van timing, snelheid, bewegingsrichting en belichting.
 
@@ -100,7 +102,7 @@ Dynamiek vastleggen lukt zelden van de eerste poging. Het vraagt afstemming van 
 
 Bundel jouw 5 beste testshots in een aparte map bijvoorbeeld `01_testshots/` binnen je opdrachtmap `VoornaamA_Dynamisch`. Plaats de 5 beste shots op 1 A4 in een PDF-document . Exporteer deze als `VoornaamA_Dynamisch-Testshots.pdf`.
 
-### Finaal eindbeeld realiseren
+#### Finaal eindbeeld realiseren
 
 Werk vanuit je testshots één definitief, krachtig eindbeeld uit:
 
@@ -116,15 +118,25 @@ Werk vanuit je testshots één definitief, krachtig eindbeeld uit:
   * Sla het gelaagde werkbestand op als `VoornaamA_Dynamisch-Eindbeeld.psd` in de hoofdmap.
   * Exporteer een hoogwaardige JPEG naar `02_exports/VoornaamA_Dynamisch-Eindbeeld.jpg`.
 
+#### Indienen
+
+Dien je testshots (pdf) en eindbeeld (werkbestand en jpg) in via Smartschool.
+
+```text
+└─ VoornaamA_Dynamisch-Testshots.pdf (5 testshots op 1 A4)
+└─ VoornaamA_Dynamisch-Eindbeeld.psd
+└─ VoornaamA_Dynamisch-Eindbeeld.jpg
+```
+
 ## Oplevering
 
 Lever jouw werk in twee fases in via de voorziene Smartschool-uploadmappen:
 
 ```text
-Uploadmap: Dynamisch 1. Onderzoek
+Uploadmap: Dynamisch 2.1 Onderzoek
 └─ VoornaamA_Dynamisch-Onderzoek.pdf
 
-Uploadmap: Dynamisch 2. Uitwerking
+Uploadmap: Dynamisch 2.2 Uitwerking
 └─ VoornaamA_Dynamisch-Testshots.pdf (5 testshots op 1 A4)
 └─ VoornaamA_Dynamisch-Eindbeeld.psd
 └─ VoornaamA_Dynamisch-Eindbeeld.jpg
@@ -132,7 +144,7 @@ Uploadmap: Dynamisch 2. Uitwerking
 
 ### Checklist
 
-Controleer jouw werk zorgvuldig aan de hand van onderstaande controlepunten vóór je definitief indient.
+Controleer jouw werk zorgvuldig aan de hand van onderstaande punten vóór je definitief indient.
 
 #### Bestanden en mappen
 - Het onderzoeksdocument is geëxporteerd als een overzichtelijke PDF (`VoornaamA_Dynamisch-Onderzoek.pdf`) en geüpload in de juiste uploadmap.
@@ -141,7 +153,7 @@ Controleer jouw werk zorgvuldig aan de hand van onderstaande controlepunten vó�
 - Alle bestandsnamen volgen strikt de naamconventie met jouw voornaam en de eerste letter van je achternaam.
 
 #### Onderzoek en analyse
-- Het onderzoek behandelt exact drie verschillende technieken rond beweging en dynamiek.
+- Het onderzoek behandelt minstens drie verschillende technieken rond beweging en dynamiek.
 - Elke techniek bevat minimaal vier kwalitatieve, representatieve voorbeeldafbeeldingen.
 - Bij elke techniek staat een duidelijke toelichting in eigen woorden over de technische werking en het visuele effect.
 
