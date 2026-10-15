@@ -83,3 +83,34 @@
 * **CRS06:** Zelfstandig modelleren, shaders toekennen en belichting opbouwen in de Blender 3D-omgeving.
 * **CRS22:** Vormgeving, afgeschuinde randen, shaders en schaduwwerking harmonieus afstemmen in Cycles.
 * **SV06.72:** Het ruimtelijke effect van lichtinval, schaduwwerking en materiaaleigenschappen op 3D-volumes evalueren.
+
+## Les 5 15/10/2026 (Motion, 12:40 - 14:20)
+
+### Extrude: Camera, belichting, shaders & afwerking
+
+### Lesverloop & inhoud
+1. **Scèneopbouw & camera:**
+   * Toevoegen en kadreren van de camera (`Ctrl + Alt + Numpad 0` voor actieve weergave).
+   * Brandpuntsafstand (*Focal Length*) en compositie instellen in liggend 16:9-formaat (1920 × 1080 px).
+   * Eventueel toevoegen van een vloervlak of achterwand (*Mesh → Plane*) als zachte schaduw- en lichtopvanger.
+2. **Studiobelichting & sfeer:**
+   * Fijnstellen van de 3-puntsbelichting met gerichte lichtbronnen (Key, Fill en Rim light).
+   * Scherpstellen van het tegenlicht (*Rim light*) om de afgeschuinde randen van het 3D-volume te laten glanzen en los te maken van de achtergrond.
+   * Lichtintensiteit, lichtkleur en schaduwzachtheid afstemmen in de gerenderde weergave.
+3. **Materialen & shaders:**
+   * Toewijzen en finetunen van materialen via de Principled BSDF shader.
+   * Aanpassen van basiskleur (*Base Color*), ruwheid (*Roughness*) en eventuele accenten (zoals *Metallic*).
+4. **Render, controle & oplevering:**
+   * Renderen van het finale still-beeld via *Render → Render Image* (`F12`) en opslaan als `VoornaamA_Extrude-Still.png` in de map `02_exports/`.
+   * Optioneel (extra uitdaging): keyframen van een subtiele camera-animatie of rotatie en renderen naar MP4.
+   * Bestandsstructuur controleren (`VoornaamA_Extrude.blend`, SVG-asset, renders in `02_exports/`), inpakken als `VoornaamA_Extrude.zip` en indienen via de Smartschool-uploadzone.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten analyseren (resolutie 1920×1080 px, 16:9 verhouding, still render, optioneel animatie).
+* **CRS02:** Doelgericht 3D-technieken selecteren (camerakadrering, studiobelichting, Principled BSDF shaders).
+* **CRS06:** Vlot en zelfstandig werken met Blender 3D (camera-opstelling, lichtbronnen, shader-eigenschappen, rendering).
+* **CRS22:** Vormgeving, afgeschuinde randen, shaders en lichtval esthetisch en harmonieus op elkaar afstemmen tot één hoogwaardig beeld.
+* **CRS23:** Bestanden controleren op correcte resolutie (1920×1080 px), ruisvrije renderkwaliteit en bestandsconventies.
+* **CRS27:** Het volledige Blender-project en de deliverables conform de mappenstructuur tijdig opleveren via de Smartschool-uploadzone.
+* **SV06.72:** Het verband tussen ruimtelijke 3D-situaties en bijbehorende 2D-voorstellingen doelgericht analyseren en toepassen.
+

@@ -102,11 +102,37 @@
    * Experimenteren met de gekozen techniek in de compositietijdlijn.
 
 ### Leerplandoelen
+* **CRS02:** Doelgericht padopties, maskers en vervormingseffecten selecteren in functie van het beoogde bewegingsritme.
+* **CRS06:** Vlot en efficiënt werken met Bézier-paden, maskeropties, het effect Mesh Warp en de Graph Editor.
+* **CRS13:** Doelgericht een zoekstrategie hanteren om online tutorials en referentiebronnen te selecteren en implementeren.
+* **CRS16:** Vier afzonderlijke typografische technieken integreren in één krachtige, harmonieuze sequentie met doordachte overgangen.
+* **CRS21:** Kinetische typografie finetunen met aandacht voor visuele hiërarchie, ritme en elastische vervorming.
+* **13.01:** Doelgericht bronnen en tutorials selecteren in functie van een technische informatievraag.
+* **15.04:** Een creatieve oplossing voor een visuele uitdaging realiseren met inzet van digitale technologie.
+
+## Les 5 15/10/2026 (Motion, 10:10 - 11:50)
+
+### Quicktype: Volledige afwerking, export & oplevering
+
+### Lesverloop & inhoud
+1. **Afwerking:**
+   * Volledig integreren van de vier technieken in één doorlopende compositie.
+   * Fine-tunen van timing, versnellingen via de Graph Editor en eventueel activeren van Motion Blur op compositie- en laagniveau.
+   * Optioneel toevoegen en synchroniseren van audio en geluidseffecten.
+2. **Kwaliteitscontrole & export:**
+   * Technische controle van compositie-instellingen (1920 × 1080 px, 30 fps).
+   * Exporteren via Adobe Media Encoder naar H.264 MP4 (`VoornaamA_Quicktype.mp4`) in de map `02_exports/`.
+   * Testen van het videobestand op vloeiende weergave en kwaliteit.
+3. **Projectstructuur & indiening:**
+   * Controleren van het voorbereidingsdocument `VoornaamA_Quicktype-Voorbereiding.odt` (of `.pdf`) en gebruikte lettertypes of audio in `01_assets/`.
+   * Samenstellen en inpakken van de hoofdmap tot `VoornaamA_Quicktype.zip`.
+   * Correct indienen van het archiefbestand in de Smartschool-uploadzone.
+
+### Leerplandoelen
 * **CRS01:** Productievereisten, resolutie (1920 × 1080 px), framerate (30 fps) en video-export controleren en toepassen.
 * **CRS06:** Efficiënt gebruikmaken van Adobe Media Encoder voor het genereren van webgeoptimaliseerde H.264 MP4-bestanden.
 * **CRS16:** Vier afzonderlijke typografische technieken integreren in één krachtige, harmonieuze sequentie met doordachte overgangen.
 * **CRS21:** Kinetische typografie finetunen met aandacht voor visuele hiërarchie, ritme en eventuele geluidssynchronisatie.
 * **CRS23:** Het eindproduct en de projectmap evalueren op technische kwaliteit, bestandsstructuur en specificaties vóór oplevering.
 * **CRS27:** Het volledige projectpakket conform de afgesproken structuur en naamgeving tijdig indienen via het digitaal leerplatform.
-* **13.01:** Doelgericht bronnen en tutorials selecteren in functie van een technische informatievraag.
-* **15.04:** Een creatieve oplossing voor een visuele uitdaging realiseren met inzet van digitale technologie.
+
