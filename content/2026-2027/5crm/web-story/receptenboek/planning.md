@@ -25,7 +25,7 @@
 * **CRS20:** Teksten, links en beeldassets ordelijk bundelen, categoriseren en voorbereiden in een webomgeving.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor gemaakte afspraken en bestandsstructuren.
 
-## Les 2 16/10/2026 (Web)
+## Les 2 12/10/2026 (Web)
 
 ### Receptenboek: Onderzoek, wireframe en landingspagina HTML
 
@@ -52,29 +52,30 @@
 * **CRS20:** Teksten, links en beeldassets correct integreren in een webomgeving.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
 
-## Les 3 23/10/2026 (Web)
+## Les 3 19/10/2026 (Web)
 
-### Receptenboek: CSS-styling met Flexbox & Grid, kwaliteitscontrole en oplevering
+### Receptenboek: Wireframes, boxmodel en navigatie met Flexbox
 
 ### Lesverloop & inhoud
-1. **Typografie & basisopmaak:**
-   * Google Font koppelen en centrale CSS-stijlen instellen voor `body`, koppen en een gecentreerde container van maximaal 1200 px.
-2. **Lay-outsystemen met Flexbox & CSS Grid:**
-   * Flexbox toepassen voor de navigatiebalk (`<header>`) en de metadata-badges (`.meta-badges`).
-   * CSS Grid toepassen voor het card-overzicht op de homepage (`.card-grid`) en de side-by-side indeling van ingrediënten en beelden (`#ingredienten-sectie`).
-3. **Verfijning & extra uitdagingen:**
-   * Hover-transities op receptkaarten, optioneel print-stijlblad (`@media print`) en CSS-variabelen (`:root`).
-4. **Validatie & finale oplevering:**
-   * Zelfevaluatie uitvoeren aan de hand van de kwaliteitscontrole-checklist (paden, nesting, layoutweergave).
-   * Projectmap comprimeren tot `VoornaamA_Receptenboek.zip` en inleveren via de Smartschool Uploadzone.
+1. **Wireframes uittekenen:**
+   * Lay-outschetsen maken voor de landingspagina (`index.html`) en het sjabloon van de receptpagina's.
+   * Semantische HTML-elementen (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`) aanduiden op de schets.
+2. **Boxmodel & spatiëring (margin vs. padding):**
+   * Het standaard boxmodel toelichten (standaard blok-elementen onder elkaar gestapeld).
+   * Het verschil tussen `margin` (buitenruimte tussen elementen) en `padding` (binnenruimte binnen elementen) demonstreren en toepassen op containers en items.
+3. **Flexbox-basisprincipes & Flexbox-spel:**
+   * Concept van flex-container (parent) en flex-items (children) verkennen.
+   * Werking van de hoofd-as en dwars-as ontdekken met eigenschappen zoals `display: flex`, `justify-content` en `align-items`.
+   * Flexbox-oefenspel doorlopen om uitlijning in te oefenen.
+4. **Header en navigatie opbouwen:**
+   * Semantische headerstructuur opzetten met een logo/titel en navigatiemenu (`<header>`, `<nav>`, `<a>`).
+   * Navigatie horizontaal uitlijnen en netjes verdelen via Flexbox met passende `gap`, `padding` en link-styling.
 
 ### Leerplandoelen
 * **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.
 * **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
 * **CRS06:** Vlot en efficiënt werken met een professionele code-editor (Visual Studio Code).
 * **CRS18:** Een semantisch correcte, functionele en gestijlde multipage website (Receptenboek) met coherente navigatie realiseren.
-* **CRS21:** Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels.
-* **CRS22:** Lay-outsystemen (Flexbox voor navigatie en Grid voor cards en side-by-side presentaties) doelgericht opzetten.
-* **CRS23:** Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser.
-* **CRS27:** De webbestanden (HTML, CSS, assets) volgens de afgesproken structuur en naamgeving tijdig opleveren.
+* **CRS21:** Typografische hiërarchie, afstanden (margin/padding) en leesbaarheid doordacht vormgeven via CSS-stijlregels.
+* **CRS22:** Lay-outsystemen (Flexbox voor de navigatiebalk) doelgericht opzetten met oog op container- en item-eigenschappen.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
