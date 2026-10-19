@@ -117,4 +117,33 @@
 * **CRS21:** Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels.
 * **CRS22:** Lay-outsystemen (Flexbox voor navigatie en Grid voor cards en side-by-side presentaties) doelgericht opzetten.
 * **CRS23:** Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser.
+
+## Les 5 19/10/2026 (Web, 13:30 - 16:10)
+
+### Stadsgids: Flexbox, box-model herhaling en opzet stadspagina's
+
+### Lesverloop & inhoud
+1. **Lay-out met Flexbox:**
+   * Didactisch Flexbox-spel als introductie op as-uitlijning (`justify-content`, `align-items`, `flex-direction`).
+2. **Herhaling box-model en lay-outtechnieken:**
+   * Doelgericht onderscheid tussen content, `padding`, `border` en `margin`.
+   * Flexbox toepassen voor flexibele componenten: navigatiebalken, knoppen en contentblokken.
+3. **Demonstratie landingspagina (`index.html`):**
+   * Live coding van de hero-sectie en het card-grid met tussenruimtes (`gap`).
+   * Koppeling tussen CSS-selectors, visuele hiërarchie en semantische elementen toelichten.
+4. **Opzet en structuur van de stadspagina's:**
+   * Afgeleide pagina's (`stad_1.html`, `stad_2.html`, `stad_3.html`) opzetten vanuit de afgewerkte structuur van de landingspagina.
+   * Globale header en footer consistent doortrekken met correcte relatieve paden en actieve menustatus.
+   * Paginaspecifieke structuur voorbereiden voor introductie, bezienswaardigheden en media.
+5. **Zelfstandig werk en technische validatie:**
+   * Uitwerken van de eigen navigatie en box-model styling in Visual Studio Code.
+   * Tussentijdse browsercontrole op correcte uitlijning, schaling en linkwerking.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) analyseren en toepassen.
+* **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
+* **CRS06:** Vlot en efficiënt werken met ontwerptools en een professionele code-editor (Visual Studio Code).
+* **CRS18:** Een semantisch correcte, functionele en gestijlde multipage website (Stadsgids) met coherente navigatie realiseren.
+* **CRS21:** Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels.
+* **CRS22:** Lay-outsystemen (Flexbox voor navigatie en componenten, box-model spacing) doelgericht opzetten.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.

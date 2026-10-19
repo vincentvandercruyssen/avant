@@ -231,6 +231,11 @@
               <a href="{{ .RelPermalink }}" target="_blank" style="font-size: 0.85rem; color: color-mix(in srgb, var(--text) 60%, transparent);">Planning</a><br />
             {{ end }}
           {{ end }}
+          {{ with $page.OutputFormats.Get "Puntenverdeling" }}
+            {{ if (or $page.Params.indieningen $page.Params.leerplandoelen $page.Params.evaluatie $page.Params.doelen) }}
+              <a href="{{ .RelPermalink }}" target="_blank" style="font-size: 0.85rem; color: color-mix(in srgb, var(--text) 60%, transparent);">Puntenverdeling</a><br />
+            {{ end }}
+          {{ end }}
           <time datetime="{{ $page.Date | time.Format $.Site.Params.dateFormatISO }}" class="pill">
             {{ $page.Date | time.Format $.Site.Params.dateFormat }}
           </time>

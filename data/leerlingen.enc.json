@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "algorithm": "AES-256-GCM",
+    "kdf": "PBKDF2-SHA256",
+    "iterations": 100000,
+    "salt": "FO7buC2u4q7pvGj5tWGA/Q==",
+    "hashAlgorithm": "SHA-256",
+    "hashLength": 10,
+    "updatedAt": "2026-10-19T19:07:40.781Z"
+  },
+  "classes": {
+    "5CRM": [
+      {
+        "hash": "8ab009875a",
+        "enc": "CuhcXO2WZ/baPkJ4OkseLIICe4aL5g+xJFpHGXRjQofcBTT8bhPbm3kuU9ZQ+73sHoORaA=="
+      },
+      {
+        "hash": "efe6054d9e",
+        "enc": "iZWDnaps9VJmWAqFEoX3solOqJuFcV6ORvAEx4eGIO+nKjzg24GCoZBoFBd/mXCU9ipI"
+      },
+      {
+        "hash": "8ec556f315",
+        "enc": "KZGrJR9jAUzjY1b0xfj7NrbOymvoA8bGAq6cpSDwq6q1A6tO1cbh"
+      },
+      {
+        "hash": "d61daca6ab",
+        "enc": "eyOYl69FvpwZPR3ctOmG2rSGB/KzuVhM4LPvw9m2xFWvduDVDoEePuwE373J"
+      },
+      {
+        "hash": "539ecc3e56",
+        "enc": "libDCKkoChLwr6jZCcgr5wLMwJg4mjV5McPlPybV5dME5f5cc2oJWX0EVg=="
+      },
+      {
+        "hash": "7b34d9351e",
+        "enc": "eBCE6NtE3P/cOrgq5icmpq2s+CvfkqMluo0ah6jHLpohV7oqwWtG6QqJ00XkKoA7Rg=="
+      },
+      {
+        "hash": "c8424a486b",
+        "enc": "kHHlHJqvveJHGr39KkLIXzJLZdEsk4TAVB85qOf2tlDVDv6od+Ooyw=="
+      },
+      {
+        "hash": "dc2916b34a",
+        "enc": "QVR5QDaiNMHYMks46fBbuwMgMsLI68d7ZUcX88R2nNNWXlurUS7yhA=="
+      },
+      {
+        "hash": "60c8618064",
+        "enc": "8b72uzTYqbG91T4EOJsi5ULahrxlhaTDGmfdMyZy3T+CTV2SFcTnCtRZf/U="
+      },
+      {
+        "hash": "9a8226cc52",
+        "enc": "uPotSkqhIqjZM+hEo9VVipXWoediVJxF+9ULKaI8XGM81wL/vzuEsqIM"
+      },
+      {
+        "hash": "0b2d4d6f3a",
+        "enc": "oYdyj0bu77vtINElEqdUBvOMETBMlMXv5bBO+VnisNQ1QnT2XvchFLk="
+      },
+      {
+        "hash": "bcfe83d392",
+        "enc": "PmWh4Fv8/x0/Us4rUB3wl6KKRBRSlaFOxDa8HN3k3fXVU5J2xov6sPr4fA=="
+      }
+    ],
+    "6CRM": [
+      {
+        "hash": "bfa5afc5c6",
+        "enc": "GNlbaMEs52r1Wpe2eGmqZHznkqSDMuHdBXRuSRia8Ti1xf/yBxaaFdQ="
+      },
+      {
+        "hash": "0b6de5c593",
+        "enc": "6rubFltVncOqBQv6XdZFuzCr8SYF4icWBSJgSbG3oVOMGlZP++K8HQpF"
+      },
+      {
+        "hash": "d1effb49ee",
+        "enc": "+ySFs33KvU1xg4Z6MAf99l6RIMK7BtHhmj+UB4OGpppm0QZanms="
+      },
+      {
+        "hash": "37bc16a272",
+        "enc": "B7R6G/bzS1+KujGMXmTdKq0ZcvchNoWKn2LaKMctWXwFfGlPbOsOKG91yir5"
+      }
+    ]
+  }
+}

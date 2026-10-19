@@ -1,14 +1,30 @@
-{{ $rawDoelen := .Params.leerplandoelen | default .Params.evaluatie | default .Params.doelen }}
+{{ $rawDoelen := slice }}
+{{ with .Params.indieningen }}
+  {{ range . }}
+    {{ $subTitel := .titel | default .naam | default "Indiening" }}
+    {{ with .leerplandoelen }}
+      {{ range . }}
+        {{ $rawDoelen = $rawDoelen | append (dict "code" .code "criterium" .criterium "gewicht" (.gewicht | default 1) "submissie" $subTitel) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ $rawDoelen = .Params.leerplandoelen | default .Params.evaluatie | default .Params.doelen }}
+{{ end }}
 {{ $items := slice }}
 
 {{ with $rawDoelen }}
   {{ range . }}
     {{ $code := "" }}
     {{ $criterium := "" }}
+    {{ $gewicht := 1 }}
+    {{ $submissie := "" }}
 
     {{ if reflect.IsMap . }}
       {{ $code = .code | default .doel | default .id | default "" }}
       {{ $criterium = .criterium | default .succescriterium | default .omschrijving | default .tekst | default .titel | default "" }}
+      {{ $gewicht = int (.gewicht | default 1) }}
+      {{ $submissie = .submissie | default "" }}
     {{ else }}
       {{ $code = print . }}
     {{ end }}
@@ -21,7 +37,7 @@
         {{ $clusterId = $doel.cluster | default "overig" }}
       {{ end }}
 
-      {{ $item := dict "code" $code "criterium" $criterium "doel" $doel "cluster" $clusterId }}
+      {{ $item := dict "code" $code "criterium" $criterium "doel" $doel "cluster" $clusterId "gewicht" $gewicht "submissie" $submissie }}
       {{ $items = $items | append $item }}
     {{ end }}
   {{ end }}
@@ -120,13 +136,15 @@
           {{ $hasCustomText := and .criterium (ne (trim .criterium " ") "") }}
           <tr class="sc-criterium-row">
             <td class="sc-criterium-text">
+              {{ with .submissie }}<span class="sc-sub-pill">{{ . }}</span>{{ end }}
               {{ if $hasCustomText }}
-                {{ .criterium }} ({{ .code }})
+                {{ .criterium }}
               {{ else if .doel }}
-                {{ .doel.omschrijving | default .doel.titel }} ({{ .code }})
+                {{ .doel.omschrijving | default .doel.titel }}
               {{ else }}
                 {{ .code }}
               {{ end }}
+              <span class="sc-meta-tag">({{ .code }}{{ with .gewicht }}{{ if gt . 1 }}, {{ . }}× gewicht{{ end }}{{ end }})</span>
             </td>
             <td class="sc-score-cell"></td>
           </tr>
@@ -170,13 +188,15 @@
         {{ $hasCustomText := and .criterium (ne (trim .criterium " ") "") }}
         <tr class="sc-criterium-row">
           <td class="sc-criterium-text">
+            {{ with .submissie }}<span class="sc-sub-pill">{{ . }}</span>{{ end }}
             {{ if $hasCustomText }}
-              {{ .criterium }} ({{ .code }})
+              {{ .criterium }}
             {{ else if .doel }}
-              {{ .doel.omschrijving | default .doel.titel }} ({{ .code }})
+              {{ .doel.omschrijving | default .doel.titel }}
             {{ else }}
               {{ .code }}
             {{ end }}
+            <span class="sc-meta-tag">({{ .code }}{{ with .gewicht }}{{ if gt . 1 }}, {{ . }}× gewicht{{ end }}{{ end }})</span>
           </td>
           <td class="sc-score-cell"></td>
         </tr>

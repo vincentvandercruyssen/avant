@@ -46,9 +46,15 @@ buildFuture = true
   baseName = "planning"
   isPlainText = false
 
+[outputFormats.Puntenverdeling]
+  name = "Puntenverdeling"
+  mediaType = "text/html"
+  baseName = "puntenverdeling"
+  isPlainText = false
+
 [outputs]
   home = ["HTML"]
-  page = ["HTML", "Planning"]
+  page = ["HTML", "Planning", "Puntenverdeling"]
   section = ["HTML"]
   taxonomy = ["HTML"]
   term = ["HTML"]

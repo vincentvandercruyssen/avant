@@ -10,3 +10,11 @@
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Local student identity (PII with names)
+*.local.json
+data/*.local.json
+data/leerlingen*.json
+!data/leerlingen.enc.json
+!data/leerlingen_enc.json
+scripts/__pycache__/

@@ -1,0 +1,153 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.1.0",
+  "assignmentId": "5crm-vormen",
+  "classGroup": "5CRM",
+  "lastUpdated": "2026-10-19T17:00:00.000Z",
+  "submissions": {
+    "pinboard-storyboard": {
+      "id": "pinboard-storyboard",
+      "title": "Vormen 3.1+3.2 Pinboard + Storyboard (4 comps)",
+      "weight": 10,
+      "clusters": [
+        { "id": "4.1", "naam": "Analyse & workflow" },
+        { "id": "4.3", "naam": "Multimediaproductie" }
+      ],
+      "evaluations": {
+        "8ab009875a": {
+          "scores": { "4.1": 9.2, "4.3": 6.7 },
+          "criteriaLevels": { "CRS03": 3, "CRS01": 2, "CRS02": 3, "CRS07": 2 },
+          "feedback": "Zeer verzorgd storyboard met heldere bewegingspijlen. Het pinboard toont goede inspiratie voor motion design."
+        },
+        "efe6054d9e": {
+          "scores": { "4.1": 6.7, "4.3": 6.7 },
+          "criteriaLevels": { "CRS03": 2, "CRS01": 2, "CRS02": 2, "CRS07": 2 },
+          "feedback": "Goede basis, let bij storyboarden nog beter op het specificeren van de easing en rotaties."
+        },
+        "8ec556f315": {
+          "scores": { "4.1": 9.2, "4.3": 10.0 },
+          "criteriaLevels": { "CRS03": 3, "CRS01": 3, "CRS02": 2, "CRS07": 3 },
+          "feedback": "Uitstekend pinboard en gedetailleerde compositieschetsen voor alle 4 de formaten."
+        },
+        "d61daca6ab": {
+          "scores": { "4.1": 5.8, "4.3": 6.7 },
+          "criteriaLevels": { "CRS03": 2, "CRS01": 1, "CRS02": 2, "CRS07": 2 },
+          "feedback": "Analyseer de formaten grondiger in het schetsboek."
+        },
+        "539ecc3e56": {
+          "scores": { "4.1": 10.0, "4.3": 10.0 },
+          "criteriaLevels": { "CRS03": 3, "CRS01": 3, "CRS02": 3, "CRS07": 3 },
+          "feedback": "Topwerk! Zowel de 4 composities als het referentiemateriaal zijn voorbeeldig."
+        },
+        "7b34d9351e": {
+          "scores": { "4.1": 4.2, "4.3": 6.7 },
+          "criteriaLevels": { "CRS03": 1, "CRS01": 2, "CRS02": 1, "CRS07": 2 },
+          "feedback": "Vormparameters en transformaties moeten duidelijker genoteerd worden."
+        },
+        "c8424a486b": {
+          "scores": { "4.1": 7.5, "4.3": 6.7 },
+          "criteriaLevels": { "CRS03": 2, "CRS01": 2, "CRS02": 3, "CRS07": 2 },
+          "feedback": "Prima uitingen en heldere aanduiding van ankerpunten."
+        },
+        "dc2916b34a": {
+          "scores": { "4.1": 6.7, "4.3": 6.7 },
+          "criteriaLevels": { "CRS03": 2, "CRS01": 2, "CRS02": 2, "CRS07": 2 },
+          "feedback": "Degelijk storyboard, let op de timingaanduidingen."
+        },
+        "60c8618064": {
+          "scores": { "4.1": 9.2, "4.3": 10.0 },
+          "criteriaLevels": { "CRS03": 3, "CRS01": 2, "CRS02": 3, "CRS07": 3 },
+          "feedback": "Zeer creatief pinboard met sterke abstracte referenties."
+        },
+        "9a8226cc52": {
+          "scores": { "4.1": 5.8, "4.3": 3.3 },
+          "criteriaLevels": { "CRS03": 2, "CRS01": 2, "CRS02": 1, "CRS07": 1 },
+          "feedback": "Pinboard mist diepgang en referenties naar concrete motion technieken."
+        },
+        "0b2d4d6f3a": {
+          "scores": { "4.1": 8.3, "4.3": 10.0 },
+          "criteriaLevels": { "CRS03": 3, "CRS01": 2, "CRS02": 2, "CRS07": 3 },
+          "feedback": "Mooie compositieschetsen en heldere keuzes."
+        },
+        "bcfe83d392": {
+          "scores": { "4.1": 10.0, "4.3": 10.0 },
+          "criteriaLevels": { "CRS03": 3, "CRS01": 3, "CRS02": 3, "CRS07": 3 },
+          "feedback": "Volledig en accuraat uitgewerkt referentie- en schetsdossier."
+        }
+      }
+    },
+    "oplevering": {
+      "id": "oplevering",
+      "title": "Vormen 4 Oplevering",
+      "weight": 20,
+      "clusters": [
+        { "id": "4.2", "naam": "Design & lay-out" },
+        { "id": "4.3", "naam": "Multimediaproductie" },
+        { "id": "4.4", "naam": "Release & presentatie" },
+        { "id": "4.5", "naam": "Kwaliteit & context" }
+      ],
+      "evaluations": {
+        "8ab009875a": {
+          "scores": { "4.2": 20.0, "4.3": 15.0, "4.4": 20.0, "4.5": 13.3 },
+          "criteriaLevels": { "CRS21": 3, "CRS16": 2, "CRS15": 3, "CRS27": 3, "CRS06": 2, "CRS23": 2 },
+          "feedback": "Mooie animaties en strakke typografie. Easing in comp 1 mag nog iets meer dynamiek krijgen."
+        },
+        "efe6054d9e": {
+          "scores": { "4.2": 13.3, "4.3": 13.3, "4.4": 20.0, "4.5": 13.3 },
+          "criteriaLevels": { "CRS21": 2, "CRS16": 2, "CRS15": 2, "CRS27": 3, "CRS06": 2, "CRS23": 2 },
+          "feedback": "Goede oplevering. Besteed extra aandacht aan de Graph Editor voor soepelere overgangen."
+        },
+        "8ec556f315": {
+          "scores": { "4.2": 20.0, "4.3": 18.3, "4.4": 20.0, "4.5": 17.8 },
+          "criteriaLevels": { "CRS21": 3, "CRS16": 3, "CRS15": 2, "CRS27": 3, "CRS06": 3, "CRS23": 2 },
+          "feedback": "Vloeiende Graph Editor curves en punctuele oplevering volgens de mappenstructuur."
+        },
+        "d61daca6ab": {
+          "scores": { "4.2": 13.3, "4.3": 8.3, "4.4": 13.3, "4.5": 11.1 },
+          "criteriaLevels": { "CRS21": 2, "CRS16": 1, "CRS15": 2, "CRS27": 2, "CRS06": 2, "CRS23": 1 },
+          "feedback": "De 2D animaties missen nog consistentie in timing en easing."
+        },
+        "539ecc3e56": {
+          "scores": { "4.2": 20.0, "4.3": 20.0, "4.4": 20.0, "4.5": 20.0 },
+          "criteriaLevels": { "CRS21": 3, "CRS16": 3, "CRS15": 3, "CRS27": 3, "CRS06": 3, "CRS23": 3 },
+          "feedback": "Schitterend resultaat! Vloeiend, expressief en technisch vlekkeloos opgeleverd."
+        },
+        "7b34d9351e": {
+          "scores": { "4.2": 6.7, "4.3": 8.3, "4.4": 13.3, "4.5": 8.9 },
+          "criteriaLevels": { "CRS21": 1, "CRS16": 1, "CRS15": 2, "CRS27": 2, "CRS06": 1, "CRS23": 2 },
+          "feedback": "Herbekijk de opbouw van de typografische compositie en de werking van keyframes."
+        },
+        "c8424a486b": {
+          "scores": { "4.2": 13.3, "4.3": 15.0, "4.4": 20.0, "4.5": 13.3 },
+          "criteriaLevels": { "CRS21": 2, "CRS16": 2, "CRS15": 3, "CRS27": 3, "CRS06": 2, "CRS23": 2 },
+          "feedback": "Degelijke animaties met goede controle over de 2D basisvormen."
+        },
+        "dc2916b34a": {
+          "scores": { "4.2": 13.3, "4.3": 13.3, "4.4": 20.0, "4.5": 13.3 },
+          "criteriaLevels": { "CRS21": 2, "CRS16": 2, "CRS15": 2, "CRS27": 3, "CRS06": 2, "CRS23": 2 },
+          "feedback": "Prima composities, probeer de typografische hiërarchie nog dynamischer te maken."
+        },
+        "60c8618064": {
+          "scores": { "4.2": 20.0, "4.3": 18.3, "4.4": 20.0, "4.5": 20.0 },
+          "criteriaLevels": { "CRS21": 3, "CRS16": 3, "CRS15": 2, "CRS27": 3, "CRS06": 3, "CRS23": 3 },
+          "feedback": "Ritmisch heel sterk met oog voor detail en perfecte MP4-exports."
+        },
+        "9a8226cc52": {
+          "scores": { "4.2": 13.3, "4.3": 8.3, "4.4": 6.7, "4.5": 11.1 },
+          "criteriaLevels": { "CRS21": 2, "CRS16": 1, "CRS15": 2, "CRS27": 1, "CRS06": 2, "CRS23": 1 },
+          "feedback": "Let op de bestandsstructuur bij oplevering en exporteer conform de framerate specificaties."
+        },
+        "0b2d4d6f3a": {
+          "scores": { "4.2": 20.0, "4.3": 15.0, "4.4": 20.0, "4.5": 15.6 },
+          "criteriaLevels": { "CRS21": 3, "CRS16": 2, "CRS15": 3, "CRS27": 3, "CRS06": 2, "CRS23": 3 },
+          "feedback": "Mooie visuele stijl en een verzorgde renderkwaliteit."
+        },
+        "bcfe83d392": {
+          "scores": { "4.2": 20.0, "4.3": 20.0, "4.4": 20.0, "4.5": 20.0 },
+          "criteriaLevels": { "CRS21": 3, "CRS16": 3, "CRS15": 3, "CRS27": 3, "CRS06": 3, "CRS23": 3 },
+          "feedback": "Vlekkeloze voorbeelduitwerking voor alle vier de video-formaten."
+        }
+      }
+    }
+  }
+}

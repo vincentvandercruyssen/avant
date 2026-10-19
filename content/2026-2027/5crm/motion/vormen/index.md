@@ -11,27 +11,48 @@ thema: "Introductie"
 software:
   - "After Effects"
   - "Media Encoder"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Productievereisten, specifieke beeldformaten (Full HD, Portret, Ultrawide, Vierkant), 30 fps framerate en video-export grondig analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "Doelgericht de vijf transformatie-eigenschappen (Anchor Point, Position, Scale, Rotation, Opacity) en vormparameters selecteren in functie van het beoogde bewegingsritme."
-  - code: "CRS03"
-    criterium: "Vooraf een doordacht storyboard met bewegingspijlen en timing uittekenen in het schetsboek."
-  - code: "CRS06"
-    criterium: "Vlot en efficiënt werken met Adobe After Effects, vormlaag- en tijdlijncontroles, Easy Ease en Adobe Media Encoder."
-  - code: "CRS07"
-    criterium: "Inspirerende bewegingsvoorbeelden en visuele referenties doelgericht verzamelen en ordenen op een digitaal pinboard."
-  - code: "CRS15"
-    criterium: "2D-basisvormen, typografische elementen en beeldmateriaal gestructureerd opzetten in After Effects."
-  - code: "CRS16"
-    criterium: "Vier afzonderlijke, dynamische 2D-animaties en transformaties realiseren met keyframes, Easy Ease en de Graph Editor."
-  - code: "CRS21"
-    criterium: "Typografie expressief animeren met aandacht voor leesbaarheid, typografische hiërarchie en ritmische verschijning."
-  - code: "CRS23"
-    criterium: "Composities en MP4-exports controleren op correcte resoluties, framerate (30 fps) en vloeiende weergave."
-  - code: "CRS27"
-    criterium: "Het volledige After Effects-project en de vier gerenderde video's tijdig en conform de mappenstructuur opleveren in de Smartschool-uploadzone."
+indieningen:
+  - id: "pinboard-storyboard"
+    titel: "Vormen 3.1+3.2 Pinboard + Storyboard (4 comps)"
+    lesuren: 2
+    gewicht: 10
+    leerplandoelen:
+      - code: "CRS03"
+        gewicht: 2
+        criterium: "Vooraf een doordacht storyboard met bewegingspijlen en timing uittekenen in het schetsboek voor alle vier de composities (16:9, 4:5, 21:9 en 1:1)."
+      - code: "CRS07"
+        gewicht: 1
+        criterium: "Inspirerende bewegingsvoorbeelden en visuele referenties doelgericht verzamelen en ordenen op een digitaal pinboard."
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Productievereisten, specifieke beeldformaten (Full HD, Portret, Ultrawide, Vierkant) en specificaties grondig analyseren in het storyboard."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht de vijf transformatie-eigenschappen (Anchor Point, Position, Scale, Rotation, Opacity) en vormparameters aanduiden bij de schetsen."
+
+  - id: "oplevering"
+    titel: "Vormen 4 Oplevering"
+    lesuren: 4
+    gewicht: 20
+    leerplandoelen:
+      - code: "CRS16"
+        gewicht: 3
+        criterium: "Vier afzonderlijke, dynamische 2D-animaties en transformaties realiseren met keyframes, Easy Ease en de Graph Editor."
+      - code: "CRS06"
+        gewicht: 2
+        criterium: "Vlot en efficiënt werken met Adobe After Effects, vormlaag- en tijdlijncontroles, Easy Ease en Adobe Media Encoder."
+      - code: "CRS21"
+        gewicht: 2
+        criterium: "Typografie expressief animeren met aandacht voor leesbaarheid, typografische hiërarchie en ritmische verschijning (Compositie 3)."
+      - code: "CRS15"
+        gewicht: 1
+        criterium: "2D-basisvormen, typografische elementen en beeldmateriaal gestructureerd opzetten in After Effects."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Composities en MP4-exports controleren op correcte resoluties, framerate (30 fps) en vloeiende weergave."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige After Effects-project en de vier gerenderde video's tijdig en conform de mappenstructuur opleveren in de Smartschool-uploadzone."
 draft: false
 ---
 
