@@ -1,0 +1,46 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "6crm-extrude",
+  "classGroup": "6CRM",
+  "lastUpdated": "2026-10-20T07:40:55.816Z",
+  "submissions": {
+    "default": {
+      "id": "default",
+      "title": "Extrude",
+      "weight": 20,
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow"
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out"
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie"
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie"
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context"
+        }
+      ],
+      "evaluations": {
+        "bfa5afc5c6": {
+          "scores": {
+            "4.1": 0
+          },
+          "criteriaLevels": {
+            "CRS01": 0
+          }
+        }
+      }
+    }
+  }
+}

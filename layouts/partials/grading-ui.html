@@ -146,25 +146,17 @@
   <!-- Top Action & Info Bar -->
   <div class="grading-top-bar">
     <div class="grading-meta">
-      <span class="badge-dev">Lokaal Beoordelingssysteem</span>
-      <span class="badge-class">{{ $classGroup }}</span>
       <span class="badge-weight" id="badge-active-weight">Gewicht: <strong>20 pt</strong></span>
     </div>
 
     <div class="grading-main-actions">
-      <button type="button" id="btn-toggle-crypto" class="btn btn-lock" title="Leerlingnamen ontgrendelen of vergrendelen met wachtwoord">
-        <span id="crypto-lock-icon">🔐</span> <span id="crypto-lock-text">Namen ontgrendelen</span>
-      </button>
-      <button type="button" id="btn-save-rubriek" class="btn btn-primary" title="Bewaar in data/rubriek-{{ $assignmentId }}.json">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-        Opslaan
-      </button>
+      <div id="save-server-status" class="badge-status-server" title="Status van lokale opslag in avant/data/">
+        <span class="status-dot"></span>
+        <span id="save-server-text">Lokaal verbinden...</span>
+      </div>
       <button type="button" id="btn-copy-smartschool" class="btn btn-accent" title="Kopieer alle berekende clustercijfers voor de actieve indiening">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         ⚡ Kopieer voor Smartschool
-      </button>
-      <button type="button" id="btn-load-rubriek" class="btn btn-secondary" title="Open een ander JSON bestand">
-        Bestand laden
       </button>
     </div>
   </div>
@@ -188,8 +180,7 @@
     <div class="selector-controls">
       <button type="button" id="btn-prev-student" class="btn btn-nav" title="Vorige leerling (Pijltje links)">← Vorige</button>
       <div class="current-student-dropdown-wrap">
-        <label for="student-select" class="sr-only">Kies leerling:</label>
-        <select id="student-select" class="student-select-dropdown"></select>
+          <select id="student-select" class="student-select-dropdown"></select>
       </div>
       <button type="button" id="btn-next-student" class="btn btn-nav" title="Volgende leerling (Pijltje rechts)">Volgende →</button>
     </div>
@@ -200,10 +191,6 @@
   <!-- Active Student Rubric Evaluation Card -->
   <div class="active-rubric-card" id="active-rubric-card">
     <div class="rubric-student-header">
-      <div class="student-info">
-        <h2 class="active-student-name" id="display-student-name">Selecteer een leerling</h2>
-        <code class="active-student-hash" id="display-student-hash">hash</code>
-      </div>
       <div class="student-overall-score" id="display-student-score">
         <span class="overall-label">Totaal Gemiddelde:</span>
         <strong class="overall-value">-</strong>
@@ -236,51 +223,6 @@
     </div>
   </div>
 
-  <!-- Crypto Unlock & Management Modal -->
-  <div id="crypto-modal" class="grading-modal" style="display: none;">
-    <div class="grading-modal-backdrop" id="crypto-modal-backdrop"></div>
-    <div class="grading-modal-content">
-      <div class="grading-modal-header">
-        <h3 id="crypto-modal-title">🔐 Cryptografische Sleutel (AES-256-GCM)</h3>
-        <button type="button" id="btn-close-crypto-modal" class="btn-close-modal" aria-label="Sluiten">&times;</button>
-      </div>
-      <div class="grading-modal-body">
-        <p class="crypto-modal-desc">
-          Alle leerlingnamen zijn cryptografisch versleuteld. Voer je docentenwachtwoord in om de namen lokaal in het browsergeheugen te ontsleutelen via de Web Crypto API.
-        </p>
-        <div class="crypto-input-group">
-          <label for="crypto-passphrase-input">Docenten Wachtwoord / Sleutel:</label>
-          <div class="crypto-input-row">
-            <input type="password" id="crypto-passphrase-input" placeholder="Wachtwoord (standaard: avant2026)..." autocomplete="current-password">
-            <button type="button" id="btn-submit-unlock" class="btn btn-primary">Ontgrendelen</button>
-          </div>
-        </div>
-        <div class="crypto-remember-row">
-          <label>
-            <input type="checkbox" id="crypto-remember-session" checked>
-            Onthoud tijdens deze browsersessie (tot tabblad sluit)
-          </label>
-        </div>
-        <div id="crypto-status-msg" class="crypto-status-msg" style="display: none;"></div>
-
-        <div id="crypto-unlocked-actions" style="display: none; margin-top: 1rem;">
-          <button type="button" id="btn-relock" class="btn btn-secondary">🔒 Vergrendel opnieuw (wis uit geheugen)</button>
-        </div>
-
-        <hr class="crypto-modal-divider">
-
-        <details class="crypto-tools-details">
-          <summary>🛠️ Nieuwe leerlingenlijst versleutelen</summary>
-          <p class="crypto-sub-info">Plak namen (één per regel) om direct in de browser een nieuwe versleutelde dataset te genereren voor <code>{{ $classGroup }}</code>.</p>
-          <textarea id="crypto-raw-names-input" rows="4" placeholder="Voornaam Achternaam&#10;Voornaam Achternaam..."></textarea>
-          <div class="crypto-input-row" style="margin-top: 0.5rem;">
-            <input type="password" id="crypto-new-passphrase" placeholder="Kies nieuw wachtwoord...">
-            <button type="button" id="btn-generate-encrypted-dataset" class="btn btn-secondary">Versleutel & Download</button>
-          </div>
-        </details>
-      </div>
-    </div>
-  </div>
 </div>
 
 {{/* Gegevensinjectie: UITSLUITEND versleutelde gegevens (Zero-Knowledge Privacy) */}}
@@ -298,14 +240,14 @@
 </script>
 
 {{- with resources.Get "css/grading.css" }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}">
+  <link rel="stylesheet" href="{{ .RelPermalink }}?v={{ now.Unix }}">
 {{- else }}
-  <link rel="stylesheet" href="{{ "css/grading.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/grading.css" | relURL }}?v={{ now.Unix }}">
 {{- end }}
 {{- with resources.Get "js/rubriek.js" }}
-  <script src="{{ .RelPermalink }}" defer></script>
+  <script src="{{ .RelPermalink }}?v={{ now.Unix }}" defer></script>
 {{- else }}
-  <script src="{{ "js/rubriek.js" | relURL }}" defer></script>
+  <script src="{{ "js/rubriek.js" | relURL }}?v={{ now.Unix }}" defer></script>
 {{- end }}
 
 {{ else }}

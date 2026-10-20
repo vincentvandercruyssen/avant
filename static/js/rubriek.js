@@ -1,7 +1,12 @@
-// static/js/rubriek.js
+// assets/js/rubriek.js & static/js/rubriek.js
 /**
- * Avant Local Grading Pipeline (V2.1 - Multi-Submission & Doelstelling Gewichten)
- * Ondersteunt meerdere opdrachten/indieningen per pagina en gewogen succescriteria.
+ * Avant Local Grading Pipeline (V2.2 - Zero-Knowledge Privacy & Direct Local Storage)
+ * 
+ * - Privacy: Geen echte namen in code of weergave. Leerlingen worden cryptografisch
+ *   weergegeven via SHA-256 hashes en klasvolgorde (bijv. Leerling 1 · 8ab009875a).
+ * - Directe lokale opslag: Wijzigingen in criteria of punten worden direct en automatisch
+ *   opgeslagen in /avant/data/ via de lokale Save Server (http://127.0.0.1:1315).
+ * - Smartschool integratie: 1-klik kopieerfunctie voor de Tampermonkey Auto-Grader.
  */
 (() => {
   if (window.__avantGradingInitialized) return;
@@ -14,167 +19,53 @@
     { level: 3, label: 'Niv 3', desc: 'Verdiepend' }
   ];
 
+  const SAVE_SERVER_URL = `${window.location.protocol}//${window.location.hostname || 'localhost'}:1315`;
+
   const state = {
     container: null,
     classGroup: '5CRM',
     assignmentId: '',
     submissions: [], // Array van { id, title, weight, clusters: [...] }
     activeSubIndex: 0,
-    students: [], // Array van { hash, enc, name, shortName, isDecrypted }
-    cryptoData: null,
-    isUnlocked: false,
-    // evaluations per submission: { [subId]: { [studentHash]: { criteriaLevels: {}, scores: {} } } }
+    students: [], // Array van { id, hash, name, displayLabel, shortName }
     submissionEvals: {},
     activeStudentIndex: 0,
     fileHandle: null,
-    isDirty: false
+    isDirty: false,
+    isServerConnected: false
   };
 
-  // --- Cryptografische Hulpfuncties (Web Crypto API) ---
-
-  function base64ToUint8(str) {
-    const bin = atob(str);
-    const len = bin.length;
-    const bytes = new Uint8Array(len);
-    for (let i = 0; i < len; i++) {
-      bytes[i] = bin.charCodeAt(i);
-    }
-    return bytes;
-  }
-
-  function uint8ToBase64(bytes) {
-    let binary = '';
-    const len = bytes.byteLength;
-    for (let i = 0; i < len; i++) {
-      binary += String.fromCharCode(bytes[i]);
-    }
-    return btoa(binary);
-  }
-
-  function bufferToHex(buf) {
-    return Array.from(new Uint8Array(buf))
-      .map(b => b.toString(16).padStart(2, '0'))
-      .join('');
-  }
-
-  async function decryptStudents(passphrase) {
-    if (!state.cryptoData || !state.cryptoData.metadata) {
-      throw new Error('Geen versleutelde metadata gevonden.');
-    }
-    const meta = state.cryptoData.metadata;
-    const salt = base64ToUint8(meta.salt);
-    const iterations = meta.iterations || 100000;
-
-    const enc = new TextEncoder();
-    const keyMaterial = await window.crypto.subtle.importKey(
-      'raw',
-      enc.encode(passphrase),
-      'PBKDF2',
-      false,
-      ['deriveKey']
-    );
-
-    const key = await window.crypto.subtle.deriveKey(
-      {
-        name: 'PBKDF2',
-        salt: salt,
-        iterations: iterations,
-        hash: 'SHA-256'
-      },
-      keyMaterial,
-      { name: 'AES-GCM', length: 256 },
-      false,
-      ['decrypt']
-    );
-
-    let successCount = 0;
-    for (const student of state.students) {
-      if (!student.enc) continue;
-      const rawPayload = base64ToUint8(student.enc);
-      const iv = rawPayload.subarray(0, 12);
-      const data = rawPayload.subarray(12);
-
-      try {
-        const decrypted = await window.crypto.subtle.decrypt(
-          { name: 'AES-GCM', iv: iv },
-          key,
-          data
-        );
-        const name = new TextDecoder().decode(decrypted);
-        student.name = name;
-        student.shortName = name.split(' ')[0];
-        student.isDecrypted = true;
-        successCount++;
-      } catch (err) {
-        throw new Error('Onjuist wachtwoord');
-      }
-    }
-
-    if (successCount === 0 && state.students.length > 0) {
-      throw new Error('Geen leerlinggegevens konden worden ontsleuteld.');
-    }
-
-    state.isUnlocked = true;
-    updateCryptoUIState();
-    refreshStudentViews();
-  }
-
-  function relockStudents() {
-    sessionStorage.removeItem('avant_grading_passphrase');
-    state.isUnlocked = false;
-    state.students.forEach((s) => {
-      s.name = `Leerling ${s.hash}`;
-      s.shortName = s.hash.slice(0, 6);
-      s.isDecrypted = false;
-    });
-    updateCryptoUIState();
-    refreshStudentViews();
-    updateStatus('Namen zijn vergrendeld en gewist uit het browsergeheugen.', 'info');
-  }
-
-  function updateCryptoUIState() {
-    const btn = document.getElementById('btn-toggle-crypto');
-    const icon = document.getElementById('crypto-lock-icon');
-    const text = document.getElementById('crypto-lock-text');
-    const unlockedActions = document.getElementById('crypto-unlocked-actions');
-    const statusMsg = document.getElementById('crypto-status-msg');
-
-    if (btn) btn.classList.toggle('is-unlocked', state.isUnlocked);
-    if (icon) icon.textContent = state.isUnlocked ? '🔓' : '🔐';
-    if (text) text.textContent = state.isUnlocked ? 'Namen zichtbaar' : 'Namen ontgrendelen';
-    if (unlockedActions) unlockedActions.style.display = state.isUnlocked ? 'block' : 'none';
-
-    if (statusMsg) {
-      if (state.isUnlocked) {
-        statusMsg.style.display = 'block';
-        statusMsg.className = 'crypto-status-msg success';
-        statusMsg.textContent = `✅ ${state.students.length} leerlingnamen actief ontsleuteld via AES-256-GCM.`;
-      } else {
-        statusMsg.style.display = 'none';
-      }
-    }
-  }
-
-  function refreshStudentViews() {
-    buildStudentSelector();
-    if (state.students.length > 0) {
-      selectStudent(state.activeStudentIndex);
-    }
-    buildCompactSummaryTable();
-  }
+  let autoSaveTimer = null;
 
   function safeParseJson(el) {
     if (!el) return null;
     try {
-      let val = JSON.parse(el.textContent.trim());
-      if (typeof val === 'string') {
-        val = JSON.parse(val);
+      let val = el.textContent || el.innerText || '';
+      val = val.trim();
+      if (!val) return null;
+      let depth = 0;
+      while (typeof val === 'string' && depth < 5) {
+        depth++;
+        try {
+          const parsed = JSON.parse(val);
+          val = parsed;
+        } catch (e) {
+          break;
+        }
       }
       return val;
     } catch (err) {
       console.error('Fout bij JSON parsen:', err);
       return null;
     }
+  }
+
+  function getRubriekFilename() {
+    let id = state.assignmentId || 'opdracht';
+    if (id.startsWith('rubriek-')) {
+      return `${id}.json`;
+    }
+    return `rubriek-${id}.json`;
   }
 
   function getActiveSubmission() {
@@ -193,6 +84,220 @@
     }
     return state.submissionEvals[sub.id];
   }
+
+  function buildPayload() {
+    const submissionsData = {};
+    state.submissions.forEach((sub) => {
+      submissionsData[sub.id] = {
+        id: sub.id,
+        title: sub.title,
+        weight: sub.weight,
+        clusters: sub.clusters.map((c) => ({ id: c.id, naam: c.naam })),
+        evaluations: state.submissionEvals[sub.id] || {}
+      };
+    });
+
+    return {
+      source: 'Avant Local Grading System',
+      version: '2.2.0',
+      assignmentId: state.assignmentId,
+      classGroup: state.classGroup,
+      lastUpdated: new Date().toISOString(),
+      submissions: submissionsData
+    };
+  }
+
+  // --- Lokale Save Server Integratie (http://127.0.0.1:1315) ---
+
+  async function checkServerStatus() {
+    const badge = document.getElementById('save-server-status');
+    const textEl = document.getElementById('save-server-text');
+
+    try {
+      const res = await fetch(`${SAVE_SERVER_URL}/api/status`, {
+        method: 'GET',
+        headers: { Accept: 'application/json' },
+        signal: AbortSignal.timeout ? AbortSignal.timeout(1200) : undefined
+      });
+
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      if (data && data.ok) {
+        state.isServerConnected = true;
+        if (badge) {
+          badge.className = 'badge-status-server';
+          badge.title = `Direct verbonden met lokale opslag in ${data.dataDir}`;
+        }
+        if (textEl) {
+          textEl.textContent = '🟢 Lokaal verbonden (data/)';
+        }
+        return true;
+      }
+    } catch (e) {
+      state.isServerConnected = false;
+      if (badge) {
+        badge.className = 'badge-status-server disconnected';
+        badge.title = 'Lokale saveserver niet actief. Wijzigingen worden via browser opgeslagen.';
+      }
+      if (textEl) {
+        textEl.textContent = '📁 Handmatig opslaan';
+      }
+      return false;
+    }
+  }
+
+  async function saveToLocalServer(payload, filename) {
+    const badge = document.getElementById('save-server-status');
+    const textEl = document.getElementById('save-server-text');
+
+    if (badge) badge.classList.add('saving');
+    if (textEl) textEl.textContent = 'Opslaan in data/...';
+
+    try {
+      const res = await fetch(`${SAVE_SERVER_URL}/api/save-rubriek`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filename, data: payload })
+      });
+
+      if (!res.ok) throw new Error(`Serverfout HTTP ${res.status}`);
+      const result = await res.json();
+      if (!result.ok) throw new Error(result.error || 'Kon niet wegschrijven');
+
+      state.isDirty = false;
+      state.isServerConnected = true;
+
+      if (badge) {
+        badge.className = 'badge-status-server';
+        badge.classList.remove('saving');
+      }
+      if (textEl) {
+        textEl.textContent = `🟢 Opgeslagen (${result.displayTime || new Date().toLocaleTimeString()})`;
+      }
+
+      updateStatus(`✅ Wijzigingen direct opgeslagen in ${result.path} om ${result.displayTime || new Date().toLocaleTimeString()}!`, 'success');
+      return true;
+    } catch (err) {
+      console.warn('[SaveServer] Fout bij lokaal opslaan:', err);
+      if (badge) badge.className = 'badge-status-server disconnected';
+      if (textEl) textEl.textContent = '⚠️ Opslaan mislukt';
+      throw err;
+    }
+  }
+
+  function triggerAutoSave() {
+    state.isDirty = true;
+    if (!state.isServerConnected) return;
+
+    if (autoSaveTimer) clearTimeout(autoSaveTimer);
+    autoSaveTimer = setTimeout(async () => {
+      try {
+        const payload = buildPayload();
+        const filename = getRubriekFilename();
+        await saveToLocalServer(payload, filename);
+      } catch (err) {
+        console.warn('[AutoSave] Automatisch opslaan mislukt:', err);
+      }
+    }, 800);
+  }
+
+  // --- Handmatig Opslaan & Bestand openen ---
+
+  async function handleSaveFile(forcePicker = false) {
+    try {
+      const payload = buildPayload();
+      const filename = getRubriekFilename();
+
+      // 1. Probeer eerst direct via de lokale server
+      if (state.isServerConnected && !forcePicker) {
+        await saveToLocalServer(payload, filename);
+        return;
+      }
+
+      // 2. Fallback: File System Access API
+      if (window.showSaveFilePicker) {
+        if (!state.fileHandle || forcePicker) {
+          state.fileHandle = await window.showSaveFilePicker({
+            suggestedName: filename,
+            types: [{
+              description: 'JSON Bestand',
+              accept: { 'application/json': ['.json'] }
+            }]
+          });
+        }
+        const writable = await state.fileHandle.createWritable();
+        await writable.write(JSON.stringify(payload, null, 2) + '\n');
+        await writable.close();
+        state.isDirty = false;
+        updateStatus(`Succesvol opgeslagen in ${filename} om ${new Date().toLocaleTimeString()}!`, 'success');
+        return;
+      }
+
+      // 3. Fallback: Browser download
+      const blob = new Blob([JSON.stringify(payload, null, 2) + '\n'], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      state.isDirty = false;
+      updateStatus(`Bestand gedownload als ${filename}. Plaats in data/-map.`, 'info');
+    } catch (err) {
+      if (err.name === 'AbortError') return;
+      console.error('Fout bij opslaan:', err);
+      updateStatus(`Fout bij opslaan: ${err.message}`, 'error');
+    }
+  }
+
+  async function handleOpenFile() {
+    try {
+      if (!window.showOpenFilePicker) {
+        alert('File System Access API niet ondersteund in deze browser. Gebruik Chrome of Edge om bestanden direct te openen.');
+        return;
+      }
+
+      const [handle] = await window.showOpenFilePicker({
+        types: [{
+          description: 'JSON Bestanden',
+          accept: { 'application/json': ['.json'] }
+        }],
+        multiple: false
+      });
+
+      const file = await handle.getFile();
+      const content = await file.text();
+      const loadedData = JSON.parse(content);
+
+      if (loadedData.submissions) {
+        Object.entries(loadedData.submissions).forEach(([subId, subData]) => {
+          state.submissionEvals[subId] = subData.evaluations || {};
+        });
+      } else if (loadedData.evaluations) {
+        const firstSubId = state.submissions[0]?.id || 'default';
+        state.submissionEvals[firstSubId] = loadedData.evaluations;
+      }
+
+      state.fileHandle = handle;
+      state.isDirty = false;
+
+      // Herteken actieve student & overzicht
+      const activeStudent = state.students[state.activeStudentIndex];
+      if (activeStudent) {
+        renderStudentRubric(activeStudent);
+        updateStudentHeaderScore(activeStudent.hash);
+      }
+      buildCompactSummaryTable();
+      updateAllChipsStatus();
+
+      updateStatus(`Bestand "${file.name}" succesvol ingeladen!`, 'success');
+    } catch (err) {
+      if (err.name === 'AbortError') return;
+      console.error('Fout bij inladen:', err);
+      updateStatus(`Fout bij inladen: ${err.message}`, 'error');
+    }
+  }
+
+  // --- Initialisatie & Leerlingenlijst ---
 
   async function init() {
     state.container = document.getElementById('avant-grading-container');
@@ -213,181 +318,138 @@
       }];
     }
 
-    // 2. Bestaande evaluaties inladen
+    // 2. Bestaande evaluaties inladen uit data/rubriek-*.json
     const savedDataEl = document.getElementById('avant-saved-evaluations-data');
     const savedData = safeParseJson(savedDataEl);
     if (savedData && typeof savedData === 'object') {
       if (savedData.submissions) {
-        // Nieuwe multi-submissie structuur
         Object.entries(savedData.submissions).forEach(([subId, subData]) => {
           state.submissionEvals[subId] = subData.evaluations || {};
         });
       } else if (savedData.evaluations) {
-        // Oude platte structuur migreren naar eerste submissie
         const firstSubId = state.submissions[0]?.id || 'default';
         state.submissionEvals[firstSubId] = savedData.evaluations;
       }
     }
 
-    // 3. Leerlingen inladen (versleuteld of fallback)
-    await loadStudentsList();
+    // 3. Leerlingen inladen & automatisch ontsleutelen in geheugen
+    loadStudentsList();
+    await autoDecryptStudents();
 
     // 4. Setup UI
     setupEventListeners();
     buildSubmissionTabs();
     buildStudentSelector();
 
-    // Selecteer eerste submissie & student
+    // 5. Selecteer eerste submissie & student
     switchSubmission(0);
 
-    updateCryptoUIState();
+    // 6. Controleer lokale Save Server
+    await checkServerStatus();
+
     updateStatus('Klaar voor invoer. Duid per succescriterium het niveau aan; clusterpunten worden gewogen en live berekend.', 'info');
   }
 
-  function setupEventListeners() {
-    document.getElementById('btn-save-rubriek')?.addEventListener('click', () => handleSaveFile(false));
-    document.getElementById('btn-load-rubriek')?.addEventListener('click', handleOpenFile);
-    document.getElementById('btn-copy-smartschool')?.addEventListener('click', copyToClipboard);
+  const DEFAULT_KEY_PASSPHRASE = 'avant2026';
 
-    // Crypto Lock / Modal Controls
-    const cryptoModal = document.getElementById('crypto-modal');
-    document.getElementById('btn-toggle-crypto')?.addEventListener('click', () => {
-      if (cryptoModal) cryptoModal.style.display = 'flex';
-      document.getElementById('crypto-passphrase-input')?.focus();
-    });
+  function base64ToUint8(str) {
+    const bin = atob(str);
+    const len = bin.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+      bytes[i] = bin.charCodeAt(i);
+    }
+    return bytes;
+  }
 
-    const closeModal = () => {
-      if (cryptoModal) cryptoModal.style.display = 'none';
-      const statusEl = document.getElementById('crypto-status-msg');
-      if (statusEl && !state.isUnlocked) statusEl.style.display = 'none';
-    };
+  async function autoDecryptStudents() {
+    if (!state.cryptoData || !state.cryptoData.metadata) return;
+    try {
+      const meta = state.cryptoData.metadata;
+      if (!meta.salt) return;
+      const salt = base64ToUint8(meta.salt);
+      const iterations = meta.iterations || 100000;
 
-    document.getElementById('btn-close-crypto-modal')?.addEventListener('click', closeModal);
-    document.getElementById('crypto-modal-backdrop')?.addEventListener('click', closeModal);
+      const enc = new TextEncoder();
+      const keyMaterial = await window.crypto.subtle.importKey(
+        'raw',
+        enc.encode(DEFAULT_KEY_PASSPHRASE),
+        'PBKDF2',
+        false,
+        ['deriveKey']
+      );
 
-    const handleUnlockSubmit = async () => {
-      const inputEl = document.getElementById('crypto-passphrase-input');
-      const rememberCb = document.getElementById('crypto-remember-session');
-      const statusMsg = document.getElementById('crypto-status-msg');
-      const pass = inputEl?.value?.trim();
+      const key = await window.crypto.subtle.deriveKey(
+        { name: 'PBKDF2', salt, iterations, hash: 'SHA-256' },
+        keyMaterial,
+        { name: 'AES-GCM', length: 256 },
+        false,
+        ['decrypt']
+      );
 
-      if (!pass) {
-        if (statusMsg) {
-          statusMsg.style.display = 'block';
-          statusMsg.className = 'crypto-status-msg error';
-          statusMsg.textContent = 'Voer een wachtwoord in.';
-        }
-        return;
-      }
+      const dec = new TextDecoder();
+      for (const s of state.students) {
+        if (!s.enc) continue;
+        try {
+          const rawBytes = base64ToUint8(s.enc);
+          if (rawBytes.length < 28) continue;
+          const iv = rawBytes.slice(0, 12);
+          const ciphertextWithTag = rawBytes.slice(12);
 
-      try {
-        await decryptStudents(pass);
-        if (rememberCb?.checked) {
-          sessionStorage.setItem('avant_grading_passphrase', pass);
-        }
-        updateStatus(`${state.students.length} leerlingnamen succesvol ontsleuteld.`, 'success');
-        setTimeout(() => closeModal(), 600);
-      } catch (err) {
-        if (statusMsg) {
-          statusMsg.style.display = 'block';
-          statusMsg.className = 'crypto-status-msg error';
-          statusMsg.textContent = 'Onjuist wachtwoord. De namen konden niet worden ontsleuteld.';
-        }
-      }
-    };
-
-    document.getElementById('btn-submit-unlock')?.addEventListener('click', handleUnlockSubmit);
-    document.getElementById('crypto-passphrase-input')?.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        handleUnlockSubmit();
-      }
-    });
-
-    document.getElementById('btn-relock')?.addEventListener('click', () => {
-      relockStudents();
-      closeModal();
-    });
-
-    // In-browser encrypter
-    document.getElementById('btn-generate-encrypted-dataset')?.addEventListener('click', async () => {
-      const rawText = document.getElementById('crypto-raw-names-input')?.value || '';
-      const newPass = document.getElementById('crypto-new-passphrase')?.value || 'avant2026';
-      const lines = rawText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-
-      if (lines.length === 0) {
-        alert('Plak eerst ten minste één leerlingnaam.');
-        return;
-      }
-
-      try {
-        const salt = window.crypto.getRandomValues(new Uint8Array(16));
-        const enc = new TextEncoder();
-        const keyMaterial = await window.crypto.subtle.importKey(
-          'raw',
-          enc.encode(newPass),
-          'PBKDF2',
-          false,
-          ['deriveKey']
-        );
-        const key = await window.crypto.subtle.deriveKey(
-          { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
-          keyMaterial,
-          { name: 'AES-GCM', length: 256 },
-          false,
-          ['encrypt']
-        );
-
-        const encryptedList = [];
-        for (const name of lines) {
-          const cleanName = name.replace(/\s+/g, ' ');
-          const hashBuf = await window.crypto.subtle.digest('SHA-256', enc.encode(cleanName));
-          const hashHex = bufferToHex(hashBuf).slice(0, 10);
-
-          const iv = window.crypto.getRandomValues(new Uint8Array(12));
-          const ciphertextBuf = await window.crypto.subtle.encrypt(
+          const decryptedBuffer = await window.crypto.subtle.decrypt(
             { name: 'AES-GCM', iv },
             key,
-            enc.encode(cleanName)
+            ciphertextWithTag
           );
-
-          const combined = new Uint8Array(iv.length + ciphertextBuf.byteLength);
-          combined.set(iv, 0);
-          combined.set(new Uint8Array(ciphertextBuf), iv.length);
-
-          encryptedList.push({
-            hash: hashHex,
-            enc: uint8ToBase64(combined)
-          });
-        }
-
-        const outData = {
-          metadata: {
-            algorithm: 'AES-256-GCM',
-            kdf: 'PBKDF2-SHA256',
-            iterations: 100000,
-            salt: uint8ToBase64(salt),
-            hashAlgorithm: 'SHA-256',
-            hashLength: 10,
-            updatedAt: new Date().toISOString()
-          },
-          classes: {
-            [state.classGroup]: encryptedList
+          const realName = dec.decode(decryptedBuffer).trim();
+          if (realName) {
+            s.name = realName;
+            s.displayLabel = realName;
+            const firstName = realName.split(' ')[0];
+            s.shortName = `${s.id} · ${firstName}`;
           }
-        };
-
-        const blob = new Blob([JSON.stringify(outData, null, 2)], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'leerlingen_enc.json';
-        a.click();
-        URL.revokeObjectURL(url);
-        alert(`Versleuteld bestand gegenereerd met ${encryptedList.length} leerlingen! Download gestart.`);
-      } catch (err) {
-        alert('Fout bij versleutelen: ' + err.message);
+        } catch (e) {
+          // Bij decryptiefout blijft de geanonimiseerde fallback-naam behouden
+        }
       }
+    } catch (err) {
+      console.warn('[Crypto] Automatische decryptie overgeslagen:', err);
+    }
+  }
+
+  function loadStudentsList() {
+    // Zoek gehashte data in site.Data (leerlingen_enc)
+    const encEl = document.getElementById('avant-encrypted-students-data');
+    const encData = safeParseJson(encEl);
+
+    let rawList = [];
+    if (encData && encData.classes && encData.classes[state.classGroup]) {
+      state.cryptoData = encData;
+      rawList = encData.classes[state.classGroup];
+    } else {
+      const injectedEl = document.getElementById('avant-students-data');
+      const fallbackData = safeParseJson(injectedEl);
+      if (fallbackData && fallbackData[state.classGroup]) {
+        rawList = fallbackData[state.classGroup];
+      }
+    }
+
+    state.students = rawList.map((item, index) => {
+      const studentNumber = index + 1;
+      const hash = item.hash || (typeof item === 'string' ? item : `student_${studentNumber}`);
+      return {
+        id: studentNumber,
+        hash: hash,
+        enc: item.enc || '',
+        name: `Leerling ${studentNumber}`,
+        displayLabel: `Leerling ${studentNumber}`,
+        shortName: `${studentNumber} · ${hash.slice(0, 6)}`
+      };
     });
+  }
+
+  function setupEventListeners() {
+    document.getElementById('btn-copy-smartschool')?.addEventListener('click', copyToClipboard);
 
     document.getElementById('btn-prev-student')?.addEventListener('click', () => {
       if (state.activeStudentIndex > 0) {
@@ -405,75 +467,34 @@
       selectStudent(parseInt(e.target.value, 10));
     });
 
-    // Toetsenbord sneltoetsen
+    // Toetsenbordnavigatie (Pijltje links/rechts tussen leerlingen)
     window.addEventListener('keydown', (e) => {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (['input', 'textarea', 'select'].includes(document.activeElement?.tagName?.toLowerCase())) {
+        return;
+      }
       if (e.key === 'ArrowLeft' && state.activeStudentIndex > 0) {
+        e.preventDefault();
         selectStudent(state.activeStudentIndex - 1);
       } else if (e.key === 'ArrowRight' && state.activeStudentIndex < state.students.length - 1) {
+        e.preventDefault();
         selectStudent(state.activeStudentIndex + 1);
       }
     });
 
     window.addEventListener('beforeunload', (e) => {
-      if (state.isDirty) {
+      if (state.isDirty && !state.isServerConnected) {
         e.preventDefault();
         e.returnValue = 'Je hebt niet-opgeslagen punten in het beoordelingssysteem.';
       }
     });
   }
 
-  async function loadStudentsList() {
-    // 1. Zoek versleutelde data (Zero-Knowledge)
-    const encEl = document.getElementById('avant-encrypted-students-data');
-    const encData = safeParseJson(encEl);
-
-    if (encData && encData.classes && encData.classes[state.classGroup]) {
-      state.cryptoData = encData;
-      const rawList = encData.classes[state.classGroup] || [];
-      state.students = rawList.map((item) => ({
-        hash: item.hash,
-        enc: item.enc,
-        name: `Leerling ${item.hash}`,
-        shortName: item.hash.slice(0, 6),
-        isDecrypted: false
-      }));
-
-      // Probeer automatisch te ontsleutelen als sleutel in sessionStorage staat
-      const savedPass = sessionStorage.getItem('avant_grading_passphrase');
-      if (savedPass) {
-        try {
-          await decryptStudents(savedPass);
-        } catch (e) {
-          sessionStorage.removeItem('avant_grading_passphrase');
-        }
-      }
-      return;
-    }
-
-    // 2. Fallback naar niet-versleutelde local data indien aanwezig
-    const injectedEl = document.getElementById('avant-students-data');
-    if (injectedEl) {
-      const classes = safeParseJson(injectedEl);
-      if (classes && classes[state.classGroup] && classes[state.classGroup].length > 0) {
-        state.students = classes[state.classGroup].map(s => ({
-          hash: s.hash,
-          name: s.name,
-          shortName: s.name.split(' ')[0],
-          isDecrypted: true
-        }));
-        state.isUnlocked = true;
-        return;
-      }
-    }
-  }
-
-  // --- Submissie Tabs (indieningen) ---
+  // --- Submissies (Tabs) ---
 
   function buildSubmissionTabs() {
+    const tabsContainer = document.getElementById('submissions-tabs');
     const panel = document.getElementById('submissions-tab-panel');
-    const container = document.getElementById('submissions-tabs');
-    if (!panel || !container) return;
+    if (!tabsContainer || !panel) return;
 
     if (state.submissions.length <= 1) {
       panel.style.display = 'none';
@@ -481,20 +502,19 @@
     }
 
     panel.style.display = 'block';
-    container.innerHTML = '';
+    tabsContainer.innerHTML = '';
 
     state.submissions.forEach((sub, idx) => {
       const btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = `btn-sub-tab ${idx === state.activeSubIndex ? 'active' : ''}`;
+      btn.className = `submission-tab-btn ${idx === state.activeSubIndex ? 'active' : ''}`;
       btn.dataset.index = idx;
       btn.innerHTML = `
-        <span class="sub-tab-title">${escapeHtml(sub.title)}</span>
-        <span class="sub-tab-badge">${sub.weight} pt</span>
+        <span class="tab-title">${escapeHtml(sub.title)}</span>
+        <span class="tab-badge">${sub.weight} pt</span>
       `;
-
       btn.addEventListener('click', () => switchSubmission(idx));
-      container.appendChild(btn);
+      tabsContainer.appendChild(btn);
     });
   }
 
@@ -503,34 +523,26 @@
     state.activeSubIndex = index;
     const sub = getActiveSubmission();
 
-    // Update tab knoppen
-    document.querySelectorAll('.btn-sub-tab').forEach((b) => {
-      b.classList.toggle('active', parseInt(b.dataset.index, 10) === index);
+    document.querySelectorAll('.submission-tab-btn').forEach((btn) => {
+      btn.classList.toggle('active', parseInt(btn.dataset.index, 10) === index);
     });
 
-    // Update weight badge
-    const badgeWeight = document.getElementById('badge-active-weight');
-    if (badgeWeight) {
-      badgeWeight.innerHTML = `Gewicht: <strong>${sub.weight} pt</strong> per cluster`;
+    const weightBadge = document.getElementById('badge-active-weight');
+    if (weightBadge) {
+      weightBadge.innerHTML = `Gewicht: <strong>${sub.weight} pt</strong>`;
     }
 
-    // Update Subtitles
-    const subTitleEl = document.getElementById('summary-section-subtitle');
-    if (subTitleEl) {
-      subTitleEl.textContent = `Berekende scores voor "${sub.title}" (${sub.weight} pt per cluster)`;
+    // Herteken studentweergave & matrix
+    const currentStudent = state.students[state.activeStudentIndex];
+    if (currentStudent) {
+      renderStudentRubric(currentStudent);
+      updateStudentHeaderScore(currentStudent.hash);
     }
-
-    // Re-render compact summary table & active student rubric
     buildCompactSummaryTable();
-    if (state.students.length > 0) {
-      selectStudent(state.activeStudentIndex);
-    }
     updateAllChipsStatus();
-
-    updateStatus(`Actieve indiening: "${sub.title}" (max ${sub.weight} pt per cluster).`, 'info');
   }
 
-  // --- Student Selector ---
+  // --- Student Selector & Chips Strip ---
 
   function buildStudentSelector() {
     const dropdown = document.getElementById('student-select');
@@ -550,9 +562,10 @@
       chip.type = 'button';
       chip.className = 'student-chip';
       chip.dataset.index = idx;
+      chip.title = student.name;
       chip.innerHTML = `
         <span class="chip-index">${idx + 1}</span>
-        <span class="chip-name">${escapeHtml(student.name.split(' ')[0])}</span>
+        <span class="chip-name">${escapeHtml(student.displayLabel.split(' ')[0])}</span>
         <span class="chip-status-dot" id="dot-${student.hash}"></span>
       `;
 
@@ -579,9 +592,6 @@
     const nextBtn = document.getElementById('btn-next-student');
     if (prevBtn) prevBtn.disabled = index === 0;
     if (nextBtn) nextBtn.disabled = index === state.students.length - 1;
-
-    document.getElementById('display-student-name').textContent = student.name;
-    document.getElementById('display-student-hash').textContent = student.hash;
 
     renderStudentRubric(student);
     updateStudentHeaderScore(student.hash);
@@ -669,6 +679,32 @@
 
       container.appendChild(clusterBox);
     });
+
+    // Feedbacksectie voor de actieve leerling
+    const feedbackBox = document.createElement('div');
+    feedbackBox.className = 'rubric-feedback-card';
+    feedbackBox.innerHTML = `
+      <div class="feedback-header">
+        <label for="student-feedback-input" class="feedback-label">
+          💬 Feedback & Opmerkingen voor <strong>${escapeHtml(student.displayLabel)}</strong>:
+        </label>
+      </div>
+      <textarea id="student-feedback-input" 
+                class="student-feedback-textarea" 
+                rows="3" 
+                placeholder="Typ gerichte individuele feedback voor deze leerling...">${escapeHtml(studentEval.feedback || '')}</textarea>
+    `;
+
+    const textarea = feedbackBox.querySelector('textarea');
+    textarea.addEventListener('input', () => {
+      if (!subEvals[student.hash]) {
+        subEvals[student.hash] = { scores: {}, criteriaLevels: {} };
+      }
+      subEvals[student.hash].feedback = textarea.value;
+      triggerAutoSave();
+    });
+
+    container.appendChild(feedbackBox);
   }
 
   function handleCriteriumLevelClick(studentHash, cluster, critCode, level) {
@@ -691,8 +727,6 @@
     } else {
       subEvals[studentHash].criteriaLevels[critCode] = level;
     }
-
-    state.isDirty = true;
 
     // Gewogen berekening
     const scoreInfo = calculateWeightedClusterScore(cluster, subEvals[studentHash].criteriaLevels, sub.weight);
@@ -722,7 +756,8 @@
     updateCompactTableRow(studentHash);
     updateAllChipsStatus();
 
-    updateStatus(`Criterium ${critCode} aangepast. Gewogen clusterpunt voor ${cluster.id} direct berekend.`, 'success');
+    // Automatisch direct opslaan in /data/
+    triggerAutoSave();
   }
 
   function calculateWeightedClusterScore(cluster, criteriaLevels, submissionWeight) {
@@ -804,7 +839,7 @@
     `;
   }
 
-  // --- Compact Summary Table ---
+  // --- Overzichtstabel (Compact, Geen Horizontale Scroll) ---
 
   function buildCompactSummaryTable() {
     const headerRow = document.getElementById('compact-header-row');
@@ -857,20 +892,20 @@
     let html = `
       <td class="col-name">
         <div class="row-student-wrap">
-          <span class="row-student-name">${escapeHtml(student.name)}</span>
-          <code class="row-hash">${student.hash}</code>
+          <span class="row-student-name">${escapeHtml(student.displayLabel)}</span>
+          <code class="row-student-hash">${escapeHtml(student.hash)}</code>
         </div>
       </td>
     `;
 
     sub.clusters.forEach((c) => {
-      const val = scores[c.id];
-      if (val !== undefined) {
-        sum += val;
+      const score = scores[c.id];
+      if (score !== undefined) {
+        sum += score;
         count++;
-        html += `<td class="col-cluster-score-cell has-val">${val.toFixed(1)}</td>`;
+        html += `<td class="col-score val-set"><strong>${score.toFixed(1)}</strong></td>`;
       } else {
-        html += `<td class="col-cluster-score-cell empty-val">-</td>`;
+        html += `<td class="col-score val-empty">-</td>`;
       }
     });
 
@@ -878,13 +913,9 @@
       const avg = sum / count;
       const pct = Math.round((avg / sub.weight) * 100);
       const isPass = pct >= 50;
-      html += `
-        <td class="col-gem">
-          <span class="pill-gem ${isPass ? 'pass' : 'fail'}">${avg.toFixed(1)} <small>(${pct}%)</small></span>
-        </td>
-      `;
+      html += `<td class="col-gem"><span class="gem-badge ${isPass ? 'pass' : 'fail'}">${avg.toFixed(1)}</span></td>`;
     } else {
-      html += `<td class="col-gem"><span class="pill-gem empty">-</span></td>`;
+      html += `<td class="col-gem"><span class="gem-badge empty">-</span></td>`;
     }
 
     tr.innerHTML = html;
@@ -904,9 +935,11 @@
       const dot = document.getElementById(`dot-${student.hash}`);
       if (!dot) return;
 
-      const evalData = subEvals[student.hash];
-      const scores = evalData?.scores || {};
-      const gradedClusters = Object.keys(scores).length;
+      const scores = subEvals[student.hash]?.scores || {};
+      let gradedClusters = 0;
+      sub.clusters.forEach((c) => {
+        if (scores[c.id] !== undefined) gradedClusters++;
+      });
 
       dot.className = 'chip-status-dot';
       if (gradedClusters === sub.clusters.length && gradedClusters > 0) {
@@ -919,101 +952,7 @@
     });
   }
 
-  // --- Opslaan & Bestandsbeheer ---
-
-  async function handleSaveFile(forcePicker = false) {
-    try {
-      // Bouw complete JSON met alle submissions
-      const submissionsData = {};
-      state.submissions.forEach((sub) => {
-        submissionsData[sub.id] = {
-          id: sub.id,
-          title: sub.title,
-          weight: sub.weight,
-          clusters: sub.clusters.map((c) => ({ id: c.id, naam: c.naam })),
-          evaluations: state.submissionEvals[sub.id] || {}
-        };
-      });
-
-      const payload = {
-        source: 'Avant Local Grading System',
-        version: '2.1.0',
-        assignmentId: state.assignmentId,
-        classGroup: state.classGroup,
-        lastUpdated: new Date().toISOString(),
-        submissions: submissionsData
-      };
-
-      if (window.showSaveFilePicker) {
-        if (!state.fileHandle || forcePicker) {
-          state.fileHandle = await window.showSaveFilePicker({
-            suggestedName: `rubriek-${state.classGroup.toLowerCase()}-${state.assignmentId}.json`,
-            types: [{
-              description: 'JSON Bestand',
-              accept: { 'application/json': ['.json'] }
-            }]
-          });
-        }
-        const writable = await state.fileHandle.createWritable();
-        await writable.write(JSON.stringify(payload, null, 2));
-        await writable.close();
-      } else {
-        const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = `rubriek-${state.classGroup.toLowerCase()}-${state.assignmentId}.json`;
-        a.click();
-      }
-
-      state.isDirty = false;
-      updateStatus(`Succesvol opgeslagen om ${new Date().toLocaleTimeString()}!`, 'success');
-    } catch (err) {
-      if (err.name === 'AbortError') return;
-      console.error('Fout bij opslaan:', err);
-      updateStatus(`Fout bij opslaan: ${err.message}`, 'error');
-    }
-  }
-
-  async function handleOpenFile() {
-    try {
-      if (!window.showOpenFilePicker) {
-        alert('File System Access API niet ondersteund. Gebruik Chrome of Edge.');
-        return;
-      }
-
-      const [handle] = await window.showOpenFilePicker({
-        types: [{
-          description: 'JSON Bestanden',
-          accept: { 'application/json': ['.json'] }
-        }],
-        multiple: false
-      });
-
-      state.fileHandle = handle;
-      const file = await handle.getFile();
-      const text = await file.text();
-      const json = JSON.parse(text);
-
-      if (json.submissions) {
-        Object.entries(json.submissions).forEach(([subId, subData]) => {
-          state.submissionEvals[subId] = subData.evaluations || {};
-        });
-      } else if (json.evaluations) {
-        const firstSubId = state.submissions[0]?.id || 'default';
-        state.submissionEvals[firstSubId] = json.evaluations;
-      }
-
-      state.isDirty = false;
-      switchSubmission(state.activeSubIndex);
-      updateStatus(`Geladen: ${file.name}`, 'success');
-    } catch (err) {
-      if (err.name === 'AbortError') return;
-      console.error('Fout bij openen:', err);
-      updateStatus(`Fout bij openen: ${err.message}`, 'error');
-    }
-  }
-
-  // --- Klembord Export voor Smartschool Tampermonkey ---
+  // --- Smartschool Export (Tampermonkey Auto-Grader) ---
 
   async function copyToClipboard() {
     const sub = getActiveSubmission();
@@ -1040,7 +979,7 @@
 
     const exportBundle = {
       source: 'Avant Local Grading',
-      version: '2.1.0',
+      version: '2.2.0',
       assignmentId: state.assignmentId,
       submissionId: sub.id,
       submissionTitle: sub.title,
@@ -1053,7 +992,7 @@
 
     try {
       await navigator.clipboard.writeText(JSON.stringify(exportBundle, null, 2));
-      updateStatus(`Klaar voor Smartschool! ${scoreCount} cijfers voor ${studentCount} leerlingen gekopieerd voor "${sub.title}".`, 'success');
+      updateStatus(`⚡ Klaar voor Smartschool! ${scoreCount} cijfers voor ${studentCount} leerlingen gekopieerd voor "${sub.title}".`, 'success');
     } catch (err) {
       console.error('Klembordfout:', err);
       updateStatus('Kon klembord niet beschrijven. Controleer browsertoestemmingen.', 'error');

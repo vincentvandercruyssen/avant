@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "dev": "hugo server -p 1313",
-    "start": "hugo server -p 1313"
+    "dev": "node scripts/dev.js",
+    "start": "node scripts/dev.js",
+    "hugo": "hugo server -p 1313"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
