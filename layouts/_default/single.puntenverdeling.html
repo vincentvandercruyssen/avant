@@ -16,6 +16,93 @@
     {{ end }}
   </h1>
   <a href="{{ .RelPermalink }}" class="terug-link">← Terug naar opdracht</a>
+
+  {{/* Zijbalk navigatie: alle puntenverdelingen per jaar, per vak, gesorteerd op datum */}}
+  {{ $currentPage := . }}
+  {{ $allRubricPages := slice }}
+  {{ range site.RegularPages }}
+    {{ if and (not (in .RelPermalink "/cursus/")) (not (in .RelPermalink "/doelen/")) (or .Params.indieningen .Params.leerplandoelen .Params.evaluatie .Params.doelen) }}
+      {{ if .OutputFormats.Get "Puntenverdeling" }}
+        {{ $allRubricPages = $allRubricPages | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $years := slice }}
+  {{ range $allRubricPages }}
+    {{ $y := .Params.schooljaar }}
+    {{ if not $y }}
+      {{ $segs := split (trim .RelPermalink "/") "/" }}
+      {{ if ge (len $segs) 2 }}{{ $y = index $segs 1 }}{{ end }}
+    {{ end }}
+    {{ if and $y (not (in $years $y)) }}
+      {{ $years = $years | append $y }}
+    {{ end }}
+  {{ end }}
+  {{ $years = sort $years "value" "desc" }}
+
+  <nav class="grading-sidebar-nav" aria-label="Puntenverdelingen">
+    {{ range $years }}
+      {{ $year := . }}
+      {{ $yearPages := slice }}
+      {{ range $allRubricPages }}
+        {{ $y := .Params.schooljaar }}
+        {{ if not $y }}
+          {{ $segs := split (trim .RelPermalink "/") "/" }}
+          {{ if ge (len $segs) 2 }}{{ $y = index $segs 1 }}{{ end }}
+        {{ end }}
+        {{ if eq $y $year }}
+          {{ $yearPages = $yearPages | append . }}
+        {{ end }}
+      {{ end }}
+
+      {{ $vakken := slice }}
+      {{ range $yearPages }}
+        {{ $v := partial "sectionName.html" (dict "page" . "short" true) }}
+        {{ if and $v (not (in $vakken $v)) }}
+          {{ $vakken = $vakken | append $v }}
+        {{ end }}
+      {{ end }}
+      {{ $vakken = sort $vakken }}
+
+      <div class="nav-year-group">
+        <h2 class="nav-year-title">{{ $year }}</h2>
+        {{ range $vakken }}
+          {{ $vak := . }}
+          {{ $vakPages := slice }}
+          {{ range sort $yearPages "Date" "asc" }}
+            {{ if eq (partial "sectionName.html" (dict "page" . "short" true)) $vak }}
+              {{ $vakPages = $vakPages | append . }}
+            {{ end }}
+          {{ end }}
+          {{ if gt (len $vakPages) 0 }}
+            <div class="nav-vak-group">
+              <h3 class="nav-vak-title">{{ $vak }}</h3>
+              <ul class="nav-assignment-list">
+                {{ range $vakPages }}
+                  {{ $p := . }}
+                  {{ $itemTitle := $p.Title }}
+                  {{ with $p.Params.thema }}
+                    {{ if ne (trim . " ") "" }}
+                      {{ $itemTitle = printf "%s: %s" . $p.Title }}
+                    {{ end }}
+                  {{ end }}
+                  {{ with $p.OutputFormats.Get "Puntenverdeling" }}
+                    {{ $isCurrent := eq $p.RelPermalink $currentPage.RelPermalink }}
+                    <li>
+                      <a href="{{ .RelPermalink }}" class="{{ if $isCurrent }}is-active{{ end }}"{{ if $isCurrent }} aria-current="page"{{ end }}>
+                        {{ $itemTitle }}
+                      </a>
+                    </li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </nav>
 </div>
 {{ end }}
 

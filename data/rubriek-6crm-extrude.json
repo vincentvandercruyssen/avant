@@ -3,41 +3,93 @@
   "version": "2.2.0",
   "assignmentId": "6crm-extrude",
   "classGroup": "6CRM",
-  "lastUpdated": "2026-10-20T07:40:55.816Z",
+  "lastUpdated": "2026-10-20T14:03:54.918Z",
   "submissions": {
     "default": {
       "id": "default",
       "title": "Extrude",
       "weight": 20,
+      "criteriaWeights": {
+        "CRS01": 2,
+        "CRS02": 1,
+        "CRS22": 1,
+        "CRS06": 1,
+        "CRS15": 1,
+        "CRS16": 1,
+        "CRS27": 1,
+        "CRS23": 1
+      },
       "clusters": [
         {
           "id": "4.1",
-          "naam": "Analyse & workflow"
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 2
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
         },
         {
           "id": "4.2",
-          "naam": "Design & lay-out"
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS22",
+              "gewicht": 1
+            }
+          ]
         },
         {
           "id": "4.3",
-          "naam": "Multimediaproductie"
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS06",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS15",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS16",
+              "gewicht": 1
+            }
+          ]
         },
         {
           "id": "4.4",
-          "naam": "Release & presentatie"
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
         },
         {
           "id": "4.5",
-          "naam": "Kwaliteit & context"
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
         }
       ],
       "evaluations": {
         "bfa5afc5c6": {
-          "scores": {
-            "4.1": 0
-          },
           "criteriaLevels": {
             "CRS01": 0
+          },
+          "scores": {
+            "4.1": 0
           }
         }
       }

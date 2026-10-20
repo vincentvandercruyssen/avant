@@ -13,7 +13,7 @@ software:
   - "Media Encoder"
 indieningen:
   - id: "pinboard-storyboard"
-    titel: "Vormen 3.1+3.2 Pinboard + Storyboard (4 comps)"
+    titel: "Vormen 3.1+3.2 Pinboard + Storyboard"
     lesuren: 2
     gewicht: 10
     leerplandoelen:

@@ -88,11 +88,28 @@
   function buildPayload() {
     const submissionsData = {};
     state.submissions.forEach((sub) => {
+      const criteriaWeights = {};
+      sub.clusters.forEach((cluster) => {
+        (cluster.criteria || []).forEach((crit) => {
+          if (crit.gewicht) {
+            criteriaWeights[crit.code] = crit.gewicht;
+          }
+        });
+      });
+
       submissionsData[sub.id] = {
         id: sub.id,
         title: sub.title,
         weight: sub.weight,
-        clusters: sub.clusters.map((c) => ({ id: c.id, naam: c.naam })),
+        criteriaWeights,
+        clusters: sub.clusters.map((c) => ({
+          id: c.id,
+          naam: c.naam,
+          criteria: (c.criteria || []).map((crit) => ({
+            code: crit.code,
+            gewicht: crit.gewicht || 1
+          }))
+        })),
         evaluations: state.submissionEvals[sub.id] || {}
       };
     });
@@ -130,7 +147,7 @@
           badge.title = `Direct verbonden met lokale opslag in ${data.dataDir}`;
         }
         if (textEl) {
-          textEl.textContent = '🟢 Lokaal verbonden (data/)';
+          textEl.textContent = 'Lokaal verbonden (data/)';
         }
         return true;
       }
@@ -141,7 +158,7 @@
         badge.title = 'Lokale saveserver niet actief. Wijzigingen worden via browser opgeslagen.';
       }
       if (textEl) {
-        textEl.textContent = '📁 Handmatig opslaan';
+        textEl.textContent = 'Handmatig opslaan';
       }
       return false;
     }
@@ -158,7 +175,11 @@
       const res = await fetch(`${SAVE_SERVER_URL}/api/save-rubriek`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ filename, data: payload })
+        body: JSON.stringify({
+          filename,
+          filePath: state.filePath,
+          data: payload
+        })
       });
 
       if (!res.ok) throw new Error(`Serverfout HTTP ${res.status}`);
@@ -173,15 +194,15 @@
         badge.classList.remove('saving');
       }
       if (textEl) {
-        textEl.textContent = `🟢 Opgeslagen (${result.displayTime || new Date().toLocaleTimeString()})`;
+        textEl.textContent = `Opgeslagen (${result.displayTime || new Date().toLocaleTimeString()})`;
       }
 
-      updateStatus(`✅ Wijzigingen direct opgeslagen in ${result.path} om ${result.displayTime || new Date().toLocaleTimeString()}!`, 'success');
+      updateStatus(`Wijzigingen direct opgeslagen in ${result.path} om ${result.displayTime || new Date().toLocaleTimeString()}!`, 'success');
       return true;
     } catch (err) {
       console.warn('[SaveServer] Fout bij lokaal opslaan:', err);
       if (badge) badge.className = 'badge-status-server disconnected';
-      if (textEl) textEl.textContent = '⚠️ Opslaan mislukt';
+      if (textEl) textEl.textContent = 'Opslaan mislukt';
       throw err;
     }
   }
@@ -305,6 +326,7 @@
 
     state.classGroup = state.container.dataset.classGroup || '5CRM';
     state.assignmentId = state.container.dataset.assignmentId || 'opdracht';
+    state.filePath = state.container.dataset.filePath || '';
 
     // 1. Submissies parsen
     const subDataEl = document.getElementById('avant-submissions-data');
@@ -318,17 +340,51 @@
       }];
     }
 
-    // 2. Bestaande evaluaties inladen uit data/rubriek-*.json
+    // 2. Bestaande evaluaties & gewichten inladen uit data/rubriek-*.json
     const savedDataEl = document.getElementById('avant-saved-evaluations-data');
     const savedData = safeParseJson(savedDataEl);
     if (savedData && typeof savedData === 'object') {
       if (savedData.submissions) {
         Object.entries(savedData.submissions).forEach(([subId, subData]) => {
           state.submissionEvals[subId] = subData.evaluations || {};
+
+          // Gewichten herstellen indien aangepast in data
+          const targetSub = state.submissions.find((s) => s.id === subId);
+          if (targetSub) {
+            if (typeof subData.weight === 'number' && subData.weight > 0) {
+              targetSub.weight = subData.weight;
+            }
+            if (subData.criteriaWeights && typeof subData.criteriaWeights === 'object') {
+              targetSub.clusters.forEach((cluster) => {
+                (cluster.criteria || []).forEach((crit) => {
+                  if (typeof subData.criteriaWeights[crit.code] === 'number') {
+                    crit.gewicht = subData.criteriaWeights[crit.code];
+                  }
+                });
+              });
+            } else if (Array.isArray(subData.clusters)) {
+              subData.clusters.forEach((sc) => {
+                if (Array.isArray(sc.criteria)) {
+                  sc.criteria.forEach((scrit) => {
+                    const cMatch = targetSub.clusters.find((c) => c.id === sc.id);
+                    if (cMatch) {
+                      const critMatch = (cMatch.criteria || []).find((cr) => cr.code === scrit.code);
+                      if (critMatch && typeof scrit.gewicht === 'number') {
+                        critMatch.gewicht = scrit.gewicht;
+                      }
+                    }
+                  });
+                }
+              });
+            }
+          }
         });
       } else if (savedData.evaluations) {
         const firstSubId = state.submissions[0]?.id || 'default';
         state.submissionEvals[firstSubId] = savedData.evaluations;
+        if (typeof savedData.weight === 'number' && savedData.weight > 0) {
+          state.submissions[0].weight = savedData.weight;
+        }
       }
     }
 
@@ -467,6 +523,24 @@
       selectStudent(parseInt(e.target.value, 10));
     });
 
+    const inputSubWeight = document.getElementById('input-sub-weight');
+    if (inputSubWeight) {
+      inputSubWeight.addEventListener('change', () => {
+        const sub = getActiveSubmission();
+        const val = parseInt(inputSubWeight.value, 10);
+        if (!isNaN(val) && val >= 1 && val <= 500) {
+          sub.weight = val;
+          const activeTabBadge = document.querySelector(`.submission-tab-btn[data-index="${state.activeSubIndex}"] .tab-badge`);
+          if (activeTabBadge) {
+            activeTabBadge.textContent = `${sub.weight} pt`;
+          }
+          recalculateAllScoresForActiveSubmission();
+        } else {
+          inputSubWeight.value = sub.weight;
+        }
+      });
+    }
+
     // Toetsenbordnavigatie (Pijltje links/rechts tussen leerlingen)
     window.addEventListener('keydown', (e) => {
       if (['input', 'textarea', 'select'].includes(document.activeElement?.tagName?.toLowerCase())) {
@@ -527,9 +601,14 @@
       btn.classList.toggle('active', parseInt(btn.dataset.index, 10) === index);
     });
 
-    const weightBadge = document.getElementById('badge-active-weight');
-    if (weightBadge) {
-      weightBadge.innerHTML = `Gewicht: <strong>${sub.weight} pt</strong>`;
+    const inputSubWeight = document.getElementById('input-sub-weight');
+    if (inputSubWeight) {
+      inputSubWeight.value = sub.weight;
+    } else {
+      const weightBadge = document.getElementById('badge-active-weight');
+      if (weightBadge) {
+        weightBadge.innerHTML = `Gewicht: <strong>${sub.weight} pt</strong>`;
+      }
     }
 
     // Herteken studentweergave & matrix
@@ -645,27 +724,48 @@
         critCard.id = `crit-row-${student.hash}-${crit.code}`;
 
         critCard.innerHTML = `
-          <div class="crit-desc-col">
-            <div class="crit-code-badge-wrap">
-              <span class="crit-code-badge">${escapeHtml(crit.code)}</span>
-              ${critWeight > 1 ? `<span class="badge-weight-multiplier" title="Telt ${critWeight}x mee in het gemiddelde">${critWeight}× gewicht</span>` : ''}
-            </div>
-            <div class="crit-text">${escapeHtml(crit.criterium || crit.omschrijving)}</div>
+          <div class="crit-code-badge-wrap">
+            <span class="crit-code-badge">${escapeHtml(crit.code)}</span>
+            <button type="button" 
+                    class="badge-weight-multiplier ${critWeight > 1 ? 'is-weighted' : 'is-default'}" 
+                    data-code="${crit.code}" 
+                    title="Gewicht: ${critWeight}× (klik om te wisselen naar ${(critWeight % 4) + 1}×, of rechtsklik voor getal)">
+              ${critWeight > 1 ? `${critWeight}× gewicht` : '1× gewicht'}
+            </button>
           </div>
-          <div class="crit-buttons-col">
-            <div class="niveau-pill-group">
-              ${NIVEAUS.map((n) => `
-                <button type="button" 
-                        class="btn-niveau-pill niv-${n.level} ${currentLevel === n.level ? 'active' : ''}" 
-                        data-code="${crit.code}" 
-                        data-level="${n.level}">
-                  <span class="pill-lvl">${n.label}</span>
-                  <span class="pill-desc">${n.desc}</span>
-                </button>
-              `).join('')}
-            </div>
+          <div class="crit-text">${escapeHtml(crit.criterium || crit.omschrijving)}</div>
+          <div class="niveau-pill-group">
+            ${NIVEAUS.map((n) => `
+              <button type="button" 
+                      class="btn-niveau-pill niv-${n.level} ${currentLevel === n.level ? 'active' : ''}" 
+                      data-code="${crit.code}" 
+                      data-level="${n.level}">
+                <span class="pill-lvl">${n.label}</span>
+                <span class="pill-desc">${n.desc}</span>
+              </button>
+            `).join('')}
           </div>
         `;
+
+        const weightBtn = critCard.querySelector('.badge-weight-multiplier');
+        if (weightBtn) {
+          weightBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            let currentW = crit.gewicht || 1;
+            let nextW = (currentW % 4) + 1; // 1 -> 2 -> 3 -> 4 -> 1
+            setCriterionWeight(crit.code, nextW);
+          });
+          weightBtn.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            const input = prompt(`Voer gewichtsfactor in voor succescriterium ${crit.code}:`, crit.gewicht || 1);
+            if (input !== null) {
+              const val = parseInt(input, 10);
+              if (!isNaN(val) && val >= 1 && val <= 50) {
+                setCriterionWeight(crit.code, val);
+              }
+            }
+          });
+        }
 
         critCard.querySelectorAll('.btn-niveau-pill').forEach((btn) => {
           btn.addEventListener('click', () => {
@@ -757,6 +857,70 @@
     updateAllChipsStatus();
 
     // Automatisch direct opslaan in /data/
+    triggerAutoSave();
+  }
+
+  function setCriterionWeight(critCode, newWeight) {
+    const sub = getActiveSubmission();
+    sub.clusters.forEach((c) => {
+      (c.criteria || []).forEach((cr) => {
+        if (cr.code === critCode) {
+          cr.gewicht = newWeight;
+        }
+      });
+    });
+
+    // Update weight buttons in DOM for this criterion
+    document.querySelectorAll(`.badge-weight-multiplier[data-code="${critCode}"]`).forEach((btn) => {
+      btn.textContent = newWeight > 1 ? `${newWeight}× gewicht` : '1× gewicht';
+      btn.classList.toggle('is-weighted', newWeight > 1);
+      btn.classList.toggle('is-default', newWeight === 1);
+      btn.title = `Gewicht: ${newWeight}× (klik om te wisselen naar ${(newWeight % 4) + 1}×, of rechtsklik voor getal)`;
+    });
+
+    recalculateAllScoresForActiveSubmission();
+  }
+
+  function recalculateAllScoresForActiveSubmission() {
+    const sub = getActiveSubmission();
+    const subEvals = getActiveSubEvals();
+
+    // 1. Herbereken scores voor alle studenten die beoordeeld zijn
+    Object.keys(subEvals).forEach((studentHash) => {
+      const evalData = subEvals[studentHash];
+      if (!evalData || !evalData.criteriaLevels) return;
+
+      sub.clusters.forEach((cluster) => {
+        const scoreInfo = calculateWeightedClusterScore(cluster, evalData.criteriaLevels, sub.weight);
+        if (scoreInfo.isCalculated) {
+          evalData.scores[cluster.id] = scoreInfo.score;
+        } else {
+          delete evalData.scores[cluster.id];
+        }
+      });
+      updateCompactTableRow(studentHash);
+    });
+
+    // 2. Update cluster score badges voor de actieve leerling
+    const currentStudent = state.students[state.activeStudentIndex];
+    if (currentStudent) {
+      const evalData = subEvals[currentStudent.hash] || {};
+      const criteriaLevels = evalData.criteriaLevels || {};
+      sub.clusters.forEach((cluster) => {
+        const scoreInfo = calculateWeightedClusterScore(cluster, criteriaLevels, sub.weight);
+        const badgeEl = document.getElementById(`calc-badge-${cluster.id}`);
+        if (badgeEl) {
+          badgeEl.innerHTML = formatClusterScoreBadge(scoreInfo, sub.weight);
+        }
+      });
+      updateStudentHeaderScore(currentStudent.hash);
+    }
+
+    // 3. Update overzichtstabel en studentenkaartjes
+    buildCompactSummaryTable();
+    updateAllChipsStatus();
+
+    // 4. Automatisch opslaan naar data/
     triggerAutoSave();
   }
 

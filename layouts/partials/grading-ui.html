@@ -141,12 +141,17 @@
      class="grading-app"
      data-class-group="{{ $classGroup }}"
      data-assignment-id="{{ $assignmentId }}"
-     data-page-title="{{ .Title }}">
+     data-page-title="{{ .Title }}"
+     data-file-path="{{ .File.Path }}">
 
   <!-- Top Action & Info Bar -->
   <div class="grading-top-bar">
     <div class="grading-meta">
-      <span class="badge-weight" id="badge-active-weight">Gewicht: <strong>20 pt</strong></span>
+      <label class="badge-weight" id="badge-active-weight" title="Totaalgewicht van deze indiening aanpassen">
+        <span>Gewicht:</span>
+        <input type="number" id="input-sub-weight" class="sub-weight-input" min="1" max="100" step="1" value="20" aria-label="Totaalgewicht indiening">
+        <span>pt</span>
+      </label>
     </div>
 
     <div class="grading-main-actions">
@@ -155,8 +160,7 @@
         <span id="save-server-text">Lokaal verbinden...</span>
       </div>
       <button type="button" id="btn-copy-smartschool" class="btn btn-accent" title="Kopieer alle berekende clustercijfers voor de actieve indiening">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-        ⚡ Kopieer voor Smartschool
+        Kopieer voor Smartschool
       </button>
     </div>
   </div>
@@ -171,18 +175,12 @@
     </div>
   </div>
 
-  <div id="grading-status-text" class="grading-status-banner status-info">
-    Klaar voor invoer. Duid per succescriterium het niveau aan; clusterpunten worden gewogen en live berekend.
-  </div>
-
   <!-- Student Navigation & Selector Strip -->
   <div class="student-selector-panel">
     <div class="selector-controls">
-      <button type="button" id="btn-prev-student" class="btn btn-nav" title="Vorige leerling (Pijltje links)">← Vorige</button>
-      <div class="current-student-dropdown-wrap">
-          <select id="student-select" class="student-select-dropdown"></select>
-      </div>
-      <button type="button" id="btn-next-student" class="btn btn-nav" title="Volgende leerling (Pijltje rechts)">Volgende →</button>
+      <button type="button" id="btn-prev-student" class="btn-nav" title="Vorige leerling (Pijltje links)">← Vorige</button>
+      <select id="student-select"></select>
+      <button type="button" id="btn-next-student" class="btn-nav" title="Volgende leerling (Pijltje rechts)">Volgende →</button>
     </div>
 
     <div class="student-chips-strip" id="student-chips-strip"></div>

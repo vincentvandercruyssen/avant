@@ -12,22 +12,31 @@ software:
   - "Blender 3D"
   - "Illustrator"
   - "Photoshop"
+gewicht: 20
 leerplandoelen:
   - code: "CRS01"
+    gewicht: 2
     criterium: "Productievereisten analyseren (resolutie 1920×1080 px, 16:9 verhouding, EEVEE Next still render, optioneel 30 fps video-animatie)."
   - code: "CRS02"
+    gewicht: 1
     criterium: "Doelgericht 3D-technieken selecteren (SVG-curve import, extrusie, beveling, shader nodes, studiobelichting, camerakadrering)."
   - code: "CRS06"
+    gewicht: 1
     criterium: "Vlot en zelfstandig werken met Blender 3D (viewport navigatie, curve data, shader editor, EEVEE Next realtime rendering) en Adobe Illustrator."
   - code: "CRS15"
+    gewicht: 1
     criterium: "Geschikt 2D vector- en beeldmateriaal (beeldmerk, grafische vormen of logo) gestructureerd voorbereiden en integreren in een 3D-scène."
   - code: "CRS16"
+    gewicht: 1
     criterium: "Een hoogwaardige 3D-render realiseren en optioneel een dynamische camera-animatie of logo-onthulling animeren."
   - code: "CRS22"
+    gewicht: 1
     criterium: "Vormgeving, afgeschuinde randen, shaders en lichtval esthetisch en harmonieus op elkaar afstemmen tot één hoogwaardig beeld."
   - code: "CRS23"
+    gewicht: 1
     criterium: "Bestanden controleren op correcte resolutie (1920×1080), kleurbeheer en ruisvrije renderkwaliteit."
   - code: "CRS27"
+    gewicht: 1
     criterium: "Het volledige Blender-project en de deliverables (still render en optionele video) tijdig en conform de mappenstructuur opleveren."
   - code: "SV06.72"
     criterium: "Het verband tussen ruimtelijke 3D-situaties en bijbehorende 2D-voorstellingen doelgericht analyseren en toepassen."
@@ -38,7 +47,7 @@ draft: false
 
 In deze opdracht breng je een vlak beeldmerk of vectoren tot leven in een dynamische virtuele omgeving. Je maakt de overstap **van 2D naar 3D met Blender**. Je vertrekt vanuit een plat vectorbestand of een vlakke afbeelding, en bouwt dit in Blender om tot een 3D-object met fysieke diepte, afgeronde hoeken en blikvangende materialen.
 
-![3D geëxtrudeerd CRM-beeldmerk met geometrische vormen](img/extrude-hero.jpg)
+![3D geëxtrudeerd CRM-beeldmerk met geometrische vormen](img/extrude-hero.png?w=60%)
 
 {{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/extrude/" >}}
 
@@ -56,7 +65,9 @@ Een 3D-scène staat of valt met het samenspel tussen materiaal en licht. In plaa
 * **Principled BSDF:** De universele shader in Blender. Je experimenteert met *Base Color* (afgestemd op je kleurenpalet), *Roughness* (van matte klei/krijt tot zijdezacht satijn) en optioneel *Metallic* of *Transmission* (voor geborsteld metaal of matglazen accenten).
 * **Drie-punts studiobelichting:** Je plaatst een gericht hoofdlicht (*Key Light*), een zacht invullicht (*Fill Light*) en een krachtig tegenlicht (*Rim / Back Light*). Het tegenlicht is cruciaal: het laat de beveled randen van je 3D-vorm oplichten en scheidt je onderwerp helder af van de achtergrond.
 
-![Studiobelichting en cameraopstelling in 3D](img/extrude-lighting.jpg)
+![Studiobelichting en cameraopstelling](img/three-point-lighting-setup_1.jpg)
+
+![Studiobelichting en cameraopstelling, uitkomst](img/three-point-lighting-voorbeeld_1.jpg)
 
 ### Render engines: EEVEE Next versus Cycles
 

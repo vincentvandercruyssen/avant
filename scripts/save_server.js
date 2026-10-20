@@ -29,6 +29,87 @@ function setCorsHeaders(res) {
   res.setHeader('Access-Control-Allow-Private-Network', 'true');
 }
 
+function updateMarkdownWeights(content, submissionData) {
+  if (!submissionData || typeof submissionData !== 'object') return content;
+  const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  if (!fmMatch) return content;
+
+  let fm = fmMatch[1];
+  const body = fmMatch[2];
+  const subIds = Object.keys(submissionData);
+  const isMulti = fm.includes('indieningen:');
+
+  if (isMulti) {
+    subIds.forEach((subId) => {
+      const subInfo = submissionData[subId];
+      if (!subInfo) return;
+
+      const subRegex = new RegExp(`(  - id:\\s*["']?${subId}["']?[\\s\\S]*?)(?=\\n  - id:|\\n[a-zA-Z0-9_-]+:|$)`);
+      fm = fm.replace(subRegex, (subBlock) => {
+        let updatedBlock = subBlock;
+
+        // 1. Totaalgewicht van de indiening
+        if (typeof subInfo.weight === 'number') {
+          if (/(\n\s*gewicht:\s*)\d+/.test(updatedBlock)) {
+            updatedBlock = updatedBlock.replace(/(\n\s*gewicht:\s*)\d+/, `$1${subInfo.weight}`);
+          } else {
+            if (/(\n\s*lesuren:\s*\d+)/.test(updatedBlock)) {
+              updatedBlock = updatedBlock.replace(/(\n\s*lesuren:\s*\d+)/, `$1\n    gewicht: ${subInfo.weight}`);
+            } else if (/(\n\s*titel:\s*["'][^"']*["'])/.test(updatedBlock)) {
+              updatedBlock = updatedBlock.replace(/(\n\s*titel:\s*["'][^"']*["'])/, `$1\n    gewicht: ${subInfo.weight}`);
+            }
+          }
+        }
+
+        // 2. Gewichten per succescriterium binnen deze indiening
+        const critWeights = subInfo.criteriaWeights || {};
+        Object.entries(critWeights).forEach(([code, w]) => {
+          const critRegex = new RegExp(`(\\n\\s+- code:\\s*["']?${code}["']?[\\s\\S]*?)(?=\\n\\s+- code:|\\n  - id:|\\n[a-zA-Z0-9_-]+:|$)`);
+          updatedBlock = updatedBlock.replace(critRegex, (critItem) => {
+            if (/(\n\s+gewicht:\s*)\d+/.test(critItem)) {
+              return critItem.replace(/(\n\s+gewicht:\s*)\d+/, `$1${w}`);
+            } else {
+              return critItem.replace(/(\n\s+- code:\s*["']?[^"'\n]+["']?)/, `$1\n        gewicht: ${w}`);
+            }
+          });
+        });
+
+        return updatedBlock;
+      });
+    });
+  } else {
+    // Enkele indiening
+    const firstSub = submissionData[subIds[0]] || Object.values(submissionData)[0];
+    if (firstSub) {
+      // 1. Totaalgewicht op hoofdniveau
+      if (typeof firstSub.weight === 'number') {
+        if (/^(\s*gewicht:\s*)\d+/m.test(fm)) {
+          fm = fm.replace(/^(\s*gewicht:\s*)\d+/m, `$1${firstSub.weight}`);
+        } else {
+          if (/^(\s*leerplandoelen:)/m.test(fm)) {
+            fm = fm.replace(/^(\s*leerplandoelen:)/m, `gewicht: ${firstSub.weight}\n$1`);
+          }
+        }
+      }
+
+      // 2. Gewichten per succescriterium
+      const critWeights = firstSub.criteriaWeights || {};
+      Object.entries(critWeights).forEach(([code, w]) => {
+        const critRegex = new RegExp(`(\\n\\s*- code:\\s*["']?${code}["']?[\\s\\S]*?)(?=\\n\\s*- code:|\\n[a-zA-Z0-9_-]+:|$)`);
+        fm = fm.replace(critRegex, (critItem) => {
+          if (/(\n\s+gewicht:\s*)\d+/.test(critItem)) {
+            return critItem.replace(/(\n\s+gewicht:\s*)\d+/, `$1${w}`);
+          } else {
+            return critItem.replace(/(\n\s*- code:\s*["']?[^"'\n]+["']?)/, `$1\n    gewicht: ${w}`);
+          }
+        });
+      });
+    }
+  }
+
+  return `---\n${fm}\n---\n${body}`;
+}
+
 const server = http.createServer((req, res) => {
   setCorsHeaders(res);
 
@@ -84,16 +165,39 @@ const server = http.createServer((req, res) => {
         const targetPath = path.join(DATA_DIR, filename);
         const jsonString = JSON.stringify(dataToSave, null, 2) + '\n';
 
-        // Schrijf direct weg naar data/
+        // 1. Schrijf direct weg naar data/
         fs.writeFileSync(targetPath, jsonString, 'utf8');
-
         console.log(`[Save Server] ✅ Succesvol opgeslagen: data/${filename} (${new Date().toLocaleTimeString()})`);
+
+        // 2. Schrijf eventueel gewichten weg naar het corresponderende markdownbestand
+        let mdUpdated = false;
+        const rawFilePath = (payload.filePath || '').trim();
+        if (rawFilePath) {
+          const cleanRel = rawFilePath.replace(/^content[\\/]/, '');
+          const mdFullPath = path.join(ROOT_DIR, 'content', cleanRel);
+
+          if (fs.existsSync(mdFullPath) && mdFullPath.endsWith('.md')) {
+            try {
+              const currentMd = fs.readFileSync(mdFullPath, 'utf8');
+              const submissionsData = (dataToSave && dataToSave.submissions) || {};
+              const updatedMd = updateMarkdownWeights(currentMd, submissionsData);
+              if (updatedMd !== currentMd) {
+                fs.writeFileSync(mdFullPath, updatedMd, 'utf8');
+                mdUpdated = true;
+                console.log(`[Save Server] 📝 Markdown frontmatter gewichten bijgewerkt: content/${cleanRel}`);
+              }
+            } catch (mdErr) {
+              console.error(`[Save Server] ⚠️ Kon markdown niet bijwerken (${mdFullPath}):`, mdErr.message);
+            }
+          }
+        }
 
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({
           ok: true,
           filename: filename,
           path: `data/${filename}`,
+          markdownUpdated: mdUpdated,
           savedAt: new Date().toISOString(),
           displayTime: new Date().toLocaleTimeString()
         }));
