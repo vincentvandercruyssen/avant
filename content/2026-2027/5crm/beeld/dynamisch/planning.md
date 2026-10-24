@@ -31,18 +31,15 @@
 ### Dynamisch: Keuze techniek, technische set-up en testshots
 
 ### Lesverloop & inhoud
-1. **Keuze en technische voorbereiding:**
-   * Definitieve selectie van één bewegingstechniek per leerling op basis van het vooronderzoek.
-   * Bepalen van de benodigde apparatuur en opstelling (statief, camera-instellingen, sluitertijdkeuze, studioverlichting of externe scanner/rekwisieten).
-2. **Praktijkexperimenten en testopnames:**
-   * Schieten van minimaal vijf gerichte testshots op locatie of in de studio.
-   * Experimenteren met variabele sluitertijden (bv. 1/4s vs. 1/30s vs. 1/1000s), bewegingssnelheid van het onderwerp of de camera (*panning*, *zoom burst*), of digitale laagstapeling.
+1. **Keuze en voorbereiding:**
+   * Selectie van één bewegingstechniek (op basis van het vooronderzoek).
+   * Bepalen van de benodigde apparatuur en opstelling (statief, camera-instellingen, sluitertijdkeuze, studioverlichting of iets anders?).
+2. **Testopnames:**
+   * Schieten en experimenteren met minimaal vijf gerichte testshots.
 3. **Beeldbeoordeling in Adobe Bridge:**
-   * Importeren van testshots vanaf de SD-kaart naar de projectmap `01_testshots/`.
-   * Inspecteren van scherpte, bewegingssporen, over-/onderbelichting en compositie via de voorvertoning in Bridge.
+   * Importeren vanaf de SD-kaart naar de projectmap `01_testshots/`.
    * Selecteren van de sterkste testopname als basis voor het eindbeeld.
-4. **Afronding en tussentijdse bundeling:**
-   * Samenvoegen van de minimaal vijf testshots op één A4 in een compact overzichtsdocument (`VoornaamA_Dynamisch-Testshots.pdf`).
+   * Samenvoegen van de minimaal vijf testshots op één A4 in een overzichtsdocument (`VoornaamA_Dynamisch-Testshots.pdf`).
 
 ### Leerplandoelen
 * **CRS02:** Doelgericht cameratechnieken, sluitertijden of bewerkingsmethodes selecteren om beweging overtuigend uit te drukken.

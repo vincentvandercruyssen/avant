@@ -106,6 +106,7 @@
 * **CRS15:** 2D-basisvormen, typografische elementen en beeldmateriaal gestructureerd opzetten in After Effects.
 * **CRS16:** Dynamische 2D-animaties realiseren met keyframes, snelheidsversnelling (*Easy Ease*) en de Graph Editor.
 * **CRS21:** Typografie expressief animeren met aandacht voor leesbaarheid en ritme.
+* **GEC01:** De tussentijdse deadline en inleverafspraken voor het pinboard en storyboard stipt naleven.
 
 ## Les 5 17/09/2026 (Motion, 12:40 - 14:20)
 
@@ -134,6 +135,7 @@
 * **CRS15:** 2D-basisvormen en lagen gestructureerd opzetten in de compositietijdlijn.
 * **CRS16:** Dynamische 2D-animaties realiseren met keyframes, snelheidsversnelling (*Easy Ease*) en de Graph Editor.
 * **CRS27:** Ontbrekende projectonderdelen en schetsen volgens afspraak remediëren en opleveren via de inhaalzone op Smartschool.
+* **GEC01:** De tussentijdse deadline, afspraken en inleverprocedures voor het pinboard en storyboard stipt naleven.
 
 ## Les 6 18/09/2026 (Motion)
 
@@ -160,3 +162,5 @@
 * **CRS16:** Twee afzonderlijke, dynamische 2D-vormanimaties realiseren met keyframes, Easy Ease en de Graph Editor.
 * **CRS21:** Typografie expressief animeren met behulp van de Animate-functie en aandachtige timing.
 * **CRS23:** Composities en geëxporteerde MP4-videobestanden controleren op resolutie, framerate en vloeiende weergave.
+* **CRS27:** Het volledige projectpakket en de deliverables conform de mappenstructuur opleveren in de Smartschool-uploadzone.
+* **GEC01:** De finale deadline, inleverprocedures en afspraken van het project stipt naleven.

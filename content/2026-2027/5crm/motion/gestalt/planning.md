@@ -1,4 +1,4 @@
-## Les 1 22/10/2026 (Motion, 12:40 - 14:20)
+## Les 1 16/10/2026 (Motion, 12:40 - 14:20)
 
 ### Gestalt: Onderzoek, schetsboek & raster in After Effects
 
@@ -29,24 +29,29 @@
 * **CRS07:** Inspiratiebronnen en ontwerpprincipes doelgericht verzamelen en analyseren via het Pinterest-bord.
 * **CRS27:** Het afgewerkte Quicktype-projectpakket conform de vereiste bestandsstructuur uploaden.
 
-## Les 2 29/10/2026 (Motion, 12:40 - 14:20)
+## Les 2 22/10/2026 (Motion, 12:40 - 14:20)
 
 ### Gestalt: Uitlijning, typografie & eerste transformatie
 
 ### Lesverloop & inhoud
-1. **Voltooiing grid & wiskundige uitlijning:**
-   * Kopiëren van de eerste rij naar 8 rijen (32 cirkels in totaal).
-   * Perfect gelijk verdelen van rijen en kolommen met het *Align*-paneel (*Distribute Horizontally & Vertically*).
-2. **Typografische positionering:**
-   * Typen en positioneren van het eerste gekozen principe linksboven, uitgelijnd met de rand van het raster.
-   * Toevoegen van de statische tekst *Designprincipes* rechtsonderaan het raster.
-3. **Animeren met Contents vs. Transform:**
-   * Demonstreren van het fundamentele verschil tussen *Contents Size* (vorm zelf) en *Transform Scale* (volledige laag).
+1. **Concept & storyboard in schetsboek:**
+   * Uitschrijven van de 3 gekozen principes in het schetsboek, uittekenen van een 4×8 raster en tekenen van de transformaties met bewegingspijlen. Typografische hiërarchie vastleggen.
+2. **Project & raster After Effects:**
+   * Aanmaken van de compositie VoornaamA_Gestalt (1080 × 1920 px, 30 fps, ~15 sec).
+   * Hulpraster (*Show Grid*) en instellen op 40 px met 1 onderverdeling via de voorkeuren.
+   * Plaatsen van hulplijnen voor de buitenmarges (links 160 px, rechts 920 px, boven 200 px, onder 1760 px).
+3. **Patroonopbouw met vormlagen:**
+   * Shape layer: vormafmeting instellen via *Contents → Ellipse Path → Size*.
+   * Dupliceren en positioneren van de vorm in raster. Gelijk verdelen van rijen en kolommen met het *Align*-paneel (*Distribute Horizontally & Vertically*).
+4. **Typografische positionering:**
+   * Positioneren van het gekozen principe, uitgelijnd met de rand van het raster. Toevoegen van jouw titel (bv. Gestalt) rechtsonderaan het raster.
+5. **Animeren met Contents vs. Transform:**
+   * Het verschil tussen *Contents Size* (vorm zelf) en *Transform Scale* (volledige laag).
    * Plaatsen van een begin-keyframe via de stopwatch op frame `00:00`.
-   * Vormgeven en timen van het eerste ontwerpprincipe (eerste 5 seconden) door parameterwijziging op de tijdlijn.
-4. **Kopiëren van keyframes:**
-   * Overdragen van parameteranimaties naar meerdere cirkels via het kopiëren en plakken van keyframes.
-   * Controleren van het ritme en de leesbaarheid via de spatiebalk.
+   * Vormgeven en timen van het eerste ontwerpprincipe door wijzigingen op de tijdlijn.
+6. **Kopiëren van keyframes:**
+   * Overdragen van animaties naar meerdere cirkels via het kopiëren en plakken van keyframes.
+
 
 ### Leerplandoelen
 * **CRS02:** Doelgericht de juiste transformatieparameters (Size, Position, Scale, Rotation, Opacity) kiezen in functie van het ontwerpprincipe.
@@ -54,28 +59,32 @@
 * **CRS24:** Een evenwichtige compositie en strakke typografische uitlijning behouden binnen het modulaire grid.
 * **SV06.72:** Het verband analyseren tussen 2D-vectorparameters en dynamische visuele verhoudingen.
 
-## Les 3 12/11/2026 (Motion, 12:40 - 14:20)
+## Les 3 23/10/2026 (Motion, 08:20 - 10:00)
 
-### Gestalt: Tweede en derde principe, overgangen & Easy Ease
+### Gestalt: Raster, typografie & animeren met vormlagen
 
 ### Lesverloop & inhoud
-1. **Realisatie principe twee en drie:**
-   * Wisselen van de titeltypografie bovenaan het patroon bij elke faseovergang.
-   * Animeren van het tweede ontwerpprincipe tussen seconde 05:00 en 10:00.
-   * Animeren van het derde ontwerpprincipe tussen seconde 10:00 en 15:00.
-2. **Vloeiende transities & continuïteit:**
-   * Ontwerpen van vloeiende overgangen waarin de vormen van het ene principe naadloos transformeren naar het volgende.
-   * Vermijden van stijve rustmomenten tussen de verschillende principes.
-3. **Versnelling & vertraging met Easy Ease:**
-   * Selecteren van alle keyframes over de volledige sequentie en toepassen van *Easy Ease* (`F9`).
-   * Fijnregelen van de timing door keyframes dichter of verder uit elkaar te schuiven voor een natuurlijk kinetisch ritme.
+1. **Raster & magnetisme in After Effects:**
+   * Activeren van het raster en *Snap to Grid* (`Ctrl + Shift + '` / `View > Snap to Grid`).
+   * Afzonderlijke lagen snappen directer en nauwkeuriger op het raster dan individuele vectorvormen binnen een vormlaag.
+2. **Vormafmetingen & patroonopbouw:**
+   * Exact instellen van de basisvorm (via *Contents → Ellipse Path → Size*).
+   * Nauwkeurig positioneren en dupliceren over het 4×8 raster met gelijke tussenafstanden (gutters).
+3. **Typografische positionering & hiërarchie:**
+   * Plaatsen van de principetitel bovenaan, strikt links uitgelijnd met de rand van het raster.
+   * Plaatsen van de vaste aanduiding *Designprincipes* (of eigen titel) rechtsonderaan ter versterking van de lay-outhiërarchie.
+4. **Animeren van het eerste ontwerpprincipe:**
+   * Onderscheid tussen *Contents* (vectorvorm zelf) en *Transform* (volledige laag).
+   * Keyframes plaatsen en dynamische transformaties (positie, schaal, rotatie of transparantie) timen en finetunen op de tijdlijn.
+   * Overdragen van animaties en keyframes naar meerdere (vorm)lagen.
 
 ### Leerplandoelen
-* **CRS02:** Dynamische bewegingstransformaties en overgangen selecteren die de betekenis van elk principe versterken.
-* **CRS16:** Een samenhangende, energieke animatiereeks van 3 ontwerpprincipes realiseren binnen 15 seconden.
-* **CRS22:** Timing, esthetiek en bewegingscurves harmonieus op elkaar afstemmen via Easy Ease.
+* **CRS02:** Doelgericht de juiste transformatieparameters (Size, Position, Scale, Rotation, Opacity) kiezen in functie van het gekozen ontwerpprincipe.
+* **CRS06:** Vormlagen en rasterinstellingen nauwkeurig beheren, laten snappen op het grid en keyframen in After Effects.
+* **CRS24:** Een evenwichtige compositie en strakke typografische hiërarchie behouden binnen het modulaire raster.
+* **SV06.72:** Het verband analyseren tussen 2D-vectorparameters, rasterstructuren en dynamische visuele verhoudingen.
 
-## Les 4 19/11/2026 (Motion, 12:40 - 14:20)
+## Les 4 12/11/2026 (Motion, 12:40 - 14:20)
 
 ### Gestalt: Finetuning, kwaliteitscontrole & export
 

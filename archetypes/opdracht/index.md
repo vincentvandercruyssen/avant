@@ -13,8 +13,10 @@ leerplandoelen:
   # Voorbeeld met succescriterium in eigen woorden:
   # - code: "CRS02"
   #   criterium: "Zelfstandig een passend plan en techniek selecteren."
-  # Of eenvoudige code:
-  # - "CRS01"
+  # - code: "CRS27"
+  #   criterium: "Het volledige projectpakket conform de mappenstructuur en naamconventie opleveren."
+  # - code: "GEC01"
+  #   criterium: "De deadline, inleverprocedures en afspraken van het project stipt naleven."
 draft: false
 ---
 

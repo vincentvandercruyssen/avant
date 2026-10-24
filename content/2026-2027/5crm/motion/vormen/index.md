@@ -15,7 +15,7 @@ indieningen:
   - id: "pinboard-storyboard"
     titel: "Vormen 3.1+3.2 Pinboard + Storyboard"
     lesuren: 2
-    gewicht: 10
+    gewicht: 6
     leerplandoelen:
       - code: "CRS03"
         gewicht: 2
@@ -29,11 +29,14 @@ indieningen:
       - code: "CRS02"
         gewicht: 1
         criterium: "Doelgericht de vijf transformatie-eigenschappen (Anchor Point, Position, Scale, Rotation, Opacity) en vormparameters aanduiden bij de schetsen."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor het pinboard en storyboard stipt naleven."
 
   - id: "oplevering"
     titel: "Vormen 4 Oplevering"
     lesuren: 4
-    gewicht: 20
+    gewicht: 15
     leerplandoelen:
       - code: "CRS16"
         gewicht: 3
@@ -52,7 +55,10 @@ indieningen:
         criterium: "Composities en MP4-exports controleren op correcte resoluties, framerate (30 fps) en vloeiende weergave."
       - code: "CRS27"
         gewicht: 1
-        criterium: "Het volledige After Effects-project en de vier gerenderde video's tijdig en conform de mappenstructuur opleveren in de Smartschool-uploadzone."
+        criterium: "Het volledige After Effects-project en de vier gerenderde video's conform de mappenstructuur opleveren in de Smartschool-uploadzone."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline, inleverprocedures en afspraken van het project stipt naleven."
 draft: false
 ---
 
@@ -326,6 +332,7 @@ Controleer je werk grondig aan de hand van onderstaande checklist vóór je defi
 - De hoofdmap heet exact `VoornaamA_Vormen`.
 - De map `01_assets` bevat je achtergrondfoto en `02_exports` bevat de vier videobestanden.
 - Het projectbestand `VoornaamA_Vormen.aep` en je storyboard-bestand (`VoornaamA_Vormen-Storyboard.jpg` of `.pdf`) staan netjes in de hoofdmap.
+- Het archief is tijdig ingeleverd via de voorziene uploadzone op Smartschool.
 
 #### Technische kwaliteit
 - Alle vier de composities zijn ingesteld op exact **30 fps**.

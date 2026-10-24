@@ -3,17 +3,18 @@
   "version": "2.2.0",
   "assignmentId": "5crm-vormen",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-20T13:41:58.473Z",
+  "lastUpdated": "2026-10-20T17:14:04.959Z",
   "submissions": {
     "pinboard-storyboard": {
       "id": "pinboard-storyboard",
-      "title": "Vormen 3.1+3.2 Pinboard + Storyboard (4 comps)",
-      "weight": 10,
+      "title": "Vormen 3.1+3.2 Pinboard + Storyboard",
+      "weight": 6,
       "criteriaWeights": {
         "CRS03": 2,
         "CRS01": 1,
         "CRS02": 1,
-        "CRS07": 1
+        "CRS07": 1,
+        "GEC01": 1
       },
       "clusters": [
         {
@@ -43,21 +44,93 @@
               "gewicht": 1
             }
           ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
         }
       ],
-      "evaluations": {}
+      "evaluations": {
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS03": 2,
+            "CRS07": 3,
+            "GEC01": 2
+          },
+          "feedback": "Goed gewerkt! Duidelijke storyboards waarbij je goed rekening hield met de compositieverhoudingen, aangevuld met heldere aanduidingen. Een storyboard mag je zeker ook groter tekenen (bijvoorbeeld één per blad), dan heb je meer ruimte voor je ideeën. Zelfs voor een schets kun je gerust een lat gebruiken, dat oogt netter en consistenter. Zeer uiteenlopende, sterke voorbeelden gezocht via Pinterest!",
+          "scores": {
+            "4.1": 4.5,
+            "4.3": 6,
+            "4.6": 4
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 2,
+            "CRS03": 1,
+            "CRS07": 3,
+            "GEC01": 1
+          },
+          "feedback": "De foto's van de schetsen zijn te slordig. Dat doet heel veel afbreuk aan je werk. Ook heb je niet overal de gevraagde beeldverhouding gevolgd. Je hebt de storyboards wel goed en groot telkens op één blad gezet en de aanduidingen zitten ook goed, maar sommige teksten zijn dus niet leesbaar door de fotokwaliteit. Zeer sterke zoektocht op Pinterest binnen de opdracht en naar een eigen stijl! Let er wel op dat er geen pins voor andere opdrachten bijkomen. Zie het als een moodboard voor één opdracht, nu is dat nog niet helemaal duidelijk.",
+          "scores": {
+            "4.1": 2,
+            "4.3": 6,
+            "4.6": 2
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS03": 1,
+            "CRS07": 0,
+            "GEC01": 0
+          },
+          "feedback": "Zorg dat je telkens tijdig en correct indient. Er zitten mooie en goed afgelijnde storyboards tussen, let wel op consistentie: plaats van je titel en extra informatie, Idriss. Je mag ze zeker meer ruimte laten innemen, bijvoorbeeld één storyboard per blad. Zo geef je meer ruimte aan je ideeën. Compositie twee heeft de verkeerde verhouding gekregen. Je Pinterest-verzameling is ondermaats: twee leuke visuele concepten, maar je hebt te weinig bewegende voorbeelden verzameld die aansluiten bij de opdracht.",
+          "scores": {
+            "4.1": 2.5,
+            "4.3": 0,
+            "4.6": 0
+          }
+        },
+        "d61daca6ab": {
+          "scores": {
+            "4.3": 6,
+            "4.6": 0,
+            "4.1": 1
+          },
+          "criteriaLevels": {
+            "CRS07": 3,
+            "GEC01": 0,
+            "CRS02": 1,
+            "CRS01": 1,
+            "CRS03": 0
+          },
+          "feedback": "Je bent al snel in After Effects gedoken, maar duidelijke storyboards waren een belangrijk vertrekpunt voor de verschillende composities. Hoewel sommige aanduidingen op jouw storyboards oké zijn, oogt het geheel slordig. Schrijf eigenschappen liever buiten de kaders, zodat helder blijft wat effectief bij het ontwerp hoort. Zelfs bij een schets helpt een lat om je kaders gelijk te houden, wat je niet overal deed. Bovendien kloppen niet alle beeldverhoudingen en werden twee storyboards te laat ingeleverd. De laatste storyboards hebben toffe tekeningen, maar ze beantwoorden te weinig aan de opdracht.\nVoor je Pinboard heb je heel sterke en gevarieerde voorbeelden verzameld."
+        }
+      }
     },
     "oplevering": {
       "id": "oplevering",
       "title": "Vormen 4 Oplevering",
-      "weight": 20,
+      "weight": 15,
       "criteriaWeights": {
         "CRS21": 2,
         "CRS16": 3,
         "CRS06": 2,
         "CRS15": 1,
         "CRS27": 1,
-        "CRS23": 1
+        "CRS23": 1,
+        "GEC01": 1
       },
       "clusters": [
         {
@@ -104,6 +177,16 @@
           "criteria": [
             {
               "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "GEC01",
               "gewicht": 1
             }
           ]

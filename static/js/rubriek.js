@@ -397,10 +397,17 @@
     buildSubmissionTabs();
     buildStudentSelector();
 
-    // 5. Selecteer eerste submissie & student
-    switchSubmission(0);
+    // 5. Bepaal initiële student (via URL hash indien aanwezig, anders eerste)
+    const initialStudentIdx = findStudentIndexFromHash(window.location.hash);
+    if (initialStudentIdx !== -1) {
+      state.activeStudentIndex = initialStudentIdx;
+    }
 
-    // 6. Controleer lokale Save Server
+    // 6. Selecteer eerste submissie en activeer student
+    switchSubmission(0);
+    selectStudent(state.activeStudentIndex);
+
+    // 7. Controleer lokale Save Server
     await checkServerStatus();
 
     updateStatus('Klaar voor invoer. Duid per succescriterium het niveau aan; clusterpunten worden gewogen en live berekend.', 'info');
@@ -555,6 +562,13 @@
       }
     });
 
+    window.addEventListener('hashchange', () => {
+      const targetIdx = findStudentIndexFromHash(window.location.hash);
+      if (targetIdx !== -1 && targetIdx !== state.activeStudentIndex) {
+        selectStudent(targetIdx, false);
+      }
+    });
+
     window.addEventListener('beforeunload', (e) => {
       if (state.isDirty && !state.isServerConnected) {
         e.preventDefault();
@@ -619,6 +633,9 @@
     }
     buildCompactSummaryTable();
     updateAllChipsStatus();
+    if (currentStudent) {
+      highlightSummaryTableRow(currentStudent.hash);
+    }
   }
 
   // --- Student Selector & Chips Strip ---
@@ -655,7 +672,69 @@
     updateAllChipsStatus();
   }
 
-  function selectStudent(index) {
+  function updateUrlHash(hash) {
+    if (!hash) return;
+    const newHash = `#${hash}`;
+    if (window.location.hash !== newHash) {
+      if (window.history && window.history.replaceState) {
+        const currentUrl = window.location.pathname + window.location.search + newHash;
+        window.history.replaceState(null, '', currentUrl);
+      } else {
+        window.location.hash = newHash;
+      }
+    }
+  }
+
+  function findStudentIndexFromHash(rawHash) {
+    if (!rawHash) return -1;
+    let clean = '';
+    try {
+      clean = decodeURIComponent(rawHash).replace(/^#/, '').trim().toLowerCase();
+    } catch (e) {
+      clean = rawHash.replace(/^#/, '').trim().toLowerCase();
+    }
+    if (!clean || !state.students || state.students.length === 0) return -1;
+
+    // 1. Exacte match op student.hash (bv. 8ec556f315)
+    let idx = state.students.findIndex((s) => s.hash && s.hash.toLowerCase() === clean);
+    if (idx !== -1) return idx;
+
+    // 2. Prefix match op student.hash (minstens 4 tekens)
+    if (clean.length >= 4) {
+      idx = state.students.findIndex((s) => s.hash && s.hash.toLowerCase().startsWith(clean));
+      if (idx !== -1) return idx;
+    }
+
+    // 3. Match op naam (exact, voornaam of genormaliseerd)
+    const norm = (str) => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const cleanNorm = norm(clean);
+    if (cleanNorm) {
+      idx = state.students.findIndex((s) => norm(s.name) === cleanNorm || norm(s.displayLabel) === cleanNorm);
+      if (idx !== -1) return idx;
+
+      idx = state.students.findIndex((s) => {
+        const firstName = norm((s.displayLabel || s.name || '').split(' ')[0]);
+        return firstName === cleanNorm;
+      });
+      if (idx !== -1) return idx;
+
+      idx = state.students.findIndex((s) => norm(s.name).includes(cleanNorm) || norm(s.displayLabel).includes(cleanNorm));
+      if (idx !== -1) return idx;
+    }
+
+    // 4. Match op studentnummer / volgnummer (bv. #3 of #student-3)
+    const numMatch = clean.match(/^\D*(\d+)\D*$/);
+    if (numMatch) {
+      const num = parseInt(numMatch[1], 10);
+      if (num >= 1 && num <= state.students.length) {
+        return num - 1;
+      }
+    }
+
+    return -1;
+  }
+
+  function selectStudent(index, updateHash = true) {
     if (index < 0 || index >= state.students.length) return;
     state.activeStudentIndex = index;
     const student = state.students[index];
@@ -675,6 +754,10 @@
     renderStudentRubric(student);
     updateStudentHeaderScore(student.hash);
     highlightSummaryTableRow(student.hash);
+
+    if (updateHash && student.hash) {
+      updateUrlHash(student.hash);
+    }
   }
 
   // --- Rubriek Renders & Gewogen Berekening ---
@@ -791,12 +874,21 @@
       </div>
       <textarea id="student-feedback-input" 
                 class="student-feedback-textarea" 
-                rows="3" 
+                rows="4" 
                 placeholder="Typ gerichte individuele feedback voor deze leerling...">${escapeHtml(studentEval.feedback || '')}</textarea>
     `;
 
     const textarea = feedbackBox.querySelector('textarea');
+    const autoResize = () => {
+      textarea.style.height = 'auto';
+      const borderOffset = textarea.offsetHeight - textarea.clientHeight;
+      textarea.style.height = `${textarea.scrollHeight + borderOffset}px`;
+    };
+
     textarea.addEventListener('input', () => {
+      if (!CSS.supports?.('field-sizing', 'content')) {
+        autoResize();
+      }
       if (!subEvals[student.hash]) {
         subEvals[student.hash] = { scores: {}, criteriaLevels: {} };
       }
@@ -805,6 +897,10 @@
     });
 
     container.appendChild(feedbackBox);
+
+    if (!CSS.supports?.('field-sizing', 'content')) {
+      requestAnimationFrame(autoResize);
+    }
   }
 
   function handleCriteriumLevelClick(studentHash, cluster, critCode, level) {
@@ -1136,7 +1232,10 @@
       });
 
       if (Object.keys(activeScores).length > 0) {
-        exportScores[hash] = activeScores;
+        exportScores[hash] = {
+          ...activeScores,
+          _feedback: evalData.feedback || ''
+        };
         studentCount++;
       }
     });
@@ -1150,6 +1249,7 @@
       classGroup: state.classGroup,
       weight: sub.weight,
       activeClusters: sub.clusters.map((c) => ({ id: c.id, naam: c.naam })),
+      students: (state.students || []).map((s) => ({ hash: s.hash, name: s.name })),
       timestamp: new Date().toISOString(),
       scores: exportScores
     };
