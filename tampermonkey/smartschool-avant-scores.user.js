@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Avant Smartschool Skore Auto-Grader (Leerling- & Klasbeeld)
 // @namespace    https://avant.local/
-// @version      2026-10-20-1835
+// @version      2026-10-25-1115
 // @description  Vult automatisch rubric-scores (4.1 t/m 4.6) in vanuit Avant in het Smartschool puntenboek (zowel per leerling als voor de hele klas)
 // @author       Vincent Vander Cruyssen & Crossmedia Team
 // @match        *://*.smartschool.be/*
@@ -53,7 +53,17 @@
     return matches.length >= 2 || (matches.length === 1 && words1.length === 1);
   }
 
-  // --- Document & Iframe Resolution ---
+  // --- Document, Window & jQuery Helpers ---
+
+  function getPageJQuery(doc) {
+    const win = doc?.defaultView || window;
+    return win.wrappedJSObject?.$ || win.$ || (typeof unsafeWindow !== 'undefined' ? (unsafeWindow.$ || unsafeWindow.jQuery) : null) || window.$;
+  }
+
+  function getPageSMSC(doc) {
+    const win = doc?.defaultView || window;
+    return win.wrappedJSObject?.SMSC || win.SMSC || (typeof unsafeWindow !== 'undefined' ? unsafeWindow.SMSC : null) || null;
+  }
 
   function getGradebookDoc() {
     if (document.getElementById('gridViewContentTable') || document.querySelector('.content-table')) {
@@ -68,16 +78,29 @@
     for (const sel of frameSelectors) {
       const frame = document.querySelector(sel);
       try {
-        if (frame && frame.contentDocument && frame.contentDocument.getElementById('gridViewContentTable')) {
-          return frame.contentDocument;
+        if (frame && frame.contentDocument) {
+          if (frame.contentDocument.getElementById('gridViewContentTable')) {
+            return frame.contentDocument;
+          }
+          // Zoek in geneste iframes (bv. gradebook_data/Gradebook_0VF5.htm)
+          const nested = frame.contentDocument.querySelector('iframe');
+          if (nested && nested.contentDocument && nested.contentDocument.getElementById('gridViewContentTable')) {
+            return nested.contentDocument;
+          }
         }
       } catch (e) {}
     }
     const allIframes = Array.from(document.querySelectorAll('iframe'));
     for (const f of allIframes) {
       try {
-        if (f.contentDocument && f.contentDocument.getElementById('gridViewContentTable')) {
-          return f.contentDocument;
+        if (f.contentDocument) {
+          if (f.contentDocument.getElementById('gridViewContentTable')) {
+            return f.contentDocument;
+          }
+          const nested = f.contentDocument.querySelector('iframe');
+          if (nested && nested.contentDocument && nested.contentDocument.getElementById('gridViewContentTable')) {
+            return nested.contentDocument;
+          }
         }
       } catch (e) {}
     }
@@ -120,7 +143,7 @@
     try { el.click?.(); } catch (e) {}
 
     try {
-      const $ = win.$ || window.$;
+      const $ = getPageJQuery(el.ownerDocument);
       if ($) {
         const jqEvt = $.Event('click', { which: 1, button: 0, clientX, clientY, target: el });
         $(el).trigger('mousedown').trigger('mouseup').trigger(jqEvt);
@@ -407,24 +430,40 @@
   function findStudentList(doc, bundle) {
     const knownStudents = bundle.students || [];
 
-    const candidates = Array.from(doc.querySelectorAll('.pupil, .student, .user, [class*="pupil"], [class*="student"], tr[data-student], li[data-student], div[data-student]'));
-    
+    // Zoek eerst specifiek in de tree-container naar leerlingen (pupils)
+    const treePupils = Array.from(doc.querySelectorAll(
+      '.tree-container [viewtype="pupil"], [viewtype="pupil"], .tree-item-name[data-pupilid], .tree-item-pupil'
+    ));
+
     let studentElements = [];
-    if (candidates.length >= 3) {
-      studentElements = candidates;
+    if (treePupils.length >= 3) {
+      studentElements = treePupils;
     } else {
-      const allDivsAndSpans = Array.from(doc.querySelectorAll('div, li, span, a, td'));
-      studentElements = allDivsAndSpans.filter(el => {
-        const text = (el.innerText || el.textContent || '').trim();
-        return /^\d{1,2}\.\s+[A-Z]/.test(text) && el.children.length <= 2;
-      });
+      const candidates = Array.from(doc.querySelectorAll('.pupil, .student, .user, [class*="pupil"], [class*="student"], tr[data-student], li[data-student], div[data-student]'));
+      if (candidates.length >= 3) {
+        studentElements = candidates;
+      } else {
+        const allDivsAndSpans = Array.from(doc.querySelectorAll('div, li, span, a, td'));
+        studentElements = allDivsAndSpans.filter(el => {
+          const text = (el.innerText || el.textContent || '').trim();
+          return /^\d{1,2}\.\s+[A-Z]/.test(text) && el.children.length <= 2;
+        });
+      }
     }
 
     const matchedList = [];
     const seenNames = new Set();
 
     studentElements.forEach(el => {
-      const rawText = (el.innerText || el.textContent || '').trim();
+      // Sluit groepsitems zoals '5DA - Toon groepsbeeld' of klasgemiddelden uit
+      const viewType = el.getAttribute?.('viewtype') || el.closest?.('[viewtype]')?.getAttribute('viewtype');
+      if (viewType && viewType !== 'pupil') return;
+
+      const treeItem = el.closest?.('[viewtype="pupil"]') || el;
+      const pupilId = treeItem.getAttribute?.('data-pupilid') || null;
+      const pointerEl = treeItem.querySelector?.('.pointer') || el.querySelector?.('.pointer') || el;
+
+      const rawText = (treeItem.innerText || treeItem.textContent || el.innerText || el.textContent || '').trim();
       const clean = cleanStudentName(rawText);
       if (!clean || clean.length < 3 || seenNames.has(clean)) return;
 
@@ -436,12 +475,14 @@
         }
       }
 
-      const isActive = isElementActive(el);
+      const isActive = treeItem.classList?.contains('active') || isElementActive(treeItem) || isElementActive(el);
 
       matchedList.push({
         rawText,
         cleanName: clean,
-        element: el,
+        element: pointerEl,
+        treeItem,
+        pupilId,
         matchedStudent,
         hash: matchedStudent?.hash || null,
         isActive
@@ -458,7 +499,7 @@
     if (!input) return;
 
     const formatted = String(scoreValue).replace('.', ',');
-    input.focus();
+    input.focus?.();
     input.value = formatted;
 
     input.dispatchEvent(new Event('input', { bubbles: true }));
@@ -466,7 +507,7 @@
     input.dispatchEvent(new Event('blur', { bubbles: true }));
 
     try {
-      const $ = doc.defaultView?.$ || window.$;
+      const $ = getPageJQuery(doc);
       if ($) {
         $(input).val(formatted).trigger('input').trigger('change').trigger('blur');
       }
@@ -475,6 +516,96 @@
     input.style.backgroundColor = '#ecfdf5';
     input.style.border = '2px solid #10b981';
     input.style.transition = 'all 0.3s ease';
+  }
+
+  // --- Student Switcher & AJAX Synchronization ---
+
+  async function switchToStudent(doc, studentObj, targetXaxis = null) {
+    if (!studentObj) return false;
+
+    const treeItem = studentObj.treeItem || studentObj.element?.closest('[viewtype="pupil"]') || studentObj.element;
+    const pointer = studentObj.element?.classList?.contains('pointer') ? studentObj.element : (treeItem?.querySelector('.pointer') || studentObj.element || treeItem);
+
+    const isAlreadyActive = treeItem?.classList?.contains('active');
+
+    if (!isAlreadyActive && pointer) {
+      // 1. Klik op het pointer-element via pagina jQuery én native click
+      const jq = getPageJQuery(doc);
+      if (jq) {
+        try {
+          jq(pointer).trigger('click');
+        } catch (e) {
+          console.warn('[Avant] jq trigger click error:', e);
+        }
+      }
+
+      try { pointer.click(); } catch (e) {}
+      try {
+        pointer.dispatchEvent(new MouseEvent('click', {
+          bubbles: true,
+          cancelable: true,
+          view: doc.defaultView || window
+        }));
+      } catch (e) {}
+
+      // 2. Wacht tot Smartschool de boom markeert als active (polling tot max 1500ms)
+      for (let w = 0; w < 30; w++) {
+        if (treeItem?.classList?.contains('active')) break;
+        if (w === 6 && jq) {
+          // Retry trigger indien nodig
+          try { jq(pointer).trigger('click'); } catch (e) {}
+        }
+        await new Promise(r => setTimeout(r, 50));
+      }
+    }
+
+    // 3. Wacht tot de AJAX data van deze leerling geladen is in het puntenboek
+    const smsc = getPageSMSC(doc);
+    const state = smsc?.gridContainer?.options?.state;
+
+    // Wacht zolang state.attr('requestIsPending') === true
+    for (let w = 0; w < 40; w++) {
+      let isPending = false;
+      try {
+        if (state && typeof state.attr === 'function') {
+          isPending = !!state.attr('requestIsPending');
+        }
+      } catch (e) {}
+      if (!isPending) break;
+      await new Promise(r => setTimeout(r, 80));
+    }
+
+    // Wacht zolang een laaddialog of spinner zichtbaar is
+    for (let w = 0; w < 30; w++) {
+      const buildDialog = doc.getElementById('smscDialogGridViewUIBuildWindow');
+      const isDialogVisible = buildDialog &&
+        (buildDialog.offsetWidth > 0 || buildDialog.offsetHeight > 0) &&
+        buildDialog.style.display !== 'none' &&
+        window.getComputedStyle(buildDialog).display !== 'none';
+
+      const spinner = doc.querySelector('.loading-overlay, .grid-loading, .gb_loading');
+      const isSpinnerVisible = spinner && (spinner.offsetWidth > 0 || spinner.offsetHeight > 0);
+
+      if (!isDialogVisible && !isSpinnerVisible) break;
+      await new Promise(r => setTimeout(r, 80));
+    }
+
+    // Wacht tot #gridViewContentTable rijen bevat
+    for (let w = 0; w < 30; w++) {
+      const rows = doc.querySelectorAll('#gridViewContentTable tr');
+      if (rows.length >= 3) break;
+      await new Promise(r => setTimeout(r, 80));
+    }
+
+    // Korte buffer voor stabilisatie van CanJS DOM updates
+    await new Promise(r => setTimeout(r, 200));
+
+    // 4. Zorg dat de doelkolom in edit mode staat
+    if (targetXaxis !== null && targetXaxis !== undefined) {
+      await ensureColumnEditMode(doc, targetXaxis);
+    }
+
+    return true;
   }
 
   // --- Paste Handler per Column ---
@@ -551,6 +682,7 @@
     if (existing) existing.remove();
 
     let currentStudent = initialActiveStudent;
+    let isAutoFilling = false;
     const mappedClusterIds = Object.keys(clusterRows).filter(k => k !== 'feedback');
 
     const modal = document.createElement('div');
@@ -572,31 +704,102 @@
       border: 1px solid #e2e8f0;
     `;
 
-    function renderContent() {
+    modal.innerHTML = `
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <h3 style="margin:0; font-size:18px; color:#0284c7; display:flex; align-items:center; gap:6px;">
+          ⚡ Avant Punten Import
+        </h3>
+        <span style="font-size:12px; background:#e0f2fe; color:#0369a1; padding:3px 10px; border-radius:12px; font-weight:700;">
+          ${bundle.classGroup || '5CRM'}
+        </span>
+      </div>
+
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin-bottom:14px; font-size:13px;">
+        <div><strong>Opdracht:</strong> ${escapeHtml(bundle.submissionTitle || projectCol.title)}</div>
+        <div style="color:#64748b; font-size:12px; margin-top:2px;">
+          Doelkolom: <strong>${escapeHtml(projectCol.title)}</strong> (xaxis: ${projectCol.xaxis})
+        </div>
+        <div style="color:#64748b; font-size:12px; margin-top:2px;">
+          Gekoppelde criteria: <strong>${mappedClusterIds.join(', ')}</strong>
+        </div>
+      </div>
+
+      <div id="avant-student-card-container"></div>
+
+      <div id="avant-progress-container" style="display:none; margin-bottom:16px;">
+        <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px; font-weight:600; color:#0369a1;">
+          <span id="avant-progress-label">Bezig met invullen...</span>
+          <span id="avant-progress-count">0 / ${studentList.length}</span>
+        </div>
+        <div style="height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden;">
+          <div id="avant-progress-bar" style="height:100%; width:0%; background:#0284c7; transition:width 0.2s ease;"></div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <button id="btn-fill-active-student" style="
+          background: #0284c7;
+          color: #ffffff;
+          border: none;
+          padding: 10px 14px;
+          border-radius: 6px;
+          font-weight: 700;
+          font-size: 13px;
+          cursor: pointer;
+          transition: all 0.15s ease;
+        ">
+          ⚡ Vul huidige leerling in
+        </button>
+
+        ${studentList.length > 1 ? `
+          <button id="btn-fill-all-students" style="
+            background: #0f172a;
+            color: #ffffff;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+          ">
+            🚀 Vul ALLE ${studentList.length} leerlingen automatisch in
+          </button>
+        ` : ''}
+
+        <div style="display:flex; gap:8px; margin-top:4px;">
+          <button id="btn-prev-student" style="flex:1; background:#f1f5f9; color:#334155; border:1px solid #cbd5e1; padding:8px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+            ◀ Vorige
+          </button>
+          <button id="btn-next-student" style="flex:1; background:#f1f5f9; color:#334155; border:1px solid #cbd5e1; padding:8px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+            Volgende ▶
+          </button>
+          <button id="btn-close-modal" style="background:#f1f5f9; color:#64748b; border:1px solid #cbd5e1; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+            Sluiten
+          </button>
+        </div>
+      </div>
+
+      <p style="font-size:11px; color:#64748b; margin:14px 0 0 0; text-align:center;">
+        💡 Klik na afloop in Smartschool op de officiële <strong>Opslaan</strong> knop om te bewaren.
+      </p>
+    `;
+
+    function updateStudentCard() {
+      const cardContainer = modal.querySelector('#avant-student-card-container');
+      if (!cardContainer) return;
+
       const studentScores = currentStudent?.hash ? bundle.scores[currentStudent.hash] : null;
       const previewScores = studentScores ? (studentScores.clusters || studentScores) : null;
 
-      modal.innerHTML = `
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-          <h3 style="margin:0; font-size:18px; color:#0284c7; display:flex; align-items:center; gap:6px;">
-            ⚡ Avant Punten Import
-          </h3>
-          <span style="font-size:12px; background:#e0f2fe; color:#0369a1; padding:3px 10px; border-radius:12px; font-weight:700;">
-            ${bundle.classGroup || '5CRM'}
-          </span>
-        </div>
-
-        <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin-bottom:14px; font-size:13px;">
-          <div><strong>Opdracht:</strong> ${escapeHtml(bundle.submissionTitle || projectCol.title)}</div>
-          <div style="color:#64748b; font-size:12px; margin-top:2px;">
-            Doelkolom: <strong>${escapeHtml(projectCol.title)}</strong> (xaxis: ${projectCol.xaxis})
+      if (!currentStudent) {
+        cardContainer.innerHTML = `
+          <div style="background:#fef2f2; border:1px solid #fecaca; border-radius:8px; padding:12px; margin-bottom:16px; font-size:13px; color:#991b1b;">
+            Geen actieve leerling geselecteerd in Smartschool.
           </div>
-          <div style="color:#64748b; font-size:12px; margin-top:2px;">
-            Gekoppelde criteria: <strong>${mappedClusterIds.join(', ')}</strong>
-          </div>
-        </div>
-
-        ${currentStudent ? `
+        `;
+      } else {
+        cardContainer.innerHTML = `
           <div style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:8px; padding:12px; margin-bottom:16px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
               <span style="font-size:13px; font-weight:700; color:#0369a1;">
@@ -632,134 +835,87 @@
               </div>
             `}
           </div>
-        ` : `
-          <div style="background:#fef2f2; border:1px solid #fecaca; border-radius:8px; padding:12px; margin-bottom:16px; font-size:13px; color:#991b1b;">
-            Geen actieve leerling geselecteerd in Smartschool.
-          </div>
-        `}
+        `;
+      }
 
-        <div id="avant-progress-container" style="display:none; margin-bottom:16px;">
-          <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px; font-weight:600; color:#0369a1;">
-            <span id="avant-progress-label">Bezig met invullen...</span>
-            <span id="avant-progress-count">0 / ${studentList.length}</span>
-          </div>
-          <div style="height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden;">
-            <div id="avant-progress-bar" style="height:100%; width:0%; background:#0284c7; transition:width 0.2s ease;"></div>
-          </div>
-        </div>
-
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          <button id="btn-fill-active-student" ${!currentStudent?.hash ? 'disabled' : ''} style="
-            background: #0284c7;
-            color: #ffffff;
-            border: none;
-            padding: 10px 14px;
-            border-radius: 6px;
-            font-weight: 700;
-            font-size: 13px;
-            cursor: ${currentStudent?.hash ? 'pointer' : 'not-allowed'};
-            opacity: ${currentStudent?.hash ? '1' : '0.6'};
-            transition: all 0.15s ease;
-          ">
-            ⚡ Vul huidige leerling in (${escapeHtml(currentStudent?.cleanName || 'Leerling')})
-          </button>
-
-          ${studentList.length > 1 ? `
-            <button id="btn-fill-all-students" style="
-              background: #0f172a;
-              color: #ffffff;
-              border: none;
-              padding: 10px 14px;
-              border-radius: 6px;
-              font-weight: 700;
-              font-size: 13px;
-              cursor: pointer;
-              transition: all 0.15s ease;
-            ">
-              🚀 Vul ALLE ${studentList.length} leerlingen automatisch in
-            </button>
-          ` : ''}
-
-          <div style="display:flex; gap:8px; margin-top:4px;">
-            <button id="btn-prev-student" style="flex:1; background:#f1f5f9; color:#334155; border:1px solid #cbd5e1; padding:8px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
-              ◀ Vorige
-            </button>
-            <button id="btn-next-student" style="flex:1; background:#f1f5f9; color:#334155; border:1px solid #cbd5e1; padding:8px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
-              Volgende ▶
-            </button>
-            <button id="btn-close-modal" style="background:#f1f5f9; color:#64748b; border:1px solid #cbd5e1; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
-              Sluiten
-            </button>
-          </div>
-        </div>
-
-        <p style="font-size:11px; color:#64748b; margin:14px 0 0 0; text-align:center;">
-          💡 Klik na afloop in Smartschool op de officiële <strong>Opslaan</strong> knop om te bewaren.
-        </p>
-      `;
-
-      // Bevestig event listeners op het modal-element zelf (onafhankelijk van document-timing)
-      modal.querySelector('#btn-close-modal')?.addEventListener('click', () => modal.remove());
-
-      modal.querySelector('#btn-fill-active-student')?.addEventListener('click', async () => {
-        if (!currentStudent?.hash) return;
-        const btn = modal.querySelector('#btn-fill-active-student');
-        if (btn) btn.disabled = true;
-
-        await ensureColumnEditMode(doc, projectCol.xaxis);
-        const count = await fillScoresForStudent(doc, currentStudent, clusterRows, projectCol.xaxis, bundle);
-        
-        if (count > 0) {
-          flashSuccessButton(modal, 'btn-fill-active-student', `✓ ${count} clusters + feedback ingevuld!`);
-        } else {
-          flashSuccessButton(modal, 'btn-fill-active-student', `⚠️ 0 ingevuld (tik cel 2.1 aan)`);
-        }
-        if (btn) btn.disabled = false;
-      });
-
-      modal.querySelector('#btn-prev-student')?.addEventListener('click', () => {
-        const curIdx = studentList.indexOf(currentStudent);
-        const nextIdx = (curIdx > 0) ? curIdx - 1 : studentList.length - 1;
-        selectStudent(studentList[nextIdx]);
-      });
-
-      modal.querySelector('#btn-next-student')?.addEventListener('click', () => {
-        const curIdx = studentList.indexOf(currentStudent);
-        const nextIdx = (curIdx < studentList.length - 1) ? curIdx + 1 : 0;
-        selectStudent(studentList[nextIdx]);
-      });
-
-      modal.querySelector('#btn-fill-all-students')?.addEventListener('click', () => {
-        fillAllStudentsAutomatically(doc, modal, studentList, clusterRows, projectCol.xaxis, bundle);
-      });
+      const fillActiveBtn = modal.querySelector('#btn-fill-active-student');
+      if (fillActiveBtn) {
+        fillActiveBtn.textContent = `⚡ Vul huidige leerling in (${escapeHtml(currentStudent?.cleanName || 'Leerling')})`;
+        fillActiveBtn.disabled = !currentStudent?.hash || isAutoFilling;
+        fillActiveBtn.style.opacity = (!currentStudent?.hash || isAutoFilling) ? '0.6' : '1';
+        fillActiveBtn.style.cursor = (!currentStudent?.hash || isAutoFilling) ? 'not-allowed' : 'pointer';
+      }
     }
 
     async function selectStudent(studentObj) {
-      if (!studentObj) return;
+      if (!studentObj || isAutoFilling) return;
       currentStudent = studentObj;
-      if (studentObj.element) {
-        const clickTarget = studentObj.element.closest('a, tr, li, div') || studentObj.element;
-        simulateCellClick(clickTarget);
-        // Geef Smartschool tijd om de tabel van de leerling via AJAX te laden
-        await new Promise(r => setTimeout(r, 450));
-        await ensureColumnEditMode(doc, projectCol.xaxis);
-      }
-      renderContent();
+      updateStudentCard();
+      await switchToStudent(doc, studentObj, projectCol.xaxis);
+      updateStudentCard();
     }
 
-    document.body.appendChild(modal);
-    renderContent();
+    // Event listeners
+    modal.querySelector('#btn-close-modal')?.addEventListener('click', () => modal.remove());
 
-    // Houd continu in de gaten of de actieve leerling in Smartschool verandert (bv. door de leerkracht aangeklikt)
+    modal.querySelector('#btn-fill-active-student')?.addEventListener('click', async () => {
+      if (!currentStudent?.hash || isAutoFilling) return;
+      const btn = modal.querySelector('#btn-fill-active-student');
+      if (btn) btn.disabled = true;
+
+      await switchToStudent(doc, currentStudent, projectCol.xaxis);
+      const count = await fillScoresForStudent(doc, currentStudent, clusterRows, projectCol.xaxis, bundle);
+      
+      if (count > 0) {
+        flashSuccessButton(modal, 'btn-fill-active-student', `✓ ${count} clusters + feedback ingevuld!`);
+      } else {
+        flashSuccessButton(modal, 'btn-fill-active-student', `⚠️ 0 ingevuld (tik cel 2.1 aan)`);
+      }
+      if (btn) btn.disabled = false;
+    });
+
+    modal.querySelector('#btn-prev-student')?.addEventListener('click', () => {
+      if (isAutoFilling) return;
+      const curIdx = studentList.indexOf(currentStudent);
+      const nextIdx = (curIdx > 0) ? curIdx - 1 : studentList.length - 1;
+      selectStudent(studentList[nextIdx]);
+    });
+
+    modal.querySelector('#btn-next-student')?.addEventListener('click', () => {
+      if (isAutoFilling) return;
+      const curIdx = studentList.indexOf(currentStudent);
+      const nextIdx = (curIdx < studentList.length - 1) ? curIdx + 1 : 0;
+      selectStudent(studentList[nextIdx]);
+    });
+
+    modal.querySelector('#btn-fill-all-students')?.addEventListener('click', async () => {
+      if (isAutoFilling) return;
+      isAutoFilling = true;
+      try {
+        await fillAllStudentsAutomatically(doc, modal, studentList, clusterRows, projectCol.xaxis, bundle, (newActive) => {
+          currentStudent = newActive;
+          updateStudentCard();
+        });
+      } finally {
+        isAutoFilling = false;
+        updateStudentCard();
+      }
+    });
+
+    document.body.appendChild(modal);
+    updateStudentCard();
+
+    // Houd in de gaten of de actieve leerling in Smartschool verandert (bv. leerkracht klikt zelf)
     const activeWatcher = setInterval(() => {
       if (!modal.isConnected) {
         clearInterval(activeWatcher);
         return;
       }
+      if (isAutoFilling) return;
       const active = findActiveStudent(doc, studentList);
       if (active && active.cleanName !== currentStudent?.cleanName) {
         currentStudent = active;
-        renderContent();
+        updateStudentCard();
       }
     }, 400);
   }
@@ -785,8 +941,7 @@
       input.dispatchEvent(new Event('blur', { bubbles: true }));
 
       try {
-        const win = doc.defaultView || window;
-        const $ = win.$ || window.$;
+        const $ = getPageJQuery(doc);
         if ($) $(input).val('').trigger('input').trigger('change').trigger('blur');
       } catch (e) {}
 
@@ -857,7 +1012,11 @@
     // 3. Vul tekstuele feedback in via het potloodje (icon edit) in de feedbackrij
     const feedbackText = studentData._feedback || studentData.feedback;
     if (feedbackText && feedbackText.trim().length > 0) {
-      await fillFeedbackForStudent(doc, targetXaxis, fbYaxis, feedbackText.trim());
+      try {
+        await fillFeedbackForStudent(doc, targetXaxis, fbYaxis, feedbackText.trim());
+      } catch (err) {
+        console.warn(`[Avant] Fout bij invullen feedback voor ${studentObj.cleanName}:`, err);
+      }
     }
 
     return filledCount;
@@ -898,8 +1057,9 @@
       dialog = findDialogSafe(doc);
       if (dialog) {
         const uiDialog = dialog.closest('.ui-dialog') || dialog;
-        const isVisible = (uiDialog.offsetWidth > 0 && uiDialog.offsetHeight > 0) ||
-                          (uiDialog.style.display !== 'none' && window.getComputedStyle(uiDialog).display !== 'none');
+        const isVisible = (uiDialog.offsetWidth > 0 || uiDialog.offsetHeight > 0) &&
+                          uiDialog.style.display !== 'none' &&
+                          window.getComputedStyle(uiDialog).display !== 'none';
         if (isVisible) {
           textarea = dialog.querySelector('textarea.infoTextarea, textarea');
           if (textarea) break;
@@ -921,33 +1081,58 @@
     textarea.dispatchEvent(new Event('input', { bubbles: true }));
     textarea.dispatchEvent(new Event('change', { bubbles: true }));
 
-    try {
-      const dialogWin = dialog.ownerDocument?.defaultView || window;
-      const $ = dialogWin.$ || window.$;
-      if ($) $(textarea).val(feedbackText).trigger('input').trigger('change');
-    } catch (e) {}
+    const jq = getPageJQuery(dialog.ownerDocument);
+    if (jq) {
+      try {
+        jq(textarea).val(feedbackText).trigger('input').trigger('change');
+      } catch (e) {}
+    }
 
     await new Promise(r => setTimeout(r, 150));
 
-    // Klik op de blauwe Opslaan knop
+    // Klik op de blauwe Opslaan knop (enkelvoudige trigger om dialog double-destroy error te voorkomen!)
     const saveBtn = dialog.querySelector('button.closeBtn, button[data-i18n="save"], button.smscButton.blue');
     if (saveBtn) {
-      simulateCellClick(saveBtn);
-      await new Promise(r => setTimeout(r, 250));
+      if (jq) {
+        try {
+          jq(saveBtn).trigger('click');
+        } catch (e) {
+          saveBtn.click();
+        }
+      } else {
+        saveBtn.click();
+      }
+
+      // Wacht tot de modal effectief gesloten en vernietigd is (polling tot max 2000ms)
+      const uiDialog = dialog.closest('.ui-dialog') || dialog;
+      for (let wait = 0; wait < 20; wait++) {
+        const isVisible = uiDialog.isConnected &&
+          (uiDialog.offsetWidth > 0 || uiDialog.offsetHeight > 0) &&
+          uiDialog.style.display !== 'none';
+        if (!isVisible) break;
+        await new Promise(r => setTimeout(r, 100));
+      }
     }
 
+    await new Promise(r => setTimeout(r, 150));
     return true;
   }
 
-  async function fillAllStudentsAutomatically(doc, modal, studentList, clusterRows, targetXaxis, bundle) {
+  async function fillAllStudentsAutomatically(doc, modal, studentList, clusterRows, targetXaxis, bundle, onStudentChange = null) {
     const progressContainer = modal.querySelector('#avant-progress-container');
     const progressBar = modal.querySelector('#avant-progress-bar');
     const progressLabel = modal.querySelector('#avant-progress-label');
     const progressCount = modal.querySelector('#avant-progress-count');
     const fillAllBtn = modal.querySelector('#btn-fill-all-students');
+    const fillActiveBtn = modal.querySelector('#btn-fill-active-student');
+    const prevBtn = modal.querySelector('#btn-prev-student');
+    const nextBtn = modal.querySelector('#btn-next-student');
 
     if (progressContainer) progressContainer.style.display = 'block';
     if (fillAllBtn) fillAllBtn.disabled = true;
+    if (fillActiveBtn) fillActiveBtn.disabled = true;
+    if (prevBtn) prevBtn.disabled = true;
+    if (nextBtn) nextBtn.disabled = true;
 
     let totalFilled = 0;
     let successStudents = 0;
@@ -958,31 +1143,44 @@
       if (progressCount) progressCount.textContent = `${i + 1} / ${studentList.length}`;
       if (progressBar) progressBar.style.width = `${((i + 1) / studentList.length) * 100}%`;
 
-      if (s.element) {
-        const clickTarget = s.element.closest('a, tr, li, div') || s.element;
-        simulateCellClick(clickTarget);
-        // Geef Smartschool tijd om de tabel van de leerling via AJAX te laden
-        await new Promise(r => setTimeout(r, 500));
+      // 1. Schakel over naar de leerling in Smartschool en wacht op AJAX tabel
+      const switched = await switchToStudent(doc, s, targetXaxis);
+      if (!switched) {
+        console.warn(`[Avant] Kon niet overschakelen naar ${s.cleanName}`);
       }
 
-      // Activeer edit mode voor deze leerling
+      if (typeof onStudentChange === 'function') {
+        onStudentChange(s);
+      }
+
+      // 2. Dubbelcheck dat kolom in edit mode staat
       await ensureColumnEditMode(doc, targetXaxis);
       await new Promise(r => setTimeout(r, 100));
 
-      const count = await fillScoresForStudent(doc, s, clusterRows, targetXaxis, bundle);
-      if (count > 0) {
-        totalFilled += count;
-        successStudents++;
+      // 3. Vul scores en feedback in
+      try {
+        const count = await fillScoresForStudent(doc, s, clusterRows, targetXaxis, bundle);
+        if (count > 0) {
+          totalFilled += count;
+          successStudents++;
+        }
+      } catch (err) {
+        console.error(`[Avant] Fout bij invullen van ${s.cleanName}:`, err);
       }
 
-      await new Promise(r => setTimeout(r, 150));
+      await new Promise(r => setTimeout(r, 200));
     }
 
     if (progressLabel) progressLabel.textContent = `✓ Voltooid! ${successStudents} leerlingen voorzien van scores en feedback.`;
+    if (progressBar) progressBar.style.width = '100%';
     if (fillAllBtn) {
       fillAllBtn.textContent = `✓ Klaar! (${successStudents} leerlingen)`;
       fillAllBtn.style.background = '#059669';
+      fillAllBtn.disabled = false;
     }
+    if (fillActiveBtn) fillActiveBtn.disabled = false;
+    if (prevBtn) prevBtn.disabled = false;
+    if (nextBtn) nextBtn.disabled = false;
   }
 
   function flashSuccessButton(modal, btnId, msg) {
