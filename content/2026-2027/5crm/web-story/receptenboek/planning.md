@@ -79,3 +79,31 @@
 * **CRS21:** Typografische hiërarchie, afstanden (margin/padding) en leesbaarheid doordacht vormgeven via CSS-stijlregels.
 * **CRS22:** Lay-outsystemen (Flexbox voor de navigatiebalk) doelgericht opzetten met oog op container- en item-eigenschappen.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
+
+## Les 4 26/10/2026 (Web)
+
+### Receptenboek: Boxmodel, Flexbox-challenge en zelfstandige uitwerking
+
+### Lesverloop & inhoud
+1. **Herhaling boxmodel & Flexbox:**
+   * Kernprincipes van het boxmodel opfrissen: content, `padding` (binnenruimte), border en `margin` (buitenruimte).
+   * Flexbox-mechaniek herhalen: flex-container versus flex-items, hoofd-as (`justify-content`), dwars-as (`align-items`) en tussenruimte (`gap`).
+2. **Demonstratie interactief voorbeeld:**
+   * Interactieve voorbeeld van het receptenboek.
+   * Resultaatweergave en broncode (HTML en CSS) om de header-opbouw, secties en receptkaarten te ontleden.
+3. **Flexbox-spel (om ter eerst):**
+   * Flexbox-uitlijning om positionering en assen interactief in te oefenen.
+4. **Vibecoding-demonstratie:**
+   * Live demonstratie van een snelle codeerervaring in de code-editor.
+5. **Zelfstandige projectuitwerking Receptenboek:**
+   * Zelfstandig verder bouwen aan de landingspagina (`index.html`) en de drie receptpagina's (`recept_1.html` t.e.m. `recept_3.html`).
+   * Uitwerken van de Flexbox-navigatie, kaartopbouw en semantische contentblokken met gekoppeld stijlblad (`style.css`).
+
+### Leerplandoelen
+* **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.
+* **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
+* **CRS06:** Vlot en efficiënt werken met een professionele code-editor (Visual Studio Code).
+* **CRS18:** Een semantisch correcte, functionele en gestijlde multipage website (Receptenboek) met coherente navigatie realiseren.
+* **CRS21:** Typografische hiërarchie, afstanden (margin/padding) en leesbaarheid doordacht vormgeven via CSS-stijlregels.
+* **CRS22:** Lay-outsystemen (Flexbox voor de navigatiebalk) doelgericht opzetten met oog op container- en item-eigenschappen.
+* **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.

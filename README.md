@@ -93,7 +93,7 @@ Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas
 └── planning.md        # (Optioneel) Smartschool-lesplanning en fiches voor leerkrachten
 ```
 
-- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Kijkkader"`, `title: "Vormen"`, `title: "Quicktype"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Stadsgids"`, `title: "Vertigo"`, `title: "Extrude"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
+- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Kijkkader"`, `title: "Vormen"`, `title: "Quicktype"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Stadsgids"`, `title: "Vertigo"`, `title: "Extrude"`, `title: "Receptenboek"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
 - **Datumconventie:** Gebruik uitsluitend het formaat `YYYY-MM-DD` (bv. `date: 2026-09-01`).
 - **Paginatitels (`<title>`):**
   - Opdrachten: `Opdracht | Avant [Klas] [Vak]` (bv. `Parallax | Avant 6CRM Motion`).
@@ -169,6 +169,10 @@ Alle Markdown-links worden verwerkt via een **Link Render Hook** ([`render-link.
 - **Shortcode `{{< video >}}`:** Voor het responsive insluiten van videobestanden binnen page bundles of de assetmap ([`video.html`](layouts/shortcodes/video.html)):
   ```markdown
   {{< video src="img/video.mp4" width="360" >}}
+  ```
+- **Shortcode `{{< demo_embed >}}`:** Voor het interactief demonstreren van HTML/CSS webpagina's en codevoorbeelden met live resultaat preview, syntax-highlighted code panels, tabs en fullscreen focus-weergave ([`demo_embed.html`](layouts/shortcodes/demo_embed.html)):
+  ```markdown
+  {{< demo_embed dir="voorbeelden/web-story/receptenboek" title="Receptenboek" height="650px" >}}
   ```
 
 ### 📸 Aanbevolen Stockplatformen (Bronmateriaal)

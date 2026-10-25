@@ -1,0 +1,719 @@
+{{- $dir := .Get "dir" | default (.Get "src") | default "voorbeelden/web-story/receptenboek" -}}
+{{- $dir = strings.TrimPrefix "/" $dir -}}
+{{- $dir = strings.TrimSuffix "/" $dir -}}
+{{- $dir = strings.TrimSuffix "/embed.html" $dir -}}
+{{- $dir = strings.TrimSuffix "/index.html" $dir -}}
+
+{{- $title := .Get "title" | default "Receptenboek" -}}
+{{- $height := .Get "height" | default "640px" -}}
+{{- $mainHtml := .Get "html" | default "index.html" -}}
+{{- $cssFile := .Get "css" | default "style.css" -}}
+{{- $filesParam := .Get "files" | default "recept_1.html,recept_2.html,recept_3.html" -}}
+
+{{- $uid := printf "cp-%s-%d" (md5 .Page.RelPermalink) .Ordinal -}}
+
+{{/* Read files server-side */}}
+{{- $mainHtmlPath := printf "static/%s/%s" $dir $mainHtml -}}
+{{- $cssPath := printf "static/%s/%s" $dir $cssFile -}}
+{{- $mainHtmlCode := "" -}}
+{{- $cssCode := "" -}}
+{{- if fileExists $mainHtmlPath }}{{ $mainHtmlCode = readFile $mainHtmlPath }}{{ end -}}
+{{- if fileExists $cssPath }}{{ $cssCode = readFile $cssPath }}{{ end -}}
+
+{{- $extraFiles := split $filesParam "," -}}
+{{- $allHtmlFiles := slice $mainHtml -}}
+{{- range $extraFiles -}}
+  {{- $trimmed := trim . " " -}}
+  {{- if and $trimmed (ne $trimmed $mainHtml) -}}
+    {{- $allHtmlFiles = $allHtmlFiles | append $trimmed -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* URLs */}}
+{{- $rawUrl := printf "%s/%s" $dir $mainHtml -}}
+
+<div id="{{ $uid }}-backdrop" class="cp-backdrop" style="display: none;"></div>
+
+<div id="{{ $uid }}" class="cp-container">
+  <style>
+    #{{ $uid }}-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 9998;
+    }
+
+    #{{ $uid }} {
+      margin-top: var(--margin-top);
+      margin-bottom: var(--margin-bottom);
+      overflow: hidden;
+      position: relative;
+      max-width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
+      transition: box-shadow 0.2s ease;
+    }
+
+    /* Quasi-fullscreen modal: leaves a subtle margin so students see they remain in the same tab */
+    #{{ $uid }}.cp-fullscreen {
+      position: fixed !important;
+      inset: 24px !important;
+      width: calc(100vw - 48px) !important;
+      max-width: none !important;
+      height: calc(100vh - 48px) !important;
+      max-height: none !important;
+      margin: 0 !important;
+      z-index: 9999 !important;
+      background: var(--bgcolor) !important;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45), 0 0 0 1px color-mix(in srgb, var(--text) 20%, transparent) !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    @media (max-width: 768px) {
+      #{{ $uid }}.cp-fullscreen {
+        inset: 10px !important;
+        width: calc(100vw - 20px) !important;
+        height: calc(100vh - 20px) !important;
+      }
+    }
+
+    #{{ $uid }} .cp-toolbar {
+      position: relative;
+      z-index: 50;
+      margin-bottom: calc(var(--margin-bottom) / 2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      min-width: 0;
+    }
+
+    #{{ $uid }}.cp-fullscreen .cp-toolbar {
+      margin-bottom: 0 !important;
+      padding: 10px 16px !important;
+      border-bottom: 1px solid color-mix(in srgb, var(--text) 15%, transparent) !important;
+      background: var(--bgcolor) !important;
+      flex-shrink: 0;
+    }
+
+    #{{ $uid }} .cp-toolbar-left,
+    #{{ $uid }} .cp-toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      min-width: 0;
+    }
+
+    #{{ $uid }} .cp-tabs {
+      display: inline-flex;
+      gap: 2px;
+      position: relative;
+      z-index: 60;
+    }
+
+    #{{ $uid }} .cp-tab-btn {
+      border: none !important;
+      background: transparent !important;
+      color: var(--text) !important;
+      opacity: 0.75;
+      font-size: 0.82rem !important;
+      font-weight: 600 !important;
+      padding: 5px 12px !important;
+      cursor: pointer !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      transition: background 0.15s ease, color 0.15s ease, opacity 0.15s ease !important;
+      position: relative !important;
+      z-index: 100 !important;
+      user-select: none !important;
+      -webkit-appearance: none !important;
+      appearance: none !important;
+    }
+
+    #{{ $uid }} .cp-tab-btn svg {
+      pointer-events: none !important;
+    }
+
+    #{{ $uid }} .cp-tab-btn:hover {
+      opacity: 1;
+      background: color-mix(in srgb, var(--text) 10%, transparent) !important;
+    }
+
+    #{{ $uid }} .cp-tab-btn.active {
+      opacity: 1;
+      background: var(--anchor) !important;
+      color: #ffffff !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    #{{ $uid }} .cp-fullscreen-btn {
+      border: 1px solid color-mix(in srgb, var(--text) 20%, transparent) !important;
+      color: var(--text) !important;
+      background: var(--fgcolor) !important;
+      font-size: 0.8rem !important;
+      font-weight: 500 !important;
+      padding: 6px 10px !important;
+      cursor: pointer !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 6px !important;
+      transition: all 0.15s ease !important;
+      line-height: normal !important;
+      user-select: none !important;
+      -webkit-appearance: none !important;
+      appearance: none !important;
+    }
+
+    #{{ $uid }} .cp-fullscreen-btn:hover {
+      background: color-mix(in srgb, var(--text) 10%, var(--fgcolor)) !important;
+      border-color: var(--anchor) !important;
+      color: var(--anchor) !important;
+    }
+
+    #{{ $uid }} .cp-fullscreen-btn svg {
+      pointer-events: none;
+    }
+
+    /* Panes Area */
+    #{{ $uid }} .cp-panes {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: {{ $height }};
+      min-width: 0;
+      max-width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      margin: 0;
+      position: relative;
+    }
+
+    /* In fullscreen: switch to horizontal layout (iframe left, code right) */
+    #{{ $uid }}.cp-fullscreen .cp-panes {
+      flex: 1 1 auto !important;
+      flex-direction: row !important;
+      height: calc(100% - 48px) !important;
+      max-height: none !important;
+    }
+
+    #{{ $uid }} .cp-pane-result {
+      flex: 1 1 auto;
+      height: 100%;
+      min-height: 80px;
+      min-width: 80px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    #{{ $uid }}.cp-fullscreen .cp-pane-result {
+      flex: 1 1 0% !important;
+      width: auto !important;
+      min-width: 100px !important;
+      height: 100% !important;
+    }
+
+    #{{ $uid }} .cp-pane-result iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #ffffff;
+      display: block;
+    }
+
+    /* Prevent iframe eating mouse events during drag resize */
+    #{{ $uid }}.cp-is-resizing iframe {
+      pointer-events: none !important;
+    }
+    #{{ $uid }}.cp-is-resizing {
+      user-select: none !important;
+    }
+
+    /* Resizer Divider Bar */
+    #{{ $uid }} .cp-resizer {
+      height: 8px;
+      width: 100%;
+      cursor: row-resize;
+      background: color-mix(in srgb, var(--text) 12%, transparent);
+      flex-shrink: 0;
+      position: relative;
+      z-index: 25;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s ease;
+      touch-action: none;
+    }
+
+    #{{ $uid }} .cp-resizer::after {
+      content: '';
+      width: 36px;
+      height: 3px;
+      background: color-mix(in srgb, var(--text) 35%, transparent);
+      pointer-events: none;
+      transition: background 0.15s ease;
+    }
+
+    #{{ $uid }}.cp-fullscreen .cp-resizer {
+      width: 8px;
+      height: 100%;
+      cursor: col-resize;
+    }
+
+    #{{ $uid }}.cp-fullscreen .cp-resizer::after {
+      width: 3px;
+      height: 36px;
+    }
+
+    #{{ $uid }} .cp-resizer:hover,
+    #{{ $uid }} .cp-resizer.is-active {
+      background: var(--anchor) !important;
+    }
+
+    #{{ $uid }} .cp-resizer:hover::after,
+    #{{ $uid }} .cp-resizer.is-active::after {
+      background: #ffffff !important;
+    }
+
+    /* Code Wrapper */
+    #{{ $uid }} .cp-code-wrapper {
+      display: none;
+      flex-direction: column;
+      flex: 0 0 auto;
+      height: 46%;
+      min-height: 80px;
+      min-width: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      background: var(--fgcolor);
+    }
+
+    #{{ $uid }}.cp-fullscreen .cp-code-wrapper {
+      height: 100% !important;
+      width: 38%;
+      min-width: 180px;
+      max-width: none;
+      flex: 0 0 auto;
+    }
+
+    #{{ $uid }} .cp-pane-code {
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      max-width: 100%;
+      overflow: auto;
+      box-sizing: border-box;
+      background: var(--fgcolor) !important;
+      color: var(--text) !important;
+      display: none;
+    }
+
+    #{{ $uid }} .cp-pane-code .highlight {
+      margin: 0 !important;
+      min-width: 0 !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+      background: var(--fgcolor) !important;
+    }
+
+    #{{ $uid }} .cp-pane-code .highlight * {
+      background-color: transparent !important;
+    }
+
+    #{{ $uid }} .cp-pane-code pre {
+      margin: 0 !important;
+      padding: 14px 18px !important;
+      font-family: 'Aptos Mono', monospace !important;
+      font-size: 0.88rem !important;
+      line-height: 1.5 !important;
+      white-space: pre-wrap !important;
+      word-break: break-word !important;
+      overflow-wrap: anywhere !important;
+      overflow-x: hidden !important;
+      min-width: 0 !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+      background: var(--fgcolor) !important;
+      color: var(--text) !important;
+    }
+
+    #{{ $uid }} .cp-pane-code pre code {
+      background: transparent !important;
+      color: var(--text) !important;
+      white-space: pre-wrap !important;
+      word-break: break-word !important;
+      overflow-wrap: anywhere !important;
+    }
+  </style>
+
+  <!-- Toolbar -->
+  <div class="cp-toolbar">
+    <div class="cp-toolbar-left">
+      <div class="cp-tabs" role="tablist" aria-label="Weergave tabs">
+        <button type="button" class="cp-tab-btn active" data-tab="result">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Resultaat
+        </button>
+        <button type="button" class="cp-tab-btn" data-tab="html">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          HTML
+        </button>
+        <button type="button" class="cp-tab-btn" data-tab="css">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+          CSS
+        </button>
+      </div>
+    </div>
+
+    <div class="cp-toolbar-right">
+      <button type="button" class="cp-fullscreen-btn" title="Volledig scherm (focus)" aria-label="Volledig scherm">
+        <span class="icon-expand">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 3 21 3 21 9"/>
+            <polyline points="9 21 3 21 3 15"/>
+            <line x1="21" y1="3" x2="14" y2="10"/>
+            <line x1="3" y1="21" x2="10" y2="14"/>
+          </svg>
+        </span>
+        <span class="icon-compress" style="display: none;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Panes Area -->
+  <div class="cp-panes">
+    <!-- Result (Live iframe preview) -->
+    <div class="cp-pane-result">
+      <iframe src="{{ $rawUrl | relURL }}" title="{{ $title }} Demo" loading="lazy"></iframe>
+    </div>
+
+    <!-- Draggable Resizer Bar -->
+    <div class="cp-resizer" title="Sleep om codevenster te vergroten of verkleinen"></div>
+
+    <!-- Code Pane Wrapper -->
+    <div class="cp-code-wrapper" style="display: none;">
+      <!-- HTML Panes for all pages -->
+      {{- range $allHtmlFiles -}}
+        {{- $filePath := printf "static/%s/%s" $dir . -}}
+        {{- $content := "" -}}
+        {{- if fileExists $filePath }}{{ $content = readFile $filePath }}{{ end -}}
+        <div class="cp-pane-code cp-pane-html" data-file="{{ . }}" style="display: none;">
+          {{ highlight $content "html" "" }}
+        </div>
+      {{- end -}}
+
+      <!-- CSS Pane -->
+      <div class="cp-pane-code cp-pane-css" style="display: none;">
+        {{ highlight $cssCode "css" "" }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+window.cpState = window.cpState || {};
+window.cpState['{{ $uid }}'] = {
+  activeCode: null,
+  file: '{{ $mainHtml }}'
+};
+
+function cpUpdateFile(uid, file) {
+  var container = document.getElementById(uid);
+  if (!container) return;
+  if (!window.cpState) window.cpState = {};
+  if (!window.cpState[uid]) window.cpState[uid] = { activeCode: null, file: file };
+  window.cpState[uid].file = file;
+
+  var htmlPanes = container.querySelectorAll('.cp-pane-html');
+  var found = false;
+  for (var k = 0; k < htmlPanes.length; k++) {
+    if (htmlPanes[k].getAttribute('data-file') === file) {
+      if (window.cpState[uid].activeCode === 'html') {
+        htmlPanes[k].style.display = 'block';
+      }
+      found = true;
+    } else {
+      htmlPanes[k].style.display = 'none';
+    }
+  }
+  if (!found && htmlPanes.length > 0 && window.cpState[uid].activeCode === 'html') {
+    htmlPanes[0].style.display = 'block';
+  }
+}
+
+function cpSwitchTab(uid, tab) {
+  var container = document.getElementById(uid);
+  if (!container) return;
+
+  if (!window.cpState) window.cpState = {};
+  if (!window.cpState[uid]) window.cpState[uid] = { activeCode: null, file: '{{ $mainHtml }}' };
+  var state = window.cpState[uid];
+
+  if (tab === 'result') {
+    state.activeCode = null;
+  } else if (tab === 'html') {
+    state.activeCode = (state.activeCode === 'html') ? null : 'html';
+  } else if (tab === 'css') {
+    state.activeCode = (state.activeCode === 'css') ? null : 'css';
+  }
+
+  // Update tab buttons
+  var buttons = container.querySelectorAll('.cp-tab-btn');
+  for (var i = 0; i < buttons.length; i++) {
+    var b = buttons[i];
+    var bTab = b.getAttribute('data-tab');
+    if (state.activeCode === null) {
+      if (bTab === 'result') b.classList.add('active');
+      else b.classList.remove('active');
+    } else {
+      if (bTab === state.activeCode) b.classList.add('active');
+      else b.classList.remove('active');
+    }
+  }
+
+  // Elements
+  var resultPane = container.querySelector('.cp-pane-result');
+  var resizer = container.querySelector('.cp-resizer');
+  var codeWrapper = container.querySelector('.cp-code-wrapper');
+  var htmlPanes = container.querySelectorAll('.cp-pane-html');
+  var cssPane = container.querySelector('.cp-pane-css');
+
+  if (state.activeCode === null) {
+    if (resultPane) {
+      resultPane.style.removeProperty('flex');
+      resultPane.style.removeProperty('height');
+      resultPane.style.removeProperty('width');
+    }
+    if (codeWrapper) {
+      codeWrapper.style.display = 'none';
+    }
+    if (resizer) {
+      resizer.style.display = 'none';
+    }
+  } else {
+    if (resultPane) {
+      resultPane.style.removeProperty('flex');
+    }
+    if (resizer) {
+      resizer.style.display = 'flex';
+    }
+    if (codeWrapper) {
+      codeWrapper.style.display = 'flex';
+    }
+
+    if (state.activeCode === 'html') {
+      if (cssPane) cssPane.style.display = 'none';
+      cpUpdateFile(uid, state.file);
+    } else if (state.activeCode === 'css') {
+      for (var j = 0; j < htmlPanes.length; j++) {
+        htmlPanes[j].style.display = 'none';
+      }
+      if (cssPane) cssPane.style.display = 'block';
+    }
+  }
+}
+
+function cpToggleFullscreen(uid) {
+  var container = document.getElementById(uid);
+  var backdrop = document.getElementById(uid + '-backdrop');
+  if (!container) return;
+
+  var isFs = container.classList.toggle('cp-fullscreen');
+  if (backdrop) {
+    backdrop.style.display = isFs ? 'block' : 'none';
+  }
+
+  var fsBtn = container.querySelector('.cp-fullscreen-btn');
+  if (fsBtn) {
+    var expandIcon = fsBtn.querySelector('.icon-expand');
+    var compressIcon = fsBtn.querySelector('.icon-compress');
+    if (expandIcon) expandIcon.style.display = isFs ? 'none' : 'inline-flex';
+    if (compressIcon) compressIcon.style.display = isFs ? 'inline-flex' : 'none';
+    fsBtn.setAttribute('title', isFs ? 'Sluit volledig scherm (Esc)' : 'Volledig scherm (focus)');
+    fsBtn.setAttribute('aria-label', isFs ? 'Sluit volledig scherm (Esc)' : 'Volledig scherm (focus)');
+  }
+
+  // Reset custom inline sizing on layout orientation change
+  var codeWrapper = container.querySelector('.cp-code-wrapper');
+  var resultPane = container.querySelector('.cp-pane-result');
+  if (codeWrapper) {
+    codeWrapper.style.width = '';
+    codeWrapper.style.height = '';
+    codeWrapper.style.flex = '';
+  }
+  if (resultPane) {
+    resultPane.style.width = '';
+    resultPane.style.height = '';
+    resultPane.style.flex = '';
+  }
+
+  // Prevent background page scrolling while in fullscreen
+  if (isFs) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+}
+
+window.cpSwitchTab = cpSwitchTab;
+window.cpUpdateFile = cpUpdateFile;
+window.cpToggleFullscreen = cpToggleFullscreen;
+
+(function() {
+  var container = document.getElementById('{{ $uid }}');
+  var backdrop = document.getElementById('{{ $uid }}-backdrop');
+  if (!container) return;
+
+  // Tab Buttons
+  var buttons = container.querySelectorAll('.cp-tab-btn');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var tab = btn.getAttribute('data-tab');
+      cpSwitchTab('{{ $uid }}', tab);
+    });
+  });
+
+  // Fullscreen Button
+  var fsBtn = container.querySelector('.cp-fullscreen-btn');
+  if (fsBtn) {
+    fsBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      cpToggleFullscreen('{{ $uid }}');
+    });
+  }
+
+  // Close on backdrop click
+  if (backdrop) {
+    backdrop.addEventListener('click', function() {
+      if (container.classList.contains('cp-fullscreen')) {
+        cpToggleFullscreen('{{ $uid }}');
+      }
+    });
+  }
+
+  // Close on Escape key (register once per window)
+  if (!window.cpEscListenerRegistered) {
+    window.cpEscListenerRegistered = true;
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' || e.key === 'Esc') {
+        var activeFs = document.querySelector('.cp-container.cp-fullscreen');
+        if (activeFs) {
+          cpToggleFullscreen(activeFs.id);
+        }
+      }
+    });
+  }
+
+  // Resizing logic for code pane
+  var resizer = container.querySelector('.cp-resizer');
+  var codeWrapper = container.querySelector('.cp-code-wrapper');
+  var panes = container.querySelector('.cp-panes');
+  if (resizer && codeWrapper && panes) {
+    var isDragging = false;
+    var startX = 0;
+    var startY = 0;
+    var startWidth = 0;
+    var startHeight = 0;
+
+    function onPointerMove(e) {
+      if (!isDragging) return;
+      var isFs = container.classList.contains('cp-fullscreen');
+      var panesRect = panes.getBoundingClientRect();
+
+      if (isFs) {
+        // Horizontal resize in fullscreen (code is on the right)
+        // Dragging to the left expands code width (van links naar rechts)
+        var deltaX = startX - e.clientX;
+        var newWidth = Math.round(startWidth + deltaX);
+        var minWidth = 180;
+        var maxWidth = Math.round(panesRect.width - 180);
+        if (newWidth < minWidth) newWidth = minWidth;
+        if (newWidth > maxWidth) newWidth = maxWidth;
+
+        codeWrapper.style.setProperty('width', newWidth + 'px', 'important');
+        codeWrapper.style.setProperty('flex', '0 0 auto', 'important');
+      } else {
+        // Vertical resize in embedded mode (code is at the bottom)
+        // Dragging upwards expands code height (van onder naar boven)
+        var deltaY = startY - e.clientY;
+        var newHeight = Math.round(startHeight + deltaY);
+        var minHeight = 80;
+        var maxHeight = Math.round(panesRect.height - 80);
+        if (newHeight < minHeight) newHeight = minHeight;
+        if (newHeight > maxHeight) newHeight = maxHeight;
+
+        codeWrapper.style.setProperty('height', newHeight + 'px', 'important');
+        codeWrapper.style.setProperty('flex', '0 0 auto', 'important');
+      }
+    }
+
+    function onPointerUp(e) {
+      if (!isDragging) return;
+      isDragging = false;
+      resizer.classList.remove('is-active');
+      container.classList.remove('cp-is-resizing');
+      document.body.style.removeProperty('cursor');
+      document.removeEventListener('pointermove', onPointerMove);
+      document.removeEventListener('pointerup', onPointerUp);
+      document.removeEventListener('pointercancel', onPointerUp);
+    }
+
+    resizer.addEventListener('pointerdown', function(e) {
+      e.preventDefault();
+      isDragging = true;
+      resizer.classList.add('is-active');
+      container.classList.add('cp-is-resizing');
+
+      var isFs = container.classList.contains('cp-fullscreen');
+      document.body.style.setProperty('cursor', isFs ? 'col-resize' : 'row-resize', 'important');
+
+      var codeRect = codeWrapper.getBoundingClientRect();
+      startX = e.clientX;
+      startY = e.clientY;
+      startWidth = codeRect.width;
+      startHeight = codeRect.height;
+
+      document.addEventListener('pointermove', onPointerMove);
+      document.addEventListener('pointerup', onPointerUp);
+      document.addEventListener('pointercancel', onPointerUp);
+    });
+  }
+
+  // Track iframe navigation automatically
+  var iframe = container.querySelector('.cp-pane-result iframe');
+  if (iframe) {
+    function trackNav() {
+      try {
+        var pathname = iframe.contentWindow.location.pathname;
+        var filename = pathname.split('/').filter(Boolean).pop() || '{{ $mainHtml }}';
+        if (!filename.endsWith('.html')) filename = '{{ $mainHtml }}';
+        cpUpdateFile('{{ $uid }}', filename);
+      } catch (err) {}
+    }
+
+    iframe.addEventListener('load', function() {
+      trackNav();
+      try {
+        iframe.contentWindow.addEventListener('popstate', trackNav);
+        iframe.contentWindow.addEventListener('hashchange', trackNav);
+      } catch (e) {}
+    });
+  }
+})();
+</script>
