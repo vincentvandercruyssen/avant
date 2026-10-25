@@ -413,14 +413,20 @@ Onderstaand sjabloon toont de maatstaf voor een strakke, telegrafische Smartscho
 Vereisten: **Hugo Extended** (zie `.hugo-version`) en **Node.js**.
 
 ```bash
-# Start de lokale ontwikkelserver (standaard poort 1313)
+# Start de lokale ontwikkelserver (standaard poort 1313) + Save Server (poort 1315) + asset-spiegeling
 npm run dev
-# of direct via Hugo:
-hugo server -p 1313
 
 # Productie build genereren
 hugo --gc --minify
 ```
+
+### 🔄 Grading Pipeline & Asset Mirroring (`assets/` vs `static/`)
+
+* **Single Source of Truth:** Bewerk rubriek- en gradingbestanden **uitsluitend in `assets/`**:
+  * `assets/js/rubriek.js`
+  * `assets/css/grading.css`
+* **Automatische spiegeling naar `static/`:** Bewerk de bestanden in `static/` **nooit rechtstreeks**. `npm run dev` ([`scripts/dev.js`](scripts/dev.js)) spiegelt de bronbestanden uit `assets/` automatisch naar `static/` bij het opstarten én via een live file watcher bij elke save.
+* **Productie (GitHub Pages):** De gespiegelde bestanden in `static/` worden mee gecommit in Git zodat de GitHub Actions build ze direct kan serveren voor het geanonimiseerde resultatendashboard.
 
 ---
 

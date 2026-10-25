@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-vormen",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-20T17:14:04.959Z",
+  "lastUpdated": "2026-10-25T10:38:17.536+01:00",
   "submissions": {
     "pinboard-storyboard": {
       "id": "pinboard-storyboard",
@@ -57,6 +57,66 @@
         }
       ],
       "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 0,
+            "CRS03": 2,
+            "CRS07": 3,
+            "GEC01": 1
+          },
+          "feedback": "Op je Pinterest-bord heb je sterke en brede voorbeelden verzameld. Je storyboards zijn op zich duidelijk, de tekeningen en ook de aanduidingen zitten goed. Je bent netjes te werk gegaan.Niet alles is echter geheel afgewerkt. Geef je kaders gerust wat meer ruimte en gebruik bijvoorbeeld één blad per storyboard. Zet tekstbeschrijvingen en eigenschappen best niet op de tekeningen zelf, maar hou ze apart zodat het overzicht bewaard blijft.",
+          "scores": {
+            "4.1": 3,
+            "4.3": 6,
+            "4.6": 2
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS03": 2,
+            "CRS07": 3,
+            "GEC01": 3
+          },
+          "feedback": "Heel goed gewerkt! Fijn om te zien dat je eerdere terugkoppeling vlot verwerkt. Je hebt heldere storyboards geschetst en het is een slimme keuze geweest om ze met één per blad voldoende ruimte te geven, aangevuld met duidelijke extra informatie. Ook de verwachte naamgeving is duidelijk. Noteer eigenschappen liever buiten je kaders en niet op de tekeningen zelf, zodat het beeld niet verwarrend wordt en duidelijk blijft wat effectief bij het ontwerp hoort. Voor je Pinterest-bord heb je bijzonder sterke voorbeelden verzameld binnen de opdracht, waarbij je ook met een bredere blik hebt gezocht.",
+          "scores": {
+            "4.1": 4.5,
+            "4.3": 6,
+            "4.6": 6
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS03": 2,
+            "CRS07": 3,
+            "GEC01": 1
+          },
+          "feedback": "Zeer sterke en brede voorbeelden op je Pinboard, fijn dat je ook buiten de opdracht inspiratie zoekt en naar een eigen stijl toewerkt. Je storyboards zijn goed opgebouwd, je ziet duidelijk waar je naartoe wil en dit vormt een prima basis om uit te werken. De beeldverhoudingen zitten goed, gebruik zelfs bij schetsen van een storyboard een lat. Geef je storyboards gerust wat meer ruimte door bijvoorbeeld één blad per storyboard te gebruiken. Gebruik bij een storyboard liever geen kruis om een afbeelding aan te duiden, want dat is erg onduidelijk. Let er ook op hoe je de foto's maakt en doorstuurt: Snapchat comprimeert bestanden sterk, waardoor je schetsen veel minder leesbaar worden. Let goed op de gevraagde naamgeving van je bestanden.",
+          "scores": {
+            "4.1": 4.5,
+            "4.3": 6,
+            "4.6": 2
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 0,
+            "CRS03": 2,
+            "CRS07": 3,
+            "GEC01": 1
+          },
+          "feedback": "Je storyboards zijn leuk geschetst en op je Pinboard heb je een fijne, uitgebreide verzameling aangelegd met een duidelijke eigen zoektocht naar mogelijkheden. Geef je voorbereidend werk wel voldoende ruimte, bijvoorbeeld door één storyboard per blad te tekenen. De compositie-groottes zijn nu niet overal even duidelijk. Zelfs bij een schets helpt het om een lat te gebruiken om alles netjes en overzichtelijk te houden. De eigenschappen en beschrijvingen werden niet genoteerd, die ontbreken om je animatieplannen helemaal duidelijk te maken.",
+          "scores": {
+            "4.1": 2.5,
+            "4.3": 6,
+            "4.6": 2
+          }
+        },
         "8ab009875a": {
           "criteriaLevels": {
             "CRS01": 2,
@@ -80,11 +140,86 @@
             "CRS07": 3,
             "GEC01": 1
           },
-          "feedback": "De foto's van de schetsen zijn te slordig. Dat doet heel veel afbreuk aan je werk. Ook heb je niet overal de gevraagde beeldverhouding gevolgd. Je hebt de storyboards wel goed en groot telkens op één blad gezet en de aanduidingen zitten ook goed, maar sommige teksten zijn dus niet leesbaar door de fotokwaliteit. Zeer sterke zoektocht op Pinterest binnen de opdracht en naar een eigen stijl! Let er wel op dat er geen pins voor andere opdrachten bijkomen. Zie het als een moodboard voor één opdracht, nu is dat nog niet helemaal duidelijk.",
+          "feedback": "Zeer sterke zoektocht op Pinterest binnen de opdracht en naar een eigen stijl! Let er op je Pinterest-bord wel op dat er geen pins voor andere opdrachten bijkomen, zie het echt als één gericht moodboard voor deze opdracht. Je hebt de storyboards goed en groot telkens op één blad gezet en de aanduidingen zitten goed. De foto's van de schetsen zijn echter te slordig en sommige teksten zijn daardoor niet leesbaar. Dat doet heel veel afbreuk aan je werk. Let er tot slot op dat je overal de gevraagde beeldverhoudingen respecteert, want die heb je nu niet overal gevolgd.",
           "scores": {
             "4.1": 2,
             "4.3": 6,
             "4.6": 2
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 1,
+            "CRS03": 1,
+            "CRS07": 3,
+            "GEC01": 1
+          },
+          "feedback": "Op je Pinterest-bord heb je goede, brede voorbeelden verzameld. Bij je storyboards zitten de aanduidingen goed en zijn de beeldverhoudingen over het algemeen oké. Toch ogen de storyboards nog te vluchtig en slordig aan (het lijkt dat ze na het werk in After Effects zijn gemaakt). Gebruik een lat voor meer consistentie en strakke kaders, en vul ze aan met de ontbrekende beschrijvingen. Maak foto's van je schetsen tot slot zeker niet met een webcam, want dat is ontzettend onduidelijk en doet afbreuk aan je werk.",
+          "scores": {
+            "4.1": 1.5,
+            "4.3": 6,
+            "4.6": 2
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 0,
+            "CRS07": 1,
+            "GEC01": 0
+          },
+          "feedback": "Er werden geen storyboard-schetsen ingediend, waardoor een belangrijk vertrekpunt voor je animaties ontbreekt. Daarnaast is ook je verzameling op Pinterest te beperkt.",
+          "scores": {
+            "4.1": 0,
+            "4.3": 2,
+            "4.6": 0
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 1,
+            "CRS07": 0,
+            "GEC01": 1
+          },
+          "feedback": "Let erop om je voorbereidend werk verzorgd op te maken en volledig in te leveren. Niet alle gevraagde storyboard-composities zijn aanwezig. Geef je ontwerpen ook meer ruimte door bijvoorbeeld één storyboard per blad te tekenen. De compositiegroottes kloppen nu niet overal en de eigenschappen en beschrijvingen zijn onvolledig. Gebruik zelfs bij een schets een lat om je kaders ordelijk te houden. Op je Pinterest-bord heb je te beperkt gezocht naar relevante voorbeelden binnen de opdracht. Het geheel is onvoldoende als basis voor je animaties.",
+          "scores": {
+            "4.1": 1,
+            "4.3": 0,
+            "4.6": 2
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS03": 0,
+            "CRS07": 3,
+            "GEC01": 0
+          },
+          "feedback": "Je bent al snel in After Effects gedoken, maar duidelijke storyboards waren een belangrijk vertrekpunt voor de verschillende composities. Hoewel sommige aanduidingen op jouw storyboards oké zijn, oogt het geheel slordig. Schrijf eigenschappen liever buiten de kaders, zodat helder blijft wat effectief bij het ontwerp hoort. Zelfs bij een schets helpt een lat om je kaders gelijk te houden, wat je niet overal deed. Bovendien kloppen niet alle beeldverhoudingen en werden twee storyboards te laat ingeleverd. De laatste storyboards hebben toffe tekeningen, maar ze beantwoorden te weinig aan de opdracht.\nVoor je Pinboard heb je heel sterke en gevarieerde voorbeelden verzameld.",
+          "scores": {
+            "4.1": 1,
+            "4.3": 6,
+            "4.6": 0
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 1,
+            "CRS03": 1,
+            "CRS07": 3,
+            "GEC01": 0
+          },
+          "feedback": "Let erop om tijdig en volledig in te leveren. Volg de klassikale terugkoppelingen op, zoals het hanteren van de juiste beeldverhoudingen in je storyboards. Daar heb je nu nog geen rekening mee gehouden en enkele storyboards zijn te beperkt uitgewerkt. De volgorde van de kaders is niet overal even logisch. Er zitten zeker veel ideeën in en je maakte al heel wat aanduidingen, maar noteer eigenschappen liever apart buiten de tekeningen om het overzicht te bewaren. Geef je kaders meer ruimte (denk aan de opbouw van een stripverhaal) en gebruik gerust een lat om je schetsen ordelijk te houden. Zorg er ook voor dat foto's van je schetsen altijd duidelijk zijn zodat alles goed leesbaar blijft. Op je Pinterest-bord heb je fijne voorbeelden verzameld en ben je breder gaan zoeken dan de opdracht zelf.",
+          "scores": {
+            "4.1": 1.5,
+            "4.3": 6,
+            "4.6": 0
           }
         },
         "efe6054d9e": {
@@ -101,21 +236,6 @@
             "4.3": 0,
             "4.6": 0
           }
-        },
-        "d61daca6ab": {
-          "scores": {
-            "4.3": 6,
-            "4.6": 0,
-            "4.1": 1
-          },
-          "criteriaLevels": {
-            "CRS07": 3,
-            "GEC01": 0,
-            "CRS02": 1,
-            "CRS01": 1,
-            "CRS03": 0
-          },
-          "feedback": "Je bent al snel in After Effects gedoken, maar duidelijke storyboards waren een belangrijk vertrekpunt voor de verschillende composities. Hoewel sommige aanduidingen op jouw storyboards oké zijn, oogt het geheel slordig. Schrijf eigenschappen liever buiten de kaders, zodat helder blijft wat effectief bij het ontwerp hoort. Zelfs bij een schets helpt een lat om je kaders gelijk te houden, wat je niet overal deed. Bovendien kloppen niet alle beeldverhoudingen en werden twee storyboards te laat ingeleverd. De laatste storyboards hebben toffe tekeningen, maar ze beantwoorden te weinig aan de opdracht.\nVoor je Pinboard heb je heel sterke en gevarieerde voorbeelden verzameld."
         }
       }
     },

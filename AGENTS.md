@@ -2,6 +2,7 @@
 
 - **Hugo Port**: Always use port `1313` (`hugo server -p 1313` or `npm run dev`).
 - **Single Instance**: Hugo watches files and live-reloads automatically. Before starting a server, check if Hugo is already running on port 1313. Never start a second server on a different port (e.g. 1314).
+- **Grading Assets & Mirroring (`assets/` vs `static/`)**: Always edit rubric and grading code **only** in `assets/` (`assets/js/rubriek.js` and `assets/css/grading.css`). Never edit the mirror files in `static/` directly. When running `npm run dev` (`node scripts/dev.js`), changes in `assets/` are automatically mirrored to `static/` at startup and watched live. The files in `static/` serve purely as mirrored copies for production deployments (GitHub Pages) and template fallbacks.
 - **Headings & Numbering**: Do NOT use manual numbering or phase prefixes (e.g. `Fase 1:`, `Stap 1:`, `1.`, `2.`) in Markdown headings (`###`, `####`, `#####`). The TOC and CSS counters handle hierarchical numbering automatically.
 - **No Horizontal Rules**: Do NOT use `---` / `<hr>` in the Markdown body of assignments or planning files.
 - **Tone**: In assignments (opdrachten), use direct, activating address to the student (*je / jij / jouw* or imperative). In theoretical courses (`content/cursus/`), maintain an objective, explanatory reference style (no assignment framing or *je/jij* addressing). Never use plural *we / wij / laten we*.

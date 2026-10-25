@@ -1,4 +1,13 @@
-// assets/js/rubriek.js & static/js/rubriek.js
+// ============================================================================
+// SOURCE FILE: assets/js/rubriek.js
+// DO NOT EDIT static/js/rubriek.js directly!
+// Any changes here are automatically mirrored to static/js/rubriek.js
+// by scripts/dev.js (npm run dev) on startup and on file save.
+//
+// BRONBESTAND: assets/js/rubriek.js
+// Bewerk static/js/rubriek.js NIET rechtstreeks!
+// Wijzigingen hier worden via scripts/dev.js automatisch gespiegeld naar static/.
+// ============================================================================
 /**
  * Avant Local Grading Pipeline (V2.2 - Zero-Knowledge Privacy & Direct Local Storage)
  * 
@@ -13,10 +22,10 @@
   window.__avantGradingInitialized = true;
 
   const NIVEAUS = [
-    { level: 0, label: 'Niv 0', desc: 'Niet beheerst' },
-    { level: 1, label: 'Niv 1', desc: 'In ontwikkeling' },
-    { level: 2, label: 'Niv 2', desc: 'Voldoende' },
-    { level: 3, label: 'Niv 3', desc: 'Verdiepend' }
+    { level: 0, label: '0-5', desc: 'Niet beheerst' },
+    { level: 1, label: '5-7', desc: 'In ontwikkeling' },
+    { level: 2, label: '7-9', desc: 'Voldoende' },
+    { level: 3, label: '9-10', desc: 'Verdiepend' }
   ];
 
   const SAVE_SERVER_URL = `${window.location.protocol}//${window.location.hostname || 'localhost'}:1315`;
@@ -58,6 +67,25 @@
       console.error('Fout bij JSON parsen:', err);
       return null;
     }
+  }
+
+  function getLocalIsoString(date = new Date()) {
+    const pad = (n, width = 2) => String(n).padStart(width, '0');
+    const year = date.getFullYear();
+    const month = pad(date.getMonth() + 1);
+    const day = pad(date.getDate());
+    const hours = pad(date.getHours());
+    const minutes = pad(date.getMinutes());
+    const seconds = pad(date.getSeconds());
+    const ms = pad(date.getMilliseconds(), 3);
+
+    const offsetMinutes = -date.getTimezoneOffset();
+    const sign = offsetMinutes >= 0 ? '+' : '-';
+    const absOffset = Math.abs(offsetMinutes);
+    const offsetHours = pad(Math.floor(absOffset / 60));
+    const offsetMins = pad(absOffset % 60);
+
+    return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${ms}${sign}${offsetHours}:${offsetMins}`;
   }
 
   function getRubriekFilename() {
@@ -119,7 +147,7 @@
       version: '2.2.0',
       assignmentId: state.assignmentId,
       classGroup: state.classGroup,
-      lastUpdated: new Date().toISOString(),
+      lastUpdated: getLocalIsoString(),
       submissions: submissionsData
     };
   }
@@ -766,6 +794,14 @@
     const container = document.getElementById('clusters-container');
     if (!container) return;
 
+    let feedbackBox = document.getElementById('rubric-feedback-card');
+    if (!feedbackBox) {
+      feedbackBox = document.createElement('div');
+      feedbackBox.id = 'rubric-feedback-card';
+      feedbackBox.className = 'rubric-feedback-card';
+      container.parentNode.insertBefore(feedbackBox, container);
+    }
+
     container.innerHTML = '';
     const sub = getActiveSubmission();
     const subEvals = getActiveSubEvals();
@@ -774,7 +810,43 @@
 
     if (!sub.clusters || sub.clusters.length === 0) {
       container.innerHTML = '<p class="empty-notice">Geen actieve clusters geconfigureerd voor deze indiening.</p>';
+      feedbackBox.innerHTML = '';
       return;
+    }
+
+    // Feedbacksectie voor de actieve leerling (boven clusters-container)
+    feedbackBox.innerHTML = `
+      <div class="feedback-header">
+        <label for="student-feedback-input" class="feedback-label">
+          💬 Feedback & Opmerkingen voor <strong>${escapeHtml(student.displayLabel)}</strong>:
+        </label>
+      </div>
+      <textarea id="student-feedback-input" 
+                class="student-feedback-textarea" 
+                rows="4" 
+                placeholder="Typ gerichte individuele feedback voor deze leerling...">${escapeHtml(studentEval.feedback || '')}</textarea>
+    `;
+
+    const textarea = feedbackBox.querySelector('textarea');
+    const autoResize = () => {
+      textarea.style.height = 'auto';
+      const borderOffset = textarea.offsetHeight - textarea.clientHeight;
+      textarea.style.height = `${textarea.scrollHeight + borderOffset}px`;
+    };
+
+    textarea.addEventListener('input', () => {
+      if (!CSS.supports?.('field-sizing', 'content')) {
+        autoResize();
+      }
+      if (!subEvals[student.hash]) {
+        subEvals[student.hash] = { scores: {}, criteriaLevels: {} };
+      }
+      subEvals[student.hash].feedback = textarea.value;
+      triggerAutoSave();
+    });
+
+    if (!CSS.supports?.('field-sizing', 'content')) {
+      requestAnimationFrame(autoResize);
     }
 
     sub.clusters.forEach((cluster) => {
@@ -862,45 +934,6 @@
 
       container.appendChild(clusterBox);
     });
-
-    // Feedbacksectie voor de actieve leerling
-    const feedbackBox = document.createElement('div');
-    feedbackBox.className = 'rubric-feedback-card';
-    feedbackBox.innerHTML = `
-      <div class="feedback-header">
-        <label for="student-feedback-input" class="feedback-label">
-          💬 Feedback & Opmerkingen voor <strong>${escapeHtml(student.displayLabel)}</strong>:
-        </label>
-      </div>
-      <textarea id="student-feedback-input" 
-                class="student-feedback-textarea" 
-                rows="4" 
-                placeholder="Typ gerichte individuele feedback voor deze leerling...">${escapeHtml(studentEval.feedback || '')}</textarea>
-    `;
-
-    const textarea = feedbackBox.querySelector('textarea');
-    const autoResize = () => {
-      textarea.style.height = 'auto';
-      const borderOffset = textarea.offsetHeight - textarea.clientHeight;
-      textarea.style.height = `${textarea.scrollHeight + borderOffset}px`;
-    };
-
-    textarea.addEventListener('input', () => {
-      if (!CSS.supports?.('field-sizing', 'content')) {
-        autoResize();
-      }
-      if (!subEvals[student.hash]) {
-        subEvals[student.hash] = { scores: {}, criteriaLevels: {} };
-      }
-      subEvals[student.hash].feedback = textarea.value;
-      triggerAutoSave();
-    });
-
-    container.appendChild(feedbackBox);
-
-    if (!CSS.supports?.('field-sizing', 'content')) {
-      requestAnimationFrame(autoResize);
-    }
   }
 
   function handleCriteriumLevelClick(studentHash, cluster, critCode, level) {
@@ -1250,7 +1283,7 @@
       weight: sub.weight,
       activeClusters: sub.clusters.map((c) => ({ id: c.id, naam: c.naam })),
       students: (state.students || []).map((s) => ({ hash: s.hash, name: s.name })),
-      timestamp: new Date().toISOString(),
+      timestamp: getLocalIsoString(),
       scores: exportScores
     };
 

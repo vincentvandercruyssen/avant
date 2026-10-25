@@ -1,4 +1,13 @@
-/* assets/css/grading.css */
+/* ============================================================================
+   SOURCE FILE: assets/css/grading.css
+   DO NOT EDIT static/css/grading.css directly!
+   Any changes here are automatically mirrored to static/css/grading.css
+   by scripts/dev.js (npm run dev) on startup and on file save.
+
+   BRONBESTAND: assets/css/grading.css
+   Bewerk static/css/grading.css NIET rechtstreeks!
+   Wijzigingen hier worden via scripts/dev.js automatisch gespiegeld naar static/.
+   ============================================================================ */
 
 .grading-app,
 .anonymized-grading-panel {
@@ -445,8 +454,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  flex: 0 0 5.25rem;
-  width: 5.25rem;
+  flex: 0 0 8ch;
+  width: 8ch;
   flex-shrink: 0;
 }
 
@@ -533,12 +542,14 @@
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.1;
+  white-space: nowrap;
 }
 
 .btn-niveau-pill .pill-desc {
-  font-size: 0.65rem;
+  font-size: 0.5rem;
   margin-top: 0.2rem;
   line-height: 1;
+  white-space: nowrap;
   opacity: 0.8;
 }
 
@@ -569,20 +580,24 @@
 }
 
 .btn-niveau-pill.niv-2.active {
-  background: #dbeafe;
-  border-color: #3b82f6;
-  color: #1e40af;
-}
-
-.btn-niveau-pill.niv-3.active {
   background: #dcfce7;
   border-color: #22c55e;
   color: #166534;
 }
 
+.btn-niveau-pill.niv-3.active {
+  background: #dbeafe;
+  border-color: #3b82f6;
+  color: #1e40af;
+}
+
 /* Feedback Card */
 .rubric-feedback-card {
-  margin-top: var(--margin-top);
+  margin-bottom: 1.5rem;
+}
+
+.rubric-feedback-card:empty {
+  display: none;
 }
 
 .feedback-header {
