@@ -93,8 +93,8 @@
    * Resultaatweergave en broncode (HTML en CSS) om de header-opbouw, secties en receptkaarten te ontleden.
 3. **Flexbox-spel (om ter eerst):**
    * Flexbox-uitlijning om positionering en assen interactief in te oefenen.
-4. **Vibecoding-demonstratie:**
-   * Live demonstratie van een snelle codeerervaring in de code-editor.
+4. **Aankondiging Toets 03: HTML/CSS:**
+   * Toelichting van de leerstof, vereisten en planning voor de komende toets over HTML en CSS.
 5. **Zelfstandige projectuitwerking Receptenboek:**
    * Zelfstandig verder bouwen aan de landingspagina (`index.html`) en de drie receptpagina's (`recept_1.html` t.e.m. `recept_3.html`).
    * Uitwerken van de Flexbox-navigatie, kaartopbouw en semantische contentblokken met gekoppeld stijlblad (`style.css`).

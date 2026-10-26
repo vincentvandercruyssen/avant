@@ -322,7 +322,6 @@ De inhoud van `index.html` organiseer je binnen het `<main>`-element met drie se
   <section id="inleiding">
     <h2>Inleiding</h2>
     <p>Een korte introductie tot de stadsgids.</p>
-    <p>Ontdek drie inspirerende steden met unieke buurten, verrassende architectuur en lokale tips.</p>
   </section>
 
   <section id="steden">
@@ -336,40 +335,7 @@ De inhoud van `index.html` organiseer je binnen het `<main>`-element met drie se
         <a href="stad_1.html">Ontdek meer</a>
       </article>
 
-      <article class="card">
-        <img src="images/barcelona-2.jpg" alt="Stad 2" width="200">
-        <h3>Stad 2</h3>
-        <p>Een bruisende metropool vol hedendaagse cultuur, musea en groene parken.</p>
-        <a href="stad_2.html">Ontdek meer</a>
-      </article>
-
-      <article class="card">
-        <img src="images/barcelona-3.jpg" alt="Stad 3" width="200">
-        <h3>Stad 3</h3>
-        <p>Geniet van adembenemende uitzichten, waterwegen en vernieuwende architectuur.</p>
-        <a href="stad_3.html">Ontdek meer</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="nieuws">
-    <h2>Bekijk ons nieuws</h2>
-    <p>Laatste nieuws en updates over onze steden.</p>
-
-    <div class="grid-container">
-      <article class="card">
-        <img src="images/barcelona-1.jpg" alt="Nieuwsbericht 1" width="200">
-        <h3>Zomerse stadsfestivals</h3>
-        <p>De leukste openluchtevenementen en concerten op een rij.</p>
-        <a href="stad_1.html">Ontdek meer</a>
-      </article>
-
-      <article class="card">
-        <img src="images/barcelona-2.jpg" alt="Nieuwsbericht 2" width="200">
-        <h3>Nieuwe fietspaden geopend</h3>
-        <p>Verken de stad veilig en snel via de vernieuwde groene fietsroutes.</p>
-        <a href="stad_2.html">Ontdek meer</a>
-      </article>
+      <!-- Voeg hier cards toe van de andere steden -->
     </div>
   </section>
 </main>

@@ -146,4 +146,33 @@
 * **CRS18:** Een semantisch correcte, functionele en gestijlde multipage website (Stadsgids) met coherente navigatie realiseren.
 * **CRS21:** Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels.
 * **CRS22:** Lay-outsystemen (Flexbox voor navigatie en componenten, box-model spacing) doelgericht opzetten.
+
+## Les 6 26/10/2026 (Web, 13:30 - 16:10)
+
+### Stadsgids: Box-model, Flexbox & Grid, landingspagina en uitwerking stadspagina's
+
+### Lesverloop & inhoud
+1. **Herhaling box-model, Flexbox en Grid:**
+   * Interactief voorbeeld en live demonstratie van lay-outprincipes.
+   * Flexbox (ééndimensionale componentuitlijning voor bv. navigatie) versus Grid (tweedimensionale structuren bv. kolommen).
+2. **Aankondiging en afspraken Toets 3:**
+   * Toelichting van de leerstof HTML en CSS (semantiek, lay-outtechnieken, selectors en box-model).
+3. **Afwerking en verfijning landingspagina (`index.html`):**
+   * Volledige integratie van de hero-sectie, call-to-action en het card-grid met de drie steden.
+   * Typografische hiërarchie, hover-effecten op navigatielinks en knoppen, en containercentrering afwerken in `style.css`.
+4. **Zelfstandig uitwerken van de drie stadspagina's:**
+   * Doorkopiëren van de gevalideerde sitestructuur naar `stad_1.html`, `stad_2.html` en `stad_3.html`.
+   * Uitwerken van de stadsintroductie, bezienswaardighedengrid met badges en het thematische artikelblok.
+5. **Kwaliteitscontrole en codevalidatie:**
+   * Relatieve links tussen alle vier pagina's controleren in de browser.
+   * Bestandsnamen, afbeeldingspaden valideren.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) analyseren en toepassen.
+* **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
+* **CRS06:** Vlot en efficiënt werken met ontwerptools en een professionele code-editor (Visual Studio Code).
+* **CRS18:** Een semantisch correcte, functionele en gestijlde multipage website (Stadsgids) met coherente navigatie realiseren.
+* **CRS21:** Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels.
+* **CRS22:** Lay-outsystemen (Flexbox voor navigatie en Grid voor cards en side-by-side presentaties) doelgericht opzetten.
+* **CRS23:** Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
