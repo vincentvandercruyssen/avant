@@ -1,0 +1,177 @@
+/* Algemene stijl: body, header, a-elementen */
+
+@import url("https://use.typekit.net/txk1ice.css");
+
+@font-face {
+  font-family: "Childer";
+  src: url("fonts/Childer.otf");
+}
+
+body {
+  margin: 0;
+  background-color: #fbfbe6;
+  color: #322020;
+  font-family: "basic-sans";
+}
+
+header,
+section,
+footer {
+  padding: 20px 5%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dbfbf8;
+
+}
+
+header .logo {
+  display: flex;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #322020;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  max-width: 80ch;
+}
+
+/* Stijl voor main: landingspagina */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #dadefe;
+  border-radius: 32px;
+}
+
+.card a {
+  display: block;
+  width: fit-content;
+  background-color: red;
+  color: white;
+  margin-top: 20px;
+  margin-left: auto;
+  padding: 10px 2ch;
+  border-radius: 32px;
+}
+
+.card a:hover {
+  background-color: white;
+  color: red;
+  text-decoration: none;
+}
+
+main {
+  /* width: 800px;
+  margin: auto; */
+  padding: 20px 0;
+}
+
+main img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+#steden h2 {
+  text-align: center;
+}
+
+#steden {
+  background-color: #fcff2060;
+}
+
+#nieuws .grid-container {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Stijl voor footer */
+
+footer {
+  background-color: #dbfbf8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 30px;
+}
+
+/* Stijl voor stadspagina's: stadsoverzicht, badges & artikel */
+
+#stadsoverzicht {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#stadsoverzicht img {
+  border-radius: 20px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 4px 12px;
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.badge-accent {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+#artikel article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: #dadefe;
+  padding: 30px;
+  border-radius: 32px;
+}
+
+#artikel img {
+  border-radius: 20px;
+}

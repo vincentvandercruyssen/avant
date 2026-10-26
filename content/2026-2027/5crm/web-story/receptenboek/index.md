@@ -169,7 +169,7 @@ Maak de vier HTML-documenten aan in je projectmap: `index.html`, `recept_1.html`
 
 ![Basisstructuur](img/basisstructuur-1.png?w=33%)
 
-Gebruik in VS Code de Emmet-snelkoppeling uitroepteken `(!)` in een leeg HTML-document en druk op `Tab` of `Enter`. Vul de basisstructuur aan met de juiste taal (`nl`), een unieke paginatitel en de koppeling naar het centrale stijlblad.
+Gebruik in VS Code de Emmet-snelkoppeling uitroepteken `(!)` in het lege HTML-document `index.html` en druk op `Tab` of `Enter`. Vul de basisstructuur aan met de juiste taal (`nl`), een unieke paginatitel en de koppeling naar het centrale stijlblad.
 
 ```html
 <!DOCTYPE html>
@@ -188,7 +188,7 @@ Gebruik in VS Code de Emmet-snelkoppeling uitroepteken `(!)` in een leeg HTML-do
 
 ### Algemene stijlen
 
-In `style.css` stel je de globale basisopmaak in voor alle pagina's. Dat houdt in dat je de achtergrondkleur van de pagina instelt, de tekstkleur, de lettertypefamilie.
+In `style.css` stel je de globale basisopmaak in voor alle pagina's. Dat houdt in dat je de achtergrondkleur, de tekstkleur en de lettertypefamilie van de pagina instelt.
 
 Verander optioneel ook de regelafstand en de opmaak van hyperlinks.
 
@@ -211,8 +211,8 @@ a:hover {
 }
 ```
 
-* **Standaard browserwitruimte verwijderen:** De browser geeft het `<body>`-element standaard een buitenmarge van enkele pixels. Met `margin: 0;` sluit je header en achtergrond naadloos aan tegen de vensterrand.
-* **Leesbaarheid (optioneel):** Met `line-height: 1.5;` geef je teksten voldoende ademruimte tussen de regels.
+* **Standaard browserwitruimte verwijderen:** De browser geeft het `<body>`-element standaard een buitenmarge van enkele pixels. Met `margin: 0;` sluit je achtergrond naadloos aan tegen de vensterrand.
+* **Leesbaarheid (optioneel):** Met `line-height: 1.5;` geef je teksten wat meer ademruimte tussen de regels.
 * **Hyperlinks (optioneel):** Met `text-decoration: none;` verwijder je de standaard onderstreping van links. Via `a:hover` verschijnt de onderlijning zodra de bezoeker met de muis over de link beweegt.
 
 ### Header & navigatie met Flexbox
@@ -263,13 +263,13 @@ header h1 {
 Een element met `display: flex;` verandert in een flexibele container. De directe kind-elementen worden automatisch horizontaal naast elkaar op één rij geplaatst.
 
 * **`justify-content: space-between;`** Duwt de websitetitel links helemaal naar de buitenkant en het menu rechts naar de tegenoverliggende zijde, met alle resterende ruimte ertussen.
-* **`align-items: center;`** Linet de navigatielinks verticaal netjes uit in het midden ten opzichte van de titel.
+* **`align-items: center;`** Lijnt de navigatielinks verticaal netjes uit in het midden ten opzichte van de titel.
 * **`gap: 40px;`** Creëert automatisch een tussenruimte van 40 pixels tussen de onderlinge menu-links.
 
 #### padding en margin
 
 * **Shorthand padding met pixels en percentages:** Met `padding: 24px 5%;` stel je 24 pixels witruimte in aan de boven- en onderkant, en 5% aan de linker- en rechterkant. Dankzij het percentage schaalt de zijruimte flexibel mee met de breedte van de header.
-* **`header h1 { }` ontkoppelen van marges:** Browsers geven koptitels standaard een forse boven- en ondermarge. Met `margin: 0;` haal je die marge weg.
+* **`header h1` zonder marges:** Browsers geven koptitels standaard een forse boven- en ondermarge. Met `margin: 0;` haal je die marge weg.
 
 Padding (binnenruimte) en margin (buitenruimte) zijn belangrijke eigenschappen in CSS. Aan de hand van `margin` bepaal je de afstand van elementen ten opzichte van elkaar. En met `padding` bepaal je de ruimte tussen de rand en de inhoud van een element. Meer info hierover vind je in de cursus: [Cursus CSS: Box Model](/cursus/css/#box-model)
 
@@ -283,19 +283,19 @@ Je kunt ook twee waarden doorgeven aan `padding` en `margin`, in dat geval veran
 
 ### Landingspagina: main, section's & Grid
 
-De hoofdinhoud (`<main>`) van `index.html` verdeel je thematisch in herkenbare secties met het `<section>`-element. Binnen de receptensectie plaats je de gerechten in een raster van kaarten:
+De hoofdinhoud (`<main>`) van `index.html` verdeel je thematisch in herkenbare secties met het `<section>`-element. Binnen de receptensectie plaats je de gerechten in een raster van kaarten.
 
 ```html
 <main>
   <section id="hero">
     <h2>Smaakvolle gerechten</h2>
-    <p>Ontdek drie snelle en gezonde gerechten die je binnen het halfuur op tafel tovert.</p>
+    <p>Ontdek drie gerechten die je meteen op tafel tovert.</p>
     <p><a href="#recepten">Ontdek de recepten!</a></p>
   </section>
 
   <section id="recepten">
     <h2>Onze favoriete recepten</h2>
-    <p>Deze recepten zijn speciaal voor je samengesteld door onze beste chefs.</p>
+    <p>Deze recepten zijn speciaal voor jou samengesteld.</p>
     <div class="card-grid">
       <article class="card">
         <img src="images/foto-recept_1.jpg" alt="Recept 1" width="300">
@@ -326,7 +326,7 @@ section {
 }
 ```
 
-* **Secties groeperen (`<section>`):** Gebruik `<section>` om elk inhoudsblok een eigen zone te geven. Aan de hand van `padding` geef je elke sectie een consistente binnenruimte (20 pixels boven/onder en 5% links/rechts).
+* **Secties groeperen:** Gebruik `<section>` om elk inhoudsblok een eigen zone te geven. Aan de hand van `padding` geef je elke sectie een consistente binnenruimte (20 pixels boven/onder en 5% links/rechts).
 * **Afwijkende achtergrondkleur via een ID-selector:** Met het hekje `#` voor het id-kenmerk, geef je doelgericht die ene specifieke sectie bijvoorbeeld een eigen achtergrondtint mee.
 
 ![section recepten](img/section-recepten_1.png)

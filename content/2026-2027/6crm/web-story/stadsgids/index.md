@@ -39,9 +39,9 @@ leerplandoelen:
 draft: false
 ---
 
-## Briefing & Concept
+## Briefing & concept
 
-Als crossmediamaker vertaal je ideeën naar krachtige visuele en interactieve ervaringen. Eerder ontdekte je al hoe HTML de fundering legt voor inhoud en hoe CSS zorgt voor de visuele identiteit van een webpagina. 
+Als crossmediamaker vertaal je ideeën naar krachtige visuele en interactieve ervaringen. Eerder ontdekte je al hoe HTML de fundering legt voor inhoud en hoe CSS zorgt voor de visuele identiteit van een webpagina.
 
 In deze herhalingsopdracht til je die basiskennis naar een webproject van portfolio-niveau. Je ontwerpt en codeert een complete **multipage stadsgids** over drie steden naar keuze. Je doorloopt het gehele ontwerpproces: van doordacht vooronderzoek en desktop wireframing in Figma tot het coderen van semantische HTML5 en moderne CSS met Flexbox en Grid.
 
@@ -53,8 +53,8 @@ Laat je inspireren door de onderstaande designconcepten:
 
 * **Thematische indeling:** Deel je steden intuïtief in. Denk aan herkenbare categorieën zoals *Dicht bij huis* tegenover *Verder weg*, of werk rond thema's zoals cultuur, architectuur en gastronomie.
 * **Artikels:** Verrijk de vaste lijst van bezienswaardigheden met een artikel, zoals *"Onze 5 favoriete koffiebars op een regenachtige zondag"* of *"De leukste vintage boetieks van de stad"*. Dit geeft je gids een authentiek magazinegevoel.
-* **Concrete Call-to-Action (CTA):** Zorg dat pagina-onderdelen activeren. Denk aan gerichte actieknoppen zoals *"Download de wandelroute als PDF"*, *"Open in Google Maps"* of *"Ontdek alle bezienswaardigheden"*.
-* **Typografie met karakter:** Kies bewust voor een typografisch contrast. Combineer bijvoorbeeld een karaktervolle schreefletter (*serif*) of uitgesproken displayletter voor titels met een strakke, goed leesbare schreefloze letter (*sans-serif*) voor de broodtekst.
+* **Concrete Call-to-Action (CTA):** Zorg dat pagina-onderdelen activeren. Denk aan gerichte actieknoppen zoals *"Ontdek meer"*, *"Download de wandelroute"* of *"Bekijk alle bezienswaardigheden"*.
+* **Typografie met karakter:** Kies bewust voor een typografisch contrast. Combineer bijvoorbeeld een karaktervolle schreefletter (*serif*) of displayletter voor titels met een strakke, goed leesbare schreefloze letter (*sans-serif*) voor de broodtekst.
 
 ### Inspiratiebronnen
 
@@ -66,7 +66,7 @@ Bekijk onderstaande platformen om inspiratie op te doen voor lay-out, typografie
 * [Visit Gent](https://visit.gent.be/nl) – Strakke gemeentelijke gids met heldere thematische blokken en een duidelijke hiërarchie.
 * [I amsterdam](https://www.iamsterdam.com/) – Krachtige beeldtaal, overzichtelijke navigatie en heldere agendablokken.
 
-### Je concept
+### Jouw concept
 
 Je bouwt een samenhangende website bestaande uit **vier HTML-pagina's**:
 
@@ -75,24 +75,15 @@ Je bouwt een samenhangende website bestaande uit **vier HTML-pagina's**:
 
 Kies drie steden die een inhoudelijke logica vertonen. Je kunt kiezen voor drie steden binnen één land of drie steden verbonden door een specifiek thema (zoals bijvoorbeeld historische havensteden, Noord-Europese designsteden of culinaire hoofdsteden).
 
-## Technische specificaties
+### Technische specificaties
 
-| Instelling | Aanbevolen waarde | Toelichting |
-| :--- | :--- | :--- |
-| **Schermbreedte (viewport)** | **1440 px (Desktop)** | De totale breedte van je Figma-frame en browsersomgeving. Achtergrondvlakken kunnen 100% vullen. |
-| **Inhoudsbreedte (container)** | **Max. 1200 px** | Alle leesbare inhoud (tekst, kolommen, cards) blijft netjes binnen een gecentreerde container (`max-width: 1200px; margin: 0 auto;`). |
-| **Aantal pagina's** | **4 HTML-bestanden** | `index.html` (landingspagina) en 3 stadspagina's (`stad_1.html`, `stad_2.html`, `stad_3.html`). |
-| **Stijlblad** | **1 centraal extern bestand** | `style.css` in de hoofdmap, uniform gekoppeld aan alle 4 pagina's. |
-| **Lay-outtechnieken** | **Flexbox & CSS Grid** | Flexbox voor navigatie, badges en knoppen; CSS Grid voor card-overzichten en side-by-side blokken. |
-| **Beeldmateriaal** | **JPG / WebP / PNG** | Duidelijke resolutie, geoptimaliseerd voor web en verzameld in de submap `images/`. |
+Je ontwerpt de website op een desktopbreedte van **1440 px**, waarbij alle leesbare inhoud netjes binnen een maximale breedte van **ongeveer 1200 px** blijft. Dit bereik je met een gecentreerde container (`max-width: 1200px; margin: 0 auto;`) of door je lay-outblokken zijwaartse binnenruimte te geven aan de hand van `padding`. Achtergrondkleuren of sfeerbeelden kunnen wel de volle 100% schermbreedte vullen.
 
-> In webdesign maak je een duidelijk onderscheid tussen de **schermbreedte** en de **inhoudsbreedte**:
-> * **Schermbreedte (1440 px):** De breedte van het volledige venster. Grote sfeerfoto's of gekleurde achtergrondstroken lopen vaak over de volledige 100% schermbreedte door (*full-width*).
-> * **Inhoudsbreedte (max. 1200 px):** De eigenlijke content (titels, broodtekst, cards en kolommen) hou je binnen een gecentreerd raster van maximaal 1200 px. Zo voorkom je dat zinnen op brede monitors eindeloos lang en onleesbaar worden.
+De vier HTML-pagina's koppel je aan één centraal extern stijlblad (`style.css`). Voor de vormgeving combineer je Flexbox (navigatie, badges, footer) met CSS Grid (card-overzichten en lay-outsecties). Al het beeldmateriaal (JPG, WebP, PNG of SVG) sla je geoptimaliseerd voor web op in de submap `images/`.
 
-### Mappenstructuur
+#### Mappenstructuur
 
-Zet vóór je start een overzichtelijke mappenstructuur op in je OneDrive onder het vak **Web**:
+Plaats alle bestanden in je OneDrive onder het vak **Web-Story** in een overzichtelijke structuur:
 
 ```text
 VoornaamA_Stadsgids/
@@ -109,7 +100,7 @@ VoornaamA_Stadsgids/
 └─ style.css
 ```
 
-> Plaats alle HTML-bestanden en het centrale `style.css`-bestand rechtstreeks in de hoofdmap van je project. Alle afbeeldingen bewaar je ordelijk in de submap `images/`. Gebruik uitsluitend kleine letters, cijfers en koppeltekens in bestandsnamen.
+Plaats alle HTML-bestanden en het centrale `style.css`-bestand rechtstreeks in de hoofdmap van je project. Alle afbeeldingen bewaar je ordelijk in de submap `images/` en eventuele lettertypebestanden in `fonts/`. Gebruik uitsluitend kleine letters, cijfers en koppeltekens in bestandsnamen.
 
 ## Stappenplan
 
@@ -130,6 +121,7 @@ Bekijk de vermelde inspiratiewebsites ([Citygidsen.be](https://citygidsen.be/), 
 > In UI- en webdesign is een **kaart** (*card*) een zelfstandig, afgebakend onderdeeltje dat alle gerelateerde informatie en acties over één specifiek onderwerp bundelt. Een sfeerbeeld, een duidelijke titel, informatieve labels of badges, een korte beschrijving en een actieknop vormen samen één geheel. Doordat kaarten in een consistent raster worden herhaald, kan een bezoeker vlot door de inhoud scannen. Zie ook: [The Component Gallery](https://component.gallery/components/)
 
 #### Steden & thema bepalen
+
 Kies de drie steden die je gaat presenteren en bepaal de overkoepelende invalshoek van jouw gids.
 
 #### Teksten
@@ -146,16 +138,18 @@ Zoek kwalitatieve, rechtenvrije sfeerbeelden via platforms zoals [Unsplash](http
 
 #### Indienen
 
-Dien je voorbereidingsdocument in als `.odt` of `.pdf` (`VoornaamA_Stadsgids-Onderzoek.odt` of `VoornaamA_Stadsgids-Onderzoek.pdf`).
+Dien je voorbereidingsdocument in via de voorziene Smartschool-uploadmap als `.pdf` of `.odt` (`VoornaamA_Stadsgids-Onderzoek.pdf`).
 
 ### Wireframing in Figma
 
 Voordat je codeert, leg je de visuele indeling en de hiërarchie vast in Figma. Dit voorkomt dat je tijdens het coderen moet improviseren over lay-out en verhoudingen.
 
 #### Document opzetten
+
 Maak in Figma een nieuw bestand aan binnen je vakmap. Werk op een desktop-frame van **1440 px** breed en schakel een 12-koloms lay-outgrid in (*Layout Grid → Columns → Count: 12, Margin: 120, Gutter: 24*). Met twee zijmarges van 120 px hou je zo exact 1200 px over voor je inhoudsraster.
 
 #### Landingspagina uittekenen
+
 Teken het wireframe van de homepage (`index.html`) uit:
 * **Header:** Logo of websitetitel aan de linkerkant, horizontale navigatielinks naar de steden aan de rechterkant.
 * **Hero-sectie:** Grote titel, subtitel, sfeerbeeld en een opvallende Call-to-Action knop.
@@ -163,6 +157,7 @@ Teken het wireframe van de homepage (`index.html`) uit:
 * **Footer:** Secundaire navigatie, copyright en colofon.
 
 #### Stadspagina-stramien ontwerpen
+
 Ontwerp één consistent modulair sjabloon dat als basis dient voor de drie stadspagina's:
 * **Header:** Identiek aan de landingspagina, met een visuele aanduiding van de actieve pagina.
 * **Hero:** Paginatitel (stadsnaam) met een sfeervol panoramisch beeld.
@@ -178,14 +173,19 @@ Dien je wireframes in via de voorziene Smartschool-uploadmap:
 * **Figma-link:** Bezorg de gedeelde link naar je Figma-bestand (kijkrechten inschakelen).
 * **Export:** Exporteer je frames als afbeeldingen (`.png` of `.jpg`) of als pdf (`VoornaamA_Stadsgids-Wireframe.pdf`).
 
-### HTML: Semantische structuur
+### Interactief voorbeeld
 
-Zet de structuur van alle vier pagina's op in Visual Studio Code. Gebruik uitsluitend betekenisvolle HTML5-elementen.
+Bekijk hieronder het interactieve voorbeeld van de landingspagina van de stadsgids. Gebruik de knoppen **Resultaat**, **HTML** en **CSS** om te schakelen tussen de visuele weergave en de onderliggende code. Via de knop **Volledig scherm** (rechtsboven) open je de demo schermvullend met de code aan de rechterkant.
 
-#### Basisstructuur opzetten
-Maak de vier HTML-bestanden aan in je projectmap: `index.html`, `stad_1.html`, `stad_2.html` en `stad_3.html`.
+> **Let op:** In dit interactieve voorbeeld is de centrale landingspagina (`index.html`) uitgewerkt als didactische referentie. De drie afzonderlijke stadspagina's (`stad_1.html`, `stad_2.html`, `stad_3.html`) werk je zelfstandig uit volgens in dit stappenplan.
 
-Gebruik in Visual Studio Code de Emmet-snelkoppeling: open het lege bestand, typ een uitroepteken (`!`) en druk op `Tab` of `Enter`. De editor genereert meteen de volledige HTML5-basisstructuur.
+{{< demo_embed dir="voorbeelden/web-story/stadsgids" title="Stadsgids" files="stad_1.html,stad_2.html,stad_3.html" height="650px" >}}
+
+### Basisstructuur
+
+Maak de vier HTML-bestanden aan in je projectmap: `index.html`, `stad_1.html`, `stad_2.html` en `stad_3.html`. Maak ook het centrale CSS-bestand `style.css` aan en voorzie de submappen `images` en `fonts`.
+
+Gebruik in Visual Studio Code de Emmet-snelkoppeling: open een leeg HTML-bestand, typ een uitroepteken (`!`) en druk op `Tab` of `Enter`. De editor genereert meteen de volledige HTML5-basisstructuur.
 
 Vul elk bestand met deze geldige basisopbouw:
 
@@ -193,10 +193,10 @@ Vul elk bestand met deze geldige basisopbouw:
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stadsgids - Landingspagina</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stadsgids</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -204,239 +204,426 @@ Vul elk bestand met deze geldige basisopbouw:
 </html>
 ```
 
-> Pas het `<title>`-element in de `<head>` op elke pagina aan zodat het direct duidelijk maakt welke stad of pagina de bezoeker bekijkt (bijvoorbeeld `Stadsgids - Kopenhagen`).
+* **Documenttype & taal:** `<!DOCTYPE html>` activeert de moderne HTML5-standaard. Met `<html lang="nl">` geef je aan dat de inhoud in het Nederlands is geschreven, wat essentieel is voor zoekmachines en schermlezers.
+* **Tekencodering & viewport:** `<meta charset="UTF-8">` garandeert dat speciale tekens (zoals é, ç of ü) correct getoond worden. De `<meta name="viewport">`-tag zorgt ervoor dat de pagina schaalt naar de breedte van het beeldscherm.
+* **Unieke paginatitel:** Pas het `<title>`-element in de `<head>` op elke pagina aan zodat het direct duidelijk maakt welke stad de bezoeker bekijkt (bijvoorbeeld `Stadsgids - Kopenhagen`).
+* **Stijlbladkoppeling:** Via `<link rel="stylesheet" href="style.css">` koppel je alle vier de pagina's aan hetzelfde centrale bestand in de hoofdmap.
 
-#### Consistente header en navigatie
-Plaats in de `<body>` van elk bestand een identieke `<header>` met een navigatiemenu. Zorg dat alle hyperlinks relatief en functioneel zijn.
+### Algemene stijlen & typografie
 
-Plaats de `<a>`-elementen direct binnen `<nav>` (eventueel met `<ul>`/`<li>`-lijstjes):
+In `style.css` leg je de globale basisstijlen vast voor het hele project. Hier stel je de lettertypes, de achtergrondkleur, de tekstkleur en de standaard witruimtes in:
+
+```css
+@import url("https://use.typekit.net/txk1ice.css");
+
+@font-face {
+  font-family: "Childer";
+  src: url("fonts/Childer.otf");
+}
+
+body {
+  margin: 0;
+  background-color: #fbfbe6;
+  color: #322020;
+  font-family: "basic-sans", sans-serif;
+}
+
+header,
+section,
+footer {
+  padding: 20px 5%;
+}
+
+a {
+  text-decoration: none;
+  color: #322020;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  max-width: 80ch;
+}
+
+section h2 {
+  margin-top: 0;
+}
+```
+
+* **Lettertypes inladen:** Met `@import` laad je een webfont in (bijvoorbeeld via Adobe Fonts/Typekit of Google Fonts). Met `@font-face` kun je daarnaast een lokaal fontbestand uit je map `fonts/` declareren.
+* **Standaard browserwitruimte verwijderen:** De browser kent aan het `<body>`-element standaard een buitenmarge toe. Met `body { margin: 0; }` sluiten gekleurde achtergrondvlakken en de navigatiebalk naadloos aan tegen de vensterrand.
+* **Consistente binnenruimte via selector-groepering:** Met `header, section, footer { padding: 20px 5%; }` geef je alle hoofdblokken in één regel dezelfde binnenruimte: 20 pixels aan de boven- en onderkant, en 5% aan de zijkanten. Dankzij het percentage schaalt de inhoud soepel mee met bredere vensters. Zie ook: [Cursus CSS: Box Model](/cursus/css/#box-model).
+* **Hyperlinks stylen:** Met `text-decoration: none;` verwijder je de standaard onderstreping van links. Via `a:hover` verschijnt de onderlijning zodra de bezoeker met de muis over de link beweegt.
+* **Leesbaarheid garanderen met `max-width: 80ch;`:** Op brede schermen kunnen tekstregels te lang worden om comfortabel te lezen. Met de relatieve eenheid `ch` (de breedte van het nulteken `0`) beperk je paragrafen tot maximaal 80 tekens per regel. Zie ook: [Cursus CSS: Eenheden](/cursus/css/#eenheden).
+* **Koppen ontkoppelen van bovenmarges:** Browsers geven `<h2>`-elementen standaard een forse bovenmarge. Met `margin-top: 0;` sluit de titel strak aan tegen de bovenkant van de sectie.
+
+### Header & navigatie met Flexbox
+
+Plaats bovenaan de `<body>` van elke pagina een identieke `<header>`. Deze bevat links het logo met de titel van de stadsgids, en rechts het navigatiemenu met doorkliklinks naar de verschillende steden:
 
 ```html
 <header>
-    <a href="index.html" class="logo">Stadsgids</a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="stad_1.html">Kopenhagen</a>
-        <a href="stad_2.html">Stockholm</a>
-        <a href="stad_3.html">Oslo</a>
-    </nav>
+  <a href="index.html" class="logo">
+    <img src="images/logo-stadsgids.svg" alt="Logo Stadsgids" width="60">
+    <h1>Stadsgids</h1>
+  </a>
+  
+  <nav>
+    <a href="stad_1.html">Stad 1</a>
+    <a href="stad_2.html">Stad 2</a>
+    <a href="stad_3.html">Stad 3</a>
+  </nav>
 </header>
 ```
 
-#### Landingspagina uitwerken
-Bouw het `<main>`-element van `index.html` op met duidelijke, Nederlandstalige `id`-kenmerken per sectie:
-* Een `<section id="hero">` met een hoofdtitel (`<h1>`), een introducerende paragraaf (`<p>`) en een CTA-knop (`<a class="btn-primary" href="#steden">Ontdek de steden</a>`).
-* Een `<section id="steden">` met een `<h2>` en drie `<article class="card">`-elementen waarin je doorklikt naar `stad_1.html`, `stad_2.html` en `stad_3.html`.
+#### Flexbox
 
-#### Stadspagina's uitwerken
-Bouw het `<main>`-element van de stadspagina's op met herkenbare, Nederlandstalige `id`-kenmerken per sectie. Zo geef je elk onderdeel een unieke identiteit en spreek je elementen in CSS gericht aan zonder een overdaad aan klassen:
-
-##### Stadsoverzicht
-
-```html
-<section id="inleiding">
-    <div>
-        <h2>Over Kopenhagen</h2>
-        <p>Korte beschrijving van de sfeer, geschiedenis en dynamiek van de stad...</p>
-        <ul>
-            <li><strong>Land:</strong> Denemarken</li>
-            <li><strong>Inwoners:</strong> ca. 650.000</li>
-            <li><strong>Beste reistijd:</strong> Mei tot september</li>
-        </ul>
-    </div>
-    <img src="images/kopenhagen-haven.jpg" alt="Kleurrijke gevels aan Nyhavn in Kopenhagen">
-</section>
-```
-
-##### Bezienswaardigheden
-
-Groepeer de bezienswaardigheden in een raster. Plaats de inhoud direct binnen `<article class="card">` zonder onnodige geneste divs:
-
-```html
-<section id="bezienswaardigheden">
-    <h2>Bezienswaardigheden</h2>
-    <div class="card-grid">
-        <article class="card">
-              <img src="images/kopenhagen-designmuseum.jpg" alt="Interieur van het Designmuseum Danmark">
-              <span class="badge">Cultuur</span>
-              <h3>Designmuseum Danmark</h3>
-              <p>Iconisch Scandinavisch design, toegepaste kunst en inspirerende mode-exposities.</p>
-              <a href="#">Meer info</a>
-          </article>
-          <!-- Voeg minstens drie extra cards toe -->
-    </div>
-</section>
-```
-
-##### Artikel
-
-Voeg voor één stad naar keuze een uitgelicht artikel toe met een lokale tip. Ook hier hou je de HTML-structuur vlak en direct:
-
-```html
-<section id="artikel">
-    <article>
-        <div>
-            <span class="badge badge-accent">Tip</span>
-            <h2>Onze 5 favoriete koffiebars op een regenachtige zondag</h2>
-            <p>Van minimalistische branderijen in Vesterbro tot knusse hoekjes met versgebakken kaneelbroodjes...</p>
-            <a href="#" class="btn-secondary">Lees de gids</a>
-        </div>
-        <img src="images/kopenhagen-koffiebar.jpg" alt="Gezellige koffiebar met warme verlichting">
-    </article>
-</section>
-```
-
-#### Footer toevoegen
-Sluit elke pagina af met een uniforme `<footer>` met colofon en copyright:
-
-```html
-<footer>
-    <p>2026 Stadsgids | Opdracht Web 6CRM | Voornaam Achternaam</p>
-</footer>
-```
-
-### CSS: Vormgeving, Flexbox & Grid
-
-Koppel alle vier HTML-pagina's aan hetzelfde bestand `style.css`. Hier realiseer je een strakke, eigentijdse en evenwichtige vormgeving.
-
-#### Basisopmaak en typografie
-Kies een Google Font en stel de basisstijlen rechtstreeks in op de gewenste elementen. Vermijd een universele reset (`* { margin: 0; padding: 0; }`), maar pas `margin` of `padding` specifiek toe waar dat nodig is:
-
-```css
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-
-body {
-    margin: 0;
-    background-color: #f8fafc;
-    color: #1e293b;
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-    line-height: 1.6;
-}
-
-h1, h2, h3 {
-    color: #1a365d;
-    line-height: 1.25;
-}
-```
-
-#### Navigatiebalk stylen met Flexbox
-Gebruik Flexbox en structurele CSS-selectors om de header en navigatielinks netjes te verdelen:
+In `style.css` geef je de header vorm met **Flexbox**. In de cursus vind je meer uitleg over de werking van flexibele containers: [Cursus CSS: Flexbox](/cursus/css/#flexbox).
 
 ```css
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 2rem;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dbfbf8;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 header nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #64748b;
-    font-weight: 500;
-}
-
-header nav a:hover,
-header nav a.active {
-    color: #d97706;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 ```
 
-#### Bezienswaardigheden stylen met CSS Grid
-Gebruik CSS Grid om een flexibel en responsive raster te maken voor je bezienswaardigheden:
+* **`header { display: flex; justify-content: space-between; }`** Maakt van de header een flexibele container. De logolink links en het navigatiemenu rechts worden automatisch uit elkaar geduwd naar de buitenste randen.
+* **`header .logo { display: flex; align-items: center; gap: 15px; }`** De logokoppeling is zelf ook een flex container. Hierdoor staan het beeldmerk (`<img>`) en de paginatitel (`<h1>`) netjes verticaal gecentreerd naast elkaar met een tussenruimte van 15 pixels.
+* **`header nav { display: flex; gap: 50px; }`** Plaatst de navigatielinks op één horizontale rij met een ruime tussenafstand van 50 pixels.
+
+### Landingspagina: main, secties & Grid
+
+De inhoud van `index.html` organiseer je binnen het `<main>`-element met drie semantische secties. Elke sectie krijgt een herkenbaar `id`-kenmerk:
+
+```html
+<main>
+  <section id="inleiding">
+    <h2>Inleiding</h2>
+    <p>Een korte introductie tot de stadsgids.</p>
+    <p>Ontdek drie inspirerende steden met unieke buurten, verrassende architectuur en lokale tips.</p>
+  </section>
+
+  <section id="steden">
+    <h2>Bekijk onze steden</h2>
+
+    <div class="grid-container">
+      <article class="card">
+        <img src="images/barcelona-1.jpg" alt="Stad 1" width="200">
+        <h3>Stad 1</h3>
+        <p>Ontdek de historische straatjes, lokale markten en authentieke sfeer.</p>
+        <a href="stad_1.html">Ontdek meer</a>
+      </article>
+
+      <article class="card">
+        <img src="images/barcelona-2.jpg" alt="Stad 2" width="200">
+        <h3>Stad 2</h3>
+        <p>Een bruisende metropool vol hedendaagse cultuur, musea en groene parken.</p>
+        <a href="stad_2.html">Ontdek meer</a>
+      </article>
+
+      <article class="card">
+        <img src="images/barcelona-3.jpg" alt="Stad 3" width="200">
+        <h3>Stad 3</h3>
+        <p>Geniet van adembenemende uitzichten, waterwegen en vernieuwende architectuur.</p>
+        <a href="stad_3.html">Ontdek meer</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="nieuws">
+    <h2>Bekijk ons nieuws</h2>
+    <p>Laatste nieuws en updates over onze steden.</p>
+
+    <div class="grid-container">
+      <article class="card">
+        <img src="images/barcelona-1.jpg" alt="Nieuwsbericht 1" width="200">
+        <h3>Zomerse stadsfestivals</h3>
+        <p>De leukste openluchtevenementen en concerten op een rij.</p>
+        <a href="stad_1.html">Ontdek meer</a>
+      </article>
+
+      <article class="card">
+        <img src="images/barcelona-2.jpg" alt="Nieuwsbericht 2" width="200">
+        <h3>Nieuwe fietspaden geopend</h3>
+        <p>Verken de stad veilig en snel via de vernieuwde groene fietsroutes.</p>
+        <a href="stad_2.html">Ontdek meer</a>
+      </article>
+    </div>
+  </section>
+</main>
+```
+
+#### Secties en achtergronden
+
+In `style.css` geef je de secties extra ademruimte en een eigen achtergrondkleur via gerichte ID-selectors. Zie ook: [Cursus CSS: Selectors](/cursus/css/#id-selector).
 
 ```css
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+main {
+  padding: 20px 0;
 }
 
+section {
+  margin-bottom: 20px;
+}
+
+#steden {
+  background-color: #fcff2060;
+}
+
+#steden h2 {
+  text-align: center;
+}
+```
+
+* **`#steden { background-color: ...; }`** Geeft de stedenkeuze een herkenbare achtergrondtint over de volle breedte van het venster.
+* **`#steden h2 { text-align: center; }`** Centreert de titel boven het kaartenraster voor een evenwichtige presentatie.
+
+#### CSS Grid
+
+Voor het overzicht van de kaarten gebruik je **CSS Grid**. Waar Flexbox vooral uitblinkt in één richting, verdeelt CSS Grid een pagina in een strak tweedimensionaal raster van kolommen en rijen. Meer uitleg vind je in de cursus: [Cursus CSS: Grid](/cursus/css/#grid).
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#nieuws .grid-container {
+  grid-template-columns: 1fr 1fr;
+}
+```
+
+* **`grid-template-columns: 1fr 1fr 1fr;`** De fractie-eenheid (`fr`) verdeelt de beschikbare breedte in evenredige delen. Drie keer `1fr` levert exact drie kolommen van gelijke breedte op.
+* **`#nieuws .grid-container { grid-template-columns: 1fr 1fr; }`** Binnen de nieuwssectie overschrijf je het raster eenvoudig naar twee kolommen (`1fr 1fr`), waardoor de twee artikelen ruimer worden weergegeven.
+* **`gap: 20px;`** Bepaalt de uniforme tussenruimte tussen alle kaarten in het raster.
+
+#### Kaarten en knoppen vormgeven
+
+Tot slot style je de individuele kaarten, de beeldweergave en de actieknoppen:
+
+```css
 .card {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 1.25rem;
+  padding: 20px;
+  background-color: #dadefe;
+  border-radius: 32px;
 }
 
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.card h3 {
-    margin: 0.75rem 0 0.5rem;
-    font-size: 1.25rem;
+main img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
 .card a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #d97706;
-    text-decoration: none;
-    font-weight: 600;
+  display: block;
+  width: fit-content;
+  background-color: #e11d48;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: auto;
+  padding: 10px 2ch;
+  border-radius: 32px;
+}
+
+.card a:hover {
+  background-color: #ffffff;
+  color: #e11d48;
+  text-decoration: none;
 }
 ```
 
-#### Badges en Call-to-Action knoppen
-Geef informatieve badges en knoppen een professionele uitstraling:
+* **Card-omkadering:** Met `background-color`, `padding: 20px;` en `border-radius: 32px;` vormen de kaarten zachte, afgeronde blokken die duidelijk losstaan van de pagina-achtergrond.
+* **Beeldweergave met `main img`:** Met `width: 100%;` vullen afbeeldingen de volledige breedte van de kaart. Met `border-radius: 20px 20px 0 0;` rond je enkel de twee bovenhoeken af, zodat de foto vloeiend aansluit op de rand van de kaart.
+* **Van een tekstlink een knop maken met `.card a`:**
+  * Met `display: block;` en `width: fit-content;` groeit de knop mee met de tekstinhoud.
+  * Met `margin-left: auto;` duw je de knop automatisch naar de rechterkant van de kaart.
+  * `padding: 10px 2ch;` zorgt voor een comfortabele klikzone (10 pixels boven/onder, en 2 tekenbreedtes links/rechts).
+  * Via `:hover` wissel je de achtergrond- en tekstkleur om voor een duidelijke interactieve feedback.
+
+### Footer: eenvoudige herhalende afsluiting
+
+Plaats onderaan elke HTML-pagina dezelfde `<footer>`. Deze bevat minimaal een copyrightvermelding en een groepje pictogrammen die linken naar sociale mediakanalen. Gratis vector-icoontjes kun je downloaden via [SVG Repo](https://www.svgrepo.com/). Het voordeel van SVG (Scalable Vector Graphics) is dat vectorafbeeldingen op elk schermformaat haarscherp blijven en een minimale bestandsgrootte hebben.
+
+```html
+<footer>
+  <p>Voornaam Achternaam - Stadsgids - 2026</p>
+  <div>
+    <img src="images/icon-facebook.svg" alt="Facebook" width="40">
+    <img src="images/icon-instagram.svg" alt="Instagram" width="40">
+    <img src="images/icon-pinterest.svg" alt="Pinterest" width="40">
+    <img src="images/icon-youtube.svg" alt="YouTube" width="40">
+  </div>
+</footer>
+```
+
+Kopieer deze footer ongewijzigd naar alle vier de HTML-pagina's.
+
+#### Flexbox & pictogrammen
+
+In `style.css` style je de footer met Flexbox:
+
+```css
+footer {
+  background-color: #dbfbf8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 30px;
+}
+```
+
+* **Visuele eenheid:** Door dezelfde achtergrondkleur (`#dbfbf8`) en padding als de `<header>` te gebruiken, sluit de pagina boven- en onderaan harmonieus aan.
+* **Flexbox verdeling:** `display: flex; justify-content: space-between; align-items: center;` plaatst de copyrighttekst links en de iconengroep rechts, verticaal gecentreerd.
+* **Iconen groeperen:** Omdat alle `<img>`-tags samen in één `<div>` zitten, behandelt Flexbox deze groep als één compact geheel. Via `footer img { width: 30px; }` schaal je alle iconen naar een uniform en rustig formaat.
+
+### Stadspagina's: main, side-by-side & bezienswaardigheden
+
+Op de drie afzonderlijke stadspagina's (`stad_1.html`, `stad_2.html`, `stad_3.html`) werk je telkens één specifieke bestemming uit. Je behoudt dezelfde `<header>` en `<footer>`, maar richt het `<main>`-gedeelte modulair in met drie specifieke onderdelen:
+
+```html
+<main>
+  <section id="stadsoverzicht">
+    <div>
+      <h2>Over Kopenhagen</h2>
+      <p>Kopenhagen combineert historische charme met baanbrekend Scandinavisch design, een levendige fietscultuur en een wereldberoemde gastronomie.</p>
+      <ul>
+        <li><strong>Land:</strong> Denemarken</li>
+        <li><strong>Inwoners:</strong> ca. 650.000</li>
+        <li><strong>Beste reistijd:</strong> Mei tot september</li>
+      </ul>
+    </div>
+    <img src="images/kopenhagen-haven.jpg" alt="Kleurrijke gevels aan Nyhavn in Kopenhagen">
+  </section>
+
+  <section id="bezienswaardigheden">
+    <h2>Bezienswaardigheden</h2>
+    <div class="grid-container">
+      <article class="card">
+        <img src="images/kopenhagen-designmuseum.jpg" alt="Designmuseum Danmark">
+        <span class="badge">Cultuur</span>
+        <h3>Designmuseum Danmark</h3>
+        <p>Iconisch Scandinavisch design, toegepaste kunst en inspirerende mode-exposities.</p>
+        <a href="#">Meer info</a>
+      </article>
+
+      <!-- Voeg minstens drie extra cards toe (minimaal vier bezienswaardigheden in totaal) -->
+
+    </div>
+  </section>
+
+  <!-- Voeg voor één stad naar keuze een uitgelicht artikel toe -->
+  <section id="artikel">
+    <article>
+      <div>
+        <span class="badge badge-accent">Tip</span>
+        <h2>Onze 5 favoriete koffiebars op een regenachtige zondag</h2>
+        <p>Van minimalistische branderijen in Vesterbro tot knusse hoekjes met versgebakken kaneelbroodjes in Nørrebro...</p>
+        <a href="#">Lees de gids</a>
+      </div>
+      <img src="images/kopenhagen-koffiebar.jpg" alt="Gezellige koffiebar met warme verlichting">
+    </article>
+  </section>
+</main>
+```
+
+#### Doelgericht lijstgebruik
+
+Kies steeds het juiste HTML-lijstelement afhankelijk van de inhoud:
+* **Ongeordende lijst (`<ul>`):** Gebruik voor de stadsfeiten een ongeordende lijst met `<li>`. De volgorde van kerngegevens (inwoners, ligging, klimaat) is immers willekeurig.
+* **Opsommingslabels benadrukken:** Plaats labels in een `<strong>`-tag om direct een duidelijke typografische hiërarchie te creëren tussen label en waarde. Zie ook: [Cursus HTML: Lijsten](/cursus/html/#lijst-met-lijstitems).
+
+#### Side-by-side informatie met CSS Grid
+
+Op de stadspagina plaats je de introductietekst en het stadsbeeld evenwichtig naast elkaar via twee gelijke grid-kolommen:
+
+```css
+#stadsoverzicht {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#stadsoverzicht img {
+  border-radius: 20px;
+}
+```
+
+* **`grid-template-columns: 1fr 1fr;`** Plaatst het tekstblok (`<div>`) links en de foto (`<img>`) rechts in twee gelijke helften.
+* **`align-items: center;`** Linet beide elementen verticaal gecentreerd uit ten opzichte van elkaar.
+* **`gap: 40px;`** Zorgt voor een royale tussenruimte tussen tekst en beeld.
+
+#### Badges en bezienswaardigheden
+
+In de bezienswaardighedensectie hergebruik je dezelfde `.grid-container` en `.card` klassen. Voeg informatieve badges toe om categorieën of buurten aan te duiden:
 
 ```css
 .badge {
-    display: inline-block;
-    margin-top: 0.5rem;
-    margin-right: 0.25rem;
-    padding: 0.25rem 0.6rem;
-    background-color: #f1f5f9;
-    color: #64748b;
-    font-size: 0.75rem;
-    font-weight: 600;
-    border-radius: 999px;
-    text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 4px 12px;
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  text-transform: uppercase;
 }
 
 .badge-accent {
-    background-color: #fef3c7;
-    color: #d97706;
-}
-
-.btn-primary {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #d97706;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 8px;
+  background-color: #fef3c7;
+  color: #d97706;
 }
 ```
 
-#### Side-by-side informatie met CSS Grid
-Plaats stadsfeiten en afbeeldingen evenwichtig naast elkaar door de sectie via haar `id` aan te spreken:
+* **Pill-badge met `border-radius: 999px;`:** Door een zeer hoge border-radius in te stellen verandert het rechthoekige vlakje in een ronde capsule (pilvorm).
+* **`text-transform: uppercase;`** Zet de categorietekst automatisch om in hoofdletters voor een compacte, labelachtige uitstraling.
+* **Variatie via `.badge-accent`:** Door een extra klasse toe te voegen geef je bijzondere labels (zoals een lokale tip of aanrader) een contrasterende accentkleur.
+
+#### Uitgelicht artikel
+
+Voor één stad naar keuze werk je een uitgelicht artikelblok uit. Ook hier combineer je CSS Grid om tekst en beeld in een breed horizontaal blok te presenteren:
 
 ```css
-#inleiding {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    align-items: center;
-    padding: 3rem 0;
+#artikel article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: #dadefe;
+  padding: 30px;
+  border-radius: 32px;
 }
 
-#inleiding img {
-    width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
+#artikel img {
+  border-radius: 20px;
 }
 ```
 
@@ -447,50 +634,57 @@ Heb je de basisstructuur en opmaak vlot afgewerkt? Verdiep je project met geavan
 * **Micro-interacties op cards:** Voeg een subtiele lift-animatie en schaduwwisseling toe wanneer de bezoeker met de muis over een card beweegt:
   ```css
   .card {
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
 
   .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15);
   }
   ```
 * **Interactieve kaartintegratie:** Integreer onderaan je stadspagina een interactieve kaart via een responsieve Google Maps iframe embed. Zo kan de bezoeker direct bezienswaardigheden op de kaart lokaliseren:
   ```html
   <div class="map-container">
-      <iframe 
-          src="https://www.google.com/maps/embed?pb=..." 
-          width="100%" 
-          height="350" 
-          style="border:0; border-radius:12px;" 
-          loading="lazy">
-      </iframe>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=..." 
+      width="100%" 
+      height="350" 
+      style="border:0; border-radius: 20px;" 
+      loading="lazy">
+    </iframe>
   </div>
   ```
 * **CSS-variabelen voor je kleurenpalet:** Wil je jouw kleuren eenvoudig op één centrale plek beheren? Definieer herbruikbare variabelen bovenaan je CSS via de `:root`-selector:
   ```css
   :root {
-      --kleur-primair: #1a365d;
-      --kleur-accent: #d97706;
-      --kleur-achtergrond: #f8fafc;
+    --kleur-achtergrond: #fbfbe6;
+    --kleur-tekst: #322020;
+    --kleur-accent: #dbfbf8;
+    --kleur-kaart: #dadefe;
+    --kleur-knop: #e11d48;
   }
 
   body {
-      background-color: var(--kleur-achtergrond);
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
   }
   ```
 
 ## Oplevering
 
-De finale oplevering omvat de volledige website (HTML, CSS en eventuele extra uitdagingen). Comprimeer (zip) jouw volledige projectmap `VoornaamA_Stadsgids` en upload het ZIP-bestand in de Smartschool Uploadzone:
+De finale oplevering omvat de volledige website (HTML, CSS en eventuele extra uitdagingen). Comprimeer (zip) jouw volledige projectmap `VoornaamA_Stadsgids` en upload het ZIP-bestand in de Smartschool-uploadzone:
 
 ```text
 VoornaamA_Stadsgids.zip
+└─ fonts/
+   └─ Childer.otf
 └─ images/
-   └─ hero-landingspagina.jpg
-   └─ stad1-hero.jpg
-   └─ stad1-spot1.jpg
-   └─ stad1-spot2.jpg
+   └─ barcelona-1.jpg
+   └─ icon-facebook.svg
+   └─ icon-instagram.svg
+   └─ icon-pinterest.svg
+   └─ icon-youtube.svg
+   └─ logo-stadsgids.svg
    └─ ...
 └─ index.html
 └─ stad_1.html
@@ -507,26 +701,26 @@ Controleer jouw werk grondig aan de hand van onderstaande kwaliteitscontrole vó
 - De hoofdmap heet exact `VoornaamA_Stadsgids` (met jouw eigen voornaam en eerste letter van je achternaam).
 - Alle bestandsnamen zijn geschreven in kleine letters, zonder spaties of vreemde tekens.
 - In de hoofdmap staan `index.html`, `stad_1.html`, `stad_2.html`, `stad_3.html` en `style.css`.
-- Alle afbeeldingen staan verzameld in de submap `images/`.
+- Alle afbeeldingen staan verzameld in de submap `images/` en eventuele lettertypes in `fonts/`.
 
 #### Wireframing & voorbereiding
 - In het voorbereidingsdocument zijn drie inspirerende reiswebsites onderzocht op navigatie, card-opbouw en typografie.
 - In Figma is een doordacht desktop wireframe (1440 px) uitgewerkt voor zowel de landingspagina als het sjabloon van de stadspagina's.
-- De visuele zones (header, hero, grids, artikelblok, footer) sluiten naadloos aan op de uiteindelijke HTML-code.
+- De visuele zones (header, introductie, grids, artikelblok, footer) sluiten naadloos aan op de uiteindelijke HTML-code.
 
-#### HTML: Structuur & semantiek
+#### HTML: structuur & semantiek
 - Alle pagina's bevatten een geldige documentstructuur (`<!DOCTYPE html>`, `<html lang="nl">`, `<head>`, `<body>`).
-- Het `<title>`-element is op elke pagina uniek en inhoudelijk aangepast.
+- Het `<title>`-element is op elke pagina uniek en inhoudelijk aangepast aan de getoonde stad.
 - De `<header>` bevat een werkend navigatiemenu met relatieve links die correct tussen alle vier pagina's schakelen.
-- De inhoud is semantisch verdeeld met `<main>`, `<section>`, `<article>` en `<footer>`, waarbij de belangrijkste secties een herkenbaar `id`-kenmerk dragen (`#inleiding`, `#bezienswaardigheden`, `#artikel`).
+- De inhoud is semantisch verdeeld met `<main>`, `<section>`, `<article>` en `<footer>`, waarbij de belangrijkste secties een herkenbaar `id`-kenmerk dragen (`#inleiding`, `#steden`, `#nieuws`, `#stadsoverzicht`, `#bezienswaardigheden`, `#artikel`).
 - Alle afbeeldingen (`<img>`) bevatten een werkend relatief pad en een betekenisvolle `alt`-tekst.
 
-#### CSS: Vormgeving, Flexbox & Grid
+#### CSS: vormgeving, Flexbox & Grid
 - Alle vier HTML-pagina's linken foutloos naar hetzelfde centrale bestand `style.css`.
-- Er is een doordacht typografisch contrast gerealiseerd via een Google Fonts combinatie.
-- Flexbox is doelgericht toegepast voor de navigatiebalk, badge-rijen en knoppengroepen.
-- CSS Grid is correct toegepast voor de card-overzichten en side-by-side presentaties.
-- De cards voor bezienswaardigheden hebben een consistente opbouw met badges, titels en beeldmateriaal.
+- Er is een doordachte typografie ingesteld via een extern webfont of lokaal lettertype.
+- Flexbox is doelgericht toegepast voor de navigatiebalk, logo-uitlijning en footer.
+- CSS Grid is correct toegepast voor de card-overzichten (`.grid-container`) en side-by-side presentaties (`#stadsoverzicht` en `#artikel`).
+- De cards voor steden en bezienswaardigheden hebben een consistente opbouw met afbeeldingen, titels, knoppen en informatieve badges.
 
 #### Kwaliteit & verzorging
 - De code is netjes ingesprongen (indented) zonder achtergebleven testcode of syntaxfouten.
