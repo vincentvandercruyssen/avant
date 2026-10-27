@@ -416,6 +416,17 @@
       }
     }
 
+    // Criteria binnen elk cluster altijd numeriek op code sorteren
+    state.submissions.forEach((sub) => {
+      (sub.clusters || []).forEach((cluster) => {
+        if (Array.isArray(cluster.criteria)) {
+          cluster.criteria.sort((a, b) =>
+            (a.code || '').localeCompare(b.code || '', undefined, { numeric: true, sensitivity: 'base' })
+          );
+        }
+      });
+    });
+
     // 3. Leerlingen inladen & automatisch ontsleutelen in geheugen
     loadStudentsList();
     await autoDecryptStudents();
@@ -425,15 +436,18 @@
     buildSubmissionTabs();
     buildStudentSelector();
 
-    // 5. Bepaal initiële student (via URL hash indien aanwezig, anders eerste)
-    const initialStudentIdx = findStudentIndexFromHash(window.location.hash);
-    if (initialStudentIdx !== -1) {
-      state.activeStudentIndex = initialStudentIdx;
+    // 5. Bepaal initiële submissie & student uit URL (bv. #oplevering/8ab009875a of #8ab009875a)
+    const { subIndex, studentIndex } = parseUrlHash(window.location.hash);
+    if (subIndex !== -1) {
+      state.activeSubIndex = subIndex;
+    }
+    if (studentIndex !== -1) {
+      state.activeStudentIndex = studentIndex;
     }
 
-    // 6. Selecteer eerste submissie en activeer student
-    switchSubmission(0);
-    selectStudent(state.activeStudentIndex);
+    // 6. Activeer gekozen submissie en student
+    switchSubmission(state.activeSubIndex, false);
+    selectStudent(state.activeStudentIndex, true);
 
     // 7. Controleer lokale Save Server
     await checkServerStatus();
@@ -591,9 +605,19 @@
     });
 
     window.addEventListener('hashchange', () => {
-      const targetIdx = findStudentIndexFromHash(window.location.hash);
-      if (targetIdx !== -1 && targetIdx !== state.activeStudentIndex) {
-        selectStudent(targetIdx, false);
+      const { subIndex, studentIndex } = parseUrlHash(window.location.hash);
+      let subChanged = false;
+
+      if (subIndex !== -1 && subIndex !== state.activeSubIndex) {
+        switchSubmission(subIndex, false);
+        subChanged = true;
+      }
+      if (studentIndex !== -1 && studentIndex !== state.activeStudentIndex) {
+        selectStudent(studentIndex, false);
+      } else if (subChanged && state.students[state.activeStudentIndex]) {
+        const cur = state.students[state.activeStudentIndex];
+        renderStudentRubric(cur);
+        updateStudentHeaderScore(cur.hash);
       }
     });
 
@@ -634,7 +658,7 @@
     });
   }
 
-  function switchSubmission(index) {
+  function switchSubmission(index, updateUrlHash = true) {
     if (index < 0 || index >= state.submissions.length) return;
     state.activeSubIndex = index;
     const sub = getActiveSubmission();
@@ -663,6 +687,10 @@
     updateAllChipsStatus();
     if (currentStudent) {
       highlightSummaryTableRow(currentStudent.hash);
+    }
+
+    if (updateUrlHash) {
+      updateUrl();
     }
   }
 
@@ -700,9 +728,41 @@
     updateAllChipsStatus();
   }
 
-  function updateUrlHash(hash) {
-    if (!hash) return;
-    const newHash = `#${hash}`;
+  function slugify(text) {
+    return (text || '')
+      .toString()
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/[\s_-]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function getSubmissionSlug(sub) {
+    if (!sub) return '';
+    if (sub.id && sub.id !== 'default' && !sub.id.startsWith('indiening-')) {
+      return sub.id;
+    }
+    return slugify(sub.title) || sub.id || 'tab';
+  }
+
+  function updateUrl() {
+    const student = state.students[state.activeStudentIndex];
+    const sub = getActiveSubmission();
+    const hasMultipleSubs = state.submissions && state.submissions.length > 1;
+
+    const parts = [];
+    if (hasMultipleSubs && sub) {
+      const tabSlug = getSubmissionSlug(sub);
+      if (tabSlug) parts.push(tabSlug);
+    }
+    if (student && student.hash) {
+      parts.push(student.hash);
+    }
+
+    if (parts.length === 0) return;
+    const newHash = `#${parts.join('&')}`;
+
     if (window.location.hash !== newHash) {
       if (window.history && window.history.replaceState) {
         const currentUrl = window.location.pathname + window.location.search + newHash;
@@ -713,17 +773,55 @@
     }
   }
 
-  function findStudentIndexFromHash(rawHash) {
-    if (!rawHash) return -1;
+  function findSubmissionIndexFromQuery(query) {
+    if (!query || !state.submissions || state.submissions.length === 0) return -1;
+    const clean = query.toString().toLowerCase().trim();
+    const cleanSlug = slugify(clean);
+
+    // 1. Exacte match op sub.id
+    let idx = state.submissions.findIndex((s) => (s.id || '').toLowerCase() === clean);
+    if (idx !== -1) return idx;
+
+    // 2. Match op slugify(sub.id)
+    idx = state.submissions.findIndex((s) => slugify(s.id) === cleanSlug);
+    if (idx !== -1) return idx;
+
+    // 3. Match op slugify(sub.title)
+    idx = state.submissions.findIndex((s) => slugify(s.title) === cleanSlug);
+    if (idx !== -1) return idx;
+
+    // 4. Match op genormaliseerde tekst
+    const norm = (str) => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const cleanNorm = norm(clean);
+    if (cleanNorm) {
+      idx = state.submissions.findIndex((s) => norm(s.title) === cleanNorm || norm(s.id) === cleanNorm);
+      if (idx !== -1) return idx;
+
+      idx = state.submissions.findIndex((s) => norm(s.title).includes(cleanNorm) || cleanNorm.includes(norm(s.id)));
+      if (idx !== -1) return idx;
+    }
+
+    // 5. Index match (#tab-1, #tab-2, etc.)
+    const tabNumMatch = clean.match(/^tab[-_]?(\d+)$/);
+    if (tabNumMatch) {
+      const n = parseInt(tabNumMatch[1], 10) - 1;
+      if (n >= 0 && n < state.submissions.length) return n;
+    }
+
+    return -1;
+  }
+
+  function findStudentIndexFromQuery(query) {
+    if (!query || !state.students || state.students.length === 0) return -1;
     let clean = '';
     try {
-      clean = decodeURIComponent(rawHash).replace(/^#/, '').trim().toLowerCase();
+      clean = decodeURIComponent(query).replace(/^#/, '').trim().toLowerCase();
     } catch (e) {
-      clean = rawHash.replace(/^#/, '').trim().toLowerCase();
+      clean = query.toString().replace(/^#/, '').trim().toLowerCase();
     }
-    if (!clean || !state.students || state.students.length === 0) return -1;
+    if (!clean) return -1;
 
-    // 1. Exacte match op student.hash (bv. 8ec556f315)
+    // 1. Exacte match op student.hash (bv. 8ab009875a)
     let idx = state.students.findIndex((s) => s.hash && s.hash.toLowerCase() === clean);
     if (idx !== -1) return idx;
 
@@ -750,8 +848,8 @@
       if (idx !== -1) return idx;
     }
 
-    // 4. Match op studentnummer / volgnummer (bv. #3 of #student-3)
-    const numMatch = clean.match(/^\D*(\d+)\D*$/);
+    // 4. Match op expliciet studentnummer (bv. student-3)
+    const numMatch = clean.match(/^student[-_]?(\d+)$/);
     if (numMatch) {
       const num = parseInt(numMatch[1], 10);
       if (num >= 1 && num <= state.students.length) {
@@ -760,6 +858,53 @@
     }
 
     return -1;
+  }
+
+  function parseUrlHash(rawHash) {
+    if (!rawHash && !window.location.search) return { subIndex: -1, studentIndex: -1 };
+    let clean = '';
+    if (rawHash) {
+      try {
+        clean = decodeURIComponent(rawHash).replace(/^#/, '').trim();
+      } catch (e) {
+        clean = rawHash.replace(/^#/, '').trim();
+      }
+    }
+
+    let foundSubIdx = -1;
+    let foundStudentIdx = -1;
+
+    if (clean) {
+      const parts = clean.split(/[&/:]+/).map((p) => p.trim()).filter(Boolean);
+      if (parts.length >= 2) {
+        foundSubIdx = findSubmissionIndexFromQuery(parts[0]);
+        foundStudentIdx = findStudentIndexFromQuery(parts[1]);
+
+        if (foundSubIdx === -1 && foundStudentIdx === -1) {
+          foundStudentIdx = findStudentIndexFromQuery(parts[0]);
+          foundSubIdx = findSubmissionIndexFromQuery(parts[1]);
+        }
+      } else if (parts.length === 1) {
+        foundStudentIdx = findStudentIndexFromQuery(parts[0]);
+        if (foundStudentIdx === -1) {
+          foundSubIdx = findSubmissionIndexFromQuery(parts[0]);
+        }
+      }
+    }
+
+    if (foundSubIdx === -1 && window.location.search) {
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get('tab') || params.get('sub') || params.get('indiening');
+      if (tabParam) {
+        foundSubIdx = findSubmissionIndexFromQuery(tabParam);
+      }
+    }
+
+    return { subIndex: foundSubIdx, studentIndex: foundStudentIdx };
+  }
+
+  function findStudentIndexFromHash(rawHash) {
+    return parseUrlHash(rawHash).studentIndex;
   }
 
   function selectStudent(index, updateHash = true) {
@@ -783,8 +928,8 @@
     updateStudentHeaderScore(student.hash);
     highlightSummaryTableRow(student.hash);
 
-    if (updateHash && student.hash) {
-      updateUrlHash(student.hash);
+    if (updateHash && student && student.hash) {
+      updateUrl();
     }
   }
 

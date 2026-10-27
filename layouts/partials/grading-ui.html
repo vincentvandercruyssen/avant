@@ -69,6 +69,7 @@
       {{ $cid := .id }}
       {{ $itemsForCluster := index $clusterItems $cid }}
       {{ if $itemsForCluster }}
+        {{ $itemsForCluster = sort $itemsForCluster "code" }}
         {{ $meta := index $clusterMeta $cid }}
         {{ $num := $meta.number | default "" }}
         {{ $label := $meta.name | default .titel }}
@@ -124,6 +125,9 @@
     {{ $cid := .id }}
     {{ $itemsForCluster := index $clusterItems $cid }}
     {{ if or $itemsForCluster (in $.Params.actieve_clusters $cid) }}
+      {{ if $itemsForCluster }}
+        {{ $itemsForCluster = sort $itemsForCluster "code" }}
+      {{ end }}
       {{ $meta := index $clusterMeta $cid }}
       {{ $num := $meta.number | default "" }}
       {{ $label := $meta.name | default .titel }}

@@ -3,43 +3,68 @@
   {{ range . }}
     {{ $subTitel := .titel | default .naam | default "Indiening" }}
     {{ with .leerplandoelen }}
+      {{ $subItems := slice }}
       {{ range . }}
-        {{ $rawDoelen = $rawDoelen | append (dict "code" .code "criterium" .criterium "gewicht" (.gewicht | default 1) "submissie" $subTitel) }}
+        {{ $code := "" }}
+        {{ $criterium := "" }}
+        {{ $gewicht := 1 }}
+        {{ if reflect.IsMap . }}
+          {{ $code = .code | default .doel | default .id | default "" }}
+          {{ $criterium = .criterium | default .succescriterium | default .omschrijving | default .tekst | default .titel | default "" }}
+          {{ $gewicht = int (.gewicht | default 1) }}
+        {{ else }}
+          {{ $code = print . }}
+        {{ end }}
+        {{ $code = trim $code " " }}
+        {{ if ne $code "" }}
+          {{ $subItems = $subItems | append (dict "code" $code "criterium" $criterium "gewicht" $gewicht "submissie" $subTitel) }}
+        {{ end }}
+      {{ end }}
+      {{ range sort $subItems "code" }}
+        {{ $rawDoelen = $rawDoelen | append . }}
       {{ end }}
     {{ end }}
   {{ end }}
 {{ else }}
-  {{ $rawDoelen = .Params.leerplandoelen | default .Params.evaluatie | default .Params.doelen }}
+  {{ $rawList := .Params.leerplandoelen | default .Params.evaluatie | default .Params.doelen }}
+  {{ with $rawList }}
+    {{ $subItems := slice }}
+    {{ range . }}
+      {{ $code := "" }}
+      {{ $criterium := "" }}
+      {{ $gewicht := 1 }}
+      {{ if reflect.IsMap . }}
+        {{ $code = .code | default .doel | default .id | default "" }}
+        {{ $criterium = .criterium | default .succescriterium | default .omschrijving | default .tekst | default .titel | default "" }}
+        {{ $gewicht = int (.gewicht | default 1) }}
+      {{ else }}
+        {{ $code = print . }}
+      {{ end }}
+      {{ $code = trim $code " " }}
+      {{ if ne $code "" }}
+        {{ $subItems = $subItems | append (dict "code" $code "criterium" $criterium "gewicht" $gewicht "submissie" "") }}
+      {{ end }}
+    {{ end }}
+    {{ $rawDoelen = sort $subItems "code" }}
+  {{ end }}
 {{ end }}
 {{ $items := slice }}
 
 {{ with $rawDoelen }}
   {{ range . }}
-    {{ $code := "" }}
-    {{ $criterium := "" }}
-    {{ $gewicht := 1 }}
-    {{ $submissie := "" }}
+    {{ $code := .code }}
+    {{ $criterium := .criterium }}
+    {{ $gewicht := .gewicht }}
+    {{ $submissie := .submissie }}
 
-    {{ if reflect.IsMap . }}
-      {{ $code = .code | default .doel | default .id | default "" }}
-      {{ $criterium = .criterium | default .succescriterium | default .omschrijving | default .tekst | default .titel | default "" }}
-      {{ $gewicht = int (.gewicht | default 1) }}
-      {{ $submissie = .submissie | default "" }}
-    {{ else }}
-      {{ $code = print . }}
+    {{ $doel := index site.Data.leerplandoelen $code }}
+    {{ $clusterId := "overig" }}
+    {{ if $doel }}
+      {{ $clusterId = $doel.cluster | default "overig" }}
     {{ end }}
 
-    {{ $code = trim $code " " }}
-    {{ if ne $code "" }}
-      {{ $doel := index site.Data.leerplandoelen $code }}
-      {{ $clusterId := "overig" }}
-      {{ if $doel }}
-        {{ $clusterId = $doel.cluster | default "overig" }}
-      {{ end }}
-
-      {{ $item := dict "code" $code "criterium" $criterium "doel" $doel "cluster" $clusterId "gewicht" $gewicht "submissie" $submissie }}
-      {{ $items = $items | append $item }}
-    {{ end }}
+    {{ $item := dict "code" $code "criterium" $criterium "doel" $doel "cluster" $clusterId "gewicht" $gewicht "submissie" $submissie }}
+    {{ $items = $items | append $item }}
   {{ end }}
 {{ end }}
 
@@ -153,7 +178,7 @@
         {{ if gt (len $clusterDoelen) 0 }}
           <tr class="sc-official-doelen-row">
             <td colspan="2" class="sc-official-doelen">
-              {{ range $clusterDoelen }}
+              {{ range sort $clusterDoelen "code" }}
                 <div>{{ .code }} {{ .omschrijving }}{{ with .dimensie }} ({{ . }}){{ end }}</div>
               {{ end }}
             </td>
@@ -204,7 +229,7 @@
       {{ if gt (len $otherDoelen) 0 }}
         <tr class="sc-official-doelen-row">
           <td colspan="2" class="sc-official-doelen">
-            {{ range $otherDoelen }}
+            {{ range sort $otherDoelen "code" }}
               <div>{{ .code }} {{ .omschrijving }}{{ with .dimensie }} ({{ . }}){{ end }}</div>
             {{ end }}
           </td>

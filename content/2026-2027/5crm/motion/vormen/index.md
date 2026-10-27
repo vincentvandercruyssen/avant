@@ -39,13 +39,13 @@ indieningen:
     gewicht: 15
     leerplandoelen:
       - code: "CRS16"
-        gewicht: 3
+        gewicht: 2
         criterium: "Vier afzonderlijke, dynamische 2D-animaties en transformaties realiseren met keyframes, Easy Ease en de Graph Editor."
       - code: "CRS06"
-        gewicht: 2
+        gewicht: 1
         criterium: "Vlot en efficiënt werken met Adobe After Effects, vormlaag- en tijdlijncontroles, Easy Ease en Adobe Media Encoder."
       - code: "CRS21"
-        gewicht: 2
+        gewicht: 1
         criterium: "Typografie expressief animeren met aandacht voor leesbaarheid, typografische hiërarchie en ritmische verschijning (Compositie 3)."
       - code: "CRS15"
         gewicht: 1

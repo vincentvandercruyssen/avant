@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-vormen",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-25T10:38:17.536+01:00",
+  "lastUpdated": "2026-10-27T16:29:38.706+01:00",
   "submissions": {
     "pinboard-storyboard": {
       "id": "pinboard-storyboard",
@@ -22,16 +22,16 @@
           "naam": "Analyse & workflow",
           "criteria": [
             {
-              "code": "CRS03",
-              "gewicht": 2
-            },
-            {
               "code": "CRS01",
               "gewicht": 1
             },
             {
               "code": "CRS02",
               "gewicht": 1
+            },
+            {
+              "code": "CRS03",
+              "gewicht": 2
             }
           ]
         },
@@ -244,9 +244,9 @@
       "title": "Vormen 4 Oplevering",
       "weight": 15,
       "criteriaWeights": {
-        "CRS21": 2,
-        "CRS16": 3,
-        "CRS06": 2,
+        "CRS21": 1,
+        "CRS16": 2,
+        "CRS06": 1,
         "CRS15": 1,
         "CRS27": 1,
         "CRS23": 1,
@@ -259,7 +259,7 @@
           "criteria": [
             {
               "code": "CRS21",
-              "gewicht": 2
+              "gewicht": 1
             }
           ]
         },
@@ -268,16 +268,16 @@
           "naam": "Multimediaproductie",
           "criteria": [
             {
-              "code": "CRS16",
-              "gewicht": 3
-            },
-            {
               "code": "CRS06",
-              "gewicht": 2
+              "gewicht": 1
             },
             {
               "code": "CRS15",
               "gewicht": 1
+            },
+            {
+              "code": "CRS16",
+              "gewicht": 2
             }
           ]
         },

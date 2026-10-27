@@ -697,6 +697,12 @@ span {
   font-weight: 700;
 }
 
+.succescriteria-table .sc-sub-pill,
+.sc-sub-pill {
+  font-weight: 700;
+  display: block;
+}
+
 .succescriteria-table .sc-official-doelen {
   font-size: 0.6rem;
   color: color-mix(in srgb, var(--text) 50%, transparent);
