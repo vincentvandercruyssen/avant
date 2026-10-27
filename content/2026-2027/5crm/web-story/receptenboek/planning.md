@@ -82,7 +82,7 @@
 
 ## Les 4 26/10/2026 (Web)
 
-### Receptenboek: Boxmodel, Flexbox-challenge en zelfstandige uitwerking
+### Receptenboek: Boxmodel, Flexbox-uitdaging en zelfstandige uitwerking
 
 ### Lesverloop & inhoud
 1. **Herhaling boxmodel & Flexbox:**

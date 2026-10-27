@@ -1,4 +1,4 @@
-## Les 1 12/10/2026 (Beeld, 13:30 - 15:20)
+## Les 1 23/10/2026 (Beeld)
 
 ### Fragmentatie: Evaluatie Vertigo, briefing deconstructie en techniekenonderzoek
 

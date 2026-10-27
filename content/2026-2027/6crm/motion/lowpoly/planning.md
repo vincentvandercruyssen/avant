@@ -47,3 +47,28 @@
 * **CRS13:** Zelfstandig online bronnen en tutorials analyseren en technieken toepassen binnen een eigen ontwerp.
 * **CRS16:** Een afgewerkte 3D-still render voorbereiden met aandacht voor compositie, shading en belichting in Cycles.
 * **CRS23:** Het eigen werk controleren op een authentieke vormuitwerking zonder kant-en-klare externe assets.
+
+## Les 3 27/10/2026 (Motion, 08:30 - 10:00)
+
+### Lowpoly: Vormuitwerking, shading, materialen, belichting & camera
+
+### Lesverloop & inhoud
+1. **Verfijning geometrie & vorm:**
+   * Geometrie van het hoofdobject en eventuele decoratieve scéne-elementen afwerken in Edit Mode.
+   * Lowpoly-karakter: behoud van strakke polygoonvlakken met *Shade Flat* zonder overbodige details.
+2. **Materialen en shading:**
+   * Materialen toewijzen per object of via vlakselectie met de Principled BSDF shader.
+   * Kleurenpalet afstemmen en oppervlaktekarakter instellen via *Roughness* (mat contrast versus lichte accenten).
+3. **Cycles render engine & cameracompositie:**
+   * Render engine instellen op *Cycles* (met GPU Compute en denoising geactiveerd) voor natuurgetrouwe lichtspreiding en schaduwval.
+   * Camera toevoegen, kadrering vastleggen en resolutie/beeldverhouding bepalen (1:1, 16:9, 3:2 of 4:5).
+4. **Belichting & volumewerking:**
+   * Lichtopstelling opbouwen met gerichte lichtbronnen om volume, randen en schaduwdiepte te versterken.
+   * Testrenders evalueren op contrast, ruis en uitsnede ter voorbereiding op de finale export.
+
+### Leerplandoelen
+* **CRS02:** Doelgericht 3D-technieken selecteren (lowpoly-meshbewerking, Principled BSDF shaders, cameracompositie en belichtingstypen).
+* **CRS06:** Zelfstandig werken in Blender 3D (geometrie verfijnen, materialen toewijzen, camera kadreren en renderen in Cycles).
+* **CRS16:** Een afgewerkte 3D-still render voorbereiden met een evenwichtige compositie, shading en belichting in Cycles.
+* **CRS22:** Vormgeving, kleurenpalet, materiaaleigenschappen en lichtval harmonieus op elkaar afstemmen.
+* **SV06.72:** Het ruimtelijke effect van geometrische basisvormen, lichtinval en schaduwwerking in een minimalistische 3D-scène evalueren.

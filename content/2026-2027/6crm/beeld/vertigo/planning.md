@@ -61,3 +61,26 @@
 * **CRS20:** Het geselecteerde beeldmateriaal bundelen in een verzorgde diptiek op A4-formaat.
 * **CRS22:** Beelden esthetisch en harmonieus samenbrengen in een strakke, evenwichtige lay-out.
 * **CRS27:** De bestanden conform de naamconventie tijdig inleveren in de voorziene Smartschool-uploadzones.
+
+## Les 3 16/10/2026 (Beeld, 10:10 - 11:50)
+
+### Vertigo: Terugkoppeling onderzoek, uitwerking en evaluatie
+
+### Lesverloop & inhoud
+1. **Terugkoppeling onderzoek persfotografie:**
+   * Klassikale bespreking van de ingediende onderzoeksdocumenten (`VoornaamA_Vertigo-Onderzoek.pdf`).
+   * Reflectie op de journalistieke motivatie achter lenskeuzes.
+   * Analyse van beeldkenmerken in nieuwsbeelden: scherptediepte, lijnperspectief en achtergrondcompressie.
+2. **Bespreking en evaluatie beelduitwerkingen:**
+   * Ingediende beeldreeksen (*Vertigo 3.5 RAW*) en A4-diptieken (*Vertigo 3.6 Diptiek*).
+   * Consistente kadrering en onderwerpgrootte tussen de uiterste brandpuntsafstanden (wijd vs. tele).
+   * Non-destructieve tonale ontwikkeling in Camera Raw.
+3. **Terugkoppeling & remediëring:**
+   * Eventuele correcties doorvoeren.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten, bestandsformaten en kwaliteitsnormen van het voltooide project analyseren en remediëren.
+* **CRS07:** Beeldanalyses van persfotografie kritisch toelichten en vergelijken met praktijkervaringen.
+* **CRS08:** Beeldkwaliteit, scherpte, kadrering en optische achtergrondcompressie van de gemaakte opnames kritisch beoordelen.
+* **CRS22:** De visuele samenhang, lay-out en harmonie van de samengestelde diptieken evalueren.
+* **CRS27:** Het volledige project controleren op tijdige inlevering conform de mappenstructuur en naamconventie.

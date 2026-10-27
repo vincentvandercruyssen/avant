@@ -1,4 +1,4 @@
-## Les 1 29/09/2026 (Motion, 09:10 - 11:00)
+## Les 1 29/09/2026 (Motion)
 
 ### Extrude: 2D vector import & 3D extrusie in Blender
 
