@@ -1,0 +1,387 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "5crm-kijkkader",
+  "classGroup": "5CRM",
+  "lastUpdated": "2026-10-28T16:38:23.569+01:00",
+  "submissions": {
+    "bewerkingen": {
+      "id": "bewerkingen",
+      "title": "Kijkkader 4.3 Bewerkingen",
+      "weight": 12,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS07": 2,
+        "CRS10": 1,
+        "CRS11": 1,
+        "CRS08": 1,
+        "CRS23": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS07",
+              "gewicht": 2
+            },
+            {
+              "code": "CRS10",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS11",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS08",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 3,
+            "CRS08": 3,
+            "CRS10": 1,
+            "CRS11": 2,
+            "CRS23": 3,
+            "GEC01": 3
+          },
+          "feedback": "Mooie inzet! Je bent ook buiten de schoolmuren grondig op zoek gegaan naar verschillende sterke composities die heel goed aansluiten bij de opdracht, en je hebt alles stipt volgens de afspraken ingediend. Het is fijn dat je initiatief neemt om een eigen stijl te ontwikkelen: je eigenzinnige manier van bewerken werkt bij veel van deze foto's goed, en zelfs het vlekje op de lens zorgt hier (al was het wellicht niet bewust) voor een mooi, dromerig effect. Probeer bij het nabewerken wel om overbelichte hooglichten nog beter te herstellen, en draai je beelden bij het uitsnijden gerust lichtjes bij om scheve lijnen helemaal recht te zetten. Blijf tijdens het fotograferen ook altijd letten op een scherpe focus.",
+          "scores": {
+            "4.1": 12,
+            "4.3": 9,
+            "4.5": 12,
+            "4.6": 12
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 1,
+            "CRS04": 3,
+            "CRS07": 3,
+            "CRS08": 3,
+            "CRS10": 0,
+            "CRS11": 1,
+            "CRS23": 3,
+            "GEC01": 3
+          },
+          "feedback": "Goed gezocht en gewerkt! Je bestandsnaamgeving en indiening zijn helemaal op orde en er zitten enkele echte topbeelden tussen, zoals de foto's aan de trappen die ondanks het harde contrast erg mooi werken. Toch is niet elk beeld in je selectie even boeiend: sommige opnames vroegen nog wat meer zoektocht, en vooral bij de foto's rond dieptewerking mocht je de verschillende lagen veel sterker onderzoeken. Daarnaast zijn je nabewerkingen nog niet consistent en vaak te warm of te contrastrijk, terwijl de focus op heldere, natuurlijke beelden lag. Tot slot hadden verschillende foto's nog baat bij een doordachte bijsnijding en rotatie om de lijnen strak en recht te trekken. Verder goed gewerkt.",
+          "scores": {
+            "4.1": 8,
+            "4.3": 7,
+            "4.5": 12,
+            "4.6": 12
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 3,
+            "CRS07": 2,
+            "CRS08": 1,
+            "CRS10": 2,
+            "CRS11": 2,
+            "CRS23": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt goed gezocht, ook buiten de schoolomgeving, en je bestanden tijdig en met de juiste naamgeving ingediend. De intenties achter je foto's zijn goed, maar let tijdens het fotograferen goed op de scherpte en durf een opname gerust eens opnieuw te maken, want dat had sommige composities nog een stuk sterker gemaakt. De nabewerkingen konden bij enkele beelden nog beter door felle hooglichten te herstellen, de foto's helderder te maken en waar nodig lensvervorming op te lossen. Let er tot slot op dat je bij het uitsnijden altijd de originele 3:2-beeldverhouding behoudt, zoals gevraagd in de opdracht.",
+          "scores": {
+            "4.1": 10,
+            "4.3": 8,
+            "4.5": 8,
+            "4.6": 12
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 0,
+            "CRS07": 2,
+            "CRS08": 2,
+            "CRS10": 2,
+            "CRS11": 2,
+            "CRS23": 3,
+            "GEC01": 2
+          },
+          "feedback": "Goed gewerkt! Je hebt alle compositieregels mooi in beeld gebracht en bent met veel experiment ook buiten de schoolmuren op zoek gegaan naar sterke opnames. In je nabewerkingen mis je wel nog wat consistentie en leiden sommige aanpassingen (zoals een te sterke verscherping) af van het uiteindelijke beeld. Let erop dat je hooglichten nooit helemaal terugdraait tot witte partijen grijs worden: zoek of maak in dat geval liever een ander en beter beeld. Durf een foto bij het uitsnijden ook gerust strak en recht te trekken, zeker bij composities met lijnenwerk. Let tot slot goed op de inleverafspraken: in plaats van je foto's zonder de juiste naamgeving over verschillende mapjes te verdelen, was het de bedoeling om de twaalf hernoemde bestanden gewoon samen in één reeks in te dienen.",
+          "scores": {
+            "4.1": 12,
+            "4.3": 8,
+            "4.5": 10,
+            "4.6": 4
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 0,
+            "CRS07": 3,
+            "CRS08": 3,
+            "CRS10": 2,
+            "CRS11": 2,
+            "CRS23": 3,
+            "GEC01": 2
+          },
+          "feedback": "Je hebt een goed fotografisch oog en bent ook zelfstandig buiten de schoolmuren op zoek gegaan, wat sterke beelden oplevert waarin je de compositieregels goed toepast. Bij een aantal foto's zijn de bewerkingen en het uitsnijden goed gelukt, maar sommige opnames konden nog beter nabewerkt worden door ze helderder te maken (zonder felle hooglichten of te diepe schaduwen) en ze bij het bijsnijden helemaal recht te trekken. Je hebt je bestanden netjes in mapjes gestoken en het is fijn dat je extra beelden hebt toegevoegd en die apart hebt gehouden. Wel zat er bij een van de compositieregels een beeld te veel en was het de bedoeling om de twaalf gekozen foto's volgens de afspraken te hernoemen.",
+          "scores": {
+            "4.1": 12,
+            "4.3": 10,
+            "4.5": 12,
+            "4.6": 4
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 2,
+            "CRS08": 2,
+            "CRS10": 2,
+            "CRS11": 3,
+            "CRS23": 3,
+            "GEC01": 3
+          },
+          "feedback": "Sterk werk geleverd! Hoewel de opdracht in de eerste plaats mikte op heldere, natuurlijke beelden, heb je in je nabewerkingen een eigen richting gezocht met uitgesproken keuzes in contrast en kleurtemperatuur. Die lijn trek je over het algemeen heel consequent door, op één beeld na dat door een andere bewerking wat uit de reeks valt. Let er op dat je bij het uitsnijden overal de oorspronkelijke 3:2-beeldverhouding behoudt. Je bestandsnaamgeving en indiening zijn verder helemaal in orde.",
+          "scores": {
+            "4.1": 10,
+            "4.3": 9,
+            "4.5": 10,
+            "4.6": 12
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS07": 0,
+            "CRS08": 0,
+            "CRS10": 0,
+            "CRS11": 0,
+            "CRS23": 0,
+            "GEC01": 0
+          },
+          "feedback": "Je hebt voor dit onderdeel niets ingediend. Om dit te remediëren en alsnog punten te behalen, lever je de twaalf bewerkte foto's volgens de afspraken in via de te-laat-uploadmap.",
+          "scores": {
+            "4.1": 0,
+            "4.3": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 3,
+            "CRS08": 1,
+            "CRS10": 2,
+            "CRS11": 2,
+            "CRS23": 3,
+            "GEC01": 3
+          },
+          "feedback": "Goed gewerkt! Je hebt een leuke, gevarieerde zoektocht afgelegd met enkele zeer sterke composities, en je volgt de inleverafspraken prima op. Bepaalde fotografische keuzes konden wel nog iets sterker of op een andere manier worden uitgewerkt: durf een beeld ter plekke gerust eens opnieuw te maken, bijvoorbeeld om een storende reflectie te vermijden. Let er bij het nabewerken op dat je de hooglichten niet zo ver terugdraait dat witte partijen grijs worden. Tot slot is het belangrijk om tijdens het fotograferen en selecteren goed te letten op de focus en scherpte, en te controleren of elk beeld op de juiste resolutie wordt geëxporteerd (één foto heeft nu een te lage resolutie).",
+          "scores": {
+            "4.1": 12,
+            "4.3": 10,
+            "4.5": 8,
+            "4.6": 12
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 1,
+            "CRS04": 3,
+            "CRS07": 1,
+            "CRS08": 2,
+            "CRS10": 0,
+            "CRS11": 2,
+            "CRS23": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt je bestanden tijdig ingediend en de gevraagde naamgeving (op twee kleine foutjes na) goed toegepast. Inhoudelijk mocht je tijdens het fotograferen wel nog veel verder zoeken en experimenteren. Niet elk beeld sluit goed aan bij de gekozen compositieregel en ook de foto's rond standpunten zijn nog niet al te duidelijk: durf een onderwerp gerust meermaals en vanuit verschillende hoeken opnieuw te fotograferen om tot het beste resultaat te komen. Daarnaast missen verschillende foto's nog de nodige nabewerking en een doordachte bijsnijding om ze echt helder en krachtig te maken.",
+          "scores": {
+            "4.1": 6,
+            "4.3": 4,
+            "4.5": 8,
+            "4.6": 12
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS07": 0,
+            "CRS08": 0,
+            "CRS10": 0,
+            "CRS11": 0,
+            "CRS23": 0,
+            "GEC01": 0
+          },
+          "feedback": "Je hebt de twaalf bewerkte foto's niet ingediend. Om dit onderdeel te remediëren en alsnog punten te behalen, lever je de afgewerkte JPEG-bestanden volgens de afspraken in.",
+          "scores": {
+            "4.1": 0,
+            "4.3": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS07": 3,
+            "CRS08": 3,
+            "CRS10": 2,
+            "CRS11": 3,
+            "CRS23": 2,
+            "GEC01": 0
+          },
+          "feedback": "Je hebt mooie, zorgvuldig gekozen beelden gemaakt en bent ook buiten de schoolmuren sterk op zoek gegaan naar doordachte composities. Ook je nabewerkingen zitten over het algemeen goed in elkaar. Let er bij het uitsnijden wel op dat je telkens de oorspronkelijke 3:2-beeldverhouding behoudt, en controleer ook bij smartphonefoto's of ze allemaal op de volledige resolutie worden geëxporteerd (al zien ze er op zich wel verzorgd uit). Je bestandsnaamgeving zit verder goed, maar zorg ervoor dat je voortaan tijdig indient.",
+          "scores": {
+            "4.1": 10,
+            "4.3": 11,
+            "4.5": 10,
+            "4.6": 4
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS07": 0,
+            "CRS08": 0,
+            "CRS10": 0,
+            "CRS11": 0,
+            "CRS23": 0,
+            "GEC01": 0
+          },
+          "feedback": "Je hebt voor dit onderdeel niets ingediend. Om dit te remediëren en alsnog een score te behalen, lever je de twaalf bewerkte foto's volgens de inleverafspraken in.",
+          "scores": {
+            "4.1": 0,
+            "4.3": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        }
+      }
+    },
+    "drieluik": {
+      "id": "drieluik",
+      "title": "Kijkkader 4.4 Drieluik",
+      "weight": 3,
+      "criteriaWeights": {
+        "CRS22": 1,
+        "CRS24": 1,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS22",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {}
+    }
+  }
+}

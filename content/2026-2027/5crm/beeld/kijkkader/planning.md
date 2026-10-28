@@ -14,11 +14,10 @@
 5. **Afronding:** Camera's controleren, SD-kaarten veilig opbergen en bestanden veiligstellen.
 
 ### Leerplandoelen
-* **CRS01:** Productievereisten, bestandsformaten en kwaliteitsnormen voor fotografie analyseren.
+* **CRS01:** Productievereisten, bestandsformaten en kwaliteitsnormen voor fotografie analyseren en toepassen.
 * **CRS02:** Doelgericht camerainstellingen, standpunten en compositieregels selecteren.
 * **CRS07:** Zelfstandig kwalitatief fotografisch bronmateriaal capteren in de schoolomgeving.
 * **CRS11:** Beeldmateriaal doelgericht kadreren volgens de visuele grammatica (regel van derden, dieptelagen, standpunten, lijnen).
-* **16.03:** Toelichten hoe compositie en standpunt emotie en betekenis toevoegen aan een fotografisch beeld.
 
 ## Les 2 15/09/2026 (Beeld, 11:00 - 12:40)
 
@@ -42,10 +41,9 @@
 
 ### Leerplandoelen
 * **CRS02:** Doelgericht camerainstellingen, standpunten en compositieregels selecteren.
-* **CRS06:** Vlot en efficiënt werken met professionele beeldbewerkingssoftware (Adobe Bridge & Photoshop).
 * **CRS07:** Zelfstandig kwalitatief fotografisch bronmateriaal capteren in de schoolomgeving.
-* **CRS08:** Beeldkwaliteit, scherpte, belichting en kadrering van de opnames kritisch beoordelen.
-* **CRS10:** Beelden vakkundig corrigeren en optimaliseren met Camera Raw via Bridge en het uitsnijgereedschap.
+* **CRS08:** Beeldkwaliteit, scherpte en belichting van de opnames kritisch beoordelen.
+* **CRS10:** Beelden vakkundig corrigeren en optimaliseren met Camera Raw via Bridge.
 * **CRS11:** Beeldmateriaal doelgericht kadreren volgens de visuele grammatica (regel van derden, dieptelagen, standpunten, lijnen).
 
 ## Les 3 22/09/2026 (Beeld, 11:00 - 12:40)
@@ -75,14 +73,14 @@
    * Bij afronding van de export: selectie maken van 3 beelden rond een overkoepelend thema of onderwerp en het drieluik op A4 liggend opstarten.
 
 ### Leerplandoelen
+* **CRS01:** De productievereisten toepassen (12 foto's, exact 3 per compositieregel in 3:2-beeldverhouding).
 * **CRS02:** Doelgericht camerainstellingen, standpunten en compositieregels selecteren.
-* **CRS06:** Vlot en efficiënt werken met professionele beeldbewerkingssoftware (Adobe Bridge & Camera Raw).
-* **CRS07:** Zelfstandig kwalitatief fotografisch bronmateriaal capteren in de schoolomgeving.
-* **CRS08:** Beeldkwaliteit, scherpte, belichting en kadrering van de opnames kritisch beoordelen.
-* **CRS09:** Het stappenplan voor non-destructieve beeldbewerking, kadrering en kleurbalans bepalen.
-* **CRS10:** Beelden vakkundig corrigeren en optimaliseren met Camera Raw via Bridge en het uitsnijgereedschap.
+* **CRS04:** Alle 12 JPEG-exports ordelijk beheren en exact benoemen per compositieregel.
+* **CRS07:** Zelfstandig kwalitatief fotografisch bronmateriaal capteren en de 12 sterkste opnames selecteren in Adobe Bridge.
+* **CRS08:** Beeldkwaliteit, scherpte en belichting van de opnames kritisch beoordelen.
+* **CRS10:** Beelden vakkundig corrigeren en optimaliseren met Camera Raw via Bridge.
 * **CRS11:** Beeldmateriaal doelgericht kadreren volgens de visuele grammatica (regel van derden, dieptelagen, standpunten, lijnen).
-* **CRS23:** Bestanden controleren op correcte lay-out, scherpte en exportkwaliteit.
+* **CRS23:** Bestanden controleren op hoge resolutie en maximale JPEG-exportkwaliteit.
 
 ## Les 4 29/09/2026 (Beeld, 11:00 - 12:40)
 
@@ -100,22 +98,21 @@
      * `VoornaamA_Kijkkader-Standpunt-1.jpg` tot `-3.jpg`
      * `VoornaamA_Kijkkader-Lijnen-1.jpg` tot `-3.jpg`
 3. **Inlevering 12 beelden in Smartschool:**
-   * De 12 geëxporteerde JPEG-bestanden uploaden in de eerste Smartschool-uploadmap (*Kijkkader: 12 foto's*).
+   * De 12 geëxporteerde JPEG-bestanden uploaden in de eerste Smartschool-uploadmap (deadline 06/10).
 4. **Beeldselectie en opstart drieluik:**
    * Drie beelden selecteren die samen een inhoudelijk en visueel samenhangend concept vormen (bv. architectuur & geometrie, mens & interactie of detail & textuur).
    * Nieuw Photoshop-canvas opzetten via het tabblad Afdrukken: **A4 liggend (297 × 210 mm)** met witte achtergrond (`VoornaamA_Kijkkader-Drieluik.psd`).
    * Hulplijnenraster genereren via *New Guide Layout* (3 kolommen, 10 mm gutter, 15 mm marges) en de 3 foto's proportioneel inschalen en uitlijnen.
 
 ### Leerplandoelen
-* **CRS06:** Vlot en efficiënt werken met professionele beeldbewerkingssoftware (Adobe Bridge, Camera Raw & Photoshop).
-* **CRS08:** Beeldkwaliteit, scherpte, belichting en kadrering van de opnames kritisch beoordelen.
-* **CRS09:** Het stappenplan voor non-destructieve beeldbewerking, kadrering en kleurbalans bepalen.
-* **CRS10:** Beelden vakkundig corrigeren en optimaliseren met Camera Raw via Bridge en het uitsnijgereedschap.
+* **CRS01:** De productievereisten toepassen (12 foto's, exact 3 per compositieregel in 3:2-beeldverhouding).
+* **CRS04:** Alle 12 JPEG-exports ordelijk beheren en exact benoemen per compositieregel.
+* **CRS08:** Beeldkwaliteit, scherpte en belichting van de opnames kritisch beoordelen.
+* **CRS10:** Beelden vakkundig corrigeren en optimaliseren met Camera Raw via Bridge.
 * **CRS11:** Beeldmateriaal doelgericht kadreren volgens de visuele grammatica (regel van derden, dieptelagen, standpunten, lijnen).
-* **CRS20:** Het gemaakte beeldmateriaal bundelen in een strak gecomponeerd drieluik op A4-formaat.
-* **CRS23:** Bestanden controleren op correcte lay-out, scherpte en exportkwaliteit.
-* **CRS27:** De 12 bewerkte beelden volgens mappenstructuur en naamconventie tijdig inleveren in de Smartschool-uploadzone.
-* **GEC02:** Kwaliteitsbewust en ordelijk werken met bestanden en lagenstructuren.
+* **CRS20:** De drie gekozen foto's proportioneel bundelen in een strak gecomponeerd drieluik op A4-formaat.
+* **CRS23:** Bestanden controleren op hoge resolutie en maximale JPEG-exportkwaliteit.
+* **GEC01:** De deadline (06/10) en inleverafspraken voor de 12 bewerkingen stipt naleven.
 
 ## Les 5 06/10/2026 (Beeld, 11:00 - 12:40)
 
@@ -132,11 +129,12 @@
 3. **Export en kwaliteitscontrole:**
    * Drieluik exporteren als hoogwaardige JPEG naar `02_exports/VoornaamA_Kijkkader-Drieluik.jpg`.
 4. **Inlevering drieluik in Smartschool:**
-   * Het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`) uploaden in de tweede Smartschool-uploadmap (*Kijkkader: Drieluik*).
+   * Het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`) uploaden in de tweede Smartschool-uploadmap (deadline 11/10).
 
 ### Leerplandoelen
-* **CRS20:** Het gemaakte beeldmateriaal bundelen in een strak gecomponeerd drieluik op A4-formaat.
-* **CRS22:** Beelden harmonieus en esthetisch samenbrengen met verzorgde typografie.
-* **CRS23:** Bestanden controleren op correcte lay-out (A4 liggend), scherpte en exportkwaliteit.
-* **CRS27:** De bestanden conform de naamconventie tijdig inleveren in de voorziene Smartschool-uploadzones.
-* **GEC02:** Kwaliteitsbewust en ordelijk werken met bestanden en lagenstructuren.
+* **CRS04:** Het Photoshop-werkbestand (`.psd`) ordelijk en overzichtelijk opbouwen met behouden hulplijnen en afzonderlijke beeldlagen.
+* **CRS20:** De drie gekozen foto's proportioneel bundelen in het drieluik en exporteren als een scherpe JPEG.
+* **CRS22:** Drie sterke beelden esthetisch en harmonieus samenbrengen tot één visueel en inhoudelijk samenhangend drieluik.
+* **CRS24:** Een evenwichtige en strak uitgelijnde opmaak toepassen op liggend A4-formaat met drie kolommen en verzorgde marges.
+* **CRS27:** Het Photoshop-werkbestand en de JPEG-export conform de naamconventie opleveren in de voorziene Smartschool-uploadmap.
+* **GEC01:** De finale deadline (11/10) en inleverafspraken voor het drieluik stipt naleven.

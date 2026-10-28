@@ -12,33 +12,63 @@ software:
   - "DSLR / DSLM Camera (of smartphone)"
   - "Adobe Bridge"
   - "Adobe Photoshop"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Productievereisten, bestandsformaten (RAW/JPG, PSD, JPEG) en het A4-formaat grondig analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "Doelgericht cameratechnieken, perspectieven en Photoshop-gereedschappen selecteren in functie van het beoogde compositieprincipe."
-  - code: "CRS06"
-    criterium: "Vlot en efficiënt werken met de schoolcamera's, Adobe Bridge en Adobe Photoshop (Camera Raw-filter, uitsnijgereedschap, aanpassingslagen)."
-  - code: "CRS07"
-    criterium: "Zelfstandig kwalitatief fotografisch bronmateriaal capteren in de schoolomgeving en visuele referenties selecteren."
-  - code: "CRS08"
-    criterium: "Scherptediepte, belichting en kadrering van de gemaakte opnames kritisch beoordelen."
-  - code: "CRS09"
-    criterium: "Het stappenplan voor non-destructieve beeldbewerking, uitsnijding en kleurbalans correct bepalen."
-  - code: "CRS10"
-    criterium: "Beeldmateriaal vakkundig corrigeren en optimaliseren met Camera Raw en aanpassingslagen in Photoshop."
-  - code: "CRS11"
-    criterium: "Beeldmateriaal doordacht kadreren volgens de regels van de visuele grammatica (regel van derden, dieptelagen, standpunten, lijnen)."
-  - code: "CRS20"
-    criterium: "Het gemaakte beeldmateriaal bundelen in een strak gecomponeerd drieluik op A4-formaat."
-  - code: "CRS22"
-    criterium: "Beelden esthetisch en harmonieus samenbrengen in een strakke, typografisch verzorgde lay-out."
-  - code: "CRS23"
-    criterium: "Bestanden controleren op correcte lay-out (A4 liggend), scherpte en exportkwaliteit."
-  - code: "CRS27"
-    criterium: "Het volledige project conform de mappenstructuur en naamconventie tijdig inleveren in de Smartschool-uploadzone."
-  - code: "16.03"
-    criterium: "Toelichten hoe beeldaspecten, standpunten en kadrering betekenis, emotie en focus geven aan een fotografisch beeld."
+indieningen:
+  - id: "bewerkingen"
+    titel: "Kijkkader 4.3 Bewerkingen"
+    lesuren: 4
+    gewicht: 12
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten toepassen door voor elk van de vier compositieregels exact drie afgewerkte foto's (12 JPEG's) in de originele 3:2-beeldverhouding op te leveren."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht camerastandpunten, dieptelagen en kijklijnen kiezen in functie van het beoogde compositieprincipe."
+      - code: "CRS07"
+        gewicht: 2
+        criterium: "Zelfstandig kwalitatief en gevarieerd fotografisch bronmateriaal vastleggen en de 12 sterkste opnames selecteren in Adobe Bridge."
+      - code: "CRS10"
+        gewicht: 1
+        criterium: "De 12 foto's in Camera Raw vakkundig corrigeren en optimaliseren (belichting, hooglichten, schaduwen, contrast en natuurlijke witbalans)."
+      - code: "CRS11"
+        gewicht: 1
+        criterium: "De beelden doordacht kadreren en uitsnijden zodat elke compositieregel (regel van derden, diepte, standpunt en lijnen) visueel overtuigend tot zijn recht komt."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De opnames kritisch beoordelen op technische opnamekwaliteit: een scherpe focus op het hoofdonderwerp zonder bewegingsonscherpte."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De 12 bestanden controleren op hoge resolutie en maximale JPEG-exportkwaliteit zonder storende ruis of compressie-artefacten."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Alle 12 JPEG-exports ordelijk beheren en exact benoemen per compositieregel (VoornaamA_Kijkkader-Regelvandrie-1.jpg t.e.m. -3.jpg, Diepte, Standpunt en Lijnen)."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De deadline en inleverafspraken stipt naleven door de 12 losse JPEG-bestanden in de juiste uploadmap in te dienen."
+
+  - id: "drieluik"
+    titel: "Kijkkader 4.4 Drieluik"
+    lesuren: 1
+    gewicht: 3
+    leerplandoelen:
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "Drie sterke beelden esthetisch en harmonieus samenbrengen tot één visueel en inhoudelijk samenhangend drieluik rond een gekozen thema."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een evenwichtige en strak uitgelijnde opmaak toepassen op liggend A4-formaat (297 × 210 mm) met drie kolommen, gelijke tussenruimtes, verzorgde marges en optionele typografie."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "De drie gekozen foto's proportioneel (zonder vervorming) bundelen in het drieluik en exporteren als een scherpe, presentatieklare JPEG."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Zowel het Photoshop-werkbestand (VoornaamA_Kijkkader-Drieluik.psd) als de JPEG-export (VoornaamA_Kijkkader-Drieluik.jpg) conform de naamconventie opleveren in de voorziene uploadmap."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het Photoshop-werkbestand (.psd) ordelijk en overzichtelijk opbouwen met behouden hulplijnen en afzonderlijke beeldlagen."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline (11/10) en inleverafspraken voor het drieluik stipt naleven."
 draft: false
 ---
 
@@ -221,7 +251,7 @@ Klik ten slotte in Camera Raw op de knop **Gereed (*Done*)**. Al je bewerkingen 
 
 #### Indienen: 12 foto's
 
-Upload jouw **12 afgewerkte JPEG-bestanden** (drie kwalitatieve foto's per compositieregel) rechtstreeks in de eerste uploadmap op Smartschool (**Kijkkader: 12 foto's**). 
+Upload jouw **12 afgewerkte JPEG-bestanden** (drie kwalitatieve foto's per compositieregel) rechtstreeks in de uploadmap op Smartschool.
 
 * **Regel van derden (3 foto's):**
   * `VoornaamA_Kijkkader-Regelvandrie-1.jpg`
@@ -263,7 +293,7 @@ Breng over de compositieregels heen jouw drie sterkste beelden samen in één ha
 
 #### Indienen: Drieluik
 
-Upload jouw samengestelde drieluik rechtstreeks in de tweede uploadmap op Smartschool (**Kijkkader: Drieluik**). Lever zowel het gelaagde werkbestand als de geëxporteerde JPEG in:
+Upload jouw samengestelde drieluik rechtstreeks in de uploadmap op Smartschool. Lever zowel het gelaagde werkbestand als de geëxporteerde JPEG in:
 
 * `VoornaamA_Kijkkader-Drieluik.psd` (gelaagd Photoshop-werkbestand met hulplijnen, slimme objecten en tekstlagen)
 * `VoornaamA_Kijkkader-Drieluik.jpg` (geëxporteerde JPEG op liggend A4-formaat)
@@ -274,10 +304,10 @@ Lever jouw werk in twee fases in via de voorziene Smartschool-uploadmappen:
 
 ```text
 Uploadmap: Kijkkader 4.3 Bewerkingen
-└─ VoornaamA_Kijkkader-Regelvandrie-1.jpg (2, 3)
-└─ VoornaamA_Kijkkader-Diepte-1.jpg (2, 3)
-└─ VoornaamA_Kijkkader-Standpunt-1.jpg (2, 3)
-└─ VoornaamA_Kijkkader-Lijnen-1.jpg (2, 3)
+└─ VoornaamA_Kijkkader-Regelvandrie-1.jpg tot -3.jpg
+└─ VoornaamA_Kijkkader-Diepte-1.jpg tot -3.jpg
+└─ VoornaamA_Kijkkader-Standpunt-1.jpg tot -3.jpg
+└─ VoornaamA_Kijkkader-Lijnen-1.jpg tot -3.jpg
 
 Uploadmap: Kijkkader 4.4 Drieluik
 └─ VoornaamA_Kijkkader-Drieluik.psd
@@ -293,8 +323,8 @@ Controleer jouw werk grondig aan de hand van deze checklist vóór je definitief
 - De hoofdmap bevat het Photoshop-werkbestand voor het drieluik (`VoornaamA_Kijkkader-Drieluik.psd`).
 - De map `01_assets/` bevat alle ruwe opnames van de camera én de bijhorende `.xmp`-sidecarbestanden.
 - De map `02_exports/` bevat alle geëxporteerde JPEG's (12 foto's en `VoornaamA_Kijkkader-Drieluik.jpg`).
-- In de eerste uploadmap op Smartschool (**Kijkkader: 12 foto's**) staan de 12 afgewerkte JPEG-bestanden met de vier verschillende compositieregels (exact 3 per regel).
-- In de tweede uploadmap op Smartschool (**Kijkkader: Drieluik**) staan het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`).
+- In de uploadmap op Smartschool staan de 12 afgewerkte JPEG-bestanden met de vier verschillende compositieregels (exact 3 per regel).
+- In de uploadmap op Smartschool staan het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`).
 
 #### Technische kwaliteit
 - Alle bewerkingen aan de 12 beelden zijn zuiver non-destructief uitgevoerd in Camera Raw en bewaard in sidecar-XMP-bestanden.
@@ -306,4 +336,3 @@ Controleer jouw werk grondig aan de hand van deze checklist vóór je definitief
 - De 12 beelden tonen de 4 compositieregels duidelijk en herkenbaar (exact 3 per regel: regel van derden, dieptelagen, standpunt en lijnen).
 - Het drieluik brengt 3 beelden over de regels heen harmonieus samen rond één duidelijk gekozen concept of thema.
 - De typografie op het drieluik is strak uitgelijnd in een rustige schreefloze letter en vermeldt de compositieregel en technische opnameparameters per paneel.
-

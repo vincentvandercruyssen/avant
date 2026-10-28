@@ -600,10 +600,6 @@
 }
 
 /* Active Niveau States (met helder contrast in dark en light mode) */
-.btn-niveau-pill.active {
-  font-weight: 700;
-}
-
 .btn-niveau-pill.active .pill-lvl,
 .btn-niveau-pill.active .pill-desc {
   color: inherit !important;
