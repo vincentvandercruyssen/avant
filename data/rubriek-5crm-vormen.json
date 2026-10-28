@@ -3,16 +3,16 @@
   "version": "2.2.0",
   "assignmentId": "5crm-vormen",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-27T16:29:38.706+01:00",
+  "lastUpdated": "2026-10-28T13:56:35.253+01:00",
   "submissions": {
     "pinboard-storyboard": {
       "id": "pinboard-storyboard",
       "title": "Vormen 3.1+3.2 Pinboard + Storyboard",
       "weight": 6,
       "criteriaWeights": {
-        "CRS03": 2,
         "CRS01": 1,
         "CRS02": 1,
+        "CRS03": 2,
         "CRS07": 1,
         "GEC01": 1
       },
@@ -245,11 +245,15 @@
       "weight": 15,
       "criteriaWeights": {
         "CRS21": 1,
-        "CRS16": 2,
+        "CRS24": 1,
         "CRS06": 1,
         "CRS15": 1,
+        "CRS16": 2,
+        "CRS20": 1,
         "CRS27": 1,
         "CRS23": 1,
+        "GEC02": 1,
+        "CRS04": 1,
         "GEC01": 1
       },
       "clusters": [
@@ -259,6 +263,10 @@
           "criteria": [
             {
               "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
               "gewicht": 1
             }
           ]
@@ -286,6 +294,10 @@
           "naam": "Release & presentatie",
           "criteria": [
             {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
               "code": "CRS27",
               "gewicht": 1
             }
@@ -298,6 +310,10 @@
             {
               "code": "CRS23",
               "gewicht": 1
+            },
+            {
+              "code": "GEC02",
+              "gewicht": 1
             }
           ]
         },
@@ -306,13 +322,276 @@
           "naam": "Professionele competenties",
           "criteria": [
             {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
               "code": "GEC01",
               "gewicht": 1
             }
           ]
         }
       ],
-      "evaluations": {}
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS06": 2,
+            "CRS15": 3,
+            "CRS16": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS23": 2,
+            "CRS24": 2,
+            "CRS27": 0,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Je hebt fijn en origineel werk geleverd met een duidelijke eigen insteek. De animaties zitten goed in elkaar en het is knap hoe je een loopcyclus hebt uitgewerkt, want dat is zeker niet gemakkelijk! Jammer dat je in je uiteindelijke indiening niet hebt geëxperimenteerd met easing (terwijl ik je dat tijdens de les wel heb zien doen) en dat de eerste drie composities een zwarte achtergrondkleur hebben behouden. Let bij het opleveren ook goed op de afspraken rond naamgeving en mappenstructuur, en bundel alle composities in één After Effects-project.",
+          "scores": {
+            "4.2": 10,
+            "4.3": 11.3,
+            "4.4": 5,
+            "4.5": 10,
+            "4.6": 5
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS15": 3,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS21": 2,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 3
+          },
+          "feedback": "Super goed gewerkt! Je hebt een zeer helder en verzorgd project opgeleverd dat volledig voldoet aan alle inleverafspraken. Je sterke vooronderzoek vertaalt zich in een doelgerichte uitwerking waarin je veel mogelijkheden hebt verkend. Op vlak van expressief animeren zijn er nog een paar kleine verfijningen mogelijk: de manier waarop de blaadjes rondom het kader binnenkomen hinkelt nog wat, en de beweging van het woord 'fly' mocht nog wat losser en expressiever zoals een echte vlieg, want die oogt nu nog net iets te strak.",
+          "scores": {
+            "4.2": 12.5,
+            "4.3": 15,
+            "4.4": 15,
+            "4.5": 15,
+            "4.6": 15
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS04": 1,
+            "CRS06": 1,
+            "CRS15": 2,
+            "CRS16": 2,
+            "CRS20": 3,
+            "CRS21": 1,
+            "CRS23": 2,
+            "CRS24": 2,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 1
+          },
+          "feedback": "Je hebt op een leuke manier gebruikgemaakt van beeld en klank in je animaties. Wel kunnen de timing en het ritme nog vlotter: je hebt wel geëxperimenteerd met effecten, maar nog niet met easing om je bewegingen natuurlijker te laten versnellen en afremmen. Denk bij de vormgeving ook aan een passende achtergrondkleur. Let er tot slot op om tijdig en verzorgd in te dienen, want je projectmap bevat nu veel overbodige bestanden en oogt daardoor slordig.",
+          "scores": {
+            "4.2": 7.5,
+            "4.3": 8.8,
+            "4.4": 7.5,
+            "4.5": 7.5,
+            "4.6": 2.5
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS06": 2,
+            "CRS15": 2,
+            "CRS16": 1,
+            "CRS20": 2,
+            "CRS21": 1,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 0,
+            "GEC01": 2,
+            "GEC02": 1
+          },
+          "feedback": "De eerste animatie is tof gevonden! In de tweede compositie ontbreekt het nog aan één duidelijke lijn en gevoel voor ritme, en ook in de derde en vierde compositie mist de beweging soms nog vlotheid en ritmiek. Neem de klassikale terugkoppelingen goed mee, want de zwarte achtergrondkleur werd nog niet opgelost. Zorg tot slot voor een verzorgde oplevering: je indiening oogt nu slordig, niet alle gevraagde bestanden zijn aanwezig en alle video's werden dubbel ingeleverd.",
+          "scores": {
+            "4.2": 10,
+            "4.3": 7.5,
+            "4.4": 5,
+            "4.5": 10,
+            "4.6": 5
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS06": 2,
+            "CRS15": 3,
+            "CRS16": 3,
+            "CRS20": 2,
+            "CRS21": 3,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 0,
+            "GEC01": 2,
+            "GEC02": 3
+          },
+          "feedback": "Je animaties zijn erg sterk en vindingrijk uitgewerkt! Het werkt heel goed dat je één doorlopend thema volgt en dit consistent hebt vormgegeven, en ook de toevoeging van audio tilt het geheel naar een hoger niveau. Let bij het inleveren wel goed op de gevraagde mappenstructuur: er zitten nu heel wat overbodige bestanden in je map, waardoor het geheel onoverzichtelijk wordt. Daarnaast werden de gebruikte afbeeldingen niet meegeleverd in de bronmap, waardoor ze niet koppelen in After Effects. Controleer tot slot altijd je exportinstellingen, want de tweede compositie werd niet in de juiste resolutie uitgerenderd.",
+          "scores": {
+            "4.2": 15,
+            "4.3": 13.8,
+            "4.4": 5,
+            "4.5": 12.5,
+            "4.6": 5
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS04": 1,
+            "CRS06": 3,
+            "CRS15": 2,
+            "CRS16": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 2
+          },
+          "feedback": "Je animaties zijn goed uitgewerkt en weten de spanning mooi vast te houden. Je bent wel afgeweken van de focus op eenvoudige basisvormen door extra effecten en schaduwen toe te voegen, al pas je die stijl wel consequent toe doorheen je werk. Let bij het animeren nog op de kleine details, want hier en daar zitten er nog lichte haperingen in de bewegingen. Zorg er daarnaast voor dat je tijdig en volgens de afspraken indient: de mappenstructuur en bestandsnamen kloppen niet overal, het bronmateriaal ontbreekt en het After Effects-projectbestand bevat enkel de vierde compositie.",
+          "scores": {
+            "4.2": 12.5,
+            "4.3": 11.3,
+            "4.4": 5,
+            "4.5": 10,
+            "4.6": 2.5
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS15": 2,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS21": 1,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 0,
+            "GEC02": 2
+          },
+          "feedback": "Je animaties en vormgeving zitten erg goed in elkaar qua timing en ritme, en ook je kleurkeuzes werken sterk. Daarnaast is de mappenstructuur van je project helemaal volgens de verwachtingen opgebouwd. Met jouw kunde had je er zelfs nog meer uit kunnen halen. Het lijkt alsof je heel snel aan de slag bent gegaan om het vlot af te ronden, maar je werk nadien niet meer kritisch hebt nagekeken en niet bent ingegaan op de eerdere terugkoppeling. Let goed op de inleverafspraken. Je hebt enkel in de eerste uploadmap ingeleverd, waar eigenlijk een ander onderdeel werd verwacht. Verder goed gewerkt!",
+          "scores": {
+            "4.2": 10,
+            "4.3": 13.8,
+            "4.4": 15,
+            "4.5": 12.5,
+            "4.6": 7.5
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS06": 0,
+            "CRS15": 0,
+            "CRS16": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "Je hebt het project niet tijdig en niet volgens de afspraken ingediend, waarbij er slechts één compositie werd opgeladen. Om dit onderdeel te remediëren, lever je het volledige projectpakket met alle gevraagde onderdelen alsnog correct in.",
+          "scores": {
+            "4.2": 0,
+            "4.3": 0,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS06": 1,
+            "CRS15": 2,
+            "CRS16": 2,
+            "CRS20": 2,
+            "CRS21": 1,
+            "CRS23": 3,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Je mocht bij het animeren nog wat verder zoeken naar mogelijkheden, en ook de timing en het ritme van je bewegingen kunnen nog vlotter. Volg de klassikale terugkoppelingen goed op, want het probleem met de achtergrondkleur bij het uitrenderen werd nog niet opgelost. Let daarnaast goed op de verwachtingen bij het indienen: niet alle gevraagde bestanden zijn aanwezig en de gekoppelde bronbestanden werden niet meegeleverd.",
+          "scores": {
+            "4.2": 7.5,
+            "4.3": 8.8,
+            "4.4": 7.5,
+            "4.5": 12.5,
+            "4.6": 5
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS04": 2,
+            "CRS06": 3,
+            "CRS15": 2,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS23": 3,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 1,
+            "GEC02": 3
+          },
+          "feedback": "Je technische uitwerking is fenomenaal en je bent duidelijk diep op zoek gegaan naar geavanceerde mogelijkheden in After Effects. Tegelijkertijd ben je meteen beginnen experimenteren zonder eerst heldere storyboards uit te werken en stil te staan bij wat de opdracht precies vraagt. De bedoeling was om te focussen op eenvoudige basisvormen en daar qua beweging zoveel mogelijk uit te halen, terwijl je nu al snel naar extra details, schaduwen en effecten grijpt (zoals de gedetailleerde bel in de eerste compositie, waar één eenvoudige vorm verwacht werd). Je past die effecten wel goed en consistent toe en elke compositie bevat iets unieks, maar het voelt nu eerder aan als losse experimenten in plaats van één helder verhaal. Met wat meer vooruitdenken had dit nog sterker kunnen zijn. Let tot slot ook op de gevraagde naamgeving van je bestanden.",
+          "scores": {
+            "4.2": 12.5,
+            "4.3": 13.8,
+            "4.4": 10,
+            "4.5": 15,
+            "4.6": 7.5
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS06": 0,
+            "CRS15": 0,
+            "CRS16": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "Let erop om tijdig en correct in te dienen. Er werd een Premiere Pro-bestand ingeleverd in plaats van het gevraagde After Effects-project en de bijhorende video-exports. Zodra je het juiste projectpakket volledig indient, kan je score nog worden aangepast.",
+          "scores": {
+            "4.2": 0,
+            "4.3": 0,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
     }
   }
 }

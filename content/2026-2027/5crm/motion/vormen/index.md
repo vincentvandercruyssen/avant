@@ -38,27 +38,39 @@ indieningen:
     lesuren: 4
     gewicht: 15
     leerplandoelen:
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Typografie expressief animeren met aandacht voor leesbaarheid, typografische hiërarchie en ritmische verschijning (Compositie 3)."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Zorgen voor een evenwichtige vlakverdeling, kadrering en een sterk kleurcontrast tussen vormen en achtergrond in alle vier de composities."
       - code: "CRS16"
         gewicht: 2
         criterium: "Vier afzonderlijke, dynamische 2D-animaties en transformaties realiseren met keyframes, Easy Ease en de Graph Editor."
       - code: "CRS06"
         gewicht: 1
         criterium: "Vlot en efficiënt werken met Adobe After Effects, vormlaag- en tijdlijncontroles, Easy Ease en Adobe Media Encoder."
-      - code: "CRS21"
-        gewicht: 1
-        criterium: "Typografie expressief animeren met aandacht voor leesbaarheid, typografische hiërarchie en ritmische verschijning (Compositie 3)."
       - code: "CRS15"
         gewicht: 1
         criterium: "2D-basisvormen, typografische elementen en beeldmateriaal gestructureerd opzetten in After Effects."
-      - code: "CRS23"
+      - code: "CRS20"
         gewicht: 1
-        criterium: "Composities en MP4-exports controleren op correcte resoluties, framerate (30 fps) en vloeiende weergave."
+        criterium: "Alle vier de composities vanuit Adobe Media Encoder exporteren als afspeelbare H.264 MP4-videobestanden en bundelen met het bronmateriaal."
       - code: "CRS27"
         gewicht: 1
-        criterium: "Het volledige After Effects-project en de vier gerenderde video's conform de mappenstructuur opleveren in de Smartschool-uploadzone."
+        criterium: "Het volledige projectpakket conform de gevraagde mappenstructuur (01_assets, 02_exports) en naamconventie als .zip opleveren in de Smartschool-uploadzone."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Composities en MP4-exports controleren op exacte beeldresoluties, minimale tijdsduur (5s / 10s) en framerate (30 fps)."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Handelen met oog voor afwerkingskwaliteit door vloeiende snelheidscurves, actieve Motion Blur en verzorgde details toe te passen."
       - code: "GEC01"
         gewicht: 1
-        criterium: "De finale deadline, inleverprocedures en afspraken van het project stipt naleven."
+        criterium: "De finale deadline en inleverafspraken van het project stipt naleven."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het After Effects-projectbestand (.aep), de interne composities en de projectmap ordelijk en overzichtelijk bijhouden zonder overbodige bestanden."
 draft: false
 ---
 

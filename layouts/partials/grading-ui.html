@@ -55,7 +55,7 @@
           {{ if $doel }}{{ $clusterId = $doel.cluster | default "" }}{{ end }}
           {{ if $clusterId }}
             {{ $existing := index $clusterItems $clusterId | default slice }}
-            {{ $item := dict "code" $code "criterium" $criterium "omschrijving" ($doel.omschrijving | default "") "gewicht" $gewicht }}
+            {{ $item := dict "code" $code "criterium" $criterium "omschrijving" ($doel.omschrijving | default "") "dimensie" ($doel.dimensie | default "") "gewicht" $gewicht }}
             {{ $existing = $existing | append $item }}
             {{ $clusterItems = merge $clusterItems (dict $clusterId $existing) }}
           {{ end }}
@@ -112,7 +112,7 @@
         {{ if $doel }}{{ $clusterId = $doel.cluster | default "" }}{{ end }}
         {{ if $clusterId }}
           {{ $existing := index $clusterItems $clusterId | default slice }}
-          {{ $item := dict "code" $code "criterium" $criterium "omschrijving" ($doel.omschrijving | default "") "gewicht" $gewicht }}
+          {{ $item := dict "code" $code "criterium" $criterium "omschrijving" ($doel.omschrijving | default "") "dimensie" ($doel.dimensie | default "") "gewicht" $gewicht }}
           {{ $existing = $existing | append $item }}
           {{ $clusterItems = merge $clusterItems (dict $clusterId $existing) }}
         {{ end }}
@@ -242,6 +242,10 @@
 
 <script id="avant-submissions-data" type="application/json">
 {{ $submissions | jsonify }}
+</script>
+
+<script id="avant-leerplandoelen-data" type="application/json">
+{{ site.Data.leerplandoelen | jsonify }}
 </script>
 
 {{- with resources.Get "css/grading.css" }}

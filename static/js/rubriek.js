@@ -41,7 +41,8 @@
     activeStudentIndex: 0,
     fileHandle: null,
     isDirty: false,
-    isServerConnected: false
+    isServerConnected: false,
+    leerplandoelen: {}
   };
 
   let autoSaveTimer = null;
@@ -356,9 +357,11 @@
     state.assignmentId = state.container.dataset.assignmentId || 'opdracht';
     state.filePath = state.container.dataset.filePath || '';
 
-    // 1. Submissies parsen
+    // 1. Submissies & leerplandoelen parsen
     const subDataEl = document.getElementById('avant-submissions-data');
     state.submissions = safeParseJson(subDataEl) || [];
+    const lpDataEl = document.getElementById('avant-leerplandoelen-data');
+    state.leerplandoelen = safeParseJson(lpDataEl) || {};
     if (state.submissions.length === 0) {
       state.submissions = [{
         id: 'default',
@@ -1023,6 +1026,12 @@
         critCard.className = `crit-eval-row ${currentLevel !== undefined ? 'is-graded' : ''}`;
         critCard.id = `crit-row-${student.hash}-${crit.code}`;
 
+        const doel = (state.leerplandoelen && state.leerplandoelen[crit.code]) || {};
+        const omschrijving = crit.omschrijving || doel.omschrijving || '';
+        const dimensie = crit.dimensie || doel.dimensie || '';
+        const officialGoalText = omschrijving ? `${omschrijving}${dimensie ? ` (${dimensie})` : ''}` : '';
+        const showOfficialGoal = officialGoalText && (crit.criterium ? true : officialGoalText !== (crit.criterium || crit.omschrijving));
+
         critCard.innerHTML = `
           <div class="crit-code-badge-wrap">
             <span class="crit-code-badge">${escapeHtml(crit.code)}</span>
@@ -1045,6 +1054,7 @@
               </button>
             `).join('')}
           </div>
+          ${showOfficialGoal ? `<div class="crit-official-doel">${escapeHtml(officialGoalText)}</div>` : ''}
         `;
 
         const weightBtn = critCard.querySelector('.badge-weight-multiplier');
@@ -1233,14 +1243,24 @@
     };
   }
 
+  function getScoreColorLevel(score, maxWeight) {
+    if (!maxWeight || maxWeight <= 0) return 0;
+    const pct = (score / maxWeight) * 100;
+    if (pct >= 90) return 3; // Blauw (90% - 100%)
+    if (pct >= 70) return 2; // Groen (70% - 90%)
+    if (pct >= 50) return 1; // Geel (50% - 70%)
+    return 0;                // Rood (0% - 50%)
+  }
+
   function formatClusterScoreBadge(info, submissionWeight) {
     if (!info.isCalculated) {
       return `<span class="score-pending">Nog geen criteria beoordeeld (${info.totalCount} doelen)</span>`;
     }
+    const colorLevel = getScoreColorLevel(info.score, submissionWeight);
     return `
-      <div class="score-result-badge">
-        <span class="score-main"><strong>${info.score.toFixed(1)}</strong> / ${submissionWeight}</span>
-        <span class="score-sub">(gem. ${info.avgLevel.toFixed(2)}/3 • ${info.gradedCount}/${info.totalCount} doelen${info.weighted ? ' • gewogen' : ''})</span>
+      <div class="score-result-badge" data-level="${colorLevel}">
+        <span class="score-sub">(${info.gradedCount}/${info.totalCount} doelen${info.weighted ? ' • gewogen' : ''} • <span class="score-pts">${info.score.toFixed(1)}/${submissionWeight}</span>)</span>
+        <span class="score-main">${info.avgLevel.toFixed(2)}/3</span>
       </div>
     `;
   }
@@ -1270,10 +1290,11 @@
     const avg = sum / count;
     const pct = Math.round((avg / sub.weight) * 100);
     const isPass = pct >= 50;
+    const colorLevel = getScoreColorLevel(avg, sub.weight);
 
     scoreEl.innerHTML = `
       <span class="overall-label">Gemiddelde (${count}/${sub.clusters.length} clusters):</span>
-      <strong class="overall-value ${isPass ? 'pass' : 'fail'}">${avg.toFixed(1)} / ${sub.weight} (${pct}%)</strong>
+      <strong class="overall-value ${isPass ? 'pass' : 'fail'}" data-level="${colorLevel}">${avg.toFixed(1)} / ${sub.weight} (${pct}%)</strong>
     `;
   }
 
@@ -1341,7 +1362,8 @@
       if (score !== undefined) {
         sum += score;
         count++;
-        html += `<td class="col-score val-set"><strong>${score.toFixed(1)}</strong></td>`;
+        const colorLevel = getScoreColorLevel(score, sub.weight);
+        html += `<td class="col-score val-set" data-level="${colorLevel}"><strong>${score.toFixed(1)}</strong></td>`;
       } else {
         html += `<td class="col-score val-empty">-</td>`;
       }
@@ -1351,7 +1373,8 @@
       const avg = sum / count;
       const pct = Math.round((avg / sub.weight) * 100);
       const isPass = pct >= 50;
-      html += `<td class="col-gem"><span class="gem-badge ${isPass ? 'pass' : 'fail'}">${avg.toFixed(1)}</span></td>`;
+      const avgColorLevel = getScoreColorLevel(avg, sub.weight);
+      html += `<td class="col-gem"><span class="gem-badge ${isPass ? 'pass' : 'fail'}" data-level="${avgColorLevel}">${avg.toFixed(1)} <small>(${pct}%)</small></span></td>`;
     } else {
       html += `<td class="col-gem"><span class="gem-badge empty">-</span></td>`;
     }
