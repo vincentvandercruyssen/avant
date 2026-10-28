@@ -1,4 +1,4 @@
-## Les 1 16/10/2026 (Motion, 12:40 - 14:20)
+## Les 1 16/10/2026 (Motion)
 
 ### Gestalt: Onderzoek, schetsboek & raster in After Effects
 
@@ -29,7 +29,7 @@
 * **CRS07:** Inspiratiebronnen en ontwerpprincipes doelgericht verzamelen en analyseren via het Pinterest-bord.
 * **CRS27:** Het afgewerkte Quicktype-projectpakket conform de vereiste bestandsstructuur uploaden.
 
-## Les 2 22/10/2026 (Motion, 12:40 - 14:20)
+## Les 2 22/10/2026 (Motion)
 
 ### Gestalt: Uitlijning, typografie & eerste transformatie
 
@@ -59,7 +59,7 @@
 * **CRS24:** Een evenwichtige compositie en strakke typografische uitlijning behouden binnen het modulaire grid.
 * **SV06.72:** Het verband analyseren tussen 2D-vectorparameters en dynamische visuele verhoudingen.
 
-## Les 3 23/10/2026 (Motion, 08:20 - 10:00)
+## Les 3 23/10/2026 (Motion)
 
 ### Gestalt: Raster, typografie & animeren met vormlagen
 
@@ -84,23 +84,28 @@
 * **CRS24:** Een evenwichtige compositie en strakke typografische hiërarchie behouden binnen het modulaire raster.
 * **SV06.72:** Het verband analyseren tussen 2D-vectorparameters, rasterstructuren en dynamische visuele verhoudingen.
 
-## Les 4 12/11/2026 (Motion, 12:40 - 14:20)
+## Les 4 29/10/2026 (Motion)
 
-### Gestalt: Finetuning, kwaliteitscontrole & export
+### Gestalt: Stand van zaken, Bezier Path, finetuning & projectbeheer
 
 ### Lesverloop & inhoud
-1. **Afwerking & detailcontrole:**
-   * Kritische controle op haperingen, uitlijningsfouten of typografische overlappingen.
-   * Controle op het strikt respecteren van de marges en de totale lengte van 15 seconden (450 frames).
-2. **Export via Adobe Media Encoder:**
-   * Toevoegen van de compositie aan de renderwachtrij van Adobe Media Encoder (`Ctrl + Alt + M`).
-   * Configureren van de H.264 export (*Match Source - High Bitrate*) naar de map `02_exports/VoornaamA_Gestalt.mp4`.
-3. **Projectbeheer & oplevering:**
-   * Digitaliseren van het schetsboekstoryboard en opslaan als `VoornaamA_Storyboard-Gestalt.jpg` in `01_assets/`.
-   * Bestandsstructuur controleren, comprimeren naar `VoornaamA_Gestalt.zip` en indienen in de Smartschool-uploadzone.
+1. **Stand van zaken & individuele terugkoppeling:**
+   * Overlopen van de lopende animaties en het After Effects-project.
+   * Kinetische/animatie vertaling van de 3 gekozen ontwerpprincipes, het 4×8 raster en de typografische hiërarchie.
+2. **Vormlagen: Parametric Path vs. Bezier Path:**
+   * **Niet aanvinken (*Parametric Path*):** Exacte numerieke controle over *Size* (`160 px`), *Position* en *Roundness* via *Contents*, ideaal voor strakke rasteropbouw en maataanpassingen.
+   * **Wel aanvinken (*Bezier Path*):** Vrije bewerking en animatie van individuele ankerpunten en paden (*Path*-keyframes) voor vormtransformaties en morphing (*shape animations*).
+3. **Finetuning van animatie & timing:**
+   * Verfijnen van de overgangen tussen de 3 ontwerpprincipes en toepassen van *Easy Ease* (`F9`) voor vloeiende versnelling en vertraging.
+   * Detailcontrole op uitlijningsfouten, gelijke tussenafstanden (gutter), buitenmarges en de maximale duur.
+4. **Projectbeheer & bestandsorganisatie:**
+   * Organiseren van de mappenstructuur (`01_assets/` en `02_exports/`) en bestandsnaamgeving (`VoornaamA_Gestalt.aep` in de hoofdmap).
+   * Klaarmaken en exporteren van de H.264 MP4-render (`VoornaamA_Gestalt.mp4`) naar `02_exports/` via Adobe Media Encoder.
 
 ### Leerplandoelen
-* **CRS01:** De export controleren op de exacte productievereisten (H.264 MP4, 1080 × 1920 px, 30 fps, 15 sec).
-* **CRS06:** Zelfstandig exporteren en renderen via Adobe Media Encoder.
-* **CRS23:** De finale video evalueren op beeldkwaliteit, vloeiendheid, contrast en technische specificaties.
-* **CRS27:** Het volledige projectpakket conform de gestructureerde mappenstructuur tijdig opleveren.
+* **CRS01:** De werkbestanden, naamgeving en projectmappen (`01_assets/`, `02_exports/`) volgens de productievereisten organiseren en beheren.
+* **CRS02:** Het onderscheid tussen een parametrisch pad en een *Bezier Path* doelgericht inzetten in functie van de gewenste vormanimatie.
+* **CRS06:** Vormlagen, *Path*-keyframes, timing en *Easy Ease* finetunen in After Effects en exporteren via Adobe Media Encoder.
+* **CRS16:** Dynamische 2D-animaties afwerken waarin de 3 gekozen ontwerpprincipes helder tot uiting komen.
+* **CRS22:** Vormen, compositie, timing en bewegingscurves harmonieus op elkaar afstemmen.
+* **CRS27:** Het volledige projectpakket conform de vereiste mappenstructuur en bestandsnaamgeving opleveren.

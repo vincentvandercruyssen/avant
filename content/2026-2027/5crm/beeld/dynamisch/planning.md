@@ -50,28 +50,31 @@
 
 ## Les 3 29/10/2026 (Beeld, 08:20 - 10:00)
 
-### Dynamisch: Non-destructieve beeldbewerking, finetuning en oplevering
+### Dynamisch: Testshots, beeldselectie en start beeldbewerking
 
 ### Lesverloop & inhoud
-1. **Definitieve shoot of selectie:**
-   * Korte herkansing voor extra shots op basis van de analyse van de testfase, of definitieve selectie van de sterkste RAW-opname.
-2. **Ontwikkeling in Camera Raw:**
-   * Balanceren van hooglichten en schaduwen voor maximaal dynamisch bereik.
-   * Accentueren van bewegingslijnen en sfeer via contrast, *Clarity* en kleurgradatie.
-3. **Beeldbewerking en finetuning in Photoshop:**
-   * Verfijnen van de compositie en kadrering in Photoshop.
-   * Toepassen van non-destructieve aanpassingslagen, laagmaskers of specifieke effecten (bv. chronofotografische montage, bewegingssporen of lenseffecten).
-4. **Kwaliteitscontrole en export:**
+1. **Keuze en voorbereiding:**
+   * Selectie van één techniek op basis van het vooronderzoek.
+   * Bepalen van de benodigde apparatuur (statief, camera-instellingen, sluitertijdkeuze, studioverlichting of alternatief).
+2. **Testopnames en beeldbeoordeling:**
+   * Schieten en experimenteren van gerichte testshots of beelden.
+   * Overzetten naar de projectmap in submap `01_testshots/`.
+   * Selecteren van de sterkste testopname als basis voor het eindbeeld.
+   * Samenvoegen van de minimaal vijf testshots op één A4 in een overzichtsdocument (`VoornaamA_Dynamisch-Testshots.pdf`) via de werkruimte *Output* (*Uitvoer*) in **Adobe Bridge**.
+3. **Ontwikkeling in Camera Raw of Photoshop:**
+   * Balanceren van licht en toon, accentueren van bewegingslijnen en sfeer.
+   * Verfijnen van de compositie en kadrering.
+   * Eventueel toepassen van specifieke effecten (bv. chronofotografische montage, bewegingssporen of lenseffecten).
+4. **Kwaliteitscontrole en oplevering:**
    * Beoordelen van resolutie, scherptebalans en kleurweergave.
-   * Exporteren van het gelaagde werkbestand (`VoornaamA_Dynamisch-Eindbeeld.psd`) en de definitieve JPEG (`VoornaamA_Dynamisch-Eindbeeld.jpg`).
-5. **Inlevering in Smartschool:**
-   * Uploaden van de testshots (`VoornaamA_Dynamisch-Testshots.pdf`), het Photoshop-werkbestand en de definitieve JPEG in de voorziene uploadmap (*Dynamisch 2. Uitwerking*).
+   * Uploaden van de testshots (`VoornaamA_Dynamisch-Testshots.pdf`).
 
 ### Leerplandoelen
-* **CRS06:** Vlot en efficiënt werken met Camera Raw en Photoshop (aanpassingslagen, maskers en slimme filters).
-* **CRS09:** Het stappenplan voor non-destructieve beeldbewerking en export bepalen en uitvoeren.
+* **CRS02:** Doelgericht cameratechnieken, sluitertijden of bewerkingsmethodes selecteren om beweging overtuigend uit te drukken.
+* **CRS06:** Vlot en efficiënt werken met de camera, Adobe Bridge, Camera Raw en Photoshop.
+* **CRS08:** Scherpte, bewegingsonscherpte, belichting en beeldkwaliteit van de testshots kritisch evalueren.
+* **CRS09:** Het stappenplan voor opname, beeldselectie en digitale beeldbewerking bepalen en uitvoeren.
 * **CRS10:** Beeldmateriaal doelgericht corrigeren, manipuleren of samenvoegen in functie van dynamiek.
-* **CRS22:** Beeldmateriaal esthetisch en creatief bewerken met focus op kinetische energie en spanning.
-* **CRS23:** Bestanden controleren op resolutie, kleurmodus, bestandsgrootte en exportformaat.
-* **CRS27:** Het volledige project conform de mappenstructuur en naamconventie tijdig inleveren in de Smartschool-uploadzone.
-* **GEC02:** Kwaliteitsbewust en ordelijk werken met bestanden en lagenstructuren.
+* **CRS20:** De minimaal vijf testshots overzichtelijk samenvoegen op één A4-PDF via de werkruimte *Output* in Adobe Bridge.
+* **CRS27:** Het overzichtsdocument van de testshots (`VoornaamA_Dynamisch-Testshots.pdf`) volgens de inleverafspraken en naamconventie opleveren in Smartschool.
+* **GEC04:** Veilig, zorgvuldig en hygiënisch omgaan met opnameapparatuur en de werkplek.
