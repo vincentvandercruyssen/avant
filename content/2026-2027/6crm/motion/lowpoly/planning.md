@@ -1,4 +1,4 @@
-## Les 1 20/10/2026 (Motion, 08:30 - 10:00)
+## Les 1 20/10/2026 (Motion)
 
 ### Lowpoly: Evaluatie extrude, introductie lowpoly & 3D-modellering
 
@@ -24,7 +24,7 @@
 * **CRS23:** Het eigen werk controleren op strikt zelfstandig modelleerwerk zonder externe assets (plagiaatvermijding).
 * **SV06.72:** Het verband tussen driedimensionale geometrische basisvormen en minimalistische lowpoly-vormentaal analyseren.
 
-## Les 2 22/10/2026 (Motion, 12:40 - 14:20)
+## Les 2 22/10/2026 (Motion)
 
 ### Lowpoly: Vormuitwerking, eigen variatie, materialen & aanzet Cycles
 
@@ -45,10 +45,11 @@
 * **CRS02:** Doelgericht basismesh- en modelleertechnieken selecteren om een geometrisch lowpoly-object te construeren.
 * **CRS06:** Zelfstandig werken in Blender 3D (edit mode, materialen, belichting en viewport navigatie).
 * **CRS13:** Zelfstandig online bronnen en tutorials analyseren en technieken toepassen binnen een eigen ontwerp.
-* **CRS16:** Een afgewerkte 3D-still render voorbereiden met aandacht voor compositie, shading en belichting in Cycles.
+* **CRS17:** Illustratieve 3D-geometrie en vlakverdelingen bewerken in functie van een herkenbare lowpoly-stijl.\r
+* **16.04:** Vanuit verbeelding een eigen 3D-concept, kleurenpalet en belichting vormgeven.
 * **CRS23:** Het eigen werk controleren op een authentieke vormuitwerking zonder kant-en-klare externe assets.
 
-## Les 3 27/10/2026 (Motion, 08:30 - 10:00)
+## Les 3 27/10/2026 (Motion)
 
 ### Lowpoly: Vormuitwerking, shading, materialen, belichting & camera
 
@@ -69,6 +70,32 @@
 ### Leerplandoelen
 * **CRS02:** Doelgericht 3D-technieken selecteren (lowpoly-meshbewerking, Principled BSDF shaders, cameracompositie en belichtingstypen).
 * **CRS06:** Zelfstandig werken in Blender 3D (geometrie verfijnen, materialen toewijzen, camera kadreren en renderen in Cycles).
-* **CRS16:** Een afgewerkte 3D-still render voorbereiden met een evenwichtige compositie, shading en belichting in Cycles.
-* **CRS22:** Vormgeving, kleurenpalet, materiaaleigenschappen en lichtval harmonieus op elkaar afstemmen.
+* **CRS17:** Illustratieve 3D-geometrie en vlakverdelingen afwerken met behoud van strakke polygoonvlakken (*Shade Flat*).
+* **16.04:** Vanuit verbeelding vormgeving, kleurenpalet, materiaaleigenschappen en lichtval harmonieus op elkaar afstemmen.
 * **SV06.72:** Het ruimtelijke effect van geometrische basisvormen, lichtinval en schaduwwerking in een minimalistische 3D-scène evalueren.
+
+## Les 4 29/10/2026 (Motion)
+
+### Lowpoly: Vormuitwerking, meshbewerking, materialen, Cycles & belichting
+
+### Lesverloop & inhoud
+1. **Vormuitwerking & gerichte meshbewerking:**
+   * Geometrie van het hoofdobject en bijhorende scène-elementen verder opbouwen en verfijnen in Edit Mode.
+   * Vlakken en volumes gericht structureren met *Loop Cut* (`Ctrl + R`), *Extrude* (`E`) en *Inset* (`I`).
+   * Strakke, hoekige vlakverdelingen en harde randen borgen via *Shade Flat* voor een zuiver lowpoly-karakter.
+2. **Materialen en shading:**
+   * Materialen per object of via vlakselectie toewijzen met de *Principled BSDF* shader.
+   * Kleurenpalet en oppervlakteglans (*Roughness*) op elkaar afstemmen.
+3. **Cycles, camera & belichting:**
+   * Render engine op *Cycles* instellen voor accurate lichtspreiding en schaduwval.
+   * Camerapositie, kadrering en beeldverhouding (1:1, 16:9, 3:2 of 4:5) vastleggen.
+   * Belichting opzetten met gerichte lichtbronnen (*Sun*, *Area* of *Point*) om diepte, contrast en vormfacetten te accentueren.
+
+### Leerplandoelen
+* **CRS02:** Doelgericht basismesh- en modelleertechnieken selecteren (Loop Cut, Extrude, Inset en Shade Flat) om een geometrisch lowpoly-object te construeren.
+* **CRS06:** Zelfstandig werken in Blender 3D (edit mode, materialen, belichting en cameracompositie).
+* **CRS17:** Illustratieve 3D-geometrie gericht structureren en bewerken met Loop Cut, Extrude, Inset en Shade Flat.
+* **16.04:** Vanuit verbeelding vormgeving, kleurenpalet, materiaaleigenschappen en lichtval harmonieus op elkaar afstemmen.
+* **SV06.72:** Het ruimtelijke effect van geometrische basisvormen, lichtinval en schaduwwerking in een minimalistische 3D-scène evalueren.
+
+
