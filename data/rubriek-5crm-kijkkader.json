@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-kijkkader",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-28T16:38:23.569+01:00",
+  "lastUpdated": "2026-10-29T19:45:07.324+01:00",
   "submissions": {
     "bewerkingen": {
       "id": "bewerkingen",
@@ -381,7 +381,75 @@
           ]
         }
       ],
-      "evaluations": {}
+      "evaluations": {
+        "8ab009875a": {
+          "scores": {
+            "4.2": 2.5,
+            "4.4": 2.5,
+            "4.6": 3
+          },
+          "criteriaLevels": {
+            "CRS22": 2,
+            "CRS24": 3,
+            "CRS20": 2,
+            "CRS27": 3,
+            "CRS04": 3,
+            "GEC01": 3
+          },
+          "feedback": "-heel netjes gidslijnen uitgezet, maar lagen zitten er niet perfect op uitgelijnd\n-beeldverhouding van foto's aanpassen was niet meteen de bedoeling, maar in dit geval werkt het wel\n-goede samenhangende keuze, foto's konden nog strakker gekadreerd/uitgesneden\n-naamgeving indiening top"
+        },
+        "efe6054d9e": {
+          "scores": {
+            "4.2": 0,
+            "4.4": 0,
+            "4.6": 0
+          },
+          "criteriaLevels": {
+            "CRS22": 0,
+            "CRS24": 0,
+            "CRS20": 0,
+            "CRS27": 0,
+            "CRS04": 0,
+            "GEC01": 0
+          }
+        },
+        "8ec556f315": {
+          "scores": {
+            "4.4": 1,
+            "4.2": 1,
+            "4.6": 2.5
+          },
+          "criteriaLevels": {
+            "CRS20": 0,
+            "CRS27": 2,
+            "CRS22": 1,
+            "CRS24": 1,
+            "CRS04": 2,
+            "GEC01": 3
+          },
+          "feedback": "-marges en gidslijnen aangemaakt maar niet gehanteerd (niet perfect uitgelijnd)\n-keuze foto's kon veel beter, meer keuze uit betere \n-draaien van de landschapsfoto werkt hier niet (het wordt zo iets anders dan een drieluik)\n-tekst is ok, maar niet erg subtiel. let zeker op typfoutern: afwerking\n-niet de juiste foto's, beeldverhoudingen had je beter niet aangepast\n-drieluik = eenvoudige keuze van beste beelden onder 1 thema"
+        },
+        "d61daca6ab": {
+          "scores": {
+            "4.2": 0,
+            "4.4": 0,
+            "4.6": 0
+          },
+          "criteriaLevels": {
+            "CRS22": 0,
+            "CRS24": 0,
+            "CRS20": 0,
+            "CRS27": 0,
+            "CRS04": 0,
+            "GEC01": 0
+          }
+        },
+        "539ecc3e56": {
+          "scores": {},
+          "criteriaLevels": {},
+          "feedback": "-hulplijnen niet meer in psd, al zijn de foto's wel perfect uitgelijnd\n-mooie keuze van beelden, duidelijk thema"
+        }
+      }
     }
   }
 }

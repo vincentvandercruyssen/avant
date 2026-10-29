@@ -53,7 +53,7 @@ indieningen:
     leerplandoelen:
       - code: "CRS22"
         gewicht: 1
-        criterium: "Drie sterke beelden esthetisch en harmonieus samenbrengen tot één visueel en inhoudelijk samenhangend drieluik rond een gekozen thema."
+        criterium: "Drie sterke beelden esthetisch en evenwichtig samenbrengen tot één visueel en inhoudelijk samenhangend drieluik rond een gekozen thema."
       - code: "CRS24"
         gewicht: 1
         criterium: "Een evenwichtige en strak uitgelijnde opmaak toepassen op liggend A4-formaat (297 × 210 mm) met drie kolommen, gelijke tussenruimtes, verzorgde marges en optionele typografie."
@@ -68,7 +68,7 @@ indieningen:
         criterium: "Het Photoshop-werkbestand (.psd) ordelijk en overzichtelijk opbouwen met behouden hulplijnen en afzonderlijke beeldlagen."
       - code: "GEC01"
         gewicht: 1
-        criterium: "De finale deadline (11/10) en inleverafspraken voor het drieluik stipt naleven."
+        criterium: "De deadline en inleverafspraken voor het drieluik stipt naleven."
 draft: false
 ---
 

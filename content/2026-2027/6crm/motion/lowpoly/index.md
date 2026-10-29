@@ -85,6 +85,25 @@ Gebruik onderstaande handleiding van Brad Colbow of kies zelf een andere online 
 
 Breid je scène uit tot een compleet mini-diorama. Vul de omgeving aan met extra zelfgemodelleerde lowpoly-elementen: een bodemoppervlak, rotsen, bomen, wolken, waterpartijen of kleine decoratieve rekwisieten die jouw hoofdobject versterken.
 
+### Bronnen
+
+##### Meest gebruikt
+
+- [ambientcg.com](https://ambientcg.com/) (PBR textures, HDRIs, 3D modellen)
+- [free3d.com](https://free3d.com/3d-models/) (3D modellen)
+- [Poliigon](https://www.poliigon.com/free) (PBR textures, HDRIs, 3D modellen)
+- [PolyHaven](https://polyhaven.com/)  (PBR textures, HDRIs, 3D modellen)
+
+##### Ook handig
+
+- [BlendSwap](https://www.blendswap.com/) (3D modellen)
+- [cgbookcase](https://www.cgbookcase.com/textures) (PBR textures)
+- [freepbr.com](https://freepbr.com/) (PBR textures)
+- [patternpanda.org](https://patternpanda.org/) (PBR textures)
+- [texture.ninja](https://texture.ninja/) (textures)
+
+Of ontdek hier een handige tabel met [allerhande bronnen](https://wiki.luxcorerender.org/External_Resources).
+
 ## Oplevering
 
 Dien beide bestanden samen in via één enkele indiening in de voorziene Smartschool-uploadmap:
