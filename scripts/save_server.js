@@ -31,10 +31,12 @@ function setCorsHeaders(res) {
 
 function updateMarkdownWeights(content, submissionData) {
   if (!submissionData || typeof submissionData !== 'object') return content;
-  const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  const normalized = content.replace(/\r\n/g, '\n');
+  const fmMatch = normalized.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   if (!fmMatch) return content;
 
-  let fm = fmMatch[1];
+  const origFm = fmMatch[1];
+  let fm = origFm;
   const body = fmMatch[2];
   const subIds = Object.keys(submissionData);
   const isMulti = fm.includes('indieningen:');
@@ -107,6 +109,7 @@ function updateMarkdownWeights(content, submissionData) {
     }
   }
 
+  if (fm === origFm) return content;
   return `---\n${fm}\n---\n${body}`;
 }
 

@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-kijkkader",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-29T19:45:07.324+01:00",
+  "lastUpdated": "2026-10-30T15:23:14.534+01:00",
   "submissions": {
     "bewerkingen": {
       "id": "bewerkingen",
@@ -382,72 +382,197 @@
         }
       ],
       "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS04": 1,
+            "CRS20": 2,
+            "CRS22": 1,
+            "CRS24": 2,
+            "CRS27": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je drieluik oogt mooi. Wel heb je drie foto's gekozen die niet in je eerder ingediende reeks zaten. Twee daarvan zijn erg mooi, maar voor het derde beeld had je beter een sterkere, meer passende keuze gemaakt. Je hebt de oorspronkelijke beeldverhouding van de foto's aangepast, al werkt dat visueel hier wel. Let in Photoshop nauwkeuriger op je opmaak en uitlijning: je hebt wel hulplijnen geplaatst, maar die vervolgens niet gebruikt, waardoor de linker- en rechtermarge niet gelijk zijn en er nog slordigheden in de uitlijning zitten.",
+          "scores": {
+            "4.2": 1.5,
+            "4.4": 2.5,
+            "4.6": 2
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS04": 2,
+            "CRS20": 3,
+            "CRS22": 3,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3
+          },
+          "feedback": "Sterk werk geleverd! Je hebt een mooie selectie beelden samengebracht rond een duidelijk thema, en doordat de foto's netjes bewerkt en perfect uitgelijnd zijn, oogt je drieluik erg professioneel. Het gekozen lettertype had eventueel nog iets strakker gemogen, al is dat ook een kwestie van smaak. Laat bij het opslaan van je Photoshop-werkbestand voortaan wel je hulplijnen staan, want die waren nu niet meer zichtbaar in je psd-bestand. Je bestandsnaamgeving en indiening zijn verder helemaal in orde.",
+          "scores": {
+            "4.2": 3,
+            "4.4": 3,
+            "4.6": 2.5
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS04": 1,
+            "CRS20": 2,
+            "CRS22": 1,
+            "CRS24": 2,
+            "CRS27": 3,
+            "GEC01": 1
+          },
+          "feedback": "Fijn om te zien dat je met de eerdere terugkoppeling aan de slag bent gegaan. Je beeldkeuze is op zich oké, met de tweede foto als sterkste beeld, maar het overkoepelende thema tussen de drie opnames wordt nog niet helemaal duidelijk. De extra tekstuele toevoeging is een goed initiatief, al mocht die een stuk subtieler geplaatst worden omdat ze nu erg veel ruimte inneemt. In je Photoshop-werkbestand werden daarnaast geen hulplijnen gebruikt en zitten er nog wat slordigheden in de lagenopbouw, zoals één laag die door een witte achtergrond erg groot is uitgevallen. Werk bij voorkeur met slimme lagen. Let er tot slot op dat je ook de deadline naleeft.",
+          "scores": {
+            "4.2": 1.5,
+            "4.4": 2.5,
+            "4.6": 1
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS04": 1,
+            "CRS20": 1,
+            "CRS22": 3,
+            "CRS24": 1,
+            "CRS27": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt het drieluik tijdig ingediend, je sterkste foto's geselecteerd en ze bovendien in een sterke volgorde geplaatst. Wel leidt de uitgesproken nabewerking op de beelden nog wat af en is het jammer dat je de oorspronkelijke beeldverhouding van de foto's hebt aangepast. In Photoshop heb je wel hulplijnen gebruikt, maar je foto's zijn daar nog niet strak en nauwkeurig op uitgelijnd. Let bij je naamgeving en afwerking tot slot nog op kleine schrijffoutjes: het is een 'drieluik', al klinkt 'drieleuk' natuurlijk wel sympathiek.",
+          "scores": {
+            "4.2": 2,
+            "4.4": 1.5,
+            "4.6": 2
+          }
+        },
         "8ab009875a": {
+          "criteriaLevels": {
+            "CRS04": 3,
+            "CRS20": 2,
+            "CRS22": 2,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3
+          },
+          "feedback": "Goed gewerkt! Je hebt een mooie, samenhangende selectie foto's gemaakt voor je drieluik, al mochten de beelden zelf nog net iets strakker gekadreerd en uitgesneden worden. De oorspronkelijke beeldverhouding van de foto's aanpassen was niet meteen de bedoeling van de opdracht, maar in dit geval werkt het visueel goed. In je Photoshop-werkbestand heb je de hulplijnen heel netjes uitgezet, al staan je beeldlagen daar nog niet overal helemaal exact op uitgelijnd. Je bestandsnaamgeving en indiening zijn tot slot helemaal op orde.",
           "scores": {
             "4.2": 2.5,
             "4.4": 2.5,
             "4.6": 3
-          },
-          "criteriaLevels": {
-            "CRS22": 2,
-            "CRS24": 3,
-            "CRS20": 2,
-            "CRS27": 3,
-            "CRS04": 3,
-            "GEC01": 3
-          },
-          "feedback": "-heel netjes gidslijnen uitgezet, maar lagen zitten er niet perfect op uitgelijnd\n-beeldverhouding van foto's aanpassen was niet meteen de bedoeling, maar in dit geval werkt het wel\n-goede samenhangende keuze, foto's konden nog strakker gekadreerd/uitgesneden\n-naamgeving indiening top"
-        },
-        "efe6054d9e": {
-          "scores": {
-            "4.2": 0,
-            "4.4": 0,
-            "4.6": 0
-          },
-          "criteriaLevels": {
-            "CRS22": 0,
-            "CRS24": 0,
-            "CRS20": 0,
-            "CRS27": 0,
-            "CRS04": 0,
-            "GEC01": 0
           }
         },
         "8ec556f315": {
-          "scores": {
-            "4.4": 1,
-            "4.2": 1,
-            "4.6": 2.5
-          },
           "criteriaLevels": {
+            "CRS04": 2,
             "CRS20": 0,
-            "CRS27": 2,
             "CRS22": 1,
             "CRS24": 1,
-            "CRS04": 2,
+            "CRS27": 2,
             "GEC01": 3
           },
-          "feedback": "-marges en gidslijnen aangemaakt maar niet gehanteerd (niet perfect uitgelijnd)\n-keuze foto's kon veel beter, meer keuze uit betere \n-draaien van de landschapsfoto werkt hier niet (het wordt zo iets anders dan een drieluik)\n-tekst is ok, maar niet erg subtiel. let zeker op typfoutern: afwerking\n-niet de juiste foto's, beeldverhoudingen had je beter niet aangepast\n-drieluik = eenvoudige keuze van beste beelden onder 1 thema"
+          "feedback": "Je hebt je bestanden tijdig ingediend en in Photoshop netjes marges en hulplijnen aangemaakt, maar die heb je vervolgens niet consequent gebruikt om je beelden strak uit te lijnen. Inhoudelijk had je veel meer uit dit onderdeel kunnen halen: de essentie van het drieluik was om eenvoudigweg je drie sterkste foto's rond één duidelijk thema samen te brengen, terwijl je in je fotoreeks betere opnames had om uit te kiezen. Daarnaast had je de oorspronkelijke beeldverhoudingen beter behouden en werkt het kantelen van de liggende landschapsfoto hier niet, omdat het geheel daardoor iets anders wordt dan een rustig drieluik. Tot slot is de toegevoegde tekst op zich oké, maar mocht die een stuk subtieler geplaatst worden en let bij de afwerking goed op typfouten.",
+          "scores": {
+            "4.2": 1,
+            "4.4": 1,
+            "4.6": 2.5
+          }
         },
-        "d61daca6ab": {
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS20": 0,
+            "CRS22": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0
+          },
+          "feedback": "Je hebt voor dit onderdeel niets ingediend. Om dit te remediëren en alsnog punten te behalen, lever je zowel het Photoshop-werkbestand (.psd) als de geëxporteerde JPEG van je drieluik volgens de inleverafspraken in.",
           "scores": {
             "4.2": 0,
             "4.4": 0,
             "4.6": 0
-          },
-          "criteriaLevels": {
-            "CRS22": 0,
-            "CRS24": 0,
-            "CRS20": 0,
-            "CRS27": 0,
-            "CRS04": 0,
-            "GEC01": 0
           }
         },
-        "539ecc3e56": {
-          "scores": {},
-          "criteriaLevels": {},
-          "feedback": "-hulplijnen niet meer in psd, al zijn de foto's wel perfect uitgelijnd\n-mooie keuze van beelden, duidelijk thema"
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS20": 2,
+            "CRS22": 0,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 1
+          },
+          "feedback": "Je hebt twee sterke foto's in je drieluik opgenomen, maar voor het derde beeld had je beter een andere keuze gemaakt zodat de drie foto's thematisch echt op één lijn liggen. De geëxporteerde JPEG is correct benoemd en ook je keuze voor typografie is op zich oké, maar de tekst mocht een stuk mooier en subtieler geplaatst worden en er zitten nog slordigheden in de onderlinge uitlijning van de beelden. Daarnaast ontbreekt je Photoshop-werkbestand (.psd), waardoor de opbouw van je lagen en hulplijnen niet beoordeeld kon worden. Let er dus goed op dat je tijdig werkt en altijd alle gevraagde bestanden volgens de inleverafspraken indient.",
+          "scores": {
+            "4.2": 1,
+            "4.4": 1.5,
+            "4.6": 0.5
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS04": 1,
+            "CRS20": 3,
+            "CRS22": 2,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3
+          },
+          "feedback": "Mooi werk geleverd! Je hebt een goede selectie foto's samengebracht waarin het thema van de natuur die breekt met de stad mooi tot zijn recht komt. De drie beelden behouden netjes hun verhoudingen, staan verzorgd uitgelijnd op het blad en ook je bestandsnaamgeving en indiening zijn helemaal op orde. Maak in je Photoshop-werkbestand voortaan wel gebruik van hulplijnen om je marges en kolommen op te bouwen, zodat je niet louter op het zicht hoeft uit te lijnen.",
+          "scores": {
+            "4.2": 2.5,
+            "4.4": 3,
+            "4.6": 2
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS20": 0,
+            "CRS22": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0
+          },
+          "feedback": "Je hebt het drieluik niet ingediend. Om dit onderdeel te remediëren en alsnog punten te behalen, lever je zowel het Photoshop-werkbestand (.psd) als de geëxporteerde JPEG volgens de inleverafspraken in.",
+          "scores": {
+            "4.2": 0,
+            "4.4": 0,
+            "4.6": 0
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS20": 0,
+            "CRS22": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0
+          },
+          "feedback": "Je hebt het drieluik nog niet ingediend. Om dit onderdeel te remediëren en alsnog punten te behalen, lever je zowel het Photoshop-werkbestand (.psd) als de geëxporteerde JPEG volgens de inleverafspraken in.",
+          "scores": {
+            "4.2": 0,
+            "4.4": 0,
+            "4.6": 0
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {
+            "CRS04": 0,
+            "CRS20": 0,
+            "CRS22": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0
+          },
+          "feedback": "Je hebt voor dit onderdeel niets ingediend. Om dit te remediëren en alsnog een score te behalen, lever je zowel het Photoshop-werkbestand (.psd) als de geëxporteerde JPEG van je drieluik volgens de inleverafspraken in.",
+          "scores": {
+            "4.2": 0,
+            "4.4": 0,
+            "4.6": 0
+          }
         }
       }
     }

@@ -1270,6 +1270,17 @@
     if (!scoreEl) return;
 
     const sub = getActiveSubmission();
+    let subTitleEl = document.getElementById('display-sub-title');
+    if (!subTitleEl && scoreEl.parentElement) {
+      subTitleEl = document.createElement('h3');
+      subTitleEl.id = 'display-sub-title';
+      subTitleEl.className = 'tab-title';
+      scoreEl.parentElement.insertBefore(subTitleEl, scoreEl);
+    }
+    if (subTitleEl) {
+      subTitleEl.textContent = sub.title || '';
+    }
+
     const subEvals = getActiveSubEvals();
     const scores = subEvals[studentHash]?.scores || {};
     let sum = 0;

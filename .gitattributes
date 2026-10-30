@@ -1,0 +1,38 @@
+# Force LF line endings for all text files across all operating systems
+* text=auto eol=lf
+
+# Explicitly declare text formats
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.svg text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+
+# Explicitly declare binary formats to prevent modification
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.mp4 binary
+*.mov binary
+*.webm binary
+*.pdf binary
+*.zip binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.ai binary
+*.psd binary
+*.indd binary
+*.aep binary
+*.blend binary
+

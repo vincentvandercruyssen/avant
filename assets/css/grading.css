@@ -331,9 +331,16 @@
 
 .rubric-student-header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
   align-items: center;
   margin-bottom: var(--margin-bottom);
+}
+
+.rubric-student-header .tab-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .student-overall-score {
