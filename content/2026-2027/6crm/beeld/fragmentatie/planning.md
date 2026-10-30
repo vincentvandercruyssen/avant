@@ -26,20 +26,19 @@
 * **CRS27:** Het onderzoeksdocument tijdig inleveren in de voorziene Smartschool-uploadzone.
 * **16.03:** Toelichten hoe fotografische deconstructie en beeldbewerking betekenis en spanning geven aan een samengesteld beeld.
 
-## Les 2 19/10/2026 (Beeld, 13:30 - 15:20)
+## Les 2 30/10/2026 (Beeld)
 
-### Fragmentatie: Keuze techniek, experimentele testshots en compositieopbouw
+### Fragmentatie: Keuze techniek en testshots
 
 ### Lesverloop & inhoud
 1. **Keuze en technische voorbereiding:**
-   * Definitieve keuze van één fragmentatietechniek op basis van het vooronderzoek.
-   * Bepalen van de benodigde apparatuur en setting (camera, statief, flatbedscanner, glas, typografische prints of rekwisieten).
-2. **Praktijkexperimenten en testopnames op de schoolcampus:**
-   * Uitvoeren van minimaal vijf gerichte testshots of experimenten (in klas, gangen, traphal of mediatheek).
-   * Bewust variëren in uitsnedes, camerastandpunten, scanbewegingen, laagoverlappingen of typografische interacties.
+   * Keuze van één fragmentatietechniek op basis van het vooronderzoek.
+   * Bepalen van de benodigde apparatuur en setting.
+2. **Testopnames:**
+   * Uitvoeren van minimaal vijf gerichte testshots of experimenten.
 3. **Beeldselectie en controle in Adobe Bridge:**
    * Testopnames overdragen naar de projectmap `01_testshots/`.
-   * Beoordelen van scherpte, compositieritme, contrast en snijlijnen via schermvullende inspectie.
+   * Beoordelen van scherpte, compositie, contrast en snijlijnen.
    * Selecteren van de beste testresultaten als fundament voor het finale werk.
 4. **Bundeling van de testfase:**
    * Samenvoegen van de minimaal vijf testshots op één A4 in een compact overzichtsdocument (`VoornaamA_Fragmentatie-Testshots.pdf`).
