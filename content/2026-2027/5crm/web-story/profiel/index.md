@@ -79,7 +79,7 @@ indieningen:
         gewicht: 1
         criterium: "Bij elk getekend onderdeel op het wireframe doelgericht de exacte, semantisch passende HTML-tags noteren (h1, h2, p, img, ul/ol met li, a)."
       - code: "CRS03"
-        gewicht: 1
+        gewicht: 2
         criterium: "Vooraf een doordacht bouwplan op papier uittekenen waarin de structuur van de webpagina gepland wordt vóór het coderen start."
       - code: "CRS24"
         gewicht: 1

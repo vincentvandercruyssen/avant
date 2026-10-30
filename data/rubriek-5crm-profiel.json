@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-profiel",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-30T23:26:15.244+01:00",
+  "lastUpdated": "2026-10-31T00:49:28.854+01:00",
   "submissions": {
     "interview": {
       "id": "interview",
@@ -490,7 +490,7 @@
       "criteriaWeights": {
         "CRS01": 1,
         "CRS02": 1,
-        "CRS03": 1,
+        "CRS03": 2,
         "CRS24": 1,
         "CRS25": 1,
         "CRS04": 1,
@@ -511,7 +511,7 @@
             },
             {
               "code": "CRS03",
-              "gewicht": 1
+              "gewicht": 2
             }
           ]
         },
@@ -544,7 +544,200 @@
           ]
         }
       ],
-      "evaluations": {}
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 3,
+            "CRS03": 3,
+            "CRS04": 2,
+            "CRS24": 2,
+            "CRS25": 3,
+            "GEC01": 2
+          },
+          "feedback": "Uitstekend bouwplan. Je hebt de gevraagde onderdelen helder afgebakend en je HTML-tags kloppen, al ontbreken de kleinere tussentitels. De vlakverdeling binnen het schermkader is goed overzichtelijk. Let bij het inleveren wel op de bestandsnaamgeving.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 2.5,
+            "4.6": 2
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 3,
+            "CRS03": 2,
+            "CRS04": 3,
+            "CRS24": 2,
+            "CRS25": 2,
+            "GEC01": 3
+          },
+          "feedback": "Inhoudelijk goed en doordacht. Je hebt de HTML-tags nauwkeurig aangeduid, inclusief de nesting van list items binnen je lijst en de link. Let er wel op dat je foto niet helemaal scherp is en gekanteld staat. Neem je foto de volgende keer recht van boven. Niet elk gevraagd onderdeel (zoals de hobby's en persoonlijke top) is even duidelijk in de lay-out opgenomen.",
+          "scores": {
+            "4.1": 2,
+            "4.2": 2,
+            "4.6": 3
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS03": 3,
+            "CRS04": 2,
+            "CRS24": 3,
+            "CRS25": 3,
+            "GEC01": 2
+          },
+          "feedback": "Een voorbeeldig wireframe. De vlakverdeling binnen het schermkader zit evenwichtig in elkaar, alle onderdelen zijn aanwezig en de HTML-tags kloppen helemaal. De gele markeringen maken je bouwplan extra duidelijk. Denk er bij het uploaden wel steeds aan om je bestanden de juiste naam te geven.",
+          "scores": {
+            "4.1": 2.8,
+            "4.2": 3,
+            "4.6": 2
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 3,
+            "CRS03": 3,
+            "CRS04": 2,
+            "CRS24": 2,
+            "CRS25": 3,
+            "GEC01": 2
+          },
+          "feedback": "Technisch een prima bouwplan. Je hebt alle onderdelen netjes voorzien en je tags kloppen helemaal, inclusief het onderscheid tussen ongeordende en geordende lijsten. Denk er nog aan om vooraf een schermkader te tekenen rond je lay-out. Een belangrijk werkpunt is je bestandsnaam: gebruik steeds de afgesproken structuur.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 2.5,
+            "4.6": 2
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 0,
+            "CRS03": 2,
+            "CRS04": 2,
+            "CRS24": 2,
+            "CRS25": 3,
+            "GEC01": 2
+          },
+          "feedback": "Mooi dat je alle zes de verplichte onderdelen een duidelijke plaats hebt gegeven. Je hebt de basistags (h1, h2, p, img) al genoteerd. Voor de hobby's en persoonlijke top werden geen lijst-tags gebruikt, en de link werd niet voorzien van een a-tag. Verder is dit al een goede aanzet.",
+          "scores": {
+            "4.1": 1.5,
+            "4.2": 2.5,
+            "4.6": 2
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 1,
+            "CRS04": 2,
+            "CRS24": 1,
+            "CRS25": 0,
+            "GEC01": 3
+          },
+          "feedback": "De foto van je schets is wat onduidelijk. Zorg altijd voor een scherpe, goed belichte foto recht van boven. Inhoudelijk is je schets nog te beperkt: de bedoeling was om binnen een schermkader alle gevraagde onderdelen uit te tekenen, inclusief de bijbehorende tags.",
+          "scores": {
+            "4.1": 0.5,
+            "4.2": 0.5,
+            "4.6": 2.5
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS03": 3,
+            "CRS04": 3,
+            "CRS24": 2,
+            "CRS25": 3,
+            "GEC01": 2
+          },
+          "feedback": "Toffe en dynamische lay-out. Je hebt een boeiend ritme gecreëerd door beeld en tekst af te wisselen, en alle onderdelen zijn aanwezig. De tags zijn goed geplaatst, al ontbreken de li-tags nog. Teken voortaan ook een beeldschermkader om de vensterrand vooraf vast te leggen.",
+          "scores": {
+            "4.1": 2.8,
+            "4.2": 2.5,
+            "4.6": 2.5
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 0,
+            "CRS04": 0,
+            "CRS24": 0,
+            "CRS25": 0,
+            "GEC01": 0
+          },
+          "feedback": "De opdracht werd nog niet ingediend. Te remediëren via de te laat-map op Smartschool.",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.6": 0
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS03": 3,
+            "CRS04": 2,
+            "CRS24": 2,
+            "CRS25": 3,
+            "GEC01": 2
+          },
+          "feedback": "Leuk dat je met twee verschillende lay-outs hebt geëxperimenteerd en dat alle onderdelen netjes binnen een schermkader staan. Let bij de HTML-tags wel op de juiste notatie: gebruik h1 en h2 in plaats van heading, kies voor echte lijst-tags (ul of ol met li) voor je opsommingen en gebruik a voor hyperlinks. Hernoem je bestanden voor het inleveren zoals gevraagd.",
+          "scores": {
+            "4.1": 2,
+            "4.2": 2.5,
+            "4.6": 2
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 0,
+            "CRS04": 1,
+            "CRS24": 0,
+            "CRS25": 0,
+            "GEC01": 1
+          },
+          "feedback": "Je hebt een digitaal pdf-bestand ingeleverd in plaats van een analoge schets op papier. Dat was op zich geen probleem geweest als het bestand ook compleet was. Een groot deel van de gevraagde onderdelen ontbreekt, net zoals de bijbehorende HTML-tags.",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.6": 1
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 0,
+            "CRS04": 0,
+            "CRS24": 0,
+            "CRS25": 0,
+            "GEC01": 0
+          },
+          "feedback": "De opdracht werd nog niet ingediend. Te remediëren via de te laat-map op Smartschool.",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.6": 0
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
     },
     "toets-html": {
       "id": "toets-html",
