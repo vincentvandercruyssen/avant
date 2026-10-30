@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-profiel",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-30T17:14:44.008+01:00",
+  "lastUpdated": "2026-10-30T19:29:57.877+01:00",
   "submissions": {
     "interview": {
       "id": "interview",
@@ -275,7 +275,212 @@
           ]
         }
       ],
-      "evaluations": {}
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "13.01": 2,
+            "13.02": 2,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 3,
+            "CRS06": 2,
+            "GEC01": 3
+          },
+          "feedback": "Goed gewerkt! Je document is overzichtelijk opgebouwd en het is heel fijn dat je je aanpassingen op de screenshot met duidelijke kaders hebt aangeduid. Bij afbeeldingen keek je naar de omliggende <a>-link in plaats van naar de <img>-tag met src, en een keuzemenu of lijst structureer je met <ul> in plaats van <div>. Sluit je tags ook altijd netjes af met > (en </p> op het einde).",
+          "scores": {
+            "4.1": 4.5,
+            "4.3": 5,
+            "4.6": 6
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "13.01": 3,
+            "13.02": 2,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 2,
+            "CRS06": 2,
+            "GEC01": 3
+          },
+          "feedback": "Goed gezocht op Wikipedia en een fijne screenshot van je lokale aanpassing! Het is beter om de vragen of tussentitels er ook bij te zetten, zodat je notities achteraf duidelijk blijven. Bij de nummering van de koppen kon je nog toelichten dat het cijfer oploopt van grote hoofdtitel (h1) naar kleinere tussentitels. Let tot slot op de juiste benamingen in de code: een afbeelding gebruikt src (niet resource) en een lijst combineert <ul> met <li>.",
+          "scores": {
+            "4.1": 5,
+            "4.3": 5,
+            "4.6": 5
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "13.01": 2,
+            "13.02": 2,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 3,
+            "CRS06": 2,
+            "GEC01": 3
+          },
+          "feedback": "Mooi en verzorgd document met heldere antwoorden. Kijk bij de koppen wel iets hoger in de code: rond de <span> zit de eigenlijke <h1>-tag, en tussentitels gebruiken <h2> of <h3> in plaats van <div>. Ook bij de afbeelding keek je naar de klikbare <a href>-link eromheen in plaats van naar src in <img>. Let nog op kleine typfoutjes in je tags, zoals <li> in plaats van <il> en een sluithaakje >. Verder goed gewerkt.",
+          "scores": {
+            "4.1": 4.5,
+            "4.3": 5,
+            "4.6": 6
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "13.01": 1,
+            "13.02": 0,
+            "15.04": 0,
+            "CRS01": 2,
+            "CRS04": 1,
+            "CRS06": 1,
+            "GEC01": 2
+          },
+          "feedback": "Je maakte een goed begin met de eerste twee onderdelen, al mocht de uitleg bij de nummering van de koppen iets concreter en mis je de sluithaakjes >. De rest van het onderzoek ontbreekt helaas: zowel het hacken met screenshot als de vragen over afbeeldingen, links en lijstjes werden niet ingevuld. Werk een opdracht altijd volledig af voor je indient.",
+          "scores": {
+            "4.1": 1.5,
+            "4.3": 1,
+            "4.6": 3
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "13.01": 3,
+            "13.02": 2,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "GEC01": 3
+          },
+          "feedback": "Sterk gewerkt! Fijn dat je je document nog hebt aangevuld, en je aanpassingen op de Wikipedia-pagina zijn leuk en grondig uitgewerkt. Inhoudelijk zit bijna alles juist: enkel bij <img> gebruik je het attribuut src in plaats van href. Vergeet je tags niet af te sluiten met > en lees je tekst nog even na op kleine typfoutjes.",
+          "scores": {
+            "4.1": 5,
+            "4.3": 6,
+            "4.6": 6
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "13.01": 2,
+            "13.02": 1,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 2,
+            "CRS06": 1,
+            "GEC01": 3
+          },
+          "feedback": "Fijn dat je je document overzichtelijk met tussentitels en vragen hebt opgebouwd! Er zitten wel nog een paar foutjes in je antwoorden: <p> staat voor paragraph (niet page) en bij een afbeelding hoort het attribuut src (niet resource). Je antwoordde dat de nummering van de koppen 'geordend per sectie' is, maar de cijfers geven de hiërarchie aan (hoe kleiner het cijfer van h1 naar h6, hoe groter de titel). Daarnaast herkent de browser een link aan de <a>-tag (niet aan de blauwe tekst) en bouw je lijsten op met <ul> en <li> in plaats van <div>.",
+          "scores": {
+            "4.1": 3.5,
+            "4.3": 4,
+            "4.6": 5
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "13.01": 2,
+            "13.02": 1,
+            "15.04": 2,
+            "CRS01": 3,
+            "CRS04": 1,
+            "CRS06": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt al een aantal onderdelen vlot gevonden in de broncode. Bij de laatste vragen zat je wel verkeerd: een hyperlink is een <a>-tag (rel is een attribuut) en lijsten bouw je op met <ul> en <li> in plaats van <input> of <div>. Vermeld bij het hacken ook dat de wijziging enkel lokaal zichtbaar is en hou je tekst op de screenshot een beetje schoolgeschikt. Neem voortaan ook de vragen en tussentitels op, en let op de d/t-fout bij 'is veranderd'.",
+          "scores": {
+            "4.1": 3.5,
+            "4.3": 4,
+            "4.6": 4
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "13.01": 2,
+            "13.02": 1,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 1,
+            "CRS06": 1,
+            "GEC01": 3
+          },
+          "feedback": "Goed dat je dit onderdeel stipt hebt ingediend, met een prima lokale aanpassing op Wikipedia! Omdat je enkel nummers zonder de vragen noteerde, liepen een aantal antwoorden mis: <p> staat voor paragraph (niet id), bij afbeeldingen en links zocht je de attributen src en href (niet img en https), en lijsten maak je met <ul> en <li> in plaats van h2 en h3. Neem de vragen voortaan mee op voor meer overzicht.",
+          "scores": {
+            "4.1": 3.5,
+            "4.3": 4,
+            "4.6": 4
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "13.01": 0,
+            "13.02": 0,
+            "15.04": 1,
+            "CRS01": 0,
+            "CRS04": 0,
+            "CRS06": 0,
+            "GEC01": 1
+          },
+          "feedback": "Je hebt de Wikipedia-pagina op zich wel creatief aangepast in de browser, maar je leverde enkel een pdf-afdruk van de webpagina zelf in. Het eigenlijke onderzoeksdossier met antwoorden op de zes opsporingsvragen en een screenshot met de ontwikkelaarstools ontbreekt volledig. Lees de opdrachtinstructies altijd grondig na: dit onderdeel kan je remediëren via de inhaaltaak.",
+          "scores": {
+            "4.1": 0,
+            "4.3": 1,
+            "4.6": 1
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "13.01": 2,
+            "13.02": 1,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 2,
+            "CRS06": 1,
+            "GEC01": 3
+          },
+          "feedback": "Je lokale aanpassing en uitleg over het verversen zitten goed! In de broncode liet je je wel misleiden door Wikipedia-namen: de hoofdtitel is <h1> (niet mw) en de nummering bepaalt de hiërarchie van groot naar klein (het lettertype komt uit CSS). Verder gebruikt een afbeelding het attribuut src (niet a), een link href (niet een id zoals mwjg) en maak je lijsten met <ul> en <li> in plaats van <div>. De vraag over welk tag-duo samenwerkt bij lijstjes bleef nog open.",
+          "scores": {
+            "4.1": 3.5,
+            "4.3": 4,
+            "4.6": 5
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "13.01": 3,
+            "13.02": 3,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "GEC01": 3
+          },
+          "feedback": "Heel sterk en bijzonder verzorgd gewerkt! Je hebt een knap overzichtelijk document opgebouwd met nette tussentitels en duidelijke volzinnen. Inhoudelijk klopt alles en de extra screenshots uit het Elements-paneel zijn een mooie meerwaarde. Let enkel nog op kleine d/t-foutjes (zoals veranderd en verwijderd).",
+          "scores": {
+            "4.1": 6,
+            "4.3": 6,
+            "4.6": 6
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {
+            "13.01": 2,
+            "13.02": 2,
+            "15.04": 3,
+            "CRS01": 3,
+            "CRS04": 2,
+            "CRS06": 2,
+            "GEC01": 3
+          },
+          "feedback": "Goed gewerkt, en goed dat je bij het \"hacken\" ook de exacte HTML-regel voor en na je aanpassing hebt genoteerd. De vraag over de nummering van de koppen ontbreekt wel nog. Let daarnaast op een paar details: een afbeelding gebruikt src (niet resource), een hyperlink is de <a>-tag (niet mw:wikilink) en <ul> maakt een opsommingslijst in plaats van een tabel. Schrijf je tags volledig met <h1> en > en kijk je tekst nog even na op typfoutjes.",
+          "scores": {
+            "4.1": 4.5,
+            "4.3": 5,
+            "4.6": 5
+          }
+        }
+      }
     },
     "wireframe": {
       "id": "wireframe",
