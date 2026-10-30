@@ -69,6 +69,31 @@
   background: var(--bgcolor);
 }
 
+.badge-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  color: var(--text);
+  border: 1px solid color-mix(in srgb, var(--text) 25%, transparent);
+  cursor: pointer;
+  user-select: none;
+  border-radius: 2px;
+  background: var(--fgcolor);
+}
+
+.badge-mode-toggle:hover {
+  border-color: color-mix(in srgb, var(--text) 50%, transparent);
+}
+
+.badge-mode-toggle input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--color-accent, #0284c7);
+  margin: 0;
+}
+
 .badge-status-server {
   display: inline-flex;
   align-items: center;
@@ -565,6 +590,73 @@
   min-width: 220px;
   font-size: 0.875rem;
   line-height: 1.45;
+}
+
+.direct-score-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.input-crit-direct-score {
+  width: 4.5rem;
+  padding: 0.35rem 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+  background: var(--fgcolor);
+  color: var(--text);
+  border: 1px solid color-mix(in srgb, var(--text) 25%, transparent);
+  border-radius: 2px;
+  transition: all 0.15s ease;
+}
+
+.input-crit-direct-score:focus {
+  outline: none;
+  border-color: var(--color-accent, #0284c7);
+  background: var(--bgcolor);
+}
+
+.direct-score-subweight {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--text) 55%, transparent);
+  white-space: nowrap;
+}
+
+.quick-test-input-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  background: color-mix(in srgb, var(--text) 5%, transparent);
+  border: 1px dashed color-mix(in srgb, var(--text) 25%, transparent);
+  border-radius: 2px;
+}
+
+.quick-test-input-wrap label {
+  font-weight: 600;
+  color: color-mix(in srgb, var(--text) 80%, transparent);
+  cursor: pointer;
+}
+
+.input-quick-test-score {
+  width: 3.5rem;
+  padding: 0.15rem 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  background: var(--fgcolor);
+  color: var(--text);
+  border: 1px solid color-mix(in srgb, var(--text) 30%, transparent);
+  border-radius: 2px;
+}
+
+.input-quick-test-score:focus {
+  outline: none;
+  border-color: var(--color-accent, #0284c7);
 }
 
 .niveau-pill-group {

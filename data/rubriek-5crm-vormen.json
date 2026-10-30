@@ -8,6 +8,7 @@
     "pinboard-storyboard": {
       "id": "pinboard-storyboard",
       "title": "Vormen 3.1+3.2 Pinboard + Storyboard",
+      "deadline": "13/09",
       "weight": 6,
       "criteriaWeights": {
         "CRS01": 1,
@@ -242,6 +243,7 @@
     "oplevering": {
       "id": "oplevering",
       "title": "Vormen 4 Oplevering",
+      "deadline": "27/09",
       "weight": 15,
       "criteriaWeights": {
         "CRS21": 1,

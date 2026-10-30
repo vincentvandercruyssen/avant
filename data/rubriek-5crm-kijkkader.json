@@ -8,6 +8,7 @@
     "bewerkingen": {
       "id": "bewerkingen",
       "title": "Kijkkader 4.3 Bewerkingen",
+      "deadline": "06/10",
       "weight": 12,
       "criteriaWeights": {
         "CRS01": 1,
@@ -328,6 +329,7 @@
     "drieluik": {
       "id": "drieluik",
       "title": "Kijkkader 4.4 Drieluik",
+      "deadline": "11/10",
       "weight": 3,
       "criteriaWeights": {
         "CRS22": 1,

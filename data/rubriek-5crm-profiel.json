@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-profiel",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-30T19:29:57.877+01:00",
+  "lastUpdated": "2026-10-30T21:37:45.863+01:00",
   "submissions": {
     "interview": {
       "id": "interview",
@@ -545,6 +545,137 @@
         }
       ],
       "evaluations": {}
+    },
+    "toets-html": {
+      "id": "toets-html",
+      "title": "Toets 01 HTML",
+      "deadline": "18/09",
+      "weight": 12,
+      "useRubrics": false,
+      "criteriaWeights": {
+        "CRS18": 1,
+        "13.08": 1
+      },
+      "clusters": [
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS18",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "13.08",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {},
+          "feedback": "Heel goed gewerkt! Sterke kennis van tags en elementen. Denk er bij een top 3 of genummerde volgorde aan om <ol> te gebruiken in plaats van <ul>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 10,
+            "4.4": 10
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {},
+          "feedback": "Zeer knap gedaan! Je hebt de logica en tags uitstekend beet. Let er enkel op dat je bij een element ook effectief tekstinhoud tussen je openings- en sluitingstag plaatst.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 11,
+            "4.4": 11
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {},
+          "feedback": "Mooi gewerkt! Je genummerde lijst en de basisvragen zijn perfect in orde. Verwar het <title>-element en de grootste kop (<h1>) niet met elkaar of met de <head>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 8,
+            "4.4": 8
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {},
+          "feedback": "Prima resultaat! Je begrijpt de opbouw en tags heel goed. Denk er bij genummerde lijsten enkel aan om <ol> (ordered list) te gebruiken in plaats van <ul>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 9,
+            "4.4": 9
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {},
+          "feedback": "Goed gewerkt! Je kent de tags en basisstructuur vlot. Let nog goed op het verschil tussen <ol> (ordered / cijfers) en <ul> (unordered / bullets).\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 9,
+            "4.4": 9
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {},
+          "feedback": "Goede start! Je begrijpt alinea's en het basisprincipe van een HTML-document. Besteed nog extra aandacht aan de specifieke tags zoals <title> en <h1>, en oefen op het volledig uitschrijven van een <ol>-lijst met <li>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 6,
+            "4.4": 6
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {},
+          "feedback": "Je hebt het concept van geordende lijsten al begrepen. Neem de vaste opbouw van een HTML-element (openings-, inhoud en sluitingstag) en het verpakken van items in <li>-tags nog eens door.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 5,
+            "4.4": 5
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {},
+          "feedback": "Goed gedaan! De theorie en koppen zitten goed. Let nog op het <title>-element voor het tabblad, en onthoud dat lijstitems altijd met <li>-tags in één gezamenlijke <ol> worden geplaatst.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 8,
+            "4.4": 8
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {},
+          "feedback": "Vlekkeloze toets! Zowel de theorie, elementanatomie als de code voor geordende lijsten zitten helemaal juist.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 12,
+            "4.4": 12
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {},
+          "feedback": "Uitstekend werk! Je hebt zowel de documentstructuur, de tags als de syntax van geordende lijsten volledig foutloos onder de knie.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 12,
+            "4.4": 12
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {},
+          "feedback": "Al een goed begin, je kent de begrippen en het verschil tussen lijsttypes goed. Oefen nog op het tabbladtitel-element (<title>) en het volledig structureren van een <ol>-lijst met <li>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 7,
+            "4.4": 7
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {},
+          "feedback": "Fijn dat de afkorting en de elementopbouw al lukken. Herneem de theorie rond de documentstructuur (<body>, <title>) en oefen vooral op het uitschrijven van tags (<h1>) en genummerde lijsten (<ol> met <li>).\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 3,
+            "4.4": 3
+          }
+        }
+      }
     },
     "oplevering": {
       "id": "oplevering",

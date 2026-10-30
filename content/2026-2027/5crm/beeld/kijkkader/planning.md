@@ -98,7 +98,7 @@
      * `VoornaamA_Kijkkader-Standpunt-1.jpg` tot `-3.jpg`
      * `VoornaamA_Kijkkader-Lijnen-1.jpg` tot `-3.jpg`
 3. **Inlevering 12 beelden in Smartschool:**
-   * De 12 geëxporteerde JPEG-bestanden uploaden in de eerste Smartschool-uploadmap (deadline 06/10).
+   * De 12 geëxporteerde JPEG-bestanden uploaden in de eerste Smartschool-uploadmap.
 4. **Beeldselectie en opstart drieluik:**
    * Drie beelden selecteren die samen een inhoudelijk en visueel samenhangend concept vormen (bv. architectuur & geometrie, mens & interactie of detail & textuur).
    * Nieuw Photoshop-canvas opzetten via het tabblad Afdrukken: **A4 liggend (297 × 210 mm)** met witte achtergrond (`VoornaamA_Kijkkader-Drieluik.psd`).
@@ -112,7 +112,7 @@
 * **CRS11:** Beeldmateriaal doelgericht kadreren volgens de visuele grammatica (regel van derden, dieptelagen, standpunten, lijnen).
 * **CRS20:** De drie gekozen foto's proportioneel bundelen in een strak gecomponeerd drieluik op A4-formaat.
 * **CRS23:** Bestanden controleren op hoge resolutie en maximale JPEG-exportkwaliteit.
-* **GEC01:** De deadline (06/10) en inleverafspraken voor de 12 bewerkingen stipt naleven.
+* **GEC01:** De deadline en inleverafspraken voor de 12 bewerkingen stipt naleven.
 
 ## Les 5 06/10/2026 (Beeld, 11:00 - 12:40)
 
@@ -129,7 +129,7 @@
 3. **Export en kwaliteitscontrole:**
    * Drieluik exporteren als hoogwaardige JPEG naar `02_exports/VoornaamA_Kijkkader-Drieluik.jpg`.
 4. **Inlevering drieluik in Smartschool:**
-   * Het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`) uploaden in de tweede Smartschool-uploadmap (deadline 11/10).
+   * Het Photoshop-werkbestand (`VoornaamA_Kijkkader-Drieluik.psd`) en de geëxporteerde JPEG (`VoornaamA_Kijkkader-Drieluik.jpg`) uploaden in de tweede Smartschool-uploadmap.
 
 ### Leerplandoelen
 * **CRS04:** Het Photoshop-werkbestand (`.psd`) ordelijk en overzichtelijk opbouwen met behouden hulplijnen en afzonderlijke beeldlagen.
@@ -137,4 +137,4 @@
 * **CRS22:** Drie sterke beelden esthetisch en harmonieus samenbrengen tot één visueel en inhoudelijk samenhangend drieluik.
 * **CRS24:** Een evenwichtige en strak uitgelijnde opmaak toepassen op liggend A4-formaat met drie kolommen en verzorgde marges.
 * **CRS27:** Het Photoshop-werkbestand en de JPEG-export conform de naamconventie opleveren in de voorziene Smartschool-uploadmap.
-* **GEC01:** De finale deadline (11/10) en inleverafspraken voor het drieluik stipt naleven.
+* **GEC01:** De finale deadline en inleverafspraken voor het drieluik stipt naleven.

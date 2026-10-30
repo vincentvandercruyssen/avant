@@ -38,6 +38,7 @@
     activeSubIndex: 0,
     students: [], // Array van { id, hash, name, displayLabel, shortName }
     submissionEvals: {},
+    savedData: { submissions: {} },
     activeStudentIndex: 0,
     fileHandle: null,
     isDirty: false,
@@ -138,6 +139,16 @@
     };
   }
 
+  function isRubricSubmission(sub) {
+    if (!sub) return true;
+    if (sub.useRubrics !== undefined) return sub.useRubrics;
+    if (sub.type === 'cijfer') return false;
+    const titleLower = (sub.title || '').toLowerCase();
+    const idLower = (sub.id || '').toLowerCase();
+    if (titleLower.includes('toets') || idLower.includes('toets')) return false;
+    return true;
+  }
+
   function getActiveSubEvals() {
     const sub = getActiveSubmission();
     if (!state.submissionEvals[sub.id]) {
@@ -164,6 +175,7 @@
         title: sub.title,
         ...(formattedDl ? { deadline: formattedDl } : {}),
         weight: sub.weight,
+        ...(sub.useRubrics !== undefined ? { useRubrics: sub.useRubrics } : {}),
         criteriaWeights,
         clusters: sub.clusters.map((c) => ({
           id: c.id,
@@ -408,6 +420,7 @@
     // 2. Bestaande evaluaties & gewichten inladen uit data/rubriek-*.json
     const savedDataEl = document.getElementById('avant-saved-evaluations-data');
     const savedData = safeParseJson(savedDataEl);
+    state.savedData = savedData || { submissions: {} };
     if (savedData && typeof savedData === 'object') {
       if (savedData.submissions) {
         Object.entries(savedData.submissions).forEach(([subId, subData]) => {
@@ -416,6 +429,9 @@
           // Gewichten herstellen indien aangepast in data
           const targetSub = state.submissions.find((s) => s.id === subId);
           if (targetSub) {
+            if (subData.useRubrics !== undefined) {
+              targetSub.useRubrics = subData.useRubrics;
+            }
             if (!targetSub.deadline && subData.deadline) {
               targetSub.deadline = subData.deadline;
             }
@@ -491,6 +507,20 @@
 
     // 7. Controleer lokale Save Server
     await checkServerStatus();
+
+    // Controleer of metadata in frontmatter (zoals titel) afwijkt van de opgeslagen JSON en synchroniseer automatisch
+    if (state.isServerConnected && savedData && savedData.submissions) {
+      let needsMetadataSync = false;
+      state.submissions.forEach((sub) => {
+        const savedSub = savedData.submissions[sub.id];
+        if (savedSub && savedSub.title !== sub.title) {
+          needsMetadataSync = true;
+        }
+      });
+      if (needsMetadataSync) {
+        triggerAutoSave();
+      }
+    }
 
     updateStatus('Klaar voor invoer. Duid per succescriterium het niveau aan; clusterpunten worden gewogen en live berekend.', 'info');
   }
@@ -630,6 +660,20 @@
       });
     }
 
+    const checkboxUseRubrics = document.getElementById('checkbox-use-rubrics');
+    if (checkboxUseRubrics) {
+      checkboxUseRubrics.addEventListener('change', () => {
+        const sub = getActiveSubmission();
+        sub.useRubrics = checkboxUseRubrics.checked;
+        triggerAutoSave();
+        const currentStudent = state.students[state.activeStudentIndex];
+        if (currentStudent) {
+          renderStudentRubric(currentStudent);
+          updateStudentHeaderScore(currentStudent.hash);
+        }
+      });
+    }
+
     // Toetsenbordnavigatie (Pijltje links/rechts tussen leerlingen)
     window.addEventListener('keydown', (e) => {
       if (['input', 'textarea', 'select'].includes(document.activeElement?.tagName?.toLowerCase())) {
@@ -715,6 +759,11 @@
       if (weightBadge) {
         weightBadge.innerHTML = `Gewicht: <strong>${sub.weight} pt</strong>`;
       }
+    }
+
+    const checkboxUseRubrics = document.getElementById('checkbox-use-rubrics');
+    if (checkboxUseRubrics) {
+      checkboxUseRubrics.checked = isRubricSubmission(sub);
     }
 
     // Herteken studentweergave & matrix
@@ -1004,18 +1053,75 @@
       return;
     }
 
+    const useRubrics = isRubricSubmission(sub);
+
+    let commonScore = null;
+    if (!useRubrics && sub.clusters && sub.clusters.length > 0) {
+      const firstScore = studentEval.scores ? studentEval.scores[sub.clusters[0].id] : undefined;
+      if (firstScore !== undefined && sub.clusters.every((c) => studentEval.scores && studentEval.scores[c.id] === firstScore)) {
+        commonScore = firstScore;
+      }
+    }
+
     // Feedbacksectie voor de actieve leerling (boven clusters-container)
     feedbackBox.innerHTML = `
       <div class="feedback-header">
         <label for="student-feedback-input" class="feedback-label">
           💬 Feedback & Opmerkingen voor <strong>${escapeHtml(student.displayLabel)}</strong>:
         </label>
+        ${!useRubrics ? `
+          <div class="quick-test-input-wrap" title="Geef één toetsscore in die gelijktijdig wordt toegekend aan alle doelen van deze toets">
+            <label for="input-quick-score">Toetsscore (alle doelen):</label>
+            <input type="number" 
+                   id="input-quick-score" 
+                   class="input-quick-test-score" 
+                   min="0" 
+                   max="${sub.weight}" 
+                   step="0.5" 
+                   value="${commonScore !== null ? commonScore : ''}" 
+                   placeholder="bv. 9">
+            <span class="direct-score-subweight">/ ${sub.weight}</span>
+          </div>
+        ` : ''}
       </div>
       <textarea id="student-feedback-input" 
                 class="student-feedback-textarea" 
                 rows="4" 
                 placeholder="Typ gerichte individuele feedback voor deze leerling...">${escapeHtml(studentEval.feedback || '')}</textarea>
     `;
+
+    const quickInput = feedbackBox.querySelector('#input-quick-score');
+    if (quickInput) {
+      quickInput.addEventListener('input', () => {
+        const raw = quickInput.value.trim();
+        if (!subEvals[student.hash]) {
+          subEvals[student.hash] = { scores: {}, criteriaLevels: {} };
+        }
+        if (!subEvals[student.hash].scores) {
+          subEvals[student.hash].scores = {};
+        }
+
+        if (raw === '') {
+          sub.clusters.forEach((c) => {
+            delete subEvals[student.hash].scores[c.id];
+          });
+        } else {
+          const num = parseFloat(raw);
+          if (!isNaN(num)) {
+            const clamped = Math.max(0, Math.min(sub.weight, Math.round(num * 10) / 10));
+            sub.clusters.forEach((c) => {
+              subEvals[student.hash].scores[c.id] = clamped;
+            });
+          }
+        }
+
+        renderStudentRubric(student);
+        updateStudentHeaderScore(student.hash);
+        updateCompactTableRow(student.hash);
+        updateAllChipsStatus();
+        triggerAutoSave();
+      });
+    }
 
     const textarea = feedbackBox.querySelector('textarea');
     const autoResize = () => {
@@ -1044,7 +1150,19 @@
       clusterBox.className = 'rubric-cluster-card';
       clusterBox.id = `cluster-card-${cluster.id}`;
 
-      const clusterScoreInfo = calculateWeightedClusterScore(cluster, criteriaLevels, sub.weight);
+      let clusterScoreInfo = calculateWeightedClusterScore(cluster, criteriaLevels, sub.weight);
+      const directScore = studentEval.scores ? studentEval.scores[cluster.id] : undefined;
+      if (!clusterScoreInfo.isCalculated && directScore !== undefined && directScore !== '') {
+        const numScore = parseFloat(directScore);
+        clusterScoreInfo = {
+          isCalculated: true,
+          score: numScore,
+          avgLevel: sub.weight > 0 ? (numScore / sub.weight) * 3 : 0,
+          gradedCount: 1,
+          totalCount: cluster.criteria.length,
+          weighted: false
+        };
+      }
 
       clusterBox.innerHTML = `
         <div class="cluster-card-header">
@@ -1064,8 +1182,9 @@
       cluster.criteria.forEach((crit) => {
         const currentLevel = criteriaLevels[crit.code];
         const critWeight = crit.gewicht || 1;
+        const isGraded = useRubrics ? (currentLevel !== undefined) : (directScore !== undefined && directScore !== '');
         const critCard = document.createElement('div');
-        critCard.className = `crit-eval-row ${currentLevel !== undefined ? 'is-graded' : ''}`;
+        critCard.className = `crit-eval-row ${isGraded ? 'is-graded' : ''}`;
         critCard.id = `crit-row-${student.hash}-${crit.code}`;
 
         const doel = (state.leerplandoelen && state.leerplandoelen[crit.code]) || {};
@@ -1085,17 +1204,32 @@
             </button>
           </div>
           <div class="crit-text">${escapeHtml(crit.criterium || crit.omschrijving)}</div>
-          <div class="niveau-pill-group">
-            ${NIVEAUS.map((n) => `
-              <button type="button" 
-                      class="btn-niveau-pill niv-${n.level} ${currentLevel === n.level ? 'active' : ''}" 
-                      data-code="${crit.code}" 
-                      data-level="${n.level}">
-                <span class="pill-lvl">${n.label}</span>
-                <span class="pill-desc">${n.desc}</span>
-              </button>
-            `).join('')}
-          </div>
+          ${useRubrics ? `
+            <div class="niveau-pill-group">
+              ${NIVEAUS.map((n) => `
+                <button type="button" 
+                        class="btn-niveau-pill niv-${n.level} ${currentLevel === n.level ? 'active' : ''}" 
+                        data-code="${crit.code}" 
+                        data-level="${n.level}">
+                  <span class="pill-lvl">${n.label}</span>
+                  <span class="pill-desc">${n.desc}</span>
+                </button>
+              `).join('')}
+            </div>
+          ` : `
+            <div class="direct-score-group">
+              <input type="number" 
+                     class="input-crit-direct-score" 
+                     data-cluster-id="${cluster.id}" 
+                     data-code="${crit.code}" 
+                     min="0" 
+                     max="${sub.weight}" 
+                     step="0.5" 
+                     value="${directScore !== undefined ? directScore : ''}" 
+                     placeholder="-">
+              <span class="direct-score-subweight">/ ${sub.weight}</span>
+            </div>
+          `}
           ${showOfficialGoal ? `<div class="crit-official-doel">${escapeHtml(officialGoalText)}</div>` : ''}
         `;
 
@@ -1119,12 +1253,26 @@
           });
         }
 
-        critCard.querySelectorAll('.btn-niveau-pill').forEach((btn) => {
-          btn.addEventListener('click', () => {
-            const level = parseInt(btn.dataset.level, 10);
-            handleCriteriumLevelClick(student.hash, cluster, crit.code, level);
+        if (useRubrics) {
+          critCard.querySelectorAll('.btn-niveau-pill').forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const level = parseInt(btn.dataset.level, 10);
+              handleCriteriumLevelClick(student.hash, cluster, crit.code, level);
+            });
           });
-        });
+        } else {
+          const directInput = critCard.querySelector('.input-crit-direct-score');
+          if (directInput) {
+            directInput.addEventListener('input', () => {
+              handleDirectScoreChange(student.hash, cluster, directInput.value.trim());
+            });
+            directInput.addEventListener('keydown', (e) => {
+              if (e.key === 'Enter') {
+                directInput.blur();
+              }
+            });
+          }
+        }
 
         criteriaList.appendChild(critCard);
       });
@@ -1186,6 +1334,62 @@
     triggerAutoSave();
   }
 
+  function handleDirectScoreChange(studentHash, cluster, rawVal) {
+    const sub = getActiveSubmission();
+    const subEvals = getActiveSubEvals();
+
+    if (!subEvals[studentHash]) {
+      subEvals[studentHash] = { scores: {}, criteriaLevels: {} };
+    }
+    if (!subEvals[studentHash].scores) {
+      subEvals[studentHash].scores = {};
+    }
+
+    if (rawVal === '') {
+      delete subEvals[studentHash].scores[cluster.id];
+    } else {
+      const num = parseFloat(rawVal);
+      if (!isNaN(num)) {
+        const clamped = Math.max(0, Math.min(sub.weight, Math.round(num * 10) / 10));
+        subEvals[studentHash].scores[cluster.id] = clamped;
+      }
+    }
+
+    // Update UI cluster badge
+    const curScore = subEvals[studentHash].scores[cluster.id];
+    const badgeEl = document.getElementById(`calc-badge-${cluster.id}`);
+    if (badgeEl) {
+      if (curScore !== undefined) {
+        const info = {
+          isCalculated: true,
+          score: curScore,
+          avgLevel: sub.weight > 0 ? (curScore / sub.weight) * 3 : 0,
+          gradedCount: 1,
+          totalCount: cluster.criteria.length,
+          weighted: false
+        };
+        badgeEl.innerHTML = formatClusterScoreBadge(info, sub.weight);
+      } else {
+        badgeEl.innerHTML = formatClusterScoreBadge({ isCalculated: false, totalCount: cluster.criteria.length }, sub.weight);
+      }
+    }
+
+    // Update row is-graded state
+    cluster.criteria.forEach((crit) => {
+      const rowEl = document.getElementById(`crit-row-${studentHash}-${crit.code}`);
+      if (rowEl) {
+        rowEl.classList.toggle('is-graded', curScore !== undefined);
+      }
+    });
+
+    updateStudentHeaderScore(studentHash);
+    updateCompactTableRow(studentHash);
+    updateAllChipsStatus();
+
+    // Automatisch direct opslaan in /data/
+    triggerAutoSave();
+  }
+
   function setCriterionWeight(critCode, newWeight) {
     const sub = getActiveSubmission();
     sub.clusters.forEach((c) => {
@@ -1220,7 +1424,9 @@
         const scoreInfo = calculateWeightedClusterScore(cluster, evalData.criteriaLevels, sub.weight);
         if (scoreInfo.isCalculated) {
           evalData.scores[cluster.id] = scoreInfo.score;
-        } else {
+        } else if (evalData.scores && evalData.scores[cluster.id] !== undefined) {
+          // Direct ingevoerde cluster score behouden
+        } else if (evalData.scores) {
           delete evalData.scores[cluster.id];
         }
       });

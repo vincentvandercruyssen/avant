@@ -16,6 +16,7 @@ indieningen:
     titel: "Vormen 3.1+3.2 Pinboard + Storyboard"
     lesuren: 2
     gewicht: 6
+    deadline: 2026-09-13
     leerplandoelen:
       - code: "CRS03"
         gewicht: 2
@@ -37,6 +38,7 @@ indieningen:
     titel: "Vormen 4 Oplevering"
     lesuren: 4
     gewicht: 15
+    deadline: 2026-09-27
     leerplandoelen:
       - code: "CRS21"
         gewicht: 1

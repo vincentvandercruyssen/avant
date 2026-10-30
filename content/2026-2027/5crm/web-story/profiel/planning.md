@@ -8,11 +8,11 @@
    * Briefing van de introductieopdracht *Profiel* en inrichten van de OneDrive-vakmap voor Web.
 2. **Duo-interview:**
    * Willekeurige indeling in zes duo's (12 leerlingen) om elkaar te interviewen over biografie, minstens drie interesses, persoonlijke top, inspiratielink en beeldkeuze.
-   * Interviewnotities uitwerken en indienen als `VoornaamA_Profiel-Interview.pdf` in de Smartschool-uploadmap (deadline 04/09).
+   * Interviewnotities uitwerken en indienen als `VoornaamA_Profiel-Interview.pdf` in de Smartschool-uploadmap.
 3. **Onderzoek via Browser DevTools:**
    * Inspectiemissie op Wikipedia rond de eigen voornaam om de opbouw van broncode te ontleden.
    * Analyse van HTML-elementen en attributen (`<h1>` tot `<h6>`, `<span>`-nesting, `<p>`, `<img>` met `src`, `<a>` met `href`, `<ul>` en `<li>`).
-   * Lokale tekstaanpassing op de live Wikipedia-pagina uitvoeren ("Hacken"), screenshot vastleggen en bevindingen bundelen richting `VoornaamA_Profiel-Onderzoek.pdf` (deadline 11/09).
+   * Lokale tekstaanpassing op de live Wikipedia-pagina uitvoeren ("Hacken"), screenshot vastleggen en bevindingen bundelen richting `VoornaamA_Profiel-Onderzoek.pdf`.
 4. **Kennismaking code-editor:**
    * Verkenning van de werkomgeving in Visual Studio Code en live voorvertoning voor webprojecten.
 
@@ -24,7 +24,7 @@
 * **15.04:** De tekst op de live Wikipedia-pagina lokaal aanpassen en het resultaat vastleggen in een duidelijke screenshot.
 * **CRS01:** De opdrachtvereisten en naamgevingsafspraken toepassen voor `VoornaamA_Profiel-Interview.pdf` en de OneDrive-vakmap.
 * **CRS06:** Vlot en doelgericht werken met de ontwikkelaarstools van de webbrowser.
-* **GEC01:** De tussentijdse deadline (04/09) en inleverafspraken voor het interviewdocument stipt naleven.
+* **GEC01:** De tussentijdse deadline en inleverafspraken voor het interviewdocument stipt naleven.
 
 ## Les 2 11/09/2026 (Web)
 
@@ -33,10 +33,10 @@
 ### Lesverloop & inhoud
 1. **Afronding onderzoek:**
    * Antwoorden op de zes Wikipedia-opsporingsopdrachten en de screenshot van de lokale tekstaanpassing controleren op volledigheid.
-   * Onderzoeksdossier indienen als `VoornaamA_Profiel-Onderzoek.pdf` in de Smartschool-uploadmap (deadline 11/09).
+   * Onderzoeksdossier indienen als `VoornaamA_Profiel-Onderzoek.pdf` in de Smartschool-uploadmap.
 2. **Wireframe op papier:**
    * Analoge lay-outschets uittekenen met vakken voor alle zes verplichte profielonderdelen (naam, foto, introductie, interesses, persoonlijke top en inspiratielink).
-   * Elk getekend blok annoteren met de exacte HTML-tags (`<h1>`, `<h2>`, `<p>`, `<img>`, `<ul>`/`<ol>` met `<li>`, `<a>`) als voorbereiding op `VoornaamA_Profiel-Wireframe.jpg` (deadline 18/09).
+   * Elk getekend blok annoteren met de exacte HTML-tags (`<h1>`, `<h2>`, `<p>`, `<img>`, `<ul>`/`<ol>` met `<li>`, `<a>`) als voorbereiding op `VoornaamA_Profiel-Wireframe.jpg`.
 3. **Projectopzet & mappenstructuur:**
    * Hoofdmap `VoornaamA_Profiel/` met submap `images/` aanmaken in OneDrive (bestandsnamen in kleine letters zonder spaties of speciale tekens).
    * Projectmap openen in Visual Studio Code en het basisbestand `index.html` opzetten.
@@ -58,7 +58,7 @@
 * **CRS06:** Vlot en doelgericht werken met browserontwikkelaarstools en Visual Studio Code.
 * **CRS24:** Een overzichtelijke en evenwichtige vlakverdeling binnen het getekende beeldschermkader opzetten.
 * **CRS25:** Alle zes verplichte profielonderdelen uit het duo-interview doelgericht opnemen in de lay-outschets.
-* **GEC01:** De tussentijdse deadline (11/09) en inleverafspraken voor het onderzoeksdocument stipt naleven.
+* **GEC01:** De tussentijdse deadline en inleverafspraken voor het onderzoeksdocument stipt naleven.
 
 ## Les 3 18/09/2026 (Web)
 
@@ -68,7 +68,7 @@
 1. **Toets HTML 01:**
    * Evaluatie over HTML-documentstructuur (`<head>` versus `<body>`), semantische tags, nesting en attributen (`src`, `alt`, `href`).
 2. **Inlevering wireframe:**
-   * Analoge schets met geannoteerde HTML-tags controleren en een scherpe foto indienen als `VoornaamA_Profiel-Wireframe.jpg` in de Smartschool-uploadmap (deadline 18/09).
+   * Analoge schets met geannoteerde HTML-tags controleren en een scherpe foto indienen als `VoornaamA_Profiel-Wireframe.jpg` in de Smartschool-uploadmap.
 3. **Uitwerking HTML-inhoud (`index.html`):**
    * Alle profielonderdelen uit het duo-interview opbouwen met semantische HTML5-tags (`<h1>`, `<h2>`, `<p>`, `<strong>`, `<em>`, `<img>`, `<ul>`/`<li>`, `<ol>`/`<li>`, `<a target="_blank">`) op basis van het wireframe.
    * Beeldmateriaal opslaan als `images/foto.jpg` en koppelen met een foutloos relatief pad en zinvolle `alt`-beschrijving.
@@ -78,6 +78,7 @@
    * **Koppeling extern stijlblad:** Aanmaken van `style.css` in de hoofdmap en koppelen via `<link rel="stylesheet" href="style.css">` in de `<head>` van `index.html`.
 
 ### Leerplandoelen
+* **13.08:** HTML-vaktaal en begrippen rond documentstructuur (`<head>`, `<body>`, tags en attributen) correct toepassen in Toets HTML 01.
 * **CRS01:** Productievereisten, bestandsnaamgeving (`VoornaamA_Profiel-Wireframe.jpg`) en webconventies (kleine letters, relatieve paden) toepassen.
 * **CRS02:** De juiste semantische HTML-elementen doelgericht noteren op het wireframe en toepassen in `index.html`.
 * **CRS03:** Het uitgetekende bouwplan op papier afronden en als leidraad inzetten bij het coderen.
@@ -87,7 +88,7 @@
 * **CRS20:** Teksten, lijsten, externe inspiratielink en beeldmateriaal uit het duo-interview integreren in de webpagina.
 * **CRS24:** Een overzichtelijke en evenwichtige vlakverdeling opzetten in het wireframe.
 * **CRS25:** Alle zes verplichte profielonderdelen uit het duo-interview verwerken in de schets en de HTML-structuur.
-* **GEC01:** De tussentijdse deadline (18/09) en inleverafspraken voor het wireframe stipt naleven.
+* **GEC01:** De tussentijdse deadline en inleverafspraken voor het wireframe stipt naleven.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met een foutloze HTML5-basisstructuur, zuivere tag-nesting en nette code-inspringing.
 
 ## Les 4 02/10/2026 (Web)
@@ -106,7 +107,7 @@
    * Zelfevaluatie uitvoeren aan de hand van de checklist (bestandsnamen in kleine letters, code-inspringing en geldige CSS-syntax).
 4. **Finale oplevering in Smartschool:**
    * Volledige projectmap comprimeren tot `VoornaamA_Profiel.zip` (`index.html`, `style.css` en `images/foto.jpg`).
-   * Zip-archief samen met de gedeelde OneDrive-koppeling naar de vakmap Web indienen in de Smartschool-uploadmap (deadline 04/10).
+   * Zip-archief samen met de gedeelde OneDrive-koppeling naar de vakmap Web indienen in de Smartschool-uploadmap.
 
 ### Leerplandoelen
 * **CRS01:** Productievereisten en webconventies consequent toepassen (kleine letters zonder spaties voor `index.html`, `style.css` en `images/foto.jpg`, en correcte relatieve paden).
@@ -119,5 +120,5 @@
 * **CRS23:** Het afbeeldingsformaat, het relatieve bestandspad (`images/foto.jpg`), de `alt`-beschrijving en de externe hyperlink (`target="_blank"`) controleren op foutloze weergave en werking in de browser.
 * **CRS24:** Een samenhangende, persoonlijke en evenwichtige opmaak toepassen in CSS afgestemd op de voorgestelde klasgenoot.
 * **CRS27:** Het volledige webproject conform de gevraagde mappenstructuur en naamconventie als `VoornaamA_Profiel.zip` opleveren in de Smartschool-uploadzone.
-* **GEC01:** De finale deadline (04/10) en inleverafspraken van het project stipt naleven.
+* **GEC01:** De finale deadline en inleverafspraken van het project stipt naleven.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met een foutloze HTML5-basisstructuur, zuivere tag-nesting, nette code-inspringing en geldige CSS-syntax.

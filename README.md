@@ -424,12 +424,15 @@ npm run dev
 hugo --gc --minify
 ```
 
-### 🔄 Grading Pipeline & Asset Mirroring (`assets/` vs `static/`)
+### 🔄 Grading Pipeline, Rubrieken & Rechtstreekse Cijferinvoer
 
 * **Single Source of Truth:** Bewerk rubriek- en gradingbestanden **uitsluitend in `assets/`**:
   * `assets/js/rubriek.js`
   * `assets/css/grading.css`
 * **Automatische spiegeling naar `static/`:** Bewerk de bestanden in `static/` **nooit rechtstreeks**. `npm run dev` ([`scripts/dev.js`](scripts/dev.js)) spiegelt de bronbestanden uit `assets/` automatisch naar `static/` bij het opstarten én via een live file watcher bij elke save.
+* **Evaluatiemodi (Rubriek vs. Cijfer):** Het beoordelingspaneel ondersteunt zowel criteria-gebaseerde evaluatie via niveaublokken (Niveau 0–3) als rechtstreekse puntinvoer:
+  * **Cijfermodus / Toetsen:** Indieningen van het type `cijfer` of toetsen (titel/id bevat 'toets') schakelen automatisch over naar een directe numerieke score per cluster (`/ max punten`).
+  * **Modus-toggle:** Via de checkbox in de actiebalk kan per indieningsfase dynamisch gewisseld worden tussen niveaublokken en directe puntinvoer (`useRubrics: true/false`), met automatische bewaring in de rubriekdata.
 * **Productie (GitHub Pages):** De gespiegelde bestanden in `static/` worden mee gecommit in Git zodat de GitHub Actions build ze direct kan serveren voor het geanonimiseerde resultatendashboard.
 
 ---

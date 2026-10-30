@@ -17,6 +17,7 @@ indieningen:
     titel: "Kijkkader 4.3 Bewerkingen"
     lesuren: 4
     gewicht: 12
+    deadline: 2026-10-06
     leerplandoelen:
       - code: "CRS01"
         gewicht: 1
@@ -50,6 +51,7 @@ indieningen:
     titel: "Kijkkader 4.4 Drieluik"
     lesuren: 1
     gewicht: 3
+    deadline: 2026-10-11
     leerplandoelen:
       - code: "CRS22"
         gewicht: 1

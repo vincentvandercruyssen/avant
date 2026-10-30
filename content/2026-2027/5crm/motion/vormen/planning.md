@@ -20,7 +20,7 @@
 
 ### Lesverloop & inhoud
 1. **Klassikale afspraken**
-2. **Doelen:** OneDrive + mapstructuur, Pinboard, storyboardschetsen. Tussentijdse deadline: het Pinboard en de getekende schetsen voor alle vier de composities volgende week vrijdag (11 september) klaar tijdens de les.
+2. **Doelen:** OneDrive + mapstructuur, Pinboard, storyboardschetsen. Tussentijdse deadline: het Pinboard en de getekende schetsen voor alle vier de composities volgende week klaar tijdens de les.
 3. **Aanmaken Digitaal Pinboard:** Zelfstandig opzetten van het Pinterest-bord (*Motion: Vormen*) met minimaal **6 tot 8 inspirerende voorbeelden** (2D motion design, shape animation, kinetische typografie,...).
 4. **Storyboardschetsen:** Uittekenen van de storyboards in het schetsboek voor de vier composities. Eerst alle vier de composities uittekenen en daarna After Effects opstarten. Of schetsen per compositie en meteen digitaal uitwerken in After Effects (bv. Schets Comp 1 → Uitwerken Comp 1 → Schets Comp 2 → Uitwerken Comp 2...).
 5. **Projectopzet & start animatie in After Effects:** OneDrive-projectmap aanmaken (`VoornaamA_Vormen` met submappen `01_assets` en `02_exports`) en opslaan als `VoornaamA_Vormen.aep`.
@@ -81,7 +81,7 @@
 ### Lesverloop & inhoud
 1. **Tussentijdse deadline:**
    * **In de les afwerken:** digitaal pinboard (minimaal acht voorbeelden) en de storyboardschetsen voor minimaal twee composities (Comp 1 & Comp 2).
-   * **Deadline huiswerk:** de resterende storyboardschetsen voor alle vier de composities moeten uiterlijk zondag (13/09/2026 om 23:59) afgewerkt zijn in het schetsboek.
+   * **Deadline huiswerk:** de resterende storyboardschetsen voor alle vier de composities moeten tegen de voorziene indieningsdeadline afgewerkt zijn in het schetsboek.
    * **Mappenstructuur OneDrive:** Vakmap met `VoornaamA_Vormen/` met projectbestand `VoornaamA_Vormen.aep` en submappen `01_assets/` en `02_exports/`.
 2. **Afwerking digitaal pinboard & storyboards (Comp 1 & 2):**
    * Pinterest-bord *Motion: Vormen* afronden met minimaal acht inspiratievoorbeelden (2D motion design, shape animation, kinetische typografie, snelheid,...).

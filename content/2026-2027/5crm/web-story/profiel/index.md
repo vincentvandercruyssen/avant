@@ -94,6 +94,19 @@ indieningen:
         gewicht: 1
         criterium: "De tussentijdse deadline en inleverafspraken voor het wireframe stipt naleven."
 
+  - id: "toets-html"
+    titel: "Toets 01 HTML"
+    deadline: 2026-09-18
+    lesuren: 1
+    gewicht: 12
+    leerplandoelen:
+      - code: "CRS18"
+        gewicht: 1
+        criterium: "Parate syntaxis en codeerregels van semantische HTML-elementen (tags, nesting en genummerde/ongeordende lijsten)."
+      - code: "13.08"
+        gewicht: 1
+        criterium: "Het correct en doelgericht benoemen en toepassen van HTML-vaktaal en documentstructuur (head, body, title, tags)."
+
   - id: "oplevering"
     titel: "Profiel 5 Oplevering"
     deadline: 2026-10-04
