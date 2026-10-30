@@ -15,33 +15,127 @@ software:
   - "Visual Studio Code"
   - "HTML5"
   - "CSS3"
-leerplandoelen:
-  - code: "05.01"
-    criterium: "Respectvol en constructief met klasgenoten in interactie gaan tijdens het interview."
-  - code: "05.02"
-    criterium: "In willekeurig samengestelde duo's samenwerken aan elkaars profielpagina."
-  - code: "13.01"
-    criterium: "Doelgericht de inspectietool van de browser inzetten om broncode en elementstructuren van een Wikipedia-pagina te ontleden."
-  - code: "13.02"
-    criterium: "Onderzoeksbevindingen uit de browser-inspectie systematisch verwerken in een gestructureerd synthese-overzicht van HTML-tags."
-  - code: "CRS01"
-    criterium: "Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out."
-  - code: "CRS06"
-    criterium: "Vlot en efficiënt werken met een professionele code-editor (VS Code) en browserontwikkelaarstools (Inspect Element)."
-  - code: "CRS18"
-    criterium: "Een semantisch correcte, functionele en gestijlde eerste webpagina (Profiel) realiseren waarin je een klasgenoot voorstelt."
-  - code: "CRS20"
-    criterium: "Teksten, links en beeldassets via een duo-interview verzamelen, bundelen en correct integreren in een webomgeving."
-  - code: "CRS21"
-    criterium: "Typografische hiërarchie (h1, h2, p, lijsten) en leesbaarheid doordacht vormgeven via CSS-stijlregels."
-  - code: "CRS23"
-    criterium: "Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser."
-  - code: "CRS27"
-    criterium: "De webbestanden (HTML, CSS, assets) volgens de afgesproken structuur en naamgeving tijdig opleveren."
-  - code: "GEC02"
-    criterium: "Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels."
+indieningen:
+  - id: "interview"
+    titel: "Profiel 3.1 Interview"
+    deadline: 2026-09-04
+    lesuren: 1
+    gewicht: 3
+    leerplandoelen:
+      - code: "13.02"
+        gewicht: 1
+        criterium: "De bevraagde gegevens uit het duo-interview volledig en overzichtelijk verwerken (naam en rol, korte biografie van twee à drie zinnen, minstens drie interesses, persoonlijke top, inspiratielink en beeldkeuze)."
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De opdrachtvereisten en naamgevingsafspraken toepassen door het uitgewerkte interview op te slaan als VoornaamA_Profiel-Interview.pdf (of document)."
+      - code: "05.01"
+        gewicht: 1
+        criterium: "Respectvol en constructief met je klasgenoot in interactie gaan tijdens het duo-interview."
+      - code: "05.02"
+        gewicht: 1
+        criterium: "In het willekeurig samengestelde duo actief samenwerken en tijdig alle nodige inhoud en beeldassets uitwisselen voor elkaars profielpagina."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor het interviewdocument stipt naleven."
+
+  - id: "onderzoek"
+    titel: "Profiel 3.2 Onderzoek"
+    deadline: 2026-09-11
+    lesuren: 2
+    gewicht: 6
+    leerplandoelen:
+      - code: "13.01"
+        gewicht: 1
+        criterium: "Doelgericht een Wikipedia-pagina rond je eigen voornaam selecteren en met de inspectietool de gevraagde HTML-onderdelen (koppen, alinea's, afbeeldingen, hyperlinks en lijsten) opsporen."
+      - code: "13.02"
+        gewicht: 2
+        criterium: "De bevindingen van alle zes de opsporingsopdrachten (HTML-tags, attributen src en href, en reflectie over lokale aanpassingen bij verversen met F5) systematisch verwerken in een helder onderzoeksdocument."
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De opdrachtvoorschriften en naamconventie toepassen door het volledige onderzoeksdossier als VoornaamA_Profiel-Onderzoek.pdf op te leveren."
+      - code: "15.04"
+        gewicht: 1
+        criterium: "In het Elements-paneel van de browser de tekst op de live Wikipedia-pagina lokaal aanpassen ('hacken') en het resultaat vastleggen in een duidelijke screenshot."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en doelgericht werken met de ontwikkelaarstools van de webbrowser (Inspecteren / Elements-paneel) om broncode en geneste elementstructuren te ontleden."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De onderzoeksnotities, screenshot en voorbereidende bestanden ordelijk bijhouden in de eigen OneDrive-vakmap voor Web."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor het onderzoeksdocument stipt naleven."
+
+  - id: "wireframe"
+    titel: "Profiel 3.3 Wireframe"
+    deadline: 2026-09-18
+    lesuren: 1
+    gewicht: 3
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De opdrachtvereisten en bestandsnaamgeving toepassen door een scherpe, goed leesbare foto van de analoge schets in te dienen als VoornaamA_Profiel-Wireframe.jpg."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Bij elk getekend onderdeel op het wireframe doelgericht de exacte, semantisch passende HTML-tags noteren (h1, h2, p, img, ul/ol met li, a)."
+      - code: "CRS03"
+        gewicht: 1
+        criterium: "Vooraf een doordacht bouwplan op papier uittekenen waarin de structuur van de webpagina gepland wordt vóór het coderen start."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een overzichtelijke en evenwichtige vlakverdeling binnen het getekende beeldschermkader opzetten."
+      - code: "CRS25"
+        gewicht: 1
+        criterium: "Alle zes verplichte profielonderdelen uit het duo-interview (naam, foto, introductie, hobby's, persoonlijke top en inspiratielink) doelgericht opnemen in de lay-outschets."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De wireframe-schets en het digitale fotobestand ordelijk bewaren en beheren binnen de projectstructuur op OneDrive."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor het wireframe stipt naleven."
+
+  - id: "oplevering"
+    titel: "Profiel 5 Oplevering"
+    deadline: 2026-10-04
+    lesuren: 3
+    gewicht: 9
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Productievereisten en webconventies consequent toepassen: bestandsnamen in kleine letters zonder spaties (index.html, style.css, images/foto.jpg) en correcte relatieve paden."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "De juiste semantische HTML5-elementen (h1, h2, p, strong, em, img, ul, ol, li, a) en CSS-eigenschappen doelgericht selecteren in functie van inhoud en vormgeving."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Typografische hiërarchie (h1, h2, p, lijsten), een passend lettertype (font-family) en sterke leesbaarheid via voldoende kleurcontrast doordacht vormgeven in style.css."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een samenhangende, persoonlijke en evenwichtige opmaak toepassen in CSS (achtergrond- en tekstkleur op body, geaccentueerde h1, geschaalde foto met border-radius en opvallende linkkleur)."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en efficiënt werken met Visual Studio Code en browsertools om index.html en style.css op te bouwen, via link rel=\"stylesheet\" te koppelen en live te testen."
+      - code: "CRS18"
+        gewicht: 2
+        criterium: "Een semantisch correcte, functionele en gestijlde eerste webpagina (Profiel) realiseren waarin alle gevraagde onderdelen over je klasgenoot volledig zijn uitgewerkt."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Alle verzamelde teksten, lijsten, externe inspiratielink en het beeldmateriaal uit het duo-interview samenbrengen en integreren in de webomgeving."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige webproject conform de gevraagde mappenstructuur (index.html, style.css en submap images/) en naamconventie als VoornaamA_Profiel.zip opleveren in de Smartschool-uploadzone."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Het afbeeldingsformaat, het relatieve bestandspad (images/foto.jpg), de alt-beschrijving en de externe hyperlink (target=\"_blank\") controleren op foutloze weergave en werking in de browser."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Kwaliteitsbewust en nauwkeurig werken met een foutloze HTML5-basisstructuur (DOCTYPE, head, body), zuivere tag-nesting, nette code-inspringing en geldige CSS-syntax."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De projectmap VoornaamA_Profiel ordelijk beheren in de eigen OneDrive-vakmap voor Web en de gedeelde OneDrive-koppeling toevoegen bij de indiening."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en inleverafspraken van het project stipt naleven."
 draft: false
 ---
 
@@ -394,14 +488,24 @@ Heb je de basis af en wil je jouw pagina nóg verfijnder maken? Probeer deze ext
 
 ## Oplevering
 
-Lever jouw gecomprimeerde projectmap tijdig in via de Smartschool Uploadzone:
+Lever jouw tussenstappen en de gecomprimeerde projectmap tijdig in via de voorziene Smartschool-uploadmappen:
 
 ```text
-VoornaamA_Profiel.zip
-└─ images/
-   └─ foto.jpg
-└─ index.html
-└─ style.css
+Uploadmap: Profiel 3.1 Interview
+└─ VoornaamA_Profiel-Interview.pdf
+
+Uploadmap: Profiel 3.2 Onderzoek
+└─ VoornaamA_Profiel-Onderzoek.pdf
+
+Uploadmap: Profiel 3.3 Wireframe
+└─ VoornaamA_Profiel-Wireframe.jpg
+
+Uploadmap: Profiel 5 Oplevering
+└─ VoornaamA_Profiel.zip
+   └─ images/
+      └─ foto.jpg
+   └─ index.html
+   └─ style.css
 ```
 
 Plak bij het uploaden van je zip-bestand in de Smartschool Uploadzone ook de gedeelde **OneDrive-koppeling** naar jouw volledige vakmap (**Web**) in het veld **Omschrijving**.
@@ -411,6 +515,7 @@ Plak bij het uploaden van je zip-bestand in de Smartschool Uploadzone ook de ged
 Controleer jouw werk grondig aan de hand van deze checklist vóór je het project definitief inlevert.
 
 #### Bestanden & mappen
+- De voorbereidende documenten (`VoornaamA_Profiel-Interview.pdf`, `VoornaamA_Profiel-Onderzoek.pdf` en `VoornaamA_Profiel-Wireframe.jpg`) zijn in de juiste uploadmappen ingediend.
 - De hoofdmap heet exact `VoornaamA_Profiel` (jouw eigen voornaam + eerste letter achternaam).
 - In de hoofdmap staan `index.html` en `style.css` (allebei in kleine letters).
 - De foto staat in de submap `images/` (bijvoorbeeld `images/foto.jpg`).

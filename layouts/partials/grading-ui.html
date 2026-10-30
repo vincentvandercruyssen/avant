@@ -26,6 +26,15 @@
   {{ range $idx, $sub := . }}
     {{ $subId := $sub.id | default (printf "indiening-%d" (add $idx 1)) }}
     {{ $subTitle := $sub.titel | default $sub.naam | default (printf "Indiening %d" (add $idx 1)) }}
+    {{ $subDeadline := "" }}
+    {{ with $sub.deadline }}
+      {{ $rawDl := trim (printf "%v" .) " " }}
+      {{ if findRE "^\\d{4}-\\d{2}-\\d{2}" $rawDl }}
+        {{ $subDeadline = replaceRE "^(\\d{4})-(\\d{2})-(\\d{2}).*$" "$3/$2" $rawDl }}
+      {{ else }}
+        {{ $subDeadline = $rawDl }}
+      {{ end }}
+    {{ end }}
     {{ $subWeight := 20 }}
     {{ if $sub.gewicht }}
       {{ $subWeight = int $sub.gewicht }}
@@ -78,11 +87,20 @@
       {{ end }}
     {{ end }}
 
-    {{ $subObj := dict "id" $subId "title" $subTitle "weight" $subWeight "clusters" $activeClusters }}
+    {{ $subObj := dict "id" $subId "title" $subTitle "deadline" $subDeadline "weight" $subWeight "clusters" $activeClusters }}
     {{ $submissions = $submissions | append $subObj }}
   {{ end }}
 {{ else }}
   {{/* Fallback naar traditionele enkele indiening */}}
+  {{ $defaultDeadline := "" }}
+  {{ with .Params.deadline }}
+    {{ $rawDl := trim (printf "%v" .) " " }}
+    {{ if findRE "^\\d{4}-\\d{2}-\\d{2}" $rawDl }}
+      {{ $defaultDeadline = replaceRE "^(\\d{4})-(\\d{2})-(\\d{2}).*$" "$3/$2" $rawDl }}
+    {{ else }}
+      {{ $defaultDeadline = $rawDl }}
+    {{ end }}
+  {{ end }}
   {{ $defaultWeight := 20 }}
   {{ if .Params.gewicht }}
     {{ $defaultWeight = int .Params.gewicht }}
@@ -136,7 +154,7 @@
     {{ end }}
   {{ end }}
 
-  {{ $subObj := dict "id" "default" "title" $.Title "weight" $defaultWeight "clusters" $activeClusters }}
+  {{ $subObj := dict "id" "default" "title" $.Title "deadline" $defaultDeadline "weight" $defaultWeight "clusters" $activeClusters }}
   {{ $submissions = $submissions | append $subObj }}
 {{ end }}
 

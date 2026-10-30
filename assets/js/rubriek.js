@@ -97,6 +97,38 @@
     return `rubriek-${id}.json`;
   }
 
+  function formatDeadlineDDMM(raw) {
+    if (!raw) return '';
+    const str = String(raw).trim();
+    if (!str) return '';
+
+    const isoMatch = str.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    if (isoMatch) {
+      const day = isoMatch[3].padStart(2, '0');
+      const month = isoMatch[2].padStart(2, '0');
+      return `${day}/${month}`;
+    }
+
+    const dmMatch = str.match(/^(\d{1,2})[\/\-](\d{1,2})(?:[\/\-]\d{2,4})?$/);
+    if (dmMatch) {
+      const day = dmMatch[1].padStart(2, '0');
+      const month = dmMatch[2].padStart(2, '0');
+      return `${day}/${month}`;
+    }
+
+    return str;
+  }
+
+  function formatSubmissionDisplayTitle(sub) {
+    if (!sub) return '';
+    const baseTitle = sub.title || '';
+    const dl = formatDeadlineDDMM(sub.deadline);
+    if (dl && baseTitle) {
+      return `${baseTitle} (${dl})`;
+    }
+    return baseTitle || dl;
+  }
+
   function getActiveSubmission() {
     return state.submissions[state.activeSubIndex] || {
       id: 'default',
@@ -126,9 +158,11 @@
         });
       });
 
+      const formattedDl = formatDeadlineDDMM(sub.deadline);
       submissionsData[sub.id] = {
         id: sub.id,
         title: sub.title,
+        ...(formattedDl ? { deadline: formattedDl } : {}),
         weight: sub.weight,
         criteriaWeights,
         clusters: sub.clusters.map((c) => ({
@@ -382,6 +416,9 @@
           // Gewichten herstellen indien aangepast in data
           const targetSub = state.submissions.find((s) => s.id === subId);
           if (targetSub) {
+            if (!targetSub.deadline && subData.deadline) {
+              targetSub.deadline = subData.deadline;
+            }
             if (typeof subData.weight === 'number' && subData.weight > 0) {
               targetSub.weight = subData.weight;
             }
@@ -685,6 +722,11 @@
     if (currentStudent) {
       renderStudentRubric(currentStudent);
       updateStudentHeaderScore(currentStudent.hash);
+    } else {
+      const subTitleEl = document.getElementById('display-sub-title');
+      if (subTitleEl) {
+        subTitleEl.textContent = formatSubmissionDisplayTitle(sub);
+      }
     }
     buildCompactSummaryTable();
     updateAllChipsStatus();
@@ -1278,7 +1320,7 @@
       scoreEl.parentElement.insertBefore(subTitleEl, scoreEl);
     }
     if (subTitleEl) {
-      subTitleEl.textContent = sub.title || '';
+      subTitleEl.textContent = formatSubmissionDisplayTitle(sub);
     }
 
     const subEvals = getActiveSubEvals();

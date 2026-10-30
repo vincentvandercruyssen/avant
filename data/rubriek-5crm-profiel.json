@@ -1,0 +1,452 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "5crm-profiel",
+  "classGroup": "5CRM",
+  "lastUpdated": "2026-10-30T17:14:44.008+01:00",
+  "submissions": {
+    "interview": {
+      "id": "interview",
+      "title": "Profiel 3.1 Interview",
+      "deadline": "04/09",
+      "weight": 3,
+      "criteriaWeights": {
+        "13.02": 1,
+        "CRS01": 1,
+        "05.01": 1,
+        "05.02": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "13.02",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "05.01",
+              "gewicht": 1
+            },
+            {
+              "code": "05.02",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "05.01": 2,
+            "05.02": 0,
+            "13.02": 0,
+            "CRS01": 2,
+            "GEC01": 3
+          },
+          "feedback": "De lay-out van je document ziet er best overzichtelijk uit. De antwoorden en bio in volwaardige zinnen (met een hoofdletter en eindigend op een punt) ontbreken echter nog. Let daarnaast op kleine taal- en spelfouten (zoals lievelingseten in plaats van ete). Het gevraagde beeldmateriaal werd niet toegevoegd.",
+          "scores": {
+            "4.1": 1,
+            "4.6": 1.7
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "05.01": 2,
+            "05.02": 0,
+            "13.02": 0,
+            "CRS01": 1,
+            "GEC01": 3
+          },
+          "feedback": "De samenwerking verliep duidelijk wat stroef. De uitwerking van het interview blijft te beknopt: ook een deel van de antwoorden en de biografie moesten in volledige, lopende volzinnen geschreven worden in plaats van enkel met korte trefwoorden. Zorg er ook voor dat alle afgesproken elementen en beeldassets volledig aanwezig zijn.",
+          "scores": {
+            "4.1": 0.5,
+            "4.6": 1.7
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "05.01": 3,
+            "05.02": 3,
+            "13.02": 3,
+            "CRS01": 3,
+            "GEC01": 3
+          },
+          "feedback": "Heel sterk en verzorgd werk! Het interview is helder uitgeschreven in mooie volzinnen en bevat alle gevraagde onderdelen en beelden. Ook de bestandsnaamgeving, lay-out en tijdige indiening zijn helemaal vlekkeloos in orde. Een prima start voor de profielpagina!",
+          "scores": {
+            "4.1": 3,
+            "4.6": 3
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "05.01": 3,
+            "05.02": 0,
+            "13.02": 2,
+            "CRS01": 2,
+            "GEC01": 3
+          },
+          "feedback": "Goede interactie en samenwerking tijdens het interview. De inhoud zit in grote lijnen goed, al mag het interview inhoudelijk nog wat meer diepgang krijgen. Let daarnaast op de consistentie en opmaak van je document om het geheel netjes en overzichtelijk te presenteren. Het gevraagde beeldmateriaal werd niet toegevoegd.",
+          "scores": {
+            "4.1": 2,
+            "4.6": 2
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "05.01": 3,
+            "05.02": 0,
+            "13.02": 2,
+            "CRS01": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt vlot samengewerkt tijdens het interview. De inhoud van je interview is op zich oké, maar blijft nog wat beknopt. De antwoorden en de korte biografie konden een rijker beeld van je klasgenoot schetsen. Er werd geen passend beeldmateriaal toegevoegd.",
+          "scores": {
+            "4.1": 2,
+            "4.6": 2
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "05.01": 1,
+            "05.02": 0,
+            "13.02": 0,
+            "CRS01": 1,
+            "GEC01": 3
+          },
+          "feedback": "De samenwerking liep wat stroef en de inhoudelijke uitwerking is nog veel te summier. De antwoorden en de korte biografie zijn niet in duidelijke, volledige zinnen geformuleerd, maar bestaan enkel uit losse steekwoorden. Ook ontbreekt het gevraagde beeldmateriaal van je partner.",
+          "scores": {
+            "4.1": 0.5,
+            "4.6": 1.3
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "05.01": 2,
+            "05.02": 0,
+            "13.02": 0,
+            "CRS01": 2,
+            "GEC01": 3
+          },
+          "feedback": "De uitwerking van het interview is veel te beperkt. Formuleer de antwoorden en de korte bio steeds in volledige zinnen en besteed meer zorg aan een nette, gestructureerde opmaak van je document. Zorg ervoor dat alle inhoudelijke gegevens compleet zijn.",
+          "scores": {
+            "4.1": 1,
+            "4.6": 1.7
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "05.01": 0,
+            "05.02": 0,
+            "13.02": 0,
+            "CRS01": 0,
+            "GEC01": 0
+          },
+          "feedback": "De opdracht werd nog niet ingediend. Te remediëren via de te laat-procedure op Smartschool.",
+          "scores": {
+            "4.1": 0,
+            "4.6": 0
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "05.01": 2,
+            "05.02": 0,
+            "13.02": 1,
+            "CRS01": 0,
+            "GEC01": 2
+          },
+          "feedback": "Je hebt de basisnotities ingediend, maar het interview is inhoudelijk nog veel te beperkt uitgewerkt. Zorg voor volledige zinnen en een verzorgde, gestructureerde lay-out van je document. Let op de afgesproken bestandsnaamgeving, en zorg dat alle benodigde onderdelen aanwezig zijn.",
+          "scores": {
+            "4.1": 0.5,
+            "4.6": 1.3
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "05.01": 3,
+            "05.02": 3,
+            "13.02": 3,
+            "CRS01": 3,
+            "GEC01": 3
+          },
+          "feedback": "Zeer goed gewerkt! Je hebt een uitgebreid, helder en vlot leesbaar interview uitgewerkt waarin alle gevraagde gegevens netjes aan bod komen. Ook de samenwerking verliep uitstekend, met een fijne, creatieve keuze qua beeldmateriaal. Alles is bovendien stipt en verzorgd ingeleverd.",
+          "scores": {
+            "4.1": 3,
+            "4.6": 3
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "05.01": 2,
+            "05.02": 0,
+            "13.02": 0,
+            "CRS01": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt interessante kernwoorden en leuke input verzameld tijdens het gesprek. Er ontbreken echter nog volzinnen voor de antwoorden en de biografie. Zorg voor een consistente lay-out in je document, voeg het ontbrekende beeldmateriaal toe en lees je tekst voor het inleveren even na op typfoutjes.",
+          "scores": {
+            "4.1": 1,
+            "4.6": 1.7
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
+    },
+    "onderzoek": {
+      "id": "onderzoek",
+      "title": "Profiel 3.2 Onderzoek",
+      "deadline": "11/09",
+      "weight": 6,
+      "criteriaWeights": {
+        "13.01": 1,
+        "13.02": 2,
+        "CRS01": 1,
+        "15.04": 1,
+        "CRS06": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "13.01",
+              "gewicht": 1
+            },
+            {
+              "code": "13.02",
+              "gewicht": 2
+            },
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "15.04",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS06",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {}
+    },
+    "wireframe": {
+      "id": "wireframe",
+      "title": "Profiel 3.3 Wireframe",
+      "deadline": "18/09",
+      "weight": 3,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS03": 1,
+        "CRS24": 1,
+        "CRS25": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS03",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS24",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS25",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {}
+    },
+    "oplevering": {
+      "id": "oplevering",
+      "title": "Profiel 5 Oplevering",
+      "deadline": "04/10",
+      "weight": 9,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS21": 1,
+        "CRS24": 1,
+        "CRS06": 1,
+        "CRS18": 2,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS23": 1,
+        "GEC02": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS06",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS18",
+              "gewicht": 2
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {}
+    }
+  }
+}
