@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Avant Smartschool Skore Auto-Grader (Leerling- & Klasbeeld)
 // @namespace    https://avant.local/
-// @version      2026-10-25-1115
+// @version      2026-10-30-2256
 // @description  Vult automatisch rubric-scores (4.1 t/m 4.6) in vanuit Avant in het Smartschool puntenboek (zowel per leerling als voor de hele klas)
-// @author       Vincent Vander Cruyssen & Crossmedia Team
+// @author       Vincent Vander Cruyssen
 // @match        *://*.smartschool.be/*
 // @grant        GM_setClipboard
 // @run-at       document-idle
@@ -223,7 +223,7 @@
       const btn = doc.createElement('button');
       btn.type = 'button';
       btn.className = 'btn-avant-paste-cell';
-      btn.textContent = '⚡ Plak Avant Scores';
+      btn.textContent = 'Plak Scores';
       btn.title = 'Plak 6-cluster scores gekopieerd uit Avant in deze kolom';
       btn.style.cssText = `
         background: #0284c7;
@@ -232,19 +232,17 @@
         border-radius: 4px;
         padding: 3px 8px;
         font-weight: 700;
-        font-size: 11px;
+        font-size: 10px;
         cursor: pointer;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         gap: 4px;
-        height: 23px;
         width: calc(100% - 6px);
         margin: 2px auto;
         box-shadow: 0 1px 3px rgba(0,0,0,0.15);
         font-family: system-ui, -apple-system, sans-serif;
         transition: all 0.15s ease;
-        white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         z-index: 10;
@@ -1025,6 +1023,16 @@
   async function fillFeedbackForStudent(doc, targetXaxis, feedbackYaxis, feedbackText) {
     if (!feedbackText || feedbackText.trim().length === 0) return false;
 
+    // Smartschool strip HTML-tags (zoals <title>, <img>, <a>) in het evaluatie-infovenster.
+    // Verwijder tags met < en > zodat de inhoud nooit verloren gaat of leegvalt in de weergave.
+    const cleanFeedback = feedbackText
+      .replace(/<\/([a-zA-Z0-9_-]+)>/g, '$1')
+      .replace(/<([a-zA-Z0-9_-]+)>/g, '$1')
+      .replace(/[<>]/g, '')
+      .trim();
+
+    if (!cleanFeedback) return false;
+
     const feedbackCell = doc.querySelector(
       `#gridViewContentTable td[xaxis="${targetXaxis}"][yaxis="${feedbackYaxis}"]`
     );
@@ -1077,14 +1085,14 @@
     await new Promise(r => setTimeout(r, 250));
 
     textarea.focus?.();
-    textarea.value = feedbackText;
+    textarea.value = cleanFeedback;
     textarea.dispatchEvent(new Event('input', { bubbles: true }));
     textarea.dispatchEvent(new Event('change', { bubbles: true }));
 
     const jq = getPageJQuery(dialog.ownerDocument);
     if (jq) {
       try {
-        jq(textarea).val(feedbackText).trigger('input').trigger('change');
+        jq(textarea).val(cleanFeedback).trigger('input').trigger('change');
       } catch (e) {}
     }
 

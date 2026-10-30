@@ -1694,7 +1694,10 @@
       if (Object.keys(activeScores).length > 0) {
         exportScores[hash] = {
           ...activeScores,
-          _feedback: evalData.feedback || ''
+          _feedback: (evalData.feedback || '')
+            .replace(/<\/([a-zA-Z0-9_-]+)>/g, '$1')
+            .replace(/<([a-zA-Z0-9_-]+)>/g, '$1')
+            .replace(/[<>]/g, '')
         };
         studentCount++;
       }

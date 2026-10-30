@@ -107,6 +107,19 @@ indieningen:
         gewicht: 1
         criterium: "Het correct en doelgericht benoemen en toepassen van HTML-vaktaal en documentstructuur (head, body, title, tags)."
 
+  - id: "toets-html-02"
+    titel: "Toets 02 HTML"
+    deadline: 2026-10-09
+    lesuren: 1
+    gewicht: 14
+    leerplandoelen:
+      - code: "CRS18"
+        gewicht: 1
+        criterium: "Parate syntaxis en codeerregels van semantische HTML-elementen (tags, nesting, geordende lijsten, hyperlinks en afbeeldingsattributen)."
+      - code: "13.08"
+        gewicht: 1
+        criterium: "Het correct en doelgericht benoemen en toepassen van HTML-vaktaal, attributen en elementstructuur (title, src, alt, href, class)."
+
   - id: "oplevering"
     titel: "Profiel 5 Oplevering"
     deadline: 2026-10-04

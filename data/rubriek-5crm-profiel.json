@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-profiel",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-30T21:37:45.863+01:00",
+  "lastUpdated": "2026-10-30T23:26:15.244+01:00",
   "submissions": {
     "interview": {
       "id": "interview",
@@ -286,7 +286,7 @@
             "CRS06": 2,
             "GEC01": 3
           },
-          "feedback": "Goed gewerkt! Je document is overzichtelijk opgebouwd en het is heel fijn dat je je aanpassingen op de screenshot met duidelijke kaders hebt aangeduid. Bij afbeeldingen keek je naar de omliggende <a>-link in plaats van naar de <img>-tag met src, en een keuzemenu of lijst structureer je met <ul> in plaats van <div>. Sluit je tags ook altijd netjes af met > (en </p> op het einde).",
+          "feedback": "Goed gewerkt! Je document is overzichtelijk opgebouwd en het is heel fijn dat je je aanpassingen op de screenshot met duidelijke kaders hebt aangeduid. Bij afbeeldingen keek je naar de omliggende a-link in plaats van naar de img-tag met src, en een keuzemenu of lijst structureer je met een echte lijst-tag in plaats van div. Sluit je tags ook altijd netjes af met een sluithaakje (en een sluitende p-tag op het einde).",
           "scores": {
             "4.1": 4.5,
             "4.3": 5,
@@ -303,7 +303,7 @@
             "CRS06": 2,
             "GEC01": 3
           },
-          "feedback": "Goed gezocht op Wikipedia en een fijne screenshot van je lokale aanpassing! Het is beter om de vragen of tussentitels er ook bij te zetten, zodat je notities achteraf duidelijk blijven. Bij de nummering van de koppen kon je nog toelichten dat het cijfer oploopt van grote hoofdtitel (h1) naar kleinere tussentitels. Let tot slot op de juiste benamingen in de code: een afbeelding gebruikt src (niet resource) en een lijst combineert <ul> met <li>.",
+          "feedback": "Goed gezocht op Wikipedia en een fijne screenshot van je lokale aanpassing! Het is beter om de vragen of tussentitels er ook bij te zetten, zodat je notities achteraf duidelijk blijven. Bij de nummering van de koppen kon je nog toelichten dat het cijfer oploopt van grote hoofdtitel (h1) naar kleinere tussentitels. Let tot slot op de juiste benamingen in de code: een afbeelding gebruikt src (niet resource) en een lijst combineert een lijst-tag met afzonderlijke lijstitems.",
           "scores": {
             "4.1": 5,
             "4.3": 5,
@@ -320,7 +320,7 @@
             "CRS06": 2,
             "GEC01": 3
           },
-          "feedback": "Mooi en verzorgd document met heldere antwoorden. Kijk bij de koppen wel iets hoger in de code: rond de <span> zit de eigenlijke <h1>-tag, en tussentitels gebruiken <h2> of <h3> in plaats van <div>. Ook bij de afbeelding keek je naar de klikbare <a href>-link eromheen in plaats van naar src in <img>. Let nog op kleine typfoutjes in je tags, zoals <li> in plaats van <il> en een sluithaakje >. Verder goed gewerkt.",
+          "feedback": "Mooi en verzorgd document met heldere antwoorden. Kijk bij de koppen wel iets hoger in de code: rond de span-tag zit de eigenlijke h1-tag, en tussentitels gebruiken h2 of h3 in plaats van div. Ook bij de afbeelding keek je naar de klikbare a href-link eromheen in plaats van naar src in img. Let nog op kleine typfoutjes in je tags, zoals li in plaats van il en een sluitend haakje. Verder goed gewerkt.",
           "scores": {
             "4.1": 4.5,
             "4.3": 5,
@@ -337,7 +337,7 @@
             "CRS06": 1,
             "GEC01": 2
           },
-          "feedback": "Je maakte een goed begin met de eerste twee onderdelen, al mocht de uitleg bij de nummering van de koppen iets concreter en mis je de sluithaakjes >. De rest van het onderzoek ontbreekt helaas: zowel het hacken met screenshot als de vragen over afbeeldingen, links en lijstjes werden niet ingevuld. Werk een opdracht altijd volledig af voor je indient.",
+          "feedback": "Je maakte een goed begin met de eerste twee onderdelen, al mocht de uitleg bij de nummering van de koppen iets concreter en mis je de sluithaakjes van de tags. De rest van het onderzoek ontbreekt helaas: zowel het hacken met screenshot als de vragen over afbeeldingen, links en lijstjes werden niet ingevuld. Werk een opdracht altijd volledig af voor je indient.",
           "scores": {
             "4.1": 1.5,
             "4.3": 1,
@@ -354,7 +354,7 @@
             "CRS06": 3,
             "GEC01": 3
           },
-          "feedback": "Sterk gewerkt! Fijn dat je je document nog hebt aangevuld, en je aanpassingen op de Wikipedia-pagina zijn leuk en grondig uitgewerkt. Inhoudelijk zit bijna alles juist: enkel bij <img> gebruik je het attribuut src in plaats van href. Vergeet je tags niet af te sluiten met > en lees je tekst nog even na op kleine typfoutjes.",
+          "feedback": "Sterk gewerkt! Fijn dat je je document nog hebt aangevuld, en je aanpassingen op de Wikipedia-pagina zijn leuk en grondig uitgewerkt. Inhoudelijk zit bijna alles juist: enkel bij de img-tag gebruik je het attribuut src in plaats van href. Vergeet je tags niet af te sluiten met een sluithaakje en lees je tekst nog even na op kleine typfoutjes.",
           "scores": {
             "4.1": 5,
             "4.3": 6,
@@ -371,7 +371,7 @@
             "CRS06": 1,
             "GEC01": 3
           },
-          "feedback": "Fijn dat je je document overzichtelijk met tussentitels en vragen hebt opgebouwd! Er zitten wel nog een paar foutjes in je antwoorden: <p> staat voor paragraph (niet page) en bij een afbeelding hoort het attribuut src (niet resource). Je antwoordde dat de nummering van de koppen 'geordend per sectie' is, maar de cijfers geven de hiërarchie aan (hoe kleiner het cijfer van h1 naar h6, hoe groter de titel). Daarnaast herkent de browser een link aan de <a>-tag (niet aan de blauwe tekst) en bouw je lijsten op met <ul> en <li> in plaats van <div>.",
+          "feedback": "Fijn dat je je document overzichtelijk met tussentitels en vragen hebt opgebouwd! Er zitten wel nog een paar foutjes in je antwoorden: de p-tag staat voor paragraph (niet page) en bij een afbeelding hoort het attribuut src (niet resource). Je antwoordde dat de nummering van de koppen 'geordend per sectie' is, maar de cijfers geven de hiërarchie aan (hoe kleiner het cijfer van h1 naar h6, hoe groter de titel). Daarnaast herkent de browser een link aan de a-tag (niet aan de blauwe tekst) en bouw je lijsten op met de juiste lijst-tags in plaats van div.",
           "scores": {
             "4.1": 3.5,
             "4.3": 4,
@@ -388,7 +388,7 @@
             "CRS06": 2,
             "GEC01": 3
           },
-          "feedback": "Je hebt al een aantal onderdelen vlot gevonden in de broncode. Bij de laatste vragen zat je wel verkeerd: een hyperlink is een <a>-tag (rel is een attribuut) en lijsten bouw je op met <ul> en <li> in plaats van <input> of <div>. Vermeld bij het hacken ook dat de wijziging enkel lokaal zichtbaar is en hou je tekst op de screenshot een beetje schoolgeschikt. Neem voortaan ook de vragen en tussentitels op, en let op de d/t-fout bij 'is veranderd'.",
+          "feedback": "Je hebt al een aantal onderdelen vlot gevonden in de broncode. Bij de laatste vragen zat je wel verkeerd: een hyperlink is een a-tag (rel is een attribuut) en lijsten bouw je op met de juiste lijst-tags in plaats van input of div. Vermeld bij het hacken ook dat de wijziging enkel lokaal zichtbaar is en hou je tekst op de screenshot een beetje schoolgeschikt. Neem voortaan ook de vragen en tussentitels op, en let op de d/t-fout bij 'is veranderd'.",
           "scores": {
             "4.1": 3.5,
             "4.3": 4,
@@ -405,7 +405,7 @@
             "CRS06": 1,
             "GEC01": 3
           },
-          "feedback": "Goed dat je dit onderdeel stipt hebt ingediend, met een prima lokale aanpassing op Wikipedia! Omdat je enkel nummers zonder de vragen noteerde, liepen een aantal antwoorden mis: <p> staat voor paragraph (niet id), bij afbeeldingen en links zocht je de attributen src en href (niet img en https), en lijsten maak je met <ul> en <li> in plaats van h2 en h3. Neem de vragen voortaan mee op voor meer overzicht.",
+          "feedback": "Goed dat je dit onderdeel stipt hebt ingediend, met een prima lokale aanpassing op Wikipedia! Omdat je enkel nummers zonder de vragen noteerde, liepen een aantal antwoorden mis: de p-tag staat voor paragraph (niet id), bij afbeeldingen en links zocht je de attributen src en href (niet img en https), en lijsten maak je met de juiste lijst-tags in plaats van koppen. Neem de vragen voortaan mee op voor meer overzicht.",
           "scores": {
             "4.1": 3.5,
             "4.3": 4,
@@ -439,7 +439,7 @@
             "CRS06": 1,
             "GEC01": 3
           },
-          "feedback": "Je lokale aanpassing en uitleg over het verversen zitten goed! In de broncode liet je je wel misleiden door Wikipedia-namen: de hoofdtitel is <h1> (niet mw) en de nummering bepaalt de hiërarchie van groot naar klein (het lettertype komt uit CSS). Verder gebruikt een afbeelding het attribuut src (niet a), een link href (niet een id zoals mwjg) en maak je lijsten met <ul> en <li> in plaats van <div>. De vraag over welk tag-duo samenwerkt bij lijstjes bleef nog open.",
+          "feedback": "Je lokale aanpassing en uitleg over het verversen zitten goed! In de broncode liet je je wel misleiden door Wikipedia-namen: de hoofdtitel is de h1-tag (niet mw) en de nummering bepaalt de hiërarchie van groot naar klein (het lettertype komt uit CSS). Verder gebruikt een afbeelding het attribuut src (niet a), een link href (niet een id zoals mwjg) en maak je lijsten met de juiste lijst-tags in plaats van div. De vraag over welk tag-duo samenwerkt bij lijstjes bleef nog open.",
           "scores": {
             "4.1": 3.5,
             "4.3": 4,
@@ -473,7 +473,7 @@
             "CRS06": 2,
             "GEC01": 3
           },
-          "feedback": "Goed gewerkt, en goed dat je bij het \"hacken\" ook de exacte HTML-regel voor en na je aanpassing hebt genoteerd. De vraag over de nummering van de koppen ontbreekt wel nog. Let daarnaast op een paar details: een afbeelding gebruikt src (niet resource), een hyperlink is de <a>-tag (niet mw:wikilink) en <ul> maakt een opsommingslijst in plaats van een tabel. Schrijf je tags volledig met <h1> en > en kijk je tekst nog even na op typfoutjes.",
+          "feedback": "Goed gewerkt, en goed dat je bij het \"hacken\" ook de exacte HTML-regel voor en na je aanpassing hebt genoteerd. De vraag over de nummering van de koppen ontbreekt wel nog. Let daarnaast op een paar details: een afbeelding gebruikt src (niet resource), een hyperlink is de a-tag (niet mw:wikilink) en een ongeordende lijst maakt een opsommingslijst in plaats van een tabel. Schrijf je tags steeds volledig met openings- en sluithaakjes (zoals bij de h1-tag) en kijk je tekst nog even na op typfoutjes.",
           "scores": {
             "4.1": 4.5,
             "4.3": 5,
@@ -581,7 +581,7 @@
       "evaluations": {
         "0b2d4d6f3a": {
           "criteriaLevels": {},
-          "feedback": "Heel goed gewerkt! Sterke kennis van tags en elementen. Denk er bij een top 3 of genummerde volgorde aan om <ol> te gebruiken in plaats van <ul>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Heel goed gewerkt! Sterke kennis van tags en elementen. Denk eraan om bij een top 3 of volgorde de juiste lijst-tags voor genummerde lijsten te gebruiken.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 10,
             "4.4": 10
@@ -597,7 +597,7 @@
         },
         "60c8618064": {
           "criteriaLevels": {},
-          "feedback": "Mooi gewerkt! Je genummerde lijst en de basisvragen zijn perfect in orde. Verwar het <title>-element en de grootste kop (<h1>) niet met elkaar of met de <head>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Mooi gewerkt! Je genummerde lijst en de basisvragen zijn perfect in orde. Verwar het title-element en de grootste kop (h1) niet met elkaar of met de head.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 8,
             "4.4": 8
@@ -605,7 +605,7 @@
         },
         "7b34d9351e": {
           "criteriaLevels": {},
-          "feedback": "Prima resultaat! Je begrijpt de opbouw en tags heel goed. Denk er bij genummerde lijsten enkel aan om <ol> (ordered list) te gebruiken in plaats van <ul>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Prima resultaat! Je begrijpt de opbouw en tags heel goed. Denk er bij een rangschikking of cijferreeks enkel aan om de juiste lijst-tags voor een genummerde lijst te gebruiken.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 9,
             "4.4": 9
@@ -613,7 +613,7 @@
         },
         "8ab009875a": {
           "criteriaLevels": {},
-          "feedback": "Goed gewerkt! Je kent de tags en basisstructuur vlot. Let nog goed op het verschil tussen <ol> (ordered / cijfers) en <ul> (unordered / bullets).\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Goed gewerkt! Je kent de tags en basisstructuur vlot. Let nog goed op het verschil tussen de tags voor een genummerde lijst en een gewone opsomming met bullets.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 9,
             "4.4": 9
@@ -621,7 +621,7 @@
         },
         "8ec556f315": {
           "criteriaLevels": {},
-          "feedback": "Goede start! Je begrijpt alinea's en het basisprincipe van een HTML-document. Besteed nog extra aandacht aan de specifieke tags zoals <title> en <h1>, en oefen op het volledig uitschrijven van een <ol>-lijst met <li>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Goede start! Je begrijpt alinea's en het basisprincipe van een HTML-document. Besteed nog extra aandacht aan specifieke tags zoals title en de kopniveaus, en oefen op het volledig uitschrijven van een genummerde lijst met lijstitems.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 6,
             "4.4": 6
@@ -629,7 +629,7 @@
         },
         "9a8226cc52": {
           "criteriaLevels": {},
-          "feedback": "Je hebt het concept van geordende lijsten al begrepen. Neem de vaste opbouw van een HTML-element (openings-, inhoud en sluitingstag) en het verpakken van items in <li>-tags nog eens door.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Je hebt het concept van geordende lijsten al begrepen. Neem de vaste opbouw van een HTML-element (openings-, inhoud en sluitingstag) en het verpakken van items in afzonderlijke lijstitems nog eens door.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 5,
             "4.4": 5
@@ -637,7 +637,7 @@
         },
         "bcfe83d392": {
           "criteriaLevels": {},
-          "feedback": "Goed gedaan! De theorie en koppen zitten goed. Let nog op het <title>-element voor het tabblad, en onthoud dat lijstitems altijd met <li>-tags in één gezamenlijke <ol> worden geplaatst.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Goed gedaan! De theorie en koppen zitten goed. Let nog op het title-element voor het tabblad, en onthoud dat lijstitems altijd samen binnen één overkoepelende lijst-tag horen.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 8,
             "4.4": 8
@@ -661,7 +661,7 @@
         },
         "dc2916b34a": {
           "criteriaLevels": {},
-          "feedback": "Al een goed begin, je kent de begrippen en het verschil tussen lijsttypes goed. Oefen nog op het tabbladtitel-element (<title>) en het volledig structureren van een <ol>-lijst met <li>.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Al een goed begin, je kent de begrippen en het verschil tussen lijsttypes goed. Oefen nog op het tabbladtitel-element (title) en de volledige opbouw van een genummerde lijst met lijstitems.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 7,
             "4.4": 7
@@ -669,11 +669,139 @@
         },
         "efe6054d9e": {
           "criteriaLevels": {},
-          "feedback": "Fijn dat de afkorting en de elementopbouw al lukken. Herneem de theorie rond de documentstructuur (<body>, <title>) en oefen vooral op het uitschrijven van tags (<h1>) en genummerde lijsten (<ol> met <li>).\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Fijn dat de afkorting en de elementopbouw al lukken. Herneem de theorie rond de documentstructuur (body, title) en oefen vooral op het uitschrijven van tags voor koppen en genummerde lijsten.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 3,
             "4.4": 3
           }
+        }
+      }
+    },
+    "toets-html-02": {
+      "id": "toets-html-02",
+      "title": "Toets 02 HTML",
+      "deadline": "09/10",
+      "weight": 14,
+      "useRubrics": false,
+      "criteriaWeights": {
+        "CRS18": 1,
+        "13.08": 1
+      },
+      "clusters": [
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS18",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "13.08",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {},
+          "feedback": "Heel mooi werk! Je hebt heel wat onderdelen uitstekend beet. Denk er nog aan dat kenmerken/attributen altijd binnen de openingshaakjes van een tag geplaatst worden, en dat de paginatitel (title) in het tabblad van de browser getoond wordt.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 12,
+            "4.4": 12
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {},
+          "feedback": "Schitterende prestatie! Volledig foutloos gescoord op alle onderdelen: van alinea-nesting en koppen tot de kenmerken/attributen bij afbeeldingen en hyperlinks. Heel knap gedaan!\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 14,
+            "4.4": 14
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {},
+          "feedback": "Mooi gewerkt! De basisstructuur zit helemaal juist. Besteed nog wat aandacht aan de notatie van kenmerken/attributen binnen de openingstag, en welke je precies gebruikt bij afbeeldingen en hyperlinks.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 11,
+            "4.4": 11
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {},
+          "feedback": "Prima gewerkt! Je kennis van kenmerken/attributen bij afbeeldingen en hyperlinks is vlekkeloos. Denk eraan de juiste lijst-tags te kiezen (genummerd versus opsomming) en onthoud dat het title-element in het browsertabblad hoort.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 10,
+            "4.4": 10
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {},
+          "feedback": "Goed gewerkt! Je hebt al heel wat van de tags prima onder de knie. Waar nu extra aandacht naar moet gaan is het correct toepassen van kenmerken/attributen binnen de openingstag.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 9,
+            "4.4": 9
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {},
+          "feedback": "Je toont dat de basisprincipes beginnen te lukken. Besteed nog extra aandacht aan tags zoals strong en de juiste kopniveaus, en oefen gericht op kenmerken/attributen bij afbeeldingen en hyperlinks.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 5,
+            "4.4": 5
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {},
+          "feedback": "Goed resultaat! Je hebt heel wat vlot opgelost. Denk eraan de juiste lijst-tag voor genummerde lijsten te gebruiken, plaats kenmerken/attributen altijd binnen de tag en oefen nog op de opbouw van een hyperlink met de a-tag en het href-attribuut.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 9,
+            "4.4": 9
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {},
+          "feedback": "Er zijn zeker onderdelen die al goed zitten. Waar nu vooral aandacht naar moet gaan is het werken met kenmerken/attributen: onthoud dat die binnen de openingshaakjes horen en oefen extra op de img-tag en het koppelen van links met het a-element.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 6,
+            "4.4": 6
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {},
+          "feedback": "Zeer knap resultaat! Een groot deel van de onderdelen is vlekkeloos in orde. Let er enkel nog op dat een kenmerk/attribuut steeds binnen de openingshaakjes van de tag hoort, en onthoud dat het title-element in het browsertabblad verschijnt.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 12,
+            "4.4": 12
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {},
+          "feedback": "Uitstekend en foutloos werk! Je hebt zowel de semantische tags, koppen en genummerde lijsten als de exacte syntax van kenmerken/attributen helemaal perfect onder de knie.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 14,
+            "4.4": 14
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {},
+          "feedback": "Fijn dat een aantal basiselementen al goed zitten. Neem de leerstof rond de verschillende kopniveaus, genummerde lijsten en vooral de werking van kenmerken/attributen bij afbeeldingen en hyperlinks nog eens grondig door.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 4,
+            "4.4": 4
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
         }
       }
     },
