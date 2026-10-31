@@ -23,4 +23,15 @@
 * Never commit and push without explicit approval.
 * Write a clear commit message. Check the diff and the last 20 commit messages for inspiration. Use the Conventional Commits style. Also, update the README where necessary.
 * **Style:** Always follow the **Conventional Commits** standard.
-* **File Breakdown in Commit Body:** Always group bullet points by file or component path in the commit body, explicitly listing what specific changes were made per file, matching the established repository history.
+* **File Breakdown in Commit Body:** Always group bullet points by file or component path in the commit body, explicitly listing what specific changes were made per file, matching the established repository history. Never use leading dashes or colons for the file/component path header. Follow this exact template:
+
+```text
+<type>(<scope>): <short description in imperative present tense>
+
+path/to/file1.ext
+* Specific change description in sentence case.
+* Another change description.
+
+path/to/file2.ext, path/to/file3.ext
+* Change description for grouped files.
+```

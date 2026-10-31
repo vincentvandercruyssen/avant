@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-profiel",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-10-31T00:49:28.854+01:00",
+  "lastUpdated": "2026-10-31T09:41:30.826498+01:00",
   "submissions": {
     "interview": {
       "id": "interview",
@@ -422,7 +422,7 @@
             "CRS06": 0,
             "GEC01": 1
           },
-          "feedback": "Je hebt de Wikipedia-pagina op zich wel creatief aangepast in de browser, maar je leverde enkel een pdf-afdruk van de webpagina zelf in. Het eigenlijke onderzoeksdossier met antwoorden op de zes opsporingsvragen en een screenshot met de ontwikkelaarstools ontbreekt volledig. Lees de opdrachtinstructies altijd grondig na: dit onderdeel kan je remediëren via de inhaaltaak.",
+          "feedback": "Je hebt de Wikipedia-pagina op zich wel creatief aangepast in de browser, maar je leverde enkel een pdf-afdruk van de webpagina zelf in. Het eigenlijke onderzoeksdossier met antwoorden op de zes opsporingsvragen en een screenshot met de ontwikkelaarstools ontbreekt volledig. Lees de opdrachtinstructies altijd grondig na: dit onderdeel kan je remediëren door in te leveren in de te laat-map.",
           "scores": {
             "4.1": 0,
             "4.3": 1,
@@ -1103,7 +1103,288 @@
           ]
         }
       ],
-      "evaluations": {}
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 1,
+            "CRS04": 3,
+            "CRS06": 1,
+            "CRS18": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Goed gewerkt en gezocht! Je CSS zit al goed in elkaar en je hebt leuk met kleur gewerkt voor de koppen en achtergrond. In de HTML is de head echter onvolledig en ontbreekt het title-element. Inhoudelijk is de tekst nu erg opsommend geschreven: durf in volzinnen wat dieper in te pikken op bijvoorbeeld een interessante interesse of hobby van je partner. Let daarnaast op je zinstructuur, vermijd typfouten en wees consequent met hoofdlettergebruik. Vervang tot slot de placeholder \"Voornaam\" in je alt-tekst door de echte naam van je partner. De foto-toevoeging is wel heel leuk. Goed gewerkt!",
+          "scores": {
+            "4.1": 4.5,
+            "4.2": 7.5,
+            "4.3": 5,
+            "4.4": 7.5,
+            "4.5": 6,
+            "4.6": 7.5
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS18": 2,
+            "CRS20": 1,
+            "CRS21": 1,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 3
+          },
+          "feedback": "Je hebt een overzichtelijke webpagina gebouwd die technisch zuiver in elkaar zit, met nette lijstjes en een werkende link. Inhoudelijk mag het profiel wel nog wat persoonlijker op je partner gericht zijn: de broodzak als beeldkeuze heeft iets grappigs, maar kon in je tekst bijvoorbeeld wat meer toelichting krijgen. De donkerrode tekst op een feloranje achtergrond leest vermoeiend, ook het lichtrood op donkerrood bij de tussentitels leest wat moeilijk. Verder zit het zeker goed in elkaar, en heb je knap werk verricht!",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 6,
+            "4.3": 7,
+            "4.4": 6,
+            "4.5": 7.5,
+            "4.6": 9
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS06": 1,
+            "CRS18": 2,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS23": 1,
+            "CRS24": 3,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 1
+          },
+          "feedback": "Op Smartschool werd je zip-bestand verkeerd ingeleverd: in plaats van je HTML-code zat er een groot installatiebestand in (index.html.exe). Controleer je gezipte projectmap vóór het uploaden dus altijd zorgvuldig na. Gelukkig vonden we je pagina wel terug op OneDrive! Inhoudelijk is het heel leuk dat er een mooi stuk lopende tekst bij zit en je pagina is helder en zacht vormgegeven. Denk er nog aan om je biografie in een p-tag te plaatsen, pas het title-element in de head aan (staat nu nog op \"Document\") en vervang de placeholder \"Voornaam\" in je alt-tekst en link. Goed gewerkt.",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 9,
+            "4.3": 5,
+            "4.4": 4.5,
+            "4.5": 3,
+            "4.6": 3
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 1,
+            "CRS04": 1,
+            "CRS06": 0,
+            "CRS18": 1,
+            "CRS20": 0,
+            "CRS21": 2,
+            "CRS23": 2,
+            "CRS24": 1,
+            "CRS27": 2,
+            "GEC01": 2,
+            "GEC02": 0
+          },
+          "feedback": "In je head ontbreekt de link-tag naar style.css, waardoor je webpagina in de browser volledig zonder stijlen of kleuren wordt weergegeven. Het title-element staat nog op de standaardtekst \"Mijn paginatitel\". Inhoudelijk leren we je partner nog niet echt op een persoonlijke manier kennen. In de HTML-code lopen wat zaken mis: je gebruikt inline stijlen in plaats van je stijlblad, vergeet de body en html onderaan te sluiten en sluit elementen slordig af. Wees daarnaast consequent met je hoofdlettergebruik en vermijd typfouten. Verder zeker al een goede aanzet, test je pagina voortaan altijd live in de browser vóór je inlevert. De kleurkeuze van je CSS zit wel goed, wanneer de CSS wordt ingeladen oogt de lay-out netjes.",
+          "scores": {
+            "4.1": 4.5,
+            "4.2": 4.5,
+            "4.3": 2,
+            "4.4": 3,
+            "4.5": 3,
+            "4.6": 4.5
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS18": 2,
+            "CRS20": 3,
+            "CRS21": 2,
+            "CRS23": 1,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 1
+          },
+          "feedback": "Je hebt alle informatie over je klasgenoot mooi verwerkt en de koppeling met je stijlblad werkt prima. In je HTML-code loopt de documentstructuur wat door elkaar: het title-element werd niet veranderd, er ontbreekt een opening voor de body-tag, je html-tag sluit al in het midden van de pagina en verschillende tags staan los buiten de structuur. Er werd verwacht dat je een alt-tekst zou instellen voor je afbeelding en target=\"_blank\" bij de externe hyperlink zou gebruiken (zodat deze altijd in een nieuw tabblad opent). Er zitten daarnaast twee CSS-bestanden in je opdrachtmap. Inhoudelijk leert de bezoeker je partner nog niet echt goed op een persoonlijke manier kennen (bijvoorbeeld: is basketbal een passie, speel je competitie, enzovoort). Verder heb je wel alles netjes toegepast, de CSS zit al sterk in elkaar, goed gewerkt!",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 7.5,
+            "4.3": 6,
+            "4.4": 7.5,
+            "4.5": 3,
+            "4.6": 7.5
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS18": 3,
+            "CRS20": 1,
+            "CRS21": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Heel knap werk! Je hebt een bijzonder sfeervolle pagina gebouwd met een sterk kleurcontrast, een foutloze HTML-opbouw en nette lijstjes voor je klasgenoot. Let in webprojecten wel goed op hoofdletters: schrijf mapnamen en bestanden altijd consequent in kleine letters om fouten op webservers te vermijden, en pas het title-element in je head aan met een eigen paginatitel. De CSS zit al knap in elkaar. De bezoeker leert je partner nog niet op een erg persoonlijke manier kennen; wat meer volzinnen over de interesses en passies hadden het profiel nog sterker gemaakt. Verder goed gewerkt.",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 9,
+            "4.3": 9,
+            "4.4": 4.5,
+            "4.5": 7.5,
+            "4.6": 7.5
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 3,
+            "CRS18": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 0,
+            "GEC02": 3
+          },
+          "feedback": "Een knappe en sfeervolle persoonlijke profielpagina met een donker thema. Zowel je HTML als je CSS zitten technisch goed in elkaar. Let wel op typfouten in je teksten en tussentitels, en denk eraan dat er na een leesteken zoals een punt altijd een spatie hoort. Een zinnetje meer om in te pikken op een bepaalde interesse had het geheel nog sterker gemaakt. Erg jammer van de laattijdige indiening, want inhoudelijk en visueel heb je goed werk geleverd!",
+          "scores": {
+            "4.1": 9,
+            "4.2": 7.5,
+            "4.3": 7,
+            "4.4": 7.5,
+            "4.5": 9,
+            "4.6": 3
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS06": 0,
+            "CRS18": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "De opdracht werd niet ingediend. Te remediëren door in te leveren via de te laat-map op Smartschool.",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.3": 0,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS18": 1,
+            "CRS20": 1,
+            "CRS21": 3,
+            "CRS23": 3,
+            "CRS24": 2,
+            "CRS27": 2,
+            "GEC01": 1,
+            "GEC02": 2
+          },
+          "feedback": "Visueel ziet je pagina er heel strak uit. Fijn dat je verder durft gaan dan de opdracht en experimenteert met geavanceerde technieken zoals css-variabelen en media queries: wanneer je hiervoor tools zoals Copilot inschakelt, wees er dan wel zeker van dat je alle code zelfstandig begrijpt en kan uitleggen. Inhoudelijk leren we je partner nog niet echt op een persoonlijke manier kennen: schrijf de introductie en weetjes liever uit in volledige, lopende volzinnen in plaats van enkel losse trefwoorden. Let tot slot nog op de schrijfwijze van je hoofdmap. Sterk gewerkt!",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 7.5,
+            "4.3": 5,
+            "4.4": 4.5,
+            "4.5": 7.5,
+            "4.6": 6
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS18": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 1
+          },
+          "feedback": "Fijn dat je creatief hebt geëxperimenteerd met een achtergrondafbeelding en een extern lettertype. Technisch loopt je HTML-structuur nog wat mis: een webpagina telt altijd slechts één body-tag, terwijl er bij jou meerdere aparte body-tags door het document staan. Knap dat je al met meerdere HTML-elementen experimenteert. Bij de foto mist de gevraagde alt-beschrijving. De grote hoeveelheid id-kenmerken is in dit geval misschien niet overal nodig, en kan ook op andere manieren worden opgelost door de specificiteit van CSS in te zetten. In de CSS heb je al sterk geëxperimenteerd inclusief extern lettertype, fantastisch! Denk eraan dat sommige eigenschappen worden overgeërfd: \"color: azure;\" hoeft in dit geval niet telkens opnieuw gedeclareerd te worden. Inhoudelijk leert de bezoeker je partner al op een persoonlijke manier kennen, vooral door het eigenzinnige ontwerp. Sterk gewerkt!",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 7.5,
+            "4.3": 7,
+            "4.4": 7.5,
+            "4.5": 4.5,
+            "4.6": 9
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS06": 1,
+            "CRS18": 2,
+            "CRS20": 1,
+            "CRS21": 1,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 0,
+            "GEC02": 1
+          },
+          "feedback": "De gevraagde CSS zit technisch al goed in elkaar, met een mooie afgeronde foto, gekleurde koppen en nette hover-stijlen. Let wel op het kleurcontrast: zwarte tekst op een donkerpaarse achtergrond is moeilijker leesbaar. In de eerste head staat het title-element nog op \"Document\", en bovenaan je bestand staat heel wat dubbele code die je nog moet opruimen. Inhoudelijk leren we je partner nog niet echt op een persoonlijke manier kennen: zoom bijvoorbeeld wat meer in op een sprekend detail in volzinnen. De foto van de andere naamgenoot heeft iets grappigs, licht zo'n vondst dan bijvoorbeeld toe in je tekst. Gebruik geen punt in een mapnaam. Let tot slot goed op de deadline.",
+          "scores": {
+            "4.1": 6,
+            "4.2": 6,
+            "4.3": 5,
+            "4.4": 4.5,
+            "4.5": 6,
+            "4.6": 3
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
     }
   }
 }
