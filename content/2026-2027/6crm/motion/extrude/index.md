@@ -13,33 +13,52 @@ software:
   - "Illustrator"
   - "Photoshop"
 gewicht: 20
-leerplandoelen:
-  - code: "CRS01"
-    gewicht: 2
-    criterium: "Productievereisten analyseren (resolutie 1920×1080 px, 16:9 verhouding, EEVEE Next still render, optioneel 30 fps video-animatie)."
-  - code: "CRS02"
-    gewicht: 1
-    criterium: "Doelgericht 3D-technieken selecteren (SVG-curve import, extrusie, beveling, shader nodes, studiobelichting, camerakadrering)."
-  - code: "CRS06"
-    gewicht: 1
-    criterium: "Vlot en zelfstandig werken met Blender 3D (viewport navigatie, curve data, shader editor, EEVEE Next realtime rendering) en Adobe Illustrator."
-  - code: "CRS15"
-    gewicht: 1
-    criterium: "Geschikt 2D vector- en beeldmateriaal (beeldmerk, grafische vormen of logo) gestructureerd voorbereiden en integreren in een 3D-scène."
-  - code: "CRS16"
-    gewicht: 1
-    criterium: "Een hoogwaardige 3D-render realiseren en optioneel een dynamische camera-animatie of logo-onthulling animeren."
-  - code: "CRS22"
-    gewicht: 1
-    criterium: "Vormgeving, afgeschuinde randen, shaders en lichtval esthetisch en harmonieus op elkaar afstemmen tot één hoogwaardig beeld."
-  - code: "CRS23"
-    gewicht: 1
-    criterium: "Bestanden controleren op correcte resolutie (1920×1080), kleurbeheer en ruisvrije renderkwaliteit."
-  - code: "CRS27"
-    gewicht: 1
-    criterium: "Het volledige Blender-project en de deliverables (still render en optionele video) tijdig en conform de mappenstructuur opleveren."
-  - code: "SV06.72"
-    criterium: "Het verband tussen ruimtelijke 3D-situaties en bijbehorende 2D-voorstellingen doelgericht analyseren en toepassen."
+indieningen:
+  - id: "oplevering"
+    titel: "Extrude 4 Oplevering"
+    deadline: 2026-10-18
+    lesuren: 4
+    gewicht: 20
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten analyseren (Full HD 1920×1080 px, 16:9 verhouding, vector SVG en still PNG)."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht 3D-technieken in Blender selecteren (curve extrusie, beveling, 3-punts studiobelichting en Principled BSDF shaders)."
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "Vormgeving, afgeschuinde randen, shaders en lichtval esthetisch en harmonieus op elkaar afstemmen tot één hoogwaardig beeld."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een evenwichtige ruimtelijke compositie en kadrering binnen het 16:9-camerakader toepassen."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en zelfstandig werken met Blender 3D (curve-instellingen, viewport navigatie, camera en render engine) en Illustrator."
+      - code: "CRS15"
+        gewicht: 1
+        criterium: "Geschikt 2D vector- en beeldmateriaal doelgericht voorbereiden en integreren in de 3D-scène."
+      - code: "CRS16"
+        gewicht: 1
+        criterium: "Een hoogwaardige 3D still render realiseren met verfijnde schaduwval en afgeronde randreflecties."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Projectbestanden, vector-assets en renders ordelijk bundelen in het projectpakket."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige projectarchief VoornaamA_Extrude.zip conform de mappenstructuur en naamconventie opleveren."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De gerenderde still kritisch beoordelen op ruisvrije weergave, scherpte en doortekening van de schaduwen."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Bestanden controleren op correcte resolutie (1920×1080 px), ruisvrije renderkwaliteit en kleurbeheer."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De projectmap en bronbestanden ordelijk beheren op de eigen OneDrive-vakmap."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De deadline en inleverafspraken van de oplevering stipt naleven."
 draft: false
 ---
 

@@ -15,29 +15,131 @@ software:
   - "Visual Studio Code"
   - "HTML5"
   - "CSS3"
-leerplandoelen:
-  - code: "13.01"
-    criterium: "Doelgericht de inspectietool van de browser inzetten om broncode en elementstructuren van bestaande websites te ontleden."
-  - code: "13.02"
-    criterium: "Onderzoeksbevindingen uit de browser-inspectie systematisch verwerken in een gestructureerd synthese-overzicht van HTML-tags."
-  - code: "CRS01"
-    criterium: "Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out."
-  - code: "CRS06"
-    criterium: "Vlot en efficiënt werken met een professionele code-editor (VS Code) en browserontwikkelaarstools (Inspect Element)."
-  - code: "CRS18"
-    criterium: "Een semantisch correcte, functionele en gestijlde eerste webpagina (Paspoort) realiseren."
-  - code: "CRS20"
-    criterium: "Teksten, links en beeldassets ordelijk bundelen en correct integreren in een webomgeving."
-  - code: "CRS21"
-    criterium: "Typografische hiërarchie (h1, h2, p, lijsten) en leesbaarheid doordacht vormgeven via CSS-stijlregels."
-  - code: "CRS23"
-    criterium: "Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser."
-  - code: "CRS27"
-    criterium: "De webbestanden (HTML, CSS, assets) volgens de afgesproken structuur en naamgeving tijdig opleveren."
-  - code: "GEC02"
-    criterium: "Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels."
+indieningen:
+  - id: "onderzoek"
+    titel: "Paspoort 3.1 Onderzoek"
+    deadline: 2026-09-09
+    lesuren: 2
+    gewicht: 6
+    leerplandoelen:
+      - code: "13.01"
+        gewicht: 1
+        criterium: "Doelgericht de inspectietool van de browser inzetten om broncode en elementstructuren van bestaande websites te ontleden."
+      - code: "13.02"
+        gewicht: 2
+        criterium: "De bevindingen van alle zes de opsporingsopdrachten (HTML-tags, attributen src en href, en reflectie over lokale aanpassingen bij verversen met F5) systematisch verwerken in een gestructureerd onderzoeksdocument."
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De opdrachtvoorschriften en naamconventie toepassen door het volledige onderzoeksdossier als VoornaamA_Paspoort-Onderzoek.docx op te leveren."
+      - code: "15.04"
+        gewicht: 1
+        criterium: "In het Elements-paneel van de browser de tekst op een live webpagina lokaal aanpassen ('hacken') en het resultaat vastleggen in een duidelijke screenshot."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en doelgericht werken met de ontwikkelaarstools van de webbrowser (Inspecteren / Elements-paneel) om broncode en geneste elementstructuren te ontleden."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De onderzoeksnotities, screenshot en voorbereidende bestanden ordelijk bijhouden in de eigen OneDrive-vakmap voor Web."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor het onderzoeksdocument stipt naleven."
+
+  - id: "wireframe"
+    titel: "Paspoort 3.2 Wireframe"
+    deadline: 2026-09-09
+    lesuren: 1
+    gewicht: 3
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De opdrachtvereisten en bestandsnaamgeving toepassen door een scherpe, goed leesbare foto of export van de analoge schets in te dienen als VoornaamA_Paspoort-Wireframe.jpg."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Bij elk getekend onderdeel op het wireframe doelgericht de exacte, semantisch passende HTML-tags noteren (h1, h2, p, img, ul/ol met li, a)."
+      - code: "CRS03"
+        gewicht: 2
+        criterium: "Vooraf een doordacht bouwplan uittekenen waarin de structuur van de webpagina gepland wordt vóór het coderen start."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een overzichtelijke en evenwichtige vlakverdeling binnen het getekende beeldschermkader opzetten."
+      - code: "CRS25"
+        gewicht: 1
+        criterium: "Alle verplichte profielonderdelen (naam, foto, introductie, vaardigheden, persoonlijke top en inspiratielink) doelgericht opnemen in de lay-outschets."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De wireframe-schets en het digitale fotobestand ordelijk bewaren en beheren binnen de projectstructuur op OneDrive."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor het wireframe stipt naleven."
+
+  - id: "toets-html"
+    titel: "Toets 01 HTML"
+    deadline: 2026-09-16
+    lesuren: 1
+    gewicht: 8
+    leerplandoelen:
+      - code: "CRS18"
+        gewicht: 1
+        criterium: "Parate syntaxis en codeerregels van semantische HTML-elementen (tags, nesting en genummerde/ongeordende lijsten)."
+      - code: "13.08"
+        gewicht: 1
+        criterium: "Het correct en doelgericht benoemen en toepassen van HTML-vaktaal en documentstructuur (head, body, title, tags)."
+
+  - id: "oplevering"
+    titel: "Paspoort 4 Oplevering"
+    deadline: 2026-09-20
+    lesuren: 3
+    gewicht: 9
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Productievereisten en webconventies consequent toepassen: bestandsnamen in kleine letters zonder spaties (index.html, style.css, img/profielfoto.jpg) en correcte relatieve paden."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "De juiste semantische HTML5-elementen (h1, h2, p, strong, em, img, ul, ol, li, a) en CSS-eigenschappen doelgericht selecteren in functie van inhoud en vormgeving."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Typografische hiërarchie (h1, h2, p, lijsten), een passend schreefloos lettertype (font-family) en sterke leesbaarheid via voldoende kleurcontrast doordacht vormgeven in style.css."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een samenhangende, persoonlijke en evenwichtige opmaak toepassen in CSS (achtergrond- en tekstkleur op body, geaccentueerde h1, geschaalde foto met border-radius en opvallende linkkleur)."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en efficiënt werken met Visual Studio Code en browsertools om index.html en style.css op te bouwen, via link rel=\"stylesheet\" te koppelen en live te testen."
+      - code: "CRS18"
+        gewicht: 2
+        criterium: "Een semantisch correcte, functionele en gestijlde eerste webpagina (Paspoort) realiseren waarin alle gevraagde onderdelen over jezelf volledig zijn uitgewerkt."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Alle verzamelde teksten, lijsten, externe inspiratielink en het beeldmateriaal samenbrengen en integreren in de webomgeving."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige webproject conform de gevraagde mappenstructuur (index.html, style.css en submap img/) en naamconventie als VoornaamA_Paspoort.zip opleveren in de Smartschool-uploadzone."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Het afbeeldingsformaat, het relatieve bestandspad (img/profielfoto.jpg), de alt-beschrijving en de externe hyperlink (target=\"_blank\") controleren op foutloze weergave en werking in de browser."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Kwaliteitsbewust en nauwkeurig werken met een foutloze HTML5-basisstructuur (DOCTYPE, head, body), zuivere tag-nesting, nette code-inspringing en geldige CSS-syntax."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De projectmap VoornaamA_Paspoort ordelijk beheren in de eigen OneDrive-vakmap voor Web en de gedeelde OneDrive-koppeling toevoegen bij de indiening."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en inleverafspraken van het project stipt naleven."
+
+  - id: "toets-html-02"
+    titel: "Toets 02 HTML"
+    deadline: 2026-09-23
+    lesuren: 1
+    gewicht: 13
+    leerplandoelen:
+      - code: "CRS18"
+        gewicht: 1
+        criterium: "Parate syntaxis en codeerregels van semantische HTML-elementen (tags, nesting, geordende lijsten, hyperlinks en afbeeldingsattributen)."
+      - code: "13.08"
+        gewicht: 1
+        criterium: "Het correct en doelgericht benoemen en toepassen van HTML-vaktaal, attributen en elementstructuur (title, src, alt, href, class)."
 draft: false
 ---
 

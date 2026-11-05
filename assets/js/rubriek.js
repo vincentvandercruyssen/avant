@@ -239,12 +239,22 @@
     }
   }
 
+  function formatTimeHHMMSS(date = new Date()) {
+    return date.toLocaleTimeString('nl-BE', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+  }
+
   async function saveToLocalServer(payload, filename) {
     const badge = document.getElementById('save-server-status');
     const textEl = document.getElementById('save-server-text');
 
     if (badge) badge.classList.add('saving');
-    if (textEl) textEl.textContent = 'Opslaan in data/...';
+    const savingTextTimer = setTimeout(() => {
+      if (textEl) textEl.textContent = 'Opslaan in data/...';
+    }, 250);
 
     try {
       const res = await fetch(`${SAVE_SERVER_URL}/api/save-rubriek`, {
@@ -257,6 +267,8 @@
         })
       });
 
+      clearTimeout(savingTextTimer);
+
       if (!res.ok) throw new Error(`Serverfout HTTP ${res.status}`);
       const result = await res.json();
       if (!result.ok) throw new Error(result.error || 'Kon niet wegschrijven');
@@ -264,17 +276,19 @@
       state.isDirty = false;
       state.isServerConnected = true;
 
+      const timeStr = formatTimeHHMMSS();
       if (badge) {
         badge.className = 'badge-status-server';
         badge.classList.remove('saving');
       }
       if (textEl) {
-        textEl.textContent = `Opgeslagen (${result.displayTime || new Date().toLocaleTimeString()})`;
+        textEl.textContent = `Opgeslagen (${timeStr})`;
       }
 
-      updateStatus(`Wijzigingen direct opgeslagen in ${result.path} om ${result.displayTime || new Date().toLocaleTimeString()}!`, 'success');
+      updateStatus(`Wijzigingen direct opgeslagen in ${result.path} om ${timeStr}!`, 'success');
       return true;
     } catch (err) {
+      clearTimeout(savingTextTimer);
       console.warn('[SaveServer] Fout bij lokaal opslaan:', err);
       if (badge) badge.className = 'badge-status-server disconnected';
       if (textEl) textEl.textContent = 'Opslaan mislukt';

@@ -3,21 +3,27 @@
   "version": "2.2.0",
   "assignmentId": "6crm-extrude",
   "classGroup": "6CRM",
-  "lastUpdated": "2026-10-20T14:03:54.918Z",
+  "lastUpdated": "2026-11-03T22:31:00.000000+01:00",
   "submissions": {
-    "default": {
-      "id": "default",
-      "title": "Extrude",
+    "oplevering": {
+      "id": "oplevering",
+      "title": "Extrude 4 Oplevering",
+      "deadline": "18/10",
       "weight": 20,
       "criteriaWeights": {
-        "CRS01": 2,
+        "CRS01": 1,
         "CRS02": 1,
         "CRS22": 1,
+        "CRS24": 1,
         "CRS06": 1,
         "CRS15": 1,
         "CRS16": 1,
+        "CRS20": 1,
         "CRS27": 1,
-        "CRS23": 1
+        "CRS08": 1,
+        "CRS23": 1,
+        "CRS04": 1,
+        "GEC01": 1
       },
       "clusters": [
         {
@@ -26,7 +32,7 @@
           "criteria": [
             {
               "code": "CRS01",
-              "gewicht": 2
+              "gewicht": 1
             },
             {
               "code": "CRS02",
@@ -40,6 +46,10 @@
           "criteria": [
             {
               "code": "CRS22",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
               "gewicht": 1
             }
           ]
@@ -67,6 +77,10 @@
           "naam": "Release & presentatie",
           "criteria": [
             {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
               "code": "CRS27",
               "gewicht": 1
             }
@@ -77,7 +91,25 @@
           "naam": "Kwaliteit & context",
           "criteria": [
             {
+              "code": "CRS08",
+              "gewicht": 1
+            },
+            {
               "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
               "gewicht": 1
             }
           ]
@@ -86,10 +118,106 @@
       "evaluations": {
         "bfa5afc5c6": {
           "criteriaLevels": {
-            "CRS01": 0
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS22": 2,
+            "CRS24": 2,
+            "CRS06": 2,
+            "CRS15": 2,
+            "CRS16": 2,
+            "CRS20": 1,
+            "CRS27": 1,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 1,
+            "GEC01": 1
           },
+          "feedback": "Je geëxtrudeerde still render ziet er knap uit: het 3D-volume heeft een mooie fysieke diepte gekregen en de afgeschuinde randen (beveling) vangen het licht fraai op. De Full HD-resolutie van 1920 bij 1080 pixels is exact gerespecteerd. Bij de oplevering liep het echter minder vlot: je hebt losse bestanden ingediend in plaats van een overzichtelijke zip-map met assets en exports, en het Blender-werkbestand moest na herinnering nog worden nageleverd. Zorg er bij een volgende opdracht voor dat je het volledige projectpakket in één keer en binnen de deadline aanlevert.",
           "scores": {
-            "4.1": 0
+            "4.1": 13.3,
+            "4.2": 13.3,
+            "4.3": 13.3,
+            "4.4": 6.7,
+            "4.5": 20,
+            "4.6": 6.7
+          }
+        },
+        "0b6de5c593": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS22": 3,
+            "CRS24": 3,
+            "CRS06": 3,
+            "CRS15": 3,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS27": 2,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 3,
+            "GEC01": 3
+          },
+          "feedback": "Uitstekend werk! Je hebt de gevraagde mappenstructuur voorbeeldig opgebouwd met een nette opsplitsing tussen je vector-asset en je exports. De 3D-extrusie van het beeldmerk is uiterst verzorgd met vloeiende afgeronde hoeken die het studiolicht heel natuurlijk weerkaatsen. Ook de shader en de Full HD-renderkwaliteit zijn van een hoog niveau. Let bij het opslaan en comprimeren enkel even op dubbele extensies zoals .zip.zip en .blend.blend. Voor het overige een vlekkeloze en stipte release!",
+          "scores": {
+            "4.1": 20,
+            "4.2": 20,
+            "4.3": 20,
+            "4.4": 16.7,
+            "4.5": 20,
+            "4.6": 20
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS22": 2,
+            "CRS24": 2,
+            "CRS06": 2,
+            "CRS15": 1,
+            "CRS16": 3,
+            "CRS20": 1,
+            "CRS27": 1,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 1,
+            "GEC01": 3
+          },
+          "feedback": "De finale still render van je 3D-beeldmerk ziet er grafisch heel aantrekkelijk uit: de extrusie heeft een aangename diepte, de randen zijn zacht afgerond en het geheel staat mooi in het 16:9-kader op 1920 bij 1080 pixels. Jammer genoeg heb je enkel de losse PNG-afbeelding ingeleverd. Het Blender-bronbestand (.blend), de voorbereide vector (.svg) en het ingepakte zip-archief met de voorgeschreven mappenstructuur ontbreken volledig. Lever bij een release steeds het volledige pakket in zodat je werktechniek en curves controleerbaar zijn.",
+          "scores": {
+            "4.1": 13.3,
+            "4.2": 13.3,
+            "4.3": 13.3,
+            "4.4": 6.7,
+            "4.5": 20,
+            "4.6": 13.3
+          }
+        },
+        "37bc16a272": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS22": 3,
+            "CRS24": 3,
+            "CRS06": 3,
+            "CRS15": 3,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS27": 2,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 2,
+            "GEC01": 3
+          },
+          "feedback": "Een heel originele en creatieve uitwerking met de 3D-hamburger! Je hebt de verschillende onderdelen knap als afzonderlijke volumes opgebouwd, voorzien van eigen shaders en een overtuigende beveling die het model een tastbaar karakter geeft. Ook de studiobelichting en de ruisvrije render op 1920 bij 1080 pixels zijn dik in orde. Alle vereiste bestanden (vector, blend en render) zitten netjes in je zip-archief. Plaats ze de volgende keer nog in de voorziene submappen 01_assets en 02_exports voor een perfecte oplevering.",
+          "scores": {
+            "4.1": 20,
+            "4.2": 20,
+            "4.3": 20,
+            "4.4": 16.7,
+            "4.5": 20,
+            "4.6": 16.7
           }
         }
       }

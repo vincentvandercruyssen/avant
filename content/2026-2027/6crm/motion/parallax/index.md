@@ -12,29 +12,117 @@ software:
   - "Photoshop"
   - "After Effects"
   - "Media Encoder"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Productievereisten en instructies grondig analyseren (resolutie 1080×1350, 4:5 verhouding, 30 fps, H.264)."
-  - code: "CRS02"
-    criterium: "Passende technieken doelgericht selecteren (maskering, slimme objecten, 3D camera parallax, kinetische typografie)."
-  - code: "CRS07"
-    criterium: "Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren."
-  - code: "CRS09"
-    criterium: "Het stappenplan voor niet-destructieve beeldbewerking, uitsnijding en kleurafstemming correct bepalen."
-  - code: "CRS10"
-    criterium: "Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop."
-  - code: "CRS15"
-    criterium: "Geschikt beeldmateriaal en typografie gestructureerd voorbereiden voor animatie in After Effects."
-  - code: "CRS16"
-    criterium: "Een overtuigend en vloeiend 2.5D parallax-effect en camera-animatie realiseren."
-  - code: "CRS21"
-    criterium: "Typografie doordacht vormgeven en animeren met aandacht voor leesbaarheid, hiërarchie en ritme."
-  - code: "CRS22"
-    criterium: "Beeldelementen esthetisch harmoniseren met aanpassingslagen en kleurcorrecties tot één consistent geheel."
-  - code: "CRS23"
-    criterium: "Bestanden controleren op correcte resolutie, kleurruimte (sRGB) en maximale bestandsgrootte (max. 10 MB)."
-  - code: "CRS27"
-    criterium: "De gevraagde deliverables tijdig en volgens de voorschriften opleveren voor zowel Beeld als Motion."
+indieningen:
+  - id: "onderzoek"
+    titel: "Parallax 3.1 Onderzoek"
+    deadline: 2026-09-08
+    lesuren: 2
+    gewicht: 6
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De onderzoeksinstructies, specificaties en naamconventie toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Kwalitatief en complementair bronmateriaal voor voor- en achtergrond doelgericht onderzoeken en conceptueel verantwoorden."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De technische kwaliteit, resolutie en scherpte van het bronmateriaal kritisch beoordelen op bruikbaarheid voor vrijstaand maken en schaalbaarheid."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De visuele complementariteit en bruikbaarheid van de verzamelde beeldbronnen en de verzorgde opbouw van het onderzoeksdocument evalueren."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Notities en Pinterest-link ordelijk bijhouden en beheren."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken van het vooronderzoek stipt naleven."
+
+  - id: "ontwerp"
+    titel: "Parallax 3.3 Ontwerp"
+    deadline: 2026-09-15
+    lesuren: 4
+    gewicht: 9
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten (1080×1350 of 2160×2700, 4:5-verhouding, sRGB) en PSD-laagstructuur toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht Photoshop-technieken (slimme objecten, laagmaskers, aanpassingslagen en uitknipmaskers) selecteren."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Typografie doordacht vormgeven met quote en hoofdwoord tussen voor- en achtergrondlaag."
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "Voor- en achtergrond esthetisch harmoniseren met gerichte aanpassingslagen en uitknipmaskers tot één sfeer."
+      - code: "CRS09"
+        gewicht: 1
+        criterium: "Het stappenplan voor niet-destructieve beeldbewerking, uitsnijding en kleurafstemming bepalen en toepassen."
+      - code: "CRS10"
+        gewicht: 1
+        criterium: "Het voorgrondobject vakkundig en niet-destructief vrijmaken met laagmaskers in Photoshop."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Het gelaagde werkbestand en de visuele export ordelijk samenbrengen."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het Photoshop-werkbestand en de JPEG-export conform de instructies en naamconventie opleveren."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De uitsnijding en overvloeiing kritisch beoordelen op scherpe randen zonder storende halo's of pixelverlies."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Kwaliteitscontrole uitvoeren op resolutie (4:5-verhouding), scherpte en sRGB-kleurbeheer."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De bestanden ordelijk beheren in de eigen OneDrive-projectstructuur."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De deadline en inleverafspraken van het Photoshop-ontwerp stipt naleven."
+
+  - id: "animatie"
+    titel: "Parallax 3.5 Animatie"
+    deadline: 2026-09-23
+    lesuren: 4
+    gewicht: 15
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Compositie-instellingen (1080×1350 px, 30 fps, 8 seconden) en H.264-specificaties analyseren en toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht 3D camera-instellingen, scherptediepte en laagsnelheden in After Effects selecteren."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Kinetische typografie doordacht animeren met aandacht voor ritme, hiërarchie en bewegingsonscherpte."
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "De visuele continuïteit, kleursfeer en compositie tijdens de camerabeweging harmonieus bewaken."
+      - code: "CRS15"
+        gewicht: 1
+        criterium: "PSD-lagen importeren als Composition - Retain Layer Sizes en gestructureerd voorbereiden in de 3D-ruimte van After Effects."
+      - code: "CRS16"
+        gewicht: 2
+        criterium: "Een overtuigend 2.5D parallax-effect en vloeiende camera-animatie realiseren met soepele tempowissels."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Projectbestanden, bronnen en exports bundelen in een gestructureerd archief."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige projectarchief VoornaamA_Parallax.zip conform de mappenstructuur en naamconventie opleveren."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De videoweergave kritisch evalueren op vloeiende beweging zonder haperingen of vervorming."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De video-export controleren op H.264 MP4, 30 fps en maximale bestandsgrootte van 10 MB."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De volledige After Effects-projectmap en gerelateerde assets ordelijk beheren op OneDrive."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en inleverafspraken voor de videorelease stipt naleven."
 draft: false
 ---
 

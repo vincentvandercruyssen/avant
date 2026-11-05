@@ -202,7 +202,7 @@ const server = http.createServer((req, res) => {
           path: `data/${filename}`,
           markdownUpdated: mdUpdated,
           savedAt: new Date().toISOString(),
-          displayTime: new Date().toLocaleTimeString()
+          displayTime: new Date().toLocaleTimeString('nl-BE', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
         }));
       } catch (err) {
         console.error('[Save Server] Fout bij verwerken:', err);

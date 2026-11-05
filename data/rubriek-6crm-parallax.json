@@ -1,0 +1,538 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "6crm-parallax",
+  "classGroup": "6CRM",
+  "lastUpdated": "2026-11-05T16:50:03.765+01:00",
+  "submissions": {
+    "onderzoek": {
+      "id": "onderzoek",
+      "title": "Parallax 3.1 Onderzoek",
+      "deadline": "08/09",
+      "weight": 6,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS08": 1,
+        "CRS23": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS08",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b6de5c593": {
+          "criteriaLevels": {},
+          "feedback": "Afwezig met doktersattest.",
+          "scores": {}
+        },
+        "37bc16a272": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS08": 3,
+            "CRS23": 2,
+            "GEC01": 3
+          },
+          "feedback": "Verzorgd en duidelijk onderzoeksdocument. Je hebt de visuele opzet helder in beeld gebracht en het animatieplan is al goed overdacht. Het citaat en de keuze voor het lettertype vormen een sterke combinatie. Je Pinterest-bord mocht wel nog wat rijker en breder gevuld zijn met inspiratie. Nette bestandsnaamgeving.",
+          "scores": {
+            "4.1": 5,
+            "4.5": 5,
+            "4.6": 5
+          }
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS08": 3,
+            "CRS23": 3,
+            "GEC01": 2
+          },
+          "feedback": "Je hebt een zeer inspirerend Pinterest-bord aangelegd en je vooronderzoek is inhoudelijk goed uitgewerkt. De keuze en gelaagdheid van je beeldmateriaal sluit perfect aan bij het parallax-principe. Positief dat je meerdere lettertypekeuzes hebt verkend en een krachtig citaat hebt vastgelegd. Let op de gevraagde bestandsnaamgeving. Een uitstekende start!",
+          "scores": {
+            "4.1": 5,
+            "4.5": 6,
+            "4.6": 5
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 1,
+            "CRS04": 1,
+            "CRS08": 2,
+            "CRS23": 1,
+            "GEC01": 1
+          },
+          "feedback": "Het concept is inhoudelijk een goed idee voor een parallax-animatie. Je Pinterest-bord (meegegeven in de uploadomschrijving) toont al een prima visuele oriëntatie. Je ingediende document is veel te beknopt: er zijn nog geen lettertypekeuzes onderzocht en de bestandsnaam volgt de afgesproken benaming niet. Zorg dat je een vooronderzoek altijd volwaardig uitwerkt.",
+          "scores": {
+            "4.1": 1,
+            "4.5": 3,
+            "4.6": 2
+          }
+        }
+      }
+    },
+    "ontwerp": {
+      "id": "ontwerp",
+      "title": "Parallax 3.3 Ontwerp",
+      "deadline": "15/09",
+      "weight": 9,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS21": 1,
+        "CRS22": 1,
+        "CRS09": 1,
+        "CRS10": 1,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS08": 1,
+        "CRS23": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS22",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS09",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS10",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS08",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b6de5c593": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS08": 3,
+            "CRS09": 3,
+            "CRS10": 3,
+            "CRS20": 2,
+            "CRS21": 3,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS27": 3,
+            "GEC01": 2
+          },
+          "feedback": "Een visueel aantrekkelijk en fris ontwerp! De typografische hiërarchie en de lettertypekeuze zijn sterk uitgewerkt, al was het grappige citaat nog beter tot zijn recht gekomen uitsluitend in kleine letters. De uitsnijding met laagmaskers en de gerichte aanpassingslagen voor de belichting zitten goed. Knap hoe je dit zelfstandig correct hebt opgevolgd. De laagbenaming van groepen zit goed (handig voor precomps), al hebben niet alle individuele lagen een duidelijke naam. Dit helpt voor het werk in After Effects.",
+          "scores": {
+            "4.1": 9,
+            "4.2": 7.5,
+            "4.3": 9,
+            "4.4": 7.5,
+            "4.5": 9,
+            "4.6": 7.5
+          }
+        },
+        "37bc16a272": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS08": 3,
+            "CRS09": 3,
+            "CRS10": 3,
+            "CRS20": 2,
+            "CRS21": 1,
+            "CRS22": 3,
+            "CRS23": 3,
+            "CRS27": 3,
+            "GEC01": 2
+          },
+          "feedback": "Zeer degelijk en professioneel uitgewerkt Photoshop-ontwerp! Je hebt de beelden heel netjes samengebracht: het voorgrondobject is zuiver vrijgemaakt en de kleurbalans afgestemd. Het gebruik van een kleursfeerlaag, duidelijke laagnamen getuigen van een professionele werkwijze. Werkpunt voor de typografie: er ontbreekt nog een duidelijk hoofdwoord of krachtige titel om een duidelijke hiërarchie te creëren ten opzichte van het citaat. Verder goed gewerkt.",
+          "scores": {
+            "4.1": 9,
+            "4.2": 6,
+            "4.3": 9,
+            "4.4": 7.5,
+            "4.5": 9,
+            "4.6": 7.5
+          }
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS08": 3,
+            "CRS09": 3,
+            "CRS10": 3,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS22": 3,
+            "CRS23": 2,
+            "CRS27": 2,
+            "GEC01": 1
+          },
+          "feedback": "Je Photoshop-bestand getuigt van een hoog technisch en grafisch niveau: met een rijke laagstructuur, uitknipmaskers en gerichte aanpassingslagen voor kleur en contrast heb je een gepaste sfeer en color grading gerealiseerd. De typografische hiërarchie tussen het hoofdtrefwoord en het citaat is sterk opgebouwd, al zou het citaat mogelijk nog beter tot zijn recht komen als de tekst recht staat. Er zijn belangrijke werkpunten: je hebt gewerkt op A4-formaat in plaats van de gevraagde 4:5-beeldverhouding, waardoor de compositie voor animatie moet worden aangepast. Zorg er daarnaast voor dat je steeds je volledige bestanden tijdig inlevert en geef je lagen steeds een duidelijke naam.",
+          "scores": {
+            "4.1": 6,
+            "4.2": 9,
+            "4.3": 9,
+            "4.4": 7.5,
+            "4.5": 7.5,
+            "4.6": 6
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 0,
+            "CRS04": 1,
+            "CRS08": 2,
+            "CRS09": 1,
+            "CRS10": 2,
+            "CRS20": 1,
+            "CRS21": 1,
+            "CRS22": 1,
+            "CRS23": 2,
+            "CRS27": 2,
+            "GEC01": 2
+          },
+          "feedback": "Beide bestanden zijn netjes volgens de afgesproken benaming tijdig ingeleverd. Het uitsnijden met een laagmasker en de algemene kleurtoon vormen een goede basis. Er zijn echter belangrijke werkpunten. Er werd geen gebruikgemaakt van slimme objecten (Smart Objects) om kwaliteitsverlies bij latere transformaties te voorkomen en de lagen werden niet hernoemd (onbenoemde lagen werken bijzonder onhandig bij de import in After Effects). Onderzoek de lay-out en typografie diepgaander. Zorg voor een interessante visuele hiërarchie in schaal en compositie tussen het hoofdtrefwoord en het citaat.",
+          "scores": {
+            "4.1": 3,
+            "4.2": 3,
+            "4.3": 4.5,
+            "4.4": 4.5,
+            "4.5": 6,
+            "4.6": 4.5
+          }
+        }
+      }
+    },
+    "animatie": {
+      "id": "animatie",
+      "title": "Parallax 3.5 Animatie",
+      "deadline": "23/09",
+      "weight": 15,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS21": 1,
+        "CRS22": 1,
+        "CRS15": 1,
+        "CRS16": 2,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS08": 1,
+        "CRS23": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS22",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS15",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS16",
+              "gewicht": 2
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS08",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b6de5c593": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 3,
+            "CRS08": 2,
+            "CRS15": 3,
+            "CRS16": 2,
+            "CRS20": 3,
+            "CRS21": 2,
+            "CRS22": 3,
+            "CRS23": 3,
+            "CRS27": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je animatie is vormelijk aantrekkelijk en getuigt van een verfijnde visuele smaak. De kleursfeer en de compositie zijn sfeervol opgebouwd. Ook je project is netjes gestructureerd, al was het gemakkelijker geweest als de bronbestanden in dit geval in de hoofdmap zaten (inclusief de psd, die nu mankeert). Het centrale voorgrondelement (het eendje) lijkt nu stil te staan en beweegt niet mee met de diepte, waardoor het parallax-effect minder overtuigend is. Dit ontstaat doordat de verschillende lagen binnenin de precompositie de 3D-functie niet actief hebben staan, waardoor After Effects ze plat weergeeft in de camera-ruimte. Daarnaast oogt de naamsvermelding onderaan wat onhandig doordat die meebeweegt met de camerabeweging, een subtielere of vaste plaatsing had hier beter gewerkt. Verder een grafisch (+audio) sterke realisatie!",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 12.5,
+            "4.3": 11.7,
+            "4.4": 15,
+            "4.5": 12.5,
+            "4.6": 15
+          }
+        },
+        "37bc16a272": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS08": 3,
+            "CRS15": 3,
+            "CRS16": 3,
+            "CRS20": 2,
+            "CRS21": 3,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS27": 2,
+            "GEC01": 1
+          },
+          "feedback": "Je hebt bijzonder gedreven geëxperimenteerd met een breed gamma aan animatietechnieken: het gebruik van easings, bewegingsonscherpte (motion blur), geanimeerde paden (write-on) en deeltjeseffecten (particles) tilt de dynamiek naar een hoog niveau. Het parallaxeffect is uitstekend toegepast: subtiel, vloeiend en toch heel duidelijk voelbaar in de diepte. Twee visuele aandachtspunten om mee te nemen: aan het begin van de animatie is de compositie aan de rand afgesneden en de positionering van het typografische hoofdwoord had in de lay-out nog iets evenwichtiger gekund. Let tot slot op de oplevering: in je ziparchief ontbrak de uiteindelijke MP4-export (leeg mapje \"klaar\"), waardoor je deze na de deadline apart moest indienen. Verder een inhoudelijk en technisch zeer sterke prestatie!",
+          "scores": {
+            "4.1": 15,
+            "4.2": 12.5,
+            "4.3": 15,
+            "4.4": 10,
+            "4.5": 15,
+            "4.6": 10
+          }
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 3,
+            "CRS08": 2,
+            "CRS15": 3,
+            "CRS16": 2,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS27": 2,
+            "GEC01": 2
+          },
+          "feedback": "Je After Effects-project toont een sterke technische beheersing: het bevat een rijke verzameling assets en de projectstructuur is goed georganiseerd. Het was nog beter geweest als de assetsmap rechtstreeks in de map \"AleB_Parallax\" had gezeten. De geanimeerde grafische elementen (bijvoorbeeld de cursor) geven een leuke dynamiek aan het geheel, al oogt de animatie nu wat onrustig doordat de camera erg veel beweegt. Voor het voorgrondelement (CD) had je beter voor één continue animatie kunnen kiezen en het parallax-effect rustig toe te passen via één heldere camerabeweging. Onderzoek daarnaast het gebruik van easings om bijvoorbeeld overgangen natuurlijker te laten verlopen. De kleursfeer (het groene) in je eerdere ontwerp was net wat evenwichtiger. Verder een sterke prestatie!",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 12.5,
+            "4.3": 11.7,
+            "4.4": 12.5,
+            "4.5": 12.5,
+            "4.6": 12.5
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS04": 1,
+            "CRS08": 1,
+            "CRS15": 1,
+            "CRS16": 1,
+            "CRS20": 1,
+            "CRS21": 1,
+            "CRS22": 1,
+            "CRS23": 2,
+            "CRS27": 1,
+            "GEC01": 0
+          },
+          "feedback": "De animatie toont een vrij sobere en magere uitwerking. De camerabeweging beperkt zich tot een eenvoudige zoom, waarbij de typografie en het voorgrondelement op een droge, lineaire manier in en uit het beeldscherm schuiven. Er zijn geen gevarieerde animatietechnieken onderzocht. Bijvoorbeeld door het toevoegen van easings had je deze overgangen veel natuurlijker en vloeiender kunnen laten aanvoelen. Qua productie en organisatie zijn er duidelijke werkpunten: je hebt losse bestanden geüpload in plaats van de volledige projectmap in te pakken als zip. Daarnaast heet het After Effects-bestand 'parallax.aep' en gebeurde de inlevering te laat. Zorg dat je een volledige projectstructuur bundelt en neem de tijd om diepgaander te experimenteren met animatieprincipes.",
+          "scores": {
+            "4.1": 5,
+            "4.2": 5,
+            "4.3": 5,
+            "4.4": 5,
+            "4.5": 7.5,
+            "4.6": 2.5
+          }
+        }
+      }
+    }
+  }
+}

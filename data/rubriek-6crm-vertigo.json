@@ -1,0 +1,465 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "6crm-vertigo",
+  "classGroup": "6CRM",
+  "lastUpdated": "2026-11-03T22:31:00.000000+01:00",
+  "submissions": {
+    "onderzoek": {
+      "id": "onderzoek",
+      "title": "Vertigo 3.1 Onderzoek",
+      "deadline": "18/10",
+      "weight": 6,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS08": 1,
+        "CRS23": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS08",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS08": 3,
+            "CRS23": 2,
+            "CRS04": 2,
+            "GEC01": 3
+          },
+          "feedback": "Inhoudelijk een buitengewoon sterk onderzoeksdocument! Je hebt vijf heel gevarieerde nieuwsartikels geselecteerd (van protesten in Albanië tot sport en buitenlandverslaggeving) en de optische eigenschappen zoals achtergrondcompressie, scherptediepte en de fysieke standplaats van de fotograaf uiterst scherp ontleed. Je motivering van de journalistieke keuzes getuigt van veel inzicht. Let op twee formele puntjes: lever je einddossier steeds aan als geëxporteerde PDF en hanteer de naamconventie AleB_Vertigo-Onderzoek.pdf. Prachtig inhoudelijk werk!",
+          "scores": {
+            "4.1": 5,
+            "4.5": 5,
+            "4.6": 5
+          }
+        },
+        "0b6de5c593": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 3,
+            "GEC01": 3
+          },
+          "feedback": "Een werkelijk voorbeeldig onderzoeksdocument van tien pagina's! Je hebt vijf artikels uit uiteenlopende rubrieken (sport, buitenland, wetenschap, cultuur en justitie) diepgaand ontleed. Je analyse van de optische argumenten (waaronder de isolatie van de tennisser door telecompressie versus de brede leefomgeving in India) is glashelder en getuigt van een uitstekend begrip van brandpuntsafstanden en beeldwerking. Ook de PDF-opmaak, naamgeving en stipte inlevering zijn vlekkeloos. Chapeau!",
+          "scores": {
+            "4.1": 6,
+            "4.5": 6,
+            "4.6": 6
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS08": 1,
+            "CRS23": 1,
+            "CRS04": 1,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt tijdens de les wel vijf nieuwsartikels opgesnord en als schermafbeeldingen bewaard, maar het eigenlijke onderzoeksdocument ontbreekt. De opdracht vroeg uitdrukkelijk om je bevindingen te bundelen in een PDF-bestand (NorahK_Vertigo-Onderzoek.pdf) met een concrete analyse per artikel: een schatting van de brandpuntsafstand, optische argumenten (achtergrondcompressie, scherptediepte) en een journalistieke motivering. Zorg dat je een analyseopdracht altijd schriftelijk uitwerkt en bundelt zoals gevraagd.",
+          "scores": {
+            "4.1": 2,
+            "4.5": 2,
+            "4.6": 4
+          }
+        },
+        "37bc16a272": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS08": 2,
+            "CRS23": 2,
+            "CRS04": 3,
+            "GEC01": 1
+          },
+          "feedback": "Prima onderzoeksdocument in PDF waarin je vijf artikels van VRT NWS hebt geanalyseerd aan de hand van de vaste rubrieken. Je begrijpt het verschil tussen de ruimtelijke werking van een groothoeklens (zoals bij de marathon en de schapenweide) en de isolerende werking van een telelens bij sport- en nieuwsfoto's goed. Probeer je journalistieke motivering nog iets professioneler te formuleren en bewaak je inleverdatum: je dossier werd een dag na de deadline ingediend via Te laat.",
+          "scores": {
+            "4.1": 5,
+            "4.5": 4,
+            "4.6": 4
+          }
+        }
+      }
+    },
+    "bewerkingen": {
+      "id": "bewerkingen",
+      "title": "Vertigo 3.5 Bewerkingen",
+      "deadline": "23/10",
+      "weight": 12,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS06": 1,
+        "CRS10": 1,
+        "CRS08": 1,
+        "CRS23": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS06",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS10",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS08",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS06": 3,
+            "CRS10": 3,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 1,
+            "GEC01": 2
+          },
+          "feedback": "Fotografisch en beeldtechnisch lever je werk van topkwaliteit af: je vijf onderwerpen zijn haarscherp vastgelegd, de belichting en kleurtonen in Camera Raw zijn prachtig gebalanceerd en het optische contrast tussen de wijd- en telestand laat de achtergrondcompressie heel duidelijk zien. Op het vlak van bestandsbeheer en inleverafspraken is er echter een groot werkpunt: in plaats van de gevraagde tien definitieve JPEG-exports telt je uploadmap maar liefst 37 bestanden, inclusief gigantische PSD-werkbestanden en dubbele versienummers. Selecteer bij een export enkel de gevraagde tien JPEG-bestanden en ruim tussenbestanden op.",
+          "scores": {
+            "4.1": 10,
+            "4.3": 12,
+            "4.5": 12,
+            "4.6": 6
+          }
+        },
+        "0b6de5c593": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS06": 3,
+            "CRS10": 3,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 3,
+            "GEC01": 3
+          },
+          "feedback": "Een voorbeeldige inlevering! Je hebt exact de gevraagde tien JPEG-bestanden opgeleverd voor vijf gevarieerde onderwerpen (waaronder de hond en de decoratie). De beelden zijn in Camera Raw met veel zorg ontwikkeld: de kleuren zijn fris, de doortekening in zowel hooglichten als schaduwen blijft natuurlijk en het hoofdonderwerp is telkens mooi scherp gehouden. Het optische verschil in ruimtewerking tussen wijd en tele is heel overtuigend zichtbaar. Ook de bestandsnaamgeving klopt tot in het detail. Schitterend werk!",
+          "scores": {
+            "4.1": 12,
+            "4.3": 12,
+            "4.5": 12,
+            "4.6": 12
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS06": 3,
+            "CRS10": 2,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 3,
+            "GEC01": 3
+          },
+          "feedback": "Zeer nette en tijdige inlevering van de tien gevraagde beelden! Je hebt vijf verschillende onderwerpen gefotografeerd en op maximale resolutie (6000 bij 4000 pixels) geëxporteerd vanuit Camera Raw. Het verschil in achtergrondcompressie tussen de groothoek- en telestand is duidelijk merkbaar. Let er bij de opname en kadrering nog scherper op dat je hoofdonderwerp in beide foto's exact even groot in beeld blijft; bij enkele koppels zit er nog een klein schaalverschil op. Een zeer solide fotoserie!",
+          "scores": {
+            "4.1": 10,
+            "4.3": 10,
+            "4.5": 12,
+            "4.6": 12
+          }
+        },
+        "37bc16a272": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS06": 3,
+            "CRS10": 3,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 2,
+            "GEC01": 3
+          },
+          "feedback": "Fotografisch heb je het vertigo-principe uitstekend begrepen en toegepast: je bent er heel goed in geslaagd om het hoofdonderwerp in zowel de wijd- als telestand nauwkeurig even groot in beeld te houden, waardoor de achtergrondcompressie fantastisch tot uiting komt. De RAW-ontwikkeling op 6000 bij 4000 pixels is haarscherp en contrastrijk. Let enkel op de inleverinstructie: upload bij deze opdracht de tien JPEG-bestanden rechtstreeks in de map in plaats van een zip-bestand (en vermijd het uploaden van meerdere archieven). Inhoudelijk een heel sterke reeks!",
+          "scores": {
+            "4.1": 10,
+            "4.3": 12,
+            "4.5": 12,
+            "4.6": 10
+          }
+        }
+      }
+    },
+    "diptiek": {
+      "id": "diptiek",
+      "title": "Vertigo 3.6 Diptiek",
+      "deadline": "23/10",
+      "weight": 6,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS22": 1,
+        "CRS24": 1,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS08": 1,
+        "CRS23": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS22",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS08",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 1,
+            "CRS22": 2,
+            "CRS24": 2,
+            "CRS20": 2,
+            "CRS27": 3,
+            "CRS08": 1,
+            "CRS23": 3,
+            "CRS04": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt de technische specificaties van het document perfect uitgevoerd: het formaat staat exact op liggend A4 (3508 bij 2480 pixels bij 300 ppi) en zowel het Photoshop-bestand als de JPEG zijn stipt en volgens de naamconventie ingeleverd. Er is echter een fundamentele inhoudelijke fout geslopen in je diptiek: je hebt Onderwerp 5 (wijd) naast Onderwerp 3 (tele) geplaatst. Twee verschillende onderwerpen naast elkaar tonen het vertigo-effect niet aan; de bedoeling is net om exact hetzelfde hoofdonderwerp (bv. tweemaal Onderwerp 1) side-by-side te tonen om het optische verschil in achtergrondcompressie zichtbaar te maken. Pas dit even aan in je Photoshop-bestand!",
+          "scores": {
+            "4.1": 4,
+            "4.2": 4,
+            "4.4": 5,
+            "4.5": 4,
+            "4.6": 6
+          }
+        },
+        "0b6de5c593": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 1,
+            "CRS22": 2,
+            "CRS24": 2,
+            "CRS20": 2,
+            "CRS27": 3,
+            "CRS08": 1,
+            "CRS23": 3,
+            "CRS04": 3,
+            "GEC01": 3
+          },
+          "feedback": "Technisch heb je de documentopzet uitstekend in de vingers: het liggende A4-stramien op 3508 bij 2480 pixels aan 300 ppi is feilloos en je hebt beide bestanden tijdig en netjes benoemd geüpload. Inhoudelijk heb je echter de verkeerde selectie gemaakt: je hebt de decoratie (wijd) naast Cooper (wijd) geplaatst. Dit zijn twee verschillende onderwerpen en bovendien twee groothoekopnames. Je hebt in je selectie van tien beelden schitterende wijd/tele-koppels zitten (zoals je hondenserie); open je PSD en vervang de beelden door één en hetzelfde koppel (wijd en tele) zodat het vertigo-effect en de achtergrondcompressie meteen zichtbaar worden.",
+          "scores": {
+            "4.1": 4,
+            "4.2": 4,
+            "4.4": 5,
+            "4.5": 4,
+            "4.6": 6
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS22": 2,
+            "CRS24": 2,
+            "CRS20": 1,
+            "CRS27": 1,
+            "CRS08": 2,
+            "CRS23": 1,
+            "CRS04": 2,
+            "GEC01": 3
+          },
+          "feedback": "In je diptiek heb je wél het juiste principe toegepast: hetzelfde onderwerp staat in wijd en tele mooi naast elkaar in een strakke lay-out zonder afleidende tekst, waardoor de achtergrondcompressie goed te vergelijken is. Het grote werkpunt zit hier in de oplevering: de briefing vroeg uitdrukkelijk om het Photoshop-werkbestand (.psd) én een hoogwaardige JPEG (.jpg) in te leveren. Je hebt het document echter enkel als PDF geëxporteerd. Sla je bestand in Photoshop op als NorahK_Vertigo-Diptiek.psd en exporteer de JPG naar je exports-map om je oplevering compleet te maken.",
+          "scores": {
+            "4.1": 4,
+            "4.2": 4,
+            "4.4": 2,
+            "4.5": 3,
+            "4.6": 5
+          }
+        },
+        "37bc16a272": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS22": 3,
+            "CRS24": 3,
+            "CRS20": 3,
+            "CRS27": 3,
+            "CRS08": 3,
+            "CRS23": 3,
+            "CRS04": 3,
+            "GEC01": 3
+          },
+          "feedback": "Een absolute voltreffer! Jij hebt de essentie van de Vertigo-opdracht feilloos begrepen én uitgevoerd: hetzelfde onderwerp (Onderwerp 1) staat in beide kolommen exact even groot in beeld, waardoor het verschil in perspectiefwerking en de extreme achtergrondcompressie van de telelens direct in het oog springt. De lay-out is strak, symmetrisch en clean zonder storende tekst. Ook aan alle technische eisen (liggend A4 op 3508 bij 2480 pixels aan 300 ppi, werkbestand en JPEG-export) is tot in het kleinste detail voldaan. Een modeldiptiek!",
+          "scores": {
+            "4.1": 6,
+            "4.2": 6,
+            "4.4": 6,
+            "4.5": 6,
+            "4.6": 6
+          }
+        }
+      }
+    }
+  }
+}

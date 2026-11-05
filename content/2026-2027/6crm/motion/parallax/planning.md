@@ -35,9 +35,10 @@
 ### Leerplandoelen
 * **CRS01:** Productievereisten en bestandsconventies voor mediaprojecten toepassen.
 * **CRS07:** Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren.
+* **CRS08:** De technische beeldkwaliteit, resolutie en scherpte van het bronmateriaal kritisch beoordelen op bruikbaarheid voor vrijstaand maken.
+* **CRS23:** Beeldbronnen en het onderzoeksdossier controleren op visuele kwaliteit, bruikbaarheid en resolutie.
 * **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen.
 * **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop.
-* **CRS21:** Typografie en beeldelementen doordacht onderzoeken en verzamelen in functie van de compositie.
 
 ## Les 3 08/09/2026 (Motion, 09:10 - 11:00)
 
@@ -55,9 +56,10 @@
 ### Leerplandoelen
 * **CRS01:** Productievereisten en bestandsconventies voor mediaprojecten toepassen.
 * **CRS07:** Kwalitatief en complementair bronmateriaal (voorgrond en sfeervolle achtergrond) doelgericht selecteren en ordenen op een pinboard.
+* **CRS08:** De technische beeldkwaliteit, resolutie en scherpte van het bronmateriaal kritisch beoordelen op bruikbaarheid voor vrijstaand maken.
+* **CRS23:** Beeldbronnen en het onderzoeksdossier controleren op visuele kwaliteit, bruikbaarheid en resolutie.
 * **CRS09:** Het stappenplan voor niet-destructieve beeldbewerking en uitsnijding bepalen.
 * **CRS10:** Beeldmateriaal vakkundig vrijmaken met laagmaskers en verfijnen in Photoshop.
-* **CRS21:** Typografie en beeldelementen doordacht onderzoeken in functie van de compositie.
 
 ## Les 4 08/09/2026 (Motion, 13:30 - 15:20)
 

@@ -13,27 +13,99 @@ software:
   - "Adobe Bridge"
   - "Adobe Camera Raw"
   - "Adobe Photoshop"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Productievereisten, bestandsformaten (RAW, XMP, PSD, JPEG) en compositiedoelen grondig analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "Doelgericht optische brandpuntsafstanden (groothoek versus tele), camerastandpunt en belichting selecteren en beheersen in functie van het perspectiefexperiment."
-  - code: "CRS06"
-    criterium: "Vlot en efficiënt werken met spiegelreflex- of systeemcamera's, Adobe Bridge en Camera Raw voor non-destructieve RAW-ontwikkeling."
-  - code: "CRS07"
-    criterium: "Persfotografie op nieuwswebsites kritisch analyseren op brandpuntsafstand, camerastandpunt en visuele beeldwerking."
-  - code: "CRS08"
-    criterium: "Scherpte, ruis, kadrering en optische achtergrondcompressie van de gemaakte opnames kritisch beoordelen."
-  - code: "CRS10"
-    criterium: "Beeldmateriaal doelgericht corrigeren en optimaliseren met Camera Raw en Photoshop met behoud van de dynamische contrasten."
-  - code: "CRS11"
-    criterium: "Kadrering en perspectief nauwkeurig controleren zodat het hoofdonderwerp in beide opnames consistent even groot in beeld blijft."
-  - code: "CRS20"
-    criterium: "Het geselecteerde beeldmateriaal bundelen in een verzorgde diptiek op A4-formaat."
-  - code: "CRS22"
-    criterium: "Beelden esthetisch en harmonieus samenbrengen in een strakke, evenwichtige lay-out."
-  - code: "CRS27"
-    criterium: "Het volledige project conform de mappenstructuur en naamconventie tijdig inleveren in de Smartschool-uploadzone."
+indieningen:
+  - id: "onderzoek"
+    titel: "Vertigo 3.1 Onderzoek"
+    deadline: 2026-10-18
+    lesuren: 2
+    gewicht: 6
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De onderzoeksinstructies en bestandsnaamgeving toepassen in VoornaamA_Vertigo-Onderzoek.pdf."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Vijf persartikels doelgericht analyseren op lenskeuze (groothoek vs tele), achtergrondcompressie en journalistieke motivatie."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De optische beeldwerking, scherptediepte en fysieke afstand van de persfoto's kritisch beoordelen."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De visuele kwaliteit van de beelden en de verzorgde opmaak van het onderzoeksdocument evalueren."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Onderzoeksnotities, links en beeldmateriaal ordelijk bundelen in een overzichtelijk analysedossier."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken van het vooronderzoek stipt naleven."
+
+  - id: "bewerkingen"
+    titel: "Vertigo 3.5 Bewerkingen"
+    deadline: 2026-10-23
+    lesuren: 4
+    gewicht: 12
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten toepassen door voor exact 5 onderwerpen telkens een koppel wijd en tele in 3:2-verhouding op te leveren."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht uiterste brandpuntsafstanden (groothoek vs tele) hanteren met identieke schaalgrootte van het hoofdonderwerp."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot werken met de camera, Adobe Bridge en Camera Raw voor non-destructieve RAW-ontwikkeling."
+      - code: "CRS10"
+        gewicht: 1
+        criterium: "Belichting, schaduwen, hooglichten en witbalans evenwichtig corrigeren in Camera Raw met behoud van dynamiek."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De opnames kritisch controleren op scherpte van het hoofdonderwerp en duidelijke achtergrondcompressie."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Hoge resolutie JPEG-exports in 3:2-verhouding controleren op maximale beeldkwaliteit zonder ruis of compressiefouten."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Alle 10 JPEG-exports exact benoemen als VoornaamA_Vertigo-Onderwerp_X-Wijd.jpg en -Tele.jpg."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De deadline en inleverafspraken stipt naleven door exact 10 losse JPEG-bestanden in de uploadmap in te dienen."
+
+  - id: "diptiek"
+    titel: "Vertigo 3.6 Diptiek"
+    deadline: 2026-10-23
+    lesuren: 2
+    gewicht: 6
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De documentvereisten toepassen: liggend A4 (3508×2480 px bij 300 ppi, RGB) met 2 kolommen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Het sterkste beeldpaar van hetzelfde onderwerp (wijd en tele) doelgericht selecteren voor een overtuigende diptiek."
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "De beelden esthetisch en harmonieus samenbrengen in een evenwichtige lay-out zonder afleidende tekst."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "De visuele hiërarchie en witruimte tussen beide beelden strak en evenwichtig uitlijnen."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Het Photoshop-werkbestand met Smart Objects en de JPEG-export ordelijk bundelen."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het Photoshop-werkbestand (.psd) en de JPEG-export (.jpg) conform de conventie en tijdig opleveren."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De kadrering en onderwerpgrootte controleren zodat de optische achtergrondcompressie direct zichtbaar wordt."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De exportkwaliteit van de JPEG en de scherpte van beide opnames controleren op maximale beeldkwaliteit."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De bestanden ordelijk beheren en de naamconventie VoornaamA_Vertigo-Diptiek strikt toepassen."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De deadline en inleverafspraken van de diptiek stipt naleven."
 draft: false
 ---
 
