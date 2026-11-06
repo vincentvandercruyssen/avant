@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "6crm-paspoort",
   "classGroup": "6CRM",
-  "lastUpdated": "2026-11-03T21:18:00.000000+01:00",
+  "lastUpdated": "2026-11-06T14:06:45.033+01:00",
   "submissions": {
     "onderzoek": {
       "id": "onderzoek",
@@ -68,72 +68,72 @@
         }
       ],
       "evaluations": {
-        "bfa5afc5c6": {
-          "criteriaLevels": {
-            "13.01": 2,
-            "13.02": 1,
-            "CRS01": 2,
-            "15.04": 3,
-            "CRS06": 2,
-            "CRS04": 3,
-            "GEC01": 3
-          },
-          "feedback": "Je hebt de inspectietool vlot gevonden en de hack-opdracht met het screenshot en de reflectie over het browsergeheugen en F5 is heel helder uitgelegd. Kijk wel nog eens goed naar de basisbouwstenen van HTML: voor afbeeldingen gebruik je de tag img met het attribuut src (in plaats van svg en viewbox), voor hyperlinks de tag a met het attribuut href, en een lijst bouw je steeds op met ul of ol en li. Prima start van het onderzoek!",
-          "scores": {
-            "4.1": 3.0,
-            "4.3": 5.0,
-            "4.6": 6.0
-          }
-        },
         "0b6de5c593": {
           "criteriaLevels": {
-            "13.01": 3,
-            "13.02": 3,
-            "CRS01": 3,
-            "15.04": 3,
-            "CRS06": 3,
-            "CRS04": 3,
-            "GEC01": 3
-          },
-          "feedback": "Uitzonderlijk sterk en grondig werk! Je hebt per vraag netjes de onderzochte website vermeld en alle HTML-tags (h1, h2, p, img, a, ul en li) en attributen (src en href) feilloos opgespoord en verklaard. Ook de hack-opdracht met het screenshot en de uitleg over het lokale browsergeheugen versus verversen met F5 is glashelder verwoord. Bovendien klopt de bestandsnaamgeving helemaal. Een voorbeeldige onderzoeksfiche!",
-          "scores": {
-            "4.1": 6.0,
-            "4.3": 6.0,
-            "4.6": 6.0
-          }
-        },
-        "d1effb49ee": {
-          "criteriaLevels": {
             "13.01": 2,
-            "13.02": 2,
-            "CRS01": 2,
+            "13.02": 3,
             "15.04": 3,
-            "CRS06": 2,
+            "CRS01": 3,
             "CRS04": 3,
+            "CRS06": 3,
             "GEC01": 3
           },
-          "feedback": "Fijn onderzoeksdocument! Je hebt de inspectietool goed ingezet voor koppen, alinea's en afbeeldingen, en het hacken met screenshot en de F5-reflectie is prima gelukt. Twee aandachtspunten om mee te nemen: bij hyperlinks zorgt het attribuut href (in plaats van class) voor de bestemming, en een lijst bouw je altijd met het vaste duo ul (of ol) en li. Let er tot slot op dat je de opdrachtnaam Paspoort toevoegt in je bestandsnaam.",
+          "feedback": "Een heel duidelijk en overzichtelijk onderzoeksdocument. Je legt de verschillende tags en attributen helder uit en hebt de hack-opdracht met F5 goed begrepen. De class bij de kopteksten is nog een apart onderdeel of kenmerk van de tag, maar het is duidelijk dat je het begrijpt. Een voorbeeldig onderzoek!",
           "scores": {
-            "4.1": 4.0,
-            "4.3": 5.0,
-            "4.6": 6.0
+            "4.1": 5.5,
+            "4.3": 6,
+            "4.6": 6
           }
         },
         "37bc16a272": {
           "criteriaLevels": {
-            "13.01": 2,
+            "13.01": 1,
             "13.02": 2,
-            "CRS01": 3,
             "15.04": 3,
-            "CRS06": 2,
-            "CRS04": 3,
+            "CRS01": 2,
+            "CRS04": 2,
+            "CRS06": 1,
             "GEC01": 3
           },
-          "feedback": "Mooi en overzichtelijk uitgewerkt onderzoek! Je legt het hiërarchische verschil tussen h1 en h2 heel helder uit en ook de hack-opdracht met F5 is prima begrepen. Let wel nog even op de afbeeldings- en linktags: voor een afbeelding gebruik je de tag img met het attribuut src (niet span of class), en voor een hyperlink gebruik je de tag a met het attribuut href. De lijsttags ul en li had je op een klein typfoutje na al goed beet!",
+          "feedback": "Een goed onderzoeksdocument. Je hebt de inspectietool goed ingezet om de gevraagde tags en attributen te onderzoeken. Ook de hack-opdracht met de F5-reflectie is prima gelukt. De afbeelding en de hyperlink zijn niet correct: voor een afbeelding gebruik je de tag img met het attribuut src, en voor een hyperlink de tag a met het attribuut href. Let nog op consequent hoofdlettergebruik en neem de opdrachtnaam telkens in je bestandsnaam op. Verder goed!",
           "scores": {
-            "4.1": 4.5,
-            "4.3": 5.0,
-            "4.6": 6.0
+            "4.1": 3.5,
+            "4.3": 4,
+            "4.6": 5
+          }
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "13.01": 2,
+            "13.02": 2,
+            "15.04": 3,
+            "CRS01": 2,
+            "CRS04": 2,
+            "CRS06": 1,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt de eerste HTML-tags goed opgespoord en verklaard. Ook de screenshot-opdracht over browsergeheugen is helder uitgewerkt. Andere basisbouwstenen van HTML: voor afbeeldingen gebruik je de tag img met het attribuut src. Voor hyperlinks gebruik je de tag a met het attribuut href. Een lijst bouw je op met ul of ol, in combinatie met li. Maak in je document een duidelijker onderscheid tussen de vragen en antwoorden. Formuleer je antwoorden ook zoveel mogelijk in volledige zinnen. Prima start.",
+          "scores": {
+            "4.1": 4,
+            "4.3": 4,
+            "4.6": 5
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "13.01": 1,
+            "13.02": 2,
+            "15.04": 3,
+            "CRS01": 2,
+            "CRS04": 2,
+            "CRS06": 1,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt de inspectietool goed ingezet voor koppen, alinea's en afbeeldingen, en het hacken met een screenshot en de F5-reflectie is prima gelukt. Maak een duidelijker onderscheid tussen vraag en antwoord. Twee aandachtspunten om mee te nemen: bij hyperlinks zorgt het href-attribuut (in plaats van class) voor de bestemming, en een lijst bouw je met het vaste duo ul (of ol) en li. Verder goed.",
+          "scores": {
+            "4.1": 3.5,
+            "4.3": 4,
+            "4.6": 5
           }
         }
       }
@@ -201,38 +201,55 @@
         }
       ],
       "evaluations": {
-        "bfa5afc5c6": {
+        "0b6de5c593": {
           "criteriaLevels": {
-            "CRS01": 1,
-            "CRS02": 0,
-            "CRS03": 2,
-            "CRS24": 2,
-            "CRS25": 2,
-            "CRS04": 2,
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS03": 3,
+            "CRS04": 3,
+            "CRS24": 3,
+            "CRS25": 3,
             "GEC01": 3
           },
-          "feedback": "Je hebt verschillende interessante schetsen en vlakverdelingen op papier verkend, wat heel waardevol is voor het ontwerpproces. De kern van deze opdracht was echter om bij elk getekend vlak de exacte HTML-tags te noteren (zoals h1, p, img, ul, li en a), en die ontbreken hier nog op je schetsen. Zorg er bij volgende opdrachten ook voor dat je de bestandsnaamgeving strak volgens de afspraken aanhoudt.",
+          "feedback": "Knap wireframe. Je hebt een evenwichtige en doordachte lay-out opgesteld en hebt ook alle gevraagde HTML-tags nauwkeurig genoteerd. Dit mocht even goed op papier en in dit geval mochten de tags zelf naast elk onderdeel genoteerd worden. Dit vormt een sterk technisch bouwplan om mee aan de slag te gaan. PDF-bestand en de bestandsnaamgeving helemaal oké.",
           "scores": {
-            "4.1": 1.2,
-            "4.2": 2.0,
+            "4.1": 2.8,
+            "4.2": 3,
+            "4.6": 3
+          }
+        },
+        "37bc16a272": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 1,
+            "CRS03": 3,
+            "CRS04": 2,
+            "CRS24": 2,
+            "CRS25": 2,
+            "GEC01": 3
+          },
+          "feedback": "De vlakverdeling met de door de diagonaal doorkruiste vakken oogt nog niet geheel duidelijk. Maak een verschil tussen wat afbeelding is en wat tekst. De annotatie van de tags is duidelijk. De verschillende lijsten ontbreken. De schets mocht even goed op papier. Verder goed.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 2,
             "4.6": 2.5
           }
         },
-        "0b6de5c593": {
+        "bfa5afc5c6": {
           "criteriaLevels": {
-            "CRS01": 3,
-            "CRS02": 3,
-            "CRS03": 3,
-            "CRS24": 3,
-            "CRS25": 3,
-            "CRS04": 3,
+            "CRS01": 2,
+            "CRS02": 0,
+            "CRS03": 2,
+            "CRS04": 2,
+            "CRS24": 2,
+            "CRS25": 2,
             "GEC01": 3
           },
-          "feedback": "Schitterend wireframe! Je hebt niet alleen een zeer evenwichtige en doordachte lay-out getekend, maar ook alle gevraagde HTML-tags (h1, p, img src, ul met li, a href) heel nauwkeurig en overzichtelijk geannoteerd bij de verschillende onderdelen. Dit vormt een perfect technisch bouwplan om direct mee aan de slag te gaan in VS Code. Ook de export als PDF en de bestandsnaamgeving zijn vlekkeloos.",
+          "feedback": "Je hebt meerdere interessante schetsen en vlakverdelingen op papier verkend, wat heel waardevol is voor het ontwerpproces. De kern van deze opdracht is ook om de HTML-tags te noteren (zoals h1, p, img, ul, li en a), maar die ontbreken hier nog op je schetsen. Volg de gevraagde bestandsnaamgeving op. Verder goed.",
           "scores": {
-            "4.1": 3.0,
-            "4.2": 3.0,
-            "4.6": 3.0
+            "4.1": 1.5,
+            "4.2": 2,
+            "4.6": 2.5
           }
         },
         "d1effb49ee": {
@@ -240,33 +257,16 @@
             "CRS01": 1,
             "CRS02": 3,
             "CRS03": 3,
+            "CRS04": 2,
             "CRS24": 2,
             "CRS25": 2,
-            "CRS04": 2,
             "GEC01": 3
           },
-          "feedback": "Heel duidelijke en doordachte schets van je paspoort! Je hebt alle vakken netjes getekend en de HTML-tags (h1, img, p, ul, li en a) heel zuiver geannoteerd, inclusief een handige legende onderaan. Vergeet enkel niet om ook een genummerde top 3 (met de tag ol) in te plannen. Belangrijk aandachtspunt: hernoem je foto vóór het uploaden steeds naar de afgesproken bestandsnaam in plaats van de standaard cameranaam.",
+          "feedback": "Een duidelijke schets van je webpagina binnen een afgebakend kader. Je hebt de vakken netjes getekend en de HTML-tags duidelijk geannoteerd, inclusief een handige legenda. De geordende lijst ontbreekt. Hernoem naar de gevraagde bestandsnaam. Verder goed.",
           "scores": {
             "4.1": 2.5,
-            "4.2": 2.0,
+            "4.2": 2,
             "4.6": 2.5
-          }
-        },
-        "37bc16a272": {
-          "criteriaLevels": {
-            "CRS01": 3,
-            "CRS02": 2,
-            "CRS03": 3,
-            "CRS24": 3,
-            "CRS25": 2,
-            "CRS04": 3,
-            "GEC01": 3
-          },
-          "feedback": "Knap en strak digitaal wireframe! De vlakverdeling met de diagonaal doorkruiste vakken oogt heel professioneel en de annotatie van de tags h1, p, img en a is duidelijk geplaatst. Denk er wel aan om ook de lijsten met vaardigheden en je persoonlijke top 3 (met ul, ol en li) een vaste plek in je schermindeling te geven. De bestandsnaamgeving en export zijn helemaal volgens afspraak.",
-          "scores": {
-            "4.1": 2.8,
-            "4.2": 2.5,
-            "4.6": 3.0
           }
         }
       }
@@ -303,9 +303,17 @@
         }
       ],
       "evaluations": {
+        "37bc16a272": {
+          "criteriaLevels": {},
+          "feedback": "Prima gewerkt! De theorie over de basis zit helemaal goed. Onthoud dat attributen extra kenmerken en informatie toevoegen aan een element binnen de openingstag, en gebruik voor een lokaal afbeeldingspad altijd de toewijzing met het src-attribuut.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 6,
+            "4.4": 6
+          }
+        },
         "bfa5afc5c6": {
           "criteriaLevels": {},
-          "feedback": "Goede start! Je toont een degelijke basiskennis van de HTML-afkorting, de vaste elementopbouw, het body-element en het onderscheid tussen ongeordende en geordende lijsten (ul versus ol). Besteed nog extra aandacht aan de exacte syntaxis van kopteksten (gebruik direct de tag h1), onthoud dat attributen extra informatie toevoegen aan de openingstag, en oefen op het correct toevoegen van een afbeeldingspad via het attribuut src.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Goede start! Je toont een degelijke basiskennis. Besteed nog extra aandacht aan de syntaxis van kopteksten (gebruik direct de tag h1), onthoud dat attributen extra informatie toevoegen aan de openingstag, en oefen op het correct toevoegen van een afbeeldingspad via het attribuut src.\n \nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 5,
             "4.4": 5
@@ -313,15 +321,7 @@
         },
         "d1effb49ee": {
           "criteriaLevels": {},
-          "feedback": "Mooi resultaat! Je hebt de afkorting, de drie vaste elementdelen, de koptekst h1, alinea's, het verschil tussen lijsttypes (ul versus ol) en de rol van attributen goed onder de knie. Let nog op het precieze onderscheid tussen de head (voor onzichtbare metadata) en de body (voor alle zichtbare inhoud), en oefen op de volledige syntax van een afbeeldingspad met aanhalingstekens (src=\"images/foto01.jpg\").\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
-          "scores": {
-            "4.3": 6,
-            "4.4": 6
-          }
-        },
-        "37bc16a272": {
-          "criteriaLevels": {},
-          "feedback": "Prima gewerkt! De theorie over de elementanatomie, de functie van de body, de grootste koptekst h1, alinea's en het onderscheid tussen ul en ol zitten helemaal goed. Onthoud dat attributen extra kenmerken en informatie toevoegen aan een element binnen de openingstag, en gebruik voor een lokaal afbeeldingspad altijd de toewijzing met het src-attribuut (src=\"images/foto01.jpg\").\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Mooi resultaat! Je hebt de basis goed onder de knie. Let nog op het precieze onderscheid tussen de head (voor onzichtbare metadata) en de body (voor alle zichtbare inhoud), en oefen op de volledige syntax van een afbeeldingspad met aanhalingstekens.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 6,
             "4.4": 6
@@ -435,104 +435,104 @@
         }
       ],
       "evaluations": {
-        "bfa5afc5c6": {
-          "criteriaLevels": {
-            "CRS01": 2,
-            "CRS02": 2,
-            "CRS21": 2,
-            "CRS24": 3,
-            "CRS06": 2,
-            "CRS18": 2,
-            "CRS20": 3,
-            "CRS27": 2,
-            "CRS23": 2,
-            "GEC02": 1,
-            "CRS04": 3,
-            "GEC01": 3
-          },
-          "feedback": "Wat een ontzettend creatieve en sfeervolle pagina! Je hebt enorm veel ambitie getoond met een eigen gothic stijl, aangepaste fonts via font-face, sfeervolle achtergrondbeelden, een ronde avatar en flexbox-zijbalken. Heel knap dat je ook een nette OneDrive-koppeling toevoegde. Twee belangrijke verbeterpunten voor de code: verhuis alle stijlen naar je externe style.css (vermijd een extra style-blok of inline stijlen in je HTML) en let op zuivere tag-nesting (plaats bijvoorbeeld geen ul binnen een p, en sluit alle tags netjes af). Vergeet ook de genummerde lijst ol niet.",
-          "scores": {
-            "4.1": 6.0,
-            "4.2": 7.5,
-            "4.3": 6.0,
-            "4.4": 7.5,
-            "4.5": 4.5,
-            "4.6": 9.0
-          }
-        },
         "0b6de5c593": {
           "criteriaLevels": {
             "CRS01": 2,
             "CRS02": 3,
-            "CRS21": 3,
-            "CRS24": 3,
+            "CRS04": 3,
             "CRS06": 3,
             "CRS18": 3,
             "CRS20": 3,
-            "CRS27": 3,
+            "CRS21": 3,
             "CRS23": 2,
-            "GEC02": 3,
-            "CRS04": 3,
-            "GEC01": 3
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 3
           },
-          "feedback": "Een prachtig, professioneel en fris paspoort! Je HTML-structuur is uitzonderlijk zuiver opgebouwd met semantische secties, een verzorgde h1, h2, lijsten met ul en ol, en een werkende link met target blank. Ook de CSS is heel verzorgd met zachte kleuren, een modern schreefloos lettertype, een stijlvolle avatar en flexbox. Eén belangrijk technisch detail om te onthouden: gebruik in je paden geen leidende slash (schrijf style.css en img/profielfoto.jpg in plaats van /style.css en /img/...), zodat je pagina ook lokaal zonder webserver vlekkeloos laadt. Uitstekend werk!",
+          "feedback": "Een knap, professioneel en fris paspoort! Je HTML-structuur is zuiver opgebouwd met secties en gevraagde tags. Ook de CSS is heel verzorgd met zachte kleuren, een modern schreefloos lettertype, een stijlvolle avatar en flexbox. Eén belangrijk technisch detail om te onthouden: gebruik in je paden geen leidende slash (schrijf style.css en img/profielfoto.jpg in plaats van /style.css en /img/...), zodat je pagina ook lokaal zonder webserver vlekkeloos laadt. Uitstekend werk!",
           "scores": {
             "4.1": 7.5,
-            "4.2": 9.0,
-            "4.3": 9.0,
-            "4.4": 9.0,
+            "4.2": 9,
+            "4.3": 9,
+            "4.4": 9,
             "4.5": 7.5,
-            "4.6": 9.0
-          }
-        },
-        "d1effb49ee": {
-          "criteriaLevels": {
-            "CRS01": 1,
-            "CRS02": 2,
-            "CRS21": 2,
-            "CRS24": 2,
-            "CRS06": 2,
-            "CRS18": 2,
-            "CRS20": 2,
-            "CRS27": 2,
-            "CRS23": 1,
-            "GEC02": 1,
-            "CRS04": 2,
-            "GEC01": 3
-          },
-          "feedback": "Je hebt een werkende en herkenbare paspoortpagina gebouwd met een frisse achtergrondkleur, gekleurde titels en een afgeronde profielfoto. Goed gewerkt! Er zijn wel enkele belangrijke technische aandachtspunten: plaats je lokale foto in de map img en verwijs daarnaar via een relatief pad (in plaats van een externe Unsplash-link zonder aanhalingstekens), voeg target blank toe aan je link, en voeg nog de genummerde top 3 toe met de tag ol. Let ook op de mappenstructuur: vermijd een dubbele submap zodat je bestanden netjes bij elkaar blijven.",
-          "scores": {
-            "4.1": 4.5,
-            "4.2": 6.0,
-            "4.3": 6.0,
-            "4.4": 6.0,
-            "4.5": 3.0,
-            "4.6": 7.5
+            "4.6": 9
           }
         },
         "37bc16a272": {
           "criteriaLevels": {
             "CRS01": 2,
             "CRS02": 3,
-            "CRS21": 2,
-            "CRS24": 2,
+            "CRS04": 0,
             "CRS06": 3,
             "CRS18": 3,
             "CRS20": 3,
+            "CRS21": 2,
+            "CRS23": 3,
+            "CRS24": 2,
             "CRS27": 2,
-            "CRS23": 2,
-            "GEC02": 2,
-            "CRS04": 3,
-            "GEC01": 3
+            "GEC01": 2,
+            "GEC02": 2
           },
-          "feedback": "Heel tof en compleet paspoort! Je hebt alle inhoudelijke vereisten netjes verwerkt: h1, h2, alinea's met sterke en cursieve accenten, beide lijsttypes (vaardigheden met ul én een top 3 met ol), en als leuke bonus zelfs een werkende HTML5-video toegevoegd. De styling is fris met een passend schreefloos font en een mooie avatar. Let nog op een paar kleine details in de code: verwijder de dubbele meta-tags in je head, let op de loze a-tag vóór je YouTube-link, en vergeet de puntkomma in je CSS niet. Sterk resultaat!",
+          "feedback": "Tof en compleet paspoort. Je hebt de inhoudelijke vereisten netjes verwerkt met eigen accenten en als leuke bonus een werkende video toegevoegd. De styling is fris, met een passend schreefloos font en avatar, al had je hier zeker nog verder mee kunnen experimenteren. Let nog op een paar kleine details in de code: de dubbele metatags in je head en de ontbrekende puntkomma in je CSS (ook al breekt dat de styling hier niet). Goed resultaat! Je OneDrive-koppeling ontbreekt.",
           "scores": {
             "4.1": 7.5,
-            "4.2": 6.0,
-            "4.3": 9.0,
+            "4.2": 6,
+            "4.3": 9,
             "4.4": 7.5,
-            "4.5": 6.0,
-            "4.6": 9.0
+            "4.5": 7.5,
+            "4.6": 3
+          }
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS18": 3,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 1
+          },
+          "feedback": "Wat een ontzettend creatieve en sfeervolle pagina! Je hebt enorm veel ambitie getoond met een eigen stijl, aangepaste fonts via font-face, sfeervolle achtergrondbeelden, een ronde avatar en flexbox-zijbalken. Twee belangrijke verbeterpunten voor de code: verhuis alle stijlen naar je externe style.css (vermijd een extra style-blok of inline stijlen in je HTML) en let op zuivere tag-nesting (plaats bijvoorbeeld geen ul binnen een p, en sluit alle tags netjes af). Knap!",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 9,
+            "4.3": 9,
+            "4.4": 9,
+            "4.5": 6,
+            "4.6": 9
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS04": 0,
+            "CRS06": 2,
+            "CRS18": 1,
+            "CRS20": 2,
+            "CRS21": 1,
+            "CRS23": 1,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 1
+          },
+          "feedback": "Je hebt een werkende pagina gebouwd met een frisse achtergrondkleur, gekleurde tussentitel en een afgeronde profielfoto. Echter oogt het inhoudelijk nog erg mager en nog niet persoonlijk. Er zijn wel enkele belangrijke technische aandachtspunten: nesting is niet overal correct, plaats je lokale foto in de map img en verwijs daarnaar via een relatief pad (in plaats van een externe Unsplash-link zonder aanhalingstekens), de link moest in een andere tab openen en de genummerde lijst ontbreekt. Let ook op de mappenstructuur: vermijd een dubbele submap zodat je bestanden netjes bij elkaar blijven. Je OneDrive-koppeling ontbreekt.",
+          "scores": {
+            "4.1": 4.5,
+            "4.2": 4.5,
+            "4.3": 4,
+            "4.4": 4.5,
+            "4.5": 3,
+            "4.6": 3
           }
         }
       }
@@ -569,9 +569,17 @@
         }
       ],
       "evaluations": {
+        "37bc16a272": {
+          "criteriaLevels": {},
+          "feedback": "Goed resultaat. Veel onderdelen vlekkeloos beantwoord. Gebruik voor vetgedrukte tekst bij voorkeur strong (lees de vraag goed na), noteer attributen altijd binnenin de openingstag, en gebruik voor een klikbare tekstlink in de body de tag a (met href) in plaats van de tag link (die enkel in de head voor stijlbladen dient).\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "scores": {
+            "4.3": 9,
+            "4.4": 9
+          }
+        },
         "bfa5afc5c6": {
           "criteriaLevels": {},
-          "feedback": "Knappe vooruitgang en heel mooi werk! Je hebt de nesting met cursieve tekst (em), het vetgedrukte strong-element, de tabbladtitel (title), het koppelen van het extern stijlblad en alle drie de afbeeldingsattributen (src, width en alt) foutloos beet. Onthoud nog dat attributen altijd binnenin de openingstag geplaatst worden (vóór het sluithaakje van de tag), en gebruik voor een klikbare hyperlink altijd de tag a in plaats van p.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Knappe vooruitgang. Je hebt veel van de onderdelen foutloos beet. Onthoud nog dat attributen altijd binnenin de openingstag geplaatst worden (vóór het sluithaakje van de tag), en gebruik voor een klikbare hyperlink altijd de tag a in plaats van p.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 10,
             "4.4": 10
@@ -579,15 +587,7 @@
         },
         "d1effb49ee": {
           "criteriaLevels": {},
-          "feedback": "Heel goed gewerkt! De nesting met cursieve tekst (em), vetgedrukt met strong, de plaatsing van de title in het browsertabblad, de koppeling van style.css en de volledige coderegel voor hyperlinks (tag a met attribuut href) zijn helemaal juist. Denk er nog aan dat kenmerken of attributen steeds binnenin de openingstag horen, en gebruik voor de vervangende tekst van een afbeelding voor schermlezers het attribuut alt.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
-          "scores": {
-            "4.3": 9,
-            "4.4": 9
-          }
-        },
-        "37bc16a272": {
-          "criteriaLevels": {},
-          "feedback": "Mooi resultaat! Het correct nesten van cursieve tekst (em), de paginatitel (title) in het tabblad, de koppeling van het extern stijlblad en alle drie de afbeeldingsattributen (src, width en alt) zijn vlekkeloos beantwoord. Gebruik voor semantisch vetgedrukte tekst bij voorkeur strong, noteer attributen altijd binnenin de openingstag, en gebruik voor een klikbare tekstlink in de body de tag a (met href) in plaats van de tag link (die enkel in de head voor stijlbladen dient).\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
+          "feedback": "Goed gewerkt. De meeste onderdelen zijn helemaal juist. Denk er nog aan dat kenmerken of attributen steeds binnenin de openingstag horen, en gebruik voor de vervangende tekst van een afbeelding voor schermlezers het attribuut alt.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
           "scores": {
             "4.3": 9,
             "4.4": 9

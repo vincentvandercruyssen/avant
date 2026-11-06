@@ -52,7 +52,7 @@ indieningen:
     leerplandoelen:
       - code: "CRS01"
         gewicht: 1
-        criterium: "De opdrachtvereisten en bestandsnaamgeving toepassen door een scherpe, goed leesbare foto of export van de analoge schets in te dienen als VoornaamA_Paspoort-Wireframe.jpg."
+        criterium: "De opdrachtvereisten en bestandsnaamgeving toepassen door een scherpe, goed leesbare foto of export van de schets in te dienen."
       - code: "CRS02"
         gewicht: 1
         criterium: "Bij elk getekend onderdeel op het wireframe doelgericht de exacte, semantisch passende HTML-tags noteren (h1, h2, p, img, ul/ol met li, a)."
@@ -269,7 +269,7 @@ Welke twee tags werken hier altijd als een hecht duo samen?
 
 ### Wireframe, schets op papier
 
-Net zoals je eerst schermen uittekende met Adobe XD, maak je in webdesign vaak eerst een snelle **analytische schets**.
+Alvorens je schermen uittekend met Adobe XD, maak je in webdesign vaak eerst een snelle **analytische schets**.
 
 1. Neem een wit papier en teken een rechthoek (je computerscherm).
 2. Teken de vlakken voor jouw **Paspoort**:
@@ -472,7 +472,7 @@ a:hover {
 
 ## Oplevering
 
-Comprimeer (zip) jouw volledige projectmap `VoornaamA_Paspoort` en upload het ZIP-bestand in de Smartschool Uploadzone:
+Comprimeer (zip) jouw volledige projectmap `VoornaamA_Paspoort` en upload het ZIP-bestand in de Smartschool Uploadzone, deel de koppeling naar je OneDrive vakmap:
 
 ```text
 VoornaamA_Paspoort.zip
