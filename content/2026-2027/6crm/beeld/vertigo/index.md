@@ -42,8 +42,8 @@ indieningen:
   - id: "bewerkingen"
     titel: "Vertigo 3.5 Bewerkingen"
     deadline: 2026-10-23
-    lesuren: 4
-    gewicht: 12
+    lesuren: 3
+    gewicht: 9
     leerplandoelen:
       - code: "CRS01"
         gewicht: 1
@@ -73,18 +73,18 @@ indieningen:
   - id: "diptiek"
     titel: "Vertigo 3.6 Diptiek"
     deadline: 2026-10-23
-    lesuren: 2
-    gewicht: 6
+    lesuren: 1
+    gewicht: 3
     leerplandoelen:
       - code: "CRS01"
         gewicht: 1
-        criterium: "De documentvereisten toepassen: liggend A4 (3508×2480 px bij 300 ppi, RGB) met 2 kolommen."
+        criterium: "De documentvereisten toepassen: liggend A4 (3508×2480 px bij 300 ppi, RGB) met twee kolommen."
       - code: "CRS02"
         gewicht: 1
-        criterium: "Het sterkste beeldpaar van hetzelfde onderwerp (wijd en tele) doelgericht selecteren voor een overtuigende diptiek."
+        criterium: "De twee sterkste beelden doelgericht selecteren voor een overtuigende diptiek."
       - code: "CRS22"
         gewicht: 1
-        criterium: "De beelden esthetisch en harmonieus samenbrengen in een evenwichtige lay-out zonder afleidende tekst."
+        criterium: "De beelden esthetisch en harmonieus samenbrengen in een evenwichtige lay-out."
       - code: "CRS24"
         gewicht: 1
         criterium: "De visuele hiërarchie en witruimte tussen beide beelden strak en evenwichtig uitlijnen."
@@ -96,7 +96,7 @@ indieningen:
         criterium: "Het Photoshop-werkbestand (.psd) en de JPEG-export (.jpg) conform de conventie en tijdig opleveren."
       - code: "CRS08"
         gewicht: 1
-        criterium: "De kadrering en onderwerpgrootte controleren zodat de optische achtergrondcompressie direct zichtbaar wordt."
+        criterium: "De kadrering, marges, uitlijning en grootte controleren."
       - code: "CRS23"
         gewicht: 1
         criterium: "De exportkwaliteit van de JPEG en de scherpte van beide opnames controleren op maximale beeldkwaliteit."
@@ -152,7 +152,7 @@ Zoek naar contrastrijke situaties met voldoende achtergronddiepte:
 
 Na het schieten bekijk en analyseer je jouw beelden in Adobe Bridge. Je selecteert en bewerkt **5 afzonderlijke koppels** (Onderwerp 1 t.e.m. 5, telkens Wijd en Tele).
 
-Vervolgens kies je uit deze vijf koppels jouw **allersterkste koppel** en werk je dat uit tot **één krachtige diptiek (tweeluik)** op liggend A4-formaat in Photoshop.
+Vervolgens kies je jouw **twee sterkste beelden** (wijd en tele, van hetzelfde of een ander onderwerp) en werk je die uit tot **één krachtige diptiek (tweeluik)** op liggend A4-formaat in Photoshop.
 
 ## Technische specificaties
 
@@ -163,7 +163,7 @@ Vervolgens kies je uit deze vijf koppels jouw **allersterkste koppel** en werk j
 | **Beeldverhouding** | **3:2 (oorspronkelijke sensorverhouding)** | Behoud de authentieke beeldverhouding van de camera; snijd niet willekeurig bij. |
 | **Onderzoek** | **1 analysedocument (PDF)** | Analyse van 5 nieuwsartikels met hoofdafbeelding (wijd vs. tele en motivering). |
 | **Ingediende koppels** | **5 geselecteerde koppels (10 JPG's)** | 5× Wijd en 5× Tele van de 5 gekozen onderwerpen, geëxporteerd uit Camera Raw. |
-| **Finale diptiek** | **1 sterke diptiek (A4 liggend, 297 × 210 mm)** | Strakke tweeluik-lay-out in Photoshop van het beste koppel, **zonder tekst**. |
+| **Finale diptiek** | **1 sterke diptiek (A4 liggend, 297 × 210 mm)** | Strakke tweeluik-lay-out in Photoshop van de twee sterkste beelden (wijd en tele), **zonder tekst**. |
 | **Eindbestanden** | **1× PDF, 1× PSD & 11× JPEG (300 ppi, sRGB)** | Onderzoek (PDF), 10 koppel-exports + 1 samengestelde diptiek (JPG) en werkbestand (PSD). |
 
 ### Mappenstructuur
@@ -271,7 +271,7 @@ Upload jouw **10 afgewerkte JPEG-bestanden** (de 5 koppels wijd en tele) rechtst
 
 ### Diptiek samenstellen in Adobe Photoshop
 
-Kies uit je vijf afgewerkte koppels het allersterkste paar en bouw hiervoor één A4-document op.
+Kies je twee sterkste beelden (wijd en tele, van hetzelfde of een ander onderwerp) en bouw hiervoor één A4-document op.
 
 1. Maak een nieuw document aan (`Ctrl + N`):
    * **Voorinstelling:** Afdrukken > A4
@@ -334,4 +334,4 @@ Overloop deze controlepunten zorgvuldig vóór je definitief uploadt.
 - Belichting en witbalans zijn binnen elk koppel op elkaar afgestemd zonder overbelichte hooglichten of dichtgelopen schaduwen.
 
 #### Vormgeving van de diptiek
-- De diptiek toont het allersterkste koppel strak uitgelijnd op liggend A4-formaat.
+- De diptiek toont de twee sterkste beelden (wijd en tele) strak uitgelijnd op liggend A4-formaat.

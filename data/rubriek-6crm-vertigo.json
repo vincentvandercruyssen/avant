@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "6crm-vertigo",
   "classGroup": "6CRM",
-  "lastUpdated": "2026-11-03T22:31:00.000000+01:00",
+  "lastUpdated": "2026-11-06T10:34:40.866+01:00",
   "submissions": {
     "onderzoek": {
       "id": "onderzoek",
@@ -63,68 +63,68 @@
         }
       ],
       "evaluations": {
-        "bfa5afc5c6": {
-          "criteriaLevels": {
-            "CRS01": 2,
-            "CRS02": 3,
-            "CRS08": 3,
-            "CRS23": 2,
-            "CRS04": 2,
-            "GEC01": 3
-          },
-          "feedback": "Inhoudelijk een buitengewoon sterk onderzoeksdocument! Je hebt vijf heel gevarieerde nieuwsartikels geselecteerd (van protesten in Albanië tot sport en buitenlandverslaggeving) en de optische eigenschappen zoals achtergrondcompressie, scherptediepte en de fysieke standplaats van de fotograaf uiterst scherp ontleed. Je motivering van de journalistieke keuzes getuigt van veel inzicht. Let op twee formele puntjes: lever je einddossier steeds aan als geëxporteerde PDF en hanteer de naamconventie AleB_Vertigo-Onderzoek.pdf. Prachtig inhoudelijk werk!",
-          "scores": {
-            "4.1": 5,
-            "4.5": 5,
-            "4.6": 5
-          }
-        },
         "0b6de5c593": {
           "criteriaLevels": {
             "CRS01": 3,
             "CRS02": 3,
+            "CRS04": 3,
             "CRS08": 3,
             "CRS23": 3,
-            "CRS04": 3,
             "GEC01": 3
           },
-          "feedback": "Een werkelijk voorbeeldig onderzoeksdocument van tien pagina's! Je hebt vijf artikels uit uiteenlopende rubrieken (sport, buitenland, wetenschap, cultuur en justitie) diepgaand ontleed. Je analyse van de optische argumenten (waaronder de isolatie van de tennisser door telecompressie versus de brede leefomgeving in India) is glashelder en getuigt van een uitstekend begrip van brandpuntsafstanden en beeldwerking. Ook de PDF-opmaak, naamgeving en stipte inlevering zijn vlekkeloos. Chapeau!",
+          "feedback": "Heel sterke en trefzekere analyses! Je verwoordt je bevindingen helder en toont een uitstekend inzicht in lenskeuze en beeldwerking. Enkel je laatste foto was een echt twijfelgeval: je koos voor tele, maar dit beeld leunt eerder aan bij een groothoek. Er zit flink wat perspectiefvervorming in de voorgrondelementen, terwijl achtergrondelementen relatief klein wegvallen. Het gaat hier vermoedelijk om een bredere standaardlens of een smartphonebeeld (gezien de harde schaduwen, uitgebrande hooglichten en grote scherptediepte) dat mogelijk bijgesneden werd. Je overige analyses, de journalistieke motiveringen en de verzorgde lay-out van je document zijn stuk voor stuk vlekkeloos. Een knap en inhoudelijk sterk onderzoek!",
           "scores": {
             "4.1": 6,
             "4.5": 6,
             "4.6": 6
           }
         },
-        "d1effb49ee": {
+        "37bc16a272": {
           "criteriaLevels": {
-            "CRS01": 1,
-            "CRS02": 1,
-            "CRS08": 1,
-            "CRS23": 1,
-            "CRS04": 1,
-            "GEC01": 3
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS08": 3,
+            "CRS23": 2,
+            "GEC01": 1
           },
-          "feedback": "Je hebt tijdens de les wel vijf nieuwsartikels opgesnord en als schermafbeeldingen bewaard, maar het eigenlijke onderzoeksdocument ontbreekt. De opdracht vroeg uitdrukkelijk om je bevindingen te bundelen in een PDF-bestand (NorahK_Vertigo-Onderzoek.pdf) met een concrete analyse per artikel: een schatting van de brandpuntsafstand, optische argumenten (achtergrondcompressie, scherptediepte) en een journalistieke motivering. Zorg dat je een analyseopdracht altijd schriftelijk uitwerkt en bundelt zoals gevraagd.",
+          "feedback": "Knap werk met duidelijke en inhoudelijk sterke analyses! Je hebt met meerdere sportartikels een veilige keuze gemaakt (bij sportevenementen grijpen fotografen immers vrijwel altijd naar een telelens), maar je toont een goed begrip van optische beeldwerking. Twee observaties bij je beelden: Je derde foto oogt als een smartphonebeeld dat achteraf werd bijgesneden, waardoor de verhoudingen wat atypisch uitvallen. Bij het vierde beeld (de schapen) dacht je aan groothoek, maar dit is veeleer met een telelens geschoten: de fotograaf heeft vanop afstand doorheen een omheining ingezoomd (die je vooraan nog heel lichtjes onscherp ziet vervagen) en door een klein diafragma blijft het landschap daarachter nagenoeg scherp. Je onderzoek werd een dag na de deadline ingediend via Te laat. Het document is qua vormgeving niet overal even consistent, maar al bij al is dit een prima onderzoeksdocument!",
           "scores": {
-            "4.1": 2,
-            "4.5": 2,
+            "4.1": 6,
+            "4.5": 5,
             "4.6": 4
           }
         },
-        "37bc16a272": {
+        "bfa5afc5c6": {
           "criteriaLevels": {
             "CRS01": 2,
             "CRS02": 3,
-            "CRS08": 2,
-            "CRS23": 2,
-            "CRS04": 3,
-            "GEC01": 1
+            "CRS04": 2,
+            "CRS08": 3,
+            "CRS23": 3,
+            "GEC01": 3
           },
-          "feedback": "Prima onderzoeksdocument in PDF waarin je vijf artikels van VRT NWS hebt geanalyseerd aan de hand van de vaste rubrieken. Je begrijpt het verschil tussen de ruimtelijke werking van een groothoeklens (zoals bij de marathon en de schapenweide) en de isolerende werking van een telelens bij sport- en nieuwsfoto's goed. Probeer je journalistieke motivering nog iets professioneler te formuleren en bewaak je inleverdatum: je dossier werd een dag na de deadline ingediend via Te laat.",
+          "feedback": "Je onderzoeksdocument zit verzorgd in elkaar en is uitgebreid beschreven. Bij enkele van de beelden heb je het lenstype verkeerd ingeschat. Bij het eerste nieuwsbeeld (de demonstrant en de brandende wagen) zal eerder een telelens gebruikt zijn: de fotograaf kon in zo'n situatie niet dichtbij staan en de achtergrondcompressie zorgt ervoor dat de auto en de demonstrant haast even groot lijken ondanks hun grote tussenafstand. Ook het restaurantbeeld (het profielartikel) leunt eerder aan bij een lichte tele dan bij een groothoek: het beeld oogt vlak en rustig zonder al te veel perspectiefvervorming. Je analyse daarvan zat er overigens mooi tussenin. Je analyses bij de sportfoto (uitreikingen zijn vrijwel altijd tele), de hulpverleners en het kind met de verf zijn dan weer helemaal raak en correct onderbouwd. Let nog op de gevraagde bestandsnaamgeving. Verder een meer dan prima onderzoek!",
           "scores": {
             "4.1": 5,
-            "4.5": 4,
-            "4.6": 4
+            "4.5": 6,
+            "4.6": 5
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 1,
+            "CRS04": 0,
+            "CRS08": 0,
+            "CRS23": 0,
+            "GEC01": 0
+          },
+          "feedback": "Het eigenlijke onderzoeksdocument ontbreekt in de uploadmap. De opdracht vroeg om je bevindingen te bundelen in een verzorgd document met per artikel een concreet onderzoek: een schatting van de brandpuntsafstand, argumenten en een journalistieke motivering. De lenstypes die je in de bestandsnamen van de losse afbeeldingen hebt gezet, kloppen. Zonder uitgeschreven analyse kan dit uiteraard niet als een volwaardig onderzoek tellen.",
+          "scores": {
+            "4.1": 1,
+            "4.5": 0,
+            "4.6": 0
           }
         }
       }
@@ -133,7 +133,7 @@
       "id": "bewerkingen",
       "title": "Vertigo 3.5 Bewerkingen",
       "deadline": "23/10",
-      "weight": 12,
+      "weight": 9,
       "criteriaWeights": {
         "CRS01": 1,
         "CRS02": 1,
@@ -203,80 +203,80 @@
         }
       ],
       "evaluations": {
-        "bfa5afc5c6": {
-          "criteriaLevels": {
-            "CRS01": 2,
-            "CRS02": 3,
-            "CRS06": 3,
-            "CRS10": 3,
-            "CRS08": 3,
-            "CRS23": 3,
-            "CRS04": 1,
-            "GEC01": 2
-          },
-          "feedback": "Fotografisch en beeldtechnisch lever je werk van topkwaliteit af: je vijf onderwerpen zijn haarscherp vastgelegd, de belichting en kleurtonen in Camera Raw zijn prachtig gebalanceerd en het optische contrast tussen de wijd- en telestand laat de achtergrondcompressie heel duidelijk zien. Op het vlak van bestandsbeheer en inleverafspraken is er echter een groot werkpunt: in plaats van de gevraagde tien definitieve JPEG-exports telt je uploadmap maar liefst 37 bestanden, inclusief gigantische PSD-werkbestanden en dubbele versienummers. Selecteer bij een export enkel de gevraagde tien JPEG-bestanden en ruim tussenbestanden op.",
-          "scores": {
-            "4.1": 10,
-            "4.3": 12,
-            "4.5": 12,
-            "4.6": 6
-          }
-        },
         "0b6de5c593": {
           "criteriaLevels": {
             "CRS01": 3,
-            "CRS02": 3,
-            "CRS06": 3,
-            "CRS10": 3,
-            "CRS08": 3,
-            "CRS23": 3,
-            "CRS04": 3,
-            "GEC01": 3
-          },
-          "feedback": "Een voorbeeldige inlevering! Je hebt exact de gevraagde tien JPEG-bestanden opgeleverd voor vijf gevarieerde onderwerpen (waaronder de hond en de decoratie). De beelden zijn in Camera Raw met veel zorg ontwikkeld: de kleuren zijn fris, de doortekening in zowel hooglichten als schaduwen blijft natuurlijk en het hoofdonderwerp is telkens mooi scherp gehouden. Het optische verschil in ruimtewerking tussen wijd en tele is heel overtuigend zichtbaar. Ook de bestandsnaamgeving klopt tot in het detail. Schitterend werk!",
-          "scores": {
-            "4.1": 12,
-            "4.3": 12,
-            "4.5": 12,
-            "4.6": 12
-          }
-        },
-        "d1effb49ee": {
-          "criteriaLevels": {
-            "CRS01": 3,
             "CRS02": 2,
-            "CRS06": 3,
-            "CRS10": 2,
-            "CRS08": 3,
-            "CRS23": 3,
             "CRS04": 3,
+            "CRS06": 2,
+            "CRS08": 2,
+            "CRS10": 3,
+            "CRS23": 3,
             "GEC01": 3
           },
-          "feedback": "Zeer nette en tijdige inlevering van de tien gevraagde beelden! Je hebt vijf verschillende onderwerpen gefotografeerd en op maximale resolutie (6000 bij 4000 pixels) geëxporteerd vanuit Camera Raw. Het verschil in achtergrondcompressie tussen de groothoek- en telestand is duidelijk merkbaar. Let er bij de opname en kadrering nog scherper op dat je hoofdonderwerp in beide foto's exact even groot in beeld blijft; bij enkele koppels zit er nog een klein schaalverschil op. Een zeer solide fotoserie!",
+          "feedback": "Een mooie en verzorgde fotoserie! Je kleuren en tinten zijn natuurgetrouw afgewerkt en de beelden ogen fris en scherp. Heel knap dat je hond telkens zo flink en stil is blijven zitten voor de lens! Het voornaamste werkpunt zit in de kadrering: het onderwerp staat tussen wijd en tele niet overal op exact dezelfde manier in beeld. Waar dat tijdens het fotograferen net niet helemaal lukte, had je dit achteraf nog kunnen rechttrekken door de foto bij te snijden. Verder is dit technisch een sterke prestatie!",
           "scores": {
-            "4.1": 10,
-            "4.3": 10,
-            "4.5": 12,
-            "4.6": 12
+            "4.1": 7.5,
+            "4.3": 7.5,
+            "4.5": 7.5,
+            "4.6": 9
           }
         },
         "37bc16a272": {
           "criteriaLevels": {
             "CRS01": 2,
             "CRS02": 3,
+            "CRS04": 3,
             "CRS06": 3,
-            "CRS10": 3,
-            "CRS08": 3,
+            "CRS08": 2,
+            "CRS10": 2,
             "CRS23": 3,
-            "CRS04": 2,
             "GEC01": 3
           },
-          "feedback": "Fotografisch heb je het vertigo-principe uitstekend begrepen en toegepast: je bent er heel goed in geslaagd om het hoofdonderwerp in zowel de wijd- als telestand nauwkeurig even groot in beeld te houden, waardoor de achtergrondcompressie fantastisch tot uiting komt. De RAW-ontwikkeling op 6000 bij 4000 pixels is haarscherp en contrastrijk. Let enkel op de inleverinstructie: upload bij deze opdracht de tien JPEG-bestanden rechtstreeks in de map in plaats van een zip-bestand (en vermijd het uploaden van meerdere archieven). Inhoudelijk een heel sterke reeks!",
+          "feedback": "Heel sterk hoe je met de terugkoppeling aan de slag bent gegaan: het bijsnijden en het onderling afstemmen van de onderwerpen qua tint en helderheid heeft je serie merkbaar naar een hoger niveau getild. Bij het hoofdonderwerp (de rugzak) komt het effect bijzonder overtuigend naar voren, en het is tof dat je hier een alternatieve compositie hebt uitgetest. Let wel op bij het productbeeld (het parfumflesje): daar heb je nu per ongeluk tweemaal dezelfde brandpuntsafstand ingediend met een licht andere uitsnede, terwijl het optische verschil in je initiële indiening net zo mooi zichtbaar was. Verder een inhoudelijk en technisch zeer sterke prestatie!",
           "scores": {
-            "4.1": 10,
-            "4.3": 12,
-            "4.5": 12,
-            "4.6": 10
+            "4.1": 7.5,
+            "4.3": 7.5,
+            "4.5": 7.5,
+            "4.6": 9
+          }
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 1,
+            "CRS04": 1,
+            "CRS06": 2,
+            "CRS08": 2,
+            "CRS10": 2,
+            "CRS23": 2,
+            "GEC01": 1
+          },
+          "feedback": "Je hebt het jezelf complex gemaakt: de gevraagde bewerkingen hoefden niet zo vergaand te zijn, ook al zijn ze op zich goed uitgewerkt. Beide foto's van het poppetje kregen bijvoorbeeld verschillende kleursferen, terwijl we net zochten naar consistente, heldere beelden die qua kleur en belichting telkens op elkaar zijn afgestemd. Je bent goed op de terugkoppeling ingegaan, want het onderwerp moest in beide beelden matchen in het kader. Als dit bij de opname niet correct zat, kon je dit bijsnijden. Je hebt veel tijd gestoken in doorgedreven bewerkingen, terwijl de fotografische basis er nog niet stevig in zat. De verwachting was in dit geval om enkel de definitieve JPEG-bestanden in te dienen (geen PSD-werkbestanden). Let tot slot op je bestandsnaamgeving, want die is niet overal even consistent. Zorg dat je eerst de basis goed legt voor je verder bouwt. Verder zijn de onderwerpen en foto's op zich wel goed.",
+          "scores": {
+            "4.1": 4.5,
+            "4.3": 6,
+            "4.5": 6,
+            "4.6": 3
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS08": 3,
+            "CRS10": 2,
+            "CRS23": 3,
+            "GEC01": 3
+          },
+          "feedback": "Knap gewerkt aan deze reeks. Je toont een aantal sterke voorbeelden, vooral de bank in het park is bijzonder geslaagd. Twee onderwerpen waren net iets minder interessant gekozen, namelijk het naamkaartje en de geparkeerde wagens. Let er daarnaast op dat de schaalgrootte van je onderwerp tussen wijd en tele nog niet overal even strak matcht. Enkele beelden hadden nog beter op elkaar afgestemd kunnen worden door achteraf gericht bij te snijden. Verder een propere en zeer verzorgde prestatie!",
+          "scores": {
+            "4.1": 7.5,
+            "4.3": 7.5,
+            "4.5": 9,
+            "4.6": 9
           }
         }
       }
@@ -285,7 +285,7 @@
       "id": "diptiek",
       "title": "Vertigo 3.6 Diptiek",
       "deadline": "23/10",
-      "weight": 6,
+      "weight": 3,
       "criteriaWeights": {
         "CRS01": 1,
         "CRS02": 1,
@@ -371,92 +371,92 @@
         }
       ],
       "evaluations": {
-        "bfa5afc5c6": {
-          "criteriaLevels": {
-            "CRS01": 3,
-            "CRS02": 1,
-            "CRS22": 2,
-            "CRS24": 2,
-            "CRS20": 2,
-            "CRS27": 3,
-            "CRS08": 1,
-            "CRS23": 3,
-            "CRS04": 3,
-            "GEC01": 3
-          },
-          "feedback": "Je hebt de technische specificaties van het document perfect uitgevoerd: het formaat staat exact op liggend A4 (3508 bij 2480 pixels bij 300 ppi) en zowel het Photoshop-bestand als de JPEG zijn stipt en volgens de naamconventie ingeleverd. Er is echter een fundamentele inhoudelijke fout geslopen in je diptiek: je hebt Onderwerp 5 (wijd) naast Onderwerp 3 (tele) geplaatst. Twee verschillende onderwerpen naast elkaar tonen het vertigo-effect niet aan; de bedoeling is net om exact hetzelfde hoofdonderwerp (bv. tweemaal Onderwerp 1) side-by-side te tonen om het optische verschil in achtergrondcompressie zichtbaar te maken. Pas dit even aan in je Photoshop-bestand!",
-          "scores": {
-            "4.1": 4,
-            "4.2": 4,
-            "4.4": 5,
-            "4.5": 4,
-            "4.6": 6
-          }
-        },
         "0b6de5c593": {
           "criteriaLevels": {
             "CRS01": 3,
-            "CRS02": 1,
-            "CRS22": 2,
-            "CRS24": 2,
-            "CRS20": 2,
-            "CRS27": 3,
-            "CRS08": 1,
-            "CRS23": 3,
-            "CRS04": 3,
-            "GEC01": 3
-          },
-          "feedback": "Technisch heb je de documentopzet uitstekend in de vingers: het liggende A4-stramien op 3508 bij 2480 pixels aan 300 ppi is feilloos en je hebt beide bestanden tijdig en netjes benoemd geüpload. Inhoudelijk heb je echter de verkeerde selectie gemaakt: je hebt de decoratie (wijd) naast Cooper (wijd) geplaatst. Dit zijn twee verschillende onderwerpen en bovendien twee groothoekopnames. Je hebt in je selectie van tien beelden schitterende wijd/tele-koppels zitten (zoals je hondenserie); open je PSD en vervang de beelden door één en hetzelfde koppel (wijd en tele) zodat het vertigo-effect en de achtergrondcompressie meteen zichtbaar worden.",
-          "scores": {
-            "4.1": 4,
-            "4.2": 4,
-            "4.4": 5,
-            "4.5": 4,
-            "4.6": 6
-          }
-        },
-        "d1effb49ee": {
-          "criteriaLevels": {
-            "CRS01": 2,
             "CRS02": 2,
-            "CRS22": 2,
-            "CRS24": 2,
-            "CRS20": 1,
-            "CRS27": 1,
-            "CRS08": 2,
-            "CRS23": 1,
-            "CRS04": 2,
+            "CRS04": 3,
+            "CRS08": 3,
+            "CRS20": 3,
+            "CRS22": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 3,
             "GEC01": 3
           },
-          "feedback": "In je diptiek heb je wél het juiste principe toegepast: hetzelfde onderwerp staat in wijd en tele mooi naast elkaar in een strakke lay-out zonder afleidende tekst, waardoor de achtergrondcompressie goed te vergelijken is. Het grote werkpunt zit hier in de oplevering: de briefing vroeg uitdrukkelijk om het Photoshop-werkbestand (.psd) én een hoogwaardige JPEG (.jpg) in te leveren. Je hebt het document echter enkel als PDF geëxporteerd. Sla je bestand in Photoshop op als NorahK_Vertigo-Diptiek.psd en exporteer de JPG naar je exports-map om je oplevering compleet te maken.",
+          "feedback": "Mooie beeldkeuze en een verzorgde diptiek! Perfect uitgelijnd met goed gebruik van gidslijnen en slimme objecten. Goed werk!",
           "scores": {
-            "4.1": 4,
-            "4.2": 4,
-            "4.4": 2,
+            "4.1": 2.5,
+            "4.2": 3,
+            "4.4": 3,
             "4.5": 3,
-            "4.6": 5
+            "4.6": 3
           }
         },
         "37bc16a272": {
           "criteriaLevels": {
             "CRS01": 3,
             "CRS02": 3,
-            "CRS22": 3,
-            "CRS24": 3,
-            "CRS20": 3,
-            "CRS27": 3,
+            "CRS04": 2,
             "CRS08": 3,
+            "CRS20": 3,
+            "CRS22": 3,
             "CRS23": 3,
-            "CRS04": 3,
+            "CRS24": 3,
+            "CRS27": 3,
             "GEC01": 3
           },
-          "feedback": "Een absolute voltreffer! Jij hebt de essentie van de Vertigo-opdracht feilloos begrepen én uitgevoerd: hetzelfde onderwerp (Onderwerp 1) staat in beide kolommen exact even groot in beeld, waardoor het verschil in perspectiefwerking en de extreme achtergrondcompressie van de telelens direct in het oog springt. De lay-out is strak, symmetrisch en clean zonder storende tekst. Ook aan alle technische eisen (liggend A4 op 3508 bij 2480 pixels aan 300 ppi, werkbestand en JPEG-export) is tot in het kleinste detail voldaan. Een modeldiptiek!",
+          "feedback": "Je hebt de terugkoppeling goed verwerkt en een sterke beeldkeuze gemaakt. Perfect uitgelijnd, met goed gebruik van gidslijnen en slimme objecten. Knap werk! (Let op naamgeving.)",
           "scores": {
-            "4.1": 6,
-            "4.2": 6,
-            "4.4": 6,
-            "4.5": 6,
-            "4.6": 6
+            "4.1": 3,
+            "4.2": 3,
+            "4.4": 3,
+            "4.5": 3,
+            "4.6": 2.5
+          }
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 3,
+            "CRS08": 2,
+            "CRS20": 3,
+            "CRS22": 3,
+            "CRS23": 3,
+            "CRS24": 2,
+            "CRS27": 3,
+            "GEC01": 3
+          },
+          "feedback": "Sterk diptiek en een goede beeldkeuze! De beelden zijn mooi uitgelijnd, al verschillen de buitenmarges lichtjes van elkaar. Goed gebruik van slimme objecten. Er staan wel twee ongebruikte lagen in je PSD. Verder sterk werk.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 2.5,
+            "4.4": 3,
+            "4.5": 2.5,
+            "4.6": 3
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 1,
+            "CRS04": 1,
+            "CRS08": 2,
+            "CRS20": 0,
+            "CRS22": 2,
+            "CRS23": 0,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 0
+          },
+          "feedback": "Je beelden zijn goed uitgelijnd, maar staan niet helemaal gecentreerd. Je diende enkel een pdf in (jpg gevraagd) en het psd-bestand ontbreekt. Twee verschillende onderwerpen waren trouwens ook toegelaten en aangeraden.",
+          "scores": {
+            "4.1": 2,
+            "4.2": 2,
+            "4.4": 0.5,
+            "4.5": 1,
+            "4.6": 0.5
           }
         }
       }
