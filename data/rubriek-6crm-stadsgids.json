@@ -1,0 +1,379 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "6crm-stadsgids",
+  "classGroup": "6CRM",
+  "lastUpdated": "2026-11-09T20:49:01.446+01:00",
+  "submissions": {
+    "onderzoek": {
+      "id": "onderzoek",
+      "title": "Stadsgids 2.1 Onderzoek en inhoud",
+      "deadline": "07/10",
+      "weight": 6,
+      "criteriaWeights": {
+        "13.01": 1,
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS20": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "13.01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b6de5c593": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "37bc16a272": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
+    },
+    "wireframe": {
+      "id": "wireframe",
+      "title": "Stadsgids 2.2 Wireframing in Figma",
+      "deadline": "11/10",
+      "weight": 3,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS03": 2,
+        "CRS21": 1,
+        "CRS22": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS03",
+              "gewicht": 2
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS22",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b6de5c593": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "37bc16a272": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
+    },
+    "toets-html-css": {
+      "id": "toets-html-css",
+      "title": "Toets 03 HTML/CSS",
+      "deadline": "09/11",
+      "weight": 12,
+      "criteriaWeights": {
+        "CRS02": 1,
+        "CRS18": 1,
+        "13.08": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS18",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "13.08",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b6de5c593": {
+          "criteriaLevels": {},
+          "feedback": "Knap resultaat! Je hebt het grootste deel vlekkeloos beet. Let er enkel op dat je voor een elementselector geen punt gebruikt (.section is een class) en dat de algemene stijlen op de body horen.\n\nJe toetsscore telt mee voor technieken (CRS02), webtoepassingen (CRS18) en vaktaal (13.08).",
+          "scores": {
+            "4.1": 10,
+            "4.3": 10,
+            "4.4": 10
+          }
+        },
+        "37bc16a272": {
+          "criteriaLevels": {},
+          "feedback": "Dit kun je veel beter. De inhoudsverdeling en het nav-element herken je al goed. Je valt uit bij de schrijfwijze van hyperlinks (de a-tag met het href-attribuut), de elementselectoren en het boxmodel. Neem de leerstof nog eens grondig door en bekijk telkens in de planner wat er verwacht wordt te kennen.\n\nJe toetsscore telt mee voor technieken (CRS02), webtoepassingen (CRS18) en vaktaal (13.08).",
+          "scores": {
+            "4.1": 4,
+            "4.3": 4,
+            "4.4": 4
+          }
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {},
+          "feedback": "Goede inzet, de basis en de CSS-schrijfwijze zitten al goed. Onthoud dat een ID altijd uniek moet zijn op een pagina. Bekijk nog eens hoe je een a-element schrijft en herhaal het verschil tussen margin en padding.\n\nJe toetsscore telt mee voor technieken (CRS02), webtoepassingen (CRS18) en vaktaal (13.08).",
+          "scores": {
+            "4.1": 7.5,
+            "4.3": 7.5,
+            "4.4": 7.5
+          }
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {},
+          "feedback": "Afwezig tijdens het afnemen van de toets.",
+          "scores": {}
+        }
+      }
+    },
+    "oplevering": {
+      "id": "oplevering",
+      "title": "Stadsgids 3 Oplevering",
+      "deadline": "15/11",
+      "weight": 15,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS21": 1,
+        "CRS22": 2,
+        "CRS06": 1,
+        "CRS18": 2,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS23": 1,
+        "GEC02": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS22",
+              "gewicht": 2
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS06",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS18",
+              "gewicht": 2
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b6de5c593": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "37bc16a272": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "bfa5afc5c6": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        },
+        "d1effb49ee": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
+    }
+  }
+}

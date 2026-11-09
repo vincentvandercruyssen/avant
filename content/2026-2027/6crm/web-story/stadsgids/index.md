@@ -15,27 +15,118 @@ software:
   - "Visual Studio Code"
   - "HTML5"
   - "CSS3 (Flexbox & Grid)"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out."
-  - code: "CRS06"
-    criterium: "Vlot en efficiënt werken met ontwerptools (Figma) en een professionele code-editor (Visual Studio Code)."
-  - code: "CRS18"
-    criterium: "Een semantisch correcte, functionele en gestijlde multipage website (Stadsgids) met coherente navigatie realiseren."
-  - code: "CRS20"
-    criterium: "Teksten, links en beeldassets ordelijk bundelen, categoriseren en correct integreren in een webomgeving."
-  - code: "CRS21"
-    criterium: "Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels."
-  - code: "CRS22"
-    criterium: "Lay-outsystemen (Flexbox voor navigatie en Grid voor cards en side-by-side presentaties) doelgericht opzetten."
-  - code: "CRS23"
-    criterium: "Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser."
-  - code: "CRS27"
-    criterium: "De webbestanden (HTML, CSS, assets) volgens de afgesproken structuur en naamgeving tijdig opleveren."
-  - code: "GEC02"
-    criterium: "Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels."
+indieningen:
+  - id: "onderzoek"
+    titel: "Stadsgids 2.1 Onderzoek en inhoud"
+    deadline: 2026-10-07
+    lesuren: 2
+    gewicht: 6
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De opdrachtvoorschriften en naamconventie toepassen voor het onderzoeksdocument (VoornaamA_Stadsgids-Onderzoek.docx of .pdf)."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Drie steden en inspiratiewebsites analyseren en de benodigde semantische structuren en navigatie doelgericht bepalen."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Teksten, achtergrondinformatie, bezienswaardigheden en rechtenvrije beeldassets ordelijk bundelen in een voorbereidingsdocument."
+      - code: "13.01"
+        gewicht: 1
+        criterium: "De onderzoeksbevindingen en thematische keuzes voor de drie steden helder en gestructureerd verwoorden."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het onderzoeksdocument en beeldassets ordelijk bijhouden en beheren in de OneDrive-vakmap voor Web."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline (07/10) en inleverafspraken voor het onderzoek stipt naleven."
+
+  - id: "wireframe"
+    titel: "Stadsgids 2.2 Wireframing in Figma"
+    deadline: 2026-10-11
+    lesuren: 2
+    gewicht: 3
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De exportvereisten en bestandsnaamgeving toepassen voor de geëxporteerde PNG-frames (VoornaamA_Stadsgids-Wireframe-*.png)."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "In de wireframes doelgericht semantische HTML-elementen (header, nav, main, section, article, footer) plannen."
+      - code: "CRS03"
+        gewicht: 2
+        criterium: "Vooraf een doordacht desktop wireframe in Figma opzetten voor zowel de landingspagina als het sjabloon van de stadspagina's."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Typografische hiërarchie, card-componenten en call-to-actions overzichtelijk structureren op het 1200px-canvas."
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "Lay-outsystemen (Flexbox voor navigatie en Grid voor de stedenkaarten en side-by-side blokken) visueel plannen in Figma."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het Figma-bestand ordelijk beheren en exports bewaren in de OneDrive-projectmap."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline (11/10) en inleverafspraken voor de wireframes stipt naleven."
+
+  - id: "toets-html-css"
+    titel: "Toets 03 HTML/CSS"
+    deadline: 2026-11-09
+    lesuren: 1
+    gewicht: 12
+    leerplandoelen:
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "De juiste semantische HTML-elementen en CSS-selectors doelgericht selecteren in functie van inhoud en lay-out."
+      - code: "CRS18"
+        gewicht: 1
+        criterium: "Parate syntaxis en codeerregels van semantische HTML-elementen (navigatie, hyperlinks, documentstructuur en stijlbladkoppeling)."
+      - code: "13.08"
+        gewicht: 1
+        criterium: "Het correct en doelgericht benoemen en toepassen van HTML- en CSS-vaktaal (selectors, box-model, eigenschappen en tags)."
+
+  - id: "oplevering"
+    titel: "Stadsgids 3 Oplevering"
+    deadline: 2026-11-15
+    lesuren: 4
+    gewicht: 15
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Productievereisten, bestandsconventies (kleine letters, relatieve paden) en mapbeheer toepassen in de OneDrive-vakmap."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en efficiënt werken met Visual Studio Code en DevTools."
+      - code: "CRS18"
+        gewicht: 2
+        criterium: "Een semantisch correcte, functionele en gestijlde multipage website (Stadsgids) met coherente navigatie realiseren."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Teksten, links en beeldassets ordelijk bundelen, categoriseren en correct integreren in de vier HTML-pagina's."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels."
+      - code: "CRS22"
+        gewicht: 2
+        criterium: "Lay-outsystemen (Flexbox voor navigatie/footer en Grid voor cards en side-by-side presentaties) doelgericht opzetten."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "De webbestanden (HTML, CSS, assets) volgens de afgesproken structuur en naamgeving via ZIP tijdig opleveren."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De volledige projectmap ordelijk bewaren en beheren in OneDrive."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en alle inleverafspraken van de opdracht stipt naleven."
 draft: false
 ---
 

@@ -176,3 +176,30 @@
 * **CRS22:** Lay-outsystemen (Flexbox voor navigatie en Grid voor cards en side-by-side presentaties) doelgericht opzetten.
 * **CRS23:** Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
+
+## Les 7 09/11/2026 (Web, 13:30 - 16:10)
+
+### Stadsgids: Toets HTML/CSS 03, terugkoppeling en CSS-uitwerking
+
+### Lesverloop & inhoud
+1. **Toets HTML/CSS 03:**
+   * Evaluatie van HTML-semantiek, CSS-selectors en -eigenschappen, het box-model en lay-outtechnieken zoals Flexbox en Grid.
+2. **Terugkoppeling Stadsgids via OneDrive:**
+   * De ingeleverde projectuitwerkingen in OneDrive overlopen.
+   * Gerichte terugkoppeling geven op de HTML-structuur, navigatie, inhoud en voortgang van de CSS.
+   * Concrete aandachtspunten bepalen voor de verdere uitwerking.
+3. **CSS van de Stadsgids verder uitwerken:**
+   * De vormgeving van de landingspagina en stadspagina's afstemmen op de wireframes.
+   * Typografie, kleuren, tussenruimtes en uitlijning verfijnen.
+   * Navigatie, hero-sectie, kaarten en inhoudsblokken consequent vormgeven.
+4. **Browsercontrole:**
+   * De vormgeving en navigatie op de vier pagina's controleren.
+   * Afbeeldingspaden, uitlijning en visuele samenhang nakijken en bijsturen.
+
+### Leerplandoelen
+* **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
+* **CRS18:** Een semantisch correcte, functionele en gestijlde multipage website (Stadsgids) met coherente navigatie realiseren.
+* **CRS21:** Typografische hiërarchie, card-componenten en leesbaarheid doordacht vormgeven via CSS-stijlregels.
+* **CRS22:** Lay-outsystemen (Flexbox voor navigatie en Grid voor cards en side-by-side presentaties) doelgericht opzetten.
+* **CRS23:** Afbeeldingsformaten, afmetingen en relatieve bestandspaden controleren op foutloze weergave in de browser.
+* **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.

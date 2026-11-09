@@ -107,3 +107,25 @@
 * **CRS21:** Typografische hiërarchie, afstanden (margin/padding) en leesbaarheid doordacht vormgeven via CSS-stijlregels.
 * **CRS22:** Lay-outsystemen (Flexbox voor de navigatiebalk) doelgericht opzetten met oog op container- en item-eigenschappen.
 * **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
+
+## Les 5 09/11/2026 (Web)
+
+### Receptenboek: Toets HTML/CSS, terugkoppeling en uitwerking
+
+### Lesverloop & inhoud
+1. **Toets 03: HTML/CSS:**
+   * De leerstof HTML en CSS toepassen in de toets.
+2. **Terugkoppeling landingspagina's:**
+   * De ingediende landingspagina's in OneDrive bespreken.
+   * Sterke punten en concrete werkpunten benoemen voor de verdere uitwerking van het Receptenboek.
+3. **Receptenboek verder uitwerken:**
+   * De drie receptpagina's (`recept_1.html` t.e.m. `recept_3.html`) inhoudelijk en structureel afwerken.
+   * De vormgeving van de landingspagina en receptpagina's verder uitwerken in `style.css`.
+
+### Leerplandoelen
+* **CRS01:** Productievereisten en bestandsconventies voor webprojecten (mappenstructuur, kleine letters, relatieve paden) toepassen.
+* **CRS02:** De juiste semantische HTML-elementen en CSS-eigenschappen doelgericht selecteren in functie van inhoud en lay-out.
+* **CRS18:** Een semantisch correcte, functionele en gestijlde multipage website (Receptenboek) met coherente navigatie realiseren.
+* **CRS21:** Typografische hiërarchie, afstanden (margin/padding) en leesbaarheid doordacht vormgeven via CSS-stijlregels.
+* **CRS22:** Lay-outsystemen (Flexbox voor de navigatiebalk) doelgericht opzetten met oog op container- en item-eigenschappen.
+* **GEC02:** Kwaliteitsbewust en nauwkeurig werken met oog voor correcte code-inspringing, nesting en syntaxregels.
