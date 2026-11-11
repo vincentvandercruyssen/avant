@@ -33,12 +33,12 @@
 ### Lesverloop & inhoud
 1. **Laagbewegingen & typografie:**
    * Ritmecontrast tussen schokkerige stop-motionsprongen en snelle glijbewegingen op de tekst- en vormlagen uitwerken.
-   * Typografische hiërarchie en visuele leesbaarheid bewaken doorheen de opeenvolgende bewegingsfases.
+   * Typografische hiërarchie bewaken doorheen de opeenvolgende bewegingen.
 2. **Overkoepelend tegelpatroon:**
-   * Volledige affiche op gekozen accentmomenten opdelen in ritmische mozaïekpatronen en verschuivende rijen of kolommen.
+   * Volledige affiche op gekozen accentmomenten opdelen in ritmische patronen en verschuivende rijen of kolommen.
    * Tegelverhouding, faseverschuiving en zichtbaarheid doseren zodat het oorspronkelijke posterontwerp krachtig overeind blijft.
 3. **Dynamische achtergrondkleur:**
-   * Volwaardige achtergrondlaag op compositiegrootte onderaan de lagenstapel plaatsen.
+   * Achtergrondlaag op compositiegrootte onderaan de lagenstapel plaatsen.
    * Achtergrondkleur op de overgangsmomenten laten meeflitsen binnen het gekozen kleurenpalet van de poster.
 4. **Naadloze loop & export:**
    * Eindtoestand van alle lagen en kleuren op 6 seconden naadloos laten aansluiten op het startframe.

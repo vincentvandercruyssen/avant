@@ -11,25 +11,74 @@ thema: "Kinetic"
 software:
   - "After Effects"
   - "Media Encoder"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Productievereisten, 16:9 Full HD (1920 × 1080 px), 30 fps framerate en een strakke sequentie van ongeveer 10 seconden analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "Doelgericht tekst-animators (Range Selector), padopties en vervormingseigenschappen selecteren in functie van ritme en bewegingsdynamiek."
-  - code: "CRS06"
-    criterium: "Vlot en efficiënt werken met After Effects (tijdlijncontroles, maskers, effecten, Easy Ease, Graph Editor) en Adobe Media Encoder."
-  - code: "CRS07"
-    criterium: "Inspiratiebronnen en voorbeelden van kinetische typografie doelgericht verzamelen en ordenen op een digitaal pinboard."
-  - code: "CRS13"
-    criterium: "Zelfstandig een online tutorial of inspiratiebron selecteren, analyseren en toepassen voor een eigen typografisch effect."
-  - code: "CRS16"
-    criterium: "Een doorlopende, energieke 2D-bewegingssequentie realiseren met keyframes, extreme snelheidsversnelling (Graph Editor) en naadloze overgangen."
-  - code: "CRS21"
-    criterium: "Typografie expressief en kinetisch animeren met aandacht voor typografische keuzes (Adobe Fonts), hiërarchie, ritme en leesbaarheid."
-  - code: "CRS23"
-    criterium: "De compositie en geëxporteerde MP4 controleren op resolutie, framerate (30 fps), kleurcontrast en vloeiende werking van alle vier de technieken."
-  - code: "CRS27"
-    criterium: "Het volledige After Effects-project en de MP4-export tijdig en conform de mappenstructuur opleveren in de Smartschool-uploadzone."
+indieningen:
+  - id: "voorbereiding"
+    titel: "Quicktype 3.1 Voorbereiding"
+    deadline: 2026-10-04
+    lesuren: 2
+    gewicht: 3
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Productievereisten, bestandsnaamgeving en specificaties toepassen voor het voorbereidingsdocument (VoornaamA_Quicktype-Voorbereiding.odt of .pdf)."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Vier opeenvolgende tekstzinnen selecteren en de beoogde animatietechnieken doelgericht plannen in functie van ritme en dynamiek."
+      - code: "CRS07"
+        gewicht: 1
+        criterium: "Minimaal vijf kwalitatieve en inspirerende voorbeelden van kinetische typografie doelgericht verzamelen en ordenen op een digitaal Pinterest-bord."
+      - code: "CRS13"
+        gewicht: 1
+        criterium: "Zelfstandig een inspiratiebron of referentietechniek selecteren en analyseren voor het vierde, zelfgekozen effect."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het voorbereidingsdocument, notities en de Pinterest-link ordelijk bijhouden en beheren in de eigen OneDrive-vakmap."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken van de voorbereiding stipt naleven."
+
+  - id: "oplevering"
+    titel: "Quicktype 6 Oplevering"
+    deadline: 2026-10-16
+    lesuren: 4
+    gewicht: 12
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Compositie-instellingen (1920 × 1080 px, 16:9 Full HD, 30 fps, duur ca. 10s) en video-exportinstellingen analyseren en toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht tekst-animators (Range Selector), padopties (Path Options) en vervormingseffecten (Mesh Warp) selecteren in functie van ritme en beweging."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Typografie expressief en kinetisch animeren met aandacht voor karaktervolle lettertypes (Adobe Fonts), visuele hiërarchie en ritme."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een contrastrijk kleurenpalet en evenwichtige vlakverdeling toepassen die de dynamiek en kinetische leesbaarheid versterken."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en efficiënt werken met After Effects (tijdlijn, tekstlagen, maskers, effecten, Easy Ease en Graph Editor) en Media Encoder."
+      - code: "CRS16"
+        gewicht: 1
+        criterium: "Vier opeenvolgende typografische technieken en een zelfgekozen effect integreren in één doorlopende, energieke 2D-animatiesequentie met dynamische overgangen."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Projectbestanden, lettertypes (in 01_assets/), documenten en MP4-exports ordelijk bundelen in het projectpakket."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige projectarchief VoornaamA_Quicktype.zip conform de vereiste mappenstructuur en naamconventie tijdig opleveren."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De geëxporteerde MP4-video controleren op resolutie (1920 × 1080), framerate (30 fps), vloeiende werking en H.264-codec."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Handelen met oog voor afwerkingskwaliteit door doordachte snelheidsgrafieken (Speed Graph), afwezige dode momenten en actieve Motion Blur."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het After Effects-project (.aep), composities en de projectmap ordelijk beheren op de OneDrive-vakmap zonder overbodige bestanden."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en alle inleverafspraken van de opdracht stipt naleven."
 draft: false
 ---
 

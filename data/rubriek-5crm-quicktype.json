@@ -1,0 +1,638 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "5crm-quicktype",
+  "classGroup": "5CRM",
+  "lastUpdated": "2026-11-11T17:40:05.843+01:00",
+  "submissions": {
+    "voorbereiding": {
+      "id": "voorbereiding",
+      "title": "Quicktype 3.1 Voorbereiding",
+      "deadline": "04/10",
+      "weight": 3,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS07": 1,
+        "CRS13": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS07",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS13",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 3,
+            "CRS13": 2,
+            "GEC01": 3
+          },
+          "feedback": "Zeer gevoelige en doordachte voorbereiding! Je hebt vier betekenisvolle woorden gekozen (Stilte, Hoop, Verbinding, Onzekerheid) en heel mooi beargumenteerd waarom de typografische eigenschappen (zoals het fragiele van Thin Simple of het verbindende van Interconnected) de emotionele lading versterken. Je Pinterest-bord sluit hier mooi bij aan en de pdf is tijdig ingeleverd. Let erop geen overbodige documenten mee te uploaden. Verder inhoudelijk een heel sterke voorbereiding!",
+          "scores": {
+            "4.1": 3,
+            "4.3": 2.5,
+            "4.6": 3
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 3,
+            "CRS13": 3,
+            "GEC01": 3
+          },
+          "feedback": "Uitstekend voorbereid! Je concept rond de vier Zelda-personages (Revali, Daruk, Urbosa en Mipha) is bijzonder doordacht en je hebt de lettertypes (zoals CC Exterminate en Filmotype Honey) heel bewust afgestemd op hun specifieke karakter en achtergrond. Je hebt de timing al netjes gepland op 2,5 seconden per frase en je Pinterest-bord toont sterke visuele inspiratie. Let enkel even op de dubbele bestandsextensie (.pdf.pdf). Een inhoudelijk en conceptueel zeer sterke prestatie!",
+          "scores": {
+            "4.1": 3,
+            "4.3": 3,
+            "4.6": 3
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 3,
+            "CRS13": 2,
+            "GEC01": 3
+          },
+          "feedback": "Heel leuke en toepasselijke tekstkeuze met het crossmedia-manifest (Niet één scherm, maar crossmedia)! Je hebt expressieve, speelse displayfonts geselecteerd (zoals Cherry Cupcake en Bigland Retro) en beknopt beargumenteerd waarom ze bij elkaar passen. Je Pinterest-bord bevat fijne kinetische inspiratie en je pdf is tijdig en volgens de afspraken ingediend. Een zeer verzorgde en enthousiaste voorbereiding!",
+          "scores": {
+            "4.1": 3,
+            "4.3": 2.5,
+            "4.6": 3
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 2,
+            "CRS13": 2,
+            "GEC01": 3
+          },
+          "feedback": "Kort, krachtig en to the point! Je hebt vier sterke actiewoorden geselecteerd (Dromen, Denken, Creëren, Doen) en gekoppeld aan vette, kinetische displayfonts (zoals Bebas Neue en Anton). Je bestand is conform de afspraken bewaard als odt en je Pinterest-bord bevat goede visuele aanknopingspunten. Geef bij de voorbereiding gerust nog een korte toelichting bij je beoogde effecten om je concept nog sterker te onderbouwen. Prima werk geleverd!",
+          "scores": {
+            "4.1": 3,
+            "4.3": 2,
+            "4.6": 3
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 3,
+            "CRS13": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je voorbereiding is verzorgd en prima in orde. Je hebt leuke bewegingswoorden gekozen. Het was handig geweest om screenshots of iets dergelijks van je fonts toe te voegen. Op je Pinterest-bord staan toffe, inspirerende voorbeelden die meer dan een goede basis vormen voor je werk.",
+          "scores": {
+            "4.1": 3,
+            "4.3": 2.5,
+            "4.6": 3
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS07": 3,
+            "CRS13": 3,
+            "GEC01": 3
+          },
+          "feedback": "Duidelijke voorbereiding. Je had de context van deze gekozen woorden nog even kunnen duiden. Het was handig geweest om bij de lettertypes screenshots te plaatsen. Je Pinterest-bord bevat bijzonder energieke, dynamische voorbeelden van kinetische typografie en overgangen, let er wel op dat er geen inspiratiebronnen voor andere opdrachten in sluipen.",
+          "scores": {
+            "4.1": 3,
+            "4.3": 3,
+            "4.6": 2.5
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS07": 2,
+            "CRS13": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt vier herkenbare vaktermen gekozen (Motion, Graphic, Kinetic, Shapes) die goed passen bij het thema, en je Pinterest-bord toont relevante voorbeelden. Je leverde het document echter in als Word-bestand (.docx) in plaats van het gevraagde pdf- of odt-formaat. Met enkel twee comic-lettertypes blijft je typografische verkenning nog wat beperkt; durf voor verschillende fases ook met schreeflozen of displayfonts te contrasteren. Verder tijdig ingediend en een prima vertrekpunt!",
+          "scores": {
+            "4.1": 2,
+            "4.3": 2,
+            "4.6": 2.5
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS07": 2,
+            "CRS13": 1,
+            "GEC01": 1
+          },
+          "feedback": "Je hebt met de vier natuurelementen (earth, water, air, and fire) een heel helder en visueel concept gekozen, en je Pinterest-bord bevat bruikbare kinetische ideeën. Je document werd echter te laat ingediend via de te laat-map. Met enkel Futura heb je voor één algemeen lettertype gekozen; voor vier verschillende natuurelementen had een gevarieerdere fontkeuze de specifieke sfeer van bijvoorbeeld water of vuur nog veel sterker kunnen ondersteunen. Let goed op de inleverdeadlines. Verder een tof concept!",
+          "scores": {
+            "4.1": 2,
+            "4.3": 1.5,
+            "4.6": 1.5
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS07": 3,
+            "CRS13": 2,
+            "GEC01": 3
+          },
+          "feedback": "Knappe en originele invalshoek! Je hebt een uitgesproken cultureel thema uitgewerkt met passende Oosterse en kalligrafische lettertypes (zoals Blossom Sakura en Chinese Calligraphy) gekoppeld aan vier krachtige titels (waaronder Ying en Yang en Inyeon). Je Pinterest-bord bevat inspirerende voorbeelden die goed aansluiten bij deze sfeer. De pdf is proper en tijdig opgeleverd. Een inhoudelijk zeer interessante voorbereiding!",
+          "scores": {
+            "4.1": 3,
+            "4.3": 2.5,
+            "4.6": 3
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS07": 2,
+            "CRS13": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt een mooie tekstfrase gekozen met poëtisch ritme (Maybe the rain is subsiding), en de Pinterest-link werkt naar behoren. Je hebt het document echter ingediend als Word-bestand (.docx) in plaats van de gevraagde pdf of odt. Met enkel 'oceanside_typewriter' heb je voorlopig slechts één enkel lettertype geselecteerd; kies voor de verschillende zinnen gerust complementaire fonts voor meer visuele afwisseling. Verder tijdig ingediend en een goede basis om op te bouwen!",
+          "scores": {
+            "4.1": 2,
+            "4.3": 2,
+            "4.6": 2.5
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS07": 0,
+            "CRS13": 0,
+            "GEC01": 0
+          },
+          "feedback": "De voorbereiding werd niet ingediend. Hierdoor ontbreken de voorafgaande tekstselectie, de lettertypekeuzes en het vereiste Pinterest-inspiratiebord. Dit onderdeel kan je remediëren door alsnog in te leveren via de te laat-map op Smartschool.",
+          "scores": {
+            "4.1": 0,
+            "4.3": 0,
+            "4.6": 0
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
+    },
+    "oplevering": {
+      "id": "oplevering",
+      "title": "Quicktype 6 Oplevering",
+      "deadline": "16/10",
+      "weight": 12,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS21": 1,
+        "CRS24": 1,
+        "CRS06": 1,
+        "CRS16": 1,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS23": 1,
+        "GEC02": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS06",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS16",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS16": 2,
+            "CRS20": 2,
+            "CRS21": 3,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Een bijzonder sfeervolle en gevoelige video! De typografische keuzes (zoals Second Mark Serif en Interconnected) en de zachte bewegingen sluiten naadloos aan bij de vier woorden (Stilte, Hoop, Verbinding, Onzekerheid) en de audiotrack. De Range Selector en padanimatie zijn mooi verwerkt; laat bij de vervorming (Mesh Warp) de letters gerust nog iets dynamischer reageren. Qua oplevering zijn er enkele concrete aandachtspunten: let op de dubbele bestandsextensie (.mp4..mp4), bundel je lettertypes in 01_assets en lever het geheel in als zipbestand in plaats van een losse map. Verder een grafisch en inhoudelijk zeer mooie realisatie!",
+          "scores": {
+            "4.1": 10,
+            "4.2": 12,
+            "4.3": 8,
+            "4.4": 8,
+            "4.5": 8,
+            "4.6": 10
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 3,
+            "CRS16": 3,
+            "CRS20": 2,
+            "CRS21": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 3
+          },
+          "feedback": "Een absolute toprealisatie! Je video klopt tot op het frame: exact 10 seconden lang, 30 fps framerate en een naadloze afwisseling tussen de vier personages. Elke frase heeft een eigen kleursfeer (het blauwe voor Mipha, het warme oranje voor Daruk, het goudgeel voor Urbosa) en de vier technieken (Range Selector, padanimatie, Mesh Warp en het gloei-effect) vloeien prachtig in elkaar over met snappy curves en energieke audio. Qua oplevering zijn er enkel kleine puntjes op de i: lever je project in als ziparchief, noem de exportmap 02_exports in plaats van 01_exports en laat de map Auto-Save achterwege. Verder een grafisch en technisch uitmuntende prestatie!",
+          "scores": {
+            "4.1": 12,
+            "4.2": 12,
+            "4.3": 12,
+            "4.4": 8,
+            "4.5": 12,
+            "4.6": 10
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 1,
+            "GEC02": 3
+          },
+          "feedback": "Inhoudelijk en visueel een fantastische uitwerking! Je hebt je speelse crossmedia-boodschap heel overtuigend tot leven gewekt met expressieve lettertypes (zoals Cherry Cupcake en Bigland Retro). Alle vier de animatietechnieken (Range Selector, padanimatie, Mesh Warp en het creatieve effect) zijn vloeiend geïntegreerd met doordachte easings en een sterke audiotrack. Ook productioneel is je ziparchief een voorbeeld: assets en exports zitten keurig in de juiste mappen. Het enige minpunt is dat je een dag na de deadline hebt ingeleverd via Te laat. Verder een technisch en vormelijk uitmuntende prestatie!",
+          "scores": {
+            "4.1": 12,
+            "4.2": 12,
+            "4.3": 12,
+            "4.4": 12,
+            "4.5": 12,
+            "4.6": 8
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS16": 3,
+            "CRS20": 2,
+            "CRS21": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Visueel een zeer krachtige en ritmische video! Je hebt het minimalistische zwart-wit-rood kleurenpalet heel effectief ingezet en de vier woorden (Dromen, Denken, Creëren, Doen) hebben een stevige kinetische stoot gekregen op de beat van de audio. De typografie oogt snappy en de Range Selector en padopties zitten strak. Productioneel had dit wel zorgvuldiger gemoeten: je projectbestand is een tijdelijke exportfile (tmpAEtoAMEProject) in een AME-submap, de mapstructuur met 01_assets en 02_exports ontbreekt, en je leverde een losse map in laat op de avond. Ruim je werkmap op en lever conform als zip in. Verder een sterke en dynamische video!",
+          "scores": {
+            "4.1": 10,
+            "4.2": 12,
+            "4.3": 10,
+            "4.4": 6,
+            "4.5": 10,
+            "4.6": 8
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 0,
+            "CRS16": 2,
+            "CRS20": 0,
+            "CRS21": 3,
+            "CRS23": 1,
+            "CRS24": 3,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 2,
+            "CRS06": 3
+          },
+          "feedback": "Je hebt maar een deel van je compositie gerenderd, aangezien je werkgebied enkel gefocust was op het laatste deel van de animatie (inclusief een klein deel audio). Verder is de animatie in het project wel erg goed gedaan en qua vorm, kleur en beweging zeer passend bij de woorden. De timing zit zeer goed. Je eigen onderzoek naar een animatietechniek kon diepgaander (bv. de letters apart animeren). Je hebt het zip-bestand ingeleverd zonder de gevraagde benaming. De submappen met assets en exports ontbreken. Zo moesten er in het mapje assets bijvoorbeeld bestanden terechtkomen die nodig zijn om het After Effects-project te openen, net zoals fonts die niet via Adobe Fonts beschikbaar zijn (het Passion One-lettertype in dit geval). Let echt goed op wat je uiteindelijk indient.",
+          "scores": {
+            "4.1": 10,
+            "4.2": 12,
+            "4.3": 10,
+            "4.4": 2,
+            "4.5": 6,
+            "4.6": 4
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS06": 3,
+            "CRS16": 3,
+            "CRS20": 1,
+            "CRS21": 3,
+            "CRS23": 2,
+            "CRS24": 2,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 3
+          },
+          "feedback": "Visueel en technisch een knappe prestatie met een duidelijke zoektocht naar een eigen stijl. Je After Effects-project toont een grote beheersing van animatietechnieken: de Range Selector, padanimatie, Mesh Warp en effecten zoals Turbulent Displace en Glow vloeien in elkaar over. De timing is energiek. Mogelijk wordt het nu wel een effectenpannenkoek, zijn ze wel echt allemaal nodig? Zeker wel verdiepend onderzocht. De eerste twee animaties vallen nu wel wat uit de toon, hier had je dan ook de gloed en displacement kunnen doortrekken: voor consistentie. Qua organisatie: gevraagd was om je niet-Adobe-lettertypes en andere bestanden (zoals audio) te structureren in 'assets' en de render in 'exports'. Het geluid is niet mee uitgerenderd. Verder een inhoudelijk en technisch sterke realisatie.",
+          "scores": {
+            "4.1": 10,
+            "4.2": 10,
+            "4.3": 12,
+            "4.4": 6,
+            "4.5": 10,
+            "4.6": 8
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 3,
+            "CRS16": 3,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS23": 3,
+            "CRS24": 2,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Technisch heel knap opgebouwd! Je video tikt exact de gevraagde 10 seconden aan op 30 fps, en je hebt de vier technieken (Range Selector, padopties, Mesh Warp en het Shatter-effect op het einde) overtuigend na elkaar geplaatst. De timing en overgangen zitten strak in elkaar. Vormelijk oogt het geheel door de grijze achtergrond en het ontbreken van audio wat sober; een contrasterend kleurenpalet en geluid hadden de kinetische energie nog veel meer kracht bijgezet. Lever daarnaast je map in als ziparchief en voorzie de submappen 01_assets en 02_exports. Verder technisch een zeer geslaagde animatie!",
+          "scores": {
+            "4.1": 12,
+            "4.2": 8,
+            "4.3": 12,
+            "4.4": 8,
+            "4.5": 10,
+            "4.6": 10
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS16": 3,
+            "CRS20": 2,
+            "CRS21": 3,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Knap concept en een dynamische uitwerking! De vier natuurelementen (earth, water, air, fire) hebben elk een uitgesproken kleur en bewegingsstijl gekregen, waarbij de geluidseffecten de transformaties flitsend ondersteunen. Je hebt de Range Selector, padanimatie en Mesh Warp vlot gecombineerd. Productietechnisch zijn er twee belangrijke werkpunten: je hebt geëxporteerd op 24 fps in plaats van de gevraagde 30 fps, en je bewaarde het After Effects-bestand (.aep) binnen de map 02_exports in plaats van in de hoofdmap. Let er ook op dat je de map daadwerkelijk comprimeert tot zip. Verder een creatief en audiovisueel zeer geslaagde video!",
+          "scores": {
+            "4.1": 10,
+            "4.2": 12,
+            "4.3": 10,
+            "4.4": 8,
+            "4.5": 8,
+            "4.6": 10
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS16": 2,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Zeer verzorgde en sfeervolle uitwerking! Je hebt je typografische keuzes (zoals Chinese Calligraphy en Blossom Sakura) prachtig doorgetrokken in de animatie, met een mooie combinatie van rust en kinetische beweging op de muziek. Zowel de Range Selector als de padanimatie zijn herkenbaar aanwezig; zorg er bij vervormingen (Mesh Warp) voor dat de letters nog net iets elastischer meebuigen. Je projectstructuur zit heel netjes in elkaar met aparte mappen voor assets en exports, let enkel op de schrijfwijze ('01 assests') en pak het geheel in als zip. Vroegtijdig ingediend. Verder een heel sterke en stijlvolle prestatie!",
+          "scores": {
+            "4.1": 12,
+            "4.2": 12,
+            "4.3": 10,
+            "4.4": 10,
+            "4.5": 10,
+            "4.6": 12
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS16": 1,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS23": 1,
+            "CRS24": 2,
+            "CRS27": 2,
+            "GEC01": 2,
+            "GEC02": 1
+          },
+          "feedback": "Het eerste deel van je animatie start sfeervol met de typewriter-tekst en de blauwe achtergrond, en de koppeling met audio zit goed. Na de eerste seconden blijft het beeld echter volledig leeg en wit tot het einde van de video: hierdoor zijn de overige technieken (zoals Mesh Warp en het eigen effect) niet zichtbaar in de export. Let daarnaast op de bestandsnaamgeving van je export: noem je video niet 'Comp 1.mp4', maar gebruik de voorgeschreven naam JonathanH_Quicktype.mp4, en exporteer op exact 30 fps in plaats van 29,97 fps. Zorg er ook voor dat je overbodige auto-save bestanden niet mee inlevert. Een sfeervolle start die vooral een volledige afwerking miste!",
+          "scores": {
+            "4.1": 8,
+            "4.2": 8,
+            "4.3": 6,
+            "4.4": 8,
+            "4.5": 4,
+            "4.6": 8
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS06": 2,
+            "CRS16": 1,
+            "CRS20": 1,
+            "CRS21": 2,
+            "CRS23": 2,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 1,
+            "GEC02": 1
+          },
+          "feedback": "De animatie bevat leuke aanzetten met felle neonkleuren en de Range Selector, en ook de audiotrack brengt direct sfeer. Met een totale duur van 8 seconden en een opvallend dood moment (een zwart scherm halverwege) voelt de sequentie echter onafgewerkt aan, en ook de elastische vervorming met Mesh Warp ontbreekt. Qua mappenstructuur leverde je enkel een losse render-map in (JoramT_quicktype.aep_AME) zonder de vereiste submappen of zip, en ook de eerdere voorbereiding ontbrak. Zorg voor een aaneensluitende sequentie zonder dode pauzes en leef de inleverafspraken na. Een basis met potentieel die meer afwerking verdiende!",
+          "scores": {
+            "4.1": 6,
+            "4.2": 8,
+            "4.3": 6,
+            "4.4": 4,
+            "4.5": 6,
+            "4.6": 4
+          }
+        },
+        "efe6054d9e": {
+          "criteriaLevels": {},
+          "feedback": "",
+          "scores": {}
+        }
+      }
+    }
+  }
+}

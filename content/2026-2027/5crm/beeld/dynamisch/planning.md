@@ -78,3 +78,30 @@
 * **CRS20:** De minimaal vijf testshots overzichtelijk samenvoegen op één A4-PDF via de werkruimte *Output* in Adobe Bridge.
 * **CRS27:** Het overzichtsdocument van de testshots (`VoornaamA_Dynamisch-Testshots.pdf`) volgens de inleverafspraken en naamconventie opleveren in Smartschool.
 * **GEC04:** Veilig, zorgvuldig en hygiënisch omgaan met opnameapparatuur en de werkplek.
+
+## Les 4 11/11/2026 (Beeld, 08:20 - 10:00)
+
+### Dynamisch: Oplevering en briefing thema Water (Jeugdboekenmaand)
+
+### Lesverloop & inhoud
+1. **Afwerking en kwaliteitscontrole Dynamisch:**
+   * Beoordelen van resolutie, scherptebalans, contrast en kleurweergave van het eindbeeld.
+   * Indienen JPEG met hoge kwaliteit en van het werkbestand (`VoornaamA_Dynamisch-Eindbeeld.jpg`, `VoornaamA_Dynamisch-Eindbeeld.psd`).
+   * Indienen van de testshots-PDF (`VoornaamA_Dynamisch-Testshots.pdf`).
+3. **Introductie en briefing overkoepelend thema Water (Jeugdboekenmaand):**
+   * Toelichting van de context rond de Jeugdboekenmaand met thema **Water**.
+   * Vooruitblik op de geïntegreerde opdrachten binnen het thema:
+     * **Beeld:** *Texturen* (fotograferen en bewerken van waterstructuren), *Productfoto* (studiomock-up en productfotografie van een herontworpen jeugdboek) en *Howto* (procesvideo van een creatief werkproces).
+     * Koppeling met de andere vakken (Motion: *Loops*, Web-story: *Infographic*).
+4. **Verkenning en opstart inspiratieonderzoek:**
+   * Doornemen van de opdrachten en bijhorende inspiratie-verzameling (*Texturen*, *Productfoto*, *Howto*).
+   * Eerste verkenning van fotografische invalshoeken en materiaalvereisten.
+
+### Leerplandoelen
+* **13.01:** Doelgericht inspiratiebronnen en fotografische referenties rond het thema Water en Jeugdboekenmaand verkennen.
+* **CRS01:** Productievereisten en specificaties van de nieuwe opdrachten binnen het thema Water analyseren.
+* **CRS06:** Vlot en doelgericht werken met Photoshop, Bridge en Camera Raw bij de finale beeldoplevering.
+* **CRS22:** Beeldmateriaal esthetisch en creatief afronden met oog voor dynamiek en spanning.
+* **CRS23:** De finale exportbestanden controleren op resolutie, kleurmodus, scherptebalans en bestandsformaat.
+* **CRS27:** Het volledige opleveringspakket van Dynamisch conform de mappenstructuur en naamconventie opleveren in Smartschool.
+* **GEC01:** De finale deadline en alle inleverafspraken van de opdracht Dynamisch stipt naleven.
