@@ -98,4 +98,21 @@
 * **16.04:** Vanuit verbeelding vormgeving, kleurenpalet, materiaaleigenschappen en lichtval harmonieus op elkaar afstemmen.
 * **SV06.72:** Het ruimtelijke effect van geometrische basisvormen, lichtinval en schaduwwerking in een minimalistische 3D-scène evalueren.
 
+## Les 5 10/11/2026 (Motion)
+
+### Lowpoly: Terugkoppeling & afwerken opdrachten
+
+### Lesverloop & inhoud
+1. **Terugkoppeling Lowpoly:**
+   * Terugkoppeling op de ingeleverde lowpoly-scènes en renders.
+   * Bespreking aandachtspunten: vlakverdeling (*Shade Flat*), compositie en kadrering, belichtingscontrast en Cycles renderinstellingen.
+2. **Afwerken opdrachten:**
+   * Eventuele herindieningen en inleveren conform de inleverafspraken.
+
+### Leerplandoelen
+* **CRS06:** Zelfstandig werken in Blender 3D en grafische productiesoftware om openstaande taken af te werken.
+* **CRS23:** Het eigen werk kritisch evalueren aan de hand van gekregen feedback en kwaliteitscontroles uitvoeren.
+* **CRS27:** Het Blender-bestand en exports conform de instructies en inleverafspraken indienen.
+
+
 
