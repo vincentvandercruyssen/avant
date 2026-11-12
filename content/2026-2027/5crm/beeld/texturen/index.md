@@ -87,9 +87,9 @@ Je levert geen willekeurige snapshots in, maar grafisch inzetbare textuurlagen:
 
 ## Onderzoek
 
-Verken het Pinterest-bord en analyseer hoe licht, vloeistof en oppervlak met elkaar interageren. 
+Verken het Pinterest-bord en analyseer hoe licht en oppervlak met elkaar interageren. Noteer je bevindingen, welke texturen wil jij gaan maken?
 
-Kabbelend water & rimpels, condens & druppels, bellen & bruis, gemengde vloeistoffen. 
+Kabbelend water & rimpels, condens & druppels, bellen & bruis, gemengde vloeistoffen,...
 
 ## Opdracht
 
