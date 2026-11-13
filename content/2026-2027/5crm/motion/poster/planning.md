@@ -55,3 +55,24 @@
 * **CRS24:** Een evenwichtige vlakverdeling en sterk kleurcontrast behouden doorheen de volledige animatie.
 * **CRS27:** Het volledige projectpakket conform de mappenstructuur en naamconventie als `VoornaamA_Poster.zip` opleveren.
 * **GEC01:** De finale deadline en inleverafspraken van de opdracht stipt naleven.
+
+## Les 3 13/11/2026 (Motion)
+
+### Poster: Vormlagen, afwerking & oplevering
+
+### Lesverloop & inhoud
+1. **Tip, optioneel: Illustrator-lagen omzetten naar vormlagen:**
+   * Geïmporteerde Illustrator-lagen omzetten naar bruikbare vormlagen (**Create → Create Shapes from Vector Layer**) om paden, vulling en lijnen rechtstreeks te animeren.
+2. **Afwerking & kwaliteitscontrole:**
+   * Animatietiming, ritmecontrast, kleur en naadloze loop-overgang op 6 seconden.
+3. **Export & oplevering:**
+   * Hoofdcompositie exporteren naar `VoornaamA_Poster.mp4` en `VoornaamA_Poster.gif` in `02_exports/`.
+   * Volledige projectmap controleren, inpakken als `VoornaamA_Poster.zip` en inleveren in de Smartschool-uploadzone.
+
+### Leerplandoelen
+* **CRS04:** Het projectbestand `VoornaamA_Poster.aep`, de bronlagen en de submappen ordelijk en overzichtelijk beheren.
+* **CRS16:** Een energieke, naadloze 2D-loopanimatie van ongeveer 6 seconden met stop-motiongevoel afwerken.
+* **CRS20:** De animatie bundelen en exporteren als afspeelbare H.264 MP4-reel én geanimeerde GIF.
+* **CRS23:** De compositie en exports (`VoornaamA_Poster.mp4` en `VoornaamA_Poster.gif`) controleren op resolutie, scherpte en naadloze loop-overgang.
+* **CRS27:** Het volledige projectpakket conform de mappenstructuur en naamconventie als `VoornaamA_Poster.zip` opleveren.
+* **GEC01:** De finale deadline en inleverafspraken van de opdracht stipt naleven.

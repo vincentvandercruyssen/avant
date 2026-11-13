@@ -50,23 +50,20 @@
 * **CRS08:** Scherpte, compositieritme, uitsnijding en beeldkwaliteit van de testshots kritisch evalueren.
 * **GEC04:** Zorgvuldig en verantwoord omgaan met apparatuur en werkopstellingen in de schoolomgeving.
 
-## Les 3 26/10/2026 (Beeld, 13:30 - 15:20)
+## Les 3 13/11/2026 (Beeld)
 
-### Fragmentatie: Non-destructieve beeldbewerking, kleurharmonisatie en oplevering
+### Fragmentatie: Non-destructieve beeldbewerking en oplevering
 
 ### Lesverloop & inhoud
-1. **Definitieve beeldsamenstelling in Photoshop:**
+1. **Definitieve beeldsamenstelling (in Photoshop):**
    * Importeren van de geselecteerde fragmenten in een nieuw Photoshop-document op A4-formaat (staand of liggend, 300 ppi).
    * Zorgvuldige opbouw met slimme objecten (*Smart Objects*), laagmaskers en ordelijke laagbenamingen.
-2. **RAW-ontwikkeling en tonale harmonisatie:**
-   * Fotografische elementen afstemmen via Camera Raw: belichtingsbalans, contrast en kleurtemperatuur gelijktrekken zodat de gefragmenteerde delen een samenhangend geheel vormen.
-3. **Typografische integratie en detailfinetuning:**
-   * Eventuele typografische fragmenten, snijranden, texturen of overvloeimodi (*Blend Modes*) met precisie verfijnen.
-4. **Kwaliteitscontrole en export:**
-   * Controleren op resolutie (300 ppi), kleurruimte (sRGB) en zuivere maskering.
-   * Exporteren van het gelaagde werkbestand (`VoornaamA_Fragmentatie-Eindbeeld.psd`) en de definitieve JPEG (`VoornaamA_Fragmentatie-Eindbeeld.jpg`).
-5. **Inlevering in Smartschool:**
-   * Opleveren van de testshots (`VoornaamA_Fragmentatie-Testshots.pdf`), het Photoshop-werkbestand en de definitieve JPEG in de voorziene uploadmap (*Fragmentatie 2.2 Uitwerking*).
+2. **RAW-ontwikkeling:**
+   * Fotografische elementen afstemmen via Camera Raw: belichtingsbalans, contrast en kleurtemperatuur gelijktrekken zodat de delen een samenhangend geheel vormen.
+3. **Kwaliteitscontrole en export:**
+   * Exporteren van de definitieve JPEG (`VoornaamA_Fragmentatie-Eindbeeld.jpg`) en eventueel het werkbestand (`VoornaamA_Fragmentatie-Eindbeeld.psd`).
+4. **Inlevering in Smartschool:**
+   * Opleveren van de testshots (`VoornaamA_Fragmentatie-Testshots.pdf`), optioneel het Photoshop-werkbestand en de definitieve JPEG in de voorziene uploadmap.
 
 ### Leerplandoelen
 * **CRS06:** Vlot en zelfstandig werken met Camera Raw en Photoshop (laagmaskers, slimme filters en overvloeimodi).
