@@ -96,19 +96,20 @@ Verzamel inhoudelijke feiten en werk de interactieve lay-out uit vóór je codee
 
 ### Inhoud & doelgroep
 
-1. Kies één concreet waterprobleem dat aansluit bij jouw doelgroep (3-6j, 6-9j, 9-12j of 12-15j).
-2. Verzamel betrouwbare informatie en formuleer **vier tot zes kernpunten**:
-   * *Slogan*: Bedenk een krachtige, activerende slagzin die je doelgroep direct aanspreekt.
-   * *De kernvraag*: Wat moeten kinderen van jouw doelgroep zéker weten?
-   * *Probleemstelling*: Wat is er aan de hand? (korte titel + 2 activerende zinnen)
-   * *Oorzaken & gevolgen*: Waarom gebeurt dit en wie ondervindt er schade van? Wat zijn de gevolgen voor mens en dier?
-   * *Oplossing / Actietip*: Wat kunnen kinderen en gezinnen vandaag zélf doen?
-   * *Videobron*: Zoek een heldere, kindvriendelijke YouTube-video over dit thema.
-3. Stem taalgebruik en beeldkeuze af op je gekozen leeftijdsgroep: geen saaie lappen tekst, maar kernachtige weetjes.
+1. Zoek ter inspiratie naar andere sensibiliseringscampagnes. 
+2. Kies één concreet waterprobleem dat aansluit bij jouw doelgroep (3-6j, 6-9j, 9-12j of 12-15j).
+3. Verzamel betrouwbare informatie (vermeld je bronnen) en formuleer **zes kernpunten**.
+  * *Slogan*: Bedenk een krachtige, activerende slagzin die je doelgroep direct aanspreekt.
+  * *De kernvraag*: Wat moet jouw doelgroep zéker weten?
+  * *Probleemstelling*: Wat is er aan de hand? (korte titel + 2 activerende zinnen)
+  * *Oorzaken & gevolgen*: Waarom gebeurt dit en wie ondervindt er schade van? Wat zijn de gevolgen voor mens en dier?
+  * *Oplossing / Actietip*: Wat kunnen kinderen en gezinnen vandaag zélf doen?
+  * *Videobron*: Zoek een heldere, kindvriendelijke YouTube-video over dit thema.
+4. Stem taalgebruik en beeldkeuze af op je gekozen leeftijdsgroep: geen saaie lappen tekst, maar kernachtige weetjes.
 
 ### UI/UX-wireframe
 
-Maak overzichtelijk wireframe:
+Maak een overzichtelijke wireframe.
 * Bepaal de verhouding van het centrale canvas (`100vh` of vaste desktop-verhouding).
 * Duid de positie aan van de mascotte en teken waar de icoonknoppen zweven.
 * Schets de opbouw van het pop-upvenster (titel, sluitknop, tekstblok, afbeelding/video-embed en actieknop).
