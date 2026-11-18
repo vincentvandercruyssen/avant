@@ -81,37 +81,52 @@ draft: false
 Voor de Jeugdboekenmaand 2027 rond het thema Water breng je statische illustraties tot leven in oneindig herhalende animaties (*seamless loops*). Je bouwt drie verschillende animatieloops die naadloos aansluiten bij jouw personage en campagne uit Grafische vormgeving:
 
 * **Mascotte in rust (*idle loop*)**: Subtiele adem-, knipper- of deiningbeweging voor de centrale webcampagne.
-* **Deeltjeseffect (*particle loop*)**: Vijf loops. Bellen, stromend water, waterrimpels of dwarrelende letters voor de videomapping rond de fysieke mascotte in bibliotheek Couwelaar en als sfeerelement op de website.
+* **Deeltjeseffect (*particle loop*)**: Vijf loops. Bellen, stromend water, waterrimpels of dwarrelende letters voor de videomapping rond de fysieke mascotte in bibliotheek Couwelaar en als sfeerelementen op de website.
 * **Info-icoon loops**: Zes korte, levendige micro-animaties voor de interactieve infoknoppen van de webinfographic.
 
 Een geslaagde loop heeft geen begin of einde: het laatste beeldframe sluit perfect aan op het eerste frame zonder schok of hapering.
 
 {{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/water-motion-loops/" >}}
 
+![Voorbeeld interactieve infographic met centrale mascotte en zwevende iconen](img/infographic-voorbeeld.jpg?w=60%)
+
 ## Onderzoek
 
-Verken vooraf welke animatietechnieken het best passen bij jouw mascotte, vormgeving en doelgroep (3-6j, 6-9j, 9-12j of 12-15j).
+Verken vooraf welke animatiestijl, bewegingen en technieken het best passen bij jouw mascotte, vormgeving en doelgroep.
 
-### Technieken vergelijken
-
-* **Puppet Pin tool (After Effects)**: Ideaal om één organische vectorfiguur soepel te laten buigen, deinen of ademen zonder de figuur in losse stukken te knippen.
-* **Parenting & scharnierpunten (Cut-out)**: Ledematen en onderdelen opsplitsen in losse Illustrator-lagen, ankerpunten (*Anchor Points*) exact op de gewrichten plaatsen en koppelen (*Pick Whip*).
-* **Frame-per-frame / Shape Morphing**: Voor vloeibare druppels, openspattende bubbels of organische vormtransformaties via padanimatie (*Path keyframes*).
-
-### Loops analyseren
+### Inspiratie verzamelen en analyseren
 
 1. Verzamel minimaal **vijf kwalitatieve loops** (MP4 of GIF) als inspiratie.
-2. Noteer je bevindingen in een beknopt document `VoornaamA_Loops-Onderzoek.pdf`:
-   * Welke animatietechniek kies je, en waarom?
-   * Welk bewegingstempo en ritme hanteer je met het oog op jouw doelgroep?
-   * Hoe ga je ervoor zorgen dat de animaties levendig genoeg zijn om de aandacht te trekken, maar subtiel genoeg blijven?
-   * Hoe zorg je voor visuele samenhang tussen je verschillende loops (mascotte, waterdeeltjes en info-iconen) op vlak van timing, easings en bewegingsstijl?
-   * Voeg de werkende weblinks of embeds van je vijf verzamelde voorbeelden, of voeg de bestanden toe aan de map `01_onderzoek/`.
-3. Plaats het document in de map `01_onderzoek/` en dien in via Smartschool.
+2. Noteer per voorbeeld beknopt je bevindingen. Enkele voorbeeldvragen die je jezelf kan stellen: Welke bewegingen en animatietechnieken zie je? Hoe is de timing en het tempo? Hoe blijft de loop naadloos en visueel interessant? ...
+3. Voeg werkende weblinks of embeds van je vijf verzamelde voorbeelden toe aan je document, plaats de bestanden in de map `01_onderzoek/`.
+
+### Keuzes voor jouw eigen animatie
+
+Beantwoord op basis van je inspiratieonderzoek de volgende vragen voor jouw eigen loops:
+
+* **Techniekkeuze:** Welke animatietechnieken kies je voor jouw mascotte, deeltjes en icoontjes en waarom past dit bij jouw project?
+* **Tempo & doelgroep:** Welk bewegingstempo en ritme hanteer je met het oog op jouw gekozen doelgroep?
+* **Balans:** Hoe zorg je ervoor dat je animaties levendig genoeg zijn om de aandacht te trekken, maar subtiel genoeg blijven?
+* **Samenhang:** Hoe bewaar je visuele eenheid tussen je verschillende loops (mascotte, waterdeeltjes en info-iconen) op vlak van timing, easings en bewegingsstijl?
+
+Bundel je inspiratievoorbeelden, bevindingen en keuzes in één document `VoornaamA_Loops-Onderzoek.pdf`, plaats dit in `VoornaamA_Loops/01_onderzoek/` en dien in via Smartschool.
 
 ## Opdracht
 
-Werk de animatieloops systematisch uit in Adobe After Effects.
+Werk de animatieloops stelselmatig uit. Afhankelijk van je mascotte en ontwerp kies je de meest geschikte animatietechniek.
+
+* **Puppet Pin tool**: Ideaal om één organische vectorfiguur soepel te laten "ademen" zonder de figuur in losse stukken te knippen.
+* **Parenting & scharnierpunten (Cut-out)**: Ledematen en onderdelen opsplitsen in losse lagen, ankerpunten (*Anchor Points*) exact op de gewrichten plaatsen.
+* **Shape Morphing (vormverandering)**: Voor vloeiende, organische vormtransformaties via padanimatie.
+* **Frame-per-frame**: Met de hand elk frame opbouwen.
+
+#### Schetsen & brainstorm
+
+Voor je digitaal begint te animeren, werk je telkens per onderdeel (**mascotte**, **deeltjes** en **icoontjes**) **minimaal 1 A4-pagina** uit als schets en brainstorm:
+
+* Schets de beoogde bewegingen met pijlen, begin- en eindposities of kleine tussenstapjes.
+* Noteer je bewegingsideeën, timing, gekozen animatietechniek en aandachtspunten per onderdeel.
+* Scan of fotografeer je schetsen (of werk ze digitaal uit) en bewaar ze in `01_onderzoek/`.
 
 ### Mascotte in rust
 
@@ -124,7 +139,7 @@ Werk de animatieloops systematisch uit in Adobe After Effects.
    * Kopieer de begin-keyframes exact naar het einde van de tijdlijn, of gebruik de expressie `loopOut("pingpong")` of `loopOut("cycle")`.
    * Verfijn de beweging in de **Graph Editor** met vloeiende *Easy Ease* (`F9`).
 
-### Deeltjesloops voor projectie en web
+### Deeltjesloops
 
 1. Animeer **minimaal vijf verschillende afzonderlijke deeltjesloops** (losse composities van **1920 × 1080 px** of **1080 × 1080 px**, 30 fps, duur: 6 tot 8 seconden), bijvoorbeeld:
    * **Bellen**: Opstijgende transparante cirkels met variërende snelheden en lichte horizontale slingering (*Wiggle* of sinusbeweging).
@@ -133,8 +148,8 @@ Werk de animatieloops systematisch uit in Adobe After Effects.
    * **Tekstdeeltjes**: Zwevende letters of waterwoorden uit je gekozen jeugdboek die als luchtbellen opborrelen.
    * **Lichtbreking / reflecties**: Zachte, golvende lichtvlekken (*caustics*) of glinsteringen op het watervlak.
 2. **Mastercompositie samenstellen**:
-   * Breng je vijf individuele deeltjesloops samen in **één overkoepelende compositie** (1920 × 1080 px).
-   * Bouw visuele diepte op met voor-, midden- en achtergrondlagen (varieer in schaal, laagdekking ).
+   * Breng je vijf aparte deeltjesloops samen in **één overkoepelende compositie** (1920 × 1080 px).
+   * Bouw visuele diepte op met voor-, midden- en achtergrondlagen.
    * Laat deeltjes die bovenaan het scherm verlaten onderaan weer instromen, zodat de projectie in de bibliotheek ononderbroken kan doorlopen.
 3. Exporteer zowel de samengestelde **mastercompositie** als alle **vijf afzonderlijke deeltjesloops apart** als MP4.
 

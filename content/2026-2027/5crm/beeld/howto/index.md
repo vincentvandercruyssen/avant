@@ -88,17 +88,19 @@ Je levert een video af in verticaal formaat (**9:16**, 1080 × 1920 px voor Reel
 
 ## Onderzoek
 
-Verzamel **vijf kwalitatieve how-to- of procesvideo's** en bestudeer hoe makers hun publiek meenemen in hun creatieproces.
+Verzamel **drie kwalitatieve how-to- of procesvideo's** en bestudeer hoe makers hun publiek meenemen in hun creatieproces.
 
 ### Vragenreeks procesvideo's
 
-Beantwoord de volgende punten voor je verzamelde voorbeelden in `VoornaamA_Howto-Onderzoek.pdf`:
+Beantwoord de onderstaande punten voor je verzamelde voorbeelden.
 
-1. **Camerahoeken**: Welke standpunten zie je (bovenaanzicht / *bird's-eye view*, over-de-schouder, extreme close-up van handen of gereedschap)?
-2. **Belichting**: Hoe is de werkplek verlicht (daglicht, gerichte bureaulamp, ringlamp zonder harde slagschaduwen)?
-3. **Editing & ritme**: Hoe wordt tijd gecomprimeerd (*time-lapse*, versnelling/*speed ramp*, snelle *jump cuts*)?
+1. **Kadrering**: Welke standpunten zie je (bovenaanzicht, over-de-schouder, close-up)? Indien enkel schermopnames: wordt het volledige programma getoond of enkel een detail, zijn er bewegingen over het scherm (*zoomen*, *pannen*)? Wat zijn de verhoudingen van het beeld?
+2. **Belichting**: Hoe is de werkplek verlicht (daglicht, bureaulamp, ringlamp)? Indien enkel schermopnames: wordt de aandacht gestuurd via een cursor, kleuraccenten, of door de rest van het scherm tijdelijk te dimmen?
+3. **Editing & ritme**: Hoe wordt tijd gecomprimeerd (*time-lapse*, versnelling, snelle *jump cuts*)?
 4. **Typografie & graphics**: Hoe worden stappen aangeduid (tekstknoppen, pijltekeningen, stapsgewijze titels)?
 5. **Aantrekkingskracht**: Wat maakt dat de video de aandacht van het publiek direct vastgrijpt?
+
+Verzamel je voorbeelden en antwoorden in één document, dien dit als `VoornaamA_Howto-Onderzoek.pdf` in via Smartschool.
 
 ## Opdracht
 
@@ -111,7 +113,9 @@ Doorloop de productie van je how-to-video in drie stappen: voorbereiding, opname
    * *Shot 1 (Intro)*: Het idee of het lege vel / blanco canvas.
    * *Shot 2 t.e.m. 6 (Proces)*: Manuele schets, overtrekken in vectoren, kleurkeuze, textuur toevoegen, detailafwerking.
    * *Shot 7 (Outro)*: Het afgewerkte eindresultaat in volle glorie.
-3. Teken eventueel een eenvoudige storyboard met de belangrijkste shots.
+3. Teken een eenvoudige storyboard met de belangrijkste shots.
+
+Bundel je shotlist en storyboard en dien dit als `VoornaamA_Howto-Shotlist.pdf` in via Smartschool.
 
 ### Opname
 
@@ -150,7 +154,7 @@ VoornaamA_Howto.zip
 
 #### Bestandsbeheer & voorbereiding
 * Het ZIP-archief draagt de naam `VoornaamA_Howto.zip`.
-* De onderzoeksdocumenten met analyse en shotlist bevinden zich in `01_onderzoek/`.
+* De onderzoeksdocumenten met analyse, shotlist en storyboard bevinden zich in `01_onderzoek/`.
 * Het montageproject en de bronclips staan geordend in de respectievelijke mappen.
 
 #### Opnamekwaliteit & cameravoering

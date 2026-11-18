@@ -9,7 +9,7 @@ auteurs:
 periode: "Januari - Februari"
 thema: "Water"
 software:
-  - "Camera (DSLR/DSLM of smartphone)"
+  - "Camera"
   - "Adobe Bridge"
   - "Adobe Photoshop"
 indieningen:
@@ -21,10 +21,10 @@ indieningen:
     leerplandoelen:
       - code: "CRS01"
         gewicht: 1
-        criterium: "Productievereisten en bestandsnaamgeving toepassen voor de contactblad met minimaal 15 testopnames (VoornaamA_Texturen-Contactblad.pdf)."
+        criterium: "Productievereisten en bestandsnaamgeving toepassen voor de contactblad met minimaal 10 testopnames (VoornaamA_Texturen-Contactblad.pdf)."
       - code: "CRS02"
         gewicht: 1
-        criterium: "Doelgericht gevarieerde wateroppervlakken, lichtbrekingen en vloeistofstructuren plannen en selecteren."
+        criterium: "Doelgericht gevarieerde oppervlakken, structuren en lichtwerking plannen en selecteren."
       - code: "CRS07"
         gewicht: 1
         criterium: "Zelfstandig kwalitatief fotografisch bronmateriaal van texturen vastleggen (belichting, scherpte, compositie)."
@@ -87,9 +87,9 @@ Je levert geen willekeurige snapshots in, maar grafisch inzetbare textuurlagen:
 
 ## Onderzoek
 
-Verken het Pinterest-bord en analyseer hoe licht en oppervlak met elkaar interageren. Noteer je bevindingen, welke texturen wil jij gaan maken?
+Verken het Pinterest-bord en kijk hoe licht op verschillende oppervlakken valt (reflecties, schaduwen, glans of diepte). Noteer je bevindingen: welke texturen wil jij gaan maken?
 
-Kabbelend water & rimpels, condens & druppels, bellen & bruis, gemengde vloeistoffen,...
+Kabbelend water, condens & druppels, bruisende bellen, gemengde vloeistoffen, papiertexturen,...
 
 ## Opdracht
 
@@ -128,27 +128,25 @@ Lever je afgewerkte textuurpakket in als één ZIP-bestand via de Smartschool Up
 ```text
 VoornaamA_Texturen.zip
 └─ VoornaamA_Texturen/
-   ├ 01_raw/
-   │ └─ [minimaal 10 originele testopnames]
    ├ VoornaamA_Textuur-01.jpg
    ├ VoornaamA_Textuur-02.jpg
    ├ VoornaamA_Textuur-03.jpg
    ├ VoornaamA_Textuur-04.jpg
    └ VoornaamA_Textuur-05.jpg
-   └ VoornaamA_Texturen-Contactblad.pdf
+   └ VoornaamA_Texturen-Contactblad.pdf (met 10 testopnames)
 ```
 
 ### Checklist
 
 #### Bestandsbeheer & voorbereiding
 * Het ZIP-archief draagt de naam `VoornaamA_Texturen.zip`.
-* De contactblad `VoornaamA_Texturen-Contactblad.pdf` toont minimaal 15 gevarieerde testopnames.
+* De contactblad `VoornaamA_Texturen-Contactblad.pdf` toont minimaal 10 gevarieerde testopnames.
 * De vijf finale beelden staan geordend in `03_bewerkt_300dpi/` met uniforme naamgeving.
 
 #### Fotografische kwaliteit
 * De opnames zijn haarscherp op de textuur en vrij van bewegingsonscherpte of storende ruis.
 * De kadrering is beeldvullend zonder onbedoelde randen of storende elementen buiten het onderwerp.
-* Er is variatie in waterstructuren (minimaal 3 verschillende types textuur binnen de selectie van 5).
+* Er is variatie in texturen (minimaal 3 verschillende types oppervlak of materiaal binnen de selectie van 5).
 
 #### Technische afwerking & resolutie
 * Alle vijf de beelden hebben een resolutie van exact **300 dpi** en minimaal 3000 pixels langs de lange zijde.

@@ -41,7 +41,7 @@
   {{ end }}
   {{ $years = sort $years "value" "desc" }}
 
-  <nav class="grading-sidebar-nav" aria-label="Puntenverdelingen">
+  <nav id="SiteNavigation" aria-label="Puntenverdelingen">
     {{ range $years }}
       {{ $year := . }}
       {{ $yearPages := slice }}
@@ -65,8 +65,8 @@
       {{ end }}
       {{ $vakken = sort $vakken }}
 
-      <div class="nav-year-group">
-        <h2 class="nav-year-title">{{ $year }}</h2>
+      <div>
+        <h2>{{ $year }}</h2>
         {{ range $vakken }}
           {{ $vak := . }}
           {{ $vakPages := slice }}
@@ -76,9 +76,9 @@
             {{ end }}
           {{ end }}
           {{ if gt (len $vakPages) 0 }}
-            <div class="nav-vak-group">
-              <h3 class="nav-vak-title">{{ $vak }}</h3>
-              <ul class="nav-assignment-list">
+            <div>
+              <h3>{{ $vak }}</h3>
+              <ul>
                 {{ range $vakPages }}
                   {{ $p := . }}
                   {{ $itemTitle := $p.Title }}
@@ -90,7 +90,7 @@
                   {{ with $p.OutputFormats.Get "Puntenverdeling" }}
                     {{ $isCurrent := eq $p.RelPermalink $currentPage.RelPermalink }}
                     <li>
-                      <a href="{{ .RelPermalink }}" class="{{ if $isCurrent }}is-active{{ end }}"{{ if $isCurrent }} aria-current="page"{{ end }}>
+                      <a href="{{ .RelPermalink }}"{{ if $isCurrent }} class="is-active" aria-current="page"{{ end }}>
                         {{ $itemTitle }}
                       </a>
                     </li>

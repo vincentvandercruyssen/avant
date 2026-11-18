@@ -1,6 +1,6 @@
 ---
-title: "Cursus Blender 3D"
-software: "Blender 3D"
+title: "Cursus: Blender"
+software: "Blender"
 vakken:
   - "motion"
   - "beeld"

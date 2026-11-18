@@ -712,6 +712,71 @@ span {
   width: 10%;
 }
 
+/* Zijbalk navigatie (Overzicht & Puntenverdelingen) */
+header nav#SiteNavigation {
+  margin-top: 1rem;
+  overflow-y: auto;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+header nav#SiteNavigation > div {
+  margin-bottom: 1.25rem;
+}
+
+header nav#SiteNavigation h2 {
+  font-size: 0.825rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  margin: 0 0 0.5rem 0;
+}
+
+header nav#SiteNavigation > div > div {
+  margin-bottom: 0.85rem;
+}
+
+header nav#SiteNavigation h3 {
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0.5rem 0 0.25rem 0;
+  opacity: 0.85;
+}
+
+header nav#SiteNavigation ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+header nav#SiteNavigation li {
+  margin: 0;
+}
+
+header nav#SiteNavigation a {
+  display: block;
+  font-size: 0.75rem;
+  padding: 0.22rem 0.45rem;
+  color: color-mix(in srgb, var(--text) 75%, transparent);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+header nav#SiteNavigation a:hover {
+  color: var(--anchor);
+}
+
+header nav#SiteNavigation a:is(.is-active, [aria-current="page"]) {
+  color: var(--anchor);
+  font-weight: 600;
+}
+
 footer {
   grid-column: 2;
 }
