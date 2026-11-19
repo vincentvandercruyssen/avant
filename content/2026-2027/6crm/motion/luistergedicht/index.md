@@ -87,7 +87,7 @@ draft: false
 
 ## Briefing & concept
 
-Woorden hebben pas echt gewicht wanneer je ze ook hoort. Voor de digitale laag van **Expo Beyond Gravity** neem je jouw gekozen gedicht op als een sfeervol **luisterbestand** (ongeveer **20 tot 45 seconden**, afhankelijk van de lengte van je gedicht).
+Voor een extra laag van **Expo Beyond Gravity** neem je jouw gekozen gedicht op als een sfeervol **luisterbestand**.
 
 Bezoekers scannen in Bib Couwelaar een QR-code, zetten hun oortjes in (of houden hun smartphone aan hun oor) en luisteren naar jouw stem terwijl ze naar de bewegende collage en typografische loops kijken.
 

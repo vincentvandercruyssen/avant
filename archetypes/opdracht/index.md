@@ -3,95 +3,124 @@ title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 date: {{ .Date.Format "2006-01-02" }}
 schooljaar: "2026-2027"
 klas: "5CRM" # of 6CRM
-vak: "" # motion, web, beeld, grafische
+vak: "" # motion, web-story, beeld, grafische
 auteurs:
   - "Vincent Vander Cruyssen"
-periode: "" # 5CRM: September | Oktober | November-Januari | Januari-Mei --- 6CRM: September | Oktober-December | Januari-Maart | April-Mei
-thema: "" # 5CRM: Introductie | Kinetische kunst | Zwaartekracht (Poëzieweek) | Kunstcollab --- 6CRM: Herhaling | Event | Fashion | Naar klant --- Leeg laten voor vrije opdrachten zonder thema
+periode: "" # 5CRM: September | Oktober | November - Januari | Januari - Mei --- 6CRM: September | Oktober - December | Januari - Maart | April - Mei
+thema: "" # 5CRM: Introductie | Kinetische kunst | Zwaartekracht | Water --- 6CRM: Herhaling | Event | Zwaartekracht | Fashion | Naar klant
 software: []
-leerplandoelen:
-  # Voorbeeld met succescriterium in eigen woorden:
-  # - code: "CRS02"
-  #   criterium: "Zelfstandig een passend plan en techniek selecteren."
-  # - code: "CRS27"
-  #   criterium: "Het volledige projectpakket conform de mappenstructuur en naamconventie opleveren."
-  # - code: "GEC01"
-  #   criterium: "De deadline, inleverprocedures en afspraken van het project stipt naleven."
+indieningen:
+  - id: "onderzoek"
+    titel: "{{ replace .File.ContentBaseName "-" " " | title }} 1.1 Onderzoek en ontwerpplan"
+    deadline: {{ .Date.Format "2006-01-02" }}
+    lesuren: 2
+    gewicht: 4
+    leerplandoelen:
+      - code: "13.01"
+        gewicht: 1
+        criterium: "Minimaal vijf inspirerende voorbeelden doelgericht verzamelen en analyseren."
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten en bestandsnaamgeving correct toepassen in VoornaamA_Opdrachtnaam-Onderzoek.pdf."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het onderzoeksdocument en verzamelde bronnen ordelijk beheren in de OneDrive-vakmap."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor het onderzoek stipt naleven."
+
+  - id: "oplevering"
+    titel: "{{ replace .File.ContentBaseName "-" " " | title }} 2.1 Oplevering"
+    deadline: {{ .Date.Format "2006-01-02" }}
+    lesuren: 4
+    gewicht: 12
+    leerplandoelen:
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en zelfstandig werken met de gekozen software en gereedschappen."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige projectarchief VoornaamA_Opdrachtnaam.zip conform de mappenstructuur en naamconventie opleveren."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Werkbestanden en assets overzichtelijk ordenen in de OneDrive-vakmap."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en alle inleverafspraken stipt naleven."
 draft: false
 ---
 
-## Briefing & Concept
+## Briefing & concept
 
-Wervende introductie met context naar de praktijk of het werkveld.
+Wervende introductie waarin je de opdracht linkt aan de praktijk of het overkoepelende thema.
 
-### Wat is [Kernbegrip]?
+* **Onderdeel 1**: Korte omschrijving van het hoofdelement en formaat.
+* **Onderdeel 2**: Korte omschrijving van de technische of visuele lijn.
 
-Korte theoretische toelichting of ontwerpprincipe.
+## Onderzoek
 
-### Je concept
+Verken vooraf hoe ontwerpers dit thema of deze techniek aanpakken en bereid je eigen keuzes voor.
 
-1. **Optie 1:** Omschrijving
-2. **Optie 2:** Omschrijving
+Zoektermen: `relevante zoekterm 1, relevante zoekterm 2`.
 
-## Technische specificaties
+### Inspiratie & ontwerpplan
 
-| Instelling | Aanbevolen waarde | Toelichting |
-| :--- | :--- | :--- |
-| **Formaat / Resolutie** | **1080 × 1350 px** | Toelichting. |
-| **Framerate / Modus** | **30 fps / RGB** | Scherm / video. |
+Bundel je vijf voorbeelden en je voorbereiding in `VoornaamA_Opdrachtnaam-Onderzoek.pdf`:
 
-### Mappenstructuur
+1. **Inspiratieanalyse**: Verzamel minimaal vijf kwalitatieve voorbeelden en noteer per voorbeeld wat opvalt qua techniek, opbouw of sfeer.
+2. **Eigen keuzes**: Motiveer welke technieken, kleuren en vormen je kiest in functie van jouw concept.
+3. **Schets / opbouw**: Teken een snelle compositieschets of wireframe.
 
-```text
-VoornaamA_Opdrachtnaam/
-└─ 01_assets/
-└─ 02_werkbestanden/
-└─ 03_exports/
-```
+Plaats het document in `01_onderzoek/` en dien in via Smartschool.
 
-## Stappenplan
+## Opdracht
 
-### Voorbereiding & Bronmateriaal
-* Zoek kwalitatief bronmateriaal via Pexels of Unsplash.
+Werk je ontwerp stelselmatig uit volgens de technische en inhoudelijke afspraken.
 
-### [Eerste fase / Software]
+### Voorbereiding & opzet
 
-#### Document aanmaken
-Maak een nieuw document aan.
+1. Stel je document of projectmap in volgens de vereiste specificaties (**formaat / resolutie**, **framerate / kleurmodus**).
+2. Verzamel en orden je bronmateriaal lokaal in `02_assets/`.
 
-#### [Belangrijkste handeling]
-* Instructies en sneltoetsen.
+### Productie & afwerking
 
-### [Tweede fase / Software]
+1. Werk de hoofdonderdelen stap voor stap en niet-destructief uit.
 
-#### Importeren en verwerken
-Verdere uitwerking.
+### Export
+
+Exporteer het eindresultaat volgens de gevraagde instellingen.
 
 ### Extra's
 
-* Verdiepende techniek voor wie sneller klaar is.
+Voor wie sneller klaar is of extra diepte wil toevoegen:
+* **Optie A:** Beschrijving van een gevorderde techniek of visuele verfijning.
 
 ## Oplevering
 
-Lever de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone:
+Lever jouw volledige project in als één ZIP-archief via de Smartschool Uploadzone:
 
 ```text
 VoornaamA_Opdrachtnaam.zip
-└─ 01_assets/
-└─ 02_werkbestanden/
-└─ 03_exports/
+└─ VoornaamA_Opdrachtnaam/
+   └─ 01_onderzoek/
+      └─ VoornaamA_Opdrachtnaam-Onderzoek.pdf
+   └─ 02_assets/
+      └─ [alle gebruikte bronbestanden]
+   └─ 03_exports/
+      └─ VoornaamA_Opdrachtnaam.mp4
+   └─ VoornaamA_Opdrachtnaam.aep
 ```
 
 ### Checklist
 
-Controleer je werk grondig aan de hand van onderstaande checklist vóór je definitief inlevert.
+#### Bestandsbeheer & structuur
+* Het ZIP-archief draagt de naam `VoornaamA_Opdrachtnaam.zip`.
+* Het onderzoeksdocument met schets zit in `01_onderzoek/`.
+* Alle gebruikte assets zitten lokaal in `02_assets/`.
 
-#### Bestanden & mappen
-- De hoofdmap heet exact `VoornaamA_Opdrachtnaam`.
-- Mapstructuur en naamgeving zijn conform de afspraken.
+#### Vormgeving & techniek
+* Formaat, verhouding en kleurmodus zijn correct ingesteld.
+* Niet-destructieve werkmethodes en een nette lagen- of codestructuur zijn consequent toegepast.
 
-#### Technische & visuele kwaliteit
-- Correcte verhoudingen, resoluties en niet-destructieve werkwijze.
-- Het eindresultaat vormt een evenwichtig en verzorgd geheel.
-
-
+#### Exportkwaliteit
+* Het eindbestand in `03_exports/` voldoet aan alle gevraagde exportinstellingen.

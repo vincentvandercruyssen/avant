@@ -2,36 +2,36 @@
 
 Lesmateriaal, opdrachten en cursussen voor de richting **Crossmedia (5CRM & 6CRM)** aan school **Avant**.
 
-## 🚀 Overzicht
+## Overzicht
 
-Deze Hugo-site fungeert als intern werkdashboard en opdrachtgenerator voor leerkrachten en leerlingen binnen het domein *Kunst & Creatie (Dubbele Finaliteit)*.
+Deze Hugo-site fungeert als intern werkdashboard en opdrachtgenerator voor Avant.
 
-### 📚 Vakken & Titularissen (2026-2027)
+### Vakken & Titularissen (2026-2027)
 
 - **Motion (4u):** Vincent Vander Cruyssen *(5CRM & 6CRM)*
 - **Webdesign en storytelling (3u):** Vincent Vander Cruyssen *(5CRM & 6CRM)*
 - **Beeldanalyse en -bewerking (2u):** Vincent Vander Cruyssen *(5CRM & 6CRM)*
 - **Grafische vormgeving (4u):** Emelie Van de Peer *(5CRM)* & Birthe Fockaert *(6CRM)*
 
-### 🗓️ Jaarplanning: Periodes & Thema's (2026-2027)
+### Jaarplanning: Periodes & Thema's (2026-2027)
 
 Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met optionele/vrije opdrachten:
 
 #### 5CRM (Leerjaar 5)
 1. **September:** `Introductie`
 2. **Oktober:** `Kinetische kunst`
-3. **November–Januari:** `Zwaartekracht (Poëzieweek)`
+3. **November–Januari:** `Water (Jeugdboekenmaand)`
 4. **Januari–Mei:** `Kunstcollab`
 * **Vrije opdrachten:** `thema: "Vrij"` of leeg laten (`thema: ""`)
 
 #### 6CRM (Leerjaar 6)
 1. **September:** `Herhaling`
-2. **Oktober–December:** `Event`
+2. **Oktober–December:** `Zwaartekracht (Poëzieweek)`
 3. **Januari–Maart:** `Fashion`
 4. **April–Mei:** `Naar klant`
 * **Vrije opdrachten:** `thema: "Vrij"` of leeg laten (`thema: ""`)
 
-### 🤝 Klasafspraken
+### Klasafspraken
 
 - We tonen respect en begrip voor ieders eigenheid
 - We gebruiken altijd en tegen iedereen gepaste taal
@@ -43,7 +43,7 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 
 ---
 
-## 📂 Structuur
+## Structuur
 
 ```
 ├── archetypes/
@@ -83,7 +83,7 @@ Elk leerjaar kent 4 vaste afgebakende periodes en projectthema's, aangevuld met 
 │   └── leerplandoelen.yaml    # Centrale dataset met alle 53 doelstellingen, codes en clusters
 ```
 
-### 📄 Opdrachten als Page Bundles & Mappenstructuur
+### Opdrachten als Page Bundles & Mappenstructuur
 Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas}/{vak}/{opdracht-slug}/`):
 
 ```text
@@ -93,35 +93,20 @@ Opdrachten worden ingericht als modulaire Leaf Bundles (`content/2026-2027/{klas
 └── planning.md        # (Optioneel) Smartschool-lesplanning en fiches voor leerkrachten
 ```
 
-- **Titelconventie (1 kernwoord):** Gebruik bij voorkeur **één beknopte, krachtige naam** (bv. `title: "Kijkkader"`, `title: "Vormen"`, `title: "Quicktype"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Stadsgids"`, `title: "Vertigo"`, `title: "Extrude"`, `title: "Receptenboek"`). Dit houdt de weergave in de sidebar, navigatie en dashboards strak en overzichtelijk.
-- **Datumconventie:** Gebruik uitsluitend het formaat `YYYY-MM-DD` (bv. `date: 2026-09-01`).
+- **Datumconventie:** `YYYY-MM-DD` (bv. `date: 2026-09-01`).
 - **Paginatitels (`<title>`):**
   - Opdrachten: `Opdracht | Avant [Klas] [Vak]` (bv. `Parallax | Avant 6CRM Motion`).
   - Planning: `Opdracht (Planning) | Avant [Klas] [Vak]` (bv. `Parallax (Planning) | Avant 6CRM Motion`).
 - **Titel- & Themahiërarchie:** De hoofding toont `Klas - Vaknaam` (met verkorte vaknaam in de sidebar header) en daaronder `Thema: Opdrachtnaam` (of enkel `Opdrachtnaam` indien `thema: ""` leeg is).
-- **Geen horizontale scheidingslijnen (`---` / `<hr>`):** Gebruik **geen `---`** in de Markdown-body van opdrachten of planningen. De visuele structuur en rust worden volledig gedragen door semantische koppen (`##`, `###`, `####`), witruimte, callouts en de automatische CSS-lay-out.
-- **Didactische toon & Aanspreekvorm (geen "we"):** Schrijf opdrachten in een directe, activerende stijl gericht naar de individuele leerling (**je / jij / jouw** of actieve imperatief: *"Open de browser"*, *"Onderzoek de broncode"*, *"Voor je start..."*). Vermijd meervoudsvormen zoals *"we"*, *"wij"*, *"ons"* of *"laten we"*.
-- **Homepagina:** Opdrachten worden gerangschikt per schooljaar, vak en klas met directe links naar de opdracht en (indien aanwezig) de bijhorende lesplanning.
+- **Homepagina:** Opdrachten worden gerangschikt per schooljaar, vak en klas met directe links naar de opdracht, de puntenverdeling en (indien aanwezig) de bijhorende lesplanning.
 
-### 📅 Smartschool Lesplanning (`planning.md`)
+### Smartschool Lesplanning (`planning.md`)
 Voor elke opdracht kan een optionele `planning.md` worden toegevoegd:
-- **Aparte pagina via Custom Output Format:** Hugo genereert automatisch `.../planning.html` (bereikbaar via de link onder de opdracht op de homepage).
-- **Afgeschermd voor leerlingen:** De planning-knop verschijnt niet op de leerlingpagina van de opdracht zelf.
-- **Directe leskop & geen overbodige metadata:** Planningsbestanden beginnen direct met de eerste leskop (`## Les 1 ...`). Een documenttitel zoals `# Planning:...` of herhaalde metadata over vak, lokaal en duurtijd worden weggelaten; deze context wordt automatisch door de Hugo-layout gegenereerd.
-- **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert een semantisch geneste inhoudsopgave (`<ul><li>...<ul><li>...</li></ul></li>`) met identieke CSS-nummering (`1.`, `1.1`, `1.2`, ...) als reguliere opdrachten, een losse terug-link naar de opdracht en actieve highlighting (`font-weight: 700`) via scrollspy.
-- **Titel lesfiche:** Plaats de titel van de lesfiche conform Smartschool rechtstreeks als subkop (`### [Opdrachtnaam]: [Kernonderwerpen & Focus]`). Hierdoor is de inhoudelijke focus van de les direct zichtbaar in de inhoudsopgave (TOC) zonder overbodig tussenkopje of blockquote.
-- **Volgorde van onderdelen:** Plaats `### Lesverloop & inhoud` altijd direct na de titel van de lesfiche, gevolgd door `### Leerplandoelen`.
-- **Geen emoji's in koppen & gewone hyphen:** Gebruik geen emoji's in Markdown-koppen (`## Les X`, `### Lesverloop & inhoud`, `### Leerplandoelen`). Gebruik voor lesuren en tijdsintervallen altijd een gewone hyphen (` - `) in plaats van een kastlijn of gedachtestreepje (`–`).
-- **Lesverloop & inhoud (maatstaf voor didactische fiches):**
-  - **Telegrafisch & zakelijk (geen handleiding):** Schrijf als een strak didactisch draaiboek voor de leerkracht. Vermijd wollige volzinnen, langdradige leerlinginstructies en open deuren (*geen "individuele coaching & opvolging"*, *geen "klassikaal de theorie doornemen"*).
-  - **Resultaatgericht zonder softwaremechanica:** Beschrijf de didactische of creatieve handeling en het beoogde resultaat, niet de technische werking van de software. Vermijd uitleg over gereedschappen, panelen, functienamen tussen haakjes of verklarende bijzinnen.
-  - **Logische productiefasering:** Bouw de kernstappen op volgens de natuurlijke volgorde van het productie- en ontwerpproces: breng eerst inhoudelijke en structurele beeldelementen samen alvorens overkoepelende sfeer, toonwaarden en kleurafstemming toe te passen.
-  - **Afzonderlijke didactische kernstappen:** Splits het lesverloop op in genummerde stappen (`1.` t.e.m. `5.`). Belangrijke leermomenten zoals een toets, theorie-ontleding of klassikale demonstratie krijgen altijd een eigen genummerde stap en worden niet weggemoffeld als sub-item.
-  - **Enkelvoudige, compacte stapkoppen:** Houd genummerde koppen beknopt en gefocust op één didactische kernactiviteit. Vermijd samengestelde koppen; een administratieve afronding of inlevering vormt een sub-bullet onder de laatste stap en hoort niet thuis in de koptitel.
-  - **Eenvoudige nesting (maximaal 1 subniveau):** Onder een genummerde stap gebruik je uitsluitend een vlakke lijst met bullet points (`1. -> *`). Gebruik **geen sub-sub-bullets** (`* -> *`).
-  - **Consistente bestands- en projectreferenties:** Zorg dat alle bestandsnamen en op te leveren documenten in de leerplandoelen en het lesverloop letterlijk overeenkomen met de vastgelegde mappen- en documentstructuur van de opdracht.
+- **Aparte pagina via Custom Output Format:** Hugo genereert automatisch `.../planning.html` (bereikbaar via de link bij de opdracht op de homepage).
+- **Afgeschermd voor leerlingen:** De planning-link verschijnt niet op de leerlingpagina van de opdracht zelf.
+- **Automatische TOC (Lessen & Lesfiches):** De zijbalk genereert een semantisch geneste inhoudsopgave (`<ul><li>...<ul><li>...</li></ul></li>`) met CSS-nummering (`1.`, `1.1`, `1.2`, ...), een terug-link naar de opdracht en actieve highlighting (`font-weight: 700`) via scrollspy.
 
-### 🖼️ Automatische WebP Image Processing & Responsive Beelden
+### Automatische WebP Image Processing & Responsive Beelden
 Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`render-image.html`](layouts/_default/_markup/render-image.html)) automatisch geoptimaliseerd:
 - **WebP & Responsive `srcset`:** Converteert PNG/JPG automatisch naar WebP met breakpoints voor smartphone (`480w`, `768w`), 15" laptop (`1080w`, `1440w`) en 27" desktop (`1920w`).
 - **Vector- & animatiebestanden:** SVG- en geanimeerde GIF-bestanden worden zonder kwaliteitsverlies doorgelust (niet geconverteerd naar WebP), met volledige ondersteuning voor custom breedtes en centrering.
@@ -134,26 +119,26 @@ Alle Markdown-afbeeldingen in `img/` worden via een **Image Render Hook** ([`ren
     - `#third` of `#33%` (33.3% kolombreedte)
     - `#center` (gecentreerd uitlijnen, bv. `![Alt](img/foto.png#half#center)`)
 
-### 🔗 Link Render Hook & URL-Resolutie
+### Link Render Hook & URL-Resolutie
 Alle Markdown-links worden verwerkt via een **Link Render Hook** ([`render-link.html`](layouts/_default/_markup/render-link.html)):
 - **Root-relatieve links (`/`):** Links die starten met een slash (bv. `[Cursus Fotografie](/cursus/fotografie/)` of `[Kijkkader](/2026-2027/5crm/beeld/kijkkader/#concept--thema)`) worden via `relURL` automatisch gekoppeld aan het `baseURL`-subpad (`/avant/`). Hierdoor werken links foutloos, zowel lokaal (`http://localhost:1313/avant/...`) als online op GitHub Pages (`https://vincentvandercruyssen.github.io/avant/...`).
 - **Nieuw tabblad (`target="_blank"`):** Externe links en interne pagina-/cursusverwijzingen openen standaard in een nieuw tabblad met `rel="noopener noreferrer"`, zodat leerlingen de actieve opdracht niet verliezen.
 - **In-page ankers (`#`):** Interne ankerverwijzingen binnen dezelfde pagina (startend met `#`, bv. `[Stap 1](#stap-1)`) navigeren direct binnen dezelfde pagina (zonder `target="_blank"`).
 - **Relatieve downloadlinks:** Lokale bronnen binnen page bundles (zoals `[Voorbeeld](oefenbestanden/bestand.ai)`) behouden hun relatieve pad intact.
 
-### 📐 Automatische Afbeeldingskolommen & Flex-lay-out
-- **Gelijke kolommen (Pure Markdown):** Plaats 2 of meer afbeeldingen direct onder elkaar zonder witregel. De CSS groepeert ze automatisch in gelijke kolommen (50/50 bij 2 beelden, 33/33/33 bij 3 beelden):
+### Automatische Afbeeldingskolommen & Shortcodes
+- **Gelijke kolommen (Pure Markdown):** Twee of meer afbeeldingen direct onder elkaar zonder witregel worden door de CSS automatisch gegroepeerd in gelijke kolommen (50/50 bij 2 beelden, 33/33/33 bij 3 beelden):
   ```markdown
   ![Voorgrond](voorgrond.png)
   ![Achtergrond](achtergrond.png)
   ```
-- **Onevenredige kolommen:** Geef één van de afbeeldingen een breedte mee (bv. `?w=30%` of `#third`). De andere afbeelding vult automatisch de resterende breedte op:
+- **Onevenredige kolommen:** Een breedteparameter op één van de afbeeldingen (bv. `?w=30%` of `#third`) laat de andere afbeelding de resterende breedte opvullen:
   ```markdown
   ![Groot overzicht](overzicht.png)
   ![Detailknop](knop.png?w=30%)
   ```
 - **Responsief:** Op smalle schermen (≤ 600px) schakelen multi-image alinea's automatisch over naar een verticale stapeling.
-- **Shortcode `{{< grid >}}`:** Voor meer complexe lay-outs of gemengde content (tekst, code, beelden) is er een lichte grid-shortcode ([`grid.html`](layouts/shortcodes/grid.html)):
+- **Shortcode `{{< grid >}}`:** Voor gemengde content (tekst, code, beelden) naast elkaar ([`grid.html`](layouts/shortcodes/grid.html)):
   ```markdown
   {{< grid cols=2 gap="1rem" >}}
   Linkerkolom content...
@@ -161,7 +146,6 @@ Alle Markdown-links worden verwerkt via een **Link Render Hook** ([`render-link.
   Rechterkolom content...
   {{< /grid >}}
   ```
-- **Geen shortcode nodig voor beelden:** Het gebruik van `{{< grid >}}` (of een aangepaste gap) om afbeeldingen naast elkaar te plaatsen is niet nodig. Markdown-afbeeldingen direct onder elkaar plaatsen activeert automatisch de CSS-flexbox met standaard `1rem` gap.
 - **Shortcode `{{< pinboard >}}`:** Voor het insluiten van een interactief Pinterest-bord ([`pinboard.html`](layouts/shortcodes/pinboard.html)):
   ```markdown
   {{< pinboard url="https://www.pinterest.com/gebruikersnaam/naam_board/" >}}
@@ -175,212 +159,197 @@ Alle Markdown-links worden verwerkt via een **Link Render Hook** ([`render-link.
   {{< demo_embed dir="voorbeelden/web-story/receptenboek" title="Receptenboek" height="650px" >}}
   ```
 
-### 📸 Aanbevolen Stockplatformen (Bronmateriaal)
-Voor opdrachten rond beeldbewerking, compositing en motion design gebruiken leerlingen kwalitatief, rechtenvrij beeldmateriaal via:
+### Aanbevolen Stockplatformen (Bronmateriaal)
+Voor opdrachten rond beeldbewerking, compositing en motion design gebruiken leerlingen rechtenvrij beeldmateriaal via:
 - [Pexels](https://www.pexels.com/): Gratis rechtenvrije foto's en video's in hoge resolutie.
 - [Unsplash](https://unsplash.com/): Uitgebreide bibliotheek met creatieve en artistieke stockfoto's.
 
-### 🎯 Automatische Evaluatieclusters & Succescriteria (Eigen Taal)
-Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.yaml`. De clusters worden **volledig automatisch** afgeleid en gerangschikt in de volgorde van het officiële evaluatiesjabloon:
-- `leerplandoelen:` ondersteunt zowel losse codes als succescriteria in eigen woorden:
-  ```yaml
-  leerplandoelen:
-    - code: "CRS02"
-      criterium: "Zelfstandig een passend belichtingsplan en camera-instellingen selecteren."
-    - code: "CRS06"
-      criterium: "Professioneel retoucheren in Photoshop met behoud van textuur."
-    - "CRS21" # losse code zonder extra velden
-  ```
-- Het onderdeel **Puntenverdeling** bevat het evaluatieniveau-kader (Niveau 0–3), het vaklabel en de succescriteriatabel en is direct gelinkt in de Table of Contents (TOC).
+### Evaluatieclusters, Indieningen & Succescriteria
+Doelen worden centraal beheerd in `data/leerplandoelen.yaml` en `data/clusters.yaml`. De clusters worden **volledig automatisch** afgeleid en gerangschikt in de volgorde van het evaluatiesjabloon:
+- **`indieningen:` (standaard voor nieuwe opdrachten):** Verdeelt een opdracht in afzonderlijke evaluatiemomenten (zoals `onderzoek` en `oplevering`) met eigen `deadline`, `lesuren`, `gewicht` en gewogen `leerplandoelen`.
+- **`leerplandoelen:` (op hoofdniveau voor enkelvoudige opdrachten):** Ondersteunt zowel objecten (`code`, `gewicht`, `criterium`) als losse codes (bv. `"CRS21"`).
+- **Puntenverdeling:** Hugo genereert op basis van de frontmatter automatisch een aparte puntenverdelingspagina (`puntenverdeling.html`) en rubriekweergave met het evaluatieniveau-kader (Niveau 0–3).
 
-### 📑 Dynamische Table of Contents (TOC) & Scroll Spy
+### Dynamische Table of Contents (TOC) & Scroll Spy
 - **Diepte H2 tot H4:** Hugo genereert de inhoudsopgave van niveau 2 t.e.m. 4 (`[markup.tableOfContents] startLevel = 2, endLevel = 4`).
 - **Inklapbare H4-subniveau's:** H4-onderdelen zijn standaard ingeklapt in de zijbalk en worden enkel zichtbaar wanneer het bijhorende H3-hoofdonderdeel actief is of door het scherm passeert.
 - **Scroll Spy & Synchronisatie:** Tijdens het scrollen markeert vanilla JavaScript (`main.js`) automatisch de huidige actieve sectie (`.is-active`, `.has-active`) en scrollt het TOC-menu mee indien nodig.
 - **Automatische hiërarchische nummering:** Zowel in de broodtekst als in de TOC worden koppen consistent genummerd via CSS counters (`1. `, `1.1 `, `1.1.1 `).
 
-### 🎨 CSS & Styling Filosofie
-- **Typografie & Fonts:** De site gebruikt de lettertypefamilie **Aptos** en **Aptos Mono** voor optimale schermleesbaarheid, lokaal geserveerd vanuit `static/fonts/` ([Microsoft Aptos Fonts](https://www.microsoft.com/en-us/download/details.aspx?id=106087)).
-- **Dynamische Auteurscredit (`body::after`):** Elke pagina toont rechts verticaal een vaste auteursbadge (`writing-mode: vertical-rl;`). De tekst wordt automatisch samengesteld via `auteurs:` in de frontmatter (waarbij de sitetitel dynamisch voorop staat en voornamen automatisch worden gereduceerd tot hun initiaal, bv. `Avant - I. Doggen, B. Fockaert, V. Vander Cruyssen`).
-- **Semantische HTML & CSS Structuur:** We vermijden overbodige utility-classes of BEM-klassen in de HTML (bv. geen `.sc-main-header`).
-- **Structurele Selectors:** Styling gebeurt bij voorkeur via de natuurlijke logica van CSS: elementselectors, structurele pseudo-classes (`:first-child`, `:nth-child()`, `:has()`), en attribuutselectors.
+### Typografie & Auteurscredit
+- **Typografie & Fonts:** De site gebruikt **Aptos** en **Aptos Mono**, lokaal geserveerd vanuit `static/fonts/` ([Microsoft Aptos Fonts](https://www.microsoft.com/en-us/download/details.aspx?id=106087)).
+- **Dynamische Auteurscredit (`body::after`):** Elke pagina toont rechts verticaal een auteursbadge (`writing-mode: vertical-rl;`), automatisch samengesteld uit de sitetitel en het veld `auteurs:` in de frontmatter (voornamen gereduceerd tot initiaal, bv. `Avant - I. Doggen, B. Fockaert, V. Vander Cruyssen`).
 
 ---
 
-## ✍️ Stijlgids & Redactie van Opdrachten
+## Sjabloon voor Nieuwe Opdrachten (`index.md`)
 
-Elke opdracht binnen Avant volgt een vaste redactionele en didactische standaard om herkenbaarheid, rust en kwaliteit te waarborgen.
-
-### 1. Titels & Frontmatter
-- **Titel (1 kernwoord):** Gebruik bij voorkeur **één beknopt kernwoord** (`title: "Kijkkader"`, `title: "Vormen"`, `title: "Quicktype"`, `title: "Profiel"`, `title: "Parallax"`, `title: "Paspoort"`, `title: "Stadsgids"`, `title: "Vertigo"`, `title: "Extrude"`).
-- **Auteurs (`auteurs:`):** Noteer de volledige naam van de auteur(s) (bv. `auteurs: ["Vincent Vander Cruyssen"]` of meerdere auteurs bij gedeeld lesmateriaal). De weergavebadge verkort de voornaam automatisch.
-- **Software-stack:** Volledige opsomming van gebruikte tools, browsers en standaarden.
-- **Succescriteria in eigen taal:** Koppel bij elk leerplandoel een concreet, begrijpelijk succescriterium geformuleerd in leerlingentaal:
-  ```yaml
-  auteurs:
-    - "Vincent Vander Cruyssen"
-  leerplandoelen:
-    - code: "CRS01"
-      criterium: "Productievereisten en bestandsconventies voor webprojecten analyseren en toepassen."
-    - code: "CRS06"
-      criterium: "Vlot en efficiënt werken met Visual Studio Code en browser-inspectietools."
-  ```
-
-### 2. Redactionele & Typografische Regels
-- **Aanspreekvorm:**
-  - **Opdrachten:** Schrijf in een directe, activerende stijl gericht naar de individuele leerling (**je / jij / jouw** of directe imperatief: *"Open de browser"*, *"Selecteer het onderwerp"*, *"Sla het bestand op"*). Vermijd meervoudsvormen zoals *"we"*, *"wij"* of *"laten we"*.
-  - **Cursussen & theorie (`content/cursus/`):** Hanteer een objectieve, verklarende en neutrale referentiestijl (geen opdrachtvorm of persoonlijke aanspreking met *je/jij* of *wij*), afgestemd op de doelgroep (15–18-jarigen) zonder ambtelijke of verouderde taal.
-- **Hoofdletters in tussentitels (Sentence case):** Begin in (tussen)titels enkel het eerste woord met een hoofdletter, tenzij het om eigennamen, softwarenamen of tekst na een dubbelpunt gaat (bv. `#### Niet-destructief uitsnijden`, `### CSS: Vormgeving`, `### Onderzoek: Inspectie op Wikipedia`, `#### HTML-basis in VS Code`). Vermijd overbodig Engels *Title Case* waarin elk willekeurig woord met een hoofdletter begint.
-- **Softwaretermen & Sneltoetsen:** Vermeld bij softwarefuncties zowel de Nederlandstalige als Engelstalige benaming met sneltoetsen (`Object selecteren (Object Selection Tool, W)`, `Ctrl + T`, `F9 (Easy Ease)`).
-- **Getallen en telwoorden (voluit onder de tien):** Schrijf aantallen en telwoorden onder de tien in lopende tekst bij voorkeur voluit in het Nederlands (bv. *"je maakt vier afzonderlijke composities"*, *"kies drie beelden"*, *"de vijf basistransformaties"* in plaats van *"4 composities"* of *"de 5 basistransformaties"*). Technische eenheden, tijden, afmetingen en labels schrijf je wel als cijfer (bv. *"minimaal 5 seconden"*, *"30 fps"*, *"1080 px"*, *"Stap 1"* of *"Compositie 1"*).
-- **Beeldvergelijkingen (50/50):** Plaats 2 beelden direct onder elkaar zonder witregel voor een automatische side-by-side flex-kolom. Gebruik breedteparameters (`?w=30%` tot `?w=60%`) voor compacte menuknoppen en detailvensters.
-- **Geen redundante fase- of stapnummers in koppen:** Vermijd handmatige nummering zoals `Fase 1:`, `Fase 2:`, `1.`, `2.` of `Stap 1:` in Markdown-koppen (`###`, `####`, `#####`). De Table of Contents en CSS counters nummeren secties automatisch.
-- **Geen scheidingslijnen:** Gebruik **geen `---`** in de Markdown-body; de visuele rust en hiërarchie worden gedragen door de koppen (`##`, `###`, `####`), witruimte en callouts.
-- **Belangrijke tips & valkuilen:** Plaats cruciale waarschuwingen of didactische aandachtspunten in Markdown callouts (`>`).
-- **Vereenvoudigde ASCII-mappenstructuur (`└─`):** Gebruik in codeblokken voor mappen- en archiefstructuren consequent het uniforme boomteken `└─` (in plaats van wisselende `├──` en `└──`). Dit zorgt voor visuele rust en snelle bewerkbaarheid.
-- **Meervoudige bestandsnotatie:** Verwijs bij genummerde reeksen beknopt naar opeenvolgende varianten tussen haakjes, bv. `VoornaamA_Opdracht-Comp_1.mp4 (2,3,4)` of `VoornaamA_Opdracht-Storyboard-1.jpg (2,3,4) of .pdf`.
-
-### 3. Vaste Hoofdstukhiërarchie
-Elke opdracht volgt een vaste 4-delige kernstructuur:
-
-1. `## Briefing & Concept` — Introductie met praktijkcontext, sfeer-GIF/beeld, kernbegrip/theorie en conceptkeuzes.
-2. `## Technische specificaties` (of `## Afspraken`) — Tabel met resoluties, framerates, codecs of bestandsafspraken en de verplichte `VoornaamA_Opdrachtnaam/` mappenstructuur met `└─`.
-3. `## Stappenplan` — Modulair en chronologisch opgedeeld per fase (`### Fase`, `#### Substap`):
-   - Start bij voorkeur met actief/onderzoekend leren (bv. broncode-inspectie, beeldselectie op Pexels/Unsplash of analyse van persfotografie op nieuwswebsites).
-   - Gebruik gerichte subkoppen zoals `#### Voorbeeld` (voor de concrete actiestappen los van algemene kaders) en `#### Indienen` (of `#### Indienen: [Onderdeel]`) voor fasegerichte evaluaties en uploads naar specifieke Smartschool-uploadzones.
-   - Inclusief een `### Extra's` of `### Extra uitdagingen` voor differentiatie en verdieping.
-4. `## Oplevering` — Het sluitstuk van de opdracht waarin het in te leveren pakket centraal staat:
-   - Directe inleverinstructie gevolgd door een visueel ASCII-codeblok van het `.zip`-bestand of de voorziene Smartschool-uploadmappen met de exacte bestandsstructuur (`└─`).
-   - Een geneste `### Checklist` (met `####`-subchecks) voor bestanden/mappen, technische eisen en visuele afwerking die de leerling vóór inlevering doorloopt.
-
----
-
-## 📋 Sjabloon voor Nieuwe Opdrachten (`index.md`)
-
-Onderstaand sjabloon dient als startpunt bij het aanmaken van een nieuwe opdracht:
+Onderstaand sjabloon dient als startpunt bij het aanmaken van een nieuwe opdracht (zie [`AGENTS.md`](AGENTS.md) voor alle redactionele, typografische en didactische schrijfregels):
 
 ```markdown
 ---
 title: "Kernwoord"
-date: 2026-09-02
+date: 2026-11-16
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "motion"
 auteurs:
   - "Vincent Vander Cruyssen"
-periode: "September"
-thema: "Herhaling"
+periode: "November - Januari"
+thema: "Themanaam"
 software:
   - "Software 1"
   - "Software 2"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Concreet succescriterium beschreven in begrijpelijke leerlingentaal."
-  - code: "CRS02"
-    criterium: "Passende technieken en tools doelgericht selecteren in functie van het beoogde resultaat."
+indieningen:
+  - id: "onderzoek"
+    titel: "Kernwoord 1.1 Onderzoek en ontwerpplan"
+    deadline: 2026-12-15
+    lesuren: 2
+    gewicht: 4
+    leerplandoelen:
+      - code: "13.01"
+        gewicht: 1
+        criterium: "Minimaal vijf inspirerende voorbeelden doelgericht verzamelen en analyseren."
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten en bestandsnaamgeving correct toepassen in VoornaamA_Kernwoord-Onderzoek.pdf."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht passende technieken en werkmethodes selecteren in functie van het beoogde resultaat."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een overzichtelijke compositieschets of wireframe uittekenen als basis voor de uitwerking."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het onderzoeksdocument en verzamelde bronnen ordelijk beheren in de OneDrive-vakmap."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor het onderzoek stipt naleven."
+
+  - id: "oplevering"
+    titel: "Kernwoord 2.1 Oplevering"
+    deadline: 2027-01-12
+    lesuren: 4
+    gewicht: 12
+    leerplandoelen:
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en zelfstandig werken met de gekozen software en gereedschappen."
+      - code: "CRS16"
+        gewicht: 2
+        criterium: "Een kwalitatief eindproduct realiseren dat inhoudelijk en technisch aansluit bij het onderzoek."
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "Beeld, typografie, kleur en timing esthetisch op elkaar afstemmen tot één samenhangend geheel."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Werkbestanden, assets en exports ordelijk bundelen in de projectmap."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige projectarchief VoornaamA_Kernwoord.zip conform de mappenstructuur en naamconventie opleveren."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "Het eindresultaat kritisch controleren op technische specificaties, scherpte en bestandsgrootte."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Kwaliteitsbewust handelen door oog voor detail en propere afwerking."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Werkbestanden en assets overzichtelijk ordenen in de OneDrive-vakmap."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en alle inleverafspraken stipt naleven."
 draft: false
 ---
 
-## Briefing & Concept
+## Briefing & concept
 
-Wervende introductie waarin je de opdracht linkt aan de praktijk of het werkveld. Leg uit wat de leerling gaat maken en waarom deze techniek belangrijk is.
+Wervende introductie waarin je de opdracht linkt aan de praktijk, het werkveld of het overkoepelende thema. Leg uit wat je gaat maken en wat de kernvereisten zijn:
 
-![Hero animatie of sfeerbeeld](hero.gif?w=50%)
+* **Onderdeel 1**: Korte omschrijving van het hoofdelement en formaat.
+* **Onderdeel 2**: Korte omschrijving van de technische of visuele lijn.
 
-### Wat is [Kernbegrip]?
+![Hero animatie of sfeerbeeld](img/hero.png?w=50%)
 
-Beknopte uitleg van de theoretische basis of het onderliggende ontwerpprincipe.
+{{< pinboard url="https://www.pinterest.com/gebruikersnaam/naam_board/" >}}
 
-![Voorbeeld voor](voorbeeld-voor.png)
-![Voorbeeld na](voorbeeld-na.png)
+## Onderzoek
 
-### Je concept
+Verken vooraf hoe ontwerpers dit thema of deze techniek aanpakken en bereid je eigen keuzes voor.
 
-Geef de leerling duidelijke kaders of keuzemogelijkheden:
-1. **Optie 1:** Omschrijving.
-2. **Optie 2:** Omschrijving.
-3. **Optie 3:** Omschrijving.
+Zoektermen: `relevante zoekterm 1, relevante zoekterm 2, relevante zoekterm 3`.
 
-## Technische specificaties
+### Inspiratie & ontwerpplan
 
-| Instelling | Aanbevolen waarde | Toelichting |
-| :--- | :--- | :--- |
-| **Formaat / Resolutie** | **1080 × 1350 px** | Toelichting bij de keuze van de resolutie/verhouding. |
-| **Framerate / Modus** | **30 fps / RGB** | Technische standaard voor scherm of video. |
-| **Codec / Container** | **H.264 in MP4** | Universele compatibiliteit. |
+Bundel je vijf voorbeelden en je voorbereiding in `VoornaamA_Kernwoord-Onderzoek.pdf`:
 
-### Mappenstructuur
+1. **Inspiratieanalyse**: Verzamel minimaal vijf kwalitatieve voorbeelden en noteer per voorbeeld beknopt wat opvalt qua techniek, opbouw, ritme of sfeer.
+2. **Eigen keuzes**: Motiveer welke technieken, kleuren en vormen je kiest in functie van jouw concept en doelgroep.
+3. **Schets / opbouw**: Teken een snelle compositieschets of wireframe waarin de belangrijkste onderdelen en verhoudingen duidelijk zijn aangeduid.
 
-Zet vooraf een ordelijke mappenstructuur op in je OneDrive onder het vak **[Vaknaam]**:
+Plaats het document in `01_onderzoek/` en dien in via Smartschool.
 
-```text
-VoornaamA_Opdrachtnaam/
-└─ 01_assets/          <- Ruwe bronbestanden, foto's, fonts, audio
-└─ 02_werkbestanden/   <- Bewerkbare projectbestanden (.psd, .aep, .ai)
-└─ 03_exports/         <- Definitieve opleveringen (.jpg, .mp4)
-```
+## Opdracht
 
-## Stappenplan
+Werk je ontwerp stelselmatig uit volgens de technische en inhoudelijke afspraken.
 
-### Voorbereiding & Bronmateriaal
-* Verzamel kwalitatief bronmateriaal via [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/).
-* Bepaal je compositie en typografische hiërarchie.
+### Voorbereiding & opzet
 
-### [Eerste fase / Software]
+1. Stel je document of projectmap in volgens de vereiste specificaties (**formaat / resolutie**, **framerate / kleurmodus**).
+2. Verzamel en orden je bronmateriaal (eigen opnames, vectorbestanden of rechtenvrij materiaal via [Pexels](https://www.pexels.com/) of [Unsplash](https://unsplash.com/)) lokaal in je assetmap.
 
-Instructies of technische vereisten van deze fase.
+### Productie & afwerking
 
-#### Voorbeeld
-
-1. Activeer het gereedschap **Naam gereedschap** (*Engelse toolnaam*, sneltoets `T`).
-2. Pas de instellingen aan.
+1. Werk de hoofdonderdelen stap voor stap en niet-destructief uit.
+2. Gebruik het gereedschap **Naam gereedschap** (*Engelse toolnaam*, sneltoets `T`) voor specifieke bewerkingen.
 
 > **Belangrijke tip of valkuil!**  
-> Plaats hier een didactische waarschuwing of toelichting (bv. over niet-destructief werken).
+> Plaats hier een gerichte didactische waarschuwing of toelichting (bv. over niet-destructief werken, relatieve paden of schone laagopbouw).
 
-### [Tweede fase / Software]
+### Export
 
-#### Importeren en opzetten
-Werkwijze voor het integreren, animeren of stijlen van de onderdelen.
+Exporteer het eindresultaat volgens de gevraagde instellingen (**formaat**, **compressie**, **maximale bestandsgrootte**).
 
 ### Extra's
 
 Voor wie sneller klaar is of extra diepte wil toevoegen:
-* **Optie A:** Beschrijving van een gevorderde techniek of effect.
-* **Optie B:** Verfijning in sound design, micro-interacties of typografie.
+* **Optie A:** Beschrijving van een gevorderde techniek of visuele verfijning.
+* **Optie B:** Extra detail in typografie, interactie of geluid.
 
 ## Oplevering
 
-Lever de volledige projectmap gecomprimeerd in via de Smartschool Uploadzone:
+Lever jouw volledige project in als één ZIP-archief via de Smartschool Uploadzone:
 
 ```text
-VoornaamA_Opdrachtnaam.zip
-└─ 01_assets/
-└─ 02_exports/VoornaamA_Opdrachtnaam-Comp_1.mp4 (2,3,4)
-└─ VoornaamA_Opdrachtnaam.aep
-└─ VoornaamA_Opdrachtnaam-Storyboard-1.jpg (2,3,4) of .pdf
+VoornaamA_Kernwoord.zip
+└─ VoornaamA_Kernwoord/
+   └─ 01_onderzoek/
+      └─ VoornaamA_Kernwoord-Onderzoek.pdf
+   └─ 02_assets/
+      └─ [alle gebruikte bronbestanden]
+   └─ 03_exports/
+      └─ VoornaamA_Kernwoord.mp4
+   └─ VoornaamA_Kernwoord.aep
 ```
 
 ### Checklist
 
-Controleer je werk grondig aan de hand van onderstaande checklist vóór je definitief inlevert.
+#### Bestandsbeheer & structuur
+* Het ZIP-archief draagt de naam `VoornaamA_Kernwoord.zip`.
+* Het onderzoeksdocument met schets zit in `01_onderzoek/`.
+* Alle gebruikte assets zitten lokaal in `02_assets/` zodat het werkbestand zonder ontbrekende bestanden opent.
 
-#### Bestanden & mappen
-- De hoofdmap heet exact `VoornaamA_Opdrachtnaam`.
-- Alle bestanden staan in de juiste submappen zonder spaties of hoofdletters waar niet toegestaan.
+#### Vormgeving & techniek
+* Formaat, verhouding en kleurmodus zijn correct ingesteld.
+* Niet-destructieve werkmethodes en een nette lagen- of codestructuur zijn consequent toegepast.
 
-#### Technische kwaliteit
-- Resolutie, verhouding en kleurmodus/kleurruimte zijn correct ingesteld.
-- Niet-destructieve werkmethodes zijn consequent toegepast.
-
-#### Vormgeving & Boodschap
-- Typografische hiërarchie en leesbaarheid zijn verzorgd.
-- Het eindresultaat vormt een evenwichtig en harmonieus geheel.
+#### Exportkwaliteit
+* Het eindbestand in `03_exports/` voldoet aan alle gevraagde exportinstellingen en vormt een verzorgd geheel.
 ```
 
 ---
 
-## 📅 Sjabloon voor Lesplanning (`planning.md`)
+## Sjabloon voor Lesplanning (`planning.md`)
 
 Onderstaand sjabloon toont de maatstaf voor een strakke, telegrafische Smartschool-lesfiche:
 
@@ -412,7 +381,7 @@ Onderstaand sjabloon toont de maatstaf voor een strakke, telegrafische Smartscho
 
 ---
 
-## 🛠️ Lokaal ontwikkelen
+## Lokaal ontwikkelen
 
 Vereisten: **Hugo Extended** (zie `.hugo-version`) en **Node.js**.
 
@@ -424,19 +393,15 @@ npm run dev
 hugo --gc --minify
 ```
 
-### 🔄 Grading Pipeline, Rubrieken & Rechtstreekse Cijferinvoer
+### Grading Pipeline, Rubrieken & Rechtstreekse Cijferinvoer
 
-* **Single Source of Truth:** Bewerk rubriek- en gradingbestanden **uitsluitend in `assets/`**:
-  * `assets/js/rubriek.js`
-  * `assets/css/grading.css`
-* **Automatische spiegeling naar `static/`:** Bewerk de bestanden in `static/` **nooit rechtstreeks**. `npm run dev` ([`scripts/dev.js`](scripts/dev.js)) spiegelt de bronbestanden uit `assets/` automatisch naar `static/` bij het opstarten én via een live file watcher bij elke save.
+* **Asset-spiegeling (`assets/` → `static/`):** `npm run dev` ([`scripts/dev.js`](scripts/dev.js)) spiegelt de bronbestanden `assets/js/rubriek.js` en `assets/css/grading.css` automatisch naar `static/` bij het opstarten én via een live file watcher bij elke save (voor GitHub Pages).
 * **Evaluatiemodi (Rubriek vs. Cijfer):** Het beoordelingspaneel ondersteunt zowel criteria-gebaseerde evaluatie via niveaublokken (Niveau 0–3) als rechtstreekse puntinvoer:
   * **Cijfermodus / Toetsen:** Indieningen van het type `cijfer` of toetsen (titel/id bevat 'toets') schakelen automatisch over naar een directe numerieke score per cluster (`/ max punten`).
   * **Modus-toggle:** Via de checkbox in de actiebalk kan per indieningsfase dynamisch gewisseld worden tussen niveaublokken en directe puntinvoer (`useRubrics: true/false`), met automatische bewaring in de rubriekdata.
-* **Productie (GitHub Pages):** De gespiegelde bestanden in `static/` worden mee gecommit in Git zodat de GitHub Actions build ze direct kan serveren voor het geanonimiseerde resultatendashboard.
 
 ---
 
-## 🚢 GitHub Pages Deployment
+## GitHub Pages Deployment
 
 De site wordt automatisch gebouwd en gepubliceerd naar GitHub Pages via GitHub Actions (`.github/workflows/hugo.yaml`) bij elke push naar de `main` branch.

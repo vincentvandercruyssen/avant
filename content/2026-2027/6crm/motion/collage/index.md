@@ -91,27 +91,31 @@ draft: false
 
 ## Briefing & concept
 
-Wanneer een bezoeker straks via een QR-code op jouw digitale expopagina landt, vormt deze **collage-animatie** het bewegende hart (*hero*) van de pagina — recht achter de zwevende typoloops.
+Wanneer een bezoeker straks via een QR-code op jouw digitale expopagina landt, vormt deze **collage-animatie** het bewegende hart (*hero*) van de pagina, tussen de zwevende typoloops.
 
 Je gebruikt hiervoor rechtstreeks de vrijstaande fragmenten en texturen die je maakte bij **Beeld (*Collagemateriaal*)**. In After Effects breng je die papieren knipsels, objecten en texturen samen in een **tactiele, naadloze loop van 10 tot 20 seconden** op een **zwarte achtergrond (`#000000`)**.
 
-Spelen met zwaartekracht staat centraal: sommige elementen zweven gewichtloos in de diepte, andere schommelen aan een onzichtbare draad, tuimelen vertraagd omlaag of blijven door subtiele stop-motion (*Posterize Time*) juist aan de pagina gekleefd.
+Spelen met zwaartekracht staat centraal: sommige elementen zweven gewichtloos, andere schommelen aan een onzichtbare draad, tuimelen vertraagd omlaag of blijven door subtiele stop-motion (*Posterize Time*) juist aan de pagina gekleefd.
+
+{{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/zwaartekracht-collage-animatie/" >}}
 
 ## Onderzoek
 
-Verzamel vooraf **vijf inspirerende cut-out- of mixed-media collage-animaties** (bv. op Vimeo, Dribbble, Behance of Instagram).
+Verzamel vooraf **drie inspirerende cut-out- of mixed-media collage-animaties** (bv. op Pinterest, Vimeo, Dribbble, Behance of Instagram).
 
 Zoektermen: `paper cutout animation after effects, mixed media collage motion, terry gilliam animation modern, surreal collage loop, editorial motion collage`.
 
 ### Animatieplan
 
-Bundel je vijf voorbeelden en je voorbereiding in `VoornaamA_Collage-Onderzoek.pdf`:
+Bundel je drie voorbeelden en je voorbereiding in `VoornaamA_Collage-Onderzoek.pdf`.
 
-1. **Techniekanalyse**: Noteer bij je vijf voorbeelden hoe diepte, schaduwen tussen papieren lagen, en het ritme (vloeiende beweging vs. schokkerige 12 fps stop-motion) precies werken.
-2. **Compositieschets**: Teken een snelle schets van je staande collage-opbouw. Duid aan welke onderdelen op de achtergrond, het middenplan en de voorgrond komen, én laat **ademruimte over** waar straks bij Web de typoloops overheen verschijnen.
-3. **Zwaartekracht-bewegingen**: Noteer per hoofdlaag welk soort beweging bij het object past (bv. langzame rotatie, sinus-deining, plotse val, pulserende textuur).
+1. **Techniekanalyse**: Noteer bij je drie voorbeelden hoe diepte, schaduwen tussen papieren lagen, en het ritme precies werken.
+2. **Compositieschets**: Teken een schets van je collage-opbouw. 
+    - Beschrijf welke onderdelen op de achtergrond, het middenplan en de voorgrond komen, én laat **ademruimte over** waar straks bij Web de typoloops overheen verschijnen.
+    - Noteer per hoofdlaag welk soort (zwaartekracht-)beweging erbij past.
 
-Plaats het document in `01_onderzoek/` en dien in via Smartschool.
+Verzamel je voorbereidingen in één document, plaats het document in `01_onderzoek/` en dien dit als `VoornaamA_Collage-Onderzoek.pdf` via Smartschool.
+
 
 ## Opdracht
 
@@ -134,9 +138,9 @@ Bouw je collage in lagen op zodat je in After Effects maximale controle hebt ove
 
 ### Export voor Web
 
-Exporteer je compositie via **Adobe Media Encoder** als **H.264 MP4** (zonder audiospoor, aangezien het luistergedicht apart afgespeeld wordt):
+Exporteer je compositie via **Adobe Media Encoder** als **H.264 MP4** (zonder audiospoor, aangezien het luistergedicht apart afgespeeld wordt).
 
-* Zorg dat de bestandsgrootte onder **10 MB** blijft (streef liefst naar **4–8 MB**) zodat de video op een smartphone in Bib Couwelaar ogenblikkelijk en vloeiend start.
+Zorg dat de bestandsgrootte onder **10 MB** blijft (streef liefst naar **4–8 MB**) zodat de video op een smartphone in Bib Couwelaar ogenblikkelijk en vloeiend start.
 
 ## Oplevering
 

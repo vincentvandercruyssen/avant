@@ -1,6 +1,8 @@
 ---
-title: "Beyond Gravity"
+title: "Expopagina"
 date: 2026-11-16
+aliases:
+  - /2026-2027/6crm/web-story/beyond-gravity/
 schooljaar: "2026-2027"
 klas: "6CRM"
 vak: "web-story"
