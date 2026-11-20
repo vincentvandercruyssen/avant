@@ -90,7 +90,7 @@
                   {{ with $p.OutputFormats.Get "Puntenverdeling" }}
                     {{ $isCurrent := eq $p.RelPermalink $currentPage.RelPermalink }}
                     <li>
-                      <a href="{{ .RelPermalink }}"{{ if $isCurrent }} class="is-active" aria-current="page"{{ end }}>
+                      <a href="{{ .RelPermalink }}" target="_blank"{{ if $isCurrent }} class="is-active" aria-current="page"{{ end }}>
                         {{ $itemTitle }}
                       </a>
                     </li>

@@ -47,7 +47,7 @@ draft: false
 Fotografie legt een fractie van een seconde vast: de tijd staat stil. Maar stilstaand beeld hoeft niet statisch te zijn. Met de juiste techniek kun je snelheid, energie, spanning en ritme laten voelen in één enkel kader.
 
 Binnen het overkoepelende thema **Kinetic** onderzoek je beweging vanuit verschillende vakken:
-* Bij **Grafische Vormgeving** suggereer je beweging via een raster, geometrie en typografie.
+* Bij **Grafische vormgeving** suggereer je beweging via een raster, geometrie en typografie.
 * Bij **Motion** breng je letters en composities letterlijk tot leven in tijd en ruimte.
 * Bij **Beeld** onderzoek én creëer je hoe het beeld zelf dynamiek uitstraalt: via cameratechniek (sluitertijd, beweging, meervoudige belichting) of via doelgerichte beeldbewerking en manipulatie.
 

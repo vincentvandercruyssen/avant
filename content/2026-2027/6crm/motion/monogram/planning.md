@@ -4,7 +4,7 @@
 
 ### Lesverloop & inhoud
 1. **Terugkoppeling op schetsen & ontwerpkeuze:**
-   * Overlopen van de gekozen monogramconcepten en getekende voorontwerpen uit Grafische Vormgeving.
+   * Overlopen van de gekozen monogramconcepten en getekende voorontwerpen uit Grafische vormgeving.
    * Evolutie tussen geometrische basisvorm, blokvormige tussenfase en definitief monogram met het oog op een vloeiende vormtransitie.
 2. **Briefing van het Motion-vervolg & bestandsopbouw:**
    * Toelichten van de duotoon transitie-animatie als vervolg op het Illustrator-ontwerp.

@@ -39,7 +39,7 @@ draft: false
 
 ## Briefing & concept
 
-In het vak Grafische Vormgeving onderzocht je hoe je met een raster spanning, beweging en hiërarchie suggereert. In Motion zette je reeds letters en woorden in beweging. In deze opdracht breng je **grafische ontwerpprincipes of Gestalt-principes** tot leven via een geometrische animatie in Adobe After Effects.
+In het vak Grafische vormgeving onderzocht je hoe je met een raster spanning, beweging en hiërarchie suggereert. In Motion zette je reeds letters en woorden in beweging. In deze opdracht breng je **grafische ontwerpprincipes of Gestalt-principes** tot leven via een geometrische animatie in Adobe After Effects.
 
 Werk naar onderstaand voorbeeld een Instagram reel uit in After Effects. Bedenk hoe een eenvoudige vorm door beweging, schaal en herhaling een grafisch principe overbrengt.
 

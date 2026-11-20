@@ -73,7 +73,7 @@
                     {{ end }}
                   {{ end }}
                   <li>
-                    <a href="{{ $p.RelPermalink }}">
+                    <a href="{{ $p.RelPermalink }}" target="_blank">
                       {{ $itemTitle }}
                     </a>
                   </li>
@@ -99,7 +99,7 @@
           <ul>
             {{ range sort $cursusPages "Title" "asc" }}
               <li>
-                <a href="{{ .RelPermalink }}">{{ .Title | default .File.BaseFileName }}</a>
+                <a href="{{ .RelPermalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a>
               </li>
             {{ end }}
           </ul>
@@ -111,7 +111,7 @@
             <ul>
               {{ range sort $doelenSection.RegularPages "Title" "asc" }}
                 <li>
-                  <a href="{{ .RelPermalink }}">{{ .Title | default .File.BaseFileName }}</a>
+                  <a href="{{ .RelPermalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a>
                 </li>
               {{ end }}
             </ul>

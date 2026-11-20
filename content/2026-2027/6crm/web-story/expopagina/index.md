@@ -42,7 +42,7 @@ indieningen:
         criterium: "Alle eigen expo-teksten (titel, gedicht, korte reflectie op zwaartekracht en credits) volledig en doelgroepgericht bundelen."
       - code: "CRS26"
         gewicht: 1
-        criterium: "De gezamenlijke expo-identiteit (puur zwart #000000, eigen felle accentkleur en minimale expo-balk) opnemen in het ontwerpplan."
+        criterium: "De visuele lijn (kleurenpalet en stijl uit Grafische vormgeving en de andere expo-opdrachten, plus een minimale expo-balk) opnemen in het ontwerpplan."
       - code: "CRS04"
         gewicht: 1
         criterium: "Het onderzoeksdocument, de wireframeschets en verzamelde webassets ordelijk beheren in de OneDrive-vakmap."
@@ -73,7 +73,7 @@ indieningen:
         criterium: "Een uitgebalanceerde mobiele lay-out (390 px tot desktop) bouwen met doordachte position: absolute coördinaten voor de opduikende typoloops."
       - code: "CRS26"
         gewicht: 1
-        criterium: "De gemeenschappelijke zwarte expo-stijl, felle persoonlijke accentkleur en minimale header/footer consequent integreren."
+        criterium: "De visuele consistentie met jouw andere expo-opdrachten (o.a. Grafische vormgeving en Collageanimatie) en de minimale header/footer consequent integreren."
       - code: "CRS29"
         gewicht: 1
         criterium: "Een eigenzinnige digitale expo-ervaring met subtiele CSS-zwaartekrachtbeweging of interactie opleveren voor Bib Couwelaar."
@@ -107,8 +107,8 @@ In **Bib Couwelaar** hangen tussen jouw typografische affiches en de 3D-woorden 
 
 Om van de verschillende werken één herkenbare tentoonstelling te maken, vertrekken we vanuit een **gedeeld expo-stramien** met ruimte voor jouw eigen touch.
 
-* **Mobile-first & zwart canvas**: De bezoeker bekijkt je pagina in de bib op een smartphone.
-* **Collage-hero met zwevende typoloops**: Jouw collage-animatie uit Motion vormt het bewegende hoofdpodium (`position: relative;`). Daarbovenop verschijnen jouw korte typografische loopjes (`position: absolute;` + `mix-blend-mode: screen;`) op zorgvuldig gekozen plekken.
+* **Mobile-first & consistente stijl**: De bezoeker bekijkt je pagina in de bib op een smartphone; de achtergrond, typografie en kleuren sluiten visueel aan bij jouw andere expo-opdrachten (zoals je affiches uit Grafische vormgeving en je collageanimatie).
+* **Collage-hero met zwevende typoloops**: Jouw collageanimatie uit Motion vormt het bewegende hoofdpodium (`position: relative;`). Daarbovenop verschijnen jouw korte typografische loopjes (`position: absolute;` + `mix-blend-mode: screen;`) op zorgvuldig gekozen plekken.
 * **Luisterkamer & tekst**: Het volledige gedicht samen met jouw ingesproken luistergedicht (`<audio>`).
 * **Achter de schermen**: Jouw making-of video en jouw affiches..
 * **Minimale expo-header & footer**: Een sobere verwijzing naar de expo, de bib en data.
@@ -124,7 +124,7 @@ Bestudeer vooraf hoe websites werken op een **smartphonescherm** en bereid je in
 ### Mobiele analyse & inhoud
 
 1. **Drie uiteenlopende voorbeelden op mobiel**: Zoek en bekijk drie sterk verschillende projecten op smartphoneformaat (bijvoorbeeld een digitale expo, een interactief poëzie- of storytellingproject en een mobiele artiesten- of campagnesite). Vermeld de drie links en los onderstaande vragen per voorbeeld op.
-   * **Leesbaarheid & contrast**: Hoe blijft tekst goed leesbaar op bijvoorbeeld een zwarte achtergrond of boven bewegend beeld?
+   * **Leesbaarheid & contrast**: Hoe blijft tekst goed leesbaar op een gekleurde of donkere achtergrond, of boven bewegend beeld?
    * **Media zonder vertraging**: Hoe worden video en audio gepresenteerd zonder dat de pagina druk, zwaar of traag aanvoelt?
    * **Interactie & beweging**: Welke kleine beweging, animatie of scroll-interactie geeft de pagina karakter?
    * **Inhoudelijke opbouw**: Hoe wordt de bezoeker binnengeleid in het thema of verhaal (titel, korte context, volgorde van blokken)?
@@ -133,7 +133,7 @@ Bestudeer vooraf hoe websites werken op een **smartphonescherm** en bereid je in
    * Titel van het werk en jouw naam.
    * Het volledige gedicht.
    * Een korte toelichting (3–4 zinnen): wat betekent *zwaartekracht* in jouw gedicht en visueel werk?
-   * De kleur en hexcode van jouw **felle accentkleur**.
+   * De kleuren en hexcodes van jouw **kleurenpalet** (achtergrond-, tekst- en accentkleur), afgestemd op je werk uit Grafische vormgeving en Motion.
 3. **Eigen zwaartekracht-accent**: Kies één eigen CSS-interactie of beweging waarmee jouw pagina tot leven komt (bv. `@keyframes` die het gedicht zacht laten zweven, typoloops die na enkele seconden opduiken of vertragen, een klikbaar venster, enzoverder).
 
 Bundel in `VoornaamA_BeyondGravity-Onderzoek.pdf` en dien in via Smartschool.
@@ -143,7 +143,7 @@ Bundel in `VoornaamA_BeyondGravity-Onderzoek.pdf` en dien in via Smartschool.
 Teken in Figma of Adobe XD een smal wireframe van **390 px breed** van boven naar onder:
 
 * **Minimale header**: Expo-label (`Beyond Gravity`) + jouw werk- of gedichttitel.
-* **Hero-podium**: Staande collage-animatie met aangeduide zones waar de 2 à 3 typografische loops via `position: absolute;` verschijnen.
+* **Hero-podium**: Staande collageanimatie met aangeduide zones waar de 2 à 3 typografische loops via `position: absolute;` verschijnen.
 * **Luistergedeelte**: Audio-speler + het geschreven gedicht + korte toelichting.
 * **Processectie**: De verticale making-of video en je affiches.
 * **Minimale footer**: `Expo Beyond Gravity • Bib Couwelaar • 28 jan – 3 feb 2027 • 6CRM Avant`.
@@ -179,7 +179,7 @@ Let op: test elke link strikt met **relatieve paden** (bv. `assets/video/collage
 ### Semantische HTML-structuur
 
 1. Bouw `index.html` op met `<!DOCTYPE html>`, `<html lang="nl">`, `<meta name="viewport" content="width=device-width, initial-scale=1.0">` en koppel `style.css`.
-2. Richt de hero in met de collage-animatie als basis en de zwevende typoloops erbovenop. **Cruciaal voor smartphones (iOS Safari & Android)**: gebruik altijd de combinatie `autoplay muted loop playsinline` voor achtergrondvideo's, anders starten ze niet automatisch op mobiel:
+2. Richt de hero in met de collageanimatie als basis en de zwevende typoloops erbovenop. **Cruciaal voor smartphones (iOS Safari & Android)**: gebruik altijd de combinatie `autoplay muted loop playsinline` voor achtergrondvideo's, anders starten ze niet automatisch op mobiel:
    ```html
    <section class="hero">
      <video class="hero-collage" autoplay muted loop playsinline>
@@ -199,14 +199,14 @@ Let op: test elke link strikt met **relatieve paden** (bv. `assets/video/collage
 4. Sluit de `<main>` af met de **Making-of video** (`<video controls playsinline preload="metadata" src="assets/video/makingof.mp4"></video>`) en eventueel je affiches.
 5. Houd de `<footer>` minimaal en rustig.
 
-### CSS: Mobile-first, zwart canvas & opduikende loops
+### CSS: Mobile-first, kleurenpalet & opduikende loops
 
-1. **Expo-kleurvariabelen**: Zet bovenaan in `style.css` het gedeelde zwarte canvas en jouw eigen felle accentkleur:
+1. **Kleurvariabelen**: Zet bovenaan in `style.css` het kleurenpalet van jouw expo-project (afgestemd op jouw affiches uit Grafische vormgeving en je collageanimatie):
    ```css
    :root {
-     --bg: #000000;
-     --fg: #f5f5f5;
-     --accent: #ff2e63; /* Vervang door jouw affichekleur */
+     --bg: #000000;     /* Vervang door jouw gekozen achtergrondkleur */
+     --fg: #f5f5f5;     /* Vervang door jouw contrasterende tekstkleur */
+     --accent: #ff2e63; /* Vervang door jouw accentkleur uit Grafische vormgeving */
    }
 
    * {
@@ -311,8 +311,8 @@ VoornaamA_BeyondGravity.zip
 * Het onderzoek met mobile-first wireframe zit in `01_onderzoek/`.
 
 #### Mobile-first vormgeving & expo-lijn
-* De achtergrond is puur zwart (`#000000`) met jouw gekozen felle accentkleur en een minimale expo-header en -footer.
-* De collage-animatie staat centraal als hero; de typoloops zijn met `position: absolute;` en `mix-blend-mode: screen;` zonder grijze kaders bovenop gepositioneerd.
+* De achtergrond, typografie en kleuren zijn visueel consistent met jouw andere expo-opdrachten (Grafische vormgeving, Beeld en Motion) en de pagina heeft een minimale expo-header en -footer.
+* De collageanimatie staat centraal als hero; de typoloops zijn met `position: absolute;` en `mix-blend-mode: screen;` zonder grijze kaders bovenop gepositioneerd.
 * Op een schermbreedte van 390 px valt niets buiten het kader en verschijnt er geen horizontale scrollbar.
 
 #### Werking & mediakwaliteit

@@ -19,7 +19,7 @@ leerplandoelen:
   - code: "CRS02"
     criterium: "Doelgericht vectortechnieken in Illustrator (gescheiden lagen, zuivere ankerpunten) en animatietechnieken in After Effects (Shape Morphing, Trim Paths, Easy Ease en Graph Editor) selecteren voor de vormtransitie."
   - code: "CRS03"
-    criterium: "De opbouw van de transitie-animatie vooraf doordacht plannen door de gekozen schetsen en feedback uit Grafische Vormgeving om te zetten naar een werkbare lagenstructuur."
+    criterium: "De opbouw van de transitie-animatie vooraf doordacht plannen door de gekozen schetsen en feedback uit Grafische vormgeving om te zetten naar een werkbare lagenstructuur."
   - code: "16.04"
     criterium: "Vanuit het eigen ontwerpproces een persoonlijk monogram uitwerken in drie visuele fasen: van geometrische basisvorm via blokstructuur naar het definitieve beeldmerk."
   - code: "CRS22"

@@ -96,7 +96,7 @@ Verken vooraf welke animatiestijl, bewegingen en technieken het best passen bij 
 
 ### Inspiratie verzamelen en analyseren
 
-1. Verzamel minimaal **vijf kwalitatieve loops** (MP4 of GIF) als inspiratie.
+1. Verzamel minimaal **vijf kwalitatieve loops** (MP4 of GIF) als inspiratie  (bv. op Pinterest, Vimeo, Dribbble, Behance of Instagram).
 2. Noteer per voorbeeld beknopt je bevindingen. Enkele voorbeeldvragen die je jezelf kan stellen: Welke bewegingen en animatietechnieken zie je? Hoe is de timing en het tempo? Hoe blijft de loop naadloos en visueel interessant? ...
 3. Voeg werkende weblinks of embeds van je vijf verzamelde voorbeelden toe aan je document, plaats de bestanden in de map `01_onderzoek/`.
 

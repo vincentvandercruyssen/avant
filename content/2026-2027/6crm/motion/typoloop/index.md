@@ -93,11 +93,11 @@ draft: false
 
 In **Expo Beyond Gravity** blijft poëzie niet plat op papier liggen. Jouw letteranimaties worden in Bib Couwelaar rechtstreeks geprojecteerd op de **typografische mobiel rond de trap** en verschijnen als zwevende accenten op jouw mobiele expopagina.
 
-Daarom werk je in deze opdracht **binnen een puur zwart vlak (`#000000`)**. Zowel een beamer op een donkere installatie als een website met `mix-blend-mode: screen;` laten puur zwart volledig verdwijnen, waardoor jouw witte en felgekleurde letters vrij in de ruimte en over je collage-hero lijken te zweven.
+Daarom werk je in deze opdracht **binnen een puur zwart vlak**. Zowel een beamer op een donkere installatie als een website met `mix-blend-mode: screen;` laten puur zwart volledig verdwijnen, waardoor jouw witte en felgekleurde letters vrij in de ruimte en over je collage-hero lijken te zweven.
 
 Je werkt in After Effects in twee duidelijke stappen aan twee gekoppelde eindproducten:
 
-1. **Vijf aparte typo-animaties (3–6 seconden)**: Je plukt **vijf kernwoorden of korte woordgroepen** uit jouw gekozen gedicht en bouwt voor elk woord een eigen, compacte en naadloze loop. Op jouw mobiele expopagina duiken straks verschillende van deze losse woordloops via `position: absolute;` op over en rond je collage-animatie.
+1. **Vijf aparte typo-animaties (3–6 seconden)**: Je plukt **vijf kernwoorden of korte woordgroepen** uit jouw gekozen gedicht en bouwt voor elk woord een eigen, compacte en naadloze loop. Op jouw mobiele expopagina duiken straks verschillende van deze losse woordloops via `position: absolute;` op over en rond je collageanimatie.
 2. **Eén hoofdanimatie voor de trapprojectie (15–30 seconden)**: In een verticale mastercompositie (**1080 × 1920 px**) breng je jouw vijf aparte woordloops samen tot één vloeiende, doorlopende choreografie voor de projectie in Bib Couwelaar.
 
 ## Onderzoek
@@ -112,7 +112,7 @@ Bundel je vijf voorbeelden en je plan in `VoornaamA_Typoloop-Onderzoek.pdf`.
 
 1. **Analyse**: Beschrijf bij elk voorbeeld welk bewegingsprincipe wordt gebruikt en hoe het tempo aanvoelt.
 2. **Woordkeuze & samenkomst**: Noteer jouw gekozen gedicht, duid de **vijf kernwoorden of korte woordgroepen** aan die je uitwerkt als aparte typo-animaties, en schets kort hoe die vijf loops nadien samenkomen in de verticale **hoofdanimatie**.
-3. **Kleur & font**: Welk lettertype (afgestemd op jouw affiches bij Grafische Vormgeving) en welke ene felle accentkleur gebruik je naast puur wit op de zwarte achtergrond?
+3. **Kleur & font**: Welk lettertype (afgestemd op jouw affiches bij Grafische vormgeving) en welke ene felle accentkleur gebruik je naast puur wit op de zwarte achtergrond?
 
 Plaats het document `VoornaamA_Typoloop-Onderzoek.pdf` in `01_onderzoek/` en dien in via Smartschool.
 
@@ -123,7 +123,7 @@ Bouw de vijf afzonderlijke woordloops en breng ze daarna samen in één overzich
 ### Vijf aparte woordloops
 
 1. Maak **vijf aparte composities** (`01_Typoloop_01` tot en met `01_Typoloop_05`) van **1080 × 1080 px** (of aangepast aan het woord), ingesteld op **30 fps** en een duur van **3 tot 6 seconden**.
-2. Zet onderaan elke compositie een puur zwarte **Solid (`#000000`)**.
+2. Zet onderaan elke compositie een puur zwarte **Solid**.
 3. Pluk voor elke compositie een woord of korte woordgroep uit je gedicht en geef elk onderdeel een eigen, sprekende zwaartekracht-beweging:
    * Werk met **Text Animators** (*Position*, *Opacity*, *Tracking*, *Blur*), *Shape Layers* of losse letterlagen voor ritme per letter of woord.
    * Gebruik de **Graph Editor** (`F9 (Easy Ease)` + aangepaste *Speed Graph*) om echte fysica voelbaar te maken: versnellen tijdens een val, plots stilvallen, zacht uitdeinen in gewichtloosheid.
@@ -132,7 +132,7 @@ Bouw de vijf afzonderlijke woordloops en breng ze daarna samen in één overzich
 
 ### Hoofdanimatie samenstellen
 
-1. Maak een verticale mastercompositie `02_Hoofdanimatie` van **1080 × 1920 px**, **30 fps**, met een duur tussen **15 en 30 seconden** en een puur zwarte **Solid (`#000000`)** onderaan.
+1. Maak een verticale mastercompositie `02_Hoofdanimatie` van **1080 × 1920 px**, **30 fps**, met een duur tussen **15 en 30 seconden** en een puur zwarte **Solid** onderaan.
 2. Sleep jouw **vijf aparte woordloops** (`01_Typoloop_01` tot en met `01_Typoloop_05`) als geneste composities (*precomps*) in deze hoofdanimatie.
 3. Zet de **Blending Mode** van de vijf geneste composities op **Screen** (net zoals `mix-blend-mode: screen;` op het web), zodat de zwarte achtergronden volledig wegvallen en je de animaties vrij kunt laten overlappen.
 4. Regisseer de vijf loops tot één samenhangend geheel:
@@ -176,7 +176,7 @@ VoornaamA_Typoloop.zip
 * `VoornaamA_Typoloop.aep` opent foutloos met de vijf losse woordloops en de hoofdanimatie proper benoemd.
 
 #### Animatie & visuele afwerking
-* De achtergrond is overal exact puur zwart (`#000000`) zonder grijze kaders.
+* De achtergrond is overal exact zwart (`#000000`) zonder grijze kaders.
 * De vijf aparte woordloops duren elk 3 tot 6 seconden en herhalen naadloos.
 * De hoofdanimatie (15 tot 30 seconden) brengt de vijf aparte loops overtuigend samen en sluit naadloos aan op frame 0.
 * Alle bewegingen gebruiken doordachte *easings* en snelheidsgrafieken passend bij het thema zwaartekracht.
