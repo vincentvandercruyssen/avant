@@ -205,11 +205,6 @@
             "4.1": 1,
             "4.6": 1.7
           }
-        },
-        "efe6054d9e": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
         }
       }
     },
@@ -461,23 +456,6 @@
             "4.1": 6,
             "4.3": 6,
             "4.6": 6
-          }
-        },
-        "efe6054d9e": {
-          "criteriaLevels": {
-            "13.01": 2,
-            "13.02": 2,
-            "15.04": 3,
-            "CRS01": 3,
-            "CRS04": 2,
-            "CRS06": 2,
-            "GEC01": 3
-          },
-          "feedback": "Goed gewerkt, en goed dat je bij het \"hacken\" ook de exacte HTML-regel voor en na je aanpassing hebt genoteerd. De vraag over de nummering van de koppen ontbreekt wel nog. Let daarnaast op een paar details: een afbeelding gebruikt src (niet resource), een hyperlink is de a-tag (niet mw:wikilink) en een ongeordende lijst maakt een opsommingslijst in plaats van een tabel. Schrijf je tags steeds volledig met openings- en sluithaakjes (zoals bij de h1-tag) en kijk je tekst nog even na op typfoutjes.",
-          "scores": {
-            "4.1": 4.5,
-            "4.3": 5,
-            "4.6": 5
           }
         }
       }
@@ -731,11 +709,6 @@
             "4.2": 0,
             "4.6": 0
           }
-        },
-        "efe6054d9e": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
         }
       }
     },
@@ -858,14 +831,6 @@
           "scores": {
             "4.3": 7,
             "4.4": 7
-          }
-        },
-        "efe6054d9e": {
-          "criteriaLevels": {},
-          "feedback": "Fijn dat de afkorting en de elementopbouw al lukken. Herneem de theorie rond de documentstructuur (body, title) en oefen vooral op het uitschrijven van tags voor koppen en genummerde lijsten.\n\nJe toetsscore telt mee voor zowel webtoepassingen (CRS18) als vaktaal (13.08).",
-          "scores": {
-            "4.3": 3,
-            "4.4": 3
           }
         }
       }
@@ -990,11 +955,6 @@
             "4.3": 4,
             "4.4": 4
           }
-        },
-        "efe6054d9e": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
         }
       }
     },
@@ -1378,11 +1338,6 @@
             "4.5": 6,
             "4.6": 3
           }
-        },
-        "efe6054d9e": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
         }
       }
     }

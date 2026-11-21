@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Avant Smartschool Skore Auto-Grader (Leerling- & Klasbeeld)
+// @name         Avant Smartschool Skore Auto-Grader
 // @namespace    https://avant.local/
-// @version      2026-10-30-2256
+// @version      2026-11-21-1449
 // @description  Vult automatisch rubric-scores (4.1 t/m 4.6) in vanuit Avant in het Smartschool puntenboek (zowel per leerling als voor de hele klas)
 // @author       Vincent Vander Cruyssen
 // @match        *://*.smartschool.be/*
@@ -229,7 +229,6 @@
         background: #0284c7;
         color: #ffffff;
         border: 1px solid #0369a1;
-        border-radius: 4px;
         padding: 3px 8px;
         font-weight: 700;
         font-size: 10px;
@@ -624,7 +623,7 @@
         throw new Error('Geen geldige scores gevonden');
       }
     } catch (err) {
-      alert('Klembord bevat geen geldige Avant scores payload.\nKlik eerst in Avant op "⚡ Kopieer voor Smartschool".');
+      alert('Klembord bevat geen geldige Avant scores payload.\nKlik eerst in Avant op "Kopieer voor Smartschool".');
       return;
     }
 
@@ -692,27 +691,26 @@
       transform: translate(-50%, -50%);
       z-index: 1000000;
       background: #ffffff;
-      border-radius: 12px;
       padding: 24px;
       width: 480px;
       max-width: 92vw;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+      box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px -2px;
       font-family: system-ui, -apple-system, sans-serif;
       color: #0f172a;
-      border: 1px solid #e2e8f0;
+      border: 1px solid rgba(0, 0, 0, 0.1);
     `;
 
     modal.innerHTML = `
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
         <h3 style="margin:0; font-size:18px; color:#0284c7; display:flex; align-items:center; gap:6px;">
-          ⚡ Avant Punten Import
+          Avant Punten Import
         </h3>
-        <span style="font-size:12px; background:#e0f2fe; color:#0369a1; padding:3px 10px; border-radius:12px; font-weight:700;">
+        <span style="font-size:12px; background:#e0f2fe; color:#0369a1; padding:3px 10px; font-weight:700;">
           ${bundle.classGroup || '5CRM'}
         </span>
       </div>
 
-      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin-bottom:14px; font-size:13px;">
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:12px; margin-bottom:14px; font-size:13px;">
         <div><strong>Opdracht:</strong> ${escapeHtml(bundle.submissionTitle || projectCol.title)}</div>
         <div style="color:#64748b; font-size:12px; margin-top:2px;">
           Doelkolom: <strong>${escapeHtml(projectCol.title)}</strong> (xaxis: ${projectCol.xaxis})
@@ -729,7 +727,7 @@
           <span id="avant-progress-label">Bezig met invullen...</span>
           <span id="avant-progress-count">0 / ${studentList.length}</span>
         </div>
-        <div style="height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden;">
+        <div style="height:8px; background:#e2e8f0; overflow:hidden;">
           <div id="avant-progress-bar" style="height:100%; width:0%; background:#0284c7; transition:width 0.2s ease;"></div>
         </div>
       </div>
@@ -740,13 +738,12 @@
           color: #ffffff;
           border: none;
           padding: 10px 14px;
-          border-radius: 6px;
           font-weight: 700;
           font-size: 13px;
           cursor: pointer;
           transition: all 0.15s ease;
         ">
-          ⚡ Vul huidige leerling in
+          Vul huidige leerling in
         </button>
 
         ${studentList.length > 1 ? `
@@ -755,31 +752,30 @@
             color: #ffffff;
             border: none;
             padding: 10px 14px;
-            border-radius: 6px;
             font-weight: 700;
             font-size: 13px;
             cursor: pointer;
             transition: all 0.15s ease;
           ">
-            🚀 Vul ALLE ${studentList.length} leerlingen automatisch in
+            Vul ALLE ${studentList.length} leerlingen automatisch in
           </button>
         ` : ''}
 
         <div style="display:flex; gap:8px; margin-top:4px;">
-          <button id="btn-prev-student" style="flex:1; background:#f1f5f9; color:#334155; border:1px solid #cbd5e1; padding:8px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+          <button id="btn-prev-student" style="flex:1; background:#f1f5f9; color:#334155; border:1px solid #cbd5e1; padding:8px; font-size:12px; font-weight:600; cursor:pointer;">
             ◀ Vorige
           </button>
-          <button id="btn-next-student" style="flex:1; background:#f1f5f9; color:#334155; border:1px solid #cbd5e1; padding:8px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+          <button id="btn-next-student" style="flex:1; background:#f1f5f9; color:#334155; border:1px solid #cbd5e1; padding:8px; font-size:12px; font-weight:600; cursor:pointer;">
             Volgende ▶
           </button>
-          <button id="btn-close-modal" style="background:#f1f5f9; color:#64748b; border:1px solid #cbd5e1; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+          <button id="btn-close-modal" style="background:#f1f5f9; color:#64748b; border:1px solid #cbd5e1; padding:8px 14px; font-size:12px; font-weight:600; cursor:pointer;">
             Sluiten
           </button>
         </div>
       </div>
 
       <p style="font-size:11px; color:#64748b; margin:14px 0 0 0; text-align:center;">
-        💡 Klik na afloop in Smartschool op de officiële <strong>Opslaan</strong> knop om te bewaren.
+        Klik na afloop in Smartschool op de officiële <strong>Opslaan</strong> knop om te bewaren.
       </p>
     `;
 
@@ -792,18 +788,18 @@
 
       if (!currentStudent) {
         cardContainer.innerHTML = `
-          <div style="background:#fef2f2; border:1px solid #fecaca; border-radius:8px; padding:12px; margin-bottom:16px; font-size:13px; color:#991b1b;">
+          <div style="background:#fef2f2; border:1px solid #fecaca; padding:12px; margin-bottom:16px; font-size:13px; color:#991b1b;">
             Geen actieve leerling geselecteerd in Smartschool.
           </div>
         `;
       } else {
         cardContainer.innerHTML = `
-          <div style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:8px; padding:12px; margin-bottom:16px;">
+          <div style="background:#f0f9ff; border:1px solid #bae6fd; padding:12px; margin-bottom:16px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
               <span style="font-size:13px; font-weight:700; color:#0369a1;">
                 👤 Actieve leerling: ${escapeHtml(currentStudent.cleanName)}
               </span>
-              <span style="font-size:11px; color:#0284c7; background:#e0f2fe; padding:2px 6px; border-radius:4px;">
+              <span style="font-size:11px; color:#0284c7; background:#e0f2fe; padding:2px 6px;">
                 ${currentStudent.hash ? 'Gematcht ✓' : 'Niet gematcht'}
               </span>
             </div>
@@ -813,7 +809,7 @@
                 ${mappedClusterIds.map(cid => {
                   const val = previewScores[cid];
                   return `
-                    <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; padding:6px; text-align:center;">
+                    <div style="background:#ffffff; border:1px solid #cbd5e1; padding:6px; text-align:center;">
                       <div style="font-size:11px; color:#64748b; font-weight:600;">${cid}</div>
                       <div style="font-size:14px; font-weight:700; color:${val !== undefined ? '#0284c7' : '#94a3b8'};">
                         ${val !== undefined ? val : '-'}
@@ -823,8 +819,8 @@
                 }).join('')}
               </div>
               ${studentScores?._feedback ? `
-                <div style="margin-top:8px; padding:6px 10px; background:#ffffff; border:1px solid #bae6fd; border-radius:6px; font-size:11px; color:#334155; line-height:1.4;">
-                  <strong style="color:#0284c7;">💬 Feedback:</strong> ${escapeHtml(studentScores._feedback)}
+                <div style="margin-top:8px; padding:6px 10px; background:#ffffff; border:1px solid #bae6fd; font-size:11px; color:#334155; line-height:1.4;">
+                  <strong style="color:#0284c7;">Feedback:</strong> ${escapeHtml(studentScores._feedback)}
                 </div>
               ` : ''}
             ` : `
@@ -838,7 +834,7 @@
 
       const fillActiveBtn = modal.querySelector('#btn-fill-active-student');
       if (fillActiveBtn) {
-        fillActiveBtn.textContent = `⚡ Vul huidige leerling in (${escapeHtml(currentStudent?.cleanName || 'Leerling')})`;
+        fillActiveBtn.textContent = `Vul huidige leerling in (${escapeHtml(currentStudent?.cleanName || 'Leerling')})`;
         fillActiveBtn.disabled = !currentStudent?.hash || isAutoFilling;
         fillActiveBtn.style.opacity = (!currentStudent?.hash || isAutoFilling) ? '0.6' : '1';
         fillActiveBtn.style.cursor = (!currentStudent?.hash || isAutoFilling) ? 'not-allowed' : 'pointer';
@@ -867,7 +863,7 @@
       if (count > 0) {
         flashSuccessButton(modal, 'btn-fill-active-student', `✓ ${count} clusters + feedback ingevuld!`);
       } else {
-        flashSuccessButton(modal, 'btn-fill-active-student', `⚠️ 0 ingevuld (tik cel 2.1 aan)`);
+        flashSuccessButton(modal, 'btn-fill-active-student', `0 ingevuld (tik cel 2.1 aan)`);
       }
       if (btn) btn.disabled = false;
     });
@@ -1197,7 +1193,7 @@
     const oldText = btn.textContent;
     const oldBg = btn.style.background;
     btn.textContent = msg;
-    btn.style.background = msg.includes('⚠️') ? '#d97706' : '#059669';
+    btn.style.background = msg.includes('0 ingevuld') ? '#d97706' : '#059669';
     setTimeout(() => {
       btn.textContent = oldText;
       btn.style.background = oldBg;

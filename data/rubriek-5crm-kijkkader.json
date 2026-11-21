@@ -303,26 +303,6 @@
             "4.5": 10,
             "4.6": 4
           }
-        },
-        "efe6054d9e": {
-          "criteriaLevels": {
-            "CRS01": 0,
-            "CRS02": 0,
-            "CRS04": 0,
-            "CRS07": 0,
-            "CRS08": 0,
-            "CRS10": 0,
-            "CRS11": 0,
-            "CRS23": 0,
-            "GEC01": 0
-          },
-          "feedback": "Je hebt voor dit onderdeel niets ingediend. Om dit te remediëren en alsnog een score te behalen, lever je de twaalf bewerkte foto's volgens de inleverafspraken in.",
-          "scores": {
-            "4.1": 0,
-            "4.3": 0,
-            "4.5": 0,
-            "4.6": 0
-          }
         }
       }
     },
@@ -554,22 +534,6 @@
             "GEC01": 0
           },
           "feedback": "Je hebt het drieluik nog niet ingediend. Om dit onderdeel te remediëren en alsnog punten te behalen, lever je zowel het Photoshop-werkbestand (.psd) als de geëxporteerde JPEG volgens de inleverafspraken in.",
-          "scores": {
-            "4.2": 0,
-            "4.4": 0,
-            "4.6": 0
-          }
-        },
-        "efe6054d9e": {
-          "criteriaLevels": {
-            "CRS04": 0,
-            "CRS20": 0,
-            "CRS22": 0,
-            "CRS24": 0,
-            "CRS27": 0,
-            "GEC01": 0
-          },
-          "feedback": "Je hebt voor dit onderdeel niets ingediend. Om dit te remediëren en alsnog een score te behalen, lever je zowel het Photoshop-werkbestand (.psd) als de geëxporteerde JPEG van je drieluik volgens de inleverafspraken in.",
           "scores": {
             "4.2": 0,
             "4.4": 0,
