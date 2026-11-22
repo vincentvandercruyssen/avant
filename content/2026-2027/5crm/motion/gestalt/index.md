@@ -13,27 +13,80 @@ thema: "Kinetic"
 software:
   - "After Effects"
   - "Media Encoder"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Productievereisten, 9:16 Full HD portretformaat (1080 × 1920 px), 30 fps en een maximale duur van 15 seconden analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "Doelgericht de vijf transformatie-eigenschappen en vormparameters (Contents vs. Transform) selecteren om grafische principes visueel uit te drukken."
-  - code: "CRS03"
-    criterium: "Een doordacht storyboard en wiskundig 4×8 grid uittekenen in het schetsboek ter voorbereiding van de animatie."
-  - code: "CRS06"
-    criterium: "Zelfstandig en efficiënt werken met After Effects (grids, guides, shape layers, keyframes, Easy Ease) en Adobe Media Encoder."
-  - code: "CRS07"
-    criterium: "Visuele inspiratiebronnen en voorbeelden van kinetische vormgeving en Gestalt doelgericht verzamelen op het Pinterest-bord."
-  - code: "CRS16"
-    criterium: "Eenvoudige, dynamische 2D-animaties realiseren waarin 3 van de 17 designprincipes kinetisch tot uiting komen."
-  - code: "CRS22"
-    criterium: "Geometrische basisvormen, compositie, timing en bewegingscurves esthetisch en harmonieus vormgeven."
-  - code: "CRS24"
-    criterium: "Een evenwichtige, ritmische lay-out en strakke typografische uitlijning toepassen binnen een modulair grid."
-  - code: "CRS27"
-    criterium: "Het volledige After Effects-project en de H.264 MP4-export tijdig en conform de bestandsstructuur inleveren in de Smartschool-uploadzone."
-  - code: "SV06.72"
-    criterium: "Het verband tussen 2D-vectorvoorstellingen, ruimtelijke verhoudingen en bewegingstransformaties analyseren."
+indieningen:
+  - id: "voorbereiding"
+    titel: "Gestalt 2.1 Voorbereiding"
+    deadline: 2026-10-22
+    lesuren: 2
+    gewicht: 6
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten (9:16-verhouding, paginatitel 'Storyboard Gestalt in After Effects', basisvorm en kleurkeuze) en bestandsnaamgeving toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Drie gekozen designprincipes in eigen woorden verklaren en doelgericht de beoogde bewegingen en vormveranderingen in het grid plannen."
+      - code: "CRS03"
+        gewicht: 2
+        criterium: "Een verzorgd storyboard uittekenen in het schetsboek met voor elk principe strakke rasters (beginpositie en eindresultaat) en duidelijke bewegingspijlen."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "De typografische hiërarchie correct plannen op elk kader (principenaam linksboven en titel rechtsonder)."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Evenwichtige 4×8 rasterverhoudingen (4 kolommen × 8 rijen) en een duidelijk kleurcontrast tussen basisvorm en achtergrond uittekenen."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "De schetsboekpagina duidelijk, volledig en leesbaar fotograferen en ordelijk bewaren in de eigen OneDrive-vakmap."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en inleverafspraken voor de voorbereiding stipt naleven."
+
+  - id: "oplevering"
+    titel: "Gestalt 3 Oplevering"
+    deadline: 2026-11-12
+    lesuren: 6
+    gewicht: 15
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Productievereisten, 9:16 Full HD portretformaat (1080 × 1920 px), framerate (30 fps) en maximale videoduur (15 seconden) analyseren en toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht transformatie-eigenschappen en vormparameters (Contents vs. Transform) selecteren om de drie gekozen principes visueel uit te drukken."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Typografie (principenaam linksboven en 'Designprincipes' rechtsonder) strak en leesbaar uitlijnen met de randen van het raster."
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "Geometrische basisvormen, kleurcontrast, timing en bewegingscurves esthetisch en harmonieus vormgeven."
+      - code: "CRS24"
+        gewicht: 2
+        criterium: "Een wiskundig correct 4×8 modulair raster en evenwichtige vlakverdeling behouden."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Zelfstandig en efficiënt werken met After Effects (grids, guides, shape layers, keyframes, Easy Ease) en Adobe Media Encoder."
+      - code: "CRS16"
+        gewicht: 1
+        criterium: "Dynamische 2D-animaties realiseren waarin de drie gekozen designprincipes helder en kinetisch tot uiting komen (ca. 5 seconden per principe)."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Het bronmateriaal (assets), de video-export (exports) en het After Effects-project (VoornaamA_Gestalt.aep) volledig bundelen."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige projectarchief VoornaamA_Gestalt.zip conform de vereiste mappenstructuur en naamconventie opleveren."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De geëxporteerde H.264 MP4-video controleren op resolutie (1080 × 1920 px), framerate (30 fps), duur en vlotte afspeelbaarheid."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Kwaliteitsbewust handelen met oog voor detailafwerking: vloeiende overgangen tussen fases, consistente vormgeving en Easy Ease (F9)."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het After Effects-project (.aep), interne composities en projectmap ordelijk beheren zonder overbodige bestanden."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en alle inleverafspraken van de opdracht stipt naleven."
 draft: false
 ---
 

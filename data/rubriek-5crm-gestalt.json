@@ -1,0 +1,660 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "5crm-gestalt",
+  "classGroup": "5CRM",
+  "lastUpdated": "2026-11-22T15:33:01.536+01:00",
+  "submissions": {
+    "voorbereiding": {
+      "id": "voorbereiding",
+      "title": "Gestalt 2.1 Voorbereiding",
+      "deadline": "22/10",
+      "weight": 6,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS03": 2,
+        "CRS21": 1,
+        "CRS24": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS03",
+              "gewicht": 2
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 1,
+            "CRS03": 2,
+            "CRS04": 1,
+            "CRS21": 1,
+            "CRS24": 3,
+            "GEC01": 2
+          },
+          "feedback": "Je hebt de rasters getekend met duidelijke overgangspijlen, en bovenaan elk kader is plaats voorzien voor de principetitel. De paginatitel, de uitleg in eigen woorden en de kleurkeuze ontbreken. In de schetsen had je ook kunnen omschrijven hoe de cirkels plots veranderen in vierkantjes. Bewaar orde door bijvoorbeeld te werken met een lat, gebruik de herkenbare bestandsnaam. Verder is dit een degelijke basis die de gevraagde duiding mist.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 4,
+            "4.6": 3
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS03": 3,
+            "CRS04": 3,
+            "CRS21": 2,
+            "CRS24": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt een sterke en verzorgde voorbereiding gemaakt. De principes zijn helder uitgelegd en de specificaties duidelijk genoteerd. Er werd binnen de kaders geen plaats voorzien voor de typografie: het kader dient als afbakening van de gehele compositie. Verder is dit een zeer goed vertrekpunt.",
+          "scores": {
+            "4.1": 6,
+            "4.2": 5,
+            "4.6": 6
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS03": 3,
+            "CRS04": 2,
+            "CRS21": 1,
+            "CRS24": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt een duidelijke en goed uitgewerkte voorbereiding gemaakt. Zowel de betekenis als de bewegingen worden helder uitgelegd. Binnen de kaders is er echter geen plaats voorzien voor de typografie: het kader bakent de volledige compositie af. Bij Color klopt de beeldverhouding niet meer. Geef je indieningen een herkenbare bestandsnaam. Verder is dit een sterk vertrekpunt.",
+          "scores": {
+            "4.1": 5.5,
+            "4.2": 4,
+            "4.6": 5
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 0,
+            "CRS03": 3,
+            "CRS04": 2,
+            "CRS21": 3,
+            "CRS24": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt een heldere opbouw getekend met duidelijke begin- en eindkaders, pijlen en plaats voor de typografie binnen het volledige compositiekader. De geschreven uitleg in eigen woorden bij de drie principes en je kleurkeuze ontbreken. Bewaar je foto onder een herkenbare bestandsnaam. Verder is dit een goede basis!",
+          "scores": {
+            "4.1": 4,
+            "4.2": 5,
+            "4.6": 5
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS03": 2,
+            "CRS04": 3,
+            "CRS21": 1,
+            "CRS24": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je hebt een duidelijke en verzorgde voorbereiding gemaakt. De drie principes zijn helder in eigen woorden uitgelegd, de rasters kloppen en het rode kleuraccent (bij het onderdeel Color) werkt verhelderend. Er werd geen plaats voorzien voor de typografie. Het kader dient als afbakening van de gehele compositie, maar nu zit het kader enkel rond de vormen. Verder is dit een goed vertrekpunt.",
+          "scores": {
+            "4.1": 5,
+            "4.2": 3,
+            "4.6": 6
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 2,
+            "CRS04": 2,
+            "CRS21": 0,
+            "CRS24": 2,
+            "GEC01": 3
+          },
+          "feedback": "De drie principes met opeenvolgende stappen zijn duidelijk te volgen. De paginatitel, de uitleg in eigen woorden en de kleurkeuze ontbreken. Binnen de kaders werd ook geen plaats voorzien voor de typografie: het kader dient als afbakening van de gehele compositie, maar nu zit het enkel rond de vormen en staan de titels erbuiten. Volg de opdracht beter op. Verder een goed begin.",
+          "scores": {
+            "4.1": 2,
+            "4.2": 2,
+            "4.6": 5
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 1,
+            "CRS04": 1,
+            "CRS21": 0,
+            "CRS24": 1,
+            "GEC01": 2
+          },
+          "feedback": "Je hebt duidelijke tussenstappen getekend, waardoor de beoogde animatie helder is. De paginatitel, de uitleg in eigen woorden en bewegingspijlen ontbreken. Er is binnen de kaders geen plaats voorzien voor de typografie: het kader dient als afbakening van de gehele compositie. Werk ordelijker en lees de verwachtingen aandachtiger. Verder een goed vertrekpunt.",
+          "scores": {
+            "4.1": 1,
+            "4.2": 1,
+            "4.6": 3
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 1,
+            "CRS03": 2,
+            "CRS04": 1,
+            "CRS21": 1,
+            "CRS24": 2,
+            "GEC01": 0
+          },
+          "feedback": "De genummerde animatiestappen en pijlen maken je bedoeling duidelijk, en bovenaan in de kaders is ruimte voorzien voor de principetitel. De betekenis van de principes in eigen woorden, de kleur- en vormkeuze en de titel ontbreken echter nog. Geef je indiening een herkenbare bestandsnaam en lever op tijd in.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 3,
+            "4.6": 1
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS03": 3,
+            "CRS04": 3,
+            "CRS21": 0,
+            "CRS24": 3,
+            "GEC01": 2
+          },
+          "feedback": "Je hebt een grondige voorbereiding gemaakt met een duidelijke uitleg (wel in het Engels) bij de drie principes, begin- en eindbeschrijvingen, timing en consequente rasters. Er werd binnen de kaders echter geen plaats voorzien voor de typografie: het kader dient als afbakening van de gehele compositie. Geef het bestand een duidelijke naam. Verder is dit een goed vertrekpunt.",
+          "scores": {
+            "4.1": 6,
+            "4.2": 3,
+            "4.6": 5
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 1,
+            "CRS04": 0,
+            "CRS21": 0,
+            "CRS24": 0,
+            "GEC01": 1
+          },
+          "feedback": "Als voorbereiding is dit nog te beperkt en niet volgens de opdracht. Je schetste losse kadertjes met verschillende principes in plaats van bewust drie principes te kiezen en uit te leggen in eigen woorden. Ook ontbreken de paginatitel, de rasters, de kleurkeuze en een doordachte plaatsing voor de typografie binnen de compositie.",
+          "scores": {
+            "4.1": 1,
+            "4.2": 0,
+            "4.6": 1
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS03": 2,
+            "CRS04": 1,
+            "CRS21": 0,
+            "CRS24": 2,
+            "GEC01": 2
+          },
+          "feedback": "Je hebt duidelijke begin- en eindschetsen gemaakt, met pijlen en uitleg voor de animaties. De betekenis van elk principe in eigen woorden en kleurkeuze ontbreken. Er is binnen de kaders ook geen plaats voorzien voor de typografie: het kader bakent de gehele compositie af. Bewaar orde door bijvoorbeeld te werken met een lat. Dien in met de gevraagde benaming. Verder is dit een goede basis.",
+          "scores": {
+            "4.1": 3.5,
+            "4.2": 2,
+            "4.6": 3
+          }
+        }
+      }
+    },
+    "oplevering": {
+      "id": "oplevering",
+      "title": "Gestalt 3 Oplevering",
+      "deadline": "12/11",
+      "weight": 15,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS21": 1,
+        "CRS22": 1,
+        "CRS24": 2,
+        "CRS06": 1,
+        "CRS16": 1,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS23": 1,
+        "GEC02": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS22",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
+              "gewicht": 2
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS06",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS16",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS06": 0,
+            "CRS16": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS22": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "Je hebt in deze uploadzone Quicktype ingeleverd. Hierdoor kon je eindresultaat niet beoordeeld worden. Upload je Gestalt-map via de map \"Te laat\".",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.3": 0,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS16": 2,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS22": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Grafisch en organisatorisch is dit heel sterk werk! Je raster is helder opgebouwd, de donkerrode en zwarte kleursfeer werkt krachtig en de drie principes zijn onmiddellijk herkenbaar. Typografie en lay-out zijn strak neergezet. Ook je mappenstructuur is helemaal correct. De timing van de animaties is nu net te snel. Er zit een goed tempo achter, maar er is ook geen pauze meer voor het principe te bekijken. Wat jammer is, want je uitbeeldingen van de principes zijn erg goed ontworpen en uitgevoerd. Ongeveer een extra halve seconde per principe had al kunnen helpen, zodat de uitbeelding van het principe even blijft staan in plaats van meteen terug verder te gaan. Dit had je ook kunnen oplossen met Time Remapping, aangezien je de gehele animatie in een aparte compositie van je lay-out hebt gehouden, wat erg slim is. Verder een zeer knappe realisatie!",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 15,
+            "4.3": 12.5,
+            "4.4": 15,
+            "4.5": 12.5,
+            "4.6": 15
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS22": 3,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Een inhoudelijk en vormelijk bijzonder sterke realisatie. Het kleurenpalet met de overgangen oogt heel fris en samenhangend, en de typografie is scherp en goed uitgelijnd. Alles vloeit mooi in elkaar, wat rustgevend oogt terwijl het boeiend blijft. Enkel jammer dat de tekst wat lang wegblijft, een andere soort overgang was hier toepasselijk geweest. Er is niet met easing geëxperimenteerd, al werken de lineaire animaties hier goed. Technisch zit het project verder bijzonder duidelijk in elkaar. Je hebt de vormlagen op een slimme manier ingezet. Je mappenstructuur zit helemaal juist. Een erg verzorgde en vloeiende animatie!",
+          "scores": {
+            "4.1": 15,
+            "4.2": 15,
+            "4.3": 15,
+            "4.4": 15,
+            "4.5": 12.5,
+            "4.6": 15
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS06": 2,
+            "CRS16": 1,
+            "CRS20": 1,
+            "CRS21": 3,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 3,
+            "GEC02": 0
+          },
+          "feedback": "De vormgeving ziet er fris en strak uit: de kleuren, lay-out en de vloeiende bewegingen in je raster werken heel goed. Het eerste principe is zeer goed uitgewerkt qua timing: het principe wordt helder uitgebeeld en er is tijd genoeg om het te vatten. Dan valt het geheel wat in elkaar. De tekst vliegt in willekeurige richting weg. En in het principe Scale is die duidelijke timing helemaal verdwenen. Er is wel een leuke opstelling gemaakt van het principe, maar deze blijft maar één frame staan. De overgang naar het contrast is een goed idee, maar hier had ook het raster ingezet kunnen worden. De typografie-overgangen zijn niet consistent. De tekst zelf is zeer goed gezet en de lay-out is helder. De video valt bij het laatste principe helemaal stil. De projectmap is tenslotte niet opgebouwd zoals gevraagd: de map \"assets\" (met onder andere het lettertype) ontbreekt, net als je render in een aparte map \"exports\". Verder een veelbelovende basis, met de nood om de details dieper uit te werken.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 11.3,
+            "4.3": 7.5,
+            "4.4": 5,
+            "4.5": 7.5,
+            "4.6": 10
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 1,
+            "CRS06": 3,
+            "CRS16": 3,
+            "CRS20": 2,
+            "CRS21": 0,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 1,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Mooi en verzorgd eindresultaat. De drie principes komen helder en herkenbaar tot uiting. Je After Effects-project zit super in elkaar, zeker wat het keyframen van de verschillende vormlagen betreft. De animaties zijn sterk, met een goede timing, een fijn ritme en goed getimede pauzemomenten. Over de plaatsing van de typografie is niet sterk genoeg nagedacht, bovendien verandert ze van plaats. De titel van het werk ontbreekt. Let bij de oplevering op de gevraagde mappenstructuur: de submappen voor assets en exports ontbreken, het externe (niet-Adobe) lettertype zit niet in de assetsmap en er zit nog een oude voorbereidings-pdf van Quicktype in je map in plaats van je Gestalt-storyboard. Verder technisch en vormelijk sterk gewerkt.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 10,
+            "4.3": 15,
+            "4.4": 7.5,
+            "4.5": 12.5,
+            "4.6": 10
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS06": 2,
+            "CRS16": 2,
+            "CRS20": 1,
+            "CRS21": 0,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 0,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Je hebt een sfeervolle animatie neergezet met een strak, warm en contrastrijk kleurenpalet. De timing zit goed, al verschijnt het eerste raster met vormen plots terwijl de typografie er al staat. De typografie is niet overal even consistent en de titel van je werk ontbreekt. Je project zit op zich goed in elkaar. Het is slim om de animaties te precompen en de typografie apart te houden, dat brengt terug overzicht. Wel zijn er veel keyframes die niet meer gebruikt worden. Naast de vormen die in elkaar overfaden, kon het aantal lagen sterk gereduceerd worden. Je hebt geen zip-archief gemaakt en ontbreken de mappen \"assets\" en \"exports\" volledig. Verder goed gewerkt in After Effects.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 10,
+            "4.3": 10,
+            "4.4": 2.5,
+            "4.5": 12.5,
+            "4.6": 7.5
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS06": 3,
+            "CRS16": 2,
+            "CRS20": 0,
+            "CRS21": 1,
+            "CRS22": 2,
+            "CRS23": 1,
+            "CRS24": 3,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Inhoudelijk en grafisch ligt er een goede basis. De ideeën rond de principes zijn creatief en duidelijk herkenbaar. De lay-out en animatie blijven echter wat braaf. De typografie kan strakker uitgelijnd worden en let op spelfouten. De animatieovergangen van de tekst en principes ogen wat te statisch. Scherp de timing aan: er zijn heel wat momenten waarop enkel het gewone raster zichtbaar blijft, terwijl de aandacht net naar de designprincipes zou moeten gaan. De grijze achtergrondkleur is tevens niet mee uitgerenderd. In het ziparchief ontbreekt de verwachte mappenstructuur: de submappen \"assets\" (met schetsen, typografie) en \"exports\". Verder zit het project goed in elkaar en is er rijkelijk met technieken geëxperimenteerd. Het eindresultaat mist wat pit.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 11.3,
+            "4.3": 12.5,
+            "4.4": 2.5,
+            "4.5": 7.5,
+            "4.6": 7.5
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 3,
+            "CRS16": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 0,
+            "GEC02": 2
+          },
+          "feedback": "Je hebt een sterke en herkenbare animatie afgeleverd. De drie principes komen met het sterrenraster en het dieprode kleurenpalet duidelijk over. De typografie kon onderaan nog wat marge gebruiken en de tekstovergangen ogen nog wat statisch. De animaties vloeien rustig in elkaar over, maar het geheel blijft boeiend. Het zwarte vlak op het einde is niet per se nodig en breekt met de strakke lay-out. Je hebt de vormlagen op een slimme manier ingezet en mooi geëxperimenteerd met easing. In je ziparchief zit het .aep-bestand in \"exports\" in plaats van in de hoofdmap. In het mapje \"assets\" ontbreekt het gebruikte lettertype. Inhoudelijk en technisch knap. Lever tijdig in.",
+          "scores": {
+            "4.1": 15,
+            "4.2": 12.5,
+            "4.3": 12.5,
+            "4.4": 10,
+            "4.5": 12.5,
+            "4.6": 5
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS06": 0,
+            "CRS16": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS22": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "Je hebt niets ingediend. Om dit onderdeel te remediëren, dien je het in via de map \"Te laat\".",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.3": 0,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 0,
+            "CRS06": 3,
+            "CRS16": 3,
+            "CRS20": 1,
+            "CRS21": 1,
+            "CRS22": 3,
+            "CRS23": 2,
+            "CRS24": 2,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Je hebt een eigen draai aan de opdracht gegeven en dat is sterk. Je hebt geëxperimenteerd met kleur en beweging, de oplossing met blur en het Choke-effect is zeer vindingrijk en hoe de animaties zo in elkaar overvloeien is bijzonder knap. Toch zijn er ook enkele verwachtingen niet gevolgd, zoals de aanwezigheid van de titel van het werk of de opdracht. Daarnaast is het niet erg duidelijk waarom het laatste principe alweer unity is en zo lang blijft staan. Op zich is dat wel een goed idee, maar dan was het nog beter geweest als de animatie zich naadloos herhaalde. Let verder op spelfouten (\"coler\") en een consistent gebruik van hoofdletters. Je mappenstructuur: de map \"assets\" is leeg, de gebruikte afbeelding en het lettertype ontbreken, en je .aep-bestand zit in \"exports\" in plaats van in de hoofdmap. Verder een bijzonder originele benadering van de opdracht.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 10,
+            "4.3": 15,
+            "4.4": 7.5,
+            "4.5": 10,
+            "4.6": 7.5
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS06": 3,
+            "CRS16": 2,
+            "CRS20": 1,
+            "CRS21": 1,
+            "CRS22": 2,
+            "CRS23": 0,
+            "CRS24": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 3
+          },
+          "feedback": "Je hebt de lay-out met basisvormen netjes opgebouwd en uitgelijnd. Je hebt mooi geëxperimenteerd met easing, al oogt de variatie-animatie momenteel nog te onrustig. De draaiing naar één richting en het uitvergroten zijn goed te volgen. Er ontbreken echter rustmomenten in je animaties die het principe even duidelijk zichtbaar maken, zoals je bij proporties wel goed doet. De uitlijning van de typografie komt nu nog wat onhandig over, de keuze van het lettertype oogt goed. Je had de gehele animatie in één compositie kunnen samenvoegen om de tekst strakker uit te lijnen. De render in de zip komt niet overeen met het AE-project, wat bovendien in de hoofdmap hoort en het gebruikte lettertype ontbreekt in het assetsmapje. Technisch zit er heel wat goed, het is een veelbelovende basis waarbij enkele details en het indienen nog meer aandacht verdienen.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 11.3,
+            "4.3": 12.5,
+            "4.4": 7.5,
+            "4.5": 7.5,
+            "4.6": 10
+          }
+        }
+      }
+    }
+  }
+}

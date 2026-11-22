@@ -501,6 +501,7 @@
 .criteria-cards-list {
   display: flex;
   flex-direction: column;
+  container-type: inline-size;
 }
 
 /* Criteria Evaluatie Rij (Strikte kolomuitlijning) */
@@ -590,7 +591,7 @@
 
 .crit-text {
   flex: 1;
-  min-width: 220px;
+  min-width: 0;
   font-size: 0.875rem;
   line-height: 1.45;
 }
@@ -666,6 +667,23 @@
   display: flex;
   gap: 0.35rem;
   flex-shrink: 0;
+}
+
+@container (max-width: 660px) {
+  .niveau-pill-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container (max-width: 460px) {
+  .crit-eval-row:has(.niveau-pill-group) {
+    grid-template-columns: 8ch 1fr;
+  }
+
+  .niveau-pill-group {
+    grid-column: 1 / -1;
+  }
 }
 
 .btn-niveau-pill {
