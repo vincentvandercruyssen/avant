@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-receptenboek",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-11-09T20:20:18.433+01:00",
+  "lastUpdated": "2026-11-23T09:51:36.350+01:00",
   "submissions": {
     "onderzoek": {
       "id": "onderzoek",
@@ -366,8 +366,12 @@
         },
         "d61daca6ab": {
           "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "feedback": "Uitstekend werk! Bijna een perfecte toets. Het aanmaken van een hyperlink doe je met het a-element en de eigenschap voor tekstkleur in CSS is color.\n\nJe toetsscore telt mee voor technieken (CRS02), webtoepassingen (CRS18) en vaktaal (13.08).",
+          "scores": {
+            "4.1": 10,
+            "4.3": 10,
+            "4.4": 10
+          }
         },
         "dc2916b34a": {
           "criteriaLevels": {},

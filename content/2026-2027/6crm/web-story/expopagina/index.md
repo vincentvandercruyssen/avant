@@ -103,32 +103,32 @@ draft: false
 
 ## Briefing & concept
 
-In **Bib Couwelaar** hangen tussen jouw typografische affiches en de 3D-woorden **QR-codes**. Zodra een bezoeker met de smartphone een code scant, opent jouw **digitale expopagina**, een mobiele uitbreiding waarin jouw werk uit samenkomt.
+In **Bib Couwelaar** hangen tussen jouw typografische affiches en de 3D-woorden **QR-codes**. Zodra een bezoeker met de smartphone een code scant, opent jouw **digitale expopagina**, een mobiele uitbreiding waarin jouw werk samenkomt.
 
-Om van de verschillende werken één herkenbare tentoonstelling te maken, vertrekken we vanuit een **gedeeld expo-stramien** met ruimte voor jouw eigen touch.
+Om van de verschillende werken één herkenbare tentoonstelling te maken, vertrek je vanuit een **gedeeld expo-stramien** met ruimte voor jouw eigen touch.
 
-* **Mobile-first & consistente stijl**: De bezoeker bekijkt je pagina in de bib op een smartphone; de achtergrond, typografie en kleuren sluiten visueel aan bij jouw andere expo-opdrachten (zoals je affiches uit Grafische vormgeving en je collageanimatie).
-* **Collage-hero met zwevende typoloops**: Jouw collageanimatie uit Motion vormt het bewegende hoofdpodium (`position: relative;`). Daarbovenop verschijnen jouw korte typografische loopjes (`position: absolute;` + `mix-blend-mode: screen;`) op zorgvuldig gekozen plekken.
-* **Luisterkamer & tekst**: Het volledige gedicht samen met jouw ingesproken luistergedicht (`<audio>`).
-* **Achter de schermen**: Jouw making-of video en jouw affiches..
-* **Minimale expo-header & footer**: Een sobere verwijzing naar de expo, de bib en data.
+* **Mobile-first & consistente stijl**: De bezoeker bekijkt je pagina in de bib op een smartphone. De achtergrond, typografie en kleuren sluiten visueel aan bij jouw andere expo-opdrachten.
+* **Collage-hero met zwevende typoloops**: Jouw collageanimatie uit Motion vormt het bewegende hoofdpodium. Daarbovenop verschijnen jouw typografische loopjes op zorgvuldig gekozen plekken.
+* **Luisterkamer & tekst**: Het volledige gedicht samen met jouw ingesproken luistergedicht.
+* **Achter de schermen**: Jouw making-of video en jouw affiches.
+* **Minimale expo-header en footer**: Een sobere verwijzing naar de expo, de bib en data.
 
-Alle pagina's worden gebundeld op één gezamenlijke **GitHub Pages**-expo. Jouw projectmap moet daarom **perfect werken met relatieve paden**.
+Alle pagina's worden gebundeld op één gezamenlijke **GitHub Pages**-site. Jouw projectmap moet daarom **perfect werken met relatieve paden**.
 
 ## Onderzoek
 
-Bestudeer vooraf hoe websites werken op een **smartphonescherm** en bereid je inhoud eerst volledig voor. Je kunt je browser-devtools gebruiken om te zien hoe websites eruitzien op een smartphonescherm. Je kan verschillende smartphoneschermformaten simuleren.
+Bestudeer vooraf hoe websites werken op een **smartphonescherm** en bereid je inhoud eerst volledig voor. Je kunt je browser-devtools gebruiken om te zien hoe websites eruitzien op een smartphonescherm.
 
 ![Devtools: Mobile](img/devtools-mobiele_versie.png?w=40%)
 
 ### Mobiele analyse & inhoud
 
-1. **Drie uiteenlopende voorbeelden op mobiel**: Zoek en bekijk drie sterk verschillende projecten op smartphoneformaat (bijvoorbeeld een digitale expo, een interactief poëzie- of storytellingproject en een mobiele artiesten- of campagnesite). Vermeld de drie links en los onderstaande vragen per voorbeeld op.
-   * **Leesbaarheid & contrast**: Hoe blijft tekst goed leesbaar op een gekleurde of donkere achtergrond, of boven bewegend beeld?
-   * **Media zonder vertraging**: Hoe worden video en audio gepresenteerd zonder dat de pagina druk, zwaar of traag aanvoelt?
-   * **Interactie & beweging**: Welke kleine beweging, animatie of scroll-interactie geeft de pagina karakter?
-   * **Inhoudelijke opbouw**: Hoe wordt de bezoeker binnengeleid in het thema of verhaal (titel, korte context, volgorde van blokken)?
-   * **Sfeer & betekenis**: Hoe versterken typografie, kleur en beeldkeuze samen de emotie of inhoud van het werk, en welk idee neem je daaruit mee naar jouw eigen expopagina?
+1. **Drie uiteenlopende voorbeelden op mobiel**: Zoek en bekijk drie sterk verschillende projecten op smartphoneformaat (bijvoorbeeld een digitale expo, een interactief storytellingproject, een artiestenportfolio of een campagnesite). Vermeld de drie links en schrijf per voorbeeld een verdiepende tekst aan de hand van onderstaande concepten.
+   * **Leesbaarheid & contrast**, bijvoorbeeld: hoe blijft tekst goed leesbaar op een gekleurde of donkere achtergrond, of boven bewegend beeld?
+   * **Media zonder vertraging**, bijvoorbeeld: hoe worden video en audio gepresenteerd zonder dat de pagina druk, zwaar of traag aanvoelt?
+   * **Interactie & beweging**, bijvoorbeeld: welke kleine beweging, animatie of scroll-interactie geeft de pagina karakter?
+   * **Inhoudelijke opbouw**, bijvoorbeeld: hoe wordt de bezoeker binnengeleid in het thema of verhaal (titel, korte context, volgorde van blokken)?
+   * **Sfeer & betekenis**, bijvoorbeeld: hoe versterken typografie, kleur en beeldkeuze samen de emotie of inhoud van het werk, en welk idee neem je daaruit mee naar jouw eigen expopagina?
 2. **Inhoud bundelen**: Schrijf alle teksten voor je pagina uit:
    * Titel van het werk en jouw naam.
    * Het volledige gedicht.
@@ -140,10 +140,16 @@ Bundel in `VoornaamA_BeyondGravity-Onderzoek.pdf` en dien in via Smartschool.
 
 ### Mobile-first wireframe
 
-Teken in Figma of Adobe XD een smal wireframe van **390 px breed** van boven naar onder:
+Teken vóór het coderen eerst het **skelet** van je pagina uit in **Adobe XD** (of **Figma**). In de basis is een wireframe een schematische bouwtekening in grijstinten die met eenvoudige kaders en lijnen de structuur, volgorde en witruimte vastlegt. 
+
+Voor deze expopagina ga je een stap verder dan enkel dat grijze skelet: zodra de opbouw staat, vul je het ontwerp al aan met jouw gekozen kleurenpalet, typografie, echte teksten en eventueel stills van je collage of affiches. Zo toets je sfeer, contrast en leesbaarheid op een klein scherm al af vóór je codeert.
+
+![Voorbeeld van een low-fidelity wireframe als vertrekpunt](img/wireframe-voorbeeld.webp?w=60%)
+
+Werk op een smal mobiel artboard van **`390 px` breed** (vrij verlengbaar in de hoogte) met de onderstaande onderdelen.
 
 * **Minimale header**: Expo-label (`Beyond Gravity`) + jouw werk- of gedichttitel.
-* **Hero-podium**: Staande collageanimatie met aangeduide zones waar de 2 à 3 typografische loops via `position: absolute;` verschijnen.
+* **Hero-podium**: Staande collageanimatie met aangeduide zones waar de twee à drie typografische loops via `position: absolute;` verschijnen.
 * **Luistergedeelte**: Audio-speler + het geschreven gedicht + korte toelichting.
 * **Processectie**: De verticale making-of video en je affiches.
 * **Minimale footer**: `Expo Beyond Gravity • Bib Couwelaar • 28 jan – 3 feb 2027 • 6CRM Avant`.
