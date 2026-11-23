@@ -39,7 +39,7 @@ indieningen:
         criterium: "Het onderzoeksdocument en beeldassets ordelijk bijhouden en beheren in de OneDrive-vakmap."
       - code: "GEC01"
         gewicht: 1
-        criterium: "De tussentijdse deadline (12/10, 12u00) en inleverafspraken voor het onderzoek stipt naleven."
+        criterium: "De tussentijdse deadline en inleverafspraken voor het onderzoek stipt naleven."
 
   - id: "wireframe"
     titel: "Receptenboek 3.2 Wireframes en schetsen"
@@ -67,7 +67,7 @@ indieningen:
         criterium: "De wireframeschetsen en afbeeldingsbestanden ordelijk bewaren en beheren in de eigen OneDrive-map."
       - code: "GEC01"
         gewicht: 1
-        criterium: "De tussentijdse deadline (19/10) en inleverafspraken voor de schetsen stipt naleven."
+        criterium: "De tussentijdse deadline en inleverafspraken voor de schetsen stipt naleven."
 
   - id: "toets-html-css"
     titel: "Toets 03 HTML/CSS"

@@ -76,11 +76,11 @@ draft: false
 
 ## Briefing & concept
 
-Voor de Jeugdboekenmaand 2027 bouw je een interactieve **sensibiliseringscampagne** rond één concreet waterprobleem (bv. plastic soep, drinkwaterverspilling, droogte en waterschaarste, of watervervuiling).
+Voor de Jeugdboekenmaand 2027 bouw je een interactieve **sensibiliseringscampagne** rond één concreet waterprobleem (bv. plastic, drinkwaterverspilling, waterschaarste, watervervuiling).
 
 Je brengt alle onderdelen van je grafische en motion-producties samen op één interactieve webpagina:
-* **Centraal podium**: Jouw watermascotte (uit Grafische vormgeving of de rust-loop uit Motion) staat centraal in beeld.
-* **Geanimeerde knoppen rondom**: Vier tot zes aanklikbare icoon-knoppen zweven rond de mascotte bijvoorbeeld via absolute positionering (`position: absolute;`).
+* **Centraal podium**: Jouw watermascotte (uit Grafische vormgeving en de loop uit Motion) staat centraal in beeld.
+* **Geanimeerde knoppen rondom**: Zes aanklikbare icoon-knoppen zweven rond de mascotte bijvoorbeeld via absolute positionering (`position: absolute;`).
 * **Informatieve pop-ups**: Een klik op een knop opent een overzichtelijke pop-up met een duidelijke boodschap, feiten, beeldmateriaal en een ingesloten YouTube-video.
 
 ![Voorbeeld interactieve infographic met centrale mascotte en zwevende iconen](img/infographic-voorbeeld.jpg)
@@ -107,51 +107,73 @@ Verzamel inhoudelijke feiten en werk de interactieve lay-out uit vóór je codee
   * *Videobron*: Zoek een heldere, kindvriendelijke YouTube-video over dit thema.
 4. Stem taalgebruik en beeldkeuze af op je gekozen leeftijdsgroep: geen saaie lappen tekst, maar kernachtige weetjes.
 
+Bundel je inhoud en bronnen `VoornaamA_Infographic-Voorbereiding.pdf` en dien in via Smartschool.
+
 ### UI/UX-wireframe
 
-Maak een overzichtelijke wireframe.
-* Bepaal de verhouding van het centrale canvas (`100vh` of vaste desktop-verhouding).
-* Duid de positie aan van de mascotte en teken waar de icoonknoppen zweven.
-* Schets de opbouw van het pop-upvenster (titel, sluitknop, tekstblok, afbeelding/video-embed en actieknop).
+Teken vóór het coderen het **skelet** van je webapp uit in **Adobe XD** (of **Figma**). Een wireframe is een schematische bouwtekening in grijstinten: het toont met eenvoudige kaders en lijnen waar elk onderdeel komt, **zonder** echte teksten, afbeeldingen, kleuren of uitgewerkte icoontjes.
 
-Bundel je inhoud, bronnen en wireframeschets in `VoornaamA_Infographic-Voorbereiding.pdf` en dien in via Smartschool.
+![Voorbeeld van een low-fidelity wireframe](img/wireframe-voorbeeld.webp?w=60%)
+
+Werk op een desktop-artboard van **`1440 px` breed** (start op `900 px` hoog, vrij aanpasbaar) en teken **twee duidelijke schermen** uit:
+
+1. **Scherm 1, Hoofdpagina (beginscherm):**
+   * Duid het centrale canvas aan en geef met een eenvoudig kader aan waar je mascotte komt.
+   * Plaats eenvoudige vormen op de posities waar de zes icoonknoppen rond de mascotte zweven.
+   * Duid de plaats van de titel en slogan aan met een neutraal tekstblok.
+2. **Scherm 2, Hoofdpagina met geopende pop-up:**
+   * Toon hetzelfde scherm op het moment dat een icoonknop is aangetikt en geef visueel aan hoe de pop-up functioneert (de pop-up opent als een venster boven op de hoofdpagina terwijl de achtergrond licht verduistert, via de sluitknop keert de bezoeker terug naar het beginscherm).
+   * Teken de vaste indeling binnen het pop-upvenster: titelzone, sluitknop (`×`), tekstblok, placeholder voor een afbeelding of video-embed en een eventuele actieknop.
+
+> **Optioneel: Interactieve werking toevoegen.** Wil je het wireframe al klikbaar testen? Schakel in Adobe XD over naar het tabblad **Prototype**. Verbind een icoonknop met **Scherm 2**, en koppel de sluitknop (`×`) opnieuw terug naar **Scherm 1**.
+
+Exporteer beide schermen samen als `VoornaamA_Infographic-Wireframe.pdf` en dien in via Smartschool.
 
 ## Opdracht
 
 Bouw de interactieve pagina in Visual Studio Code met semantische HTML5 en modulaire CSS3.
 
-### Semantische HTML-structuur
+### HTML-structuur
 
 1. Maak een hoofdpodium aan:
-   * Een omvattende container (bv. `<main class="infographic-stage">`).
+   * Een omvattende container (bv. `<main id="infographic">`).
    * Het centrale beeld of de animatie van je mascotte.
-   * Een lijst of reeks interactieve knoppen met de animatieloops uit de Motion-opdracht:
+   * Een lijst of reeks interactieve icoonknoppen met de animatieloops uit de Motion-opdracht:
      ```html
-     <button class="hotspot hotspot--kraan" data-target="modal-kraan" aria-label="Tips over kranen">
+     <button class="icoonknop" id="kraan" popovertarget="modal-kraan">
        <img src="assets/img/icoon-kraan.gif" alt="Lekkende kraan" />
      </button>
      ```
-2. Voorzie voor elke hotspot een toegankelijk dialoogvenster via het native HTML-element `<dialog>` (of een semantische modal wrapper):
+2. Voorzie voor elke icoonknop een pop-upvenster met het HTML-attribuut `popover` en een bijbehorend `id` (bv. `id="modal-kraan"`):
    * Titel en korte probleemstelling.
    * Feitelijke uitleg in begrijpelijke bewoordingen.
    * Een ingesloten YouTube-video via een responsieve `<iframe>`.
-   * Een duidelijke sluitknop (`<button class="close-btn">&times;</button>`).
+   * Een duidelijke sluitknop:
+     ```html
+     <div id="modal-kraan" popover>
+       <h2>Lekkende kraan</h2>
+       <p>Korte probleemstelling en uitleg...</p>
+       <!-- responsieve YouTube-iframe -->
+       <button class="sluitknop" popovertarget="modal-kraan" popovertargetaction="hide">&times;</button>
+     </div>
+     ```
 
 ### CSS: Absolute positionering rond de mascotte
 
 1. Maak het centrale podium relatief gepositioneerd zodat het als ankerpunt fungeert:
    ```css
-   .infographic-stage {
+   #infographic {
      position: relative;
-     width: min(90vw, 900px);
-     margin-inline: auto;
+     width: 90%;
+     max-width: 900px;
+     margin: 0 auto;
      aspect-ratio: 1 / 1;
    }
    ```
 2. Positioneer de mascotte exact in het midden via Flexbox, Grid of absolute centrering.
-3. Plaats elke interactieve knop met `position: absolute;` en percentage-coördinaten:
+3. Plaats elke interactieve icoonknop met `position: absolute;` en percentage-coördinaten:
    ```css
-   .hotspot {
+   .icoonknop {
      position: absolute;
      transform: translate(-50%, -50%);
      border: none;
@@ -160,42 +182,17 @@ Bouw de interactieve pagina in Visual Studio Code met semantische HTML5 en modul
      transition: transform 0.25s ease;
    }
 
-   .hotspot:hover,
-   .hotspot:focus-visible {
+   .icoonknop:hover {
      transform: translate(-50%, -50%) scale(1.15);
    }
 
-   /* Coördinaten per hotspot */
-   .hotspot--kraan    { top: 20%; left: 22%; }
-   .hotspot--douche   { top: 22%; right: 20%; }
-   .hotspot--plastic  { top: 60%; left: 14%; }
-   .hotspot--rivier   { top: 62%; right: 12%; }
+   /* Coördinaten per icoonknop */
+   #kraan   { top: 20%; left: 22%; }
+   #douche  { top: 22%; right: 20%; }
+   #plastic { top: 60%; left: 14%; }
+   #rivier  { top: 62%; right: 12%; }
    ```
-4. Style de dialoogvensters (`dialog`, `dialog::backdrop`) met een rustige achtergrond, zachte afgeronde hoeken en een heldere typografische hiërarchie.
-
-### Interactie met JavaScript
-
-Koppel de knoppen aan de dialoogvensters via de native `<dialog>` browser-API:
-
-```javascript
-const buttons = document.querySelectorAll(".hotspot");
-
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const targetId = button.dataset.target;
-    const modal = document.getElementById(targetId);
-    if (modal) {
-      modal.showModal();
-    }
-  });
-});
-
-document.querySelectorAll(".close-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    btn.closest("dialog").close();
-  });
-});
-```
+4. Style de pop-upvensters (`[popover]`, `[popover]::backdrop`) met een rustige achtergrond, zachte afgeronde hoeken en een heldere typografische hiërarchie.
 
 ## Oplevering
 
@@ -213,24 +210,23 @@ VoornaamA_Infographic.zip
    │ └ [overige beelden]
    └ index.html
    └ style.css
-   └ main.js
 ```
 
 ### Checklist
 
 #### Bestandsbeheer & structuur
 * Het ZIP-archief heet `VoornaamA_Infographic.zip`.
-* De webmap is opgebouwd volgens de standaard websitestructuur (`index.html` in de hoofdmap, assets in `assets/css/`, `assets/js/` en `assets/img/`).
+* De webmap is opgebouwd volgens de standaard websitestructuur (`index.html` in de hoofdmap, assets in `assets/css/` en `assets/img/`).
 * Het voorbereidingsdocument met inhoud en wireframe zit in `01_voorbereiding/`.
 
 #### UI/UX & vormgeving
 * De mascotte staat centraal en de interactieve iconen zijn visueel evenwichtig gepositioneerd rond het figuur.
 * De absolute positionering gebruikt percentages zodat elementen niet verschuiven bij verschillende venstergroottes.
-* Knoppen reageren merkbaar op `:hover` en `:focus-visible`.
+* Knoppen reageren merkbaar op `:hover`.
 * De pop-ups zijn overzichtelijk vormgegeven, kindvriendelijk leesbaar en eenvoudig te sluiten.
 
 #### Technische werking
-* Alle interactieve knoppen openen het bijbehorende dialoogvenster zonder JavaScript-fouten in de console.
+* Alle interactieve knoppen openen en sluiten het bijbehorende pop-upvenster correct.
 * De YouTube-video laadt correct binnen het modale venster.
 * De HTML5- en CSS3-code is semantisch opgebouwd en voorzien van nette inspringing.
 

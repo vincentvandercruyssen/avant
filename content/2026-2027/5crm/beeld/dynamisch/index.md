@@ -6,39 +6,98 @@ klas: "5CRM"
 vak: "beeld"
 auteurs:
   - "Vincent Vander Cruyssen"
-periode: "Oktober"
+periode: "Oktober - November"
 thema: "Kinetic"
 software:
   - "DSLR / DSLM Camera (of smartphone)"
   - "Adobe Bridge"
   - "Adobe Photoshop"
-leerplandoelen:
-  - code: "13.01"
-    criterium: "Doelgericht inspiratiebronnen en fotografische referenties rond beweging en dynamiek opzoeken en selecteren."
-  - code: "CRS01"
-    criterium: "Productievereisten (onderzoek naar 3 technieken, minimaal 5 testshots en 1 uitgewerkt eindbeeld) analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "Doelgericht cameratechnieken, belichtingsparameters of beeldbewerkingen selecteren om beweging overtuigend uit te drukken."
-  - code: "CRS06"
-    criterium: "Vlot en doelgericht werken met de camera (sluitertijd, diafragma, ISO) en professionele software (Bridge, Camera Raw en Photoshop)."
-  - code: "CRS07"
-    criterium: "Geschikt beeldmateriaal en visuele voorbeelden van bewegingstechnieken zelfstandig capteren of online verzamelen."
-  - code: "CRS08"
-    criterium: "Scherpte, bewegingsonscherpte, belichting en beeldkwaliteit van de testshots kritisch evalueren."
-  - code: "CRS09"
-    criterium: "Het stappenplan voor opname en digitale beeldbewerking (uitsnijding, contrast, lagenopbouw) correct bepalen."
-  - code: "CRS10"
-    criterium: "Beeldmateriaal doelgericht corrigeren, manipuleren of samenvoegen in functie van de gekozen bewegingstechniek."
-  - code: "CRS20"
-    criterium: "Het visuele onderzoek en de beeldanalyses gestructureerd bundelen in een overzichtelijke PDF."
-  - code: "CRS22"
-    criterium: "Beeldmateriaal esthetisch en creatief bewerken om spanning, ritme of dynamiek voelbaar te maken."
-  - code: "CRS23"
-    criterium: "De geëxporteerde bestanden controleren op resolutie, kleurmodus, scherptebalans en bestandsformaat."
-  - code: "CRS27"
-    criterium: "De onderzoeks-PDF, testshots en het finale eindbeeld tijdig opleveren volgens de afgesproken mappenstructuur."
-  - code: "16.03"
-    criterium: "Toelichten hoe gekozen fotografische technieken en beeldbewerkingen beweging en kinetische energie suggereren in een stilstaand beeld."
+indieningen:
+  - id: "onderzoek"
+    titel: "Dynamisch 2.1 Onderzoek"
+    deadline: 2026-10-22
+    lesuren: 2
+    gewicht: 6
+    leerplandoelen:
+      - code: "13.01"
+        gewicht: 2
+        criterium: "Doelgericht drie uiteenlopende bewegingstechnieken opzoeken en per techniek minimaal vier representatieve fotografische of digitale voorbeelden verzamelen."
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten (titel met naam en klas, één techniek per pagina, PDF-export) en bestandsnaamgeving toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Bij elk onderzocht voorbeeld de juiste fotografische opnametechniek of digitale bewerking correct benoemen."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "Titels, techniekbenamingen en toelichtingen leesbaar en hiërarchisch opmaken in het document."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een overzichtelijke en evenwichtige bladspiegel (3 à 4 pagina's met verzorgde beeldplaatsing per techniek) toepassen."
+      - code: "16.03"
+        gewicht: 1
+        criterium: "Per techniek in eigen woorden toelichten hoe de werking (instellingen of bewerking) beweging en dynamiek oproept."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "Kwalitatieve en inhoudelijk kloppende referentiebeelden selecteren die de benoemde techniek effectief aantonen."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het onderzoeksdocument en het verzamelde beeldmateriaal ordelijk beheren en correct benoemd indienen."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De tussentijdse deadline en alle inleverafspraken voor het onderzoek stipt naleven."
+
+  - id: "oplevering"
+    titel: "Dynamisch 3 Oplevering"
+    deadline: 2026-11-12
+    lesuren: 6
+    gewicht: 15
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "De productievereisten (minimaal 5 testshots op 1 A4-PDF en 1 afgewerkt eindbeeld als PSD en JPEG) analyseren en toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht één gekozen bewegingstechniek, passende camera-instellingen (sluitertijd, diafragma, ISO) en belichtingsomstandigheden selecteren."
+      - code: "CRS09"
+        gewicht: 1
+        criterium: "Een gerichte opname- en bewerkingsworkflow doorlopen van experimentele testopnames naar één geselecteerd en uitgewerkt eindbeeld."
+      - code: "CRS22"
+        gewicht: 2
+        criterium: "Het finale eindbeeld esthetisch en creatief vormgeven zodat beweging, spanning, ritme of dynamiek overtuigend voelbaar is."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een sterke kadrering en evenwichtige compositie toepassen in het eindbeeld (en een overzichtelijke A4-ordening bij de testshots)."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Vlot en doelgericht werken met de camera (sluitertijd, scherpstelling) en Adobe-software (Bridge Output, Camera Raw en Photoshop)."
+      - code: "CRS07"
+        gewicht: 1
+        criterium: "Zelfstandig kwalitatief en gevarieerd fotografisch bronmateriaal capteren tijdens de testfase (minimaal vijf testshots)."
+      - code: "CRS10"
+        gewicht: 1
+        criterium: "Het gekozen eindbeeld in Camera Raw en/of Photoshop doelgericht corrigeren (belichting, contrast, kleurgradatie) en non-destructief opbouwen met lagen."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "De testshots bundelen op één A4-PDF en het bronproject (.psd) samen met de finale JPEG-export volledig aanleveren."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Alle gevraagde opleveringsbestanden (VoornaamA_Dynamisch-Testshots.pdf, .psd en .jpg) conform de afgesproken naamconventie en structuur opleveren."
+      - code: "CRS08"
+        gewicht: 1
+        criterium: "De testshots en het eindbeeld kritisch beoordelen op scherpte, gewenste bewegingsonscherpte, ruis en belichtingsbalans."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De geëxporteerde bestanden controleren op hoge resolutie, kleurmodus (RGB), scherptebalans, compressievrije JPEG-kwaliteit en juiste bestandsformaten."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Kwaliteitsbewust handelen met oog voor detailafwerking: gecontroleerde hooglichten/schaduwen, zuivere selecties en een verzorgde eindpresentatie."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het Photoshop-werkbestand (.psd) met behouden lagenopbouw en de ingeleverde bestanden ordelijk benoemen en beheren."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline (12/11, 10u00) en alle inleverafspraken van de opdracht stipt naleven."
 draft: false
 ---
 
@@ -136,7 +195,7 @@ Lever jouw werk in twee fases in via de voorziene Smartschool-uploadmappen:
 Uploadmap: Dynamisch 2.1 Onderzoek
 └─ VoornaamA_Dynamisch-Onderzoek.pdf
 
-Uploadmap: Dynamisch 2.2 Uitwerking
+Uploadmap: Dynamisch 3 Oplevering
 └─ VoornaamA_Dynamisch-Testshots.pdf (5 testshots op 1 A4)
 └─ VoornaamA_Dynamisch-Eindbeeld.psd
 └─ VoornaamA_Dynamisch-Eindbeeld.jpg

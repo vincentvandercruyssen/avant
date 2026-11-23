@@ -39,7 +39,7 @@ indieningen:
         criterium: "Het onderzoeksdocument en beeldassets ordelijk bijhouden en beheren in de OneDrive-vakmap voor Web."
       - code: "GEC01"
         gewicht: 1
-        criterium: "De tussentijdse deadline (07/10) en inleverafspraken voor het onderzoek stipt naleven."
+        criterium: "De tussentijdse deadline en inleverafspraken voor het onderzoek stipt naleven."
 
   - id: "wireframe"
     titel: "Stadsgids 2.2 Wireframing in Figma"
@@ -67,7 +67,7 @@ indieningen:
         criterium: "Het Figma-bestand ordelijk beheren en exports bewaren in de OneDrive-projectmap."
       - code: "GEC01"
         gewicht: 1
-        criterium: "De tussentijdse deadline (11/10) en inleverafspraken voor de wireframes stipt naleven."
+        criterium: "De tussentijdse deadline en inleverafspraken voor de wireframes stipt naleven."
 
   - id: "toets-html-css"
     titel: "Toets 03 HTML/CSS"
