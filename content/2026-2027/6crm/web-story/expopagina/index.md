@@ -27,7 +27,7 @@ indieningen:
         criterium: "Drie digitale expo's, poëziepagina's of mobiele artiestenwebsites doelgericht onderzoeken op smartphoneformaat."
       - code: "CRS01"
         gewicht: 1
-        criterium: "De productievereisten (mobile-first, mapnaamgeving voornaam/, bestandsconventies) en naamgeving toepassen in VoornaamA_Expopagina-Onderzoek.pdf."
+        criterium: "De productievereisten (mobile-first, mappenstructuur, bestandsconventies) en naamgeving toepassen in VoornaamA_Expopagina-Onderzoek.pdf."
       - code: "CRS02"
         gewicht: 1
         criterium: "Doelgericht HTML5-media-elementen (video, audio) en CSS-positioneringstechnieken (relative/absolute, mix-blend-mode, @keyframes) plannen."
@@ -82,7 +82,7 @@ indieningen:
         criterium: "Alle media uit Motion en Beeld (collage-video, typoloops, luistergedicht MP3 en making-of video) ordelijk samenbrengen in de map assets/."
       - code: "CRS27"
         gewicht: 1
-        criterium: "De volledig zelfstandige webmap voornaam/ binnen VoornaamA_Expopagina.zip foutloos en klaar voor publicatie op GitHub Pages opleveren."
+        criterium: "De volledig zelfstandige website binnen VoornaamA_Expopagina.zip foutloos en klaar voor publicatie op GitHub Pages opleveren."
       - code: "CRS23"
         gewicht: 1
         criterium: "De website testen op foutloze werking op smartphoneformaat (autoplay muted loop playsinline, werkende audio/video, snelle laadtijd en geldige relatieve paden)."
@@ -162,10 +162,10 @@ Bouw je digitale expopagina in Visual Studio Code met zuivere, mobile-first HTML
 
 ### Mappenstructuur
 
-Omdat jouw pagina straks samen met die van je klasgenoten op één centrale site wordt gepubliceerd, volg je deze exacte structuur in **kleine letters zonder spaties**:
+Omdat jouw pagina straks samen met die van je klasgenoten op één centrale site wordt gepubliceerd, volg je deze mappenstructuur (met kleine letters en zonder spaties voor alle bestanden en submappen).
 
 ```text
-voornaam/
+VoornaamA_Expopagina/
 └─ assets/
    └─ audio/
       └─ luistergedicht.mp3
@@ -284,7 +284,7 @@ Let op: test elke link strikt met **relatieve paden** (bv. `assets/video/collage
    * Is er nergens een horizontale scrollbar?
    * Spelen de collage-hero en typoloops automatisch en vloeiend af zonder zichtbare grijze rand?
    * Werkt de audiospeler voor het luistergedicht en de speler voor de making-of zonder foutmeldingen in de Console?
-   * Lees de bestandsgroottes na: blijft je hele `voornaam/`-map compact genoeg (liefst onder **30 MB** totaal) voor GitHub Pages en vlot laden in de bib?
+   * Lees de bestandsgroottes na: blijft je hele projectmap compact genoeg (liefst onder **30 MB** totaal) voor GitHub Pages en vlot laden in de bib?
 
 ## Oplevering
 
@@ -295,25 +295,24 @@ VoornaamA_Expopagina.zip
 └─ VoornaamA_Expopagina/
    └─ 01_onderzoek/
       └─ VoornaamA_Expopagina-Onderzoek.pdf
-   └─ voornaam/
-      └─ assets/
-         └─ audio/
-            └─ luistergedicht.mp3
-         └─ img/
-         └─ video/
-            └─ collage-hero.mp4
-            └─ typoloop-01.mp4
-            └─ typoloop-02.mp4
-            └─ makingof.mp4
-      └─ index.html
-      └─ style.css
+   └─ assets/
+      └─ audio/
+         └─ luistergedicht.mp3
+      └─ img/
+      └─ video/
+         └─ collage-hero.mp4
+         └─ typoloop-01.mp4
+         └─ typoloop-02.mp4
+         └─ makingof.mp4
+   └─ index.html
+   └─ style.css
 ```
 
 ### Checklist
 
 #### Bestandsbeheer & structuur
 * Het ZIP-archief heet `VoornaamA_Expopagina.zip`.
-* De map `voornaam/` gebruikt enkel kleine letters zonder spaties of speciale tekens en werkt volledig zelfstandig met relatieve paden.
+* Alle bestands- en mapnamen binnen `assets/` gebruiken enkel kleine letters zonder spaties of speciale tekens, en de pagina werkt volledig zelfstandig met relatieve paden.
 * Het onderzoek met mobile-first wireframe zit in `01_onderzoek/`.
 
 #### Mobile-first vormgeving & expo-lijn

@@ -15,7 +15,7 @@
 
 ### Leerplandoelen
 * **13.01:** Drie digitale expo's, poëziepagina's of mobiele artiestenwebsites doelgericht onderzoeken op smartphoneformaat.
-* **CRS01:** De productievereisten (mobile-first, mapnaamgeving `voornaam/`, bestandsconventies) en naamgeving toepassen in `VoornaamA_Expopagina-Onderzoek.pdf`.
+* **CRS01:** De productievereisten (mobile-first, mappenstructuur, bestandsconventies) en naamgeving toepassen in `VoornaamA_Expopagina-Onderzoek.pdf`.
 * **CRS02:** Doelgericht HTML5-media-elementen en CSS-interacties plannen in functie van de mobiele expopagina.
 * **CRS25:** Alle eigen expo-teksten (titel, gedicht, korte reflectie op zwaartekracht en credits) volledig en doelgroepgericht bundelen.
 * **CRS26:** De visuele lijn (kleurenpalet en stijl uit Grafische vormgeving en de andere expo-opdrachten) opnemen in het ontwerpplan.
@@ -41,7 +41,7 @@
    * Bewaren van het ontwerpbestand in `VoornaamA_Expopagina/01_onderzoek/` als basis voor verdere afwerking en export naar `VoornaamA_Expopagina-Wireframe.pdf`.
 
 ### Leerplandoelen
-* **CRS01:** De productievereisten (mobile-first, mapnaamgeving `voornaam/`, bestandsconventies) en naamgeving toepassen in `VoornaamA_Expopagina-Onderzoek.pdf` en `VoornaamA_Expopagina-Wireframe.pdf`.
+* **CRS01:** De productievereisten (mobile-first, mappenstructuur, bestandsconventies) en naamgeving toepassen in `VoornaamA_Expopagina-Onderzoek.pdf` en `VoornaamA_Expopagina-Wireframe.pdf`.
 * **CRS03:** Vooraf een overzichtelijk mobile-first wireframe (390 px breed) uittekenen waarin hero, typoloops, audio en making-of logisch gestructureerd zijn.
 * **CRS24:** Een heldere verticale leesflow en ademruimte tussen de overlay-typoloops en de collage-hero plannen.
 * **CRS26:** De visuele lijn (kleurenpalet en stijl uit Grafische vormgeving en de andere expo-opdrachten, plus een minimale expo-balk) opnemen in het ontwerpplan.
