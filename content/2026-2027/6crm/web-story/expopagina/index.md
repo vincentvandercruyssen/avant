@@ -27,7 +27,7 @@ indieningen:
         criterium: "Drie digitale expo's, poëziepagina's of mobiele artiestenwebsites doelgericht onderzoeken op smartphoneformaat."
       - code: "CRS01"
         gewicht: 1
-        criterium: "De productievereisten (mobile-first, mapnaamgeving voornaam/, bestandsconventies) en naamgeving toepassen in VoornaamA_BeyondGravity-Onderzoek.pdf."
+        criterium: "De productievereisten (mobile-first, mapnaamgeving voornaam/, bestandsconventies) en naamgeving toepassen in VoornaamA_Expopagina-Onderzoek.pdf."
       - code: "CRS02"
         gewicht: 1
         criterium: "Doelgericht HTML5-media-elementen (video, audio) en CSS-positioneringstechnieken (relative/absolute, mix-blend-mode, @keyframes) plannen."
@@ -82,7 +82,7 @@ indieningen:
         criterium: "Alle media uit Motion en Beeld (collage-video, typoloops, luistergedicht MP3 en making-of video) ordelijk samenbrengen in de map assets/."
       - code: "CRS27"
         gewicht: 1
-        criterium: "De volledig zelfstandige webmap voornaam/ binnen VoornaamA_BeyondGravity.zip foutloos en klaar voor publicatie op GitHub Pages opleveren."
+        criterium: "De volledig zelfstandige webmap voornaam/ binnen VoornaamA_Expopagina.zip foutloos en klaar voor publicatie op GitHub Pages opleveren."
       - code: "CRS23"
         gewicht: 1
         criterium: "De website testen op foutloze werking op smartphoneformaat (autoplay muted loop playsinline, werkende audio/video, snelle laadtijd en geldige relatieve paden)."
@@ -136,7 +136,7 @@ Bestudeer vooraf hoe websites werken op een **smartphonescherm** en bereid je in
    * De kleuren en hexcodes van jouw **kleurenpalet** (achtergrond-, tekst- en accentkleur), afgestemd op je werk uit Grafische vormgeving en Motion.
 3. **Eigen zwaartekracht-accent**: Kies één eigen CSS-interactie of beweging waarmee jouw pagina tot leven komt (bv. `@keyframes` die het gedicht zacht laten zweven, typoloops die na enkele seconden opduiken of vertragen, een klikbaar venster, enzoverder).
 
-Bundel in `VoornaamA_BeyondGravity-Onderzoek.pdf` en dien in via Smartschool.
+Bundel in `VoornaamA_Expopagina-Onderzoek.pdf` en dien in via Smartschool.
 
 ### Mobile-first wireframe
 
@@ -154,7 +154,7 @@ Werk op een smal mobiel artboard van **`390 px` breed** (vrij verlengbaar in de 
 * **Processectie**: De verticale making-of video en je affiches.
 * **Minimale footer**: `Expo Beyond Gravity • Bib Couwelaar • 28 jan – 3 feb 2027 • 6CRM Avant`.
 
-Bundel in `VoornaamA_BeyondGravity-Wireframe.pdf` en dien in via Smartschool.
+Bundel in `VoornaamA_Expopagina-Wireframe.pdf` en dien in via Smartschool.
 
 ## Opdracht
 
@@ -291,10 +291,10 @@ Let op: test elke link strikt met **relatieve paden** (bv. `assets/video/collage
 Lever jouw onderzoeksdossier en volledig geteste website-map samen in als één ZIP-archief via Smartschool:
 
 ```text
-VoornaamA_BeyondGravity.zip
-└─ VoornaamA_BeyondGravity/
+VoornaamA_Expopagina.zip
+└─ VoornaamA_Expopagina/
    └─ 01_onderzoek/
-      └─ VoornaamA_BeyondGravity-Onderzoek.pdf
+      └─ VoornaamA_Expopagina-Onderzoek.pdf
    └─ voornaam/
       └─ assets/
          └─ audio/
@@ -312,7 +312,7 @@ VoornaamA_BeyondGravity.zip
 ### Checklist
 
 #### Bestandsbeheer & structuur
-* Het ZIP-archief heet `VoornaamA_BeyondGravity.zip`.
+* Het ZIP-archief heet `VoornaamA_Expopagina.zip`.
 * De map `voornaam/` gebruikt enkel kleine letters zonder spaties of speciale tekens en werkt volledig zelfstandig met relatieve paden.
 * Het onderzoek met mobile-first wireframe zit in `01_onderzoek/`.
 
