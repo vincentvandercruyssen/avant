@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-dynamisch",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-11-22T19:23:56.111+01:00",
+  "lastUpdated": "2026-11-24T11:33:23.379+01:00",
   "submissions": {
     "onderzoek": {
       "id": "onderzoek",
@@ -230,11 +230,11 @@
             "16.03": 0,
             "CRS01": 1,
             "CRS02": 0,
+            "CRS04": 2,
             "CRS08": 1,
             "CRS21": 0,
             "CRS24": 1,
-            "GEC01": 2,
-            "CRS04": 2
+            "GEC01": 2
           },
           "feedback": "Je onderzoek heeft de vier afbeeldingen per techniek, al werden de onderzochte technieken niet benoemd. Ook de toelichtingen blijven te vaag, zonder bijvoorbeeld uitleg over de gebruikte technieken, zoals sluitertijd of bewerking. Een opdrachttitel bovenaan ontbreekt. De afbeeldingen mochten gerust wat meer ruimte innemen. Een degelijke basis die nog meer aandacht vroeg.",
           "scores": {
@@ -314,16 +314,16 @@
       "criteriaWeights": {
         "CRS01": 1,
         "CRS02": 1,
-        "CRS22": 2,
+        "CRS22": 1,
         "CRS24": 1,
+        "15.04": 1,
         "CRS06": 1,
-        "CRS07": 1,
         "CRS09": 1,
         "CRS10": 1,
         "CRS20": 1,
         "CRS27": 1,
         "CRS08": 1,
-        "CRS23": 1,
+        "CRS23": 2,
         "GEC02": 1,
         "CRS04": 1,
         "GEC01": 1
@@ -349,7 +349,7 @@
           "criteria": [
             {
               "code": "CRS22",
-              "gewicht": 2
+              "gewicht": 1
             },
             {
               "code": "CRS24",
@@ -362,11 +362,11 @@
           "naam": "Multimediaproductie",
           "criteria": [
             {
-              "code": "CRS06",
+              "code": "15.04",
               "gewicht": 1
             },
             {
-              "code": "CRS07",
+              "code": "CRS06",
               "gewicht": 1
             },
             {
@@ -403,7 +403,7 @@
             },
             {
               "code": "CRS23",
-              "gewicht": 1
+              "gewicht": 2
             },
             {
               "code": "GEC02",
@@ -429,39 +429,39 @@
       "evaluations": {
         "0b2d4d6f3a": {
           "criteriaLevels": {
+            "15.04": 3,
             "CRS01": 1,
             "CRS02": 3,
-            "CRS04": 1,
-            "CRS06": 2,
-            "CRS07": 3,
-            "CRS08": 2,
-            "CRS09": 2,
-            "CRS10": 2,
+            "CRS04": 2,
+            "CRS06": 3,
+            "CRS08": 3,
+            "CRS09": 3,
+            "CRS10": 3,
             "CRS20": 1,
             "CRS22": 3,
-            "CRS23": 2,
-            "CRS24": 3,
-            "CRS27": 1,
+            "CRS23": 3,
+            "CRS24": 2,
+            "CRS27": 2,
             "GEC01": 3,
             "GEC02": 2
           },
-          "feedback": "Je hebt een hele reeks creatieve en sfeervolle studio-experimenten gefotografeerd rond het bevriezen van beweging, van opspattend water tot vallend meel en popcorn. Vooral de opname met het waterglas en de muntjes is qua scherpte en belichting knap geslaagd; bij de andere opnames zorgde ISO 12800 voor opvallend veel korrel. De manier van opleveren zit wel erg slordig in elkaar: de testshots moesten samen op één A4-PDF via Bridge komen in plaats van losse JPEG's, en in je map met een foutieve naam zitten vijf eindbeelden naast elkaar zonder behouden aanpassingslagen in je PSD. Kies één definitief eindbeeld en benoem je bestanden en mappen precies zoals afgesproken.",
+          "feedback": "Je bent vlot aan de slag gegaan en je hebt een reeks creatieve en sfeervolle studio-experimenten gefotografeerd rond het bevriezen van beweging. De opnames met het waterglas en de bloem zijn qua compositie, scherpte en belichting sterk geslaagd. Volg de verwachtingen van de opdracht goed op: de testshots moesten in één pdf verwerkt worden om vandaaruit één eindbeeld te maken. Het PSD-bestand is hier overbodig omdat het maar één samengevoegde laag bevat. Let ook op de verwachtingen rond naamgeving. Verder een ontzettend knappe zoektocht en zeer overtuigende resultaten.",
           "scores": {
             "4.1": 10,
-            "4.2": 15,
-            "4.3": 11.7,
-            "4.4": 5,
-            "4.5": 10,
-            "4.6": 10
+            "4.2": 12.5,
+            "4.3": 15,
+            "4.4": 7.5,
+            "4.5": 13.8,
+            "4.6": 12.5
           }
         },
         "539ecc3e56": {
           "criteriaLevels": {
+            "15.04": 3,
             "CRS01": 3,
             "CRS02": 3,
             "CRS04": 2,
             "CRS06": 3,
-            "CRS07": 3,
             "CRS08": 3,
             "CRS09": 3,
             "CRS10": 2,
@@ -473,247 +473,247 @@
             "GEC01": 3,
             "GEC02": 2
           },
-          "feedback": "Sterk en verzorgd werk. Je hebt alle drie de gevraagde bestanden op tijd en met de exacte bestandsnaamgeving ingediend. Je testshots via Bridge tonen een gericht experiment met bewegingsrichtingen bij herfstbomen, en je gekozen eindbeeld pakt dat krachtig op met een vloeiende veegbeweging en een mooi kleurcontrast tussen het warme gebladerte en de blauwe lucht. In je PSD-bestand is alles plat opgeslagen zonder losse aanpassingslagen, en rechtsboven in de lucht zit nog een klein stofvlekje dat je makkelijk had kunnen wegwerken. Verder een overtuigend eindresultaat.",
+          "feedback": "Sterk en verzorgd werk. Je bent vlot aan de slag gegaan en je testshots via Bridge tonen een gericht experiment met bewegingsrichtingen. Je gekozen eindbeeld pakt krachtig uit met een vloeiende veegbeweging en een mooi kleurcontrast tussen het warme gebladerte en de blauwe lucht. Het PSD-bestand is hier overbodig omdat het maar één samengevoegde laag bevat en je alles al in Camera Raw bewerkte. Rechtsboven in de lucht zit nog een klein stofvlekje dat je had kunnen wegwerken. Verder een overtuigend eindresultaat.",
           "scores": {
             "4.1": 15,
             "4.2": 15,
-            "4.3": 13.3,
+            "4.3": 13.8,
             "4.4": 15,
-            "4.5": 13.3,
+            "4.5": 13.8,
             "4.6": 12.5
           }
         },
         "60c8618064": {
           "criteriaLevels": {
+            "15.04": 2,
             "CRS01": 3,
             "CRS02": 3,
             "CRS04": 2,
             "CRS06": 2,
-            "CRS07": 3,
             "CRS08": 2,
             "CRS09": 3,
-            "CRS10": 1,
-            "CRS20": 3,
-            "CRS22": 3,
-            "CRS23": 3,
-            "CRS24": 2,
-            "CRS27": 3,
-            "GEC01": 3,
-            "GEC02": 2
-          },
-          "feedback": "Je hebt alle drie de gevraagde bestanden op tijd en met de exacte bestandsnamen ingediend. Jouw testshots tonen een uitgebreid en speels zoekproces, en het eindbeeld met de kat en de groene laserstraal is een erg originele keuze waarin bewegingsonscherpte en lichtspoor sterk samenkomen. Het totaalbeeld oogt wel nog wat donker en vlak: met wat extra licht, contrast en kleurbalans in Camera Raw en Photoshop (met behoud van losse aanpassingslagen in je PSD) had het nog veel krachtiger gesproken. Verder mooi gewerkt.",
-          "scores": {
-            "4.1": 15,
-            "4.2": 13.3,
-            "4.3": 10,
-            "4.4": 15,
-            "4.5": 11.7,
-            "4.6": 12.5
-          }
-        },
-        "7b34d9351e": {
-          "criteriaLevels": {
-            "CRS01": 0,
-            "CRS02": 2,
-            "CRS04": 0,
-            "CRS06": 1,
-            "CRS07": 2,
-            "CRS08": 1,
-            "CRS09": 0,
-            "CRS10": 0,
-            "CRS20": 0,
-            "CRS22": 1,
-            "CRS23": 0,
-            "CRS24": 0,
-            "CRS27": 0,
-            "GEC01": 0,
-            "GEC02": 0
-          },
-          "feedback": "Je hebt anderhalve dag na de deadline zes losse JPEG-foto's ingediend in plaats van de gevraagde testshots-PDF en een uitgewerkt eindbeeld (psd en jpg). Het studio-experiment met de vallende veren en kaarten onder de spotlampen was een goed vertrekpunt tijdens de les, maar daarna ontbreekt elke nabewerking en selectie: de verenfoto's staan nog een kwartslag gedraaid, de tafelrand en lampen zijn niet bijgesneden en de bestandsnamen kloppen niet. Werk een van je opnames echt af in Camera Raw en Photoshop en bundel de testshots op één A4-PDF.",
-          "scores": {
-            "4.1": 3.3,
-            "4.2": 3.3,
-            "4.3": 5,
-            "4.4": 0,
-            "4.5": 1.7,
-            "4.6": 0
-          }
-        },
-        "8ab009875a": {
-          "criteriaLevels": {
-            "CRS01": 1,
-            "CRS02": 2,
-            "CRS04": 1,
-            "CRS06": 2,
-            "CRS07": 2,
-            "CRS08": 1,
-            "CRS09": 2,
-            "CRS10": 1,
-            "CRS20": 1,
-            "CRS22": 1,
-            "CRS23": 2,
-            "CRS24": 2,
-            "CRS27": 1,
-            "GEC01": 3,
-            "GEC02": 1
-          },
-          "feedback": "Je hebt op tijd ingediend en in de testshots mooi geëxperimenteerd met verschillende light-paintingsporen, overzichtelijk gebundeld via Bridge. Het Photoshop-werkbestand (psd) ontbreekt wel, en zowel je PDF als je JPEG kregen een afwijkende bestandsnaam. In je gekozen eindbeeld zijn de witte lichtlijnen sterk overbelicht, zie je een rozebruine zweem in het donker en vallen stofvlekjes op; qua vorm had een van je vrijere lichtlijnen uit de testshots bovendien meer dynamiek gehad dan de smiley. Werk dat beeld in Camera Raw en Photoshop verder bij zodat het zwart dieper blijft en de lichtlijnen doortekening houden.",
-          "scores": {
-            "4.1": 8.3,
-            "4.2": 6.7,
-            "4.3": 8.3,
-            "4.4": 5,
-            "4.5": 6.7,
-            "4.6": 10
-          }
-        },
-        "8ec556f315": {
-          "criteriaLevels": {
-            "CRS01": 2,
-            "CRS02": 3,
-            "CRS04": 1,
-            "CRS06": 2,
-            "CRS07": 3,
-            "CRS08": 2,
-            "CRS09": 2,
             "CRS10": 1,
             "CRS20": 2,
             "CRS22": 2,
             "CRS23": 3,
             "CRS24": 2,
-            "CRS27": 1,
+            "CRS27": 3,
             "GEC01": 3,
-            "GEC02": 2
+            "GEC02": 1
           },
-          "feedback": "Je hebt een origineel idee uitgewerkt rond de bewegende deurklink. Vooral je tweede versie werkt goed: de scherpe slotplaat contrasteert mooi met de gefaseerde beweging van de klink en toont een duidelijke vooruitgang tegenover je eerdere testshots, terwijl het andere eindbeeld wat te vaag en vlekkerig blijft. Maak één definitieve keuze in plaats van alles dubbel in te leveren en haal het eerdere onderzoek uit deze map. Bundel je testshots voortaan als één A4-PDF via Adobe Bridge, benoem je lagen en bewaar je eindbeeld-PSD met actieve aanpassingslagen en maskers in plaats van één samengevoegde laag.",
+          "feedback": "Jouw testshots tonen een fijn zoekproces en het eindbeeld met de kat en de groene laserstraal is een originele keuze waarin bewegingsonscherpte en lichtspoor sterk samenkomen. Het totaalbeeld oogt nog wat donker en vlak van compositie. Met wat extra lichtbewerking en een sterkere compositie had het nog veel krachtiger gesproken. De testshots-pdf had je eenvoudiger met de Uitvoer-functie van Adobe Bridge kunnen opmaken. Het PSD-bestand is hier overbodig omdat het maar één samengevoegde laag bevat. Verder mooi gewerkt, exacte bestandsnamen en tijdig ingediend.",
           "scores": {
-            "4.1": 11.7,
+            "4.1": 15,
             "4.2": 10,
             "4.3": 10,
+            "4.4": 12.5,
+            "4.5": 11.3,
+            "4.6": 12.5
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "15.04": 2,
+            "CRS01": 0,
+            "CRS02": 2,
+            "CRS04": 0,
+            "CRS06": 1,
+            "CRS08": 1,
+            "CRS09": 0,
+            "CRS10": 0,
+            "CRS20": 1,
+            "CRS22": 1,
+            "CRS23": 1,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "Je hebt zes losse JPEG-foto's ingediend in plaats van de gevraagde testshots-PDF en een uitgewerkt eindbeeld. De studio-experimenten zijn een goed vertrekpunt. Hieruit had je bijvoorbeeld \"veer 1.jpeg\" perfect kunnen uitwerken en lichtjes bijsnijden. Je bent nog laat aan de slag gegaan. Zorg dat je de planning en verwachtingen van de opdracht goed in het oog houdt. Let goed op bij het indienen, naast de te-laatmap werd het werk ook in de andere uploadmap pas na de deadline ingeleverd.",
+          "scores": {
+            "4.1": 5,
+            "4.2": 2.5,
+            "4.3": 3.8,
+            "4.4": 2.5,
+            "4.5": 3.8,
+            "4.6": 0
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "15.04": 2,
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 3,
+            "CRS06": 2,
+            "CRS08": 2,
+            "CRS09": 3,
+            "CRS10": 3,
+            "CRS20": 3,
+            "CRS22": 1,
+            "CRS23": 3,
+            "CRS24": 3,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Je bent vlot aan de slag gegaan en je hebt mooi geëxperimenteerd met verschillende lichtschilderijen. Qua vorm hadden de vrijere lichtlijnen uit de testshots meer dynamiek dan de uiteindelijke smiley. Je had bijvoorbeeld ook nog verder kunnen experimenteren met fijnere lichtbronnen, en een ander onderwerp. De bewerking zit goed. Het is mooi dat de lichtstralen nog duidelijk zijn en de vorm lijkt echt te gloeien. De naamgeving van je pdf is niet zoals gevraagd. Verder goed gewerkt.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 10,
+            "4.3": 12.5,
+            "4.4": 10,
+            "4.5": 12.5,
+            "4.6": 12.5
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "15.04": 3,
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS08": 2,
+            "CRS09": 2,
+            "CRS10": 2,
+            "CRS20": 2,
+            "CRS22": 3,
+            "CRS23": 3,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Je bent vlot aan de slag gegaan en hebt een origineel idee uitgewerkt rond de bewegende deurklink. Vooral je tweede versie werkt goed: de scherpe slotplaat contrasteert mooi met de gefaseerde beweging van de klink en toont een duidelijke vooruitgang tegenover je eerdere testshots, terwijl het andere eindbeeld wat te vaag blijft door de extra beweging van de camera. De testshots kon je eenvoudig samenvoegen met de Uitvoer-functie in Bridge, en hieruit een PDF maken. Een psd-bestand is hier overbodig, aangezien je alle bewerkingen in Camera Raw uitvoerde, het psd-bestand heeft één samengevoegde laag. Verder goed gewerkt.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 12.5,
+            "4.3": 11.3,
             "4.4": 7.5,
-            "4.5": 11.7,
+            "4.5": 12.5,
             "4.6": 10
           }
         },
         "9a8226cc52": {
           "criteriaLevels": {
+            "15.04": 3,
             "CRS01": 1,
-            "CRS02": 3,
+            "CRS02": 2,
             "CRS04": 1,
-            "CRS06": 2,
-            "CRS07": 3,
-            "CRS08": 3,
-            "CRS09": 2,
-            "CRS10": 2,
+            "CRS06": 1,
+            "CRS08": 2,
+            "CRS09": 1,
+            "CRS10": 1,
             "CRS20": 1,
-            "CRS22": 3,
-            "CRS23": 3,
-            "CRS24": 3,
-            "CRS27": 1,
+            "CRS22": 2,
+            "CRS23": 2,
+            "CRS24": 1,
+            "CRS27": 0,
             "GEC01": 0,
-            "GEC02": 2
+            "GEC02": 1
           },
-          "feedback": "Fotografisch is dit een knap eindresultaat: de panning op de rode auto zit qua scherpte, sluitertijd en 16:9-kadrering heel goed, en ook je vijf testshots tonen een gerichte oefening. Je hebt het werk wel meer dan vier dagen te laat ingediend met foutieve bestandsnamen. Bovendien zijn de testshots als PSD opgeladen in plaats van geëxporteerd naar PDF en ontbreekt het Photoshop-werkbestand van je eindbeeld volledig.",
+          "feedback": "Fotografisch goed gezocht, het eindbeeld met de panning op de auto zit in een goede richting. Al zijn nu zowel de camera als het onderwerp in beweging, waardoor ook de achtergrond bewegingsonscherpte krijgt. Hier had je een keuze moeten maken: ofwel het onderwerp, ofwel de achtergrond. Je vijf testshots tonen een gerichte oefening. Het beeld aan de oversteekplaats is fotografisch qua compositie en onderwerp het sterkst, hier had je ook een eindbeeld uit kunnen halen. De testshots-pdf had je eenvoudiger met de Uitvoer-functie van Adobe Bridge kunnen opmaken, deze werd ook niet geëxporteerd naar pdf. Je hebt heel wat tijd gekregen om tijdig te kunnen indienen, neem sneller initiatief om je werk zelfstandig af te werken. Je hebt het werk te laat ingediend met foutieve bestandsnamen.",
           "scores": {
-            "4.1": 10,
-            "4.2": 15,
-            "4.3": 11.7,
-            "4.4": 5,
-            "4.5": 13.3,
+            "4.1": 7.5,
+            "4.2": 7.5,
+            "4.3": 7.5,
+            "4.4": 2.5,
+            "4.5": 8.8,
             "4.6": 2.5
           }
         },
         "bcfe83d392": {
           "criteriaLevels": {
+            "15.04": 2,
             "CRS01": 3,
             "CRS02": 2,
             "CRS04": 1,
             "CRS06": 2,
-            "CRS07": 2,
             "CRS08": 2,
             "CRS09": 2,
             "CRS10": 1,
             "CRS20": 3,
             "CRS22": 2,
             "CRS23": 3,
-            "CRS24": 2,
-            "CRS27": 3,
+            "CRS24": 1,
+            "CRS27": 2,
             "GEC01": 1,
-            "GEC02": 1
+            "GEC02": 0
           },
-          "feedback": "Je hebt alle gevraagde bestanden met de exacte bestandsnamen gebundeld in een zipbestand, wel ruim tien uur na de deadline ingediend. Het idee om de bewegende figuur op de trap in kleur te isoleren tegen de betonnen architectuur is sterk gevonden, al werkt de selectie nu nog slordig rond de trapspijlen en schoenen en oogt het felle blauw wat te vlak. Je had ook het groene bord linksonder en de plafondrand bovenaan beter weggesneden voor een strakkere compositie. Bewaar in je PSD voortaan je lagen en laagmaskers in plaats van alles samen te voegen tot één laag.",
+          "feedback": "Je hebt je bestanden netjes gebundeld in een zipbestand. Het idee om je bewegende onderwerp op de trap in kleur te isoleren tegen de betonnen architectuur is goed gevonden, al werkt de selectie nu nog slordig rond de trapspijlen: het heeft zo meer iets van een collage. Het felle blauw is wel knap. Je had ook het groene bord linksonder deels kunnen wegsnijden voor een strakkere compositie. De testshots-pdf had je eenvoudiger met de Uitvoer-functie van Adobe Bridge kunnen opmaken. Je hebt met je testshots een duidelijke zoektocht afgelegd. Bewaar in je PSD voortaan je lagen en laagmaskers in plaats van alles samen te voegen tot één laag. Ik begrijp dat je op de dag van de deadline afwezig was, maar je hebt hier sinds de aankondiging van de opdracht ook ruim voldoende tijd voor gekregen.",
           "scores": {
-            "4.1": 11.7,
-            "4.2": 10,
-            "4.3": 8.3,
-            "4.4": 15,
+            "4.1": 12.5,
+            "4.2": 7.5,
+            "4.3": 8.8,
+            "4.4": 12.5,
             "4.5": 10,
             "4.6": 5
           }
         },
         "c8424a486b": {
           "criteriaLevels": {
+            "15.04": 2,
             "CRS01": 1,
             "CRS02": 2,
             "CRS04": 1,
             "CRS06": 1,
-            "CRS07": 2,
             "CRS08": 1,
             "CRS09": 1,
             "CRS10": 0,
             "CRS20": 1,
             "CRS22": 0,
-            "CRS23": 0,
+            "CRS23": 1,
             "CRS24": 1,
             "CRS27": 1,
             "GEC01": 1,
             "GEC02": 0
           },
-          "feedback": "Je hebt enkel je testshots-PDF van tijdens de les opgeladen, maar geen uitgewerkt eindbeeld (psd en jpg) ingediend. De vijf testshots in Adobe Bridge tonen wel een duidelijke zoektocht met tragere sluitertijden en verschillende standpunten. Het blijft jammer dat er daarna geen selectie of tweede opname en geen verdere uitwerking in Camera Raw en Photoshop meer is gevolgd. Om dit onderdeel alsnog af te werken, bezorg je het finale eindbeeld als psd en jpg via de map \"Te laat\".",
+          "feedback": "Je hebt enkel je testshots-PDF en geen uitgewerkt eindbeeld ingediend. De vijf testshots in Adobe Bridge tonen wel een duidelijke zoektocht met tragere sluitertijden en verschillende standpunten. Het blijft jammer dat er daarna geen selectie en geen verdere uitwerking in Camera Raw.",
           "scores": {
-            "4.1": 6.7,
-            "4.2": 1.7,
+            "4.1": 7.5,
+            "4.2": 2.5,
             "4.3": 5,
             "4.4": 5,
-            "4.5": 1.7,
+            "4.5": 3.8,
             "4.6": 5
           }
         },
         "d61daca6ab": {
           "criteriaLevels": {
+            "15.04": 2,
             "CRS01": 0,
             "CRS02": 1,
             "CRS04": 1,
             "CRS06": 1,
-            "CRS07": 1,
-            "CRS08": 0,
+            "CRS08": 2,
             "CRS09": 0,
-            "CRS10": 0,
-            "CRS20": 0,
+            "CRS10": 1,
+            "CRS20": 1,
             "CRS22": 1,
-            "CRS23": 0,
+            "CRS23": 1,
             "CRS24": 0,
             "CRS27": 0,
             "GEC01": 0,
-            "GEC02": 0
+            "GEC02": 1
           },
-          "feedback": "Je hebt ruim een dag na de deadline ingediend, zonder testshots-PDF en met een PNG (met typfout in je naam) in plaats van een JPEG. In je bestand heb je vijf verschillende foto's samen op een A4-blad gezet als eindbeeld, terwijl het de bedoeling was om vijf testshots apart te bundelen en daaruit één foto te kiezen en uit te werken. De laatste foto in de schoolgang is op zich een leuk idee rond herhaling, maar de beelden zijn verder niet bijgewerkt en vormen samen geen afgewerkt eindbeeld.",
+          "feedback": "In je bestand heb je vijf verschillende foto's samen op een A4-blad gezet als eindbeeld, terwijl het de bedoeling was om vijf testshots apart te bundelen en daaruit één eindbeeld uit te werken. De eerste en laatste foto zijn leuke en mooi uitgewerkte beelden. Daarvan had je gerust één als eindbeeld kunnen indienen. Vraag gerust duiding wanneer iets niet duidelijk is. De testshots moesten in PDF, het eindbeeld in JPG en eventueel in PSD indien bewerkt in Photoshop. Je diende na de deadline in.",
           "scores": {
-            "4.1": 1.7,
-            "4.2": 3.3,
-            "4.3": 3.3,
-            "4.4": 0,
-            "4.5": 0,
+            "4.1": 2.5,
+            "4.2": 2.5,
+            "4.3": 5,
+            "4.4": 2.5,
+            "4.5": 6.3,
             "4.6": 2.5
           }
         },
         "dc2916b34a": {
           "criteriaLevels": {
+            "15.04": 0,
             "CRS01": 0,
             "CRS02": 0,
             "CRS04": 0,
             "CRS06": 0,
-            "CRS07": 0,
             "CRS08": 0,
             "CRS09": 0,
             "CRS10": 0,
@@ -725,7 +725,7 @@
             "GEC01": 0,
             "GEC02": 0
           },
-          "feedback": "Je hebt niets ingediend voor de oplevering. Om dit onderdeel alsnog te remediëren, lever je zowel je testshots-PDF als het afgewerkte eindbeeld (psd en jpg) in via de map \"Te laat\".",
+          "feedback": "Je hebt niet ingediend. Om dit onderdeel te remediëren, lever je zowel je testshots-PDF als het afgewerkte eindbeeld in via de map \"Te laat\".",
           "scores": {
             "4.1": 0,
             "4.2": 0,

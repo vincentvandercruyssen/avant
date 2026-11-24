@@ -44,7 +44,7 @@
 ### Leerplandoelen
 * **CRS02:** Doelgericht cameratechnieken, sluitertijden of bewerkingsmethodes selecteren om beweging overtuigend uit te drukken.
 * **CRS06:** Vlot en veilig werken met de schoolcamera's, instellingen en opslagmedia.
-* **CRS07:** Zelfstandig kwalitatief fotografisch bronmateriaal capteren tijdens de experimentele testfase.
+* **15.04:** Zelfstandig kwalitatief fotografisch bronmateriaal capteren tijdens de experimentele testfase.
 * **CRS08:** Scherpte, bewegingsonscherpte, belichting en beeldkwaliteit van de testshots kritisch evalueren.
 * **GEC04:** Veilig, zorgvuldig en hygiënisch omgaan met opnameapparatuur en de werkplek.
 

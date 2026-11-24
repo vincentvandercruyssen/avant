@@ -55,7 +55,7 @@ indieningen:
     leerplandoelen:
       - code: "CRS01"
         gewicht: 1
-        criterium: "De productievereisten (minimaal 5 testshots op 1 A4-PDF en 1 afgewerkt eindbeeld als PSD en JPEG) analyseren en toepassen."
+        criterium: "De productievereisten (minimaal 5 testshots op 1 A4-PDF en 1 afgewerkt eindbeeld als JPEG, en indien van toepassing als PSD) analyseren en toepassen."
       - code: "CRS02"
         gewicht: 1
         criterium: "Doelgericht één gekozen bewegingstechniek, passende camera-instellingen (sluitertijd, diafragma, ISO) en belichtingsomstandigheden selecteren."
@@ -63,7 +63,7 @@ indieningen:
         gewicht: 1
         criterium: "Een gerichte opname- en bewerkingsworkflow doorlopen van experimentele testopnames naar één geselecteerd en uitgewerkt eindbeeld."
       - code: "CRS22"
-        gewicht: 2
+        gewicht: 1
         criterium: "Het finale eindbeeld esthetisch en creatief vormgeven zodat beweging, spanning, ritme of dynamiek overtuigend voelbaar is."
       - code: "CRS24"
         gewicht: 1
@@ -71,33 +71,33 @@ indieningen:
       - code: "CRS06"
         gewicht: 1
         criterium: "Vlot en doelgericht werken met de camera (sluitertijd, scherpstelling) en Adobe-software (Bridge Output, Camera Raw en Photoshop)."
-      - code: "CRS07"
+      - code: "15.04"
         gewicht: 1
         criterium: "Zelfstandig kwalitatief en gevarieerd fotografisch bronmateriaal capteren tijdens de testfase (minimaal vijf testshots)."
       - code: "CRS10"
         gewicht: 1
-        criterium: "Het gekozen eindbeeld in Camera Raw en/of Photoshop doelgericht corrigeren (belichting, contrast, kleurgradatie) en non-destructief opbouwen met lagen."
+        criterium: "Het gekozen eindbeeld in Camera Raw en/of Photoshop doelgericht en non-destructief corrigeren (belichting, contrast, kleurgradatie en indien van toepassing met lagen)."
       - code: "CRS20"
         gewicht: 1
-        criterium: "De testshots bundelen op één A4-PDF en het bronproject (.psd) samen met de finale JPEG-export volledig aanleveren."
+        criterium: "De testshots bundelen op één A4-PDF en (indien van toepassing) het bronproject samen met de finale JPEG-export volledig aanleveren."
       - code: "CRS27"
         gewicht: 1
-        criterium: "Alle gevraagde opleveringsbestanden (VoornaamA_Dynamisch-Testshots.pdf, .psd en .jpg) conform de afgesproken naamconventie en structuur opleveren."
+        criterium: "Alle gevraagde opleveringsbestanden (VoornaamA_Dynamisch-Testshots.pdf, .jpg en indien van toepassing .psd) conform de afgesproken naamconventie en structuur opleveren."
       - code: "CRS08"
         gewicht: 1
         criterium: "De testshots en het eindbeeld kritisch beoordelen op scherpte, gewenste bewegingsonscherpte, ruis en belichtingsbalans."
       - code: "CRS23"
-        gewicht: 1
+        gewicht: 2
         criterium: "De geëxporteerde bestanden controleren op hoge resolutie, kleurmodus (RGB), scherptebalans, compressievrije JPEG-kwaliteit en juiste bestandsformaten."
       - code: "GEC02"
         gewicht: 1
         criterium: "Kwaliteitsbewust handelen met oog voor detailafwerking: gecontroleerde hooglichten/schaduwen, zuivere selecties en een verzorgde eindpresentatie."
       - code: "CRS04"
         gewicht: 1
-        criterium: "Het Photoshop-werkbestand (.psd) met behouden lagenopbouw en de ingeleverde bestanden ordelijk benoemen en beheren."
+        criterium: "De ingeleverde bestanden en (indien van toepassing) het Photoshop-werkbestand (.psd met behouden lagenopbouw) ordelijk benoemen en beheren."
       - code: "GEC01"
         gewicht: 1
-        criterium: "De finale deadline (12/11, 10u00) en alle inleverafspraken van de opdracht stipt naleven."
+        criterium: "De finale deadline en alle inleverafspraken van de opdracht stipt naleven."
 draft: false
 ---
 
@@ -174,17 +174,17 @@ Werk vanuit je testshots één definitief, krachtig eindbeeld uit:
   * Kadreer het beeld krachtig (3:2 of een bewuste vierkante/panoramische uitsnede).
   * Werk indien van toepassing met nette aanpassingslagen, slimme objecten (*Smart Objects*) en laagmaskers in Photoshop.
 * **Export:**
-  * Sla het gelaagde werkbestand op als `VoornaamA_Dynamisch-Eindbeeld.psd` in de hoofdmap.
+  * Werk je ook in Photoshop, sla het gelaagde werkbestand dan op als `VoornaamA_Dynamisch-Eindbeeld.psd` in de hoofdmap (optioneel wanneer je enkel in Camera Raw bewerkt).
   * Exporteer een hoogwaardige JPEG naar `02_exports/VoornaamA_Dynamisch-Eindbeeld.jpg`.
 
 #### Indienen
 
-Dien je testshots (pdf) en eindbeeld (werkbestand en jpg) in via Smartschool.
+Dien je testshots (pdf) en eindbeeld (jpg, en indien van toepassing het Photoshop-werkbestand) in via Smartschool.
 
 ```text
 └─ VoornaamA_Dynamisch-Testshots.pdf (5 testshots op 1 A4)
-└─ VoornaamA_Dynamisch-Eindbeeld.psd
 └─ VoornaamA_Dynamisch-Eindbeeld.jpg
+└─ VoornaamA_Dynamisch-Eindbeeld.psd (optioneel, indien bewerkt in Photoshop)
 ```
 
 ## Oplevering
@@ -197,8 +197,8 @@ Uploadmap: Dynamisch 2.1 Onderzoek
 
 Uploadmap: Dynamisch 3 Oplevering
 └─ VoornaamA_Dynamisch-Testshots.pdf (5 testshots op 1 A4)
-└─ VoornaamA_Dynamisch-Eindbeeld.psd
 └─ VoornaamA_Dynamisch-Eindbeeld.jpg
+└─ VoornaamA_Dynamisch-Eindbeeld.psd (optioneel, indien bewerkt in Photoshop)
 ```
 
 ### Checklist
@@ -208,7 +208,7 @@ Controleer jouw werk zorgvuldig aan de hand van onderstaande punten vóór je de
 #### Bestanden en mappen
 - Het onderzoeksdocument is geëxporteerd als een overzichtelijke PDF (`VoornaamA_Dynamisch-Onderzoek.pdf`) en geüpload in de juiste uploadmap.
 - De testshots zijn gebundeld als PDF (`VoornaamA_Dynamisch-Testshots.pdf`) met minimaal 5 verschillende experimentele opnames.
-- Het finale eindbeeld is zowel als gelaagd Photoshop-bestand (`VoornaamA_Dynamisch-Eindbeeld.psd`) als hoogwaardige JPEG (`VoornaamA_Dynamisch-Eindbeeld.jpg`) ingeleverd.
+- Het finale eindbeeld is als hoogwaardige JPEG (`VoornaamA_Dynamisch-Eindbeeld.jpg`) ingeleverd, samen met het gelaagde Photoshop-bestand (`VoornaamA_Dynamisch-Eindbeeld.psd`) indien je in Photoshop hebt gewerkt.
 - Alle bestandsnamen volgen strikt de naamconventie met jouw voornaam en de eerste letter van je achternaam.
 
 #### Onderzoek en analyse
@@ -224,4 +224,4 @@ Controleer jouw werk zorgvuldig aan de hand van onderstaande punten vóór je de
 - Het finale beeld toont overtuigend beweging, kinetische energie of dynamiek.
 - De belichting is evenwichtig: geen storende dichtgelopen schaduwen of uitgebeten hooglichten.
 - Kleurcorrecties en contrast zijn doelgericht afgestemd op de sfeer van het werk.
-- In Photoshop is ordelijk gewerkt met benoemde lagen, maskers of slimme filters.
+- Indien bewerkt in Photoshop is ordelijk gewerkt met benoemde lagen, maskers of slimme filters.

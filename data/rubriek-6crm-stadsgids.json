@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "6crm-stadsgids",
   "classGroup": "6CRM",
-  "lastUpdated": "2026-11-09T20:49:01.446+01:00",
+  "lastUpdated": "2026-11-23T15:02:52.878+01:00",
   "submissions": {
     "onderzoek": {
       "id": "onderzoek",
@@ -242,8 +242,12 @@
         },
         "d1effb49ee": {
           "criteriaLevels": {},
-          "feedback": "Afwezig tijdens het afnemen van de toets.",
-          "scores": {}
+          "feedback": "De inhoudsverdeling zit goed. Op de rest van de leerstof loop je nog vast. Voor een hyperlink gebruik je het href-attribuut. In CSS selecteer je de hele pagina met body, schrijf je background-color en zet je geen accolades rond de waarden. Neem de leerstof en de CSS-schrijfwijze nog eens grondig door.\n\nJe toetsscore telt mee voor technieken (CRS02), webtoepassingen (CRS18) en vaktaal (13.08).",
+          "scores": {
+            "4.1": 4.5,
+            "4.3": 4.5,
+            "4.4": 4.5
+          }
         }
       }
     },

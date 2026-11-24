@@ -26,3 +26,24 @@
 * **CRS24:** Voortbouwend op de compositieschets uit Beeld een overzichtelijk storyboard en shotlist uittekenen met voldoende ademruimte voor de zwevende typoloops op de mobiele expopagina.
 * **CRS04:** Het onderzoeksdocument en de referentieclips ordelijk bijhouden in `VoornaamA_Collage/01_onderzoek/` op de OneDrive-vakmap.
 * **GEC01:** De tussentijdse deadline (15/12/2026) en inleverafspraken voor het onderzoek stipt naleven.
+
+## Les 2 24/11/2026 (Motion)
+
+### Collageanimatie: Terugkoppeling en uitwerken onderzoek
+
+### Lesverloop & inhoud
+1. **Terugkoppeling opstart:**
+   * Het gekozen gedicht, de referentieclips en de aansluiting op de compositieschets uit *Collagemateriaal* (Beeld).
+2. **Uitwerken techniekanalyse:**
+   * Drie inspirerende collageanimaties, vastleggen welke technieken worden toegepast in het eigen animatieplan.
+   * Bundelen van de voortgang in `VoornaamA_Collage-Onderzoek.pdf` en ordelijk bewaren in `VoornaamA_Collage/01_onderzoek/` op de OneDrive-vakmap.
+3. **Uitwerken storyboard, shotlist:**
+   * Vertalen van de compositieschets uit `VoornaamA_Collage-Beeldplan.pdf` naar een storyboard.
+   * Uitwerken hoe begin- en eindframe naadloos op elkaar aansluiten en zorgen voor voldoende witruimte voor de zwevende typoloops op de expopagina. Opstellen van een korte shotlist met zwaartekrachtbeweging en timing.
+
+### Leerplandoelen
+* **13.01:** Drie inspirerende cut-out of mixed-media collageanimaties doelgericht verzamelen en analyseren.
+* **CRS02:** Doelgericht 2.5D-dieptetechnieken, schaduwwerking, framerateritme en textuuroverlays selecteren in functie van het animatieplan.
+* **15.02:** Een gekozen gedicht rond *Zwaartekracht* vertalen naar een originele visuele choreografie waarin objecten en texturen reageren op zwaartekracht.
+* **CRS24:** Voortbouwend op de compositieschets uit Beeld een overzichtelijk storyboard en shotlist uittekenen met voldoende ademruimte voor de zwevende typoloops op de mobiele expopagina.
+* **CRS04:** Het onderzoeksdocument en de referentieclips ordelijk bijhouden in `VoornaamA_Collage/01_onderzoek/` op de OneDrive-vakmap.
