@@ -1,0 +1,135 @@
+{{ define "title" }}{{ .Params.klas | default "5CRM" }} · {{ .Params.thema | default .Title }} — Overzicht{{ end }}
+
+{{ define "header" }}
+<div class="fixed">
+  <h1>
+    <span class="vaknaam">{{ .Params.klas | default "5CRM" }}{{ with .Params.schooljaar }} · {{ . }}{{ end }}</span>
+    <span class="opdrachtnaam">{{ .Params.thema | default .Title }}</span>
+  </h1>
+  <a href="{{ "" | relURL }}" class="terug-link">← Terug naar start</a>
+  {{ if eq hugo.Environment "development" }}
+  <nav id="ThemaNav" aria-label="Leerlingen"></nav>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ define "main" }}
+{{ $klas := upper (.Params.klas | default "5CRM") }}
+{{ $thema := .Params.thema | default .Title }}
+{{ $schooljaar := .Params.schooljaar | default "" }}
+
+{{ if eq hugo.Environment "development" }}
+  {{/* Verzamel alle opdrachten binnen deze klas + thema met een rubriekbestand in data/ */}}
+  {{ $vakOrder := slice "beeld" "grafische" "motion" "web-story" }}
+  {{ $assignments := slice }}
+
+  {{ range $vakKey := $vakOrder }}
+    {{ range sort site.RegularPages "Date" "asc" }}
+      {{ if and (not (in .RelPermalink "/cursus/")) (not (in .RelPermalink "/doelen/")) (not (in .RelPermalink "/overzicht/")) }}
+        {{ $pKlas := upper (.Params.klas | default "") }}
+        {{ if not $pKlas }}
+          {{ if in (lower .RelPermalink) "/5crm/" }}{{ $pKlas = "5CRM" }}{{ end }}
+          {{ if in (lower .RelPermalink) "/6crm/" }}{{ $pKlas = "6CRM" }}{{ end }}
+        {{ end }}
+        {{ $pVak := lower (.Params.vak | default "") }}
+        {{ if eq $pVak "web" }}{{ $pVak = "web-story" }}{{ end }}
+        {{ $pThema := trim (.Params.thema | default "") " " }}
+        {{ $pJaar := .Params.schooljaar | default "" }}
+
+        {{ if and (eq $pKlas $klas) (eq $pVak $vakKey) (eq (lower $pThema) (lower $thema)) (or (eq $schooljaar "") (eq $pJaar $schooljaar)) }}
+          {{ $slug := .File.ContentBaseName | default .Slug | default "opdracht" }}
+          {{ $assignmentId := printf "%s-%s" (lower $klas) $slug }}
+          {{ $rubriekKey := printf "rubriek-%s" $assignmentId }}
+          {{ $rubriekData := index site.Data $rubriekKey }}
+
+          {{ if and $rubriekData $rubriekData.submissions }}
+            {{ $orderedSubs := slice }}
+            {{ $seenIds := slice }}
+
+            {{/* Respecteer de indieningsvolgorde uit frontmatter */}}
+            {{ with .Params.indieningen }}
+              {{ range . }}
+                {{ $sid := .id }}
+                {{ with index $rubriekData.submissions $sid }}
+                  {{ $orderedSubs = $orderedSubs | append . }}
+                  {{ $seenIds = $seenIds | append $sid }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+
+            {{/* Eventuele extra indieningen in JSON die niet in frontmatter stonden */}}
+            {{ range $sid, $sub := $rubriekData.submissions }}
+              {{ if not (in $seenIds $sid) }}
+                {{ $orderedSubs = $orderedSubs | append $sub }}
+              {{ end }}
+            {{ end }}
+
+            {{ $puntenUrl := "" }}
+            {{ with .OutputFormats.Get "Puntenverdeling" }}
+              {{ $puntenUrl = .RelPermalink }}
+            {{ end }}
+
+            {{ $vakLabel := index site.Params.sectionNames $vakKey | default ($vakKey | title) }}
+            {{ $assignments = $assignments | append (dict
+              "id" $assignmentId
+              "slug" $slug
+              "title" .Title
+              "vak" $vakKey
+              "vakLabel" $vakLabel
+              "permalink" .RelPermalink
+              "puntenverdelingUrl" $puntenUrl
+              "submissions" $orderedSubs
+            ) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $encData := index site.Data "leerlingen_enc" | default (index site.Data "leerlingen.enc") | default dict }}
+
+  <article data-thema-overzicht data-klas="{{ $klas }}" data-thema="{{ $thema }}">
+    <div data-overzicht-balk>
+      <div>
+        <h1 id="overzicht-heading">{{ $klas }} · {{ $thema }}</h1>
+        <span id="overzicht-total" hidden></span>
+      </div>
+      <div>
+        <select id="overzicht-student-select" aria-label="Kies leerling"></select>
+        <label>
+          <input type="checkbox" id="overzicht-only-final">
+          <span>Enkel opleveringen</span>
+        </label>
+        <div role="group" aria-label="Navigeer tussen leerlingen">
+          <button type="button" id="overzicht-prev" title="Vorige leerling (←)">←</button>
+          <button type="button" id="overzicht-next" title="Volgende leerling (→)">→</button>
+        </div>
+        <button type="button" id="overzicht-print" title="Pagina afdrukken">Afdrukken</button>
+      </div>
+    </div>
+
+    <div id="overzicht-content">
+      <p>Gegevens laden…</p>
+    </div>
+  </article>
+
+  <script id="thema-encrypted-students" type="application/json">
+    {{ $encData | jsonify | safeJS }}
+  </script>
+  <script id="thema-assignments-data" type="application/json">
+    {{ $assignments | jsonify | safeJS }}
+  </script>
+
+  {{- with resources.Get "css/thema-overzicht.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?v={{ now.Unix }}">
+  {{- end }}
+  {{- with resources.Get "js/thema-overzicht.js" }}
+    <script src="{{ .RelPermalink }}?v={{ now.Unix }}" defer></script>
+  {{- end }}
+{{ else }}
+  <article data-thema-overzicht>
+    <h1>{{ $klas }} · {{ $thema }}</h1>
+    <p>Dit presentatie-overzicht is enkel lokaal beschikbaar voor de leerkracht.</p>
+  </article>
+{{ end }}
+{{ end }}

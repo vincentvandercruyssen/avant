@@ -1,0 +1,120 @@
+{
+  "source": "Avant Presentatie-evaluatie",
+  "version": "1.0.0",
+  "id": "presentatie-5crm-kinetic",
+  "classGroup": "5CRM",
+  "thema": "Kinetic",
+  "date": "2026-11-24",
+  "maxScore": 3,
+  "criteria": [
+    {
+      "cluster": "4.2 Design & lay-out",
+      "code": "CRS29",
+      "label": "Presenteren"
+    },
+    {
+      "cluster": "4.4 Release & presentatie",
+      "code": "13.08",
+      "label": "Vaktaal"
+    },
+    {
+      "cluster": "4.5 Kwaliteit & context",
+      "code": "13.05",
+      "label": "Leerproces"
+    }
+  ],
+  "lastUpdated": "2026-11-24T16:38:56.229+01:00",
+  "evaluations": {
+    "8ab009875a": {
+      "absent": false,
+      "scores": {
+        "13.08": 1.5,
+        "CRS29": 1.5,
+        "13.05": 2
+      },
+      "feedback": "Je stemgebruik en ritme zitten goed tijdens het presenteren. Inhoudelijk blijf je wel te vaak bij een opsomming en controleer vooraf of je presentatie volledig is. Zet geen doorlopende tekst op je slides en zeker niet volledig in kapitalen, en kijk je teksten na op spelfouten (\"disectie\"). Met een strakkere tekstkeuze en minder opsomming wordt je presentatie een stuk overtuigender."
+    },
+    "8ec556f315": {
+      "absent": false,
+      "scores": {
+        "13.08": 2,
+        "CRS29": 2,
+        "13.05": 1.5
+      },
+      "feedback": "Goed dat je jezelf bij de start voorstelt en meteen aangeeft wat we te zien krijgen. Geef je voorbeelden wat meer ruimte op je slides en toon een spread ook eens volledig op het scherm. Zet je video's best in lus zodat het werk rustig blijft doorlopen tijdens je uitleg. Let op teksten op de slides zoals \"Sample text\". Verder een verzorgde presentatie."
+    },
+    "d61daca6ab": {
+      "absent": false,
+      "scores": {
+        "13.08": 3,
+        "CRS29": 2,
+        "13.05": 2.5
+      },
+      "feedback": "Je hebt een heldere presentatievorm en geeft een duidelijke uitleg, vooral over de gebruikte technieken. Het waarom achter bepaalde keuzes mag af en toe nog wat meer naar voren komen. Werk je in Canva, exporteer een spread dan best als pdf (text outlines) of jpg, zo zal de typografie nog steeds correct vertoond worden. Een slordige storyboardschets laat je beter weg uit je slides. Verder sterk gepresenteerd."
+    },
+    "539ecc3e56": {
+      "absent": false,
+      "scores": {
+        "13.08": 2,
+        "CRS29": 2,
+        "13.05": 1.5
+      },
+      "feedback": "Het werkt goed dat je video's blijven loopen tijdens je uitleg, en de manier waarop je toelicht hoe je dingen aanpakt is interessant om te volgen. Wees eerlijk over je proces, maar ook trots op wat je gemaakt hebt, en toon je afgewerkte werk groter op je slides. Let op je woordkeuze tijdens het presenteren: vermijd te informele of twijfelende uitspraken zoals \"ik wist niet echt iets beter\" of \"haten\" en gebruik bewust vaktaal. Verder een vlotte presentatie met een goede basis."
+    },
+    "7b34d9351e": {
+      "absent": false,
+      "scores": {
+        "13.08": 1.5,
+        "CRS29": 2,
+        "13.05": 1
+      },
+      "feedback": "Begin je presentatie met een korte voorstelling van jezelf en wat je gaat tonen. Je uitleg blijft nu te vaak opsommend en oppervlakkig, waardoor het 'waarom' achter je keuzes meestal ontbreekt. Let bij de opmaak van je slides op de verhoudingen van je beeldmateriaal: druk geen foto's plat. Een onderzoek breed aanhalen is pas interessant als het heel duidelijk is waarom dat dan zo belangrijk was voor je proces. De presentatievorm zit verder op het juiste spoor, maar inhoudelijk mag je je proces gerichter duiden."
+    },
+    "c8424a486b": {
+      "absent": false,
+      "scores": {
+        "13.08": 1.5,
+        "CRS29": 2,
+        "13.05": 1
+      },
+      "feedback": "Je bent goed voorbereid aan je presentatie begonnen. Zet je eigen werk op de slides wel wat groter zodat de details beter leesbaar zijn. Het 3D-effect op je presentatiebeelden werkt niet overal even goed, al past het wel bij de geanimeerde poster. Bij Motion ontbreekt het waarom achter je keuzes nog vaak, en let op spelfouten in je vaktermen (\"repitition\"). Verder een degelijke basis."
+    },
+    "dc2916b34a": {
+      "absent": true,
+      "scores": {},
+      "feedback": ""
+    },
+    "60c8618064": {
+      "absent": true,
+      "scores": {},
+      "feedback": ""
+    },
+    "9a8226cc52": {
+      "absent": false,
+      "scores": {
+        "13.08": 1,
+        "CRS29": 2,
+        "13.05": 1.5
+      },
+      "feedback": "Je uitleg blijft vaak te vaag (\"van alles gedaan eigenlijk\") en het waarom achter je keuzes is niet altijd duidelijk. Gebruik gerichte vaktaal om te benoemen wat je precies gedaan hebt en let op woord- en spelfouten in je slides (\"Biografiek\"). Zorg dat je een foute interpretatie van een opdracht niet benoemt, zoals de vereiste van meerdere lettertypes bij de opdracht Quicktype (dit was namelijk geen vereiste). De basis van je presentatie staat er, maar inhoudelijk en taalkundig mag het een stuk scherper."
+    },
+    "0b2d4d6f3a": {
+      "absent": false,
+      "scores": {
+        "13.08": 2,
+        "CRS29": 2,
+        "13.05": 2
+      },
+      "feedback": "Voorzie een korte inleiding aan het begin van je presentatie zodat je publiek meteen mee is. Je uitleg vervalt nu soms in een opsomming met herhalingen (\"dit is...\", \"euh\"), waardoor de rode draad wat wegvalt. Het loont vooral om je onderzoek te bespreken wanneer je ook toont hoe je dat concreet hebt doorgetrokken in je uitwerking. Verder een zeer degelijke presentatie."
+    },
+    "bcfe83d392": {
+      "absent": false,
+      "scores": {
+        "13.08": 1,
+        "CRS29": 2,
+        "13.05": 1.5
+      },
+      "feedback": "Je presentatie heeft een toffe grafische stijl. Inhoudelijk blijf je echter te veel opsommen en leg je je onderzoek nodeloos volledig uit in plaats van de kern eruit te halen. Ook je keuzes blijven te vaag (\"gewoon de 4 elementen\"): benoem duidelijk waarom je iets op een bepaalde manier hebt aangepakt en gebruik daarbij gepaste vaktaal. Vormelijk zit je presentatie goed, inhoudelijk mag ze scherper onderbouwd worden."
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{{ define "title" }}{{ .Params.klas | default "5CRM" }} · {{ .Title }}{{ end }}
+
+{{ define "header" }}
+<div class="fixed">
+  <h1>
+    <span class="vaknaam">{{ .Params.klas | default "5CRM" }}{{ with .Params.schooljaar }} · {{ . }}{{ end }}</span>
+    <span class="opdrachtnaam">{{ .Title }}</span>
+  </h1>
+  <a href="{{ "" | relURL }}" class="terug-link">← Terug naar start</a>
+  {{ with .Params.overzicht_url }}
+  <a href="{{ strings.TrimPrefix "/" . | relURL }}" class="terug-link">← Thema-overzicht</a>
+  {{ end }}
+  {{ if eq hugo.Environment "development" }}
+  <nav id="PresentatieNav" aria-label="Leerlingen"></nav>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ define "main" }}
+{{ $klas := upper (.Params.klas | default "5CRM") }}
+{{ $thema := .Params.thema | default .Title }}
+{{ $datum := .Params.datum | default "" }}
+{{ $datafile := .Params.datafile | default (printf "presentatie-%s-%s" (lower $klas) (urlize $thema)) }}
+{{ $maxScore := .Params.max_score | default 3 }}
+{{ $criteria := .Params.criteria | default slice }}
+{{ $savedData := index site.Data $datafile | default dict }}
+{{ $encData := index site.Data "leerlingen_enc" | default (index site.Data "leerlingen.enc") | default dict }}
+
+{{ if eq hugo.Environment "development" }}
+  <article data-presentatie-eval
+           data-klas="{{ $klas }}"
+           data-thema="{{ $thema }}"
+           data-datum="{{ $datum }}"
+           data-datafile="{{ $datafile }}"
+           data-max-score="{{ $maxScore }}">
+
+    <div data-presentatie-balk>
+      <div>
+        <h1>{{ $klas }} · {{ .Title }}</h1>
+        <p data-meta-lijn>
+          {{- with $datum }}<span>{{ replaceRE "^(\\d{4})-(\\d{2})-(\\d{2})$" "$3/$2/$1" . }}</span>{{ end -}}
+          <span id="presentatie-save-status" data-status="connecting">Lokaal verbinden…</span>
+        </p>
+      </div>
+      <div>
+        <div role="tablist" aria-label="Weergave">
+          <button type="button" role="tab" id="tab-editor" aria-selected="true" data-view-tab="editor">Punten &amp; feedback</button>
+          <button type="button" role="tab" id="tab-tabel" aria-selected="false" data-view-tab="tabel">Tabel voor Emelie</button>
+        </div>
+        <div role="group" aria-label="Exporteren voor collega">
+          <button type="button" id="btn-copy-table" data-primary>Kopieer tabel</button>
+          <button type="button" id="btn-download-csv">Download CSV</button>
+          <button type="button" id="btn-print-table">Afdrukken</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="presentatie-feedback-melding" role="status" aria-live="polite" hidden></p>
+
+    <section data-view-panel="editor" id="panel-editor">
+      <p>Gegevens laden…</p>
+    </section>
+
+    <section data-view-panel="tabel" id="panel-tabel" hidden>
+      <div data-tabel-opties>
+        <div>
+          <label>
+            <input type="checkbox" id="opt-show-absent" checked>
+            <span>Afwezigen tonen</span>
+          </label>
+          <label>
+            <input type="checkbox" id="opt-show-avg">
+            <span>Gemiddelde tonen</span>
+          </label>
+          <label>
+            <input type="checkbox" id="opt-first-name" checked>
+            <span>Enkel voornaam</span>
+          </label>
+        </div>
+        <small>Plak de gekopieerde tabel rechtstreeks in Word, Mail, Smartschool, Excel of Google Sheets.</small>
+      </div>
+      <div data-scroll-table id="tabel-container"></div>
+    </section>
+  </article>
+
+  <script id="presentatie-encrypted-students" type="application/json">
+    {{ $encData | jsonify | safeJS }}
+  </script>
+  <script id="presentatie-criteria-data" type="application/json">
+    {{ $criteria | jsonify | safeJS }}
+  </script>
+  <script id="presentatie-saved-data" type="application/json">
+    {{ $savedData | jsonify | safeJS }}
+  </script>
+
+  {{- with resources.Get "css/presentatie-evaluatie.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?v={{ now.Unix }}">
+  {{- end }}
+  {{- with resources.Get "js/presentatie-evaluatie.js" }}
+    <script src="{{ .RelPermalink }}?v={{ now.Unix }}" defer></script>
+  {{- end }}
+{{ else }}
+  <article data-presentatie-eval>
+    <h1>{{ $klas }} · {{ .Title }}</h1>
+    <p>Deze evaluatiepagina is enkel lokaal beschikbaar voor de leerkracht.</p>
+  </article>
+{{ end }}
+{{ end }}

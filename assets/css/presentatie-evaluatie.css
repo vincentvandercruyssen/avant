@@ -1,0 +1,592 @@
+/* Presentatie-evaluatie: drie punten, bakjes feedback en exporttabel voor collega */
+
+:root {
+  --lvl-0: #dc2626;
+  --lvl-1: #b45309;
+  --lvl-2: #15803d;
+  --lvl-3: #1d4ed8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lvl-0: #f87171;
+    --lvl-1: #fbbf24;
+    --lvl-2: #4ade80;
+    --lvl-3: #60a5fa;
+  }
+}
+
+:root:has(#theme [value="☀️"]:checked) {
+  --lvl-0: #dc2626;
+  --lvl-1: #b45309;
+  --lvl-2: #15803d;
+  --lvl-3: #1d4ed8;
+}
+
+:root:has(#theme [value="🌙"]:checked) {
+  --lvl-0: #f87171;
+  --lvl-1: #fbbf24;
+  --lvl-2: #4ade80;
+  --lvl-3: #60a5fa;
+}
+
+/* Zijbalk navigatie */
+header nav#PresentatieNav {
+  margin-top: 0.75rem;
+  overflow-y: auto;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+header nav#PresentatieNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav#PresentatieNav ul + ul {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--text) 14%, transparent);
+}
+
+header nav#PresentatieNav li {
+  margin: 0;
+}
+
+header nav#PresentatieNav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.28rem 0.45rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--text) 80%, transparent);
+  border-left: 2px solid transparent;
+  text-decoration: none;
+}
+
+header nav#PresentatieNav a:hover {
+  color: var(--anchor);
+  background: color-mix(in srgb, var(--text) 5%, transparent);
+}
+
+header nav#PresentatieNav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 700;
+  border-left-color: var(--anchor);
+  background: color-mix(in srgb, var(--anchor) 10%, transparent);
+}
+
+header nav#PresentatieNav a > span:first-child {
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header nav#PresentatieNav a > strong {
+  flex: 0 0 auto;
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums;
+}
+
+header nav#PresentatieNav a[data-absent="true"] {
+  opacity: 0.6;
+}
+
+/* Hoofdcontainer */
+[data-presentatie-eval] {
+  width: 100%;
+  padding-bottom: 3.5rem;
+}
+
+[data-presentatie-eval] :is(h1, h2, h3, h4)::before,
+[data-presentatie-eval] ul > li::before {
+  content: none;
+  counter-increment: none;
+}
+
+/* Kleurniveaus */
+[data-level="0"] {
+  color: var(--lvl-0);
+}
+
+[data-level="1"] {
+  color: var(--lvl-1);
+}
+
+[data-level="2"] {
+  color: var(--lvl-2);
+}
+
+[data-level="3"] {
+  color: var(--lvl-3);
+}
+
+/* Bovenbalk */
+[data-presentatie-eval] > [data-presentatie-balk] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.85rem 1.25rem;
+  padding: 0 0 0.85rem 0;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 18%, transparent);
+}
+
+[data-presentatie-eval] > [data-presentatie-balk] h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+[data-presentatie-eval] > [data-presentatie-balk] [data-meta-lijn] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.3rem 0 0 0;
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+}
+
+[data-presentatie-eval] > [data-presentatie-balk] #presentatie-save-status[data-status="saved"] {
+  color: var(--lvl-2);
+}
+
+[data-presentatie-eval] > [data-presentatie-balk] #presentatie-save-status[data-status="saving"] {
+  color: var(--lvl-1);
+}
+
+[data-presentatie-eval] > [data-presentatie-balk] #presentatie-save-status[data-status="offline"] {
+  color: var(--lvl-0);
+}
+
+[data-presentatie-eval] > [data-presentatie-balk] > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.82rem;
+}
+
+[data-presentatie-eval] > [data-presentatie-balk] [role="tablist"],
+[data-presentatie-eval] > [data-presentatie-balk] [role="group"] {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+[data-presentatie-eval] button {
+  font: inherit;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--text) 22%, transparent);
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+  line-height: 1.35;
+}
+
+[data-presentatie-eval] button:hover:not(:disabled) {
+  border-color: var(--anchor);
+  color: var(--anchor);
+}
+
+[data-presentatie-eval] button[aria-selected="true"] {
+  border-color: var(--anchor);
+  background: color-mix(in srgb, var(--anchor) 12%, transparent);
+  color: var(--text);
+  font-weight: 700;
+}
+
+[data-presentatie-eval] button[data-primary] {
+  border-color: var(--anchor);
+  background: var(--anchor);
+  color: var(--bgcolor);
+  font-weight: 600;
+}
+
+[data-presentatie-eval] button[data-primary]:hover {
+  opacity: 0.9;
+  color: var(--bgcolor);
+}
+
+[data-presentatie-eval] > #presentatie-feedback-melding {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  border-left: 3px solid var(--lvl-2);
+  background: color-mix(in srgb, var(--lvl-2) 8%, transparent);
+  color: var(--text);
+}
+
+/* Leerlingkaarten (Invoer & feedback) */
+[data-presentatie-eval] section[data-view-panel="editor"] {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+[data-presentatie-eval] article[data-leerling-kaart] {
+  padding: 0.95rem 1.05rem;
+  border: 1px solid color-mix(in srgb, var(--text) 16%, transparent);
+  border-left: 3px solid color-mix(in srgb, var(--text) 28%, transparent);
+  background: color-mix(in srgb, var(--text) 2%, transparent);
+  scroll-margin-top: 1.25rem;
+}
+
+[data-presentatie-eval] article[data-leerling-kaart][data-level="0"] {
+  border-left-color: var(--lvl-0);
+}
+
+[data-presentatie-eval] article[data-leerling-kaart][data-level="1"] {
+  border-left-color: var(--lvl-1);
+}
+
+[data-presentatie-eval] article[data-leerling-kaart][data-level="2"] {
+  border-left-color: var(--lvl-2);
+}
+
+[data-presentatie-eval] article[data-leerling-kaart][data-level="3"] {
+  border-left-color: var(--lvl-3);
+}
+
+[data-presentatie-eval] article[data-leerling-kaart][data-absent="true"] {
+  opacity: 0.7;
+  border-left-style: dashed;
+}
+
+[data-presentatie-eval] article[data-leerling-kaart] > header {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+
+[data-presentatie-eval] article[data-leerling-kaart] > header h2 {
+  font-size: 1.08rem;
+  line-height: 1.25;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+}
+
+[data-presentatie-eval] article[data-leerling-kaart] > header h2 small {
+  font-size: 0.76rem;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--text) 52%, transparent);
+  font-variant-numeric: tabular-nums;
+}
+
+[data-presentatie-eval] article[data-leerling-kaart] > header > div {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: 0.84rem;
+}
+
+[data-presentatie-eval] article[data-leerling-kaart] > header strong {
+  font-variant-numeric: tabular-nums;
+}
+
+[data-presentatie-eval] article[data-leerling-kaart] > header label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  user-select: none;
+  color: color-mix(in srgb, var(--text) 72%, transparent);
+}
+
+[data-presentatie-eval] article[data-leerling-kaart] > header label span {
+  color: inherit;
+}
+
+[data-presentatie-eval] input[type="checkbox"] {
+  accent-color: var(--anchor);
+  cursor: pointer;
+}
+
+/* Drie punten */
+[data-presentatie-eval] [data-scores-grid] {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+[data-presentatie-eval] [data-score-veld] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--text) 14%, transparent);
+  background: var(--bgcolor);
+}
+
+[data-presentatie-eval] [data-score-veld] > label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+  cursor: pointer;
+}
+
+[data-presentatie-eval] [data-score-veld] > label strong {
+  font-size: 0.84rem;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+[data-presentatie-eval] [data-score-veld] > label span {
+  font-size: 0.74rem;
+  line-height: 1.2;
+  color: color-mix(in srgb, var(--text) 58%, transparent);
+}
+
+[data-presentatie-eval] [data-score-veld] > div {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  flex: 0 0 auto;
+}
+
+[data-presentatie-eval] [data-score-veld] input[type="number"] {
+  width: 3.9rem;
+  padding: 0.25rem 0.4rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--text) 24%, transparent);
+}
+
+[data-presentatie-eval] [data-score-veld] input[type="number"]:focus {
+  outline: none;
+  border-color: var(--anchor);
+}
+
+[data-presentatie-eval] [data-score-veld] input[type="number"][data-level="0"] {
+  color: var(--lvl-0);
+}
+
+[data-presentatie-eval] [data-score-veld] input[type="number"][data-level="1"] {
+  color: var(--lvl-1);
+}
+
+[data-presentatie-eval] [data-score-veld] input[type="number"][data-level="2"] {
+  color: var(--lvl-2);
+}
+
+[data-presentatie-eval] [data-score-veld] input[type="number"][data-level="3"] {
+  color: var(--lvl-3);
+}
+
+[data-presentatie-eval] [data-score-veld] > div > span {
+  font-size: 0.78rem;
+  color: color-mix(in srgb, var(--text) 52%, transparent);
+}
+
+/* Bakje feedback */
+[data-presentatie-eval] [data-feedback-veld] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+[data-presentatie-eval] [data-feedback-veld] > label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--text) 58%, transparent);
+}
+
+[data-presentatie-eval] [data-feedback-veld] textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 4.5rem;
+  field-sizing: content;
+  padding: 0.55rem 0.65rem;
+  font: inherit;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bgcolor);
+  border: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
+  resize: vertical;
+}
+
+[data-presentatie-eval] [data-feedback-veld] textarea:focus {
+  outline: none;
+  border-color: var(--anchor);
+}
+
+/* Tabelweergave voor Emelie */
+[data-presentatie-eval] [data-tabel-opties] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem 1.25rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.82rem;
+}
+
+[data-presentatie-eval] [data-tabel-opties] > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+[data-presentatie-eval] [data-tabel-opties] label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  user-select: none;
+  color: color-mix(in srgb, var(--text) 80%, transparent);
+}
+
+[data-presentatie-eval] [data-tabel-opties] label span {
+  color: inherit;
+}
+
+[data-presentatie-eval] [data-tabel-opties] small {
+  color: color-mix(in srgb, var(--text) 56%, transparent);
+}
+
+[data-presentatie-eval] [data-scroll-table] {
+  overflow-x: auto;
+}
+
+[data-presentatie-eval] table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+}
+
+[data-presentatie-eval] th,
+[data-presentatie-eval] td {
+  padding: 0.5rem 0.55rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 14%, transparent);
+  vertical-align: top;
+  text-align: left;
+}
+
+[data-presentatie-eval] thead th {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: color-mix(in srgb, var(--text) 65%, transparent);
+  border-bottom: 2px solid color-mix(in srgb, var(--text) 28%, transparent);
+  white-space: nowrap;
+}
+
+[data-presentatie-eval] thead th small {
+  display: block;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.8;
+}
+
+[data-presentatie-eval] th[data-num],
+[data-presentatie-eval] td[data-num] {
+  text-align: right;
+  white-space: nowrap;
+}
+
+[data-presentatie-eval] td[data-naam] {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+[data-presentatie-eval] td[data-feedback-cel] {
+  line-height: 1.48;
+  min-width: 24rem;
+}
+
+[data-presentatie-eval] tr[data-absent="true"] td {
+  color: color-mix(in srgb, var(--text) 48%, transparent);
+  font-style: italic;
+}
+
+[data-presentatie-eval] tfoot td {
+  border-top: 2px solid color-mix(in srgb, var(--text) 26%, transparent);
+  border-bottom: none;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  [data-presentatie-eval] [data-scores-grid] {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Afdrukweergave: print altijd de compacte tabel voor Emelie */
+@media print {
+  body {
+    display: block;
+    max-width: none;
+    background: #fff;
+    color: #111;
+  }
+
+  body::after,
+  header,
+  #theme,
+  footer,
+  [data-presentatie-eval] > [data-presentatie-balk] > div:last-child,
+  [data-presentatie-eval] > [data-presentatie-balk] #presentatie-save-status,
+  [data-presentatie-eval] > #presentatie-feedback-melding,
+  [data-presentatie-eval] section[data-view-panel="editor"],
+  [data-presentatie-eval] [data-tabel-opties] {
+    display: none !important;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  [data-presentatie-eval] section[data-view-panel="tabel"] {
+    display: block !important;
+  }
+
+  [data-presentatie-eval] table {
+    font-size: 9.5pt;
+  }
+
+  [data-presentatie-eval] th,
+  [data-presentatie-eval] td {
+    border: 1px solid #cbd5e1;
+    color: #111 !important;
+    padding: 0.35rem 0.45rem;
+  }
+
+  [data-presentatie-eval] tr {
+    break-inside: avoid;
+  }
+}

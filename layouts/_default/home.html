@@ -8,7 +8,7 @@
   {{/* Zijbalk navigatie: alle opdrachten per jaar en per klas/vak, gesorteerd op datum */}}
   {{ $allAssignmentPages := slice }}
   {{ range site.RegularPages }}
-    {{ if and (not (in .RelPermalink "/cursus/")) (not (in .RelPermalink "/cursussen/")) (not (in .RelPermalink "/doelen/")) (not (in .RelPermalink "/doelstellingen/")) }}
+    {{ if and (not (in .RelPermalink "/cursus/")) (not (in .RelPermalink "/cursussen/")) (not (in .RelPermalink "/doelen/")) (not (in .RelPermalink "/doelstellingen/")) (not (in .RelPermalink "/overzicht/")) }}
       {{ $allAssignmentPages = $allAssignmentPages | append . }}
     {{ end }}
   {{ end }}
@@ -118,6 +118,22 @@
           </div>
         {{ end }}
       </div>
+    {{ end }}
+
+    {{ if eq hugo.Environment "development" }}
+      {{ $overzichtSection := .Site.GetPage "section" "overzicht" }}
+      {{ if and $overzichtSection (gt (len $overzichtSection.RegularPages) 0) }}
+        <div>
+          <h2>Presentatie-overzichten</h2>
+          <ul>
+            {{ range sort $overzichtSection.RegularPages "Title" "asc" }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ with .Params.klas }}{{ . }} · {{ end }}{{ .Title | default .Params.thema }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
     {{ end }}
   </nav>
 </div>
@@ -239,7 +255,7 @@
 
 {{/* 1. Opdrachten (Schooljaren) */}}
 {{ range .Site.Sections.ByTitle.Reverse }}
-{{ if and (ne .Section "cursus") (ne .Section "cursussen") (ne .Section "doelen") (ne .Section "doelstellingen") }}
+{{ if and (ne .Section "cursus") (ne .Section "cursussen") (ne .Section "doelen") (ne .Section "doelstellingen") (ne .Section "overzicht") }}
 <section>
   {{ $yearPages := .RegularPagesRecursive }}
   {{ $year := .Title | default .Section }}
@@ -414,6 +430,25 @@
     </div>
   </div>
 </section>
+{{ end }}
+
+{{ if eq hugo.Environment "development" }}
+{{ $overzichtSection := .Site.GetPage "section" "overzicht" }}
+{{ if and $overzichtSection (gt (len $overzichtSection.RegularPages) 0) }}
+<section>
+  <h2>Presentatie-overzichten</h2>
+  <div>
+    <h3>Punten &amp; feedback per thema</h3>
+    <div class="kolommen">
+      {{ range sort $overzichtSection.RegularPages "Title" "asc" }}
+      <div>
+        <a href="{{ .RelPermalink }}">{{ with .Params.klas }}{{ . }} · {{ end }}{{ .Title | default .Params.thema }}</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 {{ end }}
 
 {{ end }}
