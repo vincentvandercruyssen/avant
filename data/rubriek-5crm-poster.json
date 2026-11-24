@@ -1,0 +1,424 @@
+{
+  "source": "Avant Local Grading System",
+  "version": "2.2.0",
+  "assignmentId": "5crm-poster",
+  "classGroup": "5CRM",
+  "lastUpdated": "2026-11-24T12:15:00.000+01:00",
+  "submissions": {
+    "oplevering": {
+      "id": "oplevering",
+      "title": "Poster 3 Oplevering",
+      "deadline": "13/11",
+      "weight": 15,
+      "criteriaWeights": {
+        "CRS01": 1,
+        "CRS02": 1,
+        "CRS21": 1,
+        "CRS22": 1,
+        "CRS24": 1,
+        "CRS06": 1,
+        "CRS15": 1,
+        "CRS16": 2,
+        "CRS20": 1,
+        "CRS27": 1,
+        "CRS23": 1,
+        "GEC02": 1,
+        "CRS04": 1,
+        "GEC01": 1
+      },
+      "clusters": [
+        {
+          "id": "4.1",
+          "naam": "Analyse & workflow",
+          "criteria": [
+            {
+              "code": "CRS01",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "naam": "Design & lay-out",
+          "criteria": [
+            {
+              "code": "CRS21",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS22",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS24",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "naam": "Multimediaproductie",
+          "criteria": [
+            {
+              "code": "CRS06",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS15",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS16",
+              "gewicht": 2
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "naam": "Release & presentatie",
+          "criteria": [
+            {
+              "code": "CRS20",
+              "gewicht": 1
+            },
+            {
+              "code": "CRS27",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "naam": "Kwaliteit & context",
+          "criteria": [
+            {
+              "code": "CRS23",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC02",
+              "gewicht": 1
+            }
+          ]
+        },
+        {
+          "id": "4.6",
+          "naam": "Professionele competenties",
+          "criteria": [
+            {
+              "code": "CRS04",
+              "gewicht": 1
+            },
+            {
+              "code": "GEC01",
+              "gewicht": 1
+            }
+          ]
+        }
+      ],
+      "evaluations": {
+        "0b2d4d6f3a": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 0,
+            "CRS04": 1,
+            "CRS06": 2,
+            "CRS15": 2,
+            "CRS16": 2,
+            "CRS20": 1,
+            "CRS21": 2,
+            "CRS22": 2,
+            "CRS23": 1,
+            "CRS24": 3,
+            "CRS27": 0,
+            "GEC01": 2,
+            "GEC02": 1
+          },
+          "feedback": "Je affiche ziet er stijlvol en verzorgd uit: het kleurenpalet, de gelaagde typografie en de uitschuivende blokken zorgen voor een fijne grafische animatie. Je hebt je Illustrator-ontwerp grondig in veertig afzonderlijke lagen opgesplitst. De gevraagde technieken uit deze opdracht ontbreken echter volledig: alle bewegingen staan lineair zonder Easy Ease of Toggle Hold keyframes, en er is geen Motion Tile, geen Adjustment Layer en geen geanimeerde achtergrondkleur toegepast. Ook klopt de compositiegrootte niet (858 × 1208 px in plaats van 1240 × 1754 px) en sluit het eindframe niet terug aan op het rustige beginbeeld voor een naadloze loop. Bij het indienen liep er wat mis: je zipte enkel de exportsmap (zonder hoofdmap, assetsmap en .ai-bronbestand), het .aep-bestand zit mee in exports en je liet letterlijk VoornaamA_Poster staan met dubbele extensies (.mp4..mp4 en ..aep). Vormelijk een sterke basis, maar werk de gevraagde technieken en opleverafspraken veel zorgvuldiger uit.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 11.7,
+            "4.3": 10,
+            "4.4": 2.5,
+            "4.5": 5,
+            "4.6": 7.5
+          }
+        },
+        "539ecc3e56": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS15": 3,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS22": 3,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 3
+          },
+          "feedback": "Grafisch en technisch een sterke uitwerking. Je hebt alle gevraagde technieken doelgericht ingezet: Motion Tile met variaties in tegelverhouding en verschuiving, een geanimeerde Solid-achtergrond in kleuren uit je eigen palet en een strak stop-motionritme via Toggle Hold keyframes. De typografie en geometrische vormen blijven krachtig en samenhangend doorheen de volledige animatie, en je mappenstructuur zit volledig juist. Je leverde twee varianten in (XyliaK_poster en XyliaK_poster2): de eerste versie benut het volledige kader het sterkst, terwijl de tweede versie met de gekleurde rand ook een leuk experiment is. In de eerste versie sluit het eindframe nog niet helemaal terug aan op het beginframe voor een naadloze loop, en een enkele snelle Easy Ease-overgang naast de Hold-sprongen had nog extra ritmecontrast kunnen brengen. Kies bij een finale oplevering bij voorkeur één definitieve export in de exportsmap. Verder technisch en vormelijk knap gewerkt.",
+          "scores": {
+            "4.1": 15,
+            "4.2": 15,
+            "4.3": 15,
+            "4.4": 15,
+            "4.5": 12.5,
+            "4.6": 15
+          }
+        },
+        "60c8618064": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS15": 3,
+            "CRS16": 3,
+            "CRS20": 3,
+            "CRS21": 2,
+            "CRS22": 3,
+            "CRS23": 2,
+            "CRS24": 3,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Je hebt een energieke en speelse kinetische animatie neergezet waarin de technieken uit de opdracht sterk samenkomen. Motion Tile is zowel op de afzonderlijke lagen als overkoepelend ingezet, de achtergrondkleur van de Solid schakelt vlot mee binnen je kleurenpalet en de Toggle Hold keyframes zorgen voor een krachtig stop-motionritme. Ook je technische instellingen, precomp-opbouw en mappenstructuur zitten volledig juist (enkel het voorvoegsel Project- bij het .aep-bestand kon weg). Op enkele momenten in het midden en aan het einde drukt het tegeleffect de typografie wel erg sterk samen, waardoor de tekst wat moeilijker leesbaar wordt en het laatste frame nog niet terug aansluit op het beginbeeld voor een naadloze loop. Door dat effect iets korter te doseren en de Hold-sprongen af te wisselen met een snelle Easy Ease-beweging wint de animatie nog aan ademruimte en contrast. Verder technisch en vormelijk sterk gewerkt.",
+          "scores": {
+            "4.1": 15,
+            "4.2": 13.3,
+            "4.3": 15,
+            "4.4": 15,
+            "4.5": 10,
+            "4.6": 15
+          }
+        },
+        "7b34d9351e": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS06": 1,
+            "CRS15": 1,
+            "CRS16": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS22": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 1,
+            "GEC02": 0
+          },
+          "feedback": "Je ziparchief bevat enkel een .aep-bestand. Zowel de geëxporteerde video (.mp4), het Illustrator-bronbestand (.ai) als de gevraagde submappen voor assets en exports ontbreken, waardoor je eindresultaat niet beoordeeld kan worden. Daarnaast staan er zes losse foto's van een andere opdracht (kaarten en veren) in deze uploadzone. In het After Effects-project zelf staat de compositie op 1240 × 1754 px volledig leeg en werd er enkel met enkele basiskeyframes gewerkt op de ruwe Illustrator-lagen (1123 × 1588 px), zonder Motion Tile, Toggle Hold, Easy Ease of geanimeerde achtergrond. Werk de animatie volledig af, exporteer een .mp4 en dien het volledige projectpakket opnieuw in via de map \"Te laat\".",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 0,
+            "4.3": 2.5,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 2.5
+          }
+        },
+        "8ab009875a": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS15": 2,
+            "CRS16": 2,
+            "CRS20": 1,
+            "CRS21": 2,
+            "CRS22": 2,
+            "CRS23": 1,
+            "CRS24": 3,
+            "CRS27": 0,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Je poster oogt grafisch sterk en levendig, met een verzorgde opbouw en veel beweging tussen de verschillende typografische en geometrische lagen. Je hebt je Illustrator-lagen overzichtelijk opgesplitst en in After Effects met Easy Ease gewerkt. De gevraagde technieken uit de opdracht ontbreken echter: er is geen Motion Tile, geen Toggle Hold-ritme, geen Adjustment Layer en de achtergrondkleur beweegt niet mee. Je werkte ook in de standaard Illustrator-grootte (842 × 1190 px) en 8 seconden in plaats van 1240 × 1754 px en ongeveer 6 seconden, terwijl er wel een lege Comp 1 op het juiste formaat staat. Op de roze vormen staan bovendien rond de honderd keyframes voor een beweging die met enkele keyframes en Easy Ease veel strakker werkt. Het begin- en eindframe sluiten nog niet helemaal op elkaar aan voor een naadloze loop. Bij de oplevering ontbreken het ziparchief, de submappen voor assets en exports en het originele .ai-bestand, en kloppen de bestandsnamen niet. Vormelijk een fijne basis, maar volg de technische vereisten en opleverafspraken nauwkeuriger op.",
+          "scores": {
+            "4.1": 5,
+            "4.2": 11.7,
+            "4.3": 10,
+            "4.4": 2.5,
+            "4.5": 7.5,
+            "4.6": 10
+          }
+        },
+        "8ec556f315": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS06": 0,
+            "CRS15": 0,
+            "CRS16": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS22": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "Je hebt niets ingediend. Om dit onderdeel te remediëren, dien je het in via de map \"Te laat\".",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.3": 0,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "9a8226cc52": {
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 1,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS15": 2,
+            "CRS16": 1,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS22": 1,
+            "CRS23": 1,
+            "CRS24": 1,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 1
+          },
+          "feedback": "Je mappenstructuur, compositie-instellingen en de basisvormgeving van je affiche zitten goed. In de animatie ontbreken echter de voornaamste technieken uit de opdracht: er is geen Motion Tile, geen Toggle Hold-ritme en geen Adjustment Layer. Juist door het ontbreken van Motion Tile schuift je ontwerp geregeld volledig uit beeld, waardoor het scherm meerdere momenten zo goed als leeg blijft. De felblauwe en neongroene achtergrondkleuren botsen ook sterk met het kleurenpalet van je poster en verminderen het contrast met de groene vormen en fijne lijntekst; kleuren uit je eigen palet werken hier veel harmonieuzer. Op Layer 3 staan bovendien 135 lineaire positiekeyframes voor een schuifbeweging die met enkele keyframes en Motion Tile veel strakker en vlotter oogt. In de exportsmap zit enkel een GIF-bestand en ontbreekt de gevraagde MP4-export (NoahV_Poster.mp4). Een stevige posterbasis, maar de animatie en technieken vragen nog een grondige uitwerking.",
+          "scores": {
+            "4.1": 10,
+            "4.2": 6.7,
+            "4.3": 7.5,
+            "4.4": 10,
+            "4.5": 5,
+            "4.6": 12.5
+          }
+        },
+        "bcfe83d392": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS06": 0,
+            "CRS15": 0,
+            "CRS16": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS22": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "Je hebt niets ingediend. Om dit onderdeel te remediëren, dien je het in via de map \"Te laat\".",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.3": 0,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        },
+        "c8424a486b": {
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 1,
+            "CRS04": 1,
+            "CRS06": 2,
+            "CRS15": 2,
+            "CRS16": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS22": 2,
+            "CRS23": 1,
+            "CRS24": 2,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 2
+          },
+          "feedback": "Je hebt de tip rond vormlagen goed opgepikt: het omzetten van je Illustrator-lagen naar vormlagen en het laten opbouwen van de letters en geometrische vormen met Easy Ease geeft een verzorgde, vloeiende animatie. Goed ook dat je in je tweede versie een witte achtergrondlaag hebt toegevoegd, zodat de donkere export van je eerste poging werd opgelost. De kerntechnieken van deze opdracht ontbreken echter nog: er is geen Motion Tile, geen Toggle Hold-ritme, geen Adjustment Layer en geen geanimeerde Solid-achtergrondkleur. Je werkte ook op 842 × 1190 px in plaats van 1240 × 1754 px. Bovendien vullen het blauwe en oranje vlak het volledige eerste frame en schuift de compositie op het einde uit beeld, waardoor de loop niet netjes aansluit. Bij de oplevering heb je twee aparte .aep_AME-mappen gezipt in plaats van één nette projectmap: daardoor staat in de nieuwste zip enkel het tijdelijke tmpAEtoAMEProject-bestand in de exportsmap in plaats van een echt .aep-projectbestand in de hoofdmap, ontbreken de underscores in de mapnamen en zit in de andere zip nog een oud Quicktype-project. Verder een fijne animatiebasis die met de juiste technieken en een propere oplevering veel sterker wordt.",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 10,
+            "4.3": 10,
+            "4.4": 7.5,
+            "4.5": 7.5,
+            "4.6": 7.5
+          }
+        },
+        "d61daca6ab": {
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS06": 3,
+            "CRS15": 3,
+            "CRS16": 2,
+            "CRS20": 3,
+            "CRS21": 2,
+            "CRS22": 3,
+            "CRS23": 1,
+            "CRS24": 2,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Je hebt opnieuw een eigen, originele draai aan de opdracht gegeven. De sfeer met het golvende raster (Wave Warp), de textuur op je Adjustment Layer (Noise en Blur), de kleurverloopgolf over de achtergrond en de schokkerige rotaties met Toggle Hold keyframes werken grafisch en ritmisch sterk samen. De grijze typografie op de donkere achtergrond verliest wel wat leesbaarheid zodra de kleurgolf wegschuift en beweegt zelf niet mee. Daarnaast ontbreekt Motion Tile en de afwisseling met Easy Ease. Technisch zit je export te laag in resolutie: je werkte en renderde op 596 × 842 px (en 400 × 565 px voor de GIF) in plaats van 1240 × 1754 px, terwijl Comp 1 wel op het juiste formaat staat. Op het laatste frame blijft ook nog een klein stukje van de kleurgolf zichtbaar, waardoor de loop net niet helemaal aansluit. In je ziparchief zitten alle gevraagde bestanden netjes samen, inclusief GIF, maar heten de submappen Assets en Exports in plaats van 01_assets en 02_exports en zit het .aep-bestand in Exports in plaats van in de hoofdmap. Verder een creatieve en verzorgde uitwerking.",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 11.7,
+            "4.3": 12.5,
+            "4.4": 12.5,
+            "4.5": 7.5,
+            "4.6": 12.5
+          }
+        },
+        "dc2916b34a": {
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS04": 0,
+            "CRS06": 0,
+            "CRS15": 0,
+            "CRS16": 0,
+            "CRS20": 0,
+            "CRS21": 0,
+            "CRS22": 0,
+            "CRS23": 0,
+            "CRS24": 0,
+            "CRS27": 0,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "Je hebt niets ingediend. Om dit onderdeel te remediëren, dien je het in via de map \"Te laat\".",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.3": 0,
+            "4.4": 0,
+            "4.5": 0,
+            "4.6": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,33 +12,55 @@ software:
   - "Illustrator"
   - "After Effects"
   - "Media Encoder"
-leerplandoelen:
-  - code: "CRS01"
-    criterium: "Productievereisten, compositiegrootte (1240 × 1754 px, helft A4), framerate (30 fps) en tijdsduur (ongeveer 6 seconden) analyseren en toepassen."
-  - code: "CRS02"
-    criterium: "Doelgericht animatietechnieken selecteren: het samenspel tussen Toggle Hold keyframes en Easy Ease, Motion Tile op afzonderlijke lagen én een overkoepelende Adjustment Layer."
-  - code: "CRS04"
-    criterium: "Het After Effects-projectbestand (.aep), de geïmporteerde Illustrator-lagen en de projectmappen ordelijk en overzichtelijk beheren."
-  - code: "CRS06"
-    criterium: "Doelgericht werken met Adobe After Effects (Illustrator-compositie importeren, Solids, Adjustment Layers, Motion Tile, Toggle Hold en Easy Ease) en Adobe Media Encoder."
-  - code: "CRS15"
-    criterium: "Het gelaagde Illustrator-ontwerp (.ai) met logisch gescheiden lagen voor typografie, vormen en grid gestructureerd importeren als compositie met behoud van laaggroottes."
-  - code: "CRS16"
-    criterium: "Een energieke, naadloze 2D-loopanimatie van ongeveer 6 seconden met stop-motiongevoel realiseren door transformaties (Position, Rotation, Scale), Motion Tile en kleursprongen te combineren."
-  - code: "CRS20"
-    criterium: "De animatie vanuit Adobe Media Encoder exporteren als een vloeiende H.264 MP4-reel én een direct herhalende geanimeerde GIF."
-  - code: "CRS21"
-    criterium: "De typografische lagen van de poster ritmisch animeren met behoud van visuele hiërarchie, leesbaarheid en kinetische spanning."
-  - code: "CRS22"
-    criterium: "Geometrische vormen, geanimeerde achtergrondkleur (Solid), tegelherhalingen en stop-motionritme esthetisch en creatief op elkaar afstemmen tot een blitsende loop."
-  - code: "CRS23"
-    criterium: "De compositie en exports (.mp4 en .gif) controleren op scherpte, exacte resolutie (1240 × 1754 px), naadloze loop-overgang en vlotte afspeelbaarheid."
-  - code: "CRS24"
-    criterium: "Een dynamische maar evenwichtige vlakverdeling en een krachtig kleurcontrast behouden doorheen de volledige animatie."
-  - code: "CRS27"
-    criterium: "Het volledige projectpakket conform de gevraagde mappenstructuur (01_assets, 02_exports) en naamconventie (VoornaamA_Poster.zip) opleveren in de Smartschool-uploadzone."
-  - code: "GEC01"
-    criterium: "De deadline en inleverafspraken van de opdracht stipt naleven."
+indieningen:
+  - id: "oplevering"
+    titel: "Poster 3 Oplevering"
+    deadline: 2026-11-13
+    lesuren: 6
+    gewicht: 15
+    leerplandoelen:
+      - code: "CRS01"
+        gewicht: 1
+        criterium: "Productievereisten, compositiegrootte (1240 × 1754 px, helft A4), framerate (30 fps) en tijdsduur (ongeveer 6 seconden) analyseren en toepassen."
+      - code: "CRS02"
+        gewicht: 1
+        criterium: "Doelgericht animatietechnieken selecteren: het samenspel tussen Toggle Hold keyframes en Easy Ease, Motion Tile op afzonderlijke lagen én een overkoepelende Adjustment Layer."
+      - code: "CRS21"
+        gewicht: 1
+        criterium: "De typografische lagen van de poster ritmisch animeren met behoud van visuele hiërarchie, leesbaarheid en kinetische spanning."
+      - code: "CRS22"
+        gewicht: 1
+        criterium: "Geometrische vormen, geanimeerde achtergrondkleur (Solid), tegelherhalingen en stop-motionritme esthetisch en creatief op elkaar afstemmen tot een aantrekkelijke loop."
+      - code: "CRS24"
+        gewicht: 1
+        criterium: "Een dynamische maar evenwichtige vlakverdeling en een krachtig kleurcontrast behouden doorheen de volledige animatie."
+      - code: "CRS06"
+        gewicht: 1
+        criterium: "Doelgericht werken met Adobe After Effects (Illustrator-compositie importeren, Solids, Adjustment Layers, Motion Tile, Toggle Hold en Easy Ease) en Adobe Media Encoder."
+      - code: "CRS15"
+        gewicht: 1
+        criterium: "Het gelaagde Illustrator-ontwerp (.ai) met logisch gescheiden lagen voor typografie, vormen en grid gestructureerd importeren als compositie met behoud van laaggroottes."
+      - code: "CRS16"
+        gewicht: 2
+        criterium: "Een energieke, naadloze 2D-loopanimatie van ongeveer 6 seconden met stop-motiongevoel realiseren door transformaties (Position, Rotation, Scale), Motion Tile en kleursprongen te combineren."
+      - code: "CRS20"
+        gewicht: 1
+        criterium: "Het bronmateriaal (01_assets), het After Effects-project (.aep) en de video-export (H.264 MP4-reel, en eventueel GIF) volledig bundelen."
+      - code: "CRS27"
+        gewicht: 1
+        criterium: "Het volledige projectpakket conform de gevraagde mappenstructuur (01_assets, 02_exports) en naamconventie (VoornaamA_Poster.zip) opleveren in de Smartschool-uploadzone."
+      - code: "CRS23"
+        gewicht: 1
+        criterium: "De compositie en exports (.mp4 en eventueel .gif) controleren op scherpte, exacte resolutie (1240 × 1754 px), naadloze loop-overgang en vlotte afspeelbaarheid."
+      - code: "GEC02"
+        gewicht: 1
+        criterium: "Kwaliteitsbewust handelen met oog voor detailafwerking: ritmische timing, consistente vormgeving en een verzorgde eindpresentatie."
+      - code: "CRS04"
+        gewicht: 1
+        criterium: "Het After Effects-projectbestand (.aep), de geïmporteerde Illustrator-lagen en de projectmappen ordelijk en overzichtelijk beheren."
+      - code: "GEC01"
+        gewicht: 1
+        criterium: "De finale deadline en alle inleverafspraken van de opdracht stipt naleven."
 draft: false
 ---
 
