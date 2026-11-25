@@ -29,7 +29,7 @@ indieningen:
         gewicht: 1
         criterium: "De typografische lagen van de poster ritmisch animeren met behoud van visuele hiërarchie, leesbaarheid en kinetische spanning."
       - code: "CRS22"
-        gewicht: 1
+        gewicht: 2
         criterium: "Geometrische vormen, geanimeerde achtergrondkleur (Solid), tegelherhalingen en stop-motionritme esthetisch en creatief op elkaar afstemmen tot een aantrekkelijke loop."
       - code: "CRS24"
         gewicht: 1
