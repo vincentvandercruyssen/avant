@@ -17,7 +17,7 @@ software:
 indieningen:
   - id: "onderzoek"
     titel: "Collageanimatie 1.1 Onderzoek en animatieplan"
-    deadline: 2026-12-15
+    deadline: 2026-11-26
     lesuren: 2
     gewicht: 4
     leerplandoelen:

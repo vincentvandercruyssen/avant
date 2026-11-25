@@ -25,7 +25,7 @@
 * **15.02:** Een gekozen gedicht rond *Zwaartekracht* vertalen naar een originele visuele choreografie waarin objecten en texturen reageren op zwaartekracht.
 * **CRS24:** Voortbouwend op de compositieschets uit Beeld een overzichtelijk storyboard en shotlist uittekenen met voldoende ademruimte voor de zwevende typoloops op de mobiele expopagina.
 * **CRS04:** Het onderzoeksdocument en de referentieclips ordelijk bijhouden in `VoornaamA_Collage/01_onderzoek/` op de OneDrive-vakmap.
-* **GEC01:** De tussentijdse deadline (15/12/2026) en inleverafspraken voor het onderzoek stipt naleven.
+* **GEC01:** De tussentijdse deadline en inleverafspraken voor het onderzoek stipt naleven.
 
 ## Les 2 24/11/2026 (Motion)
 
@@ -47,3 +47,28 @@
 * **15.02:** Een gekozen gedicht rond *Zwaartekracht* vertalen naar een originele visuele choreografie waarin objecten en texturen reageren op zwaartekracht.
 * **CRS24:** Voortbouwend op de compositieschets uit Beeld een overzichtelijk storyboard en shotlist uittekenen met voldoende ademruimte voor de zwevende typoloops op de mobiele expopagina.
 * **CRS04:** Het onderzoeksdocument en de referentieclips ordelijk bijhouden in `VoornaamA_Collage/01_onderzoek/` op de OneDrive-vakmap.
+
+## Les 3 26/11/2026 (Motion)
+
+### Collageanimatie: Afwerken animatieplan
+
+### Lesverloop & inhoud
+1. **Referentiefragment cut-out animatie (Terry Gilliam):**
+   * Kort fragment bekijken uit [minidocu over Terry Gilliam](https://youtu.be/otV22Pe4yiM?t=183) als referentiepunt voor analoge cut-out- en collageanimatie.
+   * Koppeling naar de eigen opdracht: opbouw in losse papieren fragmenten, ritme, schaal- en zwaartekrachtovergangen en de vertaling naar een hedendaagse digitale collageanimatie.
+2. **Afwerken inspiratie & bevindingen:**
+   * Vervolledigen van de drie inspirerende cut-out of mixed-media collageanimaties met bevindingen rond dieptewerking, schaduwen en ritme.
+   * Vastleggen hoe die technieken worden ingezet in het eigen animatieplan.
+3. **Afwerken storyboard & shotlist:**
+   * Uitwerken van het storyboard op basis van de compositieschets uit `VoornaamA_Collage-Beeldplan.pdf`, met een naadloze overgang tussen eind- en beginframe en voldoende witruimte voor de zwevende typoloops.
+   * Vervolledigen van de shotlist met zwaartekrachtbeweging en timing per hoofdlaag.
+4. **Bundelen & indienen:**
+   * Samenbrengen van inspiratie, techniekanalyse, storyboard en shotlist in `VoornaamA_Collage-Onderzoek.pdf` in `VoornaamA_Collage/01_onderzoek/` op de OneDrive-vakmap en tijdig indienen via Smartschool.
+
+### Leerplandoelen
+* **13.01:** Drie inspirerende cut-out of mixed-media collageanimaties doelgericht verzamelen en analyseren.
+* **CRS02:** Doelgericht 2.5D-dieptetechnieken, schaduwwerking, framerateritme en textuuroverlays selecteren in functie van het animatieplan.
+* **15.02:** Een gekozen gedicht rond *Zwaartekracht* vertalen naar een originele visuele choreografie waarin objecten en texturen reageren op zwaartekracht.
+* **CRS24:** Voortbouwend op de compositieschets uit Beeld een overzichtelijk storyboard en shotlist uittekenen met voldoende ademruimte voor de zwevende typoloops op de mobiele expopagina.
+* **CRS04:** Het onderzoeksdocument en de referentieclips ordelijk bijhouden in `VoornaamA_Collage/01_onderzoek/` op de OneDrive-vakmap.
+* **GEC01:** De tussentijdse deadline en inleverafspraken voor het onderzoek stipt naleven.
