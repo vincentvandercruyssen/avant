@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "assignmentId": "5crm-receptenboek",
   "classGroup": "5CRM",
-  "lastUpdated": "2026-11-23T09:51:36.350+01:00",
+  "lastUpdated": "2026-11-26T13:59:26.768+01:00",
   "submissions": {
     "onderzoek": {
       "id": "onderzoek",
@@ -64,59 +64,180 @@
       ],
       "evaluations": {
         "0b2d4d6f3a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 3,
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS20": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je document is verzorgd opgebouwd rond de Italiaanse keuken, met een sterke inleiding en drie eigen websites die je overzichtelijk per site bespreekt. De beschrijvingen van lettertypes en kleuren mochten wel wat concreter. Bij de recepten ontbreken nog metadata zoals bereidingstijd en porties en korte teasers voor de startpagina, en bij het derde gerecht bleef telkens de knoptekst Markeer als gereed staan in de ingrediëntenlijst. Je bestandsnaam en tijdige pdf-indiening zijn in orde (een extra docx hoeft er niet bij), maar bewaar het document ook in OneDrive. Verder een goed vertrekpunt.",
+          "scores": {
+            "4.1": 5.3,
+            "4.4": 4,
+            "4.6": 4
+          }
         },
         "539ecc3e56": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 3,
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS20": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je onderzocht drie eigen culinaire websites grondig en inspecteerde zelfs de gebruikte lettertypes en lijsttypes in de broncode. Bij de vraag over receptkaarten beschrijf je eerder de detailpagina dan de overzichtskaart, en onder call-to-actions som je enkel sociale media op. Je eigen inhoud voor het visthema is volledig en verzorgd, met drie uitgewerkte recepten, bronnen en vier foto's die meteen netjes in je OneDrive-map zaten. Kijk enkel nog kleine kopieerfoutjes in de ingrediëntenlijst van het derde gerecht na. Sterk en grondig voorbereid.",
+          "scores": {
+            "4.1": 6,
+            "4.4": 6,
+            "4.6": 6
+          }
         },
         "60c8618064": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 2,
+            "CRS01": 2,
+            "CRS02": 1,
+            "CRS04": 3,
+            "CRS20": 2,
+            "GEC01": 0
+          },
+          "feedback": "Je werkte een duidelijk sushithema uit met drie complete recepten, foto's, metadata, genummerde stappen en bronnen, en bewaarde het bestand proper in OneDrive. Voor het websiteonderzoek gebruikte je de drie voorbeeldwebsites uit de opdracht in plaats van drie eigen bronnen en je voegde ze samen per vraag. In de receptteksten bleven enkele kopieerrestanten staan zoals verwijzingen naar een video en losse trefwoorden als inleiding bij Nigiri, en korte teasers voor de startpagina ontbreken nog. Het document werd pas vijf dagen na de deadline ingediend via Te laat. Houd deadlines nauwkeuriger in het oog.",
+          "scores": {
+            "4.1": 3.3,
+            "4.4": 4,
+            "4.6": 3
+          }
         },
         "7b34d9351e": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 2,
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS20": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je koos een leuk thema rond de Latijns-Amerikaanse keuken en besprak drie eigen websites aan de hand van de vijf vragen. De antwoorden blijven nog wat algemeen en missen geregeld leestekens. Bij de verzamelde inhoud ontbreken een introductieparagraaf en teasers voor de startpagina, bij twee recepten ontbreekt de metadata en de ingrediënten van Ropa Vieja bleven in het Engels staan. De bestandsnaam wijkt licht af van de afspraak en je leverde zowel een odt als een pdf in, terwijl het document niet in OneDrive stond. Verder een bruikbare basis om mee te starten.",
+          "scores": {
+            "4.1": 4,
+            "4.4": 4,
+            "4.6": 4
+          }
         },
         "8ab009875a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 2,
+            "CRS01": 2,
+            "CRS02": 1,
+            "CRS04": 3,
+            "CRS20": 1,
+            "GEC01": 2
+          },
+          "feedback": "Je koos een herkenbaar Surinaams thema en werkte de introductie en ingrediëntenlijsten met foto's proper uit. Voor het websiteonderzoek gebruikte je de drie voorbeeldwebsites uit de opdracht in plaats van drie eigen bronnen, en je nam de antwoorden samen in plaats van elke site apart te bespreken. Bij de drie recepten mankeren de bereidingsstappen en het aantal porties volledig, en ook de korte teasers voor de startpagina ontbreken nog. Je document stond netjes in OneDrive en was op tijd klaar, maar werd geüpload in de map voor wireframes in plaats van bij het onderzoek. Vul de ontbrekende bereidingsstappen aan zodat je alle inhoud klaar hebt voor je website.",
+          "scores": {
+            "4.1": 3.3,
+            "4.4": 2,
+            "4.6": 5
+          }
         },
         "8ec556f315": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 1,
+            "CRS01": 2,
+            "CRS02": 0,
+            "CRS04": 2,
+            "CRS20": 2,
+            "GEC01": 2
+          },
+          "feedback": "Je bundelde drie volledige recepten met ingrediënten, genummerde stappen, een warme introductie en foto's. Het eigenlijke onderzoek naar drie concrete culinaire websites ontbreekt echter: het eerste deel bestaat uit algemene ontwerprichtlijnen zonder één benoemde website. Bij de recepten bleven ook onafgewerkte sjabloonteksten staan zoals [websitenaam] - [link] en de opmerking om de metadata te controleren. Je bestand was op tijd klaar, maar werd in de uploadmap voor wireframes geplaatst en staat zelf niet in je OneDrive-map. Lees gegenereerde tekst altijd kritisch na en werk opdrachten concreet vanuit echte voorbeelden uit.",
+          "scores": {
+            "4.1": 2,
+            "4.4": 4,
+            "4.6": 4
+          }
         },
         "9a8226cc52": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 0,
+            "CRS01": 1,
+            "CRS02": 0,
+            "CRS04": 2,
+            "CRS20": 1,
+            "GEC01": 3
+          },
+          "feedback": "Je verzamelde op tijd drie recepten met foto's en plaatste de beelden al in OneDrive. Het eigenlijke websiteonderzoek met de vijf vragen ontbreekt echter volledig. Ook de inhoud van de recepten is sterk onvolledig: er is geen thema, geen tekst voor de landingspagina, geen inleiding of portie-aanduiding per gerecht en geen enkele bereidingsstap. Daarnaast werd een docx-bestand ingediend in plaats van een pdf of odt. Lees de opdrachtvereisten grondig door voor je indient.",
+          "scores": {
+            "4.1": 0.7,
+            "4.4": 2,
+            "4.6": 5
+          }
         },
         "bcfe83d392": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 2,
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 1,
+            "CRS20": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je bekeek drie eigen culinaire websites kritisch en beschreef in eigen woorden wat er goed of minder goed werkt, inclusief reclame en ontbrekende hoeveelheden. Zet de vragen of tussentitels er de volgende keer bij en kijk kleine spelfouten na. Je Aziatische thema en de drie gerechten vormen een leuk geheel, maar de bereidingsstappen staan als opsommingstekens in plaats van genummerd, het sushirecept stopt na het koken van de rijst en de bereidingstijd van de rendang klopt niet. Je pdf had de juiste naam en was ruim op tijd, maar stond niet in OneDrive. Verder een goede voorbereiding.",
+          "scores": {
+            "4.1": 5.3,
+            "4.4": 4,
+            "4.6": 4
+          }
         },
         "c8424a486b": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 3,
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS20": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je leverde een overzichtelijk en volledig voorbereidingsdocument af rond de Nigeriaanse keuken, inclusief doelgroep, hoofdtitel, teasers, drie uitgewerkte recepten en een persoonlijke bronvermelding. De bespreking van de drie eigen websites is netjes opgebouwd met een besluit, maar blijft op vlak van kleuren, lettertypes en kaartopbouw vrij algemeen. Let op de bestandsnaamgeving (geen spaties en de afgesproken benaming) en bewaar naast je afbeeldingen ook het onderzoeksdocument zelf in OneDrive. Verder een solide voorbereiding.",
+          "scores": {
+            "4.1": 4.7,
+            "4.4": 6,
+            "4.6": 5
+          }
         },
         "d61daca6ab": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 2,
+            "CRS01": 3,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS20": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je onderzocht drie eigen websites en beantwoordde de vijf vragen overzichtelijk per site, al blijven de observaties over receptkaarten en receptdetails vrij algemeen. De drie taartrecepten zijn compleet uitgewerkt met foto's, metadata, ingrediënten, genummerde stappen en bronnen. Een korte introductieparagraaf en teasers voor de landingspagina ontbreken nog, en in de bronlinks bleven enkele kopieerrestanten staan. Bewaar je onderzoeksdocument en beeldassets vanaf het begin ook in je OneDrive-vakmap. Verder is dit een degelijk vertrekpunt.",
+          "scores": {
+            "4.1": 4.7,
+            "4.4": 4,
+            "4.6": 4
+          }
         },
         "dc2916b34a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "13.01": 2,
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS20": 1,
+            "GEC01": 3
+          },
+          "feedback": "Je beantwoordde de vijf vragen kort en helder voor drie websites, al komen twee van de drie sites uit de gegeven voorbeeldlijst in plaats van eigen keuzes. De receptinhoud is nog onafgewerkt: er ontbreekt een centraal thema met teksten voor de startpagina, de ingrediëntenlijst van de entrecote staat er dubbel in, bij Torta de Laranja ontbreekt de titel en de bereidingstijd en bij Shakshuka zijn de stappen niet genummerd. Je leverde een docx-bestand in met een afwijkende naam in plaats van een pdf of odt, en de bestanden stonden niet in OneDrive. Werk je voorbereiding de volgende keer zorgvuldiger af.",
+          "scores": {
+            "4.1": 3.3,
+            "4.4": 2,
+            "4.6": 4
+          }
         }
       }
     },
@@ -184,59 +305,191 @@
       ],
       "evaluations": {
         "0b2d4d6f3a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 0,
+            "CRS04": 0,
+            "CRS21": 0,
+            "CRS22": 0,
+            "GEC01": 0
+          },
+          "feedback": "De wireframes en schetsen werden niet ingediend. Je kan dit nog in orde brengen via de map Te laat op Smartschool.",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.6": 0
+          }
         },
         "539ecc3e56": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS03": 3,
+            "CRS04": 1,
+            "CRS21": 2,
+            "CRS22": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je tekende beide pagina's overzichtelijk binnen duidelijke schermkaders en met een eigen, frisse vlakverdeling. Sterk dat je bij de receptpagina ook de li-tags binnen ul en ol correct aanduidde. De inhoud van de header (logo en nav) en de drie kleine kaartjes op de startpagina mochten wel wat concreter ingevuld worden, en tags zoals nav, main, section en a ontbreken nog. Zorg voor een iets scherpere foto en bewaar je schets ook in je OneDrive-map. Verder een goed bouwplan.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 2,
+            "4.6": 2
+          }
         },
         "60c8618064": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS03": 3,
+            "CRS04": 3,
+            "CRS21": 2,
+            "CRS22": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je werkte zowel de landingspagina als het receptsjabloon volledig uit binnen een schermkader, met kleurmarkeringen die de onderdelen duidelijk onderscheiden. De navigatie, het driekoloms kaartenraster en de zij-aan-zij receptopbouw zijn goed gepland en de bestanden staan netjes in OneDrive. De meeste tags staan op hun plaats, maar main, section, li en p ontbreken nog en header staat dubbel op de startpagina. De foto van de receptpagina is helaas onscherp en de bestandsnamen volgen het afgesproken patroon niet. Verder een duidelijk en bruikbaar bouwplan.",
+          "scores": {
+            "4.1": 2.3,
+            "4.2": 2.5,
+            "4.6": 3
+          }
         },
         "7b34d9351e": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS03": 3,
+            "CRS04": 1,
+            "CRS21": 3,
+            "CRS22": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je leverde een verzorgd en compleet bouwplan voor beide pagina's naast elkaar binnen duidelijke schermkaders, met oog voor verhoudingen en consistente header en footer. Veel HTML-tags zoals header, nav, a, main, ul en li staan juist; enkel section, article, footer en ol voor de genummerde stappen ontbreken nog (daar staat p). Op de startpagina stapel je de drie recepten onder elkaar in plaats van in een driekoloms raster, al is het wel een duidelijke en doordachte keuze. Hernoem je bestand volgens de afspraak in plaats van Afbeelding.jpg en bewaar het in OneDrive. Verder een sterke schets.",
+          "scores": {
+            "4.1": 2.3,
+            "4.2": 2.5,
+            "4.6": 2
+          }
         },
         "8ab009875a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS03": 3,
+            "CRS04": 3,
+            "CRS21": 3,
+            "CRS22": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je tekende zowel de landingspagina als het receptsjabloon strak en ordelijk met een lat binnen duidelijke schermkaders. De horizontale navigatie, de drie receptkaarten naast elkaar en het zij-aan-zij blok op de receptpagina zijn helder gepland. De meeste tags staan op hun plaats, maar main, section, li en p ontbreken nog en header werd dubbel genoteerd op de startpagina. Dien je foto's voortaan als jpg, png of pdf in in plaats van HEIC en vermijd spaties of dubbele punten in bestandsnamen. Netjes bewaard in OneDrive en een sterk bouwplan om mee te coderen.",
+          "scores": {
+            "4.1": 2.5,
+            "4.2": 3,
+            "4.6": 3
+          }
         },
         "8ec556f315": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS03": 2,
+            "CRS04": 1,
+            "CRS21": 1,
+            "CRS22": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je maakte voor beide pagina's een eerste opzet met de navigatiebalk, drie kaarten naast elkaar en de lijsten naast de receptfoto. Er werd geen schermkader rond de compositie getekend en essentiële blokken zoals de hero-intro en footer op de startpagina en de header op de receptpagina ontbreken. Verschillende semantische tags zoals main, section en li mankeren nog en er staan kleine notatiefouten bij h1/h2 en ul. Neem je foto's recht van boven zonder schaduw, geef elk bestand een duidelijke naam met extensie en bewaar de schetsen ook in OneDrive.",
+          "scores": {
+            "4.1": 1.5,
+            "4.2": 1.5,
+            "4.6": 2
+          }
         },
         "9a8226cc52": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 1,
+            "CRS03": 3,
+            "CRS04": 1,
+            "CRS21": 3,
+            "CRS22": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je maakte een verzorgde, scherpe schets van beide pagina's naast elkaar binnen duidelijke schermkaders, met een consistente header en footer. De gevraagde structuurtags zoals header, nav, main, section, article, footer en li ontbreken echter nog, en je gebruikt h2 op plaatsen waar gewone alinea's horen. Op de startpagina plaatste je de recepten onder elkaar in plaats van in een driekoloms kaartenraster. Let nog op de exacte bestandsnaam en bewaar je schets ook in OneDrive. Vormelijk een heldere en nette opzet.",
+          "scores": {
+            "4.1": 2.3,
+            "4.2": 2.5,
+            "4.6": 2
+          }
         },
         "bcfe83d392": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 0,
+            "CRS02": 0,
+            "CRS03": 0,
+            "CRS04": 0,
+            "CRS21": 0,
+            "CRS22": 0,
+            "GEC01": 0
+          },
+          "feedback": "De wireframes en schetsen werden niet ingediend. Je kan dit nog in orde brengen via de map Te laat op Smartschool.",
+          "scores": {
+            "4.1": 0,
+            "4.2": 0,
+            "4.6": 0
+          }
         },
         "c8424a486b": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS03": 2,
+            "CRS04": 1,
+            "CRS21": 2,
+            "CRS22": 3,
+            "GEC01": 3
+          },
+          "feedback": "Je schetste beide pagina's uitgebreid uit met een duidelijke navigatie, driekoloms kaartenraster, metadata en footer. De schets werd zichtbaar gemaakt op basis van een website die al gebouwd was, terwijl een wireframe juist dient om je structuur vooraf te plannen. Er staat geen schermkader rond de pagina's, de tweede foto is scheef genomen en de meeste HTML-tags ontbreken of staan als Engelse woorden genoteerd in plaats van concrete tags zoals nav, article, img, ul en ol. Hernoem je camerabestanden volgens de afspraak en bewaar de schetsen ook in OneDrive.",
+          "scores": {
+            "4.1": 1.5,
+            "4.2": 2.5,
+            "4.6": 2
+          }
         },
         "d61daca6ab": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 0,
+            "CRS03": 1,
+            "CRS04": 1,
+            "CRS21": 2,
+            "CRS22": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je leverde een nette digitale schets van de landingspagina in met een heldere navigatiebalk en een overzichtelijk kaartenraster. Het sjabloon voor de receptpagina ontbreekt echter volledig, net zoals een footer, een schermkader en alle gevraagde HTML-tags. Bewaar je schetsen ook in OneDrive en volg de afgesproken bestandsnaamgeving. Werk altijd beide pagina's met de bijhorende structuurtags uit voor je aan de code begint.",
+          "scores": {
+            "4.1": 1,
+            "4.2": 2,
+            "4.6": 2
+          }
         },
         "dc2916b34a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 0,
+            "CRS03": 2,
+            "CRS04": 1,
+            "CRS21": 1,
+            "CRS22": 2,
+            "GEC01": 3
+          },
+          "feedback": "Je schetste zowel de landingspagina als de receptpagina met een duidelijke navigatiebalk, drie kaarten naast elkaar en twee kolommen voor ingrediënten en instructies. Op nav na ontbreken echter alle gevraagde HTML-tags. Ook belangrijke onderdelen zoals de footer op beide pagina's en de titel en metadata op de receptpagina mankeren nog. Bewaar meer orde in je schets door bijvoorbeeld te werken met een lat, fotografeer recht van boven, geef je bestanden de afgesproken naam in plaats van Afbeelding.jpg en sla ze op in OneDrive.",
+          "scores": {
+            "4.1": 1.3,
+            "4.2": 1.5,
+            "4.6": 2
+          }
         }
       }
     },
@@ -491,59 +744,279 @@
       ],
       "evaluations": {
         "0b2d4d6f3a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS06": 2,
+            "CRS18": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS22": 2,
+            "CRS23": 2,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 1
+          },
+          "feedback": "Je opgeleverde zipversie heeft een warme, verzorgde uitstraling met vier werkende pagina's en een fijne afwisselende indeling op de startpagina. In style.css ontbreekt echter een puntkomma na grid-template-columns bij .recept-inhoud, waardoor het tweekoloms raster op alle receptpagina's wegvalt en de foto groot onderaan terechtkomt. De HTML-structuur vraagt nog opruimwerk: op de startpagina werden een footer met generieke voorbeeldtekst (MijnWebsite) en een los style-blok onderaan na html geplakt, terwijl op de receptpagina's geen footer, geen main, geen doctype en een dubbele stylesheet-link staan. Pas ook de paginatitel en hoofdtitel per recept aan (bij pastasalade staat nog Pasta Carbonara), vul de ontbrekende alt-teksten op recept 1 en 2 aan en kies consequent Nederlands in plaats van gemengde Engelse labels. Volg de afgesproken mapstructuur zonder losse submap site of ongebruikte kookboek.css en werk je OneDrive-map bij met je nieuwste versie. Vormelijk een fijne basis, maar kijk je code grondiger na.",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 10,
+            "4.3": 10,
+            "4.4": 10,
+            "4.5": 7.5,
+            "4.6": 10
+          }
         },
         "539ecc3e56": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 3,
+            "CRS18": 3,
+            "CRS20": 3,
+            "CRS21": 2,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Je bouwde een zuivere, zelfgeschreven multipage website met een passende maritieme kleursfeer en een knap eigen logo. Alle vier de pagina's werken foutloos met een nette semantische opbouw, een werkend driekoloms kaartenraster en SVG-iconen in de footer, en je OneDrive-map komt volledig overeen met je zip. Enkele details kan je nog aanscherpen: schaal kaartafbeeldingen via CSS (width 100 procent) en beperk de foto op detailpagina's met een specifieke regel in plaats van vaste HTML-breedtes, geef de doorkliklinks op de kaarten een knopopmaak en lijn de footer horizontaal uit met Flexbox. Gebruik op de receptpagina's de naam van het gerecht als hoofdtitel in plaats van Recept 1, 2 en 3, zet aanhalingstekens rond id-waarden en haal de losse ai- en pdf-bestanden uit de webmap. Let tot slot op de underscore in recept_1.html en kleine letters in afbeeldingsnamen. Verder technisch en vormelijk sterk gewerkt.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 10,
+            "4.3": 15,
+            "4.4": 12.5,
+            "4.5": 12.5,
+            "4.6": 15
+          }
         },
         "60c8618064": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 2,
+            "CRS04": 1,
+            "CRS06": 3,
+            "CRS18": 2,
+            "CRS20": 3,
+            "CRS21": 2,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Je bouwde zelfstandig een volledige en herkenbare multipage website rond sushi, met een werkend driekoloms kaartenraster, een consistente Flexbox-header en -footer met SVG-iconen en alle drie de recepten netjes uitgewerkt. Op alle drie de receptpagina's zit wel een kapotte link in de navigatie (href staat op recep in plaats van recept_1.html) en bleef de paginatitel op Home staan. Visueel hebben de gele links te weinig contrast op de lichtgele achtergrond en op de receptpagina's schaalt de foto naar de volledige schermbreedte omdat een specifieke regel voor de inleidingsfoto ontbreekt. In CSS staat letter-spacing met een komma in plaats van een punt, en in de HTML van recept 1 staan een kop en alinea rechtstreeks in de ol-lijst. Houd je webmap proper zonder onderzoeks- of schetsbestanden en zet je laatste versie ook altijd in OneDrive (daar staat nog een oudere versie zonder iconen). Verder een fijne, eigen uitwerking.",
+          "scores": {
+            "4.1": 10,
+            "4.2": 10,
+            "4.3": 11.7,
+            "4.4": 12.5,
+            "4.5": 12.5,
+            "4.6": 10
+          }
         },
         "7b34d9351e": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 2,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 2,
+            "CRS18": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS22": 2,
+            "CRS23": 2,
+            "CRS27": 3,
+            "GEC01": 3,
+            "GEC02": 2
+          },
+          "feedback": "Je realiseerde een volledige en overzichtelijke website van vier pagina's die trouw blijft aan je eigen wireframe, met een sterke tweekoloms opbouw op de receptpagina's en unieke paginatitels. Je HTML zit proper in elkaar en je zip en OneDrive stemmen volledig overeen. De footer verschilt wel sterk tussen de startpagina en de receptpagina's en mist de sociale media-iconen, en de hoofdtitel in de header oogt wat onafgewerkt als enkel Latijns-Amerikaanse. Op de empanadafoto staat een zichtbaar copyright-watermerk en het beeld rekt wat uit in het hoge kader; vermijd ook spaties in afbeeldingsnamen. In style.css staan meerdere dubbele en elkaar overschrijvende regels en media queries: ruim gekopieerde of gegenereerde code altijd grondig op. Verder een verzorgd en functioneel resultaat.",
+          "scores": {
+            "4.1": 12.5,
+            "4.2": 10,
+            "4.3": 10,
+            "4.4": 12.5,
+            "4.5": 10,
+            "4.6": 15
+          }
         },
         "8ab009875a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS04": 1,
+            "CRS06": 1,
+            "CRS18": 0,
+            "CRS20": 1,
+            "CRS21": 1,
+            "CRS22": 2,
+            "CRS23": 1,
+            "CRS27": 1,
+            "GEC01": 0,
+            "GEC02": 0
+          },
+          "feedback": "De bovenste helft van je startpagina heeft al een warme kleursfeer en een werkend driekoloms kaartenraster voor je drie Surinaamse gerechten. De drie receptpagina's in je OneDrive-map zijn echter volledig leeg, terwijl je de voorbeeldcode van recept 1 onderaan in index.html hebt geplakt met een tweede documentstructuur en oningevulde voorbeeldteksten. In de code zitten meerdere fouten: een ontbrekend doctype bovenaan, een spelfout in de img-tag van het logo (imgsrc aan elkaar en fout pad), een niet-afgesloten footer en een kapotte voorbeeldafbeelding. Zwarte tekst op donkerrode knoppen leest moeilijk en de sociale media-iconen in de footer ontbreken. De bestanden werden bovendien pas op 23/11 nog aangepast, ruim na de deadline. Werk eerst de drie aparte receptpagina's proper uit en controleer elke pagina in de browser.",
+          "scores": {
+            "4.1": 5,
+            "4.2": 8.3,
+            "4.3": 1.7,
+            "4.4": 5,
+            "4.5": 2.5,
+            "4.6": 2.5
+          }
         },
         "8ec556f315": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS04": 0,
+            "CRS06": 2,
+            "CRS18": 2,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS22": 2,
+            "CRS23": 2,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 1
+          },
+          "feedback": "Je opgeleverde zipversie oogt visueel warm en verzorgd, met een originele visuele ingrediëntenlijst op de drie receptpagina's en een fijne tweekoloms weergave van de bereidingsstappen. In index.html loopt de HTML-structuur wel stevig door elkaar: het doctype ontbreekt, body en html worden midden in het bestand al afgesloten voor het tweede main-element en de knop in de hero heeft geen href. Op recept 2 en 3 bleef de paginatitel op Fajita wrap staan, op de startpagina gebruikt het kaartenoverzicht Flexbox in plaats van Grid en bij de tips staat de inleiding niet mee gecentreerd. De geavanceerde CSS op de receptpagina's (met een niet-bestaand fontbestand en een achtergebleven commentaarregel) wijst op stevige AI-hulp: zorg dat je alle code zelf begrijpt en opschoont. Let op kleine letters zonder spaties voor je beeldenmap en bestandsnamen, en werk ook je OneDrive-map bij want daar staan recept 2 en 3 nog leeg. Vormelijk een sterke basis, maar besteed meer aandacht aan zuivere HTML en bestandsbeheer.",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 11.7,
+            "4.3": 10,
+            "4.4": 12.5,
+            "4.5": 7.5,
+            "4.6": 7.5
+          }
         },
         "9a8226cc52": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS04": 2,
+            "CRS06": 1,
+            "CRS18": 0,
+            "CRS20": 1,
+            "CRS21": 1,
+            "CRS22": 2,
+            "CRS23": 2,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 0
+          },
+          "feedback": "Je zette een eerste basis van de startpagina op met Flexbox in de header en een driekoloms Grid voor de drie herfstrecepten. Alle drie de receptpagina's in je OneDrive-map zijn echter volledig leeg gebleven, waardoor de website niet functioneert. In index.html staan header en main verkeerd binnen het head-element en blijven er losse sluitingstags onderaan staan. Ook een footer, knopopmaak voor de links en gelijke beeldverhoudingen voor de drie foto's ontbreken nog. Let daarnaast op consequent gebruik van kleine letters in bestands- en mapnamen (Recept_1.html en Images). Werk alle gevraagde pagina's volledig uit en controleer je documentstructuur.",
+          "scores": {
+            "4.1": 5,
+            "4.2": 8.3,
+            "4.3": 1.7,
+            "4.4": 5,
+            "4.5": 5,
+            "4.6": 10
+          }
         },
         "bcfe83d392": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS04": 2,
+            "CRS06": 1,
+            "CRS18": 1,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS22": 0,
+            "CRS23": 1,
+            "CRS27": 1,
+            "GEC01": 2,
+            "GEC02": 1
+          },
+          "feedback": "Je verwerkte je drie Aziatische recepten in een leesbare pagina met een warme kleursfeer en nette lijsten voor ingrediënten en bereiding. De kern van de opdracht werd echter niet gevolgd: er is maar één HTML-pagina met interne CSS in plaats van vier afzonderlijke pagina's gekoppeld aan een extern bestand style.css, en zowel Flexbox als CSS Grid ontbreken volledig. Bovenaan index.html ontbreken de html-, head- en title-elementen, de img-tag bij de noodlesoep is niet afgesloten en op geen enkele afbeelding staat een alt-tekst. Hernoem je beelden zonder spaties of schermafbeelding-namen en voorzie de gevraagde sociale media-iconen. Volg de technische vereisten van de opdracht nauwkeuriger op.",
+          "scores": {
+            "4.1": 5,
+            "4.2": 3.3,
+            "4.3": 5,
+            "4.4": 7.5,
+            "4.5": 5,
+            "4.6": 10
+          }
         },
         "c8424a486b": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 3,
+            "CRS02": 3,
+            "CRS04": 3,
+            "CRS06": 2,
+            "CRS18": 1,
+            "CRS20": 3,
+            "CRS21": 3,
+            "CRS22": 2,
+            "CRS23": 3,
+            "CRS27": 2,
+            "GEC01": 3,
+            "GEC02": 3
+          },
+          "feedback": "Je website oogt grafisch erg strak, met een sterke typografische hiërarchie, warme kleursfeer, nette bestandsnamen en een foutloze navigatie doorheen alle vier de pagina's. De uitgebreide code met JavaScript, geavanceerde CSS en ARIA-attributen die bovendien al vóór je wireframeschetsen werd aangemaakt, toont duidelijk dat er zwaar op AI-hulp werd geleund. Dat maakt het moeilijk om je eigen vooruitgang in HTML en CSS in te schatten: gebruik zulke tools hoogstens als ondersteuning en zorg dat je de gevraagde basis eerst zelfstandig opbouwt. Op detailniveau ontbreken de gevraagde sociale media-iconen in de footer (instagram.svg bleef ongebruikt in de map), staat dezelfde foto twee keer vlak onder elkaar op elke receptpagina en zaten het workspace- en zipbestand nog mee in de map. Verder vormelijk en technisch verzorgd opgeleverd.",
+          "scores": {
+            "4.1": 15,
+            "4.2": 11.7,
+            "4.3": 6.7,
+            "4.4": 12.5,
+            "4.5": 15,
+            "4.6": 15
+          }
         },
         "d61daca6ab": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 1,
+            "CRS04": 1,
+            "CRS06": 2,
+            "CRS18": 2,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS22": 1,
+            "CRS23": 2,
+            "CRS27": 1,
+            "GEC01": 0,
+            "GEC02": 1
+          },
+          "feedback": "Je zette een eigenzinnig en herkenbaar receptenboek neer met zelfgekozen Google Fonts en speelse visuele accenten zoals het aardbei-icoon en het verloop op het hero-beeld. Technisch blijven er nog wat knelpunten: de zwarte scripttekst van je navigatie is op het rood-wit geruite achtergrondpatroon nauwelijks leesbaar, en voor het kaartenoverzicht gebruikte je geen CSS Grid. In de HTML-code zitten structuurfouten: een niet-afgesloten link in de header, dubbele body- en html-tags op de receptpagina's, een footer buiten body op de startpagina, ontbrekende section-, article- en main-elementen en herhaalde id-waarden. Ook de paginatitels van de drie recepten bleven op Document staan en Index.html heeft een hoofdletter. In style.css staan enkele syntaxfoutjes zoals een lege border-style en een ongeldige font-weight. Je leverde de afgewerkte versie twee dagen te laat in via Te laat en je OneDrive bevat nog een oudere versie. Fijne persoonlijke aanpak, maar houd deadlines en basisstructuur nauwkeuriger in het oog.",
+          "scores": {
+            "4.1": 5,
+            "4.2": 6.7,
+            "4.3": 10,
+            "4.4": 7.5,
+            "4.5": 7.5,
+            "4.6": 2.5
+          }
         },
         "dc2916b34a": {
-          "criteriaLevels": {},
-          "feedback": "",
-          "scores": {}
+          "criteriaLevels": {
+            "CRS01": 1,
+            "CRS02": 2,
+            "CRS04": 2,
+            "CRS06": 2,
+            "CRS18": 1,
+            "CRS20": 2,
+            "CRS21": 2,
+            "CRS22": 3,
+            "CRS23": 1,
+            "CRS27": 1,
+            "GEC01": 3,
+            "GEC02": 1
+          },
+          "feedback": "De vormgeving van je startpagina en tweede receptpagina oogt rustig en verzorgd, met een nette Flexbox-header en -footer en een evenwichtig driekoloms kaartenraster. Door enkele slordigheden werkt de website echter maar gedeeltelijk: recept_3.html is leeg omdat je het derde gerecht opsloeg als recepten pagina.html, en recept_1.html mist de koppeling naar style.css, de header en de footer en heeft de main-inhoud na de sluitende body- en html-tag staan. De foto van de shakshuka laadt op geen enkele pagina door een verkeerd pad (shakshuka-1.jpg en shaksuka in plaats van images/shakshuka.jpg). In index.html ontbreken sluitende tags onderaan en in style.css staat het blok voor de receptpagina's er dubbel in. Test elke pagina en elke link altijd zelf in de browser voor je oplevert.",
+          "scores": {
+            "4.1": 7.5,
+            "4.2": 13.3,
+            "4.3": 6.7,
+            "4.4": 7.5,
+            "4.5": 5,
+            "4.6": 12.5
+          }
         }
       }
     }

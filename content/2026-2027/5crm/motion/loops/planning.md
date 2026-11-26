@@ -52,3 +52,27 @@
 * **CRS24:** Timing en bewegingssamenhang voor de verschillende loops plannen in functie van de eindtoepassingen (web en projectie).
 * **CRS25:** De gekozen animatietechnieken en bewegingstempo's afstemmen op de belevingswereld van de gekozen doelgroep.
 * **CRS04:** Het onderzoeksdocument en de video-voorbeelden gestructureerd beheren in `01_onderzoek/` op de OneDrive-vakmap.
+
+## Les 3 27/11/2026 (Motion)
+
+### Loops: Demo animatietechnieken en storyboard mascotte
+
+### Lesverloop & inhoud
+1. **Demo animatietechnieken mascotte:**
+   * Voorbeeld van twee aanpakken voor een rustanimatie: organische vervorming met *Puppet Pin* en knipanimatie met losse onderdelen en scharnierpunten.
+2. **Techniekkeuze mascotte, icoontjes en deeltjes:**
+   * Bepalen of *Puppet Pin*, knipanimatie, vormverandering of een combinatie het best aansluit bij de vormentaal van de eigen ontwerpen.
+3. **Storyboard mascotte:**
+   * Uitwerken van minimaal één A4-pagina als schets en storyboard voor de rustanimatie met bewegingspijlen, begin- en eindposities en tussenstapjes.
+   * Vastleggen van timing, ritme en een naadloze overgang tussen eind- en beginframe voor een lus van een viertal seconden.
+   * Scannen of fotograferen van het storyboard en ordelijk bewaren in `VoornaamA_Loops/01_onderzoek/` op de OneDrive-vakmap.
+4. **Voorbereiding mascottebestand:**
+   * Opdelen en benoemen van de beweegbare onderdelen in het illustratiebestand op basis van het storyboard en de gekozen animatietechniek.
+   * Bewaren van het voorbereide vectorbestand in `VoornaamA_Loops/02_assets/` op de OneDrive-vakmap als basis voor de digitale animatie.
+
+### Leerplandoelen
+* **CRS02:** Doelgericht de geschikte animatietechnieken selecteren voor de mascotte, icoontjes en deeltjes.
+* **CRS03:** Het bewegingsverloop, de timing en de naadloze overgang van de rustanimatie vooraf plannen in een storyboard.
+* **15.02:** Creatieve en passende rustbewegingen bedenken en uittekenen voor de eigen mascotte.
+* **CRS17:** Het illustratiebestand (`VoornaamA_Mascotte.ai`) aanpassen door beweegbare onderdelen op te splitsen en te benoemen in functie van de animatie.
+* **CRS04:** Het storyboard en het voorbereide mascottebestand ordelijk bewaren en structureren in `VoornaamA_Loops/` op de OneDrive-vakmap.

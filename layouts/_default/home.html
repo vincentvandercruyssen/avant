@@ -123,16 +123,32 @@
     {{ if eq hugo.Environment "development" }}
       {{ $overzichtSection := .Site.GetPage "section" "overzicht" }}
       {{ if and $overzichtSection (gt (len $overzichtSection.RegularPages) 0) }}
-        <div>
-          <h2>Presentatie-overzichten</h2>
-          <ul>
-            {{ range sort $overzichtSection.RegularPages "Title" "asc" }}
-              <li>
-                <a href="{{ .RelPermalink }}">{{ with .Params.klas }}{{ . }} · {{ end }}{{ .Title | default .Params.thema }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
+        {{ $jaarplanPages := where $overzichtSection.RegularPages "Layout" "jaarplanning" }}
+        {{ $presentatiePages := where $overzichtSection.RegularPages "Layout" "ne" "jaarplanning" }}
+        {{ if gt (len $jaarplanPages) 0 }}
+          <div>
+            <h2>Jaarplanning</h2>
+            <ul>
+              {{ range sort $jaarplanPages "Params.klas" "asc" }}
+                <li>
+                  <a href="{{ .RelPermalink }}">{{ with .Params.klas }}{{ . }} · {{ end }}{{ .Title }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        {{ if gt (len $presentatiePages) 0 }}
+          <div>
+            <h2>Presentatie-overzichten</h2>
+            <ul>
+              {{ range sort $presentatiePages "Title" "asc" }}
+                <li>
+                  <a href="{{ .RelPermalink }}">{{ with .Params.klas }}{{ . }} · {{ end }}{{ .Title | default .Params.thema }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
       {{ end }}
     {{ end }}
   </nav>
@@ -435,19 +451,38 @@
 {{ if eq hugo.Environment "development" }}
 {{ $overzichtSection := .Site.GetPage "section" "overzicht" }}
 {{ if and $overzichtSection (gt (len $overzichtSection.RegularPages) 0) }}
-<section>
-  <h2>Presentatie-overzichten</h2>
-  <div>
-    <h3>Punten &amp; feedback per thema</h3>
-    <div class="kolommen">
-      {{ range sort $overzichtSection.RegularPages "Title" "asc" }}
-      <div>
-        <a href="{{ .RelPermalink }}">{{ with .Params.klas }}{{ . }} · {{ end }}{{ .Title | default .Params.thema }}</a>
+  {{ $jaarplanPages := where $overzichtSection.RegularPages "Layout" "jaarplanning" }}
+  {{ $presentatiePages := where $overzichtSection.RegularPages "Layout" "ne" "jaarplanning" }}
+  {{ if gt (len $jaarplanPages) 0 }}
+  <section>
+    <h2>Jaarplanning</h2>
+    <div>
+      <h3>Motion, Web+Story &amp; Beeld (2026-2027)</h3>
+      <div class="kolommen">
+        {{ range sort $jaarplanPages "Params.klas" "asc" }}
+        <div>
+          <a href="{{ .RelPermalink }}">{{ with .Params.klas }}{{ . }} · {{ end }}{{ .Title }}</a>
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
-  </div>
-</section>
+  </section>
+  {{ end }}
+  {{ if gt (len $presentatiePages) 0 }}
+  <section>
+    <h2>Presentatie-overzichten</h2>
+    <div>
+      <h3>Punten &amp; feedback per thema</h3>
+      <div class="kolommen">
+        {{ range sort $presentatiePages "Title" "asc" }}
+        <div>
+          <a href="{{ .RelPermalink }}">{{ with .Params.klas }}{{ . }} · {{ end }}{{ .Title | default .Params.thema }}</a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
 {{ end }}
 {{ end }}
 

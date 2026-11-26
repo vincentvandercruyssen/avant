@@ -116,8 +116,8 @@ Bundel je inspiratievoorbeelden, bevindingen en keuzes in één document `Voorna
 Werk de animatieloops stelselmatig uit. Afhankelijk van je mascotte en ontwerp kies je de meest geschikte animatietechniek.
 
 * **Puppet Pin tool**: Ideaal om één organische vectorfiguur soepel te laten "ademen" zonder de figuur in losse stukken te knippen.
-* **Parenting & scharnierpunten (Cut-out)**: Ledematen en onderdelen opsplitsen in losse lagen, ankerpunten (*Anchor Points*) exact op de gewrichten plaatsen.
-* **Shape Morphing (vormverandering)**: Voor vloeiende, organische vormtransformaties via padanimatie.
+* **Knipanimatie (Cut-out, Scharnierpunten)**: Ledematen en onderdelen opsplitsen in losse lagen, ankerpunten (*Anchor Points*) op de gewrichten plaatsen.
+* **Vormverandering (Shape Morphing)**: Voor vloeiende, organische vormtransformaties via padanimatie.
 * **Frame-per-frame**: Met de hand elk frame opbouwen.
 
 #### Schetsen & brainstorm

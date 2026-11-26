@@ -1,0 +1,126 @@
+{{ define "title" }}{{ .Params.klas | default "5CRM" }} · {{ .Title }}{{ with .Params.schooljaar }} {{ . }}{{ end }}{{ end }}
+
+{{ define "header" }}
+<div class="fixed">
+  <h1>
+    <span class="vaknaam">{{ .Params.klas | default "5CRM" }}{{ with .Params.schooljaar }} · {{ . }}{{ end }}</span>
+    <span class="opdrachtnaam">{{ .Title }}</span>
+  </h1>
+  <a href="{{ "" | relURL }}" class="terug-link">← Terug naar start</a>
+  {{ with .Params.other_url }}
+  <a href="{{ strings.TrimPrefix "/" . | relURL }}" class="terug-link">↔ {{ $.Params.other_label | default "Andere klas" }}</a>
+  {{ end }}
+  {{ if eq hugo.Environment "development" }}
+  <nav id="JaarplanningNav" aria-label="Maanden en weergave"></nav>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ define "main" }}
+{{ $klas := upper (.Params.klas | default "5CRM") }}
+{{ $schooljaar := .Params.schooljaar | default "2026-2027" }}
+{{ $peildatum := .Params.peildatum | default "2026-11-26" }}
+{{ $datafile := .Params.datafile | default (printf "jaarplanning-%s" (lower $klas)) }}
+{{ $savedData := index site.Data $datafile | default dict }}
+
+{{ if eq hugo.Environment "development" }}
+  <article data-jaarplanning
+           data-klas="{{ $klas }}"
+           data-schooljaar="{{ $schooljaar }}"
+           data-peildatum="{{ $peildatum }}"
+           data-datafile="{{ $datafile }}">
+
+    <div data-planning-balk>
+      <div>
+        <h1>{{ $klas }} · {{ .Title }} {{ $schooljaar }}</h1>
+        <p data-meta-lijn>
+          <span>Vast t.e.m. {{ replaceRE "^(\\d{4})-(\\d{2})-(\\d{2})$" "$3/$2/$1" $peildatum }} · daarna voorlopig</span>
+          <span id="planning-limiet-info"></span>
+          <span id="planning-save-status" data-status="connecting">Lokaal verbinden…</span>
+        </p>
+      </div>
+      <div>
+        <div role="tablist" aria-label="Weergave">
+          <button type="button" role="tab" id="tab-editor" aria-selected="true" data-view-tab="editor">Bewerken</button>
+          <button type="button" role="tab" id="tab-tabel" aria-selected="false" data-view-tab="tabel">Overzicht &amp; afdruk</button>
+        </div>
+        <div role="group" aria-label="Exporteren en afdrukken">
+          <button type="button" id="btn-copy-table" data-primary>Kopieer tabel</button>
+          <button type="button" id="btn-download-csv">Download CSV</button>
+          <button type="button" id="btn-print-table">Afdrukken</button>
+        </div>
+      </div>
+    </div>
+
+    <div data-planning-opties>
+      <div role="group" aria-label="Filter per trimester" data-trimester-filter>
+        <button type="button" data-trimester="all" aria-pressed="true">Alle</button>
+        <button type="button" data-trimester="1" aria-pressed="false">T1 (sep–dec)</button>
+        <button type="button" data-trimester="2" aria-pressed="false">T2 (jan–mrt)</button>
+        <button type="button" data-trimester="3" aria-pressed="false">T3 (apr–jun)</button>
+      </div>
+      <div data-kolom-keuze>
+        <label>
+          <input type="checkbox" id="opt-col-week" checked>
+          <span>Week</span>
+        </label>
+        <label>
+          <input type="checkbox" id="opt-col-grafische">
+          <span id="opt-col-grafische-label">Grafische</span>
+        </label>
+        <label>
+          <input type="checkbox" id="opt-col-motion" checked>
+          <span>Motion</span>
+        </label>
+        <label>
+          <input type="checkbox" id="opt-col-web" checked>
+          <span>Web+Story</span>
+        </label>
+        <label>
+          <input type="checkbox" id="opt-col-beeld" checked>
+          <span>Beeld</span>
+        </label>
+        <label>
+          <input type="checkbox" id="opt-col-uitstappen">
+          <span>Uitstappen</span>
+        </label>
+        <label>
+          <input type="checkbox" id="opt-mark-tentative" checked>
+          <span>Markeer voorlopig</span>
+        </label>
+      </div>
+    </div>
+
+    <p id="planning-feedback-melding" role="status" aria-live="polite" hidden></p>
+
+    <section data-view-panel="editor" id="panel-editor">
+      <div data-scroll-table id="editor-container">
+        <p>Jaarplanning laden…</p>
+      </div>
+    </section>
+
+    <section data-view-panel="tabel" id="panel-tabel" hidden>
+      <p data-export-tip>
+        <small>Plak de gekopieerde tabel rechtstreeks in Word, Google Docs, Excel of Smartschool. Zet <strong>Week</strong> uit om enkel je drie vakkolommen in het bestaande Word-document te plakken.</small>
+      </p>
+      <div data-scroll-table id="tabel-container"></div>
+    </section>
+  </article>
+
+  <script id="jaarplanning-saved-data" type="application/json">
+    {{ $savedData | jsonify | safeJS }}
+  </script>
+
+  {{- with resources.Get "css/jaarplanning.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?v={{ now.Unix }}">
+  {{- end }}
+  {{- with resources.Get "js/jaarplanning.js" }}
+    <script src="{{ .RelPermalink }}?v={{ now.Unix }}" defer></script>
+  {{- end }}
+{{ else }}
+  <article data-jaarplanning>
+    <h1>{{ $klas }} · {{ .Title }} {{ $schooljaar }}</h1>
+    <p>Deze jaarplanning is enkel lokaal beschikbaar voor de leerkracht.</p>
+  </article>
+{{ end }}
+{{ end }}

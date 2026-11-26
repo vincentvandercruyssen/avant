@@ -27,3 +27,28 @@
 * **CRS25:** Beeldelementen, texturen en de felle accentkleur uit Grafische vormgeving doelgericht op elkaar afstemmen in functie van het gedicht.
 * **CRS04:** Het beeldplan ordelijk bewaren in de gedeelde projectmap `VoornaamA_Collage/01_onderzoek/` onder Motion op OneDrive.
 * **GEC01:** De tussentijdse deadline (27/11/2026) en inleverafspraken voor het beeldplan stipt naleven.
+
+## Les 2 27/11/2026 (Beeld)
+
+### Collagemateriaal: Uitwerken en indienen beeldplan
+
+### Lesverloop & inhoud
+1. **Gedicht en beeldmetaforen:**
+   * Aanduiden van vier à vijf kernwoorden uit het gekozen gedicht rond het thema *Zwaartekracht*.
+   * Metaforisch koppelen van elk kernwoord aan concrete voorwerpen, knipsels of texturen voor eigen foto's en scans.
+2. **Kleursymboliek:**
+   * Vastleggen van het kleurenpalet in relatie tot de sfeer en betekenis van het gedicht.
+   * Bepalen hoe die kleuren terugkomen in de geplande collage-elementen en texturen.
+3. **Compositieschets:**
+   * Uitwerken van een heldere compositieschets met achtergrond, middenplan en voorgrond.
+   * Voorzien van voldoende witruimte voor de zwevende typoloops op de expopagina.
+4. **Samenstellen beeldplan:**
+   * Bundelen van gedicht, beeldmetaforen, kleursymboliek en compositieschets in één verzorgd document (`VoornaamA_Collage-Beeldplan.pdf`).
+   * Controleren van bestandsnaamgeving en mappenstructuur, bewaren in `VoornaamA_Collage/01_onderzoek/` onder Motion op OneDrive en tijdig indienen via Smartschool.
+
+### Leerplandoelen
+* **15.02:** Kernwoorden uit het gekozen gedicht metaforisch vertalen naar tastbare objecten en texturen rond het thema *Zwaartekracht*.
+* **CRS24:** Een evenwichtige compositieschets uittekenen met achtergrond, middenplan en voorgrond, inclusief witruimte voor de zwevende typoloops op de expopagina.
+* **CRS25:** Beeldelementen, texturen en kleurenpalet doelgericht op elkaar afstemmen in functie van het gedicht.
+* **CRS04:** Het beeldplan (`VoornaamA_Collage-Beeldplan.pdf`) ordelijk bewaren in de projectmap `VoornaamA_Collage/01_onderzoek/` onder Motion op OneDrive.
+* **GEC01:** De tussentijdse deadline en inleverafspraken voor het beeldplan stipt naleven.

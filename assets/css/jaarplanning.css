@@ -1,0 +1,639 @@
+/* Jaarplanning: bewerkbare weektabel, woord-/tekenlimiet en A4-liggende afdrukmodus */
+
+:root {
+  --lvl-0: #dc2626;
+  --lvl-1: #b45309;
+  --lvl-2: #15803d;
+  --lvl-3: #1d4ed8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lvl-0: #f87171;
+    --lvl-1: #fbbf24;
+    --lvl-2: #4ade80;
+    --lvl-3: #60a5fa;
+  }
+}
+
+:root:has(#theme [value="☀️"]:checked) {
+  --lvl-0: #dc2626;
+  --lvl-1: #b45309;
+  --lvl-2: #15803d;
+  --lvl-3: #1d4ed8;
+}
+
+:root:has(#theme [value="🌙"]:checked) {
+  --lvl-0: #f87171;
+  --lvl-1: #fbbf24;
+  --lvl-2: #4ade80;
+  --lvl-3: #60a5fa;
+}
+
+/* Zijbalk navigatie */
+header nav#JaarplanningNav {
+  margin-top: 0.75rem;
+  overflow-y: auto;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+header nav#JaarplanningNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav#JaarplanningNav ul + ul {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--text) 14%, transparent);
+}
+
+header nav#JaarplanningNav li {
+  margin: 0;
+}
+
+header nav#JaarplanningNav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.28rem 0.45rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--text) 80%, transparent);
+  border-left: 2px solid transparent;
+  text-decoration: none;
+}
+
+header nav#JaarplanningNav a:hover {
+  color: var(--anchor);
+  background: color-mix(in srgb, var(--text) 5%, transparent);
+}
+
+header nav#JaarplanningNav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 700;
+  border-left-color: var(--anchor);
+  background: color-mix(in srgb, var(--anchor) 10%, transparent);
+}
+
+header nav#JaarplanningNav a > span:first-child {
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header nav#JaarplanningNav a > small {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  color: color-mix(in srgb, var(--text) 52%, transparent);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hoofdcontainer: breder canvas voor de meer-kolomse weektabel */
+body:has([data-jaarplanning]) {
+  max-width: 104rem;
+}
+
+[data-jaarplanning] {
+  width: 100%;
+  padding-bottom: 3.5rem;
+}
+
+[data-jaarplanning] :is(h1, h2, h3, h4)::before,
+[data-jaarplanning] ul > li::before {
+  content: none;
+  counter-increment: none;
+}
+
+/* Bovenbalk */
+[data-jaarplanning] > [data-planning-balk] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.85rem 1.25rem;
+  padding: 0 0 0.85rem 0;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 18%, transparent);
+}
+
+[data-jaarplanning] > [data-planning-balk] h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+[data-jaarplanning] > [data-planning-balk] [data-meta-lijn] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.9rem;
+  margin: 0.35rem 0 0 0;
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+}
+
+[data-jaarplanning] > [data-planning-balk] #planning-limiet-info[data-over="true"] {
+  color: var(--lvl-0);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+[data-jaarplanning] > [data-planning-balk] #planning-save-status[data-status="saved"] {
+  color: var(--lvl-2);
+}
+
+[data-jaarplanning] > [data-planning-balk] #planning-save-status[data-status="saving"] {
+  color: var(--lvl-1);
+}
+
+[data-jaarplanning] > [data-planning-balk] #planning-save-status[data-status="offline"] {
+  color: var(--lvl-0);
+}
+
+[data-jaarplanning] > [data-planning-balk] > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.82rem;
+}
+
+[data-jaarplanning] [role="tablist"],
+[data-jaarplanning] [role="group"] {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+[data-jaarplanning] button {
+  font: inherit;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--text) 22%, transparent);
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+  line-height: 1.35;
+}
+
+[data-jaarplanning] button:hover:not(:disabled) {
+  border-color: var(--anchor);
+  color: var(--anchor);
+}
+
+[data-jaarplanning] button[aria-selected="true"],
+[data-jaarplanning] button[aria-pressed="true"] {
+  border-color: var(--anchor);
+  background: color-mix(in srgb, var(--anchor) 12%, transparent);
+  color: var(--text);
+  font-weight: 700;
+}
+
+[data-jaarplanning] button[data-primary] {
+  border-color: var(--anchor);
+  background: var(--anchor);
+  color: var(--bgcolor);
+  font-weight: 600;
+}
+
+[data-jaarplanning] button[data-primary]:hover {
+  opacity: 0.9;
+  color: var(--bgcolor);
+}
+
+/* Optiebalk (trimester & kolommen) */
+[data-jaarplanning] > [data-planning-opties] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.65rem 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+[data-jaarplanning] [data-trimester-filter] button {
+  padding: 0.22rem 0.55rem;
+  font-size: 0.78rem;
+}
+
+[data-jaarplanning] [data-kolom-keuze] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.9rem;
+}
+
+[data-jaarplanning] [data-kolom-keuze] label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  cursor: pointer;
+  user-select: none;
+  color: color-mix(in srgb, var(--text) 82%, transparent);
+}
+
+[data-jaarplanning] [data-kolom-keuze] label span {
+  color: inherit;
+}
+
+[data-jaarplanning] input[type="checkbox"] {
+  accent-color: var(--anchor);
+  cursor: pointer;
+}
+
+[data-jaarplanning] > #planning-feedback-melding {
+  margin: 0 0 0.9rem 0;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.84rem;
+  border-left: 3px solid var(--lvl-2);
+  background: color-mix(in srgb, var(--lvl-2) 8%, transparent);
+  color: var(--text);
+}
+
+[data-jaarplanning] [data-export-tip] {
+  margin: 0 0 0.75rem 0;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+}
+
+[data-jaarplanning] [data-scroll-table] {
+  overflow-x: auto;
+}
+
+/* Tabellen (bewerken & overzicht) */
+[data-jaarplanning] table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+}
+
+[data-jaarplanning] thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bgcolor);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: color-mix(in srgb, var(--text) 68%, transparent);
+  border-bottom: 2px solid color-mix(in srgb, var(--text) 28%, transparent);
+  padding: 0.5rem 0.55rem;
+  text-align: left;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+[data-jaarplanning] thead th small {
+  display: block;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.75;
+}
+
+[data-jaarplanning] tbody tr,
+[data-jaarplanning] tbody td {
+  height: auto;
+}
+
+[data-jaarplanning] tbody td {
+  padding: 0.42rem 0.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 14%, transparent);
+  vertical-align: top;
+  text-align: left;
+}
+
+[data-jaarplanning] tbody tr {
+  scroll-margin-top: 2.8rem;
+}
+
+[data-jaarplanning] tbody td[data-col="week"] {
+  width: 11rem;
+  min-width: 10rem;
+  border-left: 3px solid transparent;
+}
+
+[data-jaarplanning] tbody tr[data-mark-tentative="true"][data-status="voorlopig"] td[data-col="week"] {
+  border-left: 3px dashed color-mix(in srgb, var(--lvl-1) 65%, transparent);
+}
+
+[data-jaarplanning] tbody tr[data-kind="vakantie"] {
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+}
+
+[data-jaarplanning] tbody tr[data-kind="vakantie"] td {
+  color: color-mix(in srgb, var(--text) 56%, transparent);
+  font-style: italic;
+}
+
+[data-jaarplanning] tbody tr[data-kind="examens"] {
+  background: color-mix(in srgb, var(--lvl-1) 8%, transparent);
+}
+
+[data-jaarplanning] tbody tr[data-month-start="true"] td {
+  border-top: 2px solid color-mix(in srgb, var(--text) 24%, transparent);
+}
+
+[data-jaarplanning] td[data-col="week"] > strong {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+[data-jaarplanning] td[data-col="week"] [data-week-meta] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.28rem;
+}
+
+[data-jaarplanning] td[data-col="week"] [data-kind-badge] {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.08rem 0.35rem;
+  border: 1px solid color-mix(in srgb, var(--text) 22%, transparent);
+  color: color-mix(in srgb, var(--text) 72%, transparent);
+}
+
+[data-jaarplanning] td[data-col="week"] button[data-status-toggle] {
+  font-size: 0.68rem;
+  padding: 0.06rem 0.35rem;
+  line-height: 1.3;
+  border-color: color-mix(in srgb, var(--lvl-2) 45%, transparent);
+  color: var(--lvl-2);
+}
+
+[data-jaarplanning] td[data-col="week"] button[data-status-toggle][data-status="voorlopig"] {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--lvl-1) 60%, transparent);
+  color: var(--lvl-1);
+}
+
+[data-jaarplanning] td[data-col="week"] input[data-thema-input] {
+  margin-top: 0.28rem;
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 0.74rem;
+  color: color-mix(in srgb, var(--text) 72%, transparent);
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.12rem 0.25rem;
+}
+
+[data-jaarplanning] td[data-col="week"] input[data-thema-input]:hover {
+  border-color: color-mix(in srgb, var(--text) 16%, transparent);
+}
+
+[data-jaarplanning] td[data-col="week"] input[data-thema-input]:focus {
+  outline: none;
+  border-color: var(--anchor);
+  background: var(--bgcolor);
+  color: var(--text);
+}
+
+[data-jaarplanning] td[data-col="week"] [data-thema-tag] {
+  display: inline-block;
+  margin-top: 0.22rem;
+  font-size: 0.72rem;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+}
+
+/* Vakkolommen in bewerkmodus */
+[data-jaarplanning] td[data-col="grafische"] {
+  min-width: 13rem;
+  background: color-mix(in srgb, var(--text) 2.5%, transparent);
+}
+
+[data-jaarplanning] td[data-col="motion"],
+[data-jaarplanning] td[data-col="web"],
+[data-jaarplanning] td[data-col="beeld"] {
+  min-width: 13.5rem;
+}
+
+[data-jaarplanning] td[data-col="uitstappen"] {
+  min-width: 9.5rem;
+}
+
+[data-jaarplanning] td[data-editable-cell] {
+  position: relative;
+}
+
+[data-jaarplanning] td[data-editable-cell] textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 3.1rem;
+  field-sizing: content;
+  padding: 0.28rem 0.35rem;
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid transparent;
+  resize: none;
+  overflow: hidden;
+  display: block;
+}
+
+[data-jaarplanning] td[data-editable-cell]:hover textarea {
+  border-color: color-mix(in srgb, var(--text) 16%, transparent);
+}
+
+[data-jaarplanning] td[data-editable-cell] textarea:focus {
+  outline: none;
+  border-color: var(--anchor);
+  background: var(--bgcolor);
+}
+
+[data-jaarplanning] td[data-editable-cell][data-limit-state="over"] textarea {
+  border-color: var(--lvl-0);
+  background: color-mix(in srgb, var(--lvl-0) 6%, transparent);
+}
+
+[data-jaarplanning] td[data-editable-cell] [data-cel-teller] {
+  display: block;
+  margin-top: 0.14rem;
+  padding: 0 0.25rem;
+  font-size: 0.68rem;
+  line-height: 1.2;
+  text-align: right;
+  color: color-mix(in srgb, var(--text) 45%, transparent);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+[data-jaarplanning] td[data-editable-cell]:focus-within [data-cel-teller],
+[data-jaarplanning] td[data-editable-cell]:hover [data-cel-teller],
+[data-jaarplanning] td[data-editable-cell][data-limit-state="warn"] [data-cel-teller],
+[data-jaarplanning] td[data-editable-cell][data-limit-state="over"] [data-cel-teller] {
+  opacity: 1;
+}
+
+[data-jaarplanning] td[data-editable-cell][data-limit-state="warn"] [data-cel-teller] {
+  color: var(--lvl-1);
+}
+
+[data-jaarplanning] td[data-editable-cell][data-limit-state="over"] [data-cel-teller] {
+  color: var(--lvl-0);
+  font-weight: 700;
+}
+
+/* Geformatteerde lees-/afdrukcellen */
+[data-jaarplanning] td[data-view-cell] {
+  line-height: 1.42;
+}
+
+[data-jaarplanning] td[data-view-cell] > strong {
+  display: block;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.08rem;
+}
+
+[data-jaarplanning] td[data-view-cell] > span {
+  display: block;
+  color: color-mix(in srgb, var(--text) 86%, transparent);
+}
+
+/* Afdrukweergave: altijd strakke A4-liggende overzichtstabel */
+@page {
+  size: A4 landscape;
+  margin: 9mm 10mm;
+}
+
+@media print {
+  body {
+    display: block;
+    max-width: none;
+    background: #fff;
+    color: #111;
+  }
+
+  body::after,
+  header,
+  #theme,
+  footer,
+  [data-jaarplanning] > [data-planning-balk] > div:last-child,
+  [data-jaarplanning] > [data-planning-balk] #planning-save-status,
+  [data-jaarplanning] > [data-planning-balk] #planning-limiet-info,
+  [data-jaarplanning] > [data-planning-opties],
+  [data-jaarplanning] > #planning-feedback-melding,
+  [data-jaarplanning] section[data-view-panel="editor"],
+  [data-jaarplanning] [data-export-tip] {
+    display: none !important;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  [data-jaarplanning] {
+    padding-bottom: 0;
+  }
+
+  [data-jaarplanning] > [data-planning-balk] {
+    margin-bottom: 0.45rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1.5px solid #111;
+  }
+
+  [data-jaarplanning] > [data-planning-balk] h1 {
+    font-size: 13pt;
+    color: #111;
+  }
+
+  [data-jaarplanning] > [data-planning-balk] [data-meta-lijn] {
+    font-size: 8pt;
+    color: #444;
+    margin-top: 0.15rem;
+  }
+
+  [data-jaarplanning] section[data-view-panel="tabel"] {
+    display: block !important;
+  }
+
+  [data-jaarplanning] [data-scroll-table] {
+    overflow: visible;
+  }
+
+  [data-jaarplanning] table {
+    font-size: 8.2pt;
+    line-height: 1.3;
+    table-layout: auto;
+  }
+
+  [data-jaarplanning] thead {
+    display: table-header-group;
+  }
+
+  [data-jaarplanning] thead th {
+    position: static;
+    background: #f1f5f9 !important;
+    color: #111 !important;
+    border: 1px solid #94a3b8;
+    padding: 0.28rem 0.35rem;
+    font-size: 7.5pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  [data-jaarplanning] tbody td {
+    border: 1px solid #cbd5e1;
+    color: #111 !important;
+    padding: 0.24rem 0.35rem;
+    min-width: 0 !important;
+  }
+
+  [data-jaarplanning] tbody td[data-col="week"] {
+    width: 13%;
+  }
+
+  [data-jaarplanning] tbody tr[data-kind="vakantie"] {
+    background: #f1f5f9 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  [data-jaarplanning] tbody tr[data-kind="examens"] {
+    background: #fef3c7 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  [data-jaarplanning] tbody tr[data-mark-tentative="true"][data-status="voorlopig"] td[data-col="week"] {
+    border-left: 2.5px dashed #b45309;
+  }
+
+  [data-jaarplanning] tbody tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  [data-jaarplanning] td[data-view-cell] > strong,
+  [data-jaarplanning] td[data-view-cell] > span,
+  [data-jaarplanning] td[data-col="week"] > strong,
+  [data-jaarplanning] td[data-col="week"] [data-thema-tag] {
+    color: #111 !important;
+  }
+
+  [data-jaarplanning] td[data-col="week"] [data-thema-tag] {
+    color: #475569 !important;
+  }
+}
